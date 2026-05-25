@@ -45,3 +45,4 @@ python3 -m http.server 5500
 
 เปิด:
 - `http://localhost:5500`
+# EXZY-intern-handbook-as-website
