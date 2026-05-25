@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+
+# Personal photos
+*.heic
+*.HEIC
+
+# Archives / zip files
+*.zip
+
+# Duplicate / large PDF with spaces in name (lowercase version used by app)
+Mini-Internship Orientation.pdf
+
+# Excel source files (sensitive contact data)
+Exzy - Employee Contact.xlsx
+exzy-employee-contact.xlsx
+
+# Font readme duplicates
+README.txt
+OFL.txt

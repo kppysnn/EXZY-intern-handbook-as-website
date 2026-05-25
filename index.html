@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXZY · Intern Handbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script src="employee-data.js"></script>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#/home" class="nav-logo" data-link>
+        <img src="logo.png" alt="EXZY" />
+      </a>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="#/home" class="nav-item nav-home" data-link>Home</a>
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle" aria-haspopup="true" aria-expanded="false">
+            Getting Started
+            <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
+              <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-menu">
+            <a href="#/getting-started/orientation" data-link>Orientation</a>
+            <div class="nav-sub">
+              <div class="nav-sub-label">First Day Essentials</div>
+              <a href="#/getting-started/wifi" data-link>Office Wi-Fi</a>
+              <a href="#/getting-started/meeting-rooms" data-link>Meeting Rooms</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle" aria-haspopup="true" aria-expanded="false">
+            Company
+            <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
+              <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-menu">
+            <a href="#/employee/org-chart" data-link>โครงสร้างองค์กร</a>
+            <a href="#/employee/directory" data-link>Employee Directory</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle" aria-haspopup="true" aria-expanded="false">
+            Work Policy
+            <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
+              <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-menu">
+            <a href="#/policy/code-of-conduct" data-link>Core Values</a>
+            <a href="#/policy/internship" data-link>Internship Policy</a>
+            <a href="#/policy/dress-code" data-link>Dress Code</a>
+            <a href="#/policy/leave" data-link>Leave &amp; Absence</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle" aria-haspopup="true" aria-expanded="false">
+            Resources
+            <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
+              <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-menu">
+            <a href="#/resources/timesheet" data-link>Timesheet</a>
+            <a href="#/resources/faqs" data-link>FAQs</a>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="nav-right" aria-label="Showcase">
+        <div class="nav-group">
+          <button class="nav-item nav-toggle nav-showcase nav-showcase-highlight" aria-haspopup="true" aria-expanded="false">
+            <span class="showcase-nav-label">Showcase</span>
+            <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
+              <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-menu nav-menu-right">
+            <a href="#/showcase/experiences" data-link>Intern Experiences</a>
+            <a href="#/showcase/projects" data-link>Intern Projects</a>
+            <a href="#/showcase/blog" data-link>Intern's Blog</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="nav-burger" aria-label="Menu" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Hidden admin trigger: Ctrl+Shift+A or 5 clicks on logo -->
+    <div id="admin-bar" class="admin-bar" hidden>
+      <span class="admin-dot"></span>
+      <span class="admin-label">Admin Mode</span>
+      <button class="admin-btn" id="admin-open">แก้ไขข้อมูล</button>
+      <button class="admin-btn admin-btn-ghost" id="admin-exit">ออก</button>
+    </div>
+  </header>
+
+  <!-- ===== APP ROOT ===== -->
+  <main id="app"></main>
+
+  <!-- ===== ADMIN MODAL ===== -->
+  <div class="admin-modal" id="admin-modal" hidden>
+    <div class="admin-modal-bd" data-close></div>
+    <div class="admin-modal-card">
+      <div class="admin-modal-head">
+        <div>
+          <div class="admin-eyebrow">EXZY · HR Admin</div>
+          <h3>แก้ไขข้อมูลในเว็บไซต์</h3>
+        </div>
+        <button class="admin-x" data-close aria-label="Close">✕</button>
+      </div>
+
+      <div class="admin-modal-body" id="admin-modal-body"></div>
+
+      <div class="admin-modal-foot">
+        <button class="btn btn-ghost" data-close>ยกเลิก</button>
+        <button class="btn btn-primary" id="admin-save">บันทึก</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ADMIN LOGIN ===== -->
+  <div class="admin-modal" id="admin-login" hidden>
+    <div class="admin-modal-bd" data-close="login"></div>
+    <div class="admin-modal-card admin-modal-card-sm">
+      <div class="admin-modal-head">
+        <div>
+          <div class="admin-eyebrow">Admin Access</div>
+          <h3>กรุณาใส่รหัสผ่าน</h3>
+        </div>
+        <button class="admin-x" data-close="login" aria-label="Close">✕</button>
+      </div>
+      <div class="admin-modal-body">
+        <p style="margin:0 0 16px; color: var(--muted); font-size: 14px;">รหัสผ่านนี้สำหรับทีม HR เพื่อแก้ไขข้อมูลในเว็บไซต์</p>
+        <input type="password" id="admin-pw" class="admin-input" placeholder="••••••••" autocomplete="off" />
+        <p id="admin-pw-err" class="admin-err" hidden>รหัสผ่านไม่ถูกต้อง</p>
+      </div>
+      <div class="admin-modal-foot">
+        <button class="btn btn-ghost" data-close="login">ยกเลิก</button>
+        <button class="btn btn-primary" id="admin-login-submit">เข้าสู่ระบบ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="logo-dark-white.png" alt="EXZY" class="footer-logo" />
+        <p class="footer-tag">Intern Handbook — รวมทุกข้อมูลที่จำเป็นไว้ในที่เดียว เพื่อเริ่มต้นเส้นทางการฝึกงานอย่างราบรื่น</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About EXZY</a>
+        <a href="#">Contact HR</a>
+        <a href="https://www.exzysmartoffice.com" target="_blank" rel="noopener">Company Website ↗</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#/getting-started/orientation" data-link>Orientation</a>
+        <a href="#/resources/timesheet" data-link>Timesheet</a>
+        <a href="#/resources/faqs" data-link>FAQs</a>
+      </div>
+      <div class="footer-col footer-social">
+        <h4>Follow EXZY</h4>
+        <a href="https://www.instagram.com/exzysmartoffice/" target="_blank" rel="noopener">Instagram · @exzysmartoffice</a>
+        <a href="https://www.facebook.com/exzysmartoffice" target="_blank" rel="noopener">Facebook · Smart Office</a>
+        <a href="https://www.facebook.com/ExzyVRLab" target="_blank" rel="noopener">Facebook · VR Lab</a>
+        <a href="https://www.facebook.com/ExzyWorkplacePlus" target="_blank" rel="noopener">Facebook · Workplace Plus</a>
+        <a href="https://www.youtube.com/exzytech" target="_blank" rel="noopener">YouTube · exzytech</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> EXZY Co., Ltd. · All rights reserved.</span>
+      <span>Maintained by HR Team</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
