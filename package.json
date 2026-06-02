@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "esbuild app.js --bundle --format=iife --outfile=bundle.js",
+    "watch": "esbuild app.js --bundle --format=iife --outfile=bundle.js --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
