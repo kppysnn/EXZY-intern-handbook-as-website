@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Simple monochrome mask for Safari pinned tab; Safari applies the color -->
+  <g fill="none" fill-rule="evenodd">
+    <path d="M50 10 L61 39 L92 39 L66 57 L76 88 L50 69 L24 88 L34 57 L8 39 L39 39 Z" fill="#000"/>
+  </g>
+</svg>
