@@ -12294,7 +12294,7 @@ p.hero-word, div.hero-word { display: block; }
   background: radial-gradient(ellipse 50% 80% at 100% 50%, rgba(102,197,197,.15) 0%, transparent 60%);
   pointer-events: none;
 }
-.policy-time-main h2 { font-family:var(--display); font-size:clamp(1.6rem,3vw,2.4rem); font-weight:900; margin:0 0 8px; color:#fff; letter-spacing:-.02em; }
+.policy-time-main h2 { font-family:var(--display); font-size:clamp(1.6rem,3vw,2.4rem); font-weight:900; margin:0 0 8px; color:#fff !important; letter-spacing:-.02em; }
 .policy-time-main p { font-size:14.5px; color:rgba(255,255,255,.7); margin:0; }
 .policy-time-stats { display: flex; gap: 32px; flex-shrink: 0; }
 .pts-item { text-align: center; }

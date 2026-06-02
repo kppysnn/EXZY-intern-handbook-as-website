@@ -113,7 +113,7 @@ export const renderInternshipPolicy = () => pageWrap({
     <!-- Policy Hero Banner -->
     <div class="policy-time-hero anim-up">
       <div class="policy-time-main">
-        <h2>9:00 – 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 – 19:00</h2>
+        <h2 style="color:#fff !important">9:00 – 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 – 19:00</h2>
         <p>เวลาฝึกงาน · จันทร์ – ศุกร์ · ขึ้นอยู่กับแผนกที่ได้รับมอบหมาย</p>
       </div>
       <div class="policy-time-stats">

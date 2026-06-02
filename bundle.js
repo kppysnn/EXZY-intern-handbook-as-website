@@ -1962,7 +1962,7 @@
     <!-- Policy Hero Banner -->
     <div class="policy-time-hero anim-up">
       <div class="policy-time-main">
-        <h2>9:00 \u2013 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 \u2013 19:00</h2>
+        <h2 style="color:#fff !important">9:00 \u2013 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 \u2013 19:00</h2>
         <p>\u0E40\u0E27\u0E25\u0E32\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \xB7 \u0E08\u0E31\u0E19\u0E17\u0E23\u0E4C \u2013 \u0E28\u0E38\u0E01\u0E23\u0E4C \xB7 \u0E02\u0E36\u0E49\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E01\u0E31\u0E1A\u0E41\u0E1C\u0E19\u0E01\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E21\u0E2D\u0E1A\u0E2B\u0E21\u0E32\u0E22</p>
       </div>
       <div class="policy-time-stats">
