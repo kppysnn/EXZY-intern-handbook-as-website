@@ -23,11 +23,7 @@ export const renderHome = () => `
         </a>
         <a href="#/policy" class="hmv3-btn-ghost">สำรวจคู่มือ ${I.arrow}</a>
       </div>
-      <div class="hmv3-pills">
-        <span class="hmv3-pill">ข้อมูลครบ</span>
-        <span class="hmv3-pill">ค้นหาง่าย</span>
-        <span class="hmv3-pill">อัปเดตตลอด</span>
-      </div>
+
     </div>
 
     <div class="hmv3-index">
@@ -129,6 +125,13 @@ export const renderHome = () => `
           <div class="hmv3-day1-check">
             <div class="hmv3-day1-check-dot"></div>
             <div class="hmv3-day1-check-text">
+              <span class="hmv3-day1-check-label">Orientation กับ HR</span>
+              <span class="hmv3-day1-check-note">ทำความรู้จัก EXZY ตั้งค่า Tools รับเอกสาร</span>
+            </div>
+          </div>
+          <div class="hmv3-day1-check">
+            <div class="hmv3-day1-check-dot"></div>
+            <div class="hmv3-day1-check-text">
               <span class="hmv3-day1-check-label">Subscribe Google Calendar</span>
               <span class="hmv3-day1-check-note">รับนัดหมายบริษัทโดยอัตโนมัติ</span>
             </div>
@@ -138,13 +141,6 @@ export const renderHome = () => `
             <div class="hmv3-day1-check-text">
               <span class="hmv3-day1-check-label">กรอก Timesheet ก่อนกลับบ้าน</span>
               <span class="hmv3-day1-check-note">บันทึกเวลาเข้า-ออกตามจริง</span>
-            </div>
-          </div>
-          <div class="hmv3-day1-check">
-            <div class="hmv3-day1-check-dot"></div>
-            <div class="hmv3-day1-check-text">
-              <span class="hmv3-day1-check-label">Orientation กับ HR</span>
-              <span class="hmv3-day1-check-note">ทำความรู้จัก EXZY และตั้งค่า Tools</span>
             </div>
           </div>
         </div>
@@ -222,30 +218,41 @@ export const renderHome = () => `
         <div class="hmv3-showcase-articles">
           <!-- Article card 1 — Experiences -->
           <a href="#/showcase/experiences" class="hmv3-art-card">
-            <div class="hmv3-art-cover hmv3-art-cover-1">
-              <svg viewBox="0 0 60 40" width="60" height="40" fill="none"><circle cx="20" cy="20" r="14" fill="rgba(255,255,255,.12)"/><circle cx="40" cy="20" r="10" fill="rgba(255,255,255,.08)"/><circle cx="20" cy="20" r="6" fill="rgba(255,255,255,.22)"/></svg>
+            <div class="hmv3-art-cover hmv3-art-cover-exp">
+              <div class="hmv3-art-cover-label">Experiences</div>
+              <svg viewBox="0 0 80 52" width="80" height="52" fill="none">
+                <circle cx="24" cy="26" r="18" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+                <circle cx="24" cy="26" r="10" fill="rgba(102,197,197,.25)"/>
+                <circle cx="56" cy="26" r="12" stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
+                <circle cx="56" cy="26" r="6" fill="rgba(102,197,197,.15)"/>
+                <line x1="34" y1="26" x2="44" y2="26" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
+              </svg>
             </div>
             <div class="hmv3-art-body">
-              <div class="hmv3-art-tag">Experiences</div>
+              <div class="hmv3-art-tag hmv3-art-tag-exp">Experiences</div>
               <div class="hmv3-art-title">ประสบการณ์จาก Intern รุ่นพี่</div>
               <div class="hmv3-art-desc">เรื่องราว บทเรียน และมุมมองจากคนที่เคยฝึกงานที่ EXZY มาก่อน</div>
               <div class="hmv3-art-meta">
-                <span class="hmv3-art-read">อ่านเพิ่ม</span>
+                <span class="hmv3-art-read">ดูทั้งหมด</span>
                 <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </div>
             </div>
           </a>
-          <!-- Article card 2 — Blog -->
           <a href="#/showcase/blog" class="hmv3-art-card">
-            <div class="hmv3-art-cover hmv3-art-cover-2">
-              <svg viewBox="0 0 60 40" width="60" height="40" fill="none"><rect x="8" y="10" width="44" height="6" rx="3" fill="rgba(255,255,255,.18)"/><rect x="8" y="22" width="30" height="4" rx="2" fill="rgba(255,255,255,.12)"/><rect x="8" y="30" width="20" height="3" rx="1.5" fill="rgba(255,255,255,.08)"/></svg>
+            <div class="hmv3-art-cover hmv3-art-cover-blog">
+              <div class="hmv3-art-cover-label">Blog</div>
+              <svg viewBox="0 0 80 52" width="80" height="52" fill="none">
+                <rect x="10" y="12" width="48" height="7" rx="3.5" fill="rgba(255,255,255,.22)"/>
+                <rect x="10" y="24" width="34" height="5" rx="2.5" fill="rgba(255,255,255,.14)"/>
+                <rect x="10" y="34" width="22" height="4" rx="2" fill="rgba(255,255,255,.08)"/>
+              </svg>
             </div>
             <div class="hmv3-art-body">
-              <div class="hmv3-art-tag">Blog</div>
+              <div class="hmv3-art-tag hmv3-art-tag-blog">Blog</div>
               <div class="hmv3-art-title">บทความจาก Intern</div>
               <div class="hmv3-art-desc">ความรู้ เทคนิค และสิ่งที่ได้เรียนรู้ระหว่างฝึกงานที่ EXZY</div>
               <div class="hmv3-art-meta">
-                <span class="hmv3-art-read">อ่านเพิ่ม</span>
+                <span class="hmv3-art-read">ดูทั้งหมด</span>
                 <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </div>
             </div>

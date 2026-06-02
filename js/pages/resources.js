@@ -24,7 +24,6 @@ export const renderTimesheet = () => pageWrap({
           </span>
         </div>
       </div>
-      <div class="ts-hero-cal" aria-hidden="true">30</div>
     </div>
 
     <!-- Visual Steps -->

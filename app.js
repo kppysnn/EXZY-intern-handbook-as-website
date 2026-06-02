@@ -23,7 +23,7 @@ import { renderTimesheet, renderFaqs } from './js/pages/resources.js';
 // ===== Page Routes =====
 const Pages = {
   home:                            () => renderHome(),
-  "first-day":                     () => renderFirstDay(),
+  "first-day":                     () => renderFirstDay(loadAdminData()),
   "getting-started/orientation":   () => renderOrientation(),
   "getting-started/wifi":          () => renderWifi(),
   "getting-started/meeting-rooms": () => renderMeetingRooms(),

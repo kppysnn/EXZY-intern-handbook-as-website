@@ -20,8 +20,8 @@ export const renderDirectory = () => {
               <input type="password" class="dir-pw-input" id="dir-pw-input" placeholder="กรอกรหัสสำหรับดูข้อมูล" autocomplete="off" />
               <button type="submit" class="dir-pw-btn" id="dir-pw-btn">${I.lock} ปลดล็อก</button>
             </form>
-            <div class="dir-gate-err" id="dir-gate-err" hidden>${I.info} รหัสไม่ถูกต้อง กรุณาลองอีกครั้ง</div>
-            <div class="dir-gate-hint">หากยังไม่มีรหัส กรุณาติดต่อ HR</div>
+            <div class="dir-gate-err" id="dir-gate-err" hidden>${I.info} รหัสไม่ถูกต้อง — ลองอีกครั้ง หรือตรวจสอบรหัสใน Admin Panel</div>
+            <div class="dir-gate-hint">รหัสเริ่มต้น: <code style="background:#f0f4f8;padding:2px 6px;border-radius:4px;font-size:12px;">hr@exzy</code> &nbsp;·&nbsp; เปลี่ยนได้ที่ Admin Panel</div>
           </div>
         </div>
       `,

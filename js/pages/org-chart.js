@@ -37,7 +37,7 @@ export const renderOrgChart = () => pageWrap({
   lead: "EXZY มี 9 แผนกหลัก — ทำความรู้จักแต่ละฝ่ายและหน้าที่รับผิดชอบก่อนวันแรก",
   body: `
     <!-- Company Header Card -->
-    <div class="oc-company-card anim-up">
+    <div class="oc-company-card oc-company-card-sm anim-up">
       <div class="oc-company-eyebrow">Head Office · Bangkok</div>
       <div class="oc-company-name">EXZY Co., Ltd.</div>
       <div class="oc-company-tagline">"Excellence by design, Advance by technology"</div>

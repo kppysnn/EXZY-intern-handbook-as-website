@@ -71,7 +71,6 @@ export function pageWrap({ crumbs, title, lead, body, toc }) {
       <div class="phb-inner">
         <div class="breadcrumb anim-up" style="margin-bottom:10px;">${crumbHtml}</div>
         <div class="phb-eyebrow anim-up" data-delay="40">
-          <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           ${meta.label}
         </div>
         <h1 class="phb-title anim-up" data-delay="80">${title}</h1>
