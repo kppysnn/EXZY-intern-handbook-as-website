@@ -39,7 +39,7 @@ export function renderFirstDay(data = {}) {
       <p class="fd9-sub">คู่มือฉบับสั้น สำหรับ intern วันแรก<br>ทำให้เสร็จก่อนกลับบ้านวันนี้</p>
 
       <div class="fd9-actions">
-        <a href="#fd3-sec1" class="fd9-btn">
+        <a href="#fd3-sec1" class="fd9-btn" data-scroll-to="fd3-sec1">
           เริ่มต้นเลย
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -126,11 +126,11 @@ export function renderFirstDay(data = {}) {
       <p class="fd8-sub">ทำ 2 tasks ให้เสร็จก่อนกลับบ้านวันนี้<br>อ่านได้ภายใน 5 นาที</p>
 
       <div class="fd8-actions">
-        <a href="#fd3-sec1" class="fd8-cta-main">
+        <a href="#fd3-sec1" class="fd8-cta-main" data-scroll-to="fd3-sec1">
           เริ่มต้นเลย
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#fd3-sec2" class="fd8-cta-ghost">ดูตารางวันแรก</a>
+        <a href="#fd3-sec2" class="fd8-cta-ghost" data-scroll-to="fd3-sec2">ดูตารางวันแรก</a>
       </div>
 
       <!-- stat row -->

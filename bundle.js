@@ -738,7 +738,7 @@
       <p class="fd9-sub">\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E09\u0E1A\u0E31\u0E1A\u0E2A\u0E31\u0E49\u0E19 \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A intern \u0E27\u0E31\u0E19\u0E41\u0E23\u0E01<br>\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</p>
 
       <div class="fd9-actions">
-        <a href="#fd3-sec1" class="fd9-btn">
+        <a href="#fd3-sec1" class="fd9-btn" data-scroll-to="fd3-sec1">
           \u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E40\u0E25\u0E22
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -825,11 +825,11 @@
       <p class="fd8-sub">\u0E17\u0E33 2 tasks \u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49<br>\u0E2D\u0E48\u0E32\u0E19\u0E44\u0E14\u0E49\u0E20\u0E32\u0E22\u0E43\u0E19 5 \u0E19\u0E32\u0E17\u0E35</p>
 
       <div class="fd8-actions">
-        <a href="#fd3-sec1" class="fd8-cta-main">
+        <a href="#fd3-sec1" class="fd8-cta-main" data-scroll-to="fd3-sec1">
           \u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E40\u0E25\u0E22
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#fd3-sec2" class="fd8-cta-ghost">\u0E14\u0E39\u0E15\u0E32\u0E23\u0E32\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</a>
+        <a href="#fd3-sec2" class="fd8-cta-ghost" data-scroll-to="fd3-sec2">\u0E14\u0E39\u0E15\u0E32\u0E23\u0E32\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</a>
       </div>
 
       <!-- stat row -->

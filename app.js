@@ -302,7 +302,8 @@ function hydratePage() {
 
   // ----- Scroll-to buttons (data-scroll-to) -----
   app.querySelectorAll("[data-scroll-to]").forEach(btn => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
       const id = btn.getAttribute("data-scroll-to");
       const target = document.getElementById(id);
       if (target) {
