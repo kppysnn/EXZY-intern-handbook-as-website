@@ -9,7 +9,7 @@ export const renderTimesheet = () => pageWrap({
     <!-- Timesheet Hero Banner -->
     <div class="ts-hero-banner anim-up">
       <div class="ts-hero-left">
-        <h2>กรอกทุกวัน · ส่งสิ้นเดือน</h2>
+        <h2 style="color:#fff !important">กรอกทุกวัน · ส่งสิ้นเดือน</h2>
         <p>HR จะส่งไฟล์ Excel Timesheet ให้ทางอีเมลตั้งแต่วันแรก</p>
         <div class="ts-hero-badges">
           <span class="ts-hero-badge">

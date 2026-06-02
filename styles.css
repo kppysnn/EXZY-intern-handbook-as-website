@@ -12374,9 +12374,12 @@ p.hero-word, div.hero-word { display: block; }
   margin: 0 auto;
   padding: 0 40px;
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: minmax(0, 1fr) 400px;
   gap: 60px;
   align-items: center;
+}
+.hmv3-inner > * {
+  min-width: 0;
 }
 .hmv3-kicker {
   display: inline-flex;
@@ -12405,11 +12408,13 @@ p.hero-word, div.hero-word { display: block; }
   font-size: clamp(2.6rem, 5vw, 4rem);
   font-weight: 900;
   color: #fff;
-  line-height: 1.1;
+  line-height: 1.3;
   letter-spacing: -.025em;
   margin: 0 0 20px;
 }
 .hmv3-h1-grad {
+  display: block;
+  padding-top: 6px;
   background: linear-gradient(90deg, var(--cyan), #a8e8e8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -12625,7 +12630,7 @@ p.hero-word, div.hero-word { display: block; }
 }
 .hmv3-bento-grid {
   display: grid;
-  grid-template-columns: 5fr 3.5fr 3.5fr;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 3.5fr) minmax(0, 3.5fr);
   grid-template-rows: auto auto;
   gap: 18px;
 }
@@ -12870,7 +12875,7 @@ p.hero-word, div.hero-word { display: block; }
 }
 .hmv3-showcase-sub {
   font-size: 13.5px;
-  color: rgba(255,255,255,.48);
+  color: rgba(255,255,255,.65);
   margin: 0;
   line-height: 1.65;
   max-width: 520px;
@@ -12937,7 +12942,7 @@ p.hero-word, div.hero-word { display: block; }
 }
 .hmv3-ql-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 10px;
 }
 .hmv3-ql-item {
@@ -12974,7 +12979,7 @@ p.hero-word, div.hero-word { display: block; }
 .hmv3-ql-hint { font-size: 12px; color: var(--muted); }
 .hmv3-ql-arr {
   color: var(--muted);
-  opacity: .35;
+  opacity: .55;
   transition: opacity .15s, transform .2s, color .15s;
   flex-shrink: 0;
 }
