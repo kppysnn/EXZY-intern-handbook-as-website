@@ -5,201 +5,175 @@ export function renderFirstDay(data = {}) {
 <div class="fd3-page">
 
 <!-- ══════════════ HERO ══════════════ -->
-<div class="fd9-hero">
+<div class="fdw-hero">
 
-  <!-- bold CI color panel — right diagonal -->
-  <div class="fd9-panel" aria-hidden="true">
-    <div class="fd9-panel-orb fd9-porb-1"></div>
-    <div class="fd9-panel-orb fd9-porb-2"></div>
-    <!-- grid lines on panel -->
-    <div class="fd9-panel-grid"></div>
-  </div>
+  <!-- ── ILLUSTRATED WORKSPACE SCENE ── -->
+  <div class="fdw-scene" aria-hidden="true">
+    <svg viewBox="0 0 1440 580" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="fdw-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FDF8F0"/>
+          <stop offset="100%" stop-color="#F5EDD8"/>
+        </linearGradient>
+        <linearGradient id="fdw-desk" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E8C87A"/>
+          <stop offset="100%" stop-color="#C8A050"/>
+        </linearGradient>
+        <linearGradient id="fdw-screen" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1A2E52"/>
+          <stop offset="100%" stop-color="#0E1F3A"/>
+        </linearGradient>
+        <filter id="fdw-shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="rgba(60,30,0,0.18)"/>
+        </filter>
+        <filter id="fdw-soft" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="rgba(60,30,0,0.12)"/>
+        </filter>
+      </defs>
 
-  <!-- full-width top eyebrow bar -->
-  <div class="fd9-topbar">
-    <span class="fd9-topbar-dot"></span>
-    EXZY Internship
-    <span class="fd9-topbar-sep">·</span>
-    คู่มือวันแรก
-    <span class="fd9-topbar-sep">·</span>
-    Day 01
-  </div>
+      <!-- WALL -->
+      <rect width="1440" height="580" fill="url(#fdw-wall)"/>
 
-  <!-- main split -->
-  <div class="fd9-inner">
+      <!-- WINDOW — upper right, morning light -->
+      <rect x="980" y="30" width="210" height="270" rx="6" fill="#FEFCF5"/>
+      <rect x="980" y="30" width="210" height="270" rx="6" fill="none" stroke="#D4BE8A" stroke-width="8"/>
+      <line x1="980" y1="165" x2="1190" y2="165" stroke="#D4BE8A" stroke-width="4"/>
+      <line x1="1085" y1="30" x2="1085" y2="300" stroke="#D4BE8A" stroke-width="4"/>
+      <!-- morning light rays washing across wall -->
+      <polygon points="980,30 540,580 760,580 1190,30" fill="rgba(255,220,80,0.09)"/>
+      <polygon points="1085,30 640,580 820,580 1190,110" fill="rgba(255,220,80,0.06)"/>
+      <polygon points="1190,30 820,580 960,580 1190,80" fill="rgba(255,220,80,0.04)"/>
 
-    <!-- LEFT: white zone / large typography -->
-    <div class="fd9-left">
-      <h1 class="fd9-h1">
-        <span class="fd9-h1-a">ยินดี</span>
-        <span class="fd9-h1-b">ต้อนรับ</span>
-        <span class="fd9-h1-c">สู่ทีม <mark class="fd9-mark">EXZY</mark></span>
-      </h1>
+      <!-- WALL ART — small framed print left of window -->
+      <rect x="720" y="55" width="130" height="100" rx="4" fill="#EDE5D8" filter="url(#fdw-soft)"/>
+      <rect x="726" y="61" width="118" height="88" rx="2" fill="#F5EDE0"/>
+      <!-- abstract art: a few coloured shapes -->
+      <circle cx="765" cy="105" r="24" fill="rgba(102,197,197,0.35)"/>
+      <rect x="775" y="78" width="14" height="38" rx="3" fill="rgba(0,64,128,0.2)"/>
+      <ellipse cx="800" cy="115" rx="16" ry="10" fill="rgba(245,158,11,0.25)"/>
 
-      <p class="fd9-sub">คู่มือฉบับสั้น สำหรับ intern วันแรก<br>ทำให้เสร็จก่อนกลับบ้านวันนี้</p>
+      <!-- WALL SHELF + PLANT -->
+      <rect x="200" y="210" width="90" height="8" rx="2" fill="#C8B07A"/>
+      <rect x="224" y="182" width="28" height="30" rx="3" fill="#707070"/>
+      <ellipse cx="238" cy="178" rx="20" ry="28" fill="#66AA66" transform="rotate(-8,238,178)"/>
+      <ellipse cx="252" cy="172" rx="16" ry="22" fill="#55BB55" transform="rotate(18,252,172)"/>
+      <ellipse cx="224" cy="174" rx="14" ry="20" fill="#44A044" transform="rotate(-22,224,174)"/>
 
-      <div class="fd9-actions">
-        <a href="#fd3-sec1" class="fd9-btn" data-scroll-to="fd3-sec1">
-          เริ่มต้นเลย
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="fd9-pill-row">
-          <span class="fd9-pill">📋 2 Tasks</span>
-          <span class="fd9-pill">⏱ 5 นาที</span>
-        </div>
-      </div>
-    </div>
+      <!-- DESK SURFACE — large, perspective trapezoid -->
+      <polygon points="0,330 1440,330 1440,580 0,580" fill="url(#fdw-desk)"/>
+      <!-- Desk edge highlight line -->
+      <line x1="0" y1="330" x2="1440" y2="330" stroke="#E8D090" stroke-width="3"/>
+      <!-- Very subtle wood grain -->
+      <line x1="0" y1="400" x2="1440" y2="398" stroke="rgba(160,110,30,0.06)" stroke-width="1.5"/>
+      <line x1="0" y1="470" x2="1440" y2="468" stroke="rgba(160,110,30,0.05)" stroke-width="1.5"/>
+      <!-- Desk mat under laptop -->
+      <rect x="350" y="325" width="480" height="240" rx="10" fill="rgba(0,40,80,0.06)" transform="rotate(-2,590,445)"/>
 
-    <!-- RIGHT: CI atmospheric panel -->
-    <div class="fd9-right">
+      <!-- LAPTOP — main focal object -->
+      <!-- Laptop lid/screen back -->
+      <rect x="380" y="198" width="360" height="238" rx="14" fill="#DEDAD4" filter="url(#fdw-shadow)" transform="rotate(-2,560,317)"/>
+      <!-- Screen bezel -->
+      <rect x="392" y="208" width="336" height="218" rx="8" fill="#1C1C2E" transform="rotate(-2,560,317)"/>
+      <!-- Screen display -->
+      <rect x="398" y="214" width="324" height="206" rx="6" fill="url(#fdw-screen)" transform="rotate(-2,560,317)"/>
+      <!-- Screen glow: subtle EXZY-blue content suggestion -->
+      <rect x="404" y="220" width="312" height="194" rx="4" fill="#243A5E" opacity="0.6" transform="rotate(-2,560,317)"/>
+      <!-- camera dot -->
+      <circle cx="561" cy="216" r="3.5" fill="#0A0A1A" transform="rotate(-2,561,216)"/>
+      <!-- Screen glare reflection -->
+      <ellipse cx="475" cy="268" rx="30" ry="10" fill="rgba(255,255,255,0.07)" transform="rotate(-2,560,317)"/>
+      <!-- Keyboard / base -->
+      <rect x="392" y="430" width="336" height="34" rx="8" fill="#CCCAC4" filter="url(#fdw-soft)" transform="rotate(-2,560,447)"/>
+      <!-- trackpad -->
+      <rect x="482" y="436" width="160" height="24" rx="6" fill="#C0BEB8" transform="rotate(-2,560,448)"/>
 
-      <!-- large day number (background anchor) -->
-      <div class="fd9-bignum" aria-hidden="true">01</div>
+      <!-- COFFEE MUG — right of laptop -->
+      <ellipse cx="868" cy="388" rx="42" ry="26" fill="#55B8B8"/>
+      <ellipse cx="868" cy="362" rx="42" ry="26" fill="#66C5C5"/>
+      <rect x="826" y="362" width="84" height="26" fill="#66C5C5"/>
+      <!-- Coffee liquid surface -->
+      <ellipse cx="868" cy="362" rx="32" ry="19" fill="#7B4A28"/>
+      <!-- Latte art suggestion -->
+      <path d="M858 358 Q868 352 878 358" fill="none" stroke="rgba(240,220,180,0.5)" stroke-width="2" stroke-linecap="round"/>
+      <!-- Handle -->
+      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#66C5C5" stroke-width="10" stroke-linecap="round"/>
+      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#7DD4D4" stroke-width="6" stroke-linecap="round"/>
+      <!-- Steam wisps -->
+      <path d="M854 352 Q858 336 853 320" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M868 348 Q873 330 868 312" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M882 352 Q887 336 882 320" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5" stroke-linecap="round"/>
 
-      <!-- orbital ring illustration -->
-      <div class="fd9-ring" aria-hidden="true">
-        <div class="fd9-ring-track fd9-ring-track-1"></div>
-        <div class="fd9-ring-track fd9-ring-track-2"></div>
-        <div class="fd9-ring-center"></div>
-        <div class="fd9-ring-spinner fd9-ring-spinner-1">
-          <div class="fd9-ring-dot"></div>
-        </div>
-        <div class="fd9-ring-spinner fd9-ring-spinner-2">
-          <div class="fd9-ring-dot fd9-ring-dot-sm"></div>
-        </div>
-      </div>
+      <!-- NOTEBOOK — left of laptop, slightly rotated -->
+      <rect x="80" y="345" width="220" height="175" rx="7" fill="#F0EAD8" filter="url(#fdw-shadow)" transform="rotate(6,190,432)"/>
+      <rect x="92" y="352" width="196" height="162" rx="4" fill="#FAFAF5" transform="rotate(6,190,432)"/>
+      <!-- Spiral spine -->
+      <rect x="80" y="345" width="14" height="175" rx="4" fill="#D4C48A" transform="rotate(6,190,432)"/>
+      <!-- Ruled lines -->
+      <line x1="106" y1="378" x2="278" y2="374" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="395" x2="278" y2="391" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="412" x2="278" y2="408" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="429" x2="278" y2="425" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="446" x2="278" y2="442" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <!-- Some handwriting/doodle suggestion -->
+      <path d="M115 385 Q140 380 155 390 Q165 398 160 408" fill="none" stroke="rgba(0,60,120,0.18)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
+      <line x1="115" y1="420" x2="185" y2="418" stroke="rgba(0,60,120,0.12)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
 
-      <!-- welcome badge -->
-      <div class="fd9-welcome">
-        <span class="fd9-welcome-emoji">👋</span>
-        <span>ยินดีต้อนรับ intern ใหม่!</span>
-      </div>
+      <!-- PEN beside notebook -->
+      <rect x="308" y="355" width="9" height="135" rx="4.5" fill="#0FA8A8" filter="url(#fdw-soft)" transform="rotate(10,312,422)"/>
+      <polygon points="312,350 307,340 317,340" fill="#0D9090" transform="rotate(10,312,345)"/>
+      <rect x="308" y="466" width="9" height="18" rx="4.5" fill="#0D9090" transform="rotate(10,312,475)"/>
 
-    </div>
-  </div>
+      <!-- DESK SUCCULENT — far right -->
+      <ellipse cx="1300" cy="460" rx="36" ry="22" fill="#707070"/>
+      <ellipse cx="1300" cy="438" rx="36" ry="22" fill="#888888"/>
+      <rect x="1264" y="438" width="72" height="22" fill="#888888"/>
+      <!-- Leaves -->
+      <ellipse cx="1300" cy="416" rx="16" ry="26" fill="#5AAA60"/>
+      <ellipse cx="1283" cy="416" rx="13" ry="20" fill="#4CAF54" transform="rotate(-28,1283,416)"/>
+      <ellipse cx="1317" cy="416" rx="13" ry="20" fill="#66BB6A" transform="rotate(28,1317,416)"/>
+      <ellipse cx="1291" cy="404" rx="10" ry="16" fill="#43A047" transform="rotate(-18,1291,404)"/>
+      <ellipse cx="1310" cy="404" rx="10" ry="16" fill="#388E3C" transform="rotate(18,1310,404)"/>
 
+      <!-- POST-IT NOTE on laptop screen edge -->
+      <rect x="666" y="318" width="52" height="44" rx="2" fill="#66C5C5" opacity="0.85" filter="url(#fdw-soft)" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="328" x2="712" y2="327" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="337" x2="712" y2="336" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="346" x2="700" y2="345" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
 
-</div>
-<div style="display:none"><!-- fd8 hero placeholder --></div>
-<div class="fd8-hero">
+      <!-- PHONE — right side of desk -->
+      <rect x="1060" y="378" width="70" height="118" rx="14" fill="#2A2838" filter="url(#fdw-soft)" transform="rotate(-6,1095,437)"/>
+      <rect x="1066" y="386" width="58" height="102" rx="9" fill="#1A1828" transform="rotate(-6,1095,437)"/>
+      <rect x="1078" y="480" width="30" height="4" rx="2" fill="rgba(255,255,255,0.2)" transform="rotate(-6,1095,482)"/>
 
-  <!-- bg gradient + texture -->
-  <div class="fd8-bg" aria-hidden="true"></div>
-
-  <!-- big decorative circle right -->
-  <div class="fd8-circle-deco" aria-hidden="true"></div>
-
-  <!-- split layout -->
-  <div class="fd8-split">
-
-    <!-- LEFT: text -->
-    <div class="fd8-left">
-
-      <div class="fd8-eyebrow">
-        <span class="fd8-dot"></span>
-        EXZY Internship &nbsp;·&nbsp; คู่มือวันแรก
-      </div>
-
-      <h1 class="fd8-h1">
-        <span class="fd8-h1-light">ยินดีต้อนรับ</span>
-        <span class="fd8-h1-bold">สู่ทีม <em>EXZY</em></span>
-      </h1>
-
-      <p class="fd8-sub">ทำ 2 tasks ให้เสร็จก่อนกลับบ้านวันนี้<br>อ่านได้ภายใน 5 นาที</p>
-
-      <div class="fd8-actions">
-        <a href="#fd3-sec1" class="fd8-cta-main" data-scroll-to="fd3-sec1">
-          เริ่มต้นเลย
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#fd3-sec2" class="fd8-cta-ghost" data-scroll-to="fd3-sec2">ดูตารางวันแรก</a>
-      </div>
-
-      <!-- stat row -->
-      <div class="fd8-stats">
-        <div class="fd8-stat">
-          <span class="fd8-stat-n">2</span>
-          <span class="fd8-stat-l">Tasks</span>
-        </div>
-        <div class="fd8-stat-sep"></div>
-        <div class="fd8-stat">
-          <span class="fd8-stat-n">4</span>
-          <span class="fd8-stat-l">ช่วงสำคัญ</span>
-        </div>
-        <div class="fd8-stat-sep"></div>
-        <div class="fd8-stat">
-          <span class="fd8-stat-n">5</span>
-          <span class="fd8-stat-l">นาที</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- RIGHT: visual panel -->
-    <div class="fd8-right" aria-hidden="true">
-
-      <!-- glow orb behind everything -->
-      <div class="fd8-glow-orb"></div>
-
-      <!-- task card 1 -->
-      <div class="fd8-vcard fd8-vcard-1">
-        <div class="fd8-vcard-bar" style="background:linear-gradient(90deg,#0FA8A8,#66C5C5)"></div>
-        <div class="fd8-vcard-body">
-          <div class="fd8-vcard-label" style="color:#0FA8A8">Task 01</div>
-          <div class="fd8-vcard-title">Subscribe Google Calendar</div>
-          <div class="fd8-vcard-steps">
-            <span>📧</span><span class="fd8-step-arrow">→</span>
-            <span>📅</span><span class="fd8-step-arrow">→</span>
-            <span>✅</span>
-          </div>
-        </div>
-        <div class="fd8-vcard-check">✓</div>
-      </div>
-
-      <!-- task card 2 -->
-      <div class="fd8-vcard fd8-vcard-2">
-        <div class="fd8-vcard-bar" style="background:linear-gradient(90deg,#F59E0B,#FCD34D)"></div>
-        <div class="fd8-vcard-body">
-          <div class="fd8-vcard-label" style="color:#D97706">Task 02</div>
-          <div class="fd8-vcard-title">กรอก Timesheet</div>
-          <div class="fd8-vcard-steps">
-            <span>📂</span><span class="fd8-step-arrow">→</span>
-            <span>✏️</span><span class="fd8-step-arrow">→</span>
-            <span>🖨️</span>
-          </div>
-        </div>
-        <div class="fd8-vcard-check" style="background:#FEF3C7;color:#D97706">✓</div>
-      </div>
-
-      <!-- welcome badge -->
-      <div class="fd8-badge">
-        <span class="fd8-badge-emoji">🎉</span>
-        <div>
-          <div class="fd8-badge-title">Day 1</div>
-          <div class="fd8-badge-sub">ยินดีต้อนรับสู่ทีม!</div>
-        </div>
-      </div>
-
-      <!-- time badge -->
-      <div class="fd8-time-badge">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        5 นาที
-      </div>
-
-      <!-- floating dots -->
-      <div class="fd8-fdot fd8-fdot-1"></div>
-      <div class="fd8-fdot fd8-fdot-2"></div>
-      <div class="fd8-fdot fd8-fdot-3"></div>
-
-    </div>
-  </div>
-
-  <!-- wave -->
-  <div class="fd8-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="#ffffff"/>
     </svg>
   </div>
+
+  <!-- ── GRADIENT OVERLAY so text is legible over scene ── -->
+  <div class="fdw-overlay" aria-hidden="true"></div>
+
+  <!-- ── CHAPTER OPENING TEXT ── -->
+  <div class="fdw-text">
+
+    <p class="fdw-chapter-tag">
+      <span class="fdw-tag-line"></span>
+      Chapter One &nbsp;·&nbsp; บทที่หนึ่ง
+    </p>
+
+    <h1 class="fdw-h1">
+      <span class="fdw-h1-intro">วันนี้คือ</span>
+      <span class="fdw-h1-main">วันแรก</span>
+      <span class="fdw-h1-place">ของคุณ ที่ <em>EXZY</em></span>
+    </h1>
+
+    <p class="fdw-lead">ไม่ต้องรู้ทุกอย่างในวันเดียว<br>แค่มาถึงก็พอ — ที่เหลือเราเตรียมไว้ให้แล้ว</p>
+
+    <a href="#fd3-sec1" class="fdw-cta">
+      เริ่มต้นวันแรก
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+  </div>
+
 </div>
 
 <!-- ══════════════ SECTION 1: Tasks ══════════════ -->
@@ -213,7 +187,71 @@ export function renderFirstDay(data = {}) {
   <div class="fd3-task-grid">
 
     <!-- Task 01: Calendar -->
-    <div class="fd3-task-card fdb-reveal fdb-delay1">
+    <div class="fd3-task-card fd3-task-card--cal fdb-reveal fdb-delay1">
+      <!-- illustrated calendar graphic — decorative background -->
+      <div class="fd3-card-graphic" aria-hidden="true">
+        <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg">
+          <!-- Calendar shell -->
+          <rect width="160" height="180" rx="14" fill="rgba(102,197,197,0.10)"/>
+          <!-- Top header bar -->
+          <rect width="160" height="44" rx="14" fill="rgba(102,197,197,0.30)"/>
+          <rect y="30" width="160" height="14" fill="rgba(102,197,197,0.30)"/>
+          <!-- Month label -->
+          <rect x="42" y="14" width="76" height="10" rx="5" fill="rgba(255,255,255,0.55)"/>
+          <!-- Nav chevrons -->
+          <path d="M18 18 L14 22 L18 26" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M142 18 L146 22 L142 26" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Day-of-week headers -->
+          <g fill="rgba(0,64,128,0.25)">
+            <rect x="8"   y="52" width="16" height="6" rx="3"/>
+            <rect x="30"  y="52" width="16" height="6" rx="3"/>
+            <rect x="52"  y="52" width="16" height="6" rx="3"/>
+            <rect x="74"  y="52" width="16" height="6" rx="3"/>
+            <rect x="96"  y="52" width="16" height="6" rx="3"/>
+            <rect x="118" y="52" width="16" height="6" rx="3"/>
+            <rect x="140" y="52" width="14" height="6" rx="3"/>
+          </g>
+          <!-- Week rows -->
+          <g fill="rgba(0,64,128,0.10)">
+            <rect x="8"   y="65" width="16" height="16" rx="4"/>
+            <rect x="30"  y="65" width="16" height="16" rx="4"/>
+            <rect x="52"  y="65" width="16" height="16" rx="4"/>
+            <rect x="74"  y="65" width="16" height="16" rx="4"/>
+            <rect x="96"  y="65" width="16" height="16" rx="4"/>
+            <rect x="118" y="65" width="16" height="16" rx="4"/>
+            <rect x="140" y="65" width="14" height="16" rx="4"/>
+
+            <rect x="8"   y="87" width="16" height="16" rx="4"/>
+            <rect x="30"  y="87" width="16" height="16" rx="4"/>
+            <!-- TODAY: highlighted -->
+            <rect x="52"  y="87" width="16" height="16" rx="4" fill="rgba(102,197,197,0.75)"/>
+            <rect x="74"  y="87" width="16" height="16" rx="4"/>
+            <rect x="96"  y="87" width="16" height="16" rx="4"/>
+            <rect x="118" y="87" width="16" height="16" rx="4"/>
+            <rect x="140" y="87" width="14" height="16" rx="4"/>
+
+            <rect x="8"   y="109" width="16" height="16" rx="4"/>
+            <rect x="30"  y="109" width="16" height="16" rx="4"/>
+            <rect x="52"  y="109" width="16" height="16" rx="4"/>
+            <rect x="74"  y="109" width="16" height="16" rx="4"/>
+            <rect x="96"  y="109" width="16" height="16" rx="4"/>
+            <rect x="118" y="109" width="16" height="16" rx="4"/>
+            <rect x="140" y="109" width="14" height="16" rx="4"/>
+
+            <rect x="8"   y="131" width="16" height="16" rx="4"/>
+            <rect x="30"  y="131" width="16" height="16" rx="4"/>
+            <rect x="52"  y="131" width="16" height="16" rx="4"/>
+            <rect x="74"  y="131" width="16" height="16" rx="4"/>
+            <rect x="96"  y="131" width="16" height="16" rx="4"/>
+          </g>
+          <!-- event dot on highlighted day -->
+          <circle cx="60" cy="95" r="3" fill="rgba(255,255,255,0.9)"/>
+          <!-- two event bars below grid -->
+          <rect x="8"  y="154" width="70" height="8" rx="4" fill="rgba(102,197,197,0.35)"/>
+          <rect x="84" y="154" width="50" height="8" rx="4" fill="rgba(0,64,128,0.18)"/>
+          <rect x="8"  y="166" width="55" height="8" rx="4" fill="rgba(0,64,128,0.12)"/>
+        </svg>
+      </div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#66C5C5">
@@ -229,17 +267,17 @@ export function renderFirstDay(data = {}) {
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 8 12 14 22 8"/></svg></div>
+            <div class="fd3-flow-icon">📧</div>
             <div class="fd3-flow-text">รับ Email<br>คำเชิญจาก HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <div class="fd3-flow-icon">📅</div>
             <div class="fd3-flow-text">กด<br>Open Calendar</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div class="fd3-flow-icon">✅</div>
             <div class="fd3-flow-text">กด Subscribe<br>ทั้ง 2 ปฏิทิน</div>
           </div>
         </div>
@@ -253,14 +291,68 @@ export function renderFirstDay(data = {}) {
     </div>
 
     <!-- Task 02: Timesheet -->
-    <div class="fd3-task-card fdb-reveal fdb-delay2">
+    <div class="fd3-task-card fd3-task-card--ts fdb-reveal fdb-delay2">
+      <!-- illustrated document/spreadsheet graphic -->
+      <div class="fd3-card-graphic" aria-hidden="true">
+        <svg viewBox="0 0 150 180" xmlns="http://www.w3.org/2000/svg">
+          <!-- Document with dog-ear corner -->
+          <polygon points="0,0 110,0 150,40 150,180 0,180" fill="rgba(0,64,128,0.09)"/>
+          <!-- Dog-ear fold -->
+          <polygon points="110,0 110,40 150,40" fill="rgba(0,64,128,0.18)"/>
+          <!-- Document header stripe -->
+          <rect width="110" height="30" fill="rgba(0,64,128,0.18)"/>
+          <!-- EXZY label bar in header -->
+          <rect x="12" y="10" width="55" height="8" rx="4" fill="rgba(102,197,197,0.55)"/>
+          <rect x="12" y="20" width="38" height="5" rx="2" fill="rgba(255,255,255,0.3)"/>
+          <!-- Column headers row -->
+          <rect x="8"  y="38" width="52" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
+          <rect x="66" y="38" width="28" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
+          <rect x="100" y="38" width="24" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
+          <!-- Data rows -->
+          <g fill="rgba(0,64,128,0.10)">
+            <rect x="8"  y="52" width="48" height="6" rx="2"/>
+            <rect x="66" y="52" width="22" height="6" rx="2"/>
+            <rect x="100" y="52" width="20" height="6" rx="2"/>
+
+            <rect x="8"  y="64" width="42" height="6" rx="2"/>
+            <rect x="66" y="64" width="26" height="6" rx="2"/>
+            <rect x="100" y="64" width="18" height="6" rx="2"/>
+
+            <rect x="8"  y="76" width="50" height="6" rx="2"/>
+            <rect x="66" y="76" width="20" height="6" rx="2"/>
+            <rect x="100" y="76" width="22" height="6" rx="2" fill="rgba(102,197,197,0.4)"/>
+
+            <rect x="8"  y="88" width="44" height="6" rx="2"/>
+            <rect x="66" y="88" width="24" height="6" rx="2"/>
+            <rect x="100" y="88" width="20" height="6" rx="2"/>
+
+            <rect x="8"  y="100" width="46" height="6" rx="2"/>
+            <rect x="66" y="100" width="22" height="6" rx="2"/>
+            <rect x="100" y="100" width="18" height="6" rx="2"/>
+          </g>
+          <!-- Divider -->
+          <line x1="6" y1="114" x2="144" y2="114" stroke="rgba(0,64,128,0.15)" stroke-width="1"/>
+          <!-- Total/footer row -->
+          <rect x="8"  y="120" width="62" height="7" rx="3" fill="rgba(0,64,128,0.16)"/>
+          <rect x="100" y="120" width="26" height="7" rx="3" fill="rgba(102,197,197,0.45)"/>
+          <!-- Signature lines -->
+          <line x1="8"  y1="140" x2="65" y2="140" stroke="rgba(0,64,128,0.2)" stroke-width="1.5"/>
+          <line x1="80" y1="140" x2="144" y2="140" stroke="rgba(0,64,128,0.2)" stroke-width="1.5"/>
+          <rect x="8"  y="144" width="32" height="4" rx="2" fill="rgba(0,64,128,0.1)"/>
+          <rect x="80" y="144" width="40" height="4" rx="2" fill="rgba(0,64,128,0.1)"/>
+          <!-- Approval stamp circle -->
+          <circle cx="118" cy="162" r="16" fill="none" stroke="rgba(102,197,197,0.45)" stroke-width="2"/>
+          <circle cx="118" cy="162" r="11" fill="none" stroke="rgba(102,197,197,0.25)" stroke-width="1" stroke-dasharray="3 2"/>
+          <rect x="110" y="159" width="16" height="6" rx="3" fill="rgba(102,197,197,0.4)"/>
+        </svg>
+      </div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#F59E0B">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
           <div>
-            <div class="fd3-task-num" style="color:#F59E0B">Task 02</div>
+            <div class="fd3-task-num" style="color:#004080">Task 02</div>
             <div class="fd3-task-name">กรอก Timesheet</div>
           </div>
         </div>
@@ -269,17 +361,17 @@ export function renderFirstDay(data = {}) {
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="fd3-flow-icon">📂</div>
             <div class="fd3-flow-text">รับไฟล์<br>Timesheet จาก HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+            <div class="fd3-flow-icon">✏️</div>
             <div class="fd3-flow-text">เปิดไฟล์<br>กรอกวันนี้</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+            <div class="fd3-flow-icon">🖨️</div>
             <div class="fd3-flow-text">พิมพ์ส่ง HR<br>สิ้นเดือน</div>
           </div>
         </div>
@@ -310,7 +402,28 @@ export function renderFirstDay(data = {}) {
         <div class="fd3-tl-tag">เริ่มต้นวัน</div>
         <div class="fd3-tl-title">Orientation</div>
         <p class="fd3-tl-sub">ปฐมนิเทศกับ HR รู้จัก EXZY และทุกสิ่งที่ต้องเตรียมก่อนเริ่มงาน</p>
-        <div class="fd3-tl-pills"><span>Overview EXZY</span><span>เอกสารและนโยบาย</span><span>ติดตั้ง Tools</span><span>Subscribe Calendar</span></div>
+        <div class="fd3-orientation-map" aria-label="Orientation flow">
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">🏢</span>
+            <strong>รู้จัก EXZY</strong>
+            <small>ภาพรวมบริษัทและวิธีทำงาน</small>
+          </div>
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">📄</span>
+            <strong>เอกสารสำคัญ</strong>
+            <small>นโยบายและข้อมูลที่ต้องรับทราบ</small>
+          </div>
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">💻</span>
+            <strong>ตั้งค่า Tools</strong>
+            <small>เตรียมเครื่องมือให้พร้อมใช้งาน</small>
+          </div>
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">📅</span>
+            <strong>ผูก Calendar</strong>
+            <small>รับนัดหมายบริษัทอัตโนมัติ</small>
+          </div>
+        </div>
         <div class="fd3-tl-quote">"ถามได้ทุกอย่าง — Orientation คือเวลาของคุณที่จะเก็บข้อมูลให้ครบ" <em>— HR Team</em></div>
       </div>
     </div>

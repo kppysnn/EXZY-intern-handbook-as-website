@@ -374,284 +374,173 @@
   // js/pages/home.js
   var renderHome = () => `
 
-<!-- \u2550\u2550 HERO \u2550\u2550 -->
-<section class="hmv3-hero">
-  <div class="hmv3-inner">
-    <div>
-      <div class="hmv3-kicker">
-        <span class="hmv3-kicker-dot"></span>
-        EXZY \xB7 Intern Handbook
-      </div>
-      <h1 class="hmv3-h1">
-        \u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E02\u0E2D\u0E07\u0E19\u0E31\u0E01\u0E28\u0E36\u0E01\u0E29\u0E32\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19<br/>
-        <span class="hmv3-h1-accent">\u0E17\u0E35\u0E48\u0E23\u0E27\u0E21\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E27\u0E49</span>
-      </h1>
-      <p class="hmv3-sub">\u0E23\u0E27\u0E21\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E08\u0E19\u0E16\u0E36\u0E07\u0E27\u0E31\u0E19\u0E2A\u0E38\u0E14\u0E17\u0E49\u0E32\u0E22</p>
-      <div class="hmv3-actions">
-        <a href="#/first-day" class="hmv3-btn-primary">
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          \u0E40\u0E1E\u0E34\u0E48\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01? \u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48
-          ${I.arrow}
+<!-- Welcome hero -->
+<section class="welcome-hero" aria-label="\u0E22\u0E34\u0E19\u0E14\u0E35\u0E15\u0E49\u0E2D\u0E19\u0E23\u0E31\u0E1A intern \u0E43\u0E2B\u0E21\u0E48">
+  <div class="welcome-hero-bg" aria-hidden="true"></div>
+
+  <div class="welcome-hero-inner">
+    <div class="welcome-copy">
+      <p class="welcome-kicker">
+        <span></span>
+        EXZY Intern Welcome
+      </p>
+      <h1>\u0E01\u0E49\u0E32\u0E27\u0E41\u0E23\u0E01\u0E17\u0E35\u0E48 EXZY \u0E04\u0E27\u0E23\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E21\u0E35\u0E04\u0E19\u0E23\u0E2D\u0E2D\u0E22\u0E39\u0E48</h1>
+      <p class="welcome-lead">\u0E40\u0E1B\u0E34\u0E14\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E32\u0E16\u0E36\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E41\u0E25\u0E49\u0E27\u0E04\u0E48\u0E2D\u0E22 \u0E46 \u0E15\u0E32\u0E21\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E08\u0E32\u0E01\u0E01\u0E32\u0E23\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21 \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
+      <div class="welcome-actions">
+        <a href="#/first-day" class="welcome-primary" data-link>
+          \u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
     </div>
 
-    <div class="hmv3-hero-visual" aria-hidden="true">
-      <div class="hmv3-hero-orb"></div>
-      <svg class="hmv3-hero-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="160" cy="160" r="148" stroke="rgba(102,197,197,0.14)" stroke-width="1" fill="none"/>
-        <circle cx="160" cy="160" r="110" stroke="rgba(102,197,197,0.09)" stroke-width="1" fill="none"/>
-        <circle cx="160" cy="160" r="72" fill="rgba(0,64,128,0.16)"/>
-        <circle cx="160" cy="160" r="44" fill="rgba(102,197,197,0.08)"/>
-        <text x="160" y="152" text-anchor="middle" fill="rgba(255,255,255,0.06)" font-size="40" font-family="Sora,system-ui,sans-serif" font-weight="800" letter-spacing="-1">EXZY</text>
-        <text x="160" y="172" text-anchor="middle" fill="rgba(102,197,197,0.18)" font-size="9.5" font-family="Sora,system-ui,sans-serif" font-weight="700" letter-spacing="3.5">INTERN</text>
-      </svg>
-      <div class="hmv3-hero-orbit hmv3-hero-orbit-1"><div class="hmv3-hero-dot"></div></div>
-      <div class="hmv3-hero-orbit hmv3-hero-orbit-2"><div class="hmv3-hero-dot hmv3-hero-dot-sm"></div></div>
-    </div>
+    <div class="welcome-scene" aria-hidden="true">
+      <svg viewBox="0 0 760 560" role="img" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="homeDesk" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F7FCFC"/>
+            <stop offset="100%" stop-color="#E7F5F7"/>
+          </linearGradient>
+          <linearGradient id="homeNavy" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#004081"/>
+            <stop offset="100%" stop-color="#002D5C"/>
+          </linearGradient>
+          <linearGradient id="homeTeal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#66C5C5"/>
+            <stop offset="100%" stop-color="#2A9FA7"/>
+          </linearGradient>
+          <filter id="homeSoftShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#004080" flood-opacity="0.16"/>
+          </filter>
+        </defs>
 
+        <path d="M76 162C133 55 300 18 430 51c132 33 230 139 248 264 18 127-43 255-157 298-116 44-287 8-384-76C40 454 19 270 76 162Z" fill="#EEF8FA"/>
+        <path d="M104 387C216 349 301 330 401 351c84 18 165 60 268 43v98c-90 54-214 70-335 50-98-16-176-52-230-84v-71Z" fill="#D8F0F2"/>
+
+        <g filter="url(#homeSoftShadow)">
+          <path d="M118 342 628 291l58 146-520 65-48-160Z" fill="url(#homeDesk)"/>
+          <path d="M118 342 628 291l13 32-514 61-9-42Z" fill="#FFFFFF" opacity=".82"/>
+        </g>
+
+        <g transform="rotate(-6 359 279)" filter="url(#homeSoftShadow)">
+          <rect x="240" y="156" width="255" height="170" rx="18" fill="#DDE8EF"/>
+          <rect x="256" y="171" width="223" height="132" rx="10" fill="url(#homeNavy)"/>
+          <path d="M276 205h82M276 232h138M276 259h102" stroke="#66C5C5" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+          <circle cx="443" cy="257" r="30" fill="#66C5C5" opacity=".24"/>
+          <path d="M293 329h154c18 0 33 13 37 31l4 17H255l5-18c5-18 15-30 33-30Z" fill="#C6D3DD"/>
+          <rect x="313" y="346" width="115" height="19" rx="8" fill="#AEBECD"/>
+        </g>
+
+        <g transform="rotate(8 190 360)" filter="url(#homeSoftShadow)">
+          <rect x="92" y="260" width="170" height="190" rx="14" fill="#FFFFFF"/>
+          <rect x="92" y="260" width="20" height="190" rx="10" fill="#66C5C5"/>
+          <path d="M131 304h91M131 333h104M131 362h76M131 402h98" stroke="#004080" stroke-width="5" stroke-linecap="round" opacity=".17"/>
+          <circle cx="213" cy="405" r="18" fill="#66C5C5" opacity=".25"/>
+        </g>
+
+        <g transform="rotate(-4 578 214)" filter="url(#homeSoftShadow)">
+          <rect x="518" y="118" width="142" height="158" rx="18" fill="#FFFFFF"/>
+          <rect x="518" y="118" width="142" height="42" rx="18" fill="url(#homeTeal)"/>
+          <rect x="518" y="146" width="142" height="18" fill="#66C5C5"/>
+          <g fill="#004080" opacity=".18">
+            <rect x="536" y="179" width="18" height="18" rx="5"/>
+            <rect x="565" y="179" width="18" height="18" rx="5"/>
+            <rect x="594" y="179" width="18" height="18" rx="5"/>
+            <rect x="623" y="179" width="18" height="18" rx="5"/>
+            <rect x="536" y="208" width="18" height="18" rx="5"/>
+            <rect x="565" y="208" width="18" height="18" rx="5"/>
+            <rect x="594" y="208" width="18" height="18" rx="5"/>
+            <rect x="623" y="208" width="18" height="18" rx="5"/>
+          </g>
+          <rect x="565" y="208" width="18" height="18" rx="5" fill="#004080" opacity=".64"/>
+        </g>
+
+        <g transform="rotate(7 547 407)" filter="url(#homeSoftShadow)">
+          <path d="M475 318h138l43 43v130H475V318Z" fill="#FFFFFF"/>
+          <path d="M613 318v43h43" fill="#DDE8EF"/>
+          <path d="M498 374h92M498 404h120M498 434h82" stroke="#004080" stroke-width="7" stroke-linecap="round" opacity=".16"/>
+          <rect x="594" y="426" width="38" height="25" rx="6" fill="#66C5C5" opacity=".32"/>
+        </g>
+
+        <g filter="url(#homeSoftShadow)">
+          <rect x="160" y="112" width="138" height="82" rx="18" fill="#FFFFFF"/>
+          <path d="M188 155c18-30 67-30 84 0" fill="none" stroke="#66C5C5" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="200" cy="144" r="15" fill="#004080" opacity=".82"/>
+          <circle cx="229" cy="132" r="18" fill="#66C5C5"/>
+          <circle cx="258" cy="145" r="15" fill="#707070"/>
+        </g>
+
+        <path d="M120 238c94-65 202-83 310-58 76 17 136 57 196 96" fill="none" stroke="#66C5C5" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 14" opacity=".65"/>
+        <circle cx="122" cy="238" r="8" fill="#66C5C5"/>
+        <circle cx="430" cy="180" r="8" fill="#004080"/>
+        <circle cx="626" cy="276" r="8" fill="#707070"/>
+      </svg>
+    </div>
   </div>
 </section>
 
-<!-- \u2550\u2550 CHAPTER BAR \u2550\u2550 -->
-<nav class="hmv3-chapters" aria-label="\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Intern Handbook">
-  <div class="hmv3-chapters-inner">
-    <a href="#/first-day" class="hmv3-chapter-item">
-      <span class="hmv3-chapter-dot" style="background:#66C5C5"></span>
-      <span class="hmv3-chapter-name">Day 1 Guide</span>
-      <span class="hmv3-chapter-badge">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48</span>
+<!-- Story path -->
+<section class="welcome-path" aria-labelledby="welcome-path-title">
+  <div class="welcome-section-head">
+    <h2 id="welcome-path-title">\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E48\u0E32\u0E19\u0E17\u0E31\u0E49\u0E07\u0E40\u0E27\u0E47\u0E1A\u0E43\u0E19\u0E04\u0E23\u0E31\u0E49\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27</h2>
+    <p>\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E2A\u0E16\u0E32\u0E19\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E23\u0E07\u0E2B\u0E19\u0E49\u0E32 \u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E21\u0E35\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E40\u0E25\u0E47\u0E01 \u0E46 \u0E1A\u0E19\u0E42\u0E15\u0E4A\u0E30\u0E17\u0E33\u0E07\u0E32\u0E19</p>
+  </div>
+
+  <div class="welcome-path-board">
+    <a href="#/first-day" class="welcome-path-piece piece-day" data-link>
+      <span class="piece-label">\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E21\u0E32\u0E16\u0E36\u0E07</span>
+      <h3>\u0E40\u0E14\u0E34\u0E19\u0E15\u0E32\u0E21 Day 1 Guide</h3>
+      <p>\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E0A\u0E49\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E2D\u0E30\u0E44\u0E23 \u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08 \u0E41\u0E25\u0E30\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21\u0E43\u0E04\u0E23</p>
     </a>
-    <a href="#/getting-started/orientation" class="hmv3-chapter-item">
-      <span class="hmv3-chapter-dot" style="background:#66C5C5"></span>
-      <span class="hmv3-chapter-name">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</span>
+    <a href="#/getting-started/wifi" class="welcome-path-piece piece-office" data-link>
+      <span class="piece-label">\u0E19\u0E31\u0E48\u0E07\u0E17\u0E35\u0E48\u0E42\u0E15\u0E4A\u0E30\u0E41\u0E25\u0E49\u0E27</span>
+      <h3>\u0E15\u0E48\u0E2D Wi-Fi \u0E41\u0E25\u0E30\u0E08\u0E2D\u0E07\u0E2B\u0E49\u0E2D\u0E07</h3>
+      <p>\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E17\u0E31\u0E19\u0E17\u0E35 \u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E25\u0E48\u0E16\u0E32\u0E21\u0E2B\u0E25\u0E32\u0E22\u0E23\u0E2D\u0E1A</p>
     </a>
-    <a href="#/employee/org-chart" class="hmv3-chapter-item">
-      <span class="hmv3-chapter-dot" style="background:#F59E0B"></span>
-      <span class="hmv3-chapter-name">\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</span>
+    <a href="#/policy/dress-code" class="welcome-path-piece piece-policy" data-link>
+      <span class="piece-label">\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E1E\u0E23\u0E38\u0E48\u0E07\u0E19\u0E35\u0E49</span>
+      <h3>\u0E40\u0E0A\u0E47\u0E01\u0E01\u0E15\u0E34\u0E01\u0E32\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</h3>
+      <p>Core Values, dress code, \u0E01\u0E32\u0E23\u0E25\u0E32 \u0E41\u0E25\u0E30\u0E02\u0E2D\u0E1A\u0E40\u0E02\u0E15\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E17\u0E33\u0E07\u0E32\u0E19\u0E23\u0E48\u0E27\u0E21\u0E01\u0E31\u0E19\u0E07\u0E48\u0E32\u0E22\u0E02\u0E36\u0E49\u0E19</p>
     </a>
-    <a href="#/policy/code-of-conduct" class="hmv3-chapter-item">
-      <span class="hmv3-chapter-dot" style="background:#3B82F6"></span>
-      <span class="hmv3-chapter-name">Work Policy</span>
-    </a>
-    <a href="#/resources/timesheet" class="hmv3-chapter-item">
-      <span class="hmv3-chapter-dot" style="background:#8B5CF6"></span>
-      <span class="hmv3-chapter-name">Resources & FAQs</span>
-    </a>
-    <a href="#/showcase/experiences" class="hmv3-chapter-item">
-      <span class="hmv3-chapter-dot" style="background:#EC4899"></span>
-      <span class="hmv3-chapter-name">Showcase</span>
+    <a href="#/showcase/experiences" class="welcome-path-piece piece-story" data-link>
+      <span class="piece-label">\u0E2D\u0E22\u0E32\u0E01\u0E40\u0E2B\u0E47\u0E19\u0E20\u0E32\u0E1E\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E08\u0E23\u0E34\u0E07</span>
+      <h3>\u0E2D\u0E48\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</h3>
+      <p>\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C \u0E27\u0E34\u0E18\u0E35\u0E04\u0E34\u0E14 \u0E41\u0E25\u0E30\u0E1A\u0E17\u0E40\u0E23\u0E35\u0E22\u0E19\u0E08\u0E32\u0E01\u0E04\u0E19\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E15\u0E23\u0E07\u0E08\u0E38\u0E14\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E31\u0E19</p>
     </a>
   </div>
-</nav>
+</section>
 
-
-<!-- \u2550\u2550 BENTO GRID \u2550\u2550 -->
-<div class="hmv3-bento-wrap">
-  <div class="hmv3-bento-inner">
-    <div class="hmv3-bento-header">
-      <h2 class="hmv3-bento-title">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49</h2>
+<!-- Quick objects -->
+<section class="welcome-objects" aria-labelledby="welcome-objects-title">
+  <div class="welcome-objects-inner">
+    <div class="welcome-object-copy">
+      <h2 id="welcome-objects-title">\u0E02\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E2B\u0E22\u0E34\u0E1A\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E27\u0E31\u0E19</h2>
+      <p>\u0E1A\u0E32\u0E07\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E48\u0E32\u0E19\u0E22\u0E32\u0E27 \u0E41\u0E04\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E2B\u0E49\u0E40\u0E08\u0E2D\u0E40\u0E23\u0E47\u0E27\u0E15\u0E2D\u0E19\u0E01\u0E33\u0E25\u0E31\u0E07\u0E17\u0E33\u0E07\u0E32\u0E19</p>
     </div>
-    <div class="hmv3-bento-grid">
-
-      <!-- Day 1 featured -->
-      <a href="#/first-day" class="hmv3-cell hmv3-cell--day1">
-        <div class="hmv3-day1-num">01 \xB7 Day 1 Guide</div>
-        <div class="hmv3-day1-icon">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        </div>
-        <h3 class="hmv3-day1-title">\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01?<br/>\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48\u0E40\u0E25\u0E22</h3>
-        <p class="hmv3-day1-sub">\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E41\u0E25\u0E30 4 \u0E0A\u0E48\u0E27\u0E07\u0E2A\u0E33\u0E04\u0E31\u0E0D\u0E17\u0E35\u0E48\u0E08\u0E30\u0E40\u0E01\u0E34\u0E14\u0E02\u0E36\u0E49\u0E19 \u2014 \u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E21\u0E32\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E42\u0E14\u0E22\u0E40\u0E09\u0E1E\u0E32\u0E30</p>
-        <div class="hmv3-day1-checklist">
-          <div class="hmv3-day1-check">
-            <div class="hmv3-day1-check-dot"></div>
-            <div class="hmv3-day1-check-text">
-              <span class="hmv3-day1-check-label">Orientation \u0E01\u0E31\u0E1A HR</span>
-              <span class="hmv3-day1-check-note">\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Tools \u0E23\u0E31\u0E1A\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23</span>
-            </div>
-          </div>
-          <div class="hmv3-day1-check">
-            <div class="hmv3-day1-check-dot"></div>
-            <div class="hmv3-day1-check-text">
-              <span class="hmv3-day1-check-label">Subscribe Google Calendar</span>
-              <span class="hmv3-day1-check-note">\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E42\u0E14\u0E22\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</span>
-            </div>
-          </div>
-          <div class="hmv3-day1-check">
-            <div class="hmv3-day1-check-dot"></div>
-            <div class="hmv3-day1-check-text">
-              <span class="hmv3-day1-check-label">\u0E01\u0E23\u0E2D\u0E01 Timesheet \u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</span>
-              <span class="hmv3-day1-check-note">\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32-\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07</span>
-            </div>
-          </div>
-        </div>
-        <span class="hmv3-day1-cta">
-          \u0E40\u0E1B\u0E34\u0E14 Day 1 Guide
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </span>
+    <div class="welcome-object-list">
+      <a href="#/resources/timesheet" data-link>
+        <span class="object-icon object-sheet"></span>
+        <strong>Timesheet</strong>
+        <small>\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E41\u0E25\u0E30\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07</small>
       </a>
-
-      <!-- Orientation -->
-      <div class="hmv3-cell" style="--cell-accent:#66C5C5">
-        <div class="hmv3-cell-head">
-          <div class="hmv3-cell-icon" style="background:rgba(102,197,197,.12);color:#0e7a7a;">${I.rocket}</div>
-        </div>
-        <div class="hmv3-cell-title">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
-        <div class="hmv3-cell-desc">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2A\u0E33\u0E04\u0E31\u0E0D\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</div>
-        <div class="hmv3-cell-links">
-          <a href="#/getting-started/orientation" class="hmv3-cell-link">${I.arrow} Orientation Slides</a>
-          <a href="#/getting-started/wifi" class="hmv3-cell-link">${I.arrow} Wi-Fi \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</a>
-          <a href="#/getting-started/meeting-rooms" class="hmv3-cell-link">${I.arrow} \u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21</a>
-        </div>
-      </div>
-
-      <!-- Company -->
-      <div class="hmv3-cell" style="--cell-accent:#F59E0B">
-        <div class="hmv3-cell-head">
-          <div class="hmv3-cell-icon" style="background:rgba(245,158,11,.12);color:#92400e;">${I.people}</div>
-        </div>
-        <div class="hmv3-cell-title">\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</div>
-        <div class="hmv3-cell-desc">\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23 9 \u0E41\u0E1C\u0E19\u0E01 \xB7 \u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E01\u0E32\u0E23\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19</div>
-        <div class="hmv3-cell-links">
-          <a href="#/employee/org-chart" class="hmv3-cell-link">${I.arrow} \u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</a>
-          <a href="#/employee/directory" class="hmv3-cell-link">${I.arrow} Employee Contact</a>
-        </div>
-      </div>
-
-      <!-- Policy -->
-      <div class="hmv3-cell" style="--cell-accent:#3B82F6">
-        <div class="hmv3-cell-head">
-          <div class="hmv3-cell-icon" style="background:rgba(59,130,246,.12);color:#1e3a8a;">${I.shield}</div>
-        </div>
-        <div class="hmv3-cell-title">Work Policy</div>
-        <div class="hmv3-cell-desc">5 Core Values \xB7 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \xB7 Dress Code \xB7 \u0E01\u0E32\u0E23\u0E25\u0E32</div>
-        <div class="hmv3-cell-links">
-          <a href="#/policy/code-of-conduct" class="hmv3-cell-link">${I.arrow} Core Values</a>
-          <a href="#/policy/internship" class="hmv3-cell-link">${I.arrow} Internship Policy</a>
-          <a href="#/policy/dress-code" class="hmv3-cell-link">${I.arrow} Dress Code</a>
-          <a href="#/policy/leave" class="hmv3-cell-link">${I.arrow} Leave & Absence</a>
-        </div>
-      </div>
-
-      <!-- Resources -->
-      <div class="hmv3-cell" style="--cell-accent:#8B5CF6">
-        <div class="hmv3-cell-head">
-          <div class="hmv3-cell-icon" style="background:rgba(139,92,246,.12);color:#4c1d95;">${I.clock}</div>
-        </div>
-        <div class="hmv3-cell-title">Resources</div>
-        <div class="hmv3-cell-desc">Timesheet \xB7 FAQs \xB7 \u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</div>
-        <div class="hmv3-cell-links">
-          <a href="#/resources/timesheet" class="hmv3-cell-link">${I.arrow} Timesheet</a>
-          <a href="#/resources/faqs" class="hmv3-cell-link">${I.arrow} FAQs</a>
-        </div>
-      </div>
-
-      <!-- Showcase -->
-      <div class="hmv3-showcase-wrap">
-        <div class="hmv3-showcase-top">
-          <div class="hmv3-showcase-title">\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E23\u0E32\u0E27 \u0E1A\u0E17\u0E40\u0E23\u0E35\u0E22\u0E19 \u0E41\u0E25\u0E30\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E1C\u0E39\u0E49\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY</div>
-        </div>
-        <div class="hmv3-showcase-articles">
-          <!-- Article card 1 \u2014 Experiences -->
-          <a href="#/showcase/experiences" class="hmv3-art-card">
-            <div class="hmv3-art-cover hmv3-art-cover-exp">
-              <div class="hmv3-art-cover-label">Experiences</div>
-              <svg viewBox="0 0 80 52" width="80" height="52" fill="none">
-                <circle cx="24" cy="26" r="18" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
-                <circle cx="24" cy="26" r="10" fill="rgba(102,197,197,.25)"/>
-                <circle cx="56" cy="26" r="12" stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
-                <circle cx="56" cy="26" r="6" fill="rgba(102,197,197,.15)"/>
-                <line x1="34" y1="26" x2="44" y2="26" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/>
-              </svg>
-            </div>
-            <div class="hmv3-art-body">
-              <div class="hmv3-art-tag hmv3-art-tag-exp">Experiences</div>
-              <div class="hmv3-art-title">\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E08\u0E32\u0E01 Intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19</div>
-              <div class="hmv3-art-desc">\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E41\u0E25\u0E30\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E04\u0E19\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY \u0E21\u0E32\u0E01\u0E48\u0E2D\u0E19</div>
-              <div class="hmv3-art-meta">
-                <span class="hmv3-art-read">\u0E14\u0E39\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14</span>
-                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </div>
-            </div>
-          </a>
-          <a href="#/showcase/blog" class="hmv3-art-card">
-            <div class="hmv3-art-cover hmv3-art-cover-blog">
-              <div class="hmv3-art-cover-label">Blog</div>
-              <svg viewBox="0 0 80 52" width="80" height="52" fill="none">
-                <rect x="10" y="12" width="48" height="7" rx="3.5" fill="rgba(255,255,255,.22)"/>
-                <rect x="10" y="24" width="34" height="5" rx="2.5" fill="rgba(255,255,255,.14)"/>
-                <rect x="10" y="34" width="22" height="4" rx="2" fill="rgba(255,255,255,.08)"/>
-              </svg>
-            </div>
-            <div class="hmv3-art-body">
-              <div class="hmv3-art-tag hmv3-art-tag-blog">Blog</div>
-              <div class="hmv3-art-title">\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E08\u0E32\u0E01 Intern</div>
-              <div class="hmv3-art-desc">\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49 \u0E40\u0E17\u0E04\u0E19\u0E34\u0E04 \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY</div>
-              <div class="hmv3-art-meta">
-                <span class="hmv3-art-read">\u0E14\u0E39\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14</span>
-                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- \u2550\u2550 QUICK LINKS \u2550\u2550 -->
-<div class="hmv3-ql-wrap">
-  <div class="hmv3-ql-inner">
-    <div class="hmv3-ql-header">
-      <div class="hmv3-ql-label">\u0E40\u0E1B\u0E34\u0E14\u0E1A\u0E48\u0E2D\u0E22</div>
-      <p class="hmv3-ql-sub">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48 intern \u0E04\u0E49\u0E19\u0E2B\u0E32\u0E1A\u0E48\u0E2D\u0E22\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14</p>
-    </div>
-    <div class="hmv3-ql-grid">
-      <a href="#/resources/timesheet" class="hmv3-ql-item">
-        <div class="hmv3-ql-text">
-          <span class="hmv3-ql-name">Timesheet</span>
-          <span class="hmv3-ql-hint">\u0E01\u0E23\u0E2D\u0E01 \xB7 \u0E41\u0E01\u0E49\u0E44\u0E02 \xB7 \u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</span>
-        </div>
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <a href="#/policy/leave" data-link>
+        <span class="object-icon object-leave"></span>
+        <strong>\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E25\u0E32</strong>
+        <small>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19 \u0E27\u0E31\u0E19\u0E25\u0E32 \u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07 HR</small>
       </a>
-      <a href="#/policy/leave" class="hmv3-ql-item">
-        <div class="hmv3-ql-text">
-          <span class="hmv3-ql-name">\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E25\u0E32</span>
-          <span class="hmv3-ql-hint">\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19 \xB7 \u0E27\u0E31\u0E19\u0E25\u0E32 \xB7 \u0E25\u0E32\u0E1B\u0E48\u0E27\u0E22</span>
-        </div>
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <a href="#/employee/directory" data-link>
+        <span class="object-icon object-people"></span>
+        <strong>Employee Contact</strong>
+        <small>\u0E2B\u0E32\u0E0A\u0E37\u0E48\u0E2D\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D</small>
       </a>
-      <a href="#/getting-started/wifi" class="hmv3-ql-item">
-        <div class="hmv3-ql-text">
-          <span class="hmv3-ql-name">Wi-Fi \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</span>
-          <span class="hmv3-ql-hint">SSID \xB7 Password \xB7 QR Code</span>
-        </div>
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#/employee/directory" class="hmv3-ql-item">
-        <div class="hmv3-ql-text">
-          <span class="hmv3-ql-name">Employee Contact</span>
-          <span class="hmv3-ql-hint">\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E17\u0E35\u0E21\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30\u0E41\u0E1C\u0E19\u0E01</span>
-        </div>
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#/policy/dress-code" class="hmv3-ql-item">
-        <div class="hmv3-ql-text">
-          <span class="hmv3-ql-name">Dress Code</span>
-          <span class="hmv3-ql-hint">\u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E17\u0E35\u0E48\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21</span>
-        </div>
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#/resources/faqs" class="hmv3-ql-item">
-        <div class="hmv3-ql-text">
-          <span class="hmv3-ql-name">FAQs</span>
-          <span class="hmv3-ql-hint">\u0E04\u0E33\u0E16\u0E32\u0E21\u0E1E\u0E1A\u0E1A\u0E48\u0E2D\u0E22 18+ \u0E02\u0E49\u0E2D</span>
-        </div>
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <a href="#/resources/faqs" data-link>
+        <span class="object-icon object-faq"></span>
+        <strong>FAQs</strong>
+        <small>\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48 intern \u0E40\u0E1B\u0E34\u0E14\u0E14\u0E39\u0E1A\u0E48\u0E2D\u0E22</small>
       </a>
     </div>
   </div>
-</div>
+</section>
 `;
 
   // js/pages/first-day.js
@@ -661,201 +550,175 @@
 <div class="fd3-page">
 
 <!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 HERO \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
-<div class="fd9-hero">
+<div class="fdw-hero">
 
-  <!-- bold CI color panel \u2014 right diagonal -->
-  <div class="fd9-panel" aria-hidden="true">
-    <div class="fd9-panel-orb fd9-porb-1"></div>
-    <div class="fd9-panel-orb fd9-porb-2"></div>
-    <!-- grid lines on panel -->
-    <div class="fd9-panel-grid"></div>
-  </div>
+  <!-- \u2500\u2500 ILLUSTRATED WORKSPACE SCENE \u2500\u2500 -->
+  <div class="fdw-scene" aria-hidden="true">
+    <svg viewBox="0 0 1440 580" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="fdw-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FDF8F0"/>
+          <stop offset="100%" stop-color="#F5EDD8"/>
+        </linearGradient>
+        <linearGradient id="fdw-desk" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E8C87A"/>
+          <stop offset="100%" stop-color="#C8A050"/>
+        </linearGradient>
+        <linearGradient id="fdw-screen" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1A2E52"/>
+          <stop offset="100%" stop-color="#0E1F3A"/>
+        </linearGradient>
+        <filter id="fdw-shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="rgba(60,30,0,0.18)"/>
+        </filter>
+        <filter id="fdw-soft" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="rgba(60,30,0,0.12)"/>
+        </filter>
+      </defs>
 
-  <!-- full-width top eyebrow bar -->
-  <div class="fd9-topbar">
-    <span class="fd9-topbar-dot"></span>
-    EXZY Internship
-    <span class="fd9-topbar-sep">\xB7</span>
-    \u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01
-    <span class="fd9-topbar-sep">\xB7</span>
-    Day 01
-  </div>
+      <!-- WALL -->
+      <rect width="1440" height="580" fill="url(#fdw-wall)"/>
 
-  <!-- main split -->
-  <div class="fd9-inner">
+      <!-- WINDOW \u2014 upper right, morning light -->
+      <rect x="980" y="30" width="210" height="270" rx="6" fill="#FEFCF5"/>
+      <rect x="980" y="30" width="210" height="270" rx="6" fill="none" stroke="#D4BE8A" stroke-width="8"/>
+      <line x1="980" y1="165" x2="1190" y2="165" stroke="#D4BE8A" stroke-width="4"/>
+      <line x1="1085" y1="30" x2="1085" y2="300" stroke="#D4BE8A" stroke-width="4"/>
+      <!-- morning light rays washing across wall -->
+      <polygon points="980,30 540,580 760,580 1190,30" fill="rgba(255,220,80,0.09)"/>
+      <polygon points="1085,30 640,580 820,580 1190,110" fill="rgba(255,220,80,0.06)"/>
+      <polygon points="1190,30 820,580 960,580 1190,80" fill="rgba(255,220,80,0.04)"/>
 
-    <!-- LEFT: white zone / large typography -->
-    <div class="fd9-left">
-      <h1 class="fd9-h1">
-        <span class="fd9-h1-a">\u0E22\u0E34\u0E19\u0E14\u0E35</span>
-        <span class="fd9-h1-b">\u0E15\u0E49\u0E2D\u0E19\u0E23\u0E31\u0E1A</span>
-        <span class="fd9-h1-c">\u0E2A\u0E39\u0E48\u0E17\u0E35\u0E21 <mark class="fd9-mark">EXZY</mark></span>
-      </h1>
+      <!-- WALL ART \u2014 small framed print left of window -->
+      <rect x="720" y="55" width="130" height="100" rx="4" fill="#EDE5D8" filter="url(#fdw-soft)"/>
+      <rect x="726" y="61" width="118" height="88" rx="2" fill="#F5EDE0"/>
+      <!-- abstract art: a few coloured shapes -->
+      <circle cx="765" cy="105" r="24" fill="rgba(102,197,197,0.35)"/>
+      <rect x="775" y="78" width="14" height="38" rx="3" fill="rgba(0,64,128,0.2)"/>
+      <ellipse cx="800" cy="115" rx="16" ry="10" fill="rgba(245,158,11,0.25)"/>
 
-      <p class="fd9-sub">\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E09\u0E1A\u0E31\u0E1A\u0E2A\u0E31\u0E49\u0E19 \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A intern \u0E27\u0E31\u0E19\u0E41\u0E23\u0E01<br>\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</p>
+      <!-- WALL SHELF + PLANT -->
+      <rect x="200" y="210" width="90" height="8" rx="2" fill="#C8B07A"/>
+      <rect x="224" y="182" width="28" height="30" rx="3" fill="#707070"/>
+      <ellipse cx="238" cy="178" rx="20" ry="28" fill="#66AA66" transform="rotate(-8,238,178)"/>
+      <ellipse cx="252" cy="172" rx="16" ry="22" fill="#55BB55" transform="rotate(18,252,172)"/>
+      <ellipse cx="224" cy="174" rx="14" ry="20" fill="#44A044" transform="rotate(-22,224,174)"/>
 
-      <div class="fd9-actions">
-        <a href="#fd3-sec1" class="fd9-btn" data-scroll-to="fd3-sec1">
-          \u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E40\u0E25\u0E22
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="fd9-pill-row">
-          <span class="fd9-pill">\u{1F4CB} 2 Tasks</span>
-          <span class="fd9-pill">\u23F1 5 \u0E19\u0E32\u0E17\u0E35</span>
-        </div>
-      </div>
-    </div>
+      <!-- DESK SURFACE \u2014 large, perspective trapezoid -->
+      <polygon points="0,330 1440,330 1440,580 0,580" fill="url(#fdw-desk)"/>
+      <!-- Desk edge highlight line -->
+      <line x1="0" y1="330" x2="1440" y2="330" stroke="#E8D090" stroke-width="3"/>
+      <!-- Very subtle wood grain -->
+      <line x1="0" y1="400" x2="1440" y2="398" stroke="rgba(160,110,30,0.06)" stroke-width="1.5"/>
+      <line x1="0" y1="470" x2="1440" y2="468" stroke="rgba(160,110,30,0.05)" stroke-width="1.5"/>
+      <!-- Desk mat under laptop -->
+      <rect x="350" y="325" width="480" height="240" rx="10" fill="rgba(0,40,80,0.06)" transform="rotate(-2,590,445)"/>
 
-    <!-- RIGHT: CI atmospheric panel -->
-    <div class="fd9-right">
+      <!-- LAPTOP \u2014 main focal object -->
+      <!-- Laptop lid/screen back -->
+      <rect x="380" y="198" width="360" height="238" rx="14" fill="#DEDAD4" filter="url(#fdw-shadow)" transform="rotate(-2,560,317)"/>
+      <!-- Screen bezel -->
+      <rect x="392" y="208" width="336" height="218" rx="8" fill="#1C1C2E" transform="rotate(-2,560,317)"/>
+      <!-- Screen display -->
+      <rect x="398" y="214" width="324" height="206" rx="6" fill="url(#fdw-screen)" transform="rotate(-2,560,317)"/>
+      <!-- Screen glow: subtle EXZY-blue content suggestion -->
+      <rect x="404" y="220" width="312" height="194" rx="4" fill="#243A5E" opacity="0.6" transform="rotate(-2,560,317)"/>
+      <!-- camera dot -->
+      <circle cx="561" cy="216" r="3.5" fill="#0A0A1A" transform="rotate(-2,561,216)"/>
+      <!-- Screen glare reflection -->
+      <ellipse cx="475" cy="268" rx="30" ry="10" fill="rgba(255,255,255,0.07)" transform="rotate(-2,560,317)"/>
+      <!-- Keyboard / base -->
+      <rect x="392" y="430" width="336" height="34" rx="8" fill="#CCCAC4" filter="url(#fdw-soft)" transform="rotate(-2,560,447)"/>
+      <!-- trackpad -->
+      <rect x="482" y="436" width="160" height="24" rx="6" fill="#C0BEB8" transform="rotate(-2,560,448)"/>
 
-      <!-- large day number (background anchor) -->
-      <div class="fd9-bignum" aria-hidden="true">01</div>
+      <!-- COFFEE MUG \u2014 right of laptop -->
+      <ellipse cx="868" cy="388" rx="42" ry="26" fill="#55B8B8"/>
+      <ellipse cx="868" cy="362" rx="42" ry="26" fill="#66C5C5"/>
+      <rect x="826" y="362" width="84" height="26" fill="#66C5C5"/>
+      <!-- Coffee liquid surface -->
+      <ellipse cx="868" cy="362" rx="32" ry="19" fill="#7B4A28"/>
+      <!-- Latte art suggestion -->
+      <path d="M858 358 Q868 352 878 358" fill="none" stroke="rgba(240,220,180,0.5)" stroke-width="2" stroke-linecap="round"/>
+      <!-- Handle -->
+      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#66C5C5" stroke-width="10" stroke-linecap="round"/>
+      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#7DD4D4" stroke-width="6" stroke-linecap="round"/>
+      <!-- Steam wisps -->
+      <path d="M854 352 Q858 336 853 320" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M868 348 Q873 330 868 312" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M882 352 Q887 336 882 320" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5" stroke-linecap="round"/>
 
-      <!-- orbital ring illustration -->
-      <div class="fd9-ring" aria-hidden="true">
-        <div class="fd9-ring-track fd9-ring-track-1"></div>
-        <div class="fd9-ring-track fd9-ring-track-2"></div>
-        <div class="fd9-ring-center"></div>
-        <div class="fd9-ring-spinner fd9-ring-spinner-1">
-          <div class="fd9-ring-dot"></div>
-        </div>
-        <div class="fd9-ring-spinner fd9-ring-spinner-2">
-          <div class="fd9-ring-dot fd9-ring-dot-sm"></div>
-        </div>
-      </div>
+      <!-- NOTEBOOK \u2014 left of laptop, slightly rotated -->
+      <rect x="80" y="345" width="220" height="175" rx="7" fill="#F0EAD8" filter="url(#fdw-shadow)" transform="rotate(6,190,432)"/>
+      <rect x="92" y="352" width="196" height="162" rx="4" fill="#FAFAF5" transform="rotate(6,190,432)"/>
+      <!-- Spiral spine -->
+      <rect x="80" y="345" width="14" height="175" rx="4" fill="#D4C48A" transform="rotate(6,190,432)"/>
+      <!-- Ruled lines -->
+      <line x1="106" y1="378" x2="278" y2="374" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="395" x2="278" y2="391" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="412" x2="278" y2="408" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="429" x2="278" y2="425" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="446" x2="278" y2="442" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <!-- Some handwriting/doodle suggestion -->
+      <path d="M115 385 Q140 380 155 390 Q165 398 160 408" fill="none" stroke="rgba(0,60,120,0.18)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
+      <line x1="115" y1="420" x2="185" y2="418" stroke="rgba(0,60,120,0.12)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
 
-      <!-- welcome badge -->
-      <div class="fd9-welcome">
-        <span class="fd9-welcome-emoji">\u{1F44B}</span>
-        <span>\u0E22\u0E34\u0E19\u0E14\u0E35\u0E15\u0E49\u0E2D\u0E19\u0E23\u0E31\u0E1A intern \u0E43\u0E2B\u0E21\u0E48!</span>
-      </div>
+      <!-- PEN beside notebook -->
+      <rect x="308" y="355" width="9" height="135" rx="4.5" fill="#0FA8A8" filter="url(#fdw-soft)" transform="rotate(10,312,422)"/>
+      <polygon points="312,350 307,340 317,340" fill="#0D9090" transform="rotate(10,312,345)"/>
+      <rect x="308" y="466" width="9" height="18" rx="4.5" fill="#0D9090" transform="rotate(10,312,475)"/>
 
-    </div>
-  </div>
+      <!-- DESK SUCCULENT \u2014 far right -->
+      <ellipse cx="1300" cy="460" rx="36" ry="22" fill="#707070"/>
+      <ellipse cx="1300" cy="438" rx="36" ry="22" fill="#888888"/>
+      <rect x="1264" y="438" width="72" height="22" fill="#888888"/>
+      <!-- Leaves -->
+      <ellipse cx="1300" cy="416" rx="16" ry="26" fill="#5AAA60"/>
+      <ellipse cx="1283" cy="416" rx="13" ry="20" fill="#4CAF54" transform="rotate(-28,1283,416)"/>
+      <ellipse cx="1317" cy="416" rx="13" ry="20" fill="#66BB6A" transform="rotate(28,1317,416)"/>
+      <ellipse cx="1291" cy="404" rx="10" ry="16" fill="#43A047" transform="rotate(-18,1291,404)"/>
+      <ellipse cx="1310" cy="404" rx="10" ry="16" fill="#388E3C" transform="rotate(18,1310,404)"/>
 
+      <!-- POST-IT NOTE on laptop screen edge -->
+      <rect x="666" y="318" width="52" height="44" rx="2" fill="#66C5C5" opacity="0.85" filter="url(#fdw-soft)" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="328" x2="712" y2="327" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="337" x2="712" y2="336" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="346" x2="700" y2="345" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
 
-</div>
-<div style="display:none"><!-- fd8 hero placeholder --></div>
-<div class="fd8-hero">
+      <!-- PHONE \u2014 right side of desk -->
+      <rect x="1060" y="378" width="70" height="118" rx="14" fill="#2A2838" filter="url(#fdw-soft)" transform="rotate(-6,1095,437)"/>
+      <rect x="1066" y="386" width="58" height="102" rx="9" fill="#1A1828" transform="rotate(-6,1095,437)"/>
+      <rect x="1078" y="480" width="30" height="4" rx="2" fill="rgba(255,255,255,0.2)" transform="rotate(-6,1095,482)"/>
 
-  <!-- bg gradient + texture -->
-  <div class="fd8-bg" aria-hidden="true"></div>
-
-  <!-- big decorative circle right -->
-  <div class="fd8-circle-deco" aria-hidden="true"></div>
-
-  <!-- split layout -->
-  <div class="fd8-split">
-
-    <!-- LEFT: text -->
-    <div class="fd8-left">
-
-      <div class="fd8-eyebrow">
-        <span class="fd8-dot"></span>
-        EXZY Internship &nbsp;\xB7&nbsp; \u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01
-      </div>
-
-      <h1 class="fd8-h1">
-        <span class="fd8-h1-light">\u0E22\u0E34\u0E19\u0E14\u0E35\u0E15\u0E49\u0E2D\u0E19\u0E23\u0E31\u0E1A</span>
-        <span class="fd8-h1-bold">\u0E2A\u0E39\u0E48\u0E17\u0E35\u0E21 <em>EXZY</em></span>
-      </h1>
-
-      <p class="fd8-sub">\u0E17\u0E33 2 tasks \u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49<br>\u0E2D\u0E48\u0E32\u0E19\u0E44\u0E14\u0E49\u0E20\u0E32\u0E22\u0E43\u0E19 5 \u0E19\u0E32\u0E17\u0E35</p>
-
-      <div class="fd8-actions">
-        <a href="#fd3-sec1" class="fd8-cta-main" data-scroll-to="fd3-sec1">
-          \u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E40\u0E25\u0E22
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#fd3-sec2" class="fd8-cta-ghost" data-scroll-to="fd3-sec2">\u0E14\u0E39\u0E15\u0E32\u0E23\u0E32\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</a>
-      </div>
-
-      <!-- stat row -->
-      <div class="fd8-stats">
-        <div class="fd8-stat">
-          <span class="fd8-stat-n">2</span>
-          <span class="fd8-stat-l">Tasks</span>
-        </div>
-        <div class="fd8-stat-sep"></div>
-        <div class="fd8-stat">
-          <span class="fd8-stat-n">4</span>
-          <span class="fd8-stat-l">\u0E0A\u0E48\u0E27\u0E07\u0E2A\u0E33\u0E04\u0E31\u0E0D</span>
-        </div>
-        <div class="fd8-stat-sep"></div>
-        <div class="fd8-stat">
-          <span class="fd8-stat-n">5</span>
-          <span class="fd8-stat-l">\u0E19\u0E32\u0E17\u0E35</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- RIGHT: visual panel -->
-    <div class="fd8-right" aria-hidden="true">
-
-      <!-- glow orb behind everything -->
-      <div class="fd8-glow-orb"></div>
-
-      <!-- task card 1 -->
-      <div class="fd8-vcard fd8-vcard-1">
-        <div class="fd8-vcard-bar" style="background:linear-gradient(90deg,#0FA8A8,#66C5C5)"></div>
-        <div class="fd8-vcard-body">
-          <div class="fd8-vcard-label" style="color:#0FA8A8">Task 01</div>
-          <div class="fd8-vcard-title">Subscribe Google Calendar</div>
-          <div class="fd8-vcard-steps">
-            <span>\u{1F4E7}</span><span class="fd8-step-arrow">\u2192</span>
-            <span>\u{1F4C5}</span><span class="fd8-step-arrow">\u2192</span>
-            <span>\u2705</span>
-          </div>
-        </div>
-        <div class="fd8-vcard-check">\u2713</div>
-      </div>
-
-      <!-- task card 2 -->
-      <div class="fd8-vcard fd8-vcard-2">
-        <div class="fd8-vcard-bar" style="background:linear-gradient(90deg,#F59E0B,#FCD34D)"></div>
-        <div class="fd8-vcard-body">
-          <div class="fd8-vcard-label" style="color:#D97706">Task 02</div>
-          <div class="fd8-vcard-title">\u0E01\u0E23\u0E2D\u0E01 Timesheet</div>
-          <div class="fd8-vcard-steps">
-            <span>\u{1F4C2}</span><span class="fd8-step-arrow">\u2192</span>
-            <span>\u270F\uFE0F</span><span class="fd8-step-arrow">\u2192</span>
-            <span>\u{1F5A8}\uFE0F</span>
-          </div>
-        </div>
-        <div class="fd8-vcard-check" style="background:#FEF3C7;color:#D97706">\u2713</div>
-      </div>
-
-      <!-- welcome badge -->
-      <div class="fd8-badge">
-        <span class="fd8-badge-emoji">\u{1F389}</span>
-        <div>
-          <div class="fd8-badge-title">Day 1</div>
-          <div class="fd8-badge-sub">\u0E22\u0E34\u0E19\u0E14\u0E35\u0E15\u0E49\u0E2D\u0E19\u0E23\u0E31\u0E1A\u0E2A\u0E39\u0E48\u0E17\u0E35\u0E21!</div>
-        </div>
-      </div>
-
-      <!-- time badge -->
-      <div class="fd8-time-badge">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        5 \u0E19\u0E32\u0E17\u0E35
-      </div>
-
-      <!-- floating dots -->
-      <div class="fd8-fdot fd8-fdot-1"></div>
-      <div class="fd8-fdot fd8-fdot-2"></div>
-      <div class="fd8-fdot fd8-fdot-3"></div>
-
-    </div>
-  </div>
-
-  <!-- wave -->
-  <div class="fd8-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="#ffffff"/>
     </svg>
   </div>
+
+  <!-- \u2500\u2500 GRADIENT OVERLAY so text is legible over scene \u2500\u2500 -->
+  <div class="fdw-overlay" aria-hidden="true"></div>
+
+  <!-- \u2500\u2500 CHAPTER OPENING TEXT \u2500\u2500 -->
+  <div class="fdw-text">
+
+    <p class="fdw-chapter-tag">
+      <span class="fdw-tag-line"></span>
+      Chapter One &nbsp;\xB7&nbsp; \u0E1A\u0E17\u0E17\u0E35\u0E48\u0E2B\u0E19\u0E36\u0E48\u0E07
+    </p>
+
+    <h1 class="fdw-h1">
+      <span class="fdw-h1-intro">\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D</span>
+      <span class="fdw-h1-main">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</span>
+      <span class="fdw-h1-place">\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13 \u0E17\u0E35\u0E48 <em>EXZY</em></span>
+    </h1>
+
+    <p class="fdw-lead">\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E43\u0E19\u0E27\u0E31\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27<br>\u0E41\u0E04\u0E48\u0E21\u0E32\u0E16\u0E36\u0E07\u0E01\u0E47\u0E1E\u0E2D \u2014 \u0E17\u0E35\u0E48\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E40\u0E23\u0E32\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E44\u0E27\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E25\u0E49\u0E27</p>
+
+    <a href="#fd3-sec1" class="fdw-cta">
+      \u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+  </div>
+
 </div>
 
 <!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 SECTION 1: Tasks \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
@@ -869,7 +732,71 @@
   <div class="fd3-task-grid">
 
     <!-- Task 01: Calendar -->
-    <div class="fd3-task-card fdb-reveal fdb-delay1">
+    <div class="fd3-task-card fd3-task-card--cal fdb-reveal fdb-delay1">
+      <!-- illustrated calendar graphic \u2014 decorative background -->
+      <div class="fd3-card-graphic" aria-hidden="true">
+        <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg">
+          <!-- Calendar shell -->
+          <rect width="160" height="180" rx="14" fill="rgba(102,197,197,0.10)"/>
+          <!-- Top header bar -->
+          <rect width="160" height="44" rx="14" fill="rgba(102,197,197,0.30)"/>
+          <rect y="30" width="160" height="14" fill="rgba(102,197,197,0.30)"/>
+          <!-- Month label -->
+          <rect x="42" y="14" width="76" height="10" rx="5" fill="rgba(255,255,255,0.55)"/>
+          <!-- Nav chevrons -->
+          <path d="M18 18 L14 22 L18 26" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M142 18 L146 22 L142 26" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Day-of-week headers -->
+          <g fill="rgba(0,64,128,0.25)">
+            <rect x="8"   y="52" width="16" height="6" rx="3"/>
+            <rect x="30"  y="52" width="16" height="6" rx="3"/>
+            <rect x="52"  y="52" width="16" height="6" rx="3"/>
+            <rect x="74"  y="52" width="16" height="6" rx="3"/>
+            <rect x="96"  y="52" width="16" height="6" rx="3"/>
+            <rect x="118" y="52" width="16" height="6" rx="3"/>
+            <rect x="140" y="52" width="14" height="6" rx="3"/>
+          </g>
+          <!-- Week rows -->
+          <g fill="rgba(0,64,128,0.10)">
+            <rect x="8"   y="65" width="16" height="16" rx="4"/>
+            <rect x="30"  y="65" width="16" height="16" rx="4"/>
+            <rect x="52"  y="65" width="16" height="16" rx="4"/>
+            <rect x="74"  y="65" width="16" height="16" rx="4"/>
+            <rect x="96"  y="65" width="16" height="16" rx="4"/>
+            <rect x="118" y="65" width="16" height="16" rx="4"/>
+            <rect x="140" y="65" width="14" height="16" rx="4"/>
+
+            <rect x="8"   y="87" width="16" height="16" rx="4"/>
+            <rect x="30"  y="87" width="16" height="16" rx="4"/>
+            <!-- TODAY: highlighted -->
+            <rect x="52"  y="87" width="16" height="16" rx="4" fill="rgba(102,197,197,0.75)"/>
+            <rect x="74"  y="87" width="16" height="16" rx="4"/>
+            <rect x="96"  y="87" width="16" height="16" rx="4"/>
+            <rect x="118" y="87" width="16" height="16" rx="4"/>
+            <rect x="140" y="87" width="14" height="16" rx="4"/>
+
+            <rect x="8"   y="109" width="16" height="16" rx="4"/>
+            <rect x="30"  y="109" width="16" height="16" rx="4"/>
+            <rect x="52"  y="109" width="16" height="16" rx="4"/>
+            <rect x="74"  y="109" width="16" height="16" rx="4"/>
+            <rect x="96"  y="109" width="16" height="16" rx="4"/>
+            <rect x="118" y="109" width="16" height="16" rx="4"/>
+            <rect x="140" y="109" width="14" height="16" rx="4"/>
+
+            <rect x="8"   y="131" width="16" height="16" rx="4"/>
+            <rect x="30"  y="131" width="16" height="16" rx="4"/>
+            <rect x="52"  y="131" width="16" height="16" rx="4"/>
+            <rect x="74"  y="131" width="16" height="16" rx="4"/>
+            <rect x="96"  y="131" width="16" height="16" rx="4"/>
+          </g>
+          <!-- event dot on highlighted day -->
+          <circle cx="60" cy="95" r="3" fill="rgba(255,255,255,0.9)"/>
+          <!-- two event bars below grid -->
+          <rect x="8"  y="154" width="70" height="8" rx="4" fill="rgba(102,197,197,0.35)"/>
+          <rect x="84" y="154" width="50" height="8" rx="4" fill="rgba(0,64,128,0.18)"/>
+          <rect x="8"  y="166" width="55" height="8" rx="4" fill="rgba(0,64,128,0.12)"/>
+        </svg>
+      </div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#66C5C5">
@@ -885,17 +812,17 @@
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 8 12 14 22 8"/></svg></div>
+            <div class="fd3-flow-icon">\u{1F4E7}</div>
             <div class="fd3-flow-text">\u0E23\u0E31\u0E1A Email<br>\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E08\u0E32\u0E01 HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <div class="fd3-flow-icon">\u{1F4C5}</div>
             <div class="fd3-flow-text">\u0E01\u0E14<br>Open Calendar</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div class="fd3-flow-icon">\u2705</div>
             <div class="fd3-flow-text">\u0E01\u0E14 Subscribe<br>\u0E17\u0E31\u0E49\u0E07 2 \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</div>
           </div>
         </div>
@@ -909,14 +836,68 @@
     </div>
 
     <!-- Task 02: Timesheet -->
-    <div class="fd3-task-card fdb-reveal fdb-delay2">
+    <div class="fd3-task-card fd3-task-card--ts fdb-reveal fdb-delay2">
+      <!-- illustrated document/spreadsheet graphic -->
+      <div class="fd3-card-graphic" aria-hidden="true">
+        <svg viewBox="0 0 150 180" xmlns="http://www.w3.org/2000/svg">
+          <!-- Document with dog-ear corner -->
+          <polygon points="0,0 110,0 150,40 150,180 0,180" fill="rgba(0,64,128,0.09)"/>
+          <!-- Dog-ear fold -->
+          <polygon points="110,0 110,40 150,40" fill="rgba(0,64,128,0.18)"/>
+          <!-- Document header stripe -->
+          <rect width="110" height="30" fill="rgba(0,64,128,0.18)"/>
+          <!-- EXZY label bar in header -->
+          <rect x="12" y="10" width="55" height="8" rx="4" fill="rgba(102,197,197,0.55)"/>
+          <rect x="12" y="20" width="38" height="5" rx="2" fill="rgba(255,255,255,0.3)"/>
+          <!-- Column headers row -->
+          <rect x="8"  y="38" width="52" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
+          <rect x="66" y="38" width="28" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
+          <rect x="100" y="38" width="24" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
+          <!-- Data rows -->
+          <g fill="rgba(0,64,128,0.10)">
+            <rect x="8"  y="52" width="48" height="6" rx="2"/>
+            <rect x="66" y="52" width="22" height="6" rx="2"/>
+            <rect x="100" y="52" width="20" height="6" rx="2"/>
+
+            <rect x="8"  y="64" width="42" height="6" rx="2"/>
+            <rect x="66" y="64" width="26" height="6" rx="2"/>
+            <rect x="100" y="64" width="18" height="6" rx="2"/>
+
+            <rect x="8"  y="76" width="50" height="6" rx="2"/>
+            <rect x="66" y="76" width="20" height="6" rx="2"/>
+            <rect x="100" y="76" width="22" height="6" rx="2" fill="rgba(102,197,197,0.4)"/>
+
+            <rect x="8"  y="88" width="44" height="6" rx="2"/>
+            <rect x="66" y="88" width="24" height="6" rx="2"/>
+            <rect x="100" y="88" width="20" height="6" rx="2"/>
+
+            <rect x="8"  y="100" width="46" height="6" rx="2"/>
+            <rect x="66" y="100" width="22" height="6" rx="2"/>
+            <rect x="100" y="100" width="18" height="6" rx="2"/>
+          </g>
+          <!-- Divider -->
+          <line x1="6" y1="114" x2="144" y2="114" stroke="rgba(0,64,128,0.15)" stroke-width="1"/>
+          <!-- Total/footer row -->
+          <rect x="8"  y="120" width="62" height="7" rx="3" fill="rgba(0,64,128,0.16)"/>
+          <rect x="100" y="120" width="26" height="7" rx="3" fill="rgba(102,197,197,0.45)"/>
+          <!-- Signature lines -->
+          <line x1="8"  y1="140" x2="65" y2="140" stroke="rgba(0,64,128,0.2)" stroke-width="1.5"/>
+          <line x1="80" y1="140" x2="144" y2="140" stroke="rgba(0,64,128,0.2)" stroke-width="1.5"/>
+          <rect x="8"  y="144" width="32" height="4" rx="2" fill="rgba(0,64,128,0.1)"/>
+          <rect x="80" y="144" width="40" height="4" rx="2" fill="rgba(0,64,128,0.1)"/>
+          <!-- Approval stamp circle -->
+          <circle cx="118" cy="162" r="16" fill="none" stroke="rgba(102,197,197,0.45)" stroke-width="2"/>
+          <circle cx="118" cy="162" r="11" fill="none" stroke="rgba(102,197,197,0.25)" stroke-width="1" stroke-dasharray="3 2"/>
+          <rect x="110" y="159" width="16" height="6" rx="3" fill="rgba(102,197,197,0.4)"/>
+        </svg>
+      </div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#F59E0B">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
           <div>
-            <div class="fd3-task-num" style="color:#F59E0B">Task 02</div>
+            <div class="fd3-task-num" style="color:#004080">Task 02</div>
             <div class="fd3-task-name">\u0E01\u0E23\u0E2D\u0E01 Timesheet</div>
           </div>
         </div>
@@ -925,17 +906,17 @@
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="fd3-flow-icon">\u{1F4C2}</div>
             <div class="fd3-flow-text">\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C<br>Timesheet \u0E08\u0E32\u0E01 HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+            <div class="fd3-flow-icon">\u270F\uFE0F</div>
             <div class="fd3-flow-text">\u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C<br>\u0E01\u0E23\u0E2D\u0E01\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+            <div class="fd3-flow-icon">\u{1F5A8}\uFE0F</div>
             <div class="fd3-flow-text">\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR<br>\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</div>
           </div>
         </div>
@@ -966,7 +947,28 @@
         <div class="fd3-tl-tag">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E27\u0E31\u0E19</div>
         <div class="fd3-tl-title">Orientation</div>
         <p class="fd3-tl-sub">\u0E1B\u0E10\u0E21\u0E19\u0E34\u0E40\u0E17\u0E28\u0E01\u0E31\u0E1A HR \u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E41\u0E25\u0E30\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E07\u0E32\u0E19</p>
-        <div class="fd3-tl-pills"><span>Overview EXZY</span><span>\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E41\u0E25\u0E30\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22</span><span>\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07 Tools</span><span>Subscribe Calendar</span></div>
+        <div class="fd3-orientation-map" aria-label="Orientation flow">
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">\u{1F3E2}</span>
+            <strong>\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY</strong>
+            <small>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E41\u0E25\u0E30\u0E27\u0E34\u0E18\u0E35\u0E17\u0E33\u0E07\u0E32\u0E19</small>
+          </div>
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">\u{1F4C4}</span>
+            <strong>\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E2A\u0E33\u0E04\u0E31\u0E0D</strong>
+            <small>\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E31\u0E1A\u0E17\u0E23\u0E32\u0E1A</small>
+          </div>
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">\u{1F4BB}</span>
+            <strong>\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Tools</strong>
+            <small>\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E43\u0E2B\u0E49\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19</small>
+          </div>
+          <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">\u{1F4C5}</span>
+            <strong>\u0E1C\u0E39\u0E01 Calendar</strong>
+            <small>\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</small>
+          </div>
+        </div>
         <div class="fd3-tl-quote">"\u0E16\u0E32\u0E21\u0E44\u0E14\u0E49\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07 \u2014 Orientation \u0E04\u0E37\u0E2D\u0E40\u0E27\u0E25\u0E32\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E17\u0E35\u0E48\u0E08\u0E30\u0E40\u0E01\u0E47\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A" <em>\u2014 HR Team</em></div>
       </div>
     </div>
