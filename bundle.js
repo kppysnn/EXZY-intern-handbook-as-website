@@ -383,105 +383,73 @@
         EXZY \xB7 Intern Handbook
       </div>
       <h1 class="hmv3-h1">
-        \u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19<br/>
-        <span class="hmv3-h1-grad">\u0E17\u0E35\u0E48\u0E23\u0E27\u0E21\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E27\u0E49</span>
+        \u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E02\u0E2D\u0E07\u0E19\u0E31\u0E01\u0E28\u0E36\u0E01\u0E29\u0E32\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19<br/>
+        <span class="hmv3-h1-accent">\u0E17\u0E35\u0E48\u0E23\u0E27\u0E21\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E27\u0E49</span>
       </h1>
-      <p class="hmv3-sub">\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E08\u0E19\u0E27\u0E31\u0E19\u0E2A\u0E38\u0E14\u0E17\u0E49\u0E32\u0E22 \u2014 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D \u0E17\u0E35\u0E21\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E30\u0E17\u0E38\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY \u0E2D\u0E22\u0E48\u0E32\u0E07\u0E21\u0E31\u0E48\u0E19\u0E43\u0E08</p>
+      <p class="hmv3-sub">\u0E23\u0E27\u0E21\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E08\u0E19\u0E16\u0E36\u0E07\u0E27\u0E31\u0E19\u0E2A\u0E38\u0E14\u0E17\u0E49\u0E32\u0E22</p>
       <div class="hmv3-actions">
         <a href="#/first-day" class="hmv3-btn-primary">
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           \u0E40\u0E1E\u0E34\u0E48\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01? \u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48
           ${I.arrow}
         </a>
-        <a href="#/policy" class="hmv3-btn-ghost">\u0E2A\u0E33\u0E23\u0E27\u0E08\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D ${I.arrow}</a>
       </div>
-
     </div>
 
-    <div class="hmv3-index">
-      <div class="hmv3-index-header">${I.book} Intern Handbook \xB7 \u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D</div>
-      <a href="#/first-day" class="hmv3-index-item">
-        <span class="hmv3-index-num">01</span>
-        <span class="hmv3-index-dot" style="background:#66C5C5"></span>
-        <span class="hmv3-index-lbl">Day 1 Guide</span>
-        <span class="hmv3-index-badge">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/getting-started/orientation" class="hmv3-index-item">
-        <span class="hmv3-index-num">02</span>
-        <span class="hmv3-index-dot" style="background:#66C5C5"></span>
-        <span class="hmv3-index-lbl">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/employee/org-chart" class="hmv3-index-item">
-        <span class="hmv3-index-num">03</span>
-        <span class="hmv3-index-dot" style="background:#F59E0B"></span>
-        <span class="hmv3-index-lbl">\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/policy/code-of-conduct" class="hmv3-index-item">
-        <span class="hmv3-index-num">04</span>
-        <span class="hmv3-index-dot" style="background:#3B82F6"></span>
-        <span class="hmv3-index-lbl">Work Policy</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/resources/timesheet" class="hmv3-index-item">
-        <span class="hmv3-index-num">05</span>
-        <span class="hmv3-index-dot" style="background:#8B5CF6"></span>
-        <span class="hmv3-index-lbl">Resources & FAQs</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/showcase/experiences" class="hmv3-index-item">
-        <span class="hmv3-index-num">06</span>
-        <span class="hmv3-index-dot" style="background:#EC4899"></span>
-        <span class="hmv3-index-lbl">Showcase & \u0E1C\u0E25\u0E07\u0E32\u0E19\u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
+    <div class="hmv3-hero-visual" aria-hidden="true">
+      <div class="hmv3-hero-orb"></div>
+      <svg class="hmv3-hero-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="160" cy="160" r="148" stroke="rgba(102,197,197,0.14)" stroke-width="1" fill="none"/>
+        <circle cx="160" cy="160" r="110" stroke="rgba(102,197,197,0.09)" stroke-width="1" fill="none"/>
+        <circle cx="160" cy="160" r="72" fill="rgba(0,64,128,0.16)"/>
+        <circle cx="160" cy="160" r="44" fill="rgba(102,197,197,0.08)"/>
+        <text x="160" y="152" text-anchor="middle" fill="rgba(255,255,255,0.06)" font-size="40" font-family="Sora,system-ui,sans-serif" font-weight="800" letter-spacing="-1">EXZY</text>
+        <text x="160" y="172" text-anchor="middle" fill="rgba(102,197,197,0.18)" font-size="9.5" font-family="Sora,system-ui,sans-serif" font-weight="700" letter-spacing="3.5">INTERN</text>
+      </svg>
+      <div class="hmv3-hero-orbit hmv3-hero-orbit-1"><div class="hmv3-hero-dot"></div></div>
+      <div class="hmv3-hero-orbit hmv3-hero-orbit-2"><div class="hmv3-hero-dot hmv3-hero-dot-sm"></div></div>
     </div>
+
   </div>
 </section>
 
-<!-- \u2550\u2550 TICKER (running menu) \u2550\u2550 -->
-<div class="hmv3-ticker-wrap" aria-hidden="true">
-  <div class="hmv3-ticker-track">
-    <a href="#/first-day" class="hmv3-ticker-item">${I.arrow} Day 1 Guide</a>
-    <a href="#/getting-started/orientation" class="hmv3-ticker-item">${I.arrow} Orientation</a>
-    <a href="#/getting-started/wifi" class="hmv3-ticker-item">${I.arrow} Wi-Fi \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</a>
-    <a href="#/getting-started/meeting-rooms" class="hmv3-ticker-item">${I.arrow} \u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21</a>
-    <a href="#/employee/org-chart" class="hmv3-ticker-item">${I.arrow} \u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</a>
-    <a href="#/employee/directory" class="hmv3-ticker-item">${I.arrow} Employee Contact</a>
-    <a href="#/policy/code-of-conduct" class="hmv3-ticker-item">${I.arrow} Core Values</a>
-    <a href="#/policy/internship" class="hmv3-ticker-item">${I.arrow} \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</a>
-    <a href="#/policy/dress-code" class="hmv3-ticker-item">${I.arrow} Dress Code</a>
-    <a href="#/policy/leave" class="hmv3-ticker-item">${I.arrow} \u0E01\u0E32\u0E23\u0E02\u0E2D\u0E25\u0E32</a>
-    <a href="#/resources/timesheet" class="hmv3-ticker-item">${I.arrow} Timesheet</a>
-    <a href="#/resources/faqs" class="hmv3-ticker-item">${I.arrow} FAQs</a>
-    <a href="#/showcase/experiences" class="hmv3-ticker-item">${I.arrow} Showcase</a>
-    <!-- duplicate for seamless loop -->
-    <a href="#/first-day" class="hmv3-ticker-item">${I.arrow} Day 1 Guide</a>
-    <a href="#/getting-started/orientation" class="hmv3-ticker-item">${I.arrow} Orientation</a>
-    <a href="#/getting-started/wifi" class="hmv3-ticker-item">${I.arrow} Wi-Fi \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</a>
-    <a href="#/getting-started/meeting-rooms" class="hmv3-ticker-item">${I.arrow} \u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21</a>
-    <a href="#/employee/org-chart" class="hmv3-ticker-item">${I.arrow} \u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</a>
-    <a href="#/employee/directory" class="hmv3-ticker-item">${I.arrow} Employee Contact</a>
-    <a href="#/policy/code-of-conduct" class="hmv3-ticker-item">${I.arrow} Core Values</a>
-    <a href="#/policy/internship" class="hmv3-ticker-item">${I.arrow} \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</a>
-    <a href="#/policy/dress-code" class="hmv3-ticker-item">${I.arrow} Dress Code</a>
-    <a href="#/policy/leave" class="hmv3-ticker-item">${I.arrow} \u0E01\u0E32\u0E23\u0E02\u0E2D\u0E25\u0E32</a>
-    <a href="#/resources/timesheet" class="hmv3-ticker-item">${I.arrow} Timesheet</a>
-    <a href="#/resources/faqs" class="hmv3-ticker-item">${I.arrow} FAQs</a>
-    <a href="#/showcase/experiences" class="hmv3-ticker-item">${I.arrow} Showcase</a>
+<!-- \u2550\u2550 CHAPTER BAR \u2550\u2550 -->
+<nav class="hmv3-chapters" aria-label="\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Intern Handbook">
+  <div class="hmv3-chapters-inner">
+    <a href="#/first-day" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#66C5C5"></span>
+      <span class="hmv3-chapter-name">Day 1 Guide</span>
+      <span class="hmv3-chapter-badge">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48</span>
+    </a>
+    <a href="#/getting-started/orientation" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#66C5C5"></span>
+      <span class="hmv3-chapter-name">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</span>
+    </a>
+    <a href="#/employee/org-chart" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#F59E0B"></span>
+      <span class="hmv3-chapter-name">\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</span>
+    </a>
+    <a href="#/policy/code-of-conduct" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#3B82F6"></span>
+      <span class="hmv3-chapter-name">Work Policy</span>
+    </a>
+    <a href="#/resources/timesheet" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#8B5CF6"></span>
+      <span class="hmv3-chapter-name">Resources & FAQs</span>
+    </a>
+    <a href="#/showcase/experiences" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#EC4899"></span>
+      <span class="hmv3-chapter-name">Showcase</span>
+    </a>
   </div>
-</div>
+</nav>
+
 
 <!-- \u2550\u2550 BENTO GRID \u2550\u2550 -->
 <div class="hmv3-bento-wrap">
   <div class="hmv3-bento-inner">
     <div class="hmv3-bento-header">
-      <div>
-        <div class="hmv3-bento-eyebrow">\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Handbook</div>
-        <h2 class="hmv3-bento-title">\u0E17\u0E38\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49</h2>
-      </div>
+      <h2 class="hmv3-bento-title">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49</h2>
     </div>
     <div class="hmv3-bento-grid">
 
@@ -525,11 +493,10 @@
       <!-- Orientation -->
       <div class="hmv3-cell" style="--cell-accent:#66C5C5">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">02</span>
           <div class="hmv3-cell-icon" style="background:rgba(102,197,197,.12);color:#0e7a7a;">${I.rocket}</div>
         </div>
         <div class="hmv3-cell-title">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
-        <div class="hmv3-cell-desc">Slides \xB7 Wi-Fi \xB7 \u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21 4 \u0E2B\u0E49\u0E2D\u0E07 \u2014 \u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
+        <div class="hmv3-cell-desc">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2A\u0E33\u0E04\u0E31\u0E0D\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</div>
         <div class="hmv3-cell-links">
           <a href="#/getting-started/orientation" class="hmv3-cell-link">${I.arrow} Orientation Slides</a>
           <a href="#/getting-started/wifi" class="hmv3-cell-link">${I.arrow} Wi-Fi \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</a>
@@ -540,7 +507,6 @@
       <!-- Company -->
       <div class="hmv3-cell" style="--cell-accent:#F59E0B">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">03</span>
           <div class="hmv3-cell-icon" style="background:rgba(245,158,11,.12);color:#92400e;">${I.people}</div>
         </div>
         <div class="hmv3-cell-title">\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</div>
@@ -554,7 +520,6 @@
       <!-- Policy -->
       <div class="hmv3-cell" style="--cell-accent:#3B82F6">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">04</span>
           <div class="hmv3-cell-icon" style="background:rgba(59,130,246,.12);color:#1e3a8a;">${I.shield}</div>
         </div>
         <div class="hmv3-cell-title">Work Policy</div>
@@ -570,11 +535,10 @@
       <!-- Resources -->
       <div class="hmv3-cell" style="--cell-accent:#8B5CF6">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">05</span>
           <div class="hmv3-cell-icon" style="background:rgba(139,92,246,.12);color:#4c1d95;">${I.clock}</div>
         </div>
         <div class="hmv3-cell-title">Resources</div>
-        <div class="hmv3-cell-desc">Timesheet \xB7 FAQs 18+ \u0E02\u0E49\u0E2D \xB7 \u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E1A\u0E48\u0E2D\u0E22\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</div>
+        <div class="hmv3-cell-desc">Timesheet \xB7 FAQs \xB7 \u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</div>
         <div class="hmv3-cell-links">
           <a href="#/resources/timesheet" class="hmv3-cell-link">${I.arrow} Timesheet</a>
           <a href="#/resources/faqs" class="hmv3-cell-link">${I.arrow} FAQs</a>
@@ -584,8 +548,7 @@
       <!-- Showcase -->
       <div class="hmv3-showcase-wrap">
         <div class="hmv3-showcase-top">
-          <div class="hmv3-showcase-eyebrow">06 \xB7 Showcase \u2014 \u0E1C\u0E25\u0E07\u0E32\u0E19\u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</div>
-          <div class="hmv3-showcase-title">\u0E41\u0E23\u0E07\u0E1A\u0E31\u0E19\u0E14\u0E32\u0E25\u0E43\u0E08\u0E08\u0E32\u0E01\u0E04\u0E19\u0E17\u0E35\u0E48\u0E1C\u0E48\u0E32\u0E19\u0E21\u0E32\u0E01\u0E48\u0E2D\u0E19</div>
+          <div class="hmv3-showcase-title">\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E23\u0E32\u0E27 \u0E1A\u0E17\u0E40\u0E23\u0E35\u0E22\u0E19 \u0E41\u0E25\u0E30\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E1C\u0E39\u0E49\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY</div>
         </div>
         <div class="hmv3-showcase-articles">
           <!-- Article card 1 \u2014 Experiences -->
@@ -602,8 +565,8 @@
             </div>
             <div class="hmv3-art-body">
               <div class="hmv3-art-tag hmv3-art-tag-exp">Experiences</div>
-              <div class="hmv3-art-title">\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E08\u0E32\u0E01 Intern \u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</div>
-              <div class="hmv3-art-desc">\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E23\u0E32\u0E27 \u0E1A\u0E17\u0E40\u0E23\u0E35\u0E22\u0E19 \u0E41\u0E25\u0E30\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E04\u0E19\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY \u0E21\u0E32\u0E01\u0E48\u0E2D\u0E19</div>
+              <div class="hmv3-art-title">\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E08\u0E32\u0E01 Intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19</div>
+              <div class="hmv3-art-desc">\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E41\u0E25\u0E30\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E04\u0E19\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY \u0E21\u0E32\u0E01\u0E48\u0E2D\u0E19</div>
               <div class="hmv3-art-meta">
                 <span class="hmv3-art-read">\u0E14\u0E39\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14</span>
                 <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -645,7 +608,6 @@
     </div>
     <div class="hmv3-ql-grid">
       <a href="#/resources/timesheet" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">01</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Timesheet</span>
           <span class="hmv3-ql-hint">\u0E01\u0E23\u0E2D\u0E01 \xB7 \u0E41\u0E01\u0E49\u0E44\u0E02 \xB7 \u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</span>
@@ -653,7 +615,6 @@
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/policy/leave" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">02</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E25\u0E32</span>
           <span class="hmv3-ql-hint">\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19 \xB7 \u0E27\u0E31\u0E19\u0E25\u0E32 \xB7 \u0E25\u0E32\u0E1B\u0E48\u0E27\u0E22</span>
@@ -661,7 +622,6 @@
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/getting-started/wifi" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">03</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Wi-Fi \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</span>
           <span class="hmv3-ql-hint">SSID \xB7 Password \xB7 QR Code</span>
@@ -669,7 +629,6 @@
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/employee/directory" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">04</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Employee Contact</span>
           <span class="hmv3-ql-hint">\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E17\u0E35\u0E21\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30\u0E41\u0E1C\u0E19\u0E01</span>
@@ -677,7 +636,6 @@
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/policy/dress-code" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">05</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Dress Code</span>
           <span class="hmv3-ql-hint">\u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E17\u0E35\u0E48\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21</span>
@@ -685,7 +643,6 @@
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/resources/faqs" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">06</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">FAQs</span>
           <span class="hmv3-ql-hint">\u0E04\u0E33\u0E16\u0E32\u0E21\u0E1E\u0E1A\u0E1A\u0E48\u0E2D\u0E22 18+ \u0E02\u0E49\u0E2D</span>
@@ -749,35 +706,23 @@
       </div>
     </div>
 
-    <!-- RIGHT: CI vivid panel content -->
+    <!-- RIGHT: CI atmospheric panel -->
     <div class="fd9-right">
 
-      <!-- large day number -->
+      <!-- large day number (background anchor) -->
       <div class="fd9-bignum" aria-hidden="true">01</div>
 
-      <!-- task cards stacked -->
-      <div class="fd9-cards">
-
-        <div class="fd9-card fd9-card-1">
-          <div class="fd9-card-ico">\u{1F4C5}</div>
-          <div class="fd9-card-info">
-            <div class="fd9-card-tag">Task 01</div>
-            <div class="fd9-card-name">Subscribe Google Calendar</div>
-            <div class="fd9-card-flow">\u0E23\u0E31\u0E1A Email \u2192 Open Calendar \u2192 Subscribe</div>
-          </div>
-          <div class="fd9-card-done">\u2713</div>
+      <!-- orbital ring illustration -->
+      <div class="fd9-ring" aria-hidden="true">
+        <div class="fd9-ring-track fd9-ring-track-1"></div>
+        <div class="fd9-ring-track fd9-ring-track-2"></div>
+        <div class="fd9-ring-center"></div>
+        <div class="fd9-ring-spinner fd9-ring-spinner-1">
+          <div class="fd9-ring-dot"></div>
         </div>
-
-        <div class="fd9-card fd9-card-2">
-          <div class="fd9-card-ico">\u{1F4DD}</div>
-          <div class="fd9-card-info">
-            <div class="fd9-card-tag">Task 02</div>
-            <div class="fd9-card-name">\u0E01\u0E23\u0E2D\u0E01 Timesheet</div>
-            <div class="fd9-card-flow">\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C \u2192 \u0E01\u0E23\u0E2D\u0E01\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49 \u2192 \u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</div>
-          </div>
-          <div class="fd9-card-done fd9-done-amber">\u2713</div>
+        <div class="fd9-ring-spinner fd9-ring-spinner-2">
+          <div class="fd9-ring-dot fd9-ring-dot-sm"></div>
         </div>
-
       </div>
 
       <!-- welcome badge -->
@@ -789,12 +734,6 @@
     </div>
   </div>
 
-  <!-- bottom wave -->
-  <div class="fd9-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/>
-    </svg>
-  </div>
 
 </div>
 <div style="display:none"><!-- fd8 hero placeholder --></div>
@@ -922,7 +861,7 @@
 <!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 SECTION 1: Tasks \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
 <section class="fd3-section fd3-sec-tasks" id="fd3-sec1">
   <div class="fd3-sec-head fdb-reveal">
-    <div class="fd3-sec-tag">Section 01</div>
+    <div class="fd3-sec-tag">\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</div>
     <h2 class="fd3-sec-title">\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</h2>
     <p class="fd3-sec-sub">\u0E2B\u0E25\u0E31\u0E07 Orientation \u0E40\u0E2A\u0E23\u0E47\u0E08 \u2014 \u0E17\u0E33 2 tasks \u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
   </div>
@@ -931,7 +870,6 @@
 
     <!-- Task 01: Calendar -->
     <div class="fd3-task-card fdb-reveal fdb-delay1">
-      <div class="fd3-task-accent" style="background:#66C5C5"></div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#66C5C5">
@@ -947,17 +885,17 @@
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u{1F4E7}</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 8 12 14 22 8"/></svg></div>
             <div class="fd3-flow-text">\u0E23\u0E31\u0E1A Email<br>\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E08\u0E32\u0E01 HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u{1F4C5}</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
             <div class="fd3-flow-text">\u0E01\u0E14<br>Open Calendar</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon">\u2705</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
             <div class="fd3-flow-text">\u0E01\u0E14 Subscribe<br>\u0E17\u0E31\u0E49\u0E07 2 \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</div>
           </div>
         </div>
@@ -972,7 +910,6 @@
 
     <!-- Task 02: Timesheet -->
     <div class="fd3-task-card fdb-reveal fdb-delay2">
-      <div class="fd3-task-accent" style="background:#F59E0B"></div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#F59E0B">
@@ -988,17 +925,17 @@
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u{1F4C2}</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
             <div class="fd3-flow-text">\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C<br>Timesheet \u0E08\u0E32\u0E01 HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u270F\uFE0F</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
             <div class="fd3-flow-text">\u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C<br>\u0E01\u0E23\u0E2D\u0E01\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon">\u{1F5A8}\uFE0F</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
             <div class="fd3-flow-text">\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR<br>\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</div>
           </div>
         </div>
@@ -1016,7 +953,7 @@
 <!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 SECTION 2: Timeline \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
 <section class="fd3-section fd3-sec-timeline" id="fd3-sec2">
   <div class="fd3-sec-head fdb-reveal">
-    <div class="fd3-sec-tag fd3-sec-tag-alt">Section 02</div>
+    <div class="fd3-sec-tag fd3-sec-tag-alt">\u0E15\u0E32\u0E23\u0E32\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</div>
     <h2 class="fd3-sec-title">4 \u0E0A\u0E48\u0E27\u0E07\u0E2A\u0E33\u0E04\u0E31\u0E0D\u0E43\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</h2>
     <p class="fd3-sec-sub">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E41\u0E1A\u0E48\u0E07\u0E40\u0E1B\u0E47\u0E19 4 \u0E0A\u0E48\u0E27\u0E07\u0E2B\u0E25\u0E31\u0E01 \u2014 \u0E2D\u0E48\u0E32\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E43\u0E08\u0E41\u0E25\u0E30\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E08\u0E30\u0E40\u0E01\u0E34\u0E14\u0E2D\u0E30\u0E44\u0E23\u0E02\u0E36\u0E49\u0E19</p>
   </div>
@@ -1034,7 +971,7 @@
       </div>
     </div>
 
-    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#818CF8">
+    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#004080">
       <div class="fd3-tl-side"><div class="fd3-tl-num">02</div><div class="fd3-tl-line"></div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">\u0E2D\u0E31\u0E15\u0E25\u0E31\u0E01\u0E29\u0E13\u0E4C\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</div>
@@ -1045,22 +982,22 @@
       </div>
     </div>
 
-    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#F472B6">
+    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#2A8DA8">
       <div class="fd3-tl-side"><div class="fd3-tl-num">03</div><div class="fd3-tl-line"></div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E31\u0E21\u0E1E\u0E31\u0E19\u0E18\u0E4C</div>
         <div class="fd3-tl-title">Mentor & \u0E17\u0E35\u0E21</div>
         <p class="fd3-tl-sub">\u0E1E\u0E1A Mentor \u0E41\u0E25\u0E30\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E43\u0E19\u0E17\u0E35\u0E21 \u2014 \u0E04\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E04\u0E38\u0E13\u0E15\u0E25\u0E2D\u0E14\u0E0A\u0E48\u0E27\u0E07 Internship</p>
         <div class="fd3-tl-persons">
-          <div class="fd3-tl-person" style="--pc:#F472B6">
+          <div class="fd3-tl-person" style="--pc:#66C5C5">
             <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
             <div><div class="fd3-tl-person-role">Mentor</div><div class="fd3-tl-person-tip">\u0E04\u0E19\u0E41\u0E23\u0E01\u0E17\u0E35\u0E48\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E15\u0E34\u0E14\u0E1B\u0E31\u0E0D\u0E2B\u0E32</div></div>
           </div>
-          <div class="fd3-tl-person" style="--pc:#A78BFA">
+          <div class="fd3-tl-person" style="--pc:#004080">
             <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
             <div><div class="fd3-tl-person-role">Team Lead</div><div class="fd3-tl-person-tip">\u0E04\u0E38\u0E22\u0E44\u0E14\u0E49\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23 Feedback \u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21</div></div>
           </div>
-          <div class="fd3-tl-person" style="--pc:#34D399">
+          <div class="fd3-tl-person" style="--pc:#2A8DA8">
             <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
             <div><div class="fd3-tl-person-role">Teammates</div><div class="fd3-tl-person-tip">\u0E41\u0E19\u0E30\u0E19\u0E33\u0E15\u0E31\u0E27\u0E41\u0E25\u0E30\u0E08\u0E33\u0E0A\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</div></div>
           </div>
@@ -1093,39 +1030,42 @@
 <section class="fd3-section fd3-sec-more" id="fd3-sec3">
   <div class="fd3-more-inner">
     <div class="fd3-more-head fdb-reveal">
-      <div class="fd3-sec-tag fd3-sec-tag-light">Section 03</div>
       <h2 class="fd3-more-title">\u0E22\u0E31\u0E07\u0E21\u0E35\u0E2D\u0E35\u0E01\u0E40\u0E22\u0E2D\u0E30\u0E43\u0E19 Handbook</h2>
-      <p class="fd3-more-sub">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E23\u0E27\u0E1A\u0E23\u0E27\u0E21\u0E44\u0E27\u0E49\u0E04\u0E23\u0E1A\u0E43\u0E19\u0E17\u0E35\u0E48\u0E40\u0E14\u0E35\u0E22\u0E27</p>
+      <p class="fd3-more-sub">\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B \u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E2B\u0E25\u0E48\u0E32\u0E19\u0E35\u0E49\u0E08\u0E30\u0E21\u0E35\u0E1B\u0E23\u0E30\u0E42\u0E22\u0E0A\u0E19\u0E4C\u0E15\u0E25\u0E2D\u0E14\u0E0A\u0E48\u0E27\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
     </div>
 
-    <div class="fd3-more-grid fdb-reveal">
-      <a href="#/getting-started/orientation" class="fd3-more-card" data-link style="--mc:#66C5C5">
-        <div class="fd3-more-card-num">02</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <div class="fd3-more-card-title">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
-        <div class="fd3-more-card-items"><span>Slides</span><span>Wi-Fi</span><span>\u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21</span></div>
-        <div class="fd3-more-card-cta">\u0E14\u0E39\u0E40\u0E25\u0E22 \u2192</div>
+    <div class="fd3-more-entries fdb-reveal">
+      <a href="#/getting-started/orientation" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#66C5C5"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
+          <div class="fd3-more-entry-desc">Orientation slides \xB7 Wi-Fi \xB7 \u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#/policy/code-of-conduct" class="fd3-more-card" data-link style="--mc:#3B82F6">
-        <div class="fd3-more-card-num">04</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div class="fd3-more-card-title">Work Policy</div>
-        <div class="fd3-more-card-items"><span>Core Values</span><span>Dress Code</span><span>\u0E01\u0E32\u0E23\u0E25\u0E32</span></div>
-        <div class="fd3-more-card-cta">\u0E14\u0E39\u0E40\u0E25\u0E22 \u2192</div>
+      <a href="#/policy/code-of-conduct" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#004080"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Work Policy</div>
+          <div class="fd3-more-entry-desc">Core Values \xB7 Dress Code \xB7 \u0E01\u0E32\u0E23\u0E25\u0E32</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#/resources/faqs" class="fd3-more-card" data-link style="--mc:#8B5CF6">
-        <div class="fd3-more-card-num">05</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-        <div class="fd3-more-card-title">Resources & FAQs</div>
-        <div class="fd3-more-card-items"><span>Timesheet</span><span>FAQs 15+ \u0E02\u0E49\u0E2D</span></div>
-        <div class="fd3-more-card-cta">\u0E14\u0E39\u0E40\u0E25\u0E22 \u2192</div>
+      <a href="#/resources/timesheet" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#8B5CF6"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Resources & FAQs</div>
+          <div class="fd3-more-entry-desc">Timesheet \xB7 \u0E04\u0E33\u0E16\u0E32\u0E21\u0E1E\u0E1A\u0E1A\u0E48\u0E2D\u0E22 18 \u0E02\u0E49\u0E2D</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#/showcase/experiences" class="fd3-more-card" data-link style="--mc:#EC4899">
-        <div class="fd3-more-card-num">06</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <div class="fd3-more-card-title">Showcase \u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</div>
-        <div class="fd3-more-card-items"><span>Experiences</span><span>Blog</span></div>
-        <div class="fd3-more-card-cta">\u0E14\u0E39\u0E40\u0E25\u0E22 \u2192</div>
+      <a href="#/showcase/experiences" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#EC4899"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Showcase \u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</div>
+          <div class="fd3-more-entry-desc">\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E41\u0E25\u0E30\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E08\u0E32\u0E01 intern \u0E17\u0E35\u0E48\u0E1C\u0E48\u0E32\u0E19\u0E21\u0E32</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
 
@@ -2652,7 +2592,8 @@
       dirTeam.addEventListener("change", filterDir);
     }
     app.querySelectorAll("[data-scroll-to]").forEach((btn) => {
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
         const id = btn.getAttribute("data-scroll-to");
         const target = document.getElementById(id);
         if (target) {

@@ -11,105 +11,73 @@ export const renderHome = () => `
         EXZY · Intern Handbook
       </div>
       <h1 class="hmv3-h1">
-        คู่มือฝึกงาน<br/>
-        <span class="hmv3-h1-grad">ที่รวมทุกอย่างไว้</span>
+        คู่มือของนักศึกษาฝึกงาน<br/>
+        <span class="hmv3-h1-accent">ที่รวมทุกอย่างไว้</span>
       </h1>
-      <p class="hmv3-sub">ตั้งแต่วันแรกจนวันสุดท้าย — นโยบาย เครื่องมือ ทีมงาน และทุกข้อมูลที่ต้องรู้เพื่อฝึกงานที่ EXZY อย่างมั่นใจ</p>
+      <p class="hmv3-sub">รวมทุกสิ่งที่ต้องรู้ตลอดการฝึกงานที่ EXZY ตั้งแต่วันแรกจนถึงวันสุดท้าย</p>
       <div class="hmv3-actions">
         <a href="#/first-day" class="hmv3-btn-primary">
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           เพิ่งเริ่มวันแรก? เริ่มที่นี่
           ${I.arrow}
         </a>
-        <a href="#/policy" class="hmv3-btn-ghost">สำรวจคู่มือ ${I.arrow}</a>
       </div>
-
     </div>
 
-    <div class="hmv3-index">
-      <div class="hmv3-index-header">${I.book} Intern Handbook · สารบัญ</div>
-      <a href="#/first-day" class="hmv3-index-item">
-        <span class="hmv3-index-num">01</span>
-        <span class="hmv3-index-dot" style="background:#66C5C5"></span>
-        <span class="hmv3-index-lbl">Day 1 Guide</span>
-        <span class="hmv3-index-badge">เริ่มที่นี่</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/getting-started/orientation" class="hmv3-index-item">
-        <span class="hmv3-index-num">02</span>
-        <span class="hmv3-index-dot" style="background:#66C5C5"></span>
-        <span class="hmv3-index-lbl">Orientation & ออฟฟิศ</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/employee/org-chart" class="hmv3-index-item">
-        <span class="hmv3-index-num">03</span>
-        <span class="hmv3-index-dot" style="background:#F59E0B"></span>
-        <span class="hmv3-index-lbl">ทีมและองค์กร</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/policy/code-of-conduct" class="hmv3-index-item">
-        <span class="hmv3-index-num">04</span>
-        <span class="hmv3-index-dot" style="background:#3B82F6"></span>
-        <span class="hmv3-index-lbl">Work Policy</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/resources/timesheet" class="hmv3-index-item">
-        <span class="hmv3-index-num">05</span>
-        <span class="hmv3-index-dot" style="background:#8B5CF6"></span>
-        <span class="hmv3-index-lbl">Resources & FAQs</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
-      <a href="#/showcase/experiences" class="hmv3-index-item">
-        <span class="hmv3-index-num">06</span>
-        <span class="hmv3-index-dot" style="background:#EC4899"></span>
-        <span class="hmv3-index-lbl">Showcase & ผลงานรุ่นพี่</span>
-        <span class="hmv3-index-arr">${I.arrow}</span>
-      </a>
+    <div class="hmv3-hero-visual" aria-hidden="true">
+      <div class="hmv3-hero-orb"></div>
+      <svg class="hmv3-hero-svg" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="160" cy="160" r="148" stroke="rgba(102,197,197,0.14)" stroke-width="1" fill="none"/>
+        <circle cx="160" cy="160" r="110" stroke="rgba(102,197,197,0.09)" stroke-width="1" fill="none"/>
+        <circle cx="160" cy="160" r="72" fill="rgba(0,64,128,0.16)"/>
+        <circle cx="160" cy="160" r="44" fill="rgba(102,197,197,0.08)"/>
+        <text x="160" y="152" text-anchor="middle" fill="rgba(255,255,255,0.06)" font-size="40" font-family="Sora,system-ui,sans-serif" font-weight="800" letter-spacing="-1">EXZY</text>
+        <text x="160" y="172" text-anchor="middle" fill="rgba(102,197,197,0.18)" font-size="9.5" font-family="Sora,system-ui,sans-serif" font-weight="700" letter-spacing="3.5">INTERN</text>
+      </svg>
+      <div class="hmv3-hero-orbit hmv3-hero-orbit-1"><div class="hmv3-hero-dot"></div></div>
+      <div class="hmv3-hero-orbit hmv3-hero-orbit-2"><div class="hmv3-hero-dot hmv3-hero-dot-sm"></div></div>
     </div>
+
   </div>
 </section>
 
-<!-- ══ TICKER (running menu) ══ -->
-<div class="hmv3-ticker-wrap" aria-hidden="true">
-  <div class="hmv3-ticker-track">
-    <a href="#/first-day" class="hmv3-ticker-item">${I.arrow} Day 1 Guide</a>
-    <a href="#/getting-started/orientation" class="hmv3-ticker-item">${I.arrow} Orientation</a>
-    <a href="#/getting-started/wifi" class="hmv3-ticker-item">${I.arrow} Wi-Fi ออฟฟิศ</a>
-    <a href="#/getting-started/meeting-rooms" class="hmv3-ticker-item">${I.arrow} ห้องประชุม</a>
-    <a href="#/employee/org-chart" class="hmv3-ticker-item">${I.arrow} โครงสร้างองค์กร</a>
-    <a href="#/employee/directory" class="hmv3-ticker-item">${I.arrow} Employee Contact</a>
-    <a href="#/policy/code-of-conduct" class="hmv3-ticker-item">${I.arrow} Core Values</a>
-    <a href="#/policy/internship" class="hmv3-ticker-item">${I.arrow} นโยบายฝึกงาน</a>
-    <a href="#/policy/dress-code" class="hmv3-ticker-item">${I.arrow} Dress Code</a>
-    <a href="#/policy/leave" class="hmv3-ticker-item">${I.arrow} การขอลา</a>
-    <a href="#/resources/timesheet" class="hmv3-ticker-item">${I.arrow} Timesheet</a>
-    <a href="#/resources/faqs" class="hmv3-ticker-item">${I.arrow} FAQs</a>
-    <a href="#/showcase/experiences" class="hmv3-ticker-item">${I.arrow} Showcase</a>
-    <!-- duplicate for seamless loop -->
-    <a href="#/first-day" class="hmv3-ticker-item">${I.arrow} Day 1 Guide</a>
-    <a href="#/getting-started/orientation" class="hmv3-ticker-item">${I.arrow} Orientation</a>
-    <a href="#/getting-started/wifi" class="hmv3-ticker-item">${I.arrow} Wi-Fi ออฟฟิศ</a>
-    <a href="#/getting-started/meeting-rooms" class="hmv3-ticker-item">${I.arrow} ห้องประชุม</a>
-    <a href="#/employee/org-chart" class="hmv3-ticker-item">${I.arrow} โครงสร้างองค์กร</a>
-    <a href="#/employee/directory" class="hmv3-ticker-item">${I.arrow} Employee Contact</a>
-    <a href="#/policy/code-of-conduct" class="hmv3-ticker-item">${I.arrow} Core Values</a>
-    <a href="#/policy/internship" class="hmv3-ticker-item">${I.arrow} นโยบายฝึกงาน</a>
-    <a href="#/policy/dress-code" class="hmv3-ticker-item">${I.arrow} Dress Code</a>
-    <a href="#/policy/leave" class="hmv3-ticker-item">${I.arrow} การขอลา</a>
-    <a href="#/resources/timesheet" class="hmv3-ticker-item">${I.arrow} Timesheet</a>
-    <a href="#/resources/faqs" class="hmv3-ticker-item">${I.arrow} FAQs</a>
-    <a href="#/showcase/experiences" class="hmv3-ticker-item">${I.arrow} Showcase</a>
+<!-- ══ CHAPTER BAR ══ -->
+<nav class="hmv3-chapters" aria-label="สารบัญ Intern Handbook">
+  <div class="hmv3-chapters-inner">
+    <a href="#/first-day" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#66C5C5"></span>
+      <span class="hmv3-chapter-name">Day 1 Guide</span>
+      <span class="hmv3-chapter-badge">เริ่มที่นี่</span>
+    </a>
+    <a href="#/getting-started/orientation" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#66C5C5"></span>
+      <span class="hmv3-chapter-name">Orientation & ออฟฟิศ</span>
+    </a>
+    <a href="#/employee/org-chart" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#F59E0B"></span>
+      <span class="hmv3-chapter-name">ทีมและองค์กร</span>
+    </a>
+    <a href="#/policy/code-of-conduct" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#3B82F6"></span>
+      <span class="hmv3-chapter-name">Work Policy</span>
+    </a>
+    <a href="#/resources/timesheet" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#8B5CF6"></span>
+      <span class="hmv3-chapter-name">Resources & FAQs</span>
+    </a>
+    <a href="#/showcase/experiences" class="hmv3-chapter-item">
+      <span class="hmv3-chapter-dot" style="background:#EC4899"></span>
+      <span class="hmv3-chapter-name">Showcase</span>
+    </a>
   </div>
-</div>
+</nav>
+
 
 <!-- ══ BENTO GRID ══ -->
 <div class="hmv3-bento-wrap">
   <div class="hmv3-bento-inner">
     <div class="hmv3-bento-header">
-      <div>
-        <div class="hmv3-bento-eyebrow">สารบัญ Handbook</div>
-        <h2 class="hmv3-bento-title">ทุกข้อมูลที่ต้องรู้</h2>
-      </div>
+      <h2 class="hmv3-bento-title">ข้อมูลที่ต้องรู้</h2>
     </div>
     <div class="hmv3-bento-grid">
 
@@ -153,11 +121,10 @@ export const renderHome = () => `
       <!-- Orientation -->
       <div class="hmv3-cell" style="--cell-accent:#66C5C5">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">02</span>
           <div class="hmv3-cell-icon" style="background:rgba(102,197,197,.12);color:#0e7a7a;">${I.rocket}</div>
         </div>
         <div class="hmv3-cell-title">Orientation & ออฟฟิศ</div>
-        <div class="hmv3-cell-desc">Slides · Wi-Fi · ห้องประชุม 4 ห้อง — ทุกอย่างที่ต้องรู้เกี่ยวกับออฟฟิศ</div>
+        <div class="hmv3-cell-desc">ข้อมูลสำคัญเกี่ยวกับออฟฟิศและการทำงาน</div>
         <div class="hmv3-cell-links">
           <a href="#/getting-started/orientation" class="hmv3-cell-link">${I.arrow} Orientation Slides</a>
           <a href="#/getting-started/wifi" class="hmv3-cell-link">${I.arrow} Wi-Fi ออฟฟิศ</a>
@@ -168,7 +135,6 @@ export const renderHome = () => `
       <!-- Company -->
       <div class="hmv3-cell" style="--cell-accent:#F59E0B">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">03</span>
           <div class="hmv3-cell-icon" style="background:rgba(245,158,11,.12);color:#92400e;">${I.people}</div>
         </div>
         <div class="hmv3-cell-title">ทีมและองค์กร</div>
@@ -182,7 +148,6 @@ export const renderHome = () => `
       <!-- Policy -->
       <div class="hmv3-cell" style="--cell-accent:#3B82F6">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">04</span>
           <div class="hmv3-cell-icon" style="background:rgba(59,130,246,.12);color:#1e3a8a;">${I.shield}</div>
         </div>
         <div class="hmv3-cell-title">Work Policy</div>
@@ -198,11 +163,10 @@ export const renderHome = () => `
       <!-- Resources -->
       <div class="hmv3-cell" style="--cell-accent:#8B5CF6">
         <div class="hmv3-cell-head">
-          <span class="hmv3-cell-num">05</span>
           <div class="hmv3-cell-icon" style="background:rgba(139,92,246,.12);color:#4c1d95;">${I.clock}</div>
         </div>
         <div class="hmv3-cell-title">Resources</div>
-        <div class="hmv3-cell-desc">Timesheet · FAQs 18+ ข้อ · ข้อมูลที่ใช้บ่อยตลอดการฝึกงาน</div>
+        <div class="hmv3-cell-desc">Timesheet · FAQs · ข้อมูลที่ต้องใช้ตลอดการฝึกงาน</div>
         <div class="hmv3-cell-links">
           <a href="#/resources/timesheet" class="hmv3-cell-link">${I.arrow} Timesheet</a>
           <a href="#/resources/faqs" class="hmv3-cell-link">${I.arrow} FAQs</a>
@@ -212,8 +176,7 @@ export const renderHome = () => `
       <!-- Showcase -->
       <div class="hmv3-showcase-wrap">
         <div class="hmv3-showcase-top">
-          <div class="hmv3-showcase-eyebrow">06 · Showcase — ผลงานรุ่นพี่</div>
-          <div class="hmv3-showcase-title">แรงบันดาลใจจากคนที่ผ่านมาก่อน</div>
+          <div class="hmv3-showcase-title">เรื่องราว บทเรียน และมุมมองจากผู้ที่เคยฝึกงานที่ EXZY</div>
         </div>
         <div class="hmv3-showcase-articles">
           <!-- Article card 1 — Experiences -->
@@ -230,8 +193,8 @@ export const renderHome = () => `
             </div>
             <div class="hmv3-art-body">
               <div class="hmv3-art-tag hmv3-art-tag-exp">Experiences</div>
-              <div class="hmv3-art-title">ประสบการณ์จาก Intern รุ่นพี่</div>
-              <div class="hmv3-art-desc">เรื่องราว บทเรียน และมุมมองจากคนที่เคยฝึกงานที่ EXZY มาก่อน</div>
+              <div class="hmv3-art-title">ประสบการณ์จาก Intern รุ่นก่อน</div>
+              <div class="hmv3-art-desc">ประสบการณ์และมุมมองจากคนที่เคยฝึกงานที่ EXZY มาก่อน</div>
               <div class="hmv3-art-meta">
                 <span class="hmv3-art-read">ดูทั้งหมด</span>
                 <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -273,7 +236,6 @@ export const renderHome = () => `
     </div>
     <div class="hmv3-ql-grid">
       <a href="#/resources/timesheet" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">01</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Timesheet</span>
           <span class="hmv3-ql-hint">กรอก · แก้ไข · พิมพ์ส่งสิ้นเดือน</span>
@@ -281,7 +243,6 @@ export const renderHome = () => `
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/policy/leave" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">02</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">การขอลา</span>
           <span class="hmv3-ql-hint">ขั้นตอน · วันลา · ลาป่วย</span>
@@ -289,7 +250,6 @@ export const renderHome = () => `
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/getting-started/wifi" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">03</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Wi-Fi ออฟฟิศ</span>
           <span class="hmv3-ql-hint">SSID · Password · QR Code</span>
@@ -297,7 +257,6 @@ export const renderHome = () => `
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/employee/directory" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">04</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Employee Contact</span>
           <span class="hmv3-ql-hint">ติดต่อทีมงานและแผนก</span>
@@ -305,7 +264,6 @@ export const renderHome = () => `
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/policy/dress-code" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">05</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">Dress Code</span>
           <span class="hmv3-ql-hint">การแต่งกายที่เหมาะสม</span>
@@ -313,7 +271,6 @@ export const renderHome = () => `
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" class="hmv3-ql-arr"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <a href="#/resources/faqs" class="hmv3-ql-item">
-        <div class="hmv3-ql-num">06</div>
         <div class="hmv3-ql-text">
           <span class="hmv3-ql-name">FAQs</span>
           <span class="hmv3-ql-hint">คำถามพบบ่อย 18+ ข้อ</span>

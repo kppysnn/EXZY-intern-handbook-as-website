@@ -50,35 +50,23 @@ export function renderFirstDay(data = {}) {
       </div>
     </div>
 
-    <!-- RIGHT: CI vivid panel content -->
+    <!-- RIGHT: CI atmospheric panel -->
     <div class="fd9-right">
 
-      <!-- large day number -->
+      <!-- large day number (background anchor) -->
       <div class="fd9-bignum" aria-hidden="true">01</div>
 
-      <!-- task cards stacked -->
-      <div class="fd9-cards">
-
-        <div class="fd9-card fd9-card-1">
-          <div class="fd9-card-ico">📅</div>
-          <div class="fd9-card-info">
-            <div class="fd9-card-tag">Task 01</div>
-            <div class="fd9-card-name">Subscribe Google Calendar</div>
-            <div class="fd9-card-flow">รับ Email → Open Calendar → Subscribe</div>
-          </div>
-          <div class="fd9-card-done">✓</div>
+      <!-- orbital ring illustration -->
+      <div class="fd9-ring" aria-hidden="true">
+        <div class="fd9-ring-track fd9-ring-track-1"></div>
+        <div class="fd9-ring-track fd9-ring-track-2"></div>
+        <div class="fd9-ring-center"></div>
+        <div class="fd9-ring-spinner fd9-ring-spinner-1">
+          <div class="fd9-ring-dot"></div>
         </div>
-
-        <div class="fd9-card fd9-card-2">
-          <div class="fd9-card-ico">📝</div>
-          <div class="fd9-card-info">
-            <div class="fd9-card-tag">Task 02</div>
-            <div class="fd9-card-name">กรอก Timesheet</div>
-            <div class="fd9-card-flow">รับไฟล์ → กรอกวันนี้ → ส่งสิ้นเดือน</div>
-          </div>
-          <div class="fd9-card-done fd9-done-amber">✓</div>
+        <div class="fd9-ring-spinner fd9-ring-spinner-2">
+          <div class="fd9-ring-dot fd9-ring-dot-sm"></div>
         </div>
-
       </div>
 
       <!-- welcome badge -->
@@ -90,12 +78,6 @@ export function renderFirstDay(data = {}) {
     </div>
   </div>
 
-  <!-- bottom wave -->
-  <div class="fd9-wave" aria-hidden="true">
-    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/>
-    </svg>
-  </div>
 
 </div>
 <div style="display:none"><!-- fd8 hero placeholder --></div>
@@ -223,7 +205,7 @@ export function renderFirstDay(data = {}) {
 <!-- ══════════════ SECTION 1: Tasks ══════════════ -->
 <section class="fd3-section fd3-sec-tasks" id="fd3-sec1">
   <div class="fd3-sec-head fdb-reveal">
-    <div class="fd3-sec-tag">Section 01</div>
+    <div class="fd3-sec-tag">ภารกิจวันนี้</div>
     <h2 class="fd3-sec-title">ต้องทำให้เสร็จวันนี้</h2>
     <p class="fd3-sec-sub">หลัง Orientation เสร็จ — ทำ 2 tasks นี้ให้ครบก่อนกลับบ้าน</p>
   </div>
@@ -232,7 +214,6 @@ export function renderFirstDay(data = {}) {
 
     <!-- Task 01: Calendar -->
     <div class="fd3-task-card fdb-reveal fdb-delay1">
-      <div class="fd3-task-accent" style="background:#66C5C5"></div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#66C5C5">
@@ -248,17 +229,17 @@ export function renderFirstDay(data = {}) {
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">📧</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 8 12 14 22 8"/></svg></div>
             <div class="fd3-flow-text">รับ Email<br>คำเชิญจาก HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">📅</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
             <div class="fd3-flow-text">กด<br>Open Calendar</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon">✅</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
             <div class="fd3-flow-text">กด Subscribe<br>ทั้ง 2 ปฏิทิน</div>
           </div>
         </div>
@@ -273,7 +254,6 @@ export function renderFirstDay(data = {}) {
 
     <!-- Task 02: Timesheet -->
     <div class="fd3-task-card fdb-reveal fdb-delay2">
-      <div class="fd3-task-accent" style="background:#F59E0B"></div>
       <div class="fd3-task-body">
         <div class="fd3-task-header">
           <div class="fd3-task-ico" style="color:#F59E0B">
@@ -289,17 +269,17 @@ export function renderFirstDay(data = {}) {
 
         <div class="fd3-flow">
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">📂</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
             <div class="fd3-flow-text">รับไฟล์<br>Timesheet จาก HR</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">✏️</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
             <div class="fd3-flow-text">เปิดไฟล์<br>กรอกวันนี้</div>
           </div>
           <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon">🖨️</div>
+            <div class="fd3-flow-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
             <div class="fd3-flow-text">พิมพ์ส่ง HR<br>สิ้นเดือน</div>
           </div>
         </div>
@@ -317,7 +297,7 @@ export function renderFirstDay(data = {}) {
 <!-- ══════════════ SECTION 2: Timeline ══════════════ -->
 <section class="fd3-section fd3-sec-timeline" id="fd3-sec2">
   <div class="fd3-sec-head fdb-reveal">
-    <div class="fd3-sec-tag fd3-sec-tag-alt">Section 02</div>
+    <div class="fd3-sec-tag fd3-sec-tag-alt">ตารางวันแรก</div>
     <h2 class="fd3-sec-title">4 ช่วงสำคัญในวันแรก</h2>
     <p class="fd3-sec-sub">วันแรกแบ่งเป็น 4 ช่วงหลัก — อ่านเพื่อเตรียมใจและรู้ว่าจะเกิดอะไรขึ้น</p>
   </div>
@@ -335,7 +315,7 @@ export function renderFirstDay(data = {}) {
       </div>
     </div>
 
-    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#818CF8">
+    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#004080">
       <div class="fd3-tl-side"><div class="fd3-tl-num">02</div><div class="fd3-tl-line"></div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">อัตลักษณ์การทำงาน</div>
@@ -346,22 +326,22 @@ export function renderFirstDay(data = {}) {
       </div>
     </div>
 
-    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#F472B6">
+    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#2A8DA8">
       <div class="fd3-tl-side"><div class="fd3-tl-num">03</div><div class="fd3-tl-line"></div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">สร้างความสัมพันธ์</div>
         <div class="fd3-tl-title">Mentor & ทีม</div>
         <p class="fd3-tl-sub">พบ Mentor และสมาชิกในทีม — คนที่จะช่วยคุณตลอดช่วง Internship</p>
         <div class="fd3-tl-persons">
-          <div class="fd3-tl-person" style="--pc:#F472B6">
+          <div class="fd3-tl-person" style="--pc:#66C5C5">
             <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
             <div><div class="fd3-tl-person-role">Mentor</div><div class="fd3-tl-person-tip">คนแรกที่ควรถามเมื่อติดปัญหา</div></div>
           </div>
-          <div class="fd3-tl-person" style="--pc:#A78BFA">
+          <div class="fd3-tl-person" style="--pc:#004080">
             <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
             <div><div class="fd3-tl-person-role">Team Lead</div><div class="fd3-tl-person-tip">คุยได้เมื่อต้องการ Feedback ภาพรวม</div></div>
           </div>
-          <div class="fd3-tl-person" style="--pc:#34D399">
+          <div class="fd3-tl-person" style="--pc:#2A8DA8">
             <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
             <div><div class="fd3-tl-person-role">Teammates</div><div class="fd3-tl-person-tip">แนะนำตัวและจำชื่อให้ครบวันนี้</div></div>
           </div>
@@ -394,39 +374,42 @@ export function renderFirstDay(data = {}) {
 <section class="fd3-section fd3-sec-more" id="fd3-sec3">
   <div class="fd3-more-inner">
     <div class="fd3-more-head fdb-reveal">
-      <div class="fd3-sec-tag fd3-sec-tag-light">Section 03</div>
       <h2 class="fd3-more-title">ยังมีอีกเยอะใน Handbook</h2>
-      <p class="fd3-more-sub">ข้อมูลทุกอย่างที่ต้องรู้ตลอดการฝึกงาน รวบรวมไว้ครบในที่เดียว</p>
+      <p class="fd3-more-sub">หลังจากวันแรกผ่านไป ข้อมูลเหล่านี้จะมีประโยชน์ตลอดช่วงฝึกงาน</p>
     </div>
 
-    <div class="fd3-more-grid fdb-reveal">
-      <a href="#/getting-started/orientation" class="fd3-more-card" data-link style="--mc:#66C5C5">
-        <div class="fd3-more-card-num">02</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <div class="fd3-more-card-title">Orientation & ออฟฟิศ</div>
-        <div class="fd3-more-card-items"><span>Slides</span><span>Wi-Fi</span><span>ห้องประชุม</span></div>
-        <div class="fd3-more-card-cta">ดูเลย →</div>
+    <div class="fd3-more-entries fdb-reveal">
+      <a href="#/getting-started/orientation" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#66C5C5"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Orientation & ออฟฟิศ</div>
+          <div class="fd3-more-entry-desc">Orientation slides · Wi-Fi · ห้องประชุม</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#/policy/code-of-conduct" class="fd3-more-card" data-link style="--mc:#3B82F6">
-        <div class="fd3-more-card-num">04</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div class="fd3-more-card-title">Work Policy</div>
-        <div class="fd3-more-card-items"><span>Core Values</span><span>Dress Code</span><span>การลา</span></div>
-        <div class="fd3-more-card-cta">ดูเลย →</div>
+      <a href="#/policy/code-of-conduct" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#004080"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Work Policy</div>
+          <div class="fd3-more-entry-desc">Core Values · Dress Code · การลา</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#/resources/faqs" class="fd3-more-card" data-link style="--mc:#8B5CF6">
-        <div class="fd3-more-card-num">05</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-        <div class="fd3-more-card-title">Resources & FAQs</div>
-        <div class="fd3-more-card-items"><span>Timesheet</span><span>FAQs 15+ ข้อ</span></div>
-        <div class="fd3-more-card-cta">ดูเลย →</div>
+      <a href="#/resources/timesheet" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#8B5CF6"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Resources & FAQs</div>
+          <div class="fd3-more-entry-desc">Timesheet · คำถามพบบ่อย 18 ข้อ</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#/showcase/experiences" class="fd3-more-card" data-link style="--mc:#EC4899">
-        <div class="fd3-more-card-num">06</div>
-        <div class="fd3-more-card-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <div class="fd3-more-card-title">Showcase รุ่นพี่</div>
-        <div class="fd3-more-card-items"><span>Experiences</span><span>Blog</span></div>
-        <div class="fd3-more-card-cta">ดูเลย →</div>
+      <a href="#/showcase/experiences" class="fd3-more-entry" data-link>
+        <span class="fd3-more-entry-dot" style="background:#EC4899"></span>
+        <div class="fd3-more-entry-body">
+          <div class="fd3-more-entry-title">Showcase รุ่นพี่</div>
+          <div class="fd3-more-entry-desc">ประสบการณ์และบทความจาก intern ที่ผ่านมา</div>
+        </div>
+        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
 
