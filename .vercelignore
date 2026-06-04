@@ -1,0 +1,13 @@
+node_modules/
+.git/
+.vercel/
+.agents/
+.claude/
+.github/skills/
+.impeccable/
+*.heic
+*.HEIC
+*.zip
+Mini-Internship Orientation.pdf
+Exzy - Employee Contact.xlsx
+exzy-employee-contact.xlsx

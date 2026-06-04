@@ -20,3 +20,11 @@ exzy-employee-contact.xlsx
 # Font readme duplicates
 README.txt
 OFL.txt
+.vercel
+
+# Local dependencies and agent tooling
+node_modules/
+.agents/
+.claude/
+.github/skills/
+.impeccable/

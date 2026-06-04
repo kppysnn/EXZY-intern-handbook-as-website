@@ -395,200 +395,85 @@
     </div>
 
     <div class="welcome-scene" aria-hidden="true">
-      <svg viewBox="0 0 720 540" role="img" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 760 560" role="img" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="hn-hdr" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#004080"/>
-            <stop offset="100%" stop-color="#005EA8"/>
+          <linearGradient id="homeDesk" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F7FCFC"/>
+            <stop offset="100%" stop-color="#E7F5F7"/>
           </linearGradient>
-          <linearGradient id="hn-teal" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#00D4C8"/>
-            <stop offset="100%" stop-color="#009EB8"/>
+          <linearGradient id="homeNavy" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#004081"/>
+            <stop offset="100%" stop-color="#002D5C"/>
           </linearGradient>
-          <linearGradient id="hn-bar" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#00D4C8"/>
-            <stop offset="100%" stop-color="#5B7FFF"/>
+          <linearGradient id="homeTeal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#66C5C5"/>
+            <stop offset="100%" stop-color="#2A9FA7"/>
           </linearGradient>
-          <filter id="hn-shad"><feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="rgba(0,40,100,.14)"/></filter>
-          <filter id="hn-sm"><feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="rgba(0,40,100,.12)"/></filter>
+          <filter id="homeSoftShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#004080" flood-opacity="0.16"/>
+          </filter>
         </defs>
 
-        <!-- BG accent circles -->
-        <circle cx="570" cy="100" r="150" fill="#00D4C8" opacity=".07"/>
-        <circle cx="150" cy="440" r="110" fill="#004080" opacity=".05"/>
+        <path d="M76 162C133 55 300 18 430 51c132 33 230 139 248 264 18 127-43 255-157 298-116 44-287 8-384-76C40 454 19 270 76 162Z" fill="#EEF8FA"/>
+        <path d="M104 387C216 349 301 330 401 351c84 18 165 60 268 43v98c-90 54-214 70-335 50-98-16-176-52-230-84v-71Z" fill="#D8F0F2"/>
 
-        <!-- ══ HUB CARD ══ -->
-        <g filter="url(#hn-shad)" class="hv-hub">
-          <rect x="177" y="60" width="364" height="406" rx="26" fill="#FFFFFF"/>
-          <!-- Navy header -->
-          <rect x="177" y="60" width="364" height="64" rx="26" fill="url(#hn-hdr)"/>
-          <rect x="177" y="90" width="364" height="34" fill="url(#hn-hdr)"/>
-          <!-- EXZY X mark -->
-          <path d="M198 76 l11 14M209 76 l-11 14" stroke="rgba(255,255,255,.72)" stroke-width="3" stroke-linecap="round"/>
-          <!-- Title bars -->
-          <rect x="226" y="74" width="120" height="10" rx="5" fill="rgba(255,255,255,.88)"/>
-          <rect x="226" y="90"  width="80"  height="8"  rx="4" fill="rgba(255,255,255,.50)"/>
-          <!-- Search bar -->
-          <rect x="195" y="110" width="328" height="28" rx="14" fill="rgba(255,255,255,.14)" stroke="rgba(255,255,255,.24)" stroke-width="1"/>
-          <rect x="214" y="119" width="120" height="8"  rx="4" fill="rgba(255,255,255,.36)"/>
-
-          <!-- ROW 1: Day 1 Guide — teal -->
-          <rect x="195" y="152" width="328" height="52" rx="14" fill="#F0FFFE"/>
-          <rect x="195" y="152" width="5"   height="52" rx="2.5" fill="#00D4C8"/>
-          <rect x="210" y="161" width="30"  height="30" rx="8"   fill="#00D4C8" opacity=".22"/>
-          <path d="M218 176 l4 4 9-9" stroke="#00D4C8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <rect x="252" y="163" width="128" height="11" rx="5.5" fill="#004080" opacity=".82"/>
-          <rect x="252" y="180" width="88"  height="8"  rx="4"   fill="#004080" opacity=".45"/>
-          <rect x="467" y="165" width="42"  height="22" rx="11"  fill="#00D4C8" opacity=".18"/>
-          <rect x="473" y="171" width="30"  height="10" rx="5"   fill="#00D4C8" opacity=".72"/>
-
-          <!-- ROW 2: Orientation — indigo -->
-          <rect x="195" y="214" width="328" height="52" rx="14" fill="#F6F8FF"/>
-          <rect x="195" y="214" width="5"   height="52" rx="2.5" fill="#5B7FFF"/>
-          <rect x="210" y="223" width="30"  height="30" rx="8"   fill="#5B7FFF" opacity=".16"/>
-          <path d="M224 232 Q224 228 224 232 A5 5 0 1 0 224 242 Z" fill="#5B7FFF" opacity=".62"/>
-          <path d="M224 244 L224 249" stroke="#5B7FFF" stroke-width="2.2" stroke-linecap="round" opacity=".62"/>
-          <rect x="252" y="225" width="108" height="11" rx="5.5" fill="#004080" opacity=".78"/>
-          <rect x="252" y="242" width="150" height="8"  rx="4"   fill="#004080" opacity=".40"/>
-          <rect x="467" y="227" width="42"  height="22" rx="11"  fill="#5B7FFF" opacity=".14"/>
-          <rect x="473" y="233" width="30"  height="10" rx="5"   fill="#5B7FFF" opacity=".60"/>
-
-          <!-- ROW 3: Work Policy — slate -->
-          <rect x="195" y="276" width="328" height="52" rx="14" fill="#F8F8FA"/>
-          <rect x="195" y="276" width="5"   height="52" rx="2.5" fill="#8B8BAA"/>
-          <rect x="210" y="285" width="30"  height="30" rx="8"   fill="#8B8BAA" opacity=".14"/>
-          <path d="M218 288 l6 4v6c0 2-2 4-6 5-4-1-6-3-6-5v-6l6-4Z" fill="#8B8BAA" opacity=".62"/>
-          <rect x="252" y="287" width="98"  height="11" rx="5.5" fill="#004080" opacity=".75"/>
-          <rect x="252" y="304" width="134" height="8"  rx="4"   fill="#004080" opacity=".38"/>
-          <rect x="467" y="289" width="42"  height="22" rx="11"  fill="#8B8BAA" opacity=".12"/>
-          <rect x="473" y="295" width="30"  height="10" rx="5"   fill="#8B8BAA" opacity=".55"/>
-
-          <!-- ROW 4: Team Contact — green -->
-          <rect x="195" y="338" width="328" height="52" rx="14" fill="#F2FBF2"/>
-          <rect x="195" y="338" width="5"   height="52" rx="2.5" fill="#4CAF50"/>
-          <rect x="210" y="347" width="30"  height="30" rx="8"   fill="#4CAF50" opacity=".16"/>
-          <circle cx="224" cy="357" r="6"  fill="#4CAF50" opacity=".65"/>
-          <path d="M216 366 Q224 360 232 366" fill="#4CAF50" opacity=".55"/>
-          <rect x="252" y="349" width="118" height="11" rx="5.5" fill="#004080" opacity=".75"/>
-          <rect x="252" y="366" width="86"  height="8"  rx="4"   fill="#004080" opacity=".38"/>
-          <rect x="467" y="351" width="42"  height="22" rx="11"  fill="#4CAF50" opacity=".14"/>
-          <rect x="473" y="357" width="30"  height="10" rx="5"   fill="#4CAF50" opacity=".58"/>
-
-          <!-- Progress bar -->
-          <rect x="195" y="406" width="148" height="8"  rx="4" fill="#004080" opacity=".30"/>
-          <rect x="195" y="420" width="328" height="8"  rx="4" fill="#E8F0F6"/>
-          <rect x="195" y="420" width="132" height="8"  rx="4" fill="url(#hn-teal)" class="hn-prog"/>
-          <rect x="414" y="418" width="94"  height="12" rx="6" fill="#EEF8FF"/>
-          <rect x="420" y="422" width="82"  height="7"  rx="3.5" fill="#00D4C8" opacity=".62"/>
-
-          <!-- CTA -->
-          <rect x="195" y="438" width="164" height="36" rx="18" fill="url(#hn-hdr)"/>
-          <rect x="215" y="450" width="100" height="10" rx="5"  fill="rgba(255,255,255,.85)"/>
+        <g filter="url(#homeSoftShadow)">
+          <path d="M118 342 628 291l58 146-520 65-48-160Z" fill="url(#homeDesk)"/>
+          <path d="M118 342 628 291l13 32-514 61-9-42Z" fill="#FFFFFF" opacity=".82"/>
         </g>
 
-        <!-- ══ SATELLITE CARDS ══ -->
-
-        <!-- SAT-1 top-left: Day 1 — teal -->
-        <g filter="url(#hn-sm)" class="hv-sat hv-sat-1">
-          <rect x="12" y="50" width="158" height="116" rx="18" fill="#FFFFFF"/>
-          <rect x="12" y="50" width="158" height="42"  rx="18" fill="#00D4C8"/>
-          <rect x="12" y="74" width="158" height="18"  fill="#00D4C8"/>
-          <circle cx="36" cy="71" r="13" fill="rgba(255,255,255,.30)"/>
-          <path d="M31 71 l3.5 3.5 7.5-7.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <rect x="57" y="62" width="82" height="10" rx="5" fill="rgba(255,255,255,.88)"/>
-          <rect x="57" y="78" width="58" height="8"  rx="4" fill="rgba(255,255,255,.52)"/>
-          <rect x="24" y="104" width="128" height="8"  rx="4" fill="#004080" opacity=".28"/>
-          <rect x="24" y="118" width="100" height="8"  rx="4" fill="#004080" opacity=".20"/>
-          <rect x="24" y="134" width="56"  height="18" rx="9" fill="#00D4C8" opacity=".18"/>
-          <rect x="30" y="139" width="44"  height="8"  rx="4" fill="#00D4C8" opacity=".68"/>
+        <g transform="rotate(-6 359 279)" filter="url(#homeSoftShadow)">
+          <rect x="240" y="156" width="255" height="170" rx="18" fill="#DDE8EF"/>
+          <rect x="256" y="171" width="223" height="132" rx="10" fill="url(#homeNavy)"/>
+          <path d="M276 205h82M276 232h138M276 259h102" stroke="#66C5C5" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+          <circle cx="443" cy="257" r="30" fill="#66C5C5" opacity=".24"/>
+          <path d="M293 329h154c18 0 33 13 37 31l4 17H255l5-18c5-18 15-30 33-30Z" fill="#C6D3DD"/>
+          <rect x="313" y="346" width="115" height="19" rx="8" fill="#AEBECD"/>
         </g>
 
-        <!-- SAT-2 top-right: Orientation — indigo -->
-        <g filter="url(#hn-sm)" class="hv-sat hv-sat-2">
-          <rect x="548" y="38" width="158" height="116" rx="18" fill="#FFFFFF"/>
-          <rect x="548" y="38" width="158" height="42"  rx="18" fill="#5B7FFF"/>
-          <rect x="548" y="62" width="158" height="18"  fill="#5B7FFF"/>
-          <circle cx="572" cy="59" r="13" fill="rgba(255,255,255,.28)"/>
-          <path d="M572 51 Q572 51 572 59 A8 8 0 1 0 572 59 Z" fill="rgba(255,255,255,.62)"/>
-          <path d="M572 65 L572 70" stroke="rgba(255,255,255,.62)" stroke-width="2.5" stroke-linecap="round"/>
-          <rect x="593" y="50" width="80" height="10" rx="5" fill="rgba(255,255,255,.88)"/>
-          <rect x="593" y="66" width="60" height="8"  rx="4" fill="rgba(255,255,255,.52)"/>
-          <rect x="560" y="92" width="128" height="8"  rx="4" fill="#004080" opacity=".28"/>
-          <rect x="560" y="106" width="104" height="8" rx="4" fill="#004080" opacity=".20"/>
-          <rect x="560" y="122" width="60"  height="18" rx="9" fill="#5B7FFF" opacity=".15"/>
-          <rect x="566" y="127" width="48"  height="8"  rx="4" fill="#5B7FFF" opacity=".62"/>
+        <g transform="rotate(8 190 360)" filter="url(#homeSoftShadow)">
+          <rect x="92" y="260" width="170" height="190" rx="14" fill="#FFFFFF"/>
+          <rect x="92" y="260" width="20" height="190" rx="10" fill="#66C5C5"/>
+          <path d="M131 304h91M131 333h104M131 362h76M131 402h98" stroke="#004080" stroke-width="5" stroke-linecap="round" opacity=".17"/>
+          <circle cx="213" cy="405" r="18" fill="#66C5C5" opacity=".25"/>
         </g>
 
-        <!-- SAT-3 bottom-left: Policy — slate -->
-        <g filter="url(#hn-sm)" class="hv-sat hv-sat-3">
-          <rect x="12" y="374" width="158" height="116" rx="18" fill="#FFFFFF"/>
-          <rect x="12" y="374" width="158" height="42"  rx="18" fill="#8B8BAA"/>
-          <rect x="12" y="398" width="158" height="18"  fill="#8B8BAA"/>
-          <circle cx="36" cy="395" r="13" fill="rgba(255,255,255,.24)"/>
-          <path d="M29 388 l7 5v7c0 2-2 4-7 5-5-1-7-3-7-5v-7l7-5Z" fill="rgba(255,255,255,.65)"/>
-          <rect x="57" y="386" width="76" height="10" rx="5" fill="rgba(255,255,255,.88)"/>
-          <rect x="57" y="402" width="56" height="8"  rx="4" fill="rgba(255,255,255,.52)"/>
-          <rect x="24" y="428" width="128" height="8"  rx="4" fill="#004080" opacity=".28"/>
-          <rect x="24" y="442" width="96"  height="8"  rx="4" fill="#004080" opacity=".20"/>
-          <rect x="24" y="458" width="52"  height="18" rx="9" fill="#8B8BAA" opacity=".15"/>
-          <rect x="30" y="463" width="40"  height="8"  rx="4" fill="#8B8BAA" opacity=".58"/>
+        <g transform="rotate(-4 578 214)" filter="url(#homeSoftShadow)">
+          <rect x="518" y="118" width="142" height="158" rx="18" fill="#FFFFFF"/>
+          <rect x="518" y="118" width="142" height="42" rx="18" fill="url(#homeTeal)"/>
+          <rect x="518" y="146" width="142" height="18" fill="#66C5C5"/>
+          <g fill="#004080" opacity=".18">
+            <rect x="536" y="179" width="18" height="18" rx="5"/>
+            <rect x="565" y="179" width="18" height="18" rx="5"/>
+            <rect x="594" y="179" width="18" height="18" rx="5"/>
+            <rect x="623" y="179" width="18" height="18" rx="5"/>
+            <rect x="536" y="208" width="18" height="18" rx="5"/>
+            <rect x="565" y="208" width="18" height="18" rx="5"/>
+            <rect x="594" y="208" width="18" height="18" rx="5"/>
+            <rect x="623" y="208" width="18" height="18" rx="5"/>
+          </g>
+          <rect x="565" y="208" width="18" height="18" rx="5" fill="#004080" opacity=".64"/>
         </g>
 
-        <!-- SAT-4 bottom-right: Team — green -->
-        <g filter="url(#hn-sm)" class="hv-sat hv-sat-4">
-          <rect x="548" y="362" width="158" height="116" rx="18" fill="#FFFFFF"/>
-          <rect x="548" y="362" width="158" height="42"  rx="18" fill="#4CAF50"/>
-          <rect x="548" y="386" width="158" height="18"  fill="#4CAF50"/>
-          <!-- 3 overlapping avatar circles -->
-          <circle cx="568" cy="383" r="12" fill="rgba(255,255,255,.35)"/>
-          <circle cx="568" cy="379" r="5"  fill="rgba(255,255,255,.70)"/>
-          <path d="M560 388 Q568 383 576 388" fill="rgba(255,255,255,.55)"/>
-          <circle cx="582" cy="385" r="10" fill="rgba(255,255,255,.25)"/>
-          <circle cx="582" cy="381" r="4"  fill="rgba(255,255,255,.55)"/>
-          <rect x="598" y="374" width="78" height="10" rx="5" fill="rgba(255,255,255,.88)"/>
-          <rect x="598" y="390" width="56" height="8"  rx="4" fill="rgba(255,255,255,.52)"/>
-          <rect x="560" y="416" width="128" height="8"  rx="4" fill="#004080" opacity=".28"/>
-          <rect x="560" y="430" width="100" height="8"  rx="4" fill="#004080" opacity=".20"/>
-          <rect x="560" y="446" width="52"  height="18" rx="9" fill="#4CAF50" opacity=".16"/>
-          <rect x="566" y="451" width="40"  height="8"  rx="4" fill="#4CAF50" opacity=".60"/>
+        <g transform="rotate(7 547 407)" filter="url(#homeSoftShadow)">
+          <path d="M475 318h138l43 43v130H475V318Z" fill="#FFFFFF"/>
+          <path d="M613 318v43h43" fill="#DDE8EF"/>
+          <path d="M498 374h92M498 404h120M498 434h82" stroke="#004080" stroke-width="7" stroke-linecap="round" opacity=".16"/>
+          <rect x="594" y="426" width="38" height="25" rx="6" fill="#66C5C5" opacity=".32"/>
         </g>
 
-        <!-- Connecting dashes -->
-        <g class="hn-lines" stroke="#00D4C8" stroke-width="1.8" stroke-dasharray="5 10" stroke-linecap="round" opacity=".38">
-          <path d="M177 190 Q120 170 172 103"/>
-          <path d="M541 190 Q608 170 548 90"/>
-          <path d="M177 356 Q118 370 172 400"/>
-          <path d="M541 356 Q608 366 548 390"/>
+        <g filter="url(#homeSoftShadow)">
+          <rect x="160" y="112" width="138" height="82" rx="18" fill="#FFFFFF"/>
+          <path d="M188 155c18-30 67-30 84 0" fill="none" stroke="#66C5C5" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="200" cy="144" r="15" fill="#004080" opacity=".82"/>
+          <circle cx="229" cy="132" r="18" fill="#66C5C5"/>
+          <circle cx="258" cy="145" r="15" fill="#707070"/>
         </g>
 
-        <!-- OFFICE ACCENT ELEMENTS -->
-        <!-- Plant top-left corner -->
-        <g transform="translate(56,188)">
-          <rect x="6" y="30" width="20" height="28" rx="4" fill="#C8A060"/>
-          <ellipse cx="16" cy="27" rx="13" ry="18" fill="#4CAF50" transform="rotate(-14,16,27)"/>
-          <ellipse cx="28" cy="18" rx="11" ry="15" fill="#388E3C" transform="rotate(22,28,18)"/>
-          <ellipse cx="5"  cy="20" rx="10" ry="14" fill="#66BB6A" transform="rotate(-28,5,20)"/>
-        </g>
-
-        <!-- Coffee mug bottom-left -->
-        <g transform="translate(62,476)">
-          <ellipse cx="20" cy="36" rx="20" ry="8"  fill="#A07830" opacity=".38"/>
-          <ellipse cx="20" cy="14" rx="20" ry="8"  fill="#D4A017"/>
-          <rect x="0" y="14" width="40" height="22" fill="#D4A017"/>
-          <ellipse cx="20" cy="14" rx="16" ry="6"  fill="#7B4A28"/>
-          <ellipse cx="20" cy="14" rx="10" ry="4"  fill="rgba(240,220,160,.40)"/>
-          <path d="M40 18 Q52 24 40 30" fill="none" stroke="#C8A060" stroke-width="5" stroke-linecap="round"/>
-          <path d="M40 18 Q50 24 40 30" fill="none" stroke="#D4A017" stroke-width="3" stroke-linecap="round"/>
-          <path d="M12 5 Q14 -2 12 -8"  fill="none" stroke="rgba(180,180,180,.45)" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M20 3 Q22 -4 20 -10" fill="none" stroke="rgba(180,180,180,.38)" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M28 5 Q30 -2 28 -8"  fill="none" stroke="rgba(180,180,180,.30)" stroke-width="1.5" stroke-linecap="round"/>
-        </g>
-
-        <!-- Accent dots on connection midpoints -->
-        <circle cx="144" cy="250" r="5.5" fill="#00D4C8" opacity=".55"/>
-        <circle cx="578" cy="244" r="5.5" fill="#00D4C8" opacity=".55"/>
-        <circle cx="145" cy="312" r="4.5" fill="#004080" opacity=".32"/>
-        <circle cx="578" cy="306" r="4.5" fill="#004080" opacity=".32"/>
+        <path d="M120 238c94-65 202-83 310-58 76 17 136 57 196 96" fill="none" stroke="#66C5C5" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 14" opacity=".65"/>
+        <circle cx="122" cy="238" r="8" fill="#66C5C5"/>
+        <circle cx="430" cy="180" r="8" fill="#004080"/>
+        <circle cx="626" cy="276" r="8" fill="#707070"/>
       </svg>
     </div>
   </div>
@@ -602,22 +487,22 @@
   </div>
 
   <div class="welcome-path-board">
-    <a href="#/first-day" class="welcome-path-piece piece-day fdb-reveal" style="--rd:0ms" data-link>
+    <a href="#/first-day" class="welcome-path-piece piece-day" data-link>
       <span class="piece-label">\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E21\u0E32\u0E16\u0E36\u0E07</span>
       <h3>\u0E40\u0E14\u0E34\u0E19\u0E15\u0E32\u0E21 Day 1 Guide</h3>
       <p>\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E0A\u0E49\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E2D\u0E30\u0E44\u0E23 \u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08 \u0E41\u0E25\u0E30\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21\u0E43\u0E04\u0E23</p>
     </a>
-    <a href="#/getting-started/wifi" class="welcome-path-piece piece-office fdb-reveal" style="--rd:90ms" data-link>
+    <a href="#/getting-started/wifi" class="welcome-path-piece piece-office" data-link>
       <span class="piece-label">\u0E19\u0E31\u0E48\u0E07\u0E17\u0E35\u0E48\u0E42\u0E15\u0E4A\u0E30\u0E41\u0E25\u0E49\u0E27</span>
       <h3>\u0E15\u0E48\u0E2D Wi-Fi \u0E41\u0E25\u0E30\u0E08\u0E2D\u0E07\u0E2B\u0E49\u0E2D\u0E07</h3>
       <p>\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E17\u0E31\u0E19\u0E17\u0E35 \u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E25\u0E48\u0E16\u0E32\u0E21\u0E2B\u0E25\u0E32\u0E22\u0E23\u0E2D\u0E1A</p>
     </a>
-    <a href="#/policy/dress-code" class="welcome-path-piece piece-policy fdb-reveal" style="--rd:160ms" data-link>
+    <a href="#/policy/dress-code" class="welcome-path-piece piece-policy" data-link>
       <span class="piece-label">\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E1E\u0E23\u0E38\u0E48\u0E07\u0E19\u0E35\u0E49</span>
       <h3>\u0E40\u0E0A\u0E47\u0E01\u0E01\u0E15\u0E34\u0E01\u0E32\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</h3>
       <p>Core Values, dress code, \u0E01\u0E32\u0E23\u0E25\u0E32 \u0E41\u0E25\u0E30\u0E02\u0E2D\u0E1A\u0E40\u0E02\u0E15\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E17\u0E33\u0E07\u0E32\u0E19\u0E23\u0E48\u0E27\u0E21\u0E01\u0E31\u0E19\u0E07\u0E48\u0E32\u0E22\u0E02\u0E36\u0E49\u0E19</p>
     </a>
-    <a href="#/showcase/experiences" class="welcome-path-piece piece-story fdb-reveal" style="--rd:220ms" data-link>
+    <a href="#/showcase/experiences" class="welcome-path-piece piece-story" data-link>
       <span class="piece-label">\u0E2D\u0E22\u0E32\u0E01\u0E40\u0E2B\u0E47\u0E19\u0E20\u0E32\u0E1E\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E08\u0E23\u0E34\u0E07</span>
       <h3>\u0E2D\u0E48\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</h3>
       <p>\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C \u0E27\u0E34\u0E18\u0E35\u0E04\u0E34\u0E14 \u0E41\u0E25\u0E30\u0E1A\u0E17\u0E40\u0E23\u0E35\u0E22\u0E19\u0E08\u0E32\u0E01\u0E04\u0E19\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E15\u0E23\u0E07\u0E08\u0E38\u0E14\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E31\u0E19</p>
@@ -633,22 +518,22 @@
       <p>\u0E1A\u0E32\u0E07\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E48\u0E32\u0E19\u0E22\u0E32\u0E27 \u0E41\u0E04\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E2B\u0E49\u0E40\u0E08\u0E2D\u0E40\u0E23\u0E47\u0E27\u0E15\u0E2D\u0E19\u0E01\u0E33\u0E25\u0E31\u0E07\u0E17\u0E33\u0E07\u0E32\u0E19</p>
     </div>
     <div class="welcome-object-list">
-      <a href="#/resources/timesheet" data-link class="fdb-reveal" style="--rd:0ms">
+      <a href="#/resources/timesheet" data-link>
         <span class="object-icon object-sheet"></span>
         <strong>Timesheet</strong>
         <small>\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E41\u0E25\u0E30\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07</small>
       </a>
-      <a href="#/policy/leave" data-link class="fdb-reveal" style="--rd:80ms">
+      <a href="#/policy/leave" data-link>
         <span class="object-icon object-leave"></span>
         <strong>\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E25\u0E32</strong>
         <small>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19 \u0E27\u0E31\u0E19\u0E25\u0E32 \u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07 HR</small>
       </a>
-      <a href="#/employee/directory" data-link class="fdb-reveal" style="--rd:140ms">
+      <a href="#/employee/directory" data-link>
         <span class="object-icon object-people"></span>
         <strong>Employee Contact</strong>
         <small>\u0E2B\u0E32\u0E0A\u0E37\u0E48\u0E2D\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D</small>
       </a>
-      <a href="#/resources/faqs" data-link class="fdb-reveal" style="--rd:200ms">
+      <a href="#/resources/faqs" data-link>
         <span class="object-icon object-faq"></span>
         <strong>FAQs</strong>
         <small>\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48 intern \u0E40\u0E1B\u0E34\u0E14\u0E14\u0E39\u0E1A\u0E48\u0E2D\u0E22</small>
@@ -665,216 +550,176 @@
 <div class="fd3-page">
 
 <!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 HERO \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
-<section class="fd5-hero">
-  <div class="fd5-inner">
+<div class="fdw-hero">
 
-    <!-- \u2500\u2500 TEXT \u2500\u2500 -->
-    <div class="fd5-copy">
-      <p class="fd5-tag">
-        <span class="fd5-dot"></span>
-        Chapter One &nbsp;&middot;&nbsp; \u0e1a\u0e17\u0e17\u0e35\u0e48\u0e2b\u0e19\u0e36\u0e48\u0e07
-      </p>
-      <h1 class="fd5-h1">
-        <span class="fd5-sub">\u0e27\u0e31\u0e19\u0e19\u0e35\u0e49\u0e04\u0e37\u0e2d</span>
-        <span class="fd5-main">\u0e27\u0e31\u0e19\u0e41\u0e23\u0e01</span>
-        <span class="fd5-place">\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13 \u0e17\u0e35\u0e48 <em>EXZY</em></span>
-      </h1>
-      <p class="fd5-lead">\u0e44\u0e21\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e23\u0e39\u0e49\u0e17\u0e38\u0e01\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e43\u0e19\u0e27\u0e31\u0e19\u0e40\u0e14\u0e35\u0e22\u0e27 \u2014 \u0e41\u0e04\u0e48\u0e21\u0e32\u0e16\u0e36\u0e07\u0e01\u0e47\u0e1e\u0e2d\u0e41\u0e25\u0e49\u0e27</p>
-      <a href="#fd3-sec1" class="fd5-cta">
-        \u0e40\u0e23\u0e34\u0e48\u0e21\u0e15\u0e49\u0e19\u0e27\u0e31\u0e19\u0e41\u0e23\u0e01
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
+  <!-- \u2500\u2500 ILLUSTRATED WORKSPACE SCENE \u2500\u2500 -->
+  <div class="fdw-scene" aria-hidden="true">
+    <svg viewBox="0 0 1440 580" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="fdw-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FDF8F0"/>
+          <stop offset="100%" stop-color="#F5EDD8"/>
+        </linearGradient>
+        <linearGradient id="fdw-desk" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E8C87A"/>
+          <stop offset="100%" stop-color="#C8A050"/>
+        </linearGradient>
+        <linearGradient id="fdw-screen" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1A2E52"/>
+          <stop offset="100%" stop-color="#0E1F3A"/>
+        </linearGradient>
+        <filter id="fdw-shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="rgba(60,30,0,0.18)"/>
+        </filter>
+        <filter id="fdw-soft" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="rgba(60,30,0,0.12)"/>
+        </filter>
+      </defs>
 
-    <!-- \u2500\u2500 VISUAL \u2500\u2500 -->
-    <div class="fd5-visual" aria-hidden="true">
-      <svg viewBox="0 0 480 520" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="fd-wall" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#EBF6FF"/>
-            <stop offset="100%" stop-color="#F8FCFF"/>
-          </linearGradient>
-          <linearGradient id="fd-desk-top" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#E0C478"/>
-            <stop offset="100%" stop-color="#C8A855"/>
-          </linearGradient>
-          <linearGradient id="fd-desk-fr" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#B89048"/>
-            <stop offset="100%" stop-color="#A07838"/>
-          </linearGradient>
-          <linearGradient id="fd-screen" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#1A2E4A"/>
-            <stop offset="100%" stop-color="#0E1E34"/>
-          </linearGradient>
-          <linearGradient id="fd-teal" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stop-color="#00D4C8"/>
-            <stop offset="100%" stop-color="#009EB8"/>
-          </linearGradient>
-          <filter id="fd-shad"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="rgba(0,40,80,.20)"/></filter>
-          <filter id="fd-soft"><feDropShadow dx="0" dy="3" stdDeviation="8"  flood-color="rgba(0,40,80,.14)"/></filter>
-        </defs>
+      <!-- WALL -->
+      <rect width="1440" height="580" fill="url(#fdw-wall)"/>
 
-        <!-- OFFICE WALL BACKGROUND -->
-        <rect width="480" height="520" fill="url(#fd-wall)"/>
+      <!-- WINDOW \u2014 upper right, morning light -->
+      <rect x="980" y="30" width="210" height="270" rx="6" fill="#FEFCF5"/>
+      <rect x="980" y="30" width="210" height="270" rx="6" fill="none" stroke="#D4BE8A" stroke-width="8"/>
+      <line x1="980" y1="165" x2="1190" y2="165" stroke="#D4BE8A" stroke-width="4"/>
+      <line x1="1085" y1="30" x2="1085" y2="300" stroke="#D4BE8A" stroke-width="4"/>
+      <!-- morning light rays washing across wall -->
+      <polygon points="980,30 540,580 760,580 1190,30" fill="rgba(255,220,80,0.09)"/>
+      <polygon points="1085,30 640,580 820,580 1190,110" fill="rgba(255,220,80,0.06)"/>
+      <polygon points="1190,30 820,580 960,580 1190,80" fill="rgba(255,220,80,0.04)"/>
 
-        <!-- WINDOW (upper right) — morning light -->
-        <rect x="270" y="22" width="184" height="220" rx="4" fill="#FEFCF8"/>
-        <rect x="270" y="22" width="184" height="220" rx="4" fill="none" stroke="#D8E8EE" stroke-width="8"/>
-        <line x1="270" y1="132" x2="454" y2="132" stroke="#D8E8EE" stroke-width="4"/>
-        <line x1="362" y1="22"  x2="362" y2="242" stroke="#D8E8EE" stroke-width="4"/>
-        <!-- Morning light rays -->
-        <polygon points="270,22 60,520 200,520 454,22" fill="rgba(255,220,80,.065)"/>
-        <polygon points="362,22 120,520 260,520 454,80" fill="rgba(255,220,80,.04)"/>
-        <!-- Sky through window -->
-        <rect x="278" y="30"  width="76" height="94" rx="2" fill="rgba(180,220,255,.28)"/>
-        <rect x="362" y="30"  width="84" height="94" rx="2" fill="rgba(180,220,255,.22)"/>
-        <rect x="278" y="138" width="76" height="76" rx="2" fill="rgba(180,220,255,.22)"/>
-        <rect x="362" y="138" width="84" height="76" rx="2" fill="rgba(180,220,255,.18)"/>
-        <!-- Small cloud shapes in sky -->
-        <ellipse cx="310" cy="60" rx="18" ry="9" fill="rgba(255,255,255,.65)"/>
-        <ellipse cx="298" cy="62" rx="12" ry="7" fill="rgba(255,255,255,.55)"/>
-        <ellipse cx="324" cy="62" rx="10" ry="6" fill="rgba(255,255,255,.55)"/>
+      <!-- WALL ART \u2014 small framed print left of window -->
+      <rect x="720" y="55" width="130" height="100" rx="4" fill="#EDE5D8" filter="url(#fdw-soft)"/>
+      <rect x="726" y="61" width="118" height="88" rx="2" fill="#F5EDE0"/>
+      <!-- abstract art: a few coloured shapes -->
+      <circle cx="765" cy="105" r="24" fill="rgba(102,197,197,0.35)"/>
+      <rect x="775" y="78" width="14" height="38" rx="3" fill="rgba(0,64,128,0.2)"/>
+      <ellipse cx="800" cy="115" rx="16" ry="10" fill="rgba(245,158,11,0.25)"/>
 
-        <!-- WALL ART (small framed picture left of window) -->
-        <rect x="168" y="34" width="82" height="64" rx="4" fill="#F0E8D8" filter="url(#fd-soft)"/>
-        <rect x="174" y="40" width="70" height="52" rx="2" fill="#FAF4EC"/>
-        <!-- Abstract shapes in frame -->
-        <circle cx="202" cy="66" rx="16" ry="16" r="14" fill="rgba(0,212,200,.30)"/>
-        <rect x="206" y="48" width="10" height="28" rx="3" fill="rgba(0,64,128,.18)"/>
-        <ellipse cx="226" cy="70" rx="10" ry="7" fill="rgba(245,159,11,.22)"/>
+      <!-- WALL SHELF + PLANT -->
+      <rect x="200" y="210" width="90" height="8" rx="2" fill="#C8B07A"/>
+      <rect x="224" y="182" width="28" height="30" rx="3" fill="#707070"/>
+      <ellipse cx="238" cy="178" rx="20" ry="28" fill="#66AA66" transform="rotate(-8,238,178)"/>
+      <ellipse cx="252" cy="172" rx="16" ry="22" fill="#55BB55" transform="rotate(18,252,172)"/>
+      <ellipse cx="224" cy="174" rx="14" ry="20" fill="#44A044" transform="rotate(-22,224,174)"/>
 
-        <!-- BOOKSHELF upper left -->
-        <rect x="18" y="76" width="96" height="7" rx="2" fill="#B8A078"/>
-        <rect x="20" y="30" width="14" height="48" rx="2" fill="#00D4C8"/>
-        <rect x="36" y="36" width="12" height="42" rx="2" fill="#004080"/>
-        <rect x="50" y="32" width="16" height="46" rx="2" fill="#4CAF50"/>
-        <rect x="68" y="38" width="10" height="40" rx="2" fill="#F59E0B"/>
-        <rect x="80" y="34" width="14" height="44" rx="2" fill="#FF6B6B"/>
-        <rect x="96" y="40" width="12" height="38" rx="2" fill="#8B8BAA"/>
+      <!-- DESK SURFACE \u2014 large, perspective trapezoid -->
+      <polygon points="0,330 1440,330 1440,580 0,580" fill="url(#fdw-desk)"/>
+      <!-- Desk edge highlight line -->
+      <line x1="0" y1="330" x2="1440" y2="330" stroke="#E8D090" stroke-width="3"/>
+      <!-- Very subtle wood grain -->
+      <line x1="0" y1="400" x2="1440" y2="398" stroke="rgba(160,110,30,0.06)" stroke-width="1.5"/>
+      <line x1="0" y1="470" x2="1440" y2="468" stroke="rgba(160,110,30,0.05)" stroke-width="1.5"/>
+      <!-- Desk mat under laptop -->
+      <rect x="350" y="325" width="480" height="240" rx="10" fill="rgba(0,40,80,0.06)" transform="rotate(-2,590,445)"/>
 
-        <!-- PLANT (left side, shelf) -->
-        <g transform="translate(30, 80)">
-          <g class="fd5-plant">
-            <rect x="10" y="42" width="24" height="36" rx="4" fill="#8B6914"/>
-            <ellipse cx="22" cy="40" rx="4" ry="3" fill="#6B4B0A"/>
-            <ellipse cx="22" cy="28" rx="16" ry="22" fill="#4CAF50" transform="rotate(-12,22,28)"/>
-            <ellipse cx="36" cy="18" rx="13" ry="18" fill="#388E3C" transform="rotate(26,36,18)"/>
-            <ellipse cx="8"  cy="20" rx="12" ry="16" fill="#66BB6A" transform="rotate(-32,8,20)"/>
-            <ellipse cx="24" cy="10" rx="10" ry="14" fill="#56A856" transform="rotate(6,24,10)"/>
-          </g>
-        </g>
+      <!-- LAPTOP \u2014 main focal object -->
+      <!-- Laptop lid/screen back -->
+      <rect x="380" y="198" width="360" height="238" rx="14" fill="#DEDAD4" filter="url(#fdw-shadow)" transform="rotate(-2,560,317)"/>
+      <!-- Screen bezel -->
+      <rect x="392" y="208" width="336" height="218" rx="8" fill="#1C1C2E" transform="rotate(-2,560,317)"/>
+      <!-- Screen display -->
+      <rect x="398" y="214" width="324" height="206" rx="6" fill="url(#fdw-screen)" transform="rotate(-2,560,317)"/>
+      <!-- Screen glow: subtle EXZY-blue content suggestion -->
+      <rect x="404" y="220" width="312" height="194" rx="4" fill="#243A5E" opacity="0.6" transform="rotate(-2,560,317)"/>
+      <!-- camera dot -->
+      <circle cx="561" cy="216" r="3.5" fill="#0A0A1A" transform="rotate(-2,561,216)"/>
+      <!-- Screen glare reflection -->
+      <ellipse cx="475" cy="268" rx="30" ry="10" fill="rgba(255,255,255,0.07)" transform="rotate(-2,560,317)"/>
+      <!-- Keyboard / base -->
+      <rect x="392" y="430" width="336" height="34" rx="8" fill="#CCCAC4" filter="url(#fdw-soft)" transform="rotate(-2,560,447)"/>
+      <!-- trackpad -->
+      <rect x="482" y="436" width="160" height="24" rx="6" fill="#C0BEB8" transform="rotate(-2,560,448)"/>
 
-        <!-- DESK SURFACE (perspective trapezoid) -->
-        <polygon points="22,296 458,296 490,358 -10,358" fill="url(#fd-desk-top)"/>
-        <!-- Desk front face -->
-        <polygon points="-10,358 490,358 490,480 -10,480" fill="url(#fd-desk-fr)"/>
-        <!-- Desk edge highlight -->
-        <line x1="22" y1="296" x2="458" y2="296" stroke="#ECD070" stroke-width="2.5"/>
-        <!-- Wood grain lines -->
-        <line x1="22" y1="340" x2="458" y2="338" stroke="rgba(140,90,20,.06)" stroke-width="1.5"/>
-        <!-- Desk mat under laptop -->
-        <polygon points="80,294 340,294 356,358 62,358" fill="rgba(0,40,80,.07)" rx="4"/>
+      <!-- COFFEE MUG \u2014 right of laptop -->
+      <ellipse cx="868" cy="388" rx="42" ry="26" fill="#55B8B8"/>
+      <ellipse cx="868" cy="362" rx="42" ry="26" fill="#66C5C5"/>
+      <rect x="826" y="362" width="84" height="26" fill="#66C5C5"/>
+      <!-- Coffee liquid surface -->
+      <ellipse cx="868" cy="362" rx="32" ry="19" fill="#7B4A28"/>
+      <!-- Latte art suggestion -->
+      <path d="M858 358 Q868 352 878 358" fill="none" stroke="rgba(240,220,180,0.5)" stroke-width="2" stroke-linecap="round"/>
+      <!-- Handle -->
+      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#66C5C5" stroke-width="10" stroke-linecap="round"/>
+      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#7DD4D4" stroke-width="6" stroke-linecap="round"/>
+      <!-- Steam wisps -->
+      <path d="M854 352 Q858 336 853 320" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M868 348 Q873 330 868 312" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M882 352 Q887 336 882 320" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5" stroke-linecap="round"/>
 
-        <!-- LAPTOP (main focal object) -->
-        <!-- Screen back -->
-        <polygon points="130,148 354,148 366,294 118,294" fill="#D0CEC8" filter="url(#fd-shad)"/>
-        <!-- Bezel frame -->
-        <polygon points="138,156 346,156 357,288 127,288" fill="#1C1C2E"/>
-        <!-- Screen display -->
-        <polygon points="144,163 340,163 351,281 133,281" fill="url(#fd-screen)"/>
-        <!-- EXZY app interface on screen -->
-        <polygon points="150,170 334,170 344,274 140,274" fill="#1F3250" opacity=".85"/>
-        <!-- App header bar (teal) -->
-        <polygon points="150,170 334,170 338,186 154,186" fill="#00D4C8" opacity=".80"/>
-        <!-- App content lines -->
-        <polygon points="158,196 300,196 303,207 161,207" fill="rgba(255,255,255,.55)"/>
-        <polygon points="158,213 280,213 283,224 161,224" fill="rgba(255,255,255,.38)"/>
-        <polygon points="158,230 290,230 293,241 161,241" fill="rgba(255,255,255,.28)"/>
-        <polygon points="158,247 250,247 253,258 161,258" fill="rgba(255,255,255,.20)"/>
-        <!-- Progress bar on screen -->
-        <polygon points="158,266 310,266 312,272 160,272" fill="rgba(255,255,255,.10)"/>
-        <polygon points="158,266 222,266 224,272 160,272" fill="#00D4C8" opacity=".75"/>
-        <!-- Webcam -->
-        <ellipse cx="244" cy="162" rx="4" ry="4" r="4" fill="#0A0A1E"/>
-        <!-- Screen glare -->
-        <ellipse cx="198" cy="206" rx="22" ry="8" fill="rgba(255,255,255,.055)" transform="rotate(-4,198,206)"/>
-        <!-- Keyboard base -->
-        <polygon points="118,292 368,292 382,358 104,358" fill="#C8C6C0" filter="url(#fd-soft)"/>
-        <!-- Trackpad -->
-        <polygon points="188,306 298,306 304,348 182,348" fill="#B8B6B0"/>
+      <!-- NOTEBOOK \u2014 left of laptop, slightly rotated -->
+      <rect x="80" y="345" width="220" height="175" rx="7" fill="#F0EAD8" filter="url(#fdw-shadow)" transform="rotate(6,190,432)"/>
+      <rect x="92" y="352" width="196" height="162" rx="4" fill="#FAFAF5" transform="rotate(6,190,432)"/>
+      <!-- Spiral spine -->
+      <rect x="80" y="345" width="14" height="175" rx="4" fill="#D4C48A" transform="rotate(6,190,432)"/>
+      <!-- Ruled lines -->
+      <line x1="106" y1="378" x2="278" y2="374" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="395" x2="278" y2="391" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="412" x2="278" y2="408" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="429" x2="278" y2="425" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <line x1="106" y1="446" x2="278" y2="442" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
+      <!-- Some handwriting/doodle suggestion -->
+      <path d="M115 385 Q140 380 155 390 Q165 398 160 408" fill="none" stroke="rgba(0,60,120,0.18)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
+      <line x1="115" y1="420" x2="185" y2="418" stroke="rgba(0,60,120,0.12)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
 
-        <!-- COFFEE MUG (right of laptop) -->
-        <g class="fd5-mug" transform="translate(378, 290)">
-          <ellipse cx="24" cy="52" rx="24" ry="10" fill="#A07830" opacity=".35"/>
-          <ellipse cx="24" cy="20" rx="24" ry="10" fill="#FFFFFF"/>
-          <rect x="0" y="20" width="48" height="32" fill="#FFFFFF"/>
-          <ellipse cx="24" cy="20" rx="20" ry="8"  fill="#7B4A28"/>
-          <ellipse cx="24" cy="20" rx="13" ry="5"  fill="rgba(240,220,170,.45)"/>
-          <!-- Handle -->
-          <path d="M48 26 Q66 36 48 46" fill="none" stroke="#E8E0D0" stroke-width="9" stroke-linecap="round"/>
-          <path d="M48 26 Q64 36 48 46" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
-          <!-- EXZY tag on mug -->
-          <rect x="6" y="34" width="36" height="12" rx="6" fill="#00D4C8" opacity=".30"/>
-          <!-- Steam -->
-          <path class="fd5-steam" style="--sd:0s"  d="M14 12 Q17 2 14 -8"  fill="none" stroke="rgba(180,180,180,.42)" stroke-width="2" stroke-linecap="round"/>
-          <path class="fd5-steam" style="--sd:1s"  d="M24 9  Q27 -1 24 -11" fill="none" stroke="rgba(180,180,180,.35)" stroke-width="2" stroke-linecap="round"/>
-          <path class="fd5-steam" style="--sd:2s"  d="M34 12 Q37 2 34 -8"  fill="none" stroke="rgba(180,180,180,.30)" stroke-width="2" stroke-linecap="round"/>
-        </g>
+      <!-- PEN beside notebook -->
+      <rect x="308" y="355" width="9" height="135" rx="4.5" fill="#0FA8A8" filter="url(#fdw-soft)" transform="rotate(10,312,422)"/>
+      <polygon points="312,350 307,340 317,340" fill="#0D9090" transform="rotate(10,312,345)"/>
+      <rect x="308" y="466" width="9" height="18" rx="4.5" fill="#0D9090" transform="rotate(10,312,475)"/>
 
-        <!-- EXZY BADGE / ID CARD (on desk, rotated) -->
-        <g transform="rotate(-14,78,318) translate(42,306)"><g class="fd5-badge">
-          <rect width="72" height="48" rx="6" fill="#FFFFFF" stroke="#D8E8F0" stroke-width="1.5" filter="url(#fd-soft)"/>
-          <!-- Badge header navy -->
-          <rect width="72" height="16" rx="6" fill="#004080"/>
-          <rect x="0" y="10" width="72" height="6" fill="#004080"/>
-          <!-- Badge name lines -->
-          <rect x="8" y="24" width="56" height="8" rx="4" fill="#004080" opacity=".55"/>
-          <rect x="8" y="36" width="38" height="7" rx="3.5" fill="#004080" opacity=".32"/>
-          <!-- Lanyard hole -->
-          <circle cx="36" cy="-2" r="4" fill="#D0D8E0" stroke="#B8C8D4" stroke-width="1"/>
-        </g></g>
+      <!-- DESK SUCCULENT \u2014 far right -->
+      <ellipse cx="1300" cy="460" rx="36" ry="22" fill="#707070"/>
+      <ellipse cx="1300" cy="438" rx="36" ry="22" fill="#888888"/>
+      <rect x="1264" y="438" width="72" height="22" fill="#888888"/>
+      <!-- Leaves -->
+      <ellipse cx="1300" cy="416" rx="16" ry="26" fill="#5AAA60"/>
+      <ellipse cx="1283" cy="416" rx="13" ry="20" fill="#4CAF54" transform="rotate(-28,1283,416)"/>
+      <ellipse cx="1317" cy="416" rx="13" ry="20" fill="#66BB6A" transform="rotate(28,1317,416)"/>
+      <ellipse cx="1291" cy="404" rx="10" ry="16" fill="#43A047" transform="rotate(-18,1291,404)"/>
+      <ellipse cx="1310" cy="404" rx="10" ry="16" fill="#388E3C" transform="rotate(18,1310,404)"/>
 
-        <!-- POST-IT NOTE -->
-        <g transform="rotate(6,152,308) translate(118,298)"><g class="fd5-postit">
-          <rect width="52" height="46" rx="2" fill="#FFD166"/>
-          <!-- Lines on post-it -->
-          <rect x="8" y="12" width="36" height="5" rx="2.5" fill="rgba(0,0,0,.18)"/>
-          <rect x="8" y="22" width="30" height="5" rx="2.5" fill="rgba(0,0,0,.13)"/>
-          <rect x="8" y="32" width="22" height="5" rx="2.5" fill="rgba(0,0,0,.10)"/>
-        </g></g>
+      <!-- POST-IT NOTE on laptop screen edge -->
+      <rect x="666" y="318" width="52" height="44" rx="2" fill="#66C5C5" opacity="0.85" filter="url(#fdw-soft)" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="328" x2="712" y2="327" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="337" x2="712" y2="336" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
+      <line x1="672" y1="346" x2="700" y2="345" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
 
-        <!-- SMALL SUCCULENT PLANT on desk right -->
-        <g transform="translate(78, 308)">
-          <ellipse cx="14" cy="22" rx="14" ry="6" fill="#707060" opacity=".40"/>
-          <ellipse cx="14" cy="16" rx="14" ry="6" fill="#888870"/>
-          <rect x="0" y="16" width="28" height="6" fill="#888870"/>
-          <ellipse cx="14" cy="10" rx="8"  ry="12" fill="#5AA050"/>
-          <ellipse cx="8"  cy="8"  rx="6"  ry="9"  fill="#4A9040" transform="rotate(-22,8,8)"/>
-          <ellipse cx="20" cy="8"  rx="6"  ry="9"  fill="#68B060" transform="rotate(22,20,8)"/>
-          <ellipse cx="14" cy="3"  rx="5"  ry="7"  fill="#58A848"/>
-        </g>
+      <!-- PHONE \u2014 right side of desk -->
+      <rect x="1060" y="378" width="70" height="118" rx="14" fill="#2A2838" filter="url(#fdw-soft)" transform="rotate(-6,1095,437)"/>
+      <rect x="1066" y="386" width="58" height="102" rx="9" fill="#1A1828" transform="rotate(-6,1095,437)"/>
+      <rect x="1078" y="480" width="30" height="4" rx="2" fill="rgba(255,255,255,0.2)" transform="rotate(-6,1095,482)"/>
 
-        <!-- Floating EXZY accent chip -->
-        <g class="fd5-chip" filter="url(#fd-soft)" transform="translate(318,228)">
-          <rect width="130" height="38" rx="14" fill="#FFFFFF"/>
-          <rect x="0" y="0" width="130" height="4" rx="2" fill="url(#fd-teal)"/>
-          <circle cx="19" cy="21" r="10" fill="#00D4C8" opacity=".22"/>
-          <circle cx="19" cy="21" r="5"  fill="#00D4C8" opacity=".65"/>
-          <rect x="38" y="13" width="78" height="9"  rx="4.5" fill="#004080" opacity=".65"/>
-          <rect x="38" y="27" width="54" height="7"  rx="3.5" fill="#004080" opacity=".35"/>
-        </g>
-
-        <!-- Accent dots (floating sparkle) -->
-        <circle cx="462" cy="50"  r="5"   fill="#00D4C8" opacity=".45"/>
-        <circle cx="440" cy="80"  r="3.5" fill="#F59E0B" opacity=".50"/>
-        <circle cx="22"  cy="260" r="4"   fill="#004080" opacity=".28"/>
-        <circle cx="462" cy="250" r="3.5" fill="#00D4C8" opacity=".38"/>
-        <circle cx="38"  cy="440" r="4"   fill="#F59E0B" opacity=".35"/>
-        <circle cx="450" cy="430" r="4.5" fill="#00D4C8" opacity=".40"/>
-      </svg>
-    </div>
+    </svg>
   </div>
-</section>
+
+  <!-- \u2500\u2500 GRADIENT OVERLAY so text is legible over scene \u2500\u2500 -->
+  <div class="fdw-overlay" aria-hidden="true"></div>
+
+  <!-- \u2500\u2500 CHAPTER OPENING TEXT \u2500\u2500 -->
+  <div class="fdw-text">
+
+    <p class="fdw-chapter-tag">
+      <span class="fdw-tag-line"></span>
+      Chapter One &nbsp;\xB7&nbsp; \u0E1A\u0E17\u0E17\u0E35\u0E48\u0E2B\u0E19\u0E36\u0E48\u0E07
+    </p>
+
+    <h1 class="fdw-h1">
+      <span class="fdw-h1-intro">\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D</span>
+      <span class="fdw-h1-main">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</span>
+      <span class="fdw-h1-place">\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13 \u0E17\u0E35\u0E48 <em>EXZY</em></span>
+    </h1>
+
+    <p class="fdw-lead">\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E43\u0E19\u0E27\u0E31\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27<br>\u0E41\u0E04\u0E48\u0E21\u0E32\u0E16\u0E36\u0E07\u0E01\u0E47\u0E1E\u0E2D \u2014 \u0E17\u0E35\u0E48\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E40\u0E23\u0E32\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E44\u0E27\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E25\u0E49\u0E27</p>
+
+    <a href="#fd3-sec1" class="fdw-cta">
+      \u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+  </div>
+
+</div>
 
 <!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 SECTION 1: Tasks \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
 <section class="fd3-section fd3-sec-tasks" id="fd3-sec1">
@@ -887,7 +732,7 @@
   <div class="fd3-task-grid">
 
     <!-- Task 01: Calendar -->
-    <div class="fd3-task-card fd3-task-card--cal fdb-reveal" style="--rd:0ms">
+    <div class="fd3-task-card fd3-task-card--cal fdb-reveal fdb-delay1">
       <!-- illustrated calendar graphic \u2014 decorative background -->
       <div class="fd3-card-graphic" aria-hidden="true">
         <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg">
@@ -991,7 +836,7 @@
     </div>
 
     <!-- Task 02: Timesheet -->
-    <div class="fd3-task-card fd3-task-card--ts fdb-reveal" style="--rd:120ms">
+    <div class="fd3-task-card fd3-task-card--ts fdb-reveal fdb-delay2">
       <!-- illustrated document/spreadsheet graphic -->
       <div class="fd3-card-graphic" aria-hidden="true">
         <svg viewBox="0 0 150 180" xmlns="http://www.w3.org/2000/svg">
@@ -1096,7 +941,7 @@
 
   <div class="fd3-tl">
 
-    <div class="fd3-tl-item fdb-reveal" style="--tl:#66C5C5;--rd:0ms">
+    <div class="fd3-tl-item fdb-reveal" style="--tl:#66C5C5">
       <div class="fd3-tl-side"><div class="fd3-tl-num">01</div><div class="fd3-tl-line"></div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E27\u0E31\u0E19</div>
@@ -1114,6 +959,11 @@
             <small>\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E31\u0E1A\u0E17\u0E23\u0E32\u0E1A</small>
           </div>
           <div class="fd3-orient-step">
+            <span class="fd3-orient-icon">\u{1F4BB}</span>
+            <strong>\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Tools</strong>
+            <small>\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E43\u0E2B\u0E49\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19</small>
+          </div>
+          <div class="fd3-orient-step">
             <span class="fd3-orient-icon">\u{1F4C5}</span>
             <strong>\u0E1C\u0E39\u0E01 Calendar</strong>
             <small>\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</small>
@@ -1123,7 +973,7 @@
       </div>
     </div>
 
-    <div class="fd3-tl-item fdb-reveal" style="--tl:#004080;--rd:110ms">
+    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#004080">
       <div class="fd3-tl-side"><div class="fd3-tl-num">02</div><div class="fd3-tl-line"></div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">\u0E2D\u0E31\u0E15\u0E25\u0E31\u0E01\u0E29\u0E13\u0E4C\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</div>
@@ -1134,7 +984,7 @@
       </div>
     </div>
 
-    <div class="fd3-tl-item fdb-reveal" style="--tl:#2A8DA8;--rd:200ms">
+    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#2A8DA8">
       <div class="fd3-tl-side"><div class="fd3-tl-num">03</div><div class="fd3-tl-line"></div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E31\u0E21\u0E1E\u0E31\u0E19\u0E18\u0E4C</div>
@@ -1157,7 +1007,7 @@
       </div>
     </div>
 
-    <div class="fd3-tl-item fdb-reveal" style="--tl:#F59E0B;--rd:290ms">
+    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#F59E0B">
       <div class="fd3-tl-side"><div class="fd3-tl-num">04</div></div>
       <div class="fd3-tl-card">
         <div class="fd3-tl-tag">\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</div>
@@ -3561,66 +3411,15 @@
       });
     });
   }
-  function initVisualEffects() {
-    // 3D tilt on path cards
-    document.querySelectorAll(".welcome-path-piece").forEach(function(c) {
-      c.addEventListener("mousemove", function(e) {
-        var r = c.getBoundingClientRect();
-        var x = (e.clientX - r.left) / r.width - 0.5;
-        var y = (e.clientY - r.top)  / r.height - 0.5;
-        c.style.transition = "transform .06s ease, box-shadow .2s ease";
-        c.style.transform  = "perspective(700px) rotateX("+(-y*9)+"deg) rotateY("+(x*9)+"deg) translateY(-6px) scale(1.02)";
-        c.style.boxShadow  = "0 28px 52px rgba(0,64,128,.20)";
-      });
-      c.addEventListener("mouseleave", function() {
-        c.style.transition = "transform .4s var(--ease-out-quart), box-shadow .4s ease";
-        c.style.transform  = "";
-        c.style.boxShadow  = "";
-      });
-    });
-    // Tilt on task/timeline cards
-    document.querySelectorAll(".fd3-task-card,.fd3-tl-card").forEach(function(c) {
-      c.addEventListener("mousemove", function(e) {
-        var r = c.getBoundingClientRect();
-        var x = (e.clientX - r.left) / r.width - 0.5;
-        var y = (e.clientY - r.top)  / r.height - 0.5;
-        c.style.transition = "transform .06s ease";
-        c.style.transform  = "perspective(800px) rotateX("+(-y*5)+"deg) rotateY("+(x*5)+"deg) translateY(-4px)";
-      });
-      c.addEventListener("mouseleave", function() {
-        c.style.transition = "transform .35s var(--ease-out-quart)";
-        c.style.transform  = "";
-      });
-    });
-    // Floating particles on heroes
-    ["welcome-hero","fd5-hero"].forEach(function(cls) {
-      var hero = document.querySelector("."+cls);
-      if (!hero || hero.dataset.particles) return;
-      hero.dataset.particles = "1";
-      for (var k=0; k<14; k++) {
-        var dot = document.createElement("span");
-        var s   = 3 + Math.random()*9;
-        var dur = 7 + Math.random()*11;
-        var del = Math.random()*10;
-        var op  = 0.12 + Math.random()*0.28;
-        var col = Math.random() > 0.5 ? "0,212,200" : "0,64,128";
-        dot.style.cssText = "position:absolute;width:"+s+"px;height:"+s+"px;border-radius:50%;background:rgba("+col+","+op+");left:"+(8+Math.random()*84)+"%;top:"+(5+Math.random()*85)+"%;pointer-events:none;z-index:0;animation:particleFloat "+dur+"s "+del+"s ease-in-out infinite";
-        hero.appendChild(dot);
-      }
-    });
-  }
-
   function boot() {
     document.getElementById("year").textContent = (/* @__PURE__ */ new Date()).getFullYear();
     initNav();
     initAdminMode();
     render();
     setTimeout(initEnhancements, 80);
-    setTimeout(initVisualEffects, 200);
     window.addEventListener("hashchange", () => {
       render();
       setTimeout(initEnhancements, 80);
-      setTimeout(initVisualEffects, 200);
     });
   }
   if (document.readyState === "loading") {
