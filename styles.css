@@ -6615,17 +6615,19 @@ h2.section-title {
 .btn-cta-hero:hover .btn-cta-icon { background: rgba(255,255,255,0.30); }
 .btn-shine {
   position: absolute;
-  top: 0; left: -80%;
+  top: 0; left: 0;
   width: 55%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
-  transform: skewX(-18deg);
+  transform: translateX(-160%) skewX(-18deg);
   animation: btnShine 3s ease-in-out infinite 1s;
+  will-change: transform;
 }
+/* Rewritten: was animating `left` (layout) — now uses transform (composited) */
 @keyframes btnShine {
-  0%   { left: -80%; }
-  40%  { left: 150%; }
-  100% { left: 150%; }
+  0%   { transform: translateX(-160%) skewX(-18deg); }
+  40%  { transform: translateX(280%)  skewX(-18deg); }
+  100% { transform: translateX(280%)  skewX(-18deg); }
 }
 .btn-cta-hero .arrow { transition: transform 0.2s ease; }
 .btn-cta-hero:hover .arrow { transform: translateX(4px); }
@@ -15137,11 +15139,8 @@ p.hero-word, div.hero-word { display: block; }
 .fd5-ach-hint { font-size: .76rem; color: #9BAAB8; line-height: 1.4; }
 
 /* Pop animation on unlock */
-@keyframes fd5pop {
-  0%   { transform: scale(1); }
-  40%  { transform: scale(1.05); }
-  70%  { transform: scale(.97); }
-  100% { transform: scale(1); }
+/* duplicate fd5pop removed */
+/* @keyframes fd5pop scale-bounce v2 */
 }
 .fd5-ach-card.popping { animation: fd5pop .35s ease; }
 
@@ -15882,11 +15881,7 @@ p.hero-word, div.hero-word { display: block; }
 .fd5-ach.done .fd5-ach-label { color: var(--ach-accent-dark, #2A8DA8); }
 /* Pop animation when checked */
 .fd5-ach.popping { animation: fd5pop .4s cubic-bezier(0.25, 1, 0.5, 1); }
-@keyframes fd5pop {
-  0%   { transform: scale(1); }
-  40%  { transform: scale(1.06); }
-  100% { transform: scale(1) translateY(-4px); }
-}
+/* duplicate fd5pop removed */
 .fd5-ach-top {
   display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;
 }
@@ -26250,4 +26245,1968 @@ footer, .footer { margin-top: 0 !important; }
   .fd3-orientation-map {
     grid-template-columns: 1fr;
   }
+}
+
+/* =========================================================
+   GEN Z REFRESH — Home + First-Day Hero Banners
+   Deep navy · Electric teal · Bold aurora abstraction
+   ========================================================= */
+
+/* HOME — dark navy + electric teal aurora */
+.welcome-hero {
+  background:
+    radial-gradient(ellipse 62% 72% at 78% 20%, rgba(0,212,200,.30), transparent),
+    radial-gradient(ellipse 46% 54% at 12% 80%, rgba(77,148,255,.22), transparent),
+    radial-gradient(ellipse 30% 40% at 48% 6%, rgba(0,191,175,.14), transparent),
+    linear-gradient(148deg, #061228 0%, #0C1E40 54%, #07172E 100%) !important;
+}
+
+.welcome-hero::after {
+  background: linear-gradient(180deg, transparent 55%, rgba(6,18,40,.72) 100%);
+}
+
+.welcome-hero-bg {
+  background:
+    linear-gradient(120deg, rgba(0,212,200,.045) 0 1px, transparent 1px 100%) 0 0 / 68px 68px,
+    radial-gradient(circle at 14% 76%, rgba(77,148,255,.14), transparent 26%);
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.70), rgba(0,0,0,.12), rgba(0,0,0,.48));
+}
+
+/* Text on dark */
+.welcome-copy h1        { color: #EFF8FF !important; }
+.welcome-kicker         { color: #00D4C8 !important; }
+.welcome-kicker span    { background: #00D4C8 !important; }
+.welcome-lead           { color: rgba(188,220,240,.80) !important; }
+
+/* CTA — electric teal-to-blue gradient */
+.welcome-primary {
+  background: linear-gradient(135deg, #00D4C8 0%, #0088CC 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(0,212,200,.38) !important;
+}
+.welcome-primary:hover {
+  filter: brightness(1.09) !important;
+  box-shadow: 0 14px 42px rgba(0,212,200,.54) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Scene: strip the white glass card — dark SVG shows clean */
+.welcome-scene {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* FIRST-DAY — bold electric gradient bg */
+.fdw-hero {
+  background:
+    radial-gradient(ellipse 68% 62% at 84% 20%, rgba(0,212,200,.34), transparent),
+    radial-gradient(ellipse 48% 52% at 10% 86%, rgba(77,148,255,.24), transparent),
+    linear-gradient(150deg, #040F22 0%, #071840 50%, #082748 100%) !important;
+}
+
+.fdw-overlay {
+  background:
+    linear-gradient(138deg,
+      rgba(4,15,34,.94) 0%,
+      rgba(4,15,34,.84) 32%,
+      rgba(4,15,34,.48) 56%,
+      rgba(4,15,34,.06) 100%) !important;
+}
+
+/* Text on dark first-day */
+.fdw-chapter-tag    { color: rgba(0,212,200,.90) !important; }
+.fdw-tag-line       { background: rgba(0,212,200,.56) !important; }
+.fdw-h1-intro       { color: rgba(178,216,242,.46) !important; }
+.fdw-h1-main        { color: #EFF8FF !important; }
+.fdw-h1-place       { color: rgba(178,216,242,.58) !important; }
+.fdw-h1-place em    { color: #00D4C8 !important; }
+.fdw-lead           { color: rgba(184,218,238,.66) !important; }
+
+.fdw-cta {
+  background: linear-gradient(135deg, #00D4C8, #0077CC) !important;
+  box-shadow: 0 6px 28px rgba(0,212,200,.42) !important;
+}
+.fdw-cta:hover {
+  background: linear-gradient(135deg, #00ECDA, #008AE0) !important;
+  box-shadow: 0 10px 36px rgba(0,212,200,.56) !important;
+  transform: translateY(-2px) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-primary,
+  .fdw-cta { transform: none !important; }
+}
+
+/* =========================================================
+   V3 — ALTERNATING SECTIONS · BRIGHT FIRST-DAY · BRAND TEAL OBJECTS
+   Rhythm: dark hero → white path → vivid-teal objects  (home)
+           vivid-grad hero → white tasks → mint timeline  (first-day)
+   ========================================================= */
+
+/* ── HOME: unlock scene + fill right column ── */
+.welcome-scene {
+  max-width: none !important;
+  width: 100% !important;
+  align-self: stretch !important;
+}
+.welcome-scene svg { width: 100%; height: 100%; }
+
+/* ── HOME WELCOME-PATH: clean white — cards carry the color ── */
+.welcome-path {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6FBFC 100%) !important;
+}
+
+.welcome-section-head h2 { color: #004081 !important; }
+.welcome-section-head p  { color: #3A4757 !important; }
+
+/* Refined path-piece cards — vivid but tasteful */
+.piece-day {
+  background:
+    radial-gradient(circle at 106% 114%, rgba(102,197,197,.48), transparent 42%),
+    linear-gradient(140deg, #003870 0%, #0068C0 100%) !important;
+  border: none !important;
+}
+.piece-office {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(255,255,255,.50), transparent 32%),
+    linear-gradient(140deg, #00C8C0 0%, #009DB0 100%) !important;
+  color: #001C28 !important;
+  border: none !important;
+}
+.piece-policy {
+  background:
+    radial-gradient(circle at 90% 102%, rgba(102,197,197,.26), transparent 36%),
+    linear-gradient(140deg, #4A5568 0%, #616E82 100%) !important;
+  border: none !important;
+}
+.piece-story {
+  background:
+    radial-gradient(circle at 92% 94%, rgba(102,197,197,.32), transparent 38%),
+    linear-gradient(140deg, #DDFAF8 0%, #EEF9F9 100%) !important;
+  color: #004081 !important;
+  border: none !important;
+  box-shadow: inset 0 0 0 1px rgba(102,197,197,.28), 0 18px 42px rgba(0,64,128,.08) !important;
+}
+
+.piece-day .piece-label    { color: rgba(102,197,197,.92) !important; opacity: 1 !important; }
+.piece-story .piece-label  { color: #66C5C5 !important; opacity: 1 !important; }
+.piece-office .piece-label { color: rgba(0,28,46,.68) !important; opacity: 1 !important; }
+.piece-policy .piece-label { color: rgba(210,225,240,.82) !important; opacity: 1 !important; }
+
+/* ── HOME WELCOME-OBJECTS: EXZY brand teal — the vibrant accent section ── */
+.welcome-objects {
+  background:
+    radial-gradient(ellipse 58% 72% at 88% 18%, rgba(255,255,255,.28), transparent 42%),
+    radial-gradient(ellipse 44% 55% at 8% 84%, rgba(0,64,128,.22), transparent 38%),
+    linear-gradient(145deg, #00D4C8 0%, #00AABB 40%, #0072A0 80%, #004A80 100%) !important;
+  color: #002030 !important;
+}
+
+.welcome-object-copy h2 { color: #001A28 !important; }
+.welcome-object-copy p  { color: rgba(0,28,46,.72) !important; margin-top: 18px; }
+
+.welcome-object-list a {
+  background: rgba(255,255,255,.20) !important;
+  border: 1px solid rgba(255,255,255,.32) !important;
+  color: #001A28 !important;
+  box-shadow: 0 4px 16px rgba(0,64,128,.10) !important;
+  transition: background .2s ease, transform .22s var(--ease-out-quart), box-shadow .22s ease !important;
+}
+.welcome-object-list a:hover {
+  background: rgba(255,255,255,.34) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 32px rgba(0,64,128,.18) !important;
+}
+.welcome-object-list strong { color: #001A28 !important; }
+.welcome-object-list small  { color: rgba(0,28,46,.68) !important; }
+
+.object-icon {
+  background-color: rgba(255,255,255,.28) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 6px 16px rgba(0,64,128,.14) !important;
+}
+/* Re-tint icon paths to navy (they were white, now need to show on light icon bg) */
+.object-sheet  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M10 5h15l6 6v24H10z' fill='%23004080'/%3E%3Cpath d='M25 5v7h7' fill='%2366C5C5'/%3E%3Cpath d='M15 18h14M15 24h11M15 30h8' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") !important; }
+.object-leave  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='8' y='9' width='24' height='24' rx='4' fill='%23004080'/%3E%3Cpath d='M12 17h16M16 6v7M24 6v7' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='25' r='4' fill='%2366C5C5'/%3E%3C/svg%3E") !important; }
+.object-people { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='15' cy='16' r='6' fill='%23004080'/%3E%3Ccircle cx='26' cy='17' r='5' fill='%23004080' opacity='.7'/%3E%3Cpath d='M7 32c2-7 13-10 20 0' fill='%23004080'/%3E%3Cpath d='M22 31c2-4 8-6 11 0' fill='%23004080' opacity='.7'/%3E%3C/svg%3E") !important; }
+.object-faq    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M8 9h24v18H19l-7 6v-6H8z' fill='%23004080'/%3E%3Cpath d='M17 16c1-4 8-3 7 2-.5 3-4 3-4 6M20 29h.1' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") !important; }
+
+/* ── FIRST-DAY HERO: bold horizontal navy → teal split ── */
+.fdw-hero {
+  background: linear-gradient(90deg,
+    #001830 0%,
+    #002E58 22%,
+    #006080 48%,
+    #00B2A8 76%,
+    #00D4C8 100%) !important;
+  min-height: 88vh !important;
+}
+
+/* Overlay — hard split: left half dark for text, right half open */
+.fdw-overlay {
+  background: linear-gradient(90deg,
+    rgba(0,10,24,.96) 0%,
+    rgba(0,14,30,.90) 24%,
+    rgba(0,20,42,.56) 44%,
+    rgba(0,20,42,.00) 62%) !important;
+}
+
+/* First-day text on dark left band */
+.fdw-chapter-tag    { color: rgba(180,240,240,.90) !important; }
+.fdw-tag-line       { background: rgba(180,240,240,.55) !important; }
+.fdw-h1-intro       { color: rgba(190,230,240,.46) !important; }
+.fdw-h1-main        { color: #FFFFFF !important; }
+.fdw-h1-place       { color: rgba(190,230,240,.56) !important; }
+.fdw-h1-place em    { color: #AAFFF6 !important; }
+.fdw-lead           { color: rgba(200,235,242,.70) !important; }
+.fdw-cta {
+  background: #FFFFFF !important;
+  color: #003060 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,.20) !important;
+}
+.fdw-cta:hover {
+  background: #E8F8FF !important;
+  box-shadow: 0 12px 34px rgba(0,0,0,.28) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* ── FIRST-DAY SECTIONS: white → light-mint alternating ── */
+.fd3-sec-tasks {
+  background: #FFFFFF !important;
+}
+.fd3-sec-timeline {
+  background:
+    radial-gradient(ellipse 60% 65% at 92% 12%, rgba(0,212,200,.08), transparent 44%),
+    linear-gradient(180deg, #F0FFFE 0%, #FAFFFE 100%) !important;
+}
+
+.fd3-task-card {
+  box-shadow: 0 4px 20px rgba(0,64,128,.07), 0 2px 6px rgba(0,64,128,.04) !important;
+  border: 1px solid rgba(0,64,128,.07) !important;
+  transition: transform .22s var(--ease-out-quart), box-shadow .22s ease, border-color .2s ease !important;
+}
+.fd3-task-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 18px 48px rgba(0,64,128,.12), 0 4px 14px rgba(0,212,200,.10) !important;
+  border-color: rgba(0,212,200,.22) !important;
+}
+
+.fd3-tl-card {
+  border: 1px solid rgba(0,64,128,.07) !important;
+  box-shadow: 0 4px 18px rgba(0,64,128,.06) !important;
+  transition: transform .2s var(--ease-out-quart), box-shadow .2s ease !important;
+}
+.fd3-tl-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 34px rgba(0,64,128,.10) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fdw-cta,
+  .fd3-task-card:hover,
+  .fd3-tl-card:hover,
+  .welcome-object-list a:hover { transform: none !important; }
+}
+
+/* =========================================================
+   FD5-HERO — Clean two-column first-day hero
+   Replaces the broken full-bleed fdw-hero system entirely
+   ========================================================= */
+
+.fd5-hero {
+  min-height: 88vh;
+  background: linear-gradient(105deg,
+    #001428 0%,
+    #002E56 28%,
+    #006280 55%,
+    #00B0A8 80%,
+    #00D4C8 100%);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.fd5-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  padding: clamp(80px, 11vw, 140px) clamp(24px, 5vw, 60px);
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(40px, 7vw, 100px);
+  align-items: center;
+}
+
+/* ── Left: text ── */
+.fd5-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.fd5-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  color: rgba(180,242,240,.88);
+  margin: 0 0 28px;
+}
+
+.fd5-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00D4C8;
+  box-shadow: 0 0 0 4px rgba(0,212,200,.22);
+  flex-shrink: 0;
+}
+
+.fd5-h1 {
+  margin: 0 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.fd5-sub {
+  font-family: var(--thai);
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  font-weight: 300;
+  color: rgba(180,232,240,.44);
+  letter-spacing: -.01em;
+  line-height: 1.8;
+}
+
+.fd5-main {
+  font-family: var(--thai);
+  font-size: clamp(4.2rem, 9.5vw, 8rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+
+.fd5-place {
+  font-family: var(--thai);
+  font-size: clamp(1.5rem, 2.8vw, 2.4rem);
+  font-weight: 400;
+  color: rgba(180,232,240,.52);
+  letter-spacing: -.01em;
+  line-height: 1.55;
+}
+
+.fd5-place em {
+  font-style: normal;
+  font-weight: 800;
+  color: #AAFFF6;
+}
+
+.fd5-lead {
+  font-family: var(--thai);
+  font-size: clamp(0.94rem, 1.5vw, 1.05rem);
+  line-height: 1.9;
+  color: rgba(198,236,242,.68);
+  margin: 0 0 36px;
+  max-width: 44ch;
+}
+
+.fd5-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  color: #002E56;
+  padding: 14px 30px;
+  border-radius: 100px;
+  font-family: var(--thai);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  width: fit-content;
+  box-shadow: 0 8px 28px rgba(0,0,0,.22);
+  transition: transform .2s var(--ease-out-quart), box-shadow .2s ease, background .15s ease;
+}
+
+.fd5-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.30);
+  background: #E8F8FF;
+}
+
+/* ── Right: visual ── */
+.fd5-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fd5-visual svg {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  overflow: visible;
+}
+
+/* Old fdw-hero: hide any remnants if the page still references them */
+.fd3-page .fdw-hero { display: none !important; }
+
+@media (max-width: 900px) {
+  .fd5-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .fd5-main { font-size: clamp(3.6rem, 14vw, 5.5rem); }
+  .fd5-visual { justify-content: center; }
+  .fd5-visual svg { max-width: 380px; }
+}
+
+@media (max-width: 560px) {
+  .fd5-visual { display: none; }
+  .fd5-main { font-size: clamp(3.2rem, 16vw, 4.5rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fd5-cta { transform: none !important; }
+}
+
+/* =========================================================
+   FULL-PAGE REDESIGN — Light theme, distinct pages, animations
+   HOME = cool professional white   FIRST-DAY = warm welcoming
+   ========================================================= */
+
+/* ── KEYFRAMES ── */
+@keyframes hvFloatA {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50%       { transform: translateY(-10px) rotate(.5deg); }
+}
+@keyframes hvFloatB {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50%       { transform: translateY(-7px) rotate(-.4deg); }
+}
+@keyframes hvFloatC {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+@keyframes fd5EnterLeft {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fd5EnterRight {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fd5FadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulseDot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,212,200,.45); }
+  60%       { box-shadow: 0 0 0 9px rgba(0,212,200,0); }
+}
+@keyframes drawLine {
+  from { stroke-dashoffset: 600; }
+  to   { stroke-dashoffset: 0; }
+}
+@keyframes scaleIn {
+  from { transform: scale(.5); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ── HOME HERO: light, professional, cool-tinted ── */
+.welcome-hero {
+  background:
+    radial-gradient(ellipse 52% 60% at 88% 22%, rgba(0,212,200,.13), transparent),
+    radial-gradient(ellipse 38% 48% at 8%  82%, rgba(0,64,128,.07),  transparent),
+    linear-gradient(140deg, #FFFFFF 0%, #F4FDFF 44%, #EBF5FF 100%) !important;
+}
+.welcome-hero::after {
+  background: linear-gradient(180deg, transparent 50%, rgba(255,255,255,.85) 100%);
+}
+.welcome-hero-bg { opacity: .25 !important; }
+
+/* Home hero text on light bg */
+.welcome-copy h1 { color: #003D7A !important; }
+.welcome-kicker   { color: #004080 !important; }
+.welcome-kicker span { background: #00D4C8 !important; }
+.welcome-lead     { color: #2E4257 !important; }
+.welcome-primary  {
+  background: linear-gradient(135deg, #00D4C8, #0077CC) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 28px rgba(0,64,128,.22) !important;
+}
+.welcome-primary:hover {
+  filter: brightness(1.06) !important;
+  box-shadow: 0 14px 36px rgba(0,64,128,.28) !important;
+}
+
+/* Home hub + satellite card animations */
+.hv-hub  { animation: fd5FadeUp .70s var(--ease-out-quint) .1s both; }
+.hv-sat  { animation: fd5FadeUp .70s var(--ease-out-quint) both; }
+.hv-sat-1 { animation-delay: .22s !important; animation-name: hvFloatA; animation-duration: 5s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-fill-mode: both; }
+.hv-sat-2 { animation: hvFloatB 5.5s .4s ease-in-out infinite both; }
+.hv-sat-3 { animation: hvFloatC 4.8s .6s ease-in-out infinite both; }
+.hv-sat-4 { animation: hvFloatA 6s .2s ease-in-out infinite both; }
+
+/* Scene unlock */
+.welcome-scene {
+  max-width: none !important;
+  width: 100% !important;
+  align-self: stretch !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.welcome-scene svg { width: 100%; height: 100%; overflow: visible; }
+
+/* ── HOME SECTIONS: white rhythm ── */
+.welcome-path {
+  background: linear-gradient(180deg, #FAFEFF 0%, #FFFFFF 100%) !important;
+}
+.welcome-section-head h2 { color: #004081 !important; }
+.welcome-section-head p  { color: #3A4757 !important; }
+
+/* Path piece enhanced hover */
+.welcome-path-piece {
+  transition: transform .24s var(--ease-out-quart), box-shadow .24s ease !important;
+}
+.welcome-path-piece:hover {
+  transform: translateY(-6px) rotate(.2deg) !important;
+  box-shadow: 0 24px 48px rgba(0,64,128,.18) !important;
+}
+
+/* ── HOME WELCOME-OBJECTS: clean light section, colourful cards ── */
+.welcome-objects {
+  background: linear-gradient(160deg, #F4FDFF 0%, #EEF8FF 50%, #F8FFFD 100%) !important;
+  color: #1A2E3A !important;
+}
+
+.welcome-object-copy h2 { color: #003A6E !important; }
+.welcome-object-copy p  { color: #3A4F5C !important; margin-top: 16px; }
+
+/* All 4 cards: white base with elevation */
+.welcome-object-list a {
+  background: #FFFFFF !important;
+  border: none !important;
+  border-radius: 22px !important;
+  color: #003A6E !important;
+  box-shadow: 0 4px 20px rgba(0,60,100,.09), 0 1px 4px rgba(0,60,100,.05) !important;
+  transition: transform .24s var(--ease-out-quart), box-shadow .24s ease !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+/* Top accent bar on each card */
+.welcome-object-list a::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  border-radius: 22px 22px 0 0;
+}
+
+.welcome-object-list a:nth-child(1)::before { background: linear-gradient(90deg, #00D4C8, #009EB8); }
+.welcome-object-list a:nth-child(2)::before { background: linear-gradient(90deg, #004080, #005EA8); }
+.welcome-object-list a:nth-child(3)::before { background: linear-gradient(90deg, #F59E0B, #F97316); }
+.welcome-object-list a:nth-child(4)::before { background: linear-gradient(90deg, #8B5CF6, #6366F1); }
+
+/* Hover: lift with colour-matched shadow */
+.welcome-object-list a:hover {
+  transform: translateY(-6px) !important;
+}
+.welcome-object-list a:nth-child(1):hover { box-shadow: 0 18px 42px rgba(0,212,200,.20), 0 4px 12px rgba(0,212,200,.12) !important; }
+.welcome-object-list a:nth-child(2):hover { box-shadow: 0 18px 42px rgba(0,64,128,.18), 0 4px 12px rgba(0,64,128,.10) !important; }
+.welcome-object-list a:nth-child(3):hover { box-shadow: 0 18px 42px rgba(245,158,11,.18), 0 4px 12px rgba(245,158,11,.12) !important; }
+.welcome-object-list a:nth-child(4):hover { box-shadow: 0 18px 42px rgba(139,92,246,.18), 0 4px 12px rgba(139,92,246,.12) !important; }
+
+.welcome-object-list strong { color: #003A6E !important; }
+.welcome-object-list small  { color: #4A607A !important; }
+
+/* Icon: solid colour bg, white icon */
+.object-icon {
+  border-radius: 16px !important;
+  box-shadow: none !important;
+}
+.welcome-object-list a:nth-child(1) .object-icon { background-color: #00D4C8 !important; }
+.welcome-object-list a:nth-child(2) .object-icon { background-color: #004080 !important; }
+.welcome-object-list a:nth-child(3) .object-icon { background-color: #F59E0B !important; }
+.welcome-object-list a:nth-child(4) .object-icon { background-color: #8B5CF6 !important; }
+
+/* Revert icon SVGs to white paths (they work on coloured icon bg) */
+.object-sheet  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M10 5h15l6 6v24H10z' fill='white'/%3E%3Cpath d='M25 5v7h7' fill='rgba(255,255,255,.55)'/%3E%3Cpath d='M15 18h14M15 24h11M15 30h8' stroke='%23004080' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") !important; }
+.object-leave  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='8' y='9' width='24' height='24' rx='4' fill='white'/%3E%3Cpath d='M12 17h16M16 6v7M24 6v7' stroke='%23004080' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='25' r='4' fill='%2366C5C5'/%3E%3C/svg%3E") !important; }
+.object-people { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='15' cy='16' r='6' fill='white'/%3E%3Ccircle cx='26' cy='17' r='5' fill='white' opacity='.75'/%3E%3Cpath d='M7 32c2-7 13-10 20 0' fill='white'/%3E%3Cpath d='M22 31c2-4 8-6 11 0' fill='white' opacity='.75'/%3E%3C/svg%3E") !important; }
+.object-faq    { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M8 9h24v18H19l-7 6v-6H8z' fill='white'/%3E%3Cpath d='M17 16c1-4 8-3 7 2-.5 3-4 3-4 6M20 29h.1' fill='none' stroke='%238B5CF6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") !important; }
+
+/* ── FD5-HERO: warm, light, welcoming ── */
+.fd5-hero {
+  background: linear-gradient(140deg,
+    #FFFDFB 0%,
+    #F2FFFC 30%,
+    #EAF8FF 65%,
+    #F0FFFE 100%) !important;
+  min-height: 88vh !important;
+}
+
+/* fd5 text on warm light bg — dark navy */
+.fd5-tag   { color: #005A6A !important; }
+.fd5-dot   { background: #00B8AA !important; box-shadow: 0 0 0 4px rgba(0,184,170,.22) !important; animation: pulseDot 2.2s ease-in-out infinite !important; }
+.fd5-sub   { color: rgba(0,50,60,.38) !important; }
+.fd5-main  { color: #002A42 !important; }
+.fd5-place { color: rgba(0,46,60,.50) !important; }
+.fd5-place em { color: #007A7A !important; }
+.fd5-lead  { color: rgba(0,40,58,.60) !important; }
+.fd5-cta   {
+  background: #004080 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 26px rgba(0,64,128,.22) !important;
+}
+.fd5-cta:hover {
+  background: #005AA8 !important;
+  box-shadow: 0 14px 34px rgba(0,64,128,.30) !important;
+}
+.fd5-cta svg { stroke: #FFFFFF !important; }
+
+/* fd5 entrance animations */
+.fd5-copy { animation: fd5EnterLeft  .72s var(--ease-out-quint) .05s both; }
+.fd5-visual { animation: fd5EnterRight .72s var(--ease-out-quint) .15s both; }
+
+/* Journey SVG animations */
+.jv-path  {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawLine 1.4s var(--ease-out-expo) .5s both;
+}
+.jv-n1 { animation: scaleIn .5s var(--ease-out-quint) .6s  both; }
+.jv-n2 { animation: scaleIn .5s var(--ease-out-quint) .85s both; }
+.jv-n3 { animation: scaleIn .5s var(--ease-out-quint) 1.1s both; }
+.jv-n4 { animation: scaleIn .5s var(--ease-out-quint) 1.35s both; }
+.jv-n5 { animation: scaleIn .5s var(--ease-out-quint) 1.6s  both; }
+.jv-badge { animation: fd5FadeUp .6s var(--ease-out-quint) .3s both; }
+
+/* ── FIRST-DAY SECTIONS: warm/fresh alternating ── */
+.fd3-sec-tasks {
+  background: #FFFFFF !important;
+}
+.fd3-sec-timeline {
+  background:
+    radial-gradient(ellipse 55% 60% at 92% 12%, rgba(0,212,200,.08), transparent 44%),
+    linear-gradient(180deg, #F4FFFD 0%, #FAFFFD 100%) !important;
+}
+
+/* Card hover animations first-day */
+.fd3-task-card {
+  border: 1px solid rgba(0,64,128,.07) !important;
+  box-shadow: 0 4px 20px rgba(0,64,128,.07) !important;
+  transition: transform .24s var(--ease-out-quart), box-shadow .24s ease, border-color .2s !important;
+}
+.fd3-task-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 50px rgba(0,64,128,.12), 0 4px 16px rgba(0,212,200,.10) !important;
+  border-color: rgba(0,212,200,.24) !important;
+}
+.fd3-tl-card {
+  border: 1px solid rgba(0,64,128,.07) !important;
+  box-shadow: 0 4px 18px rgba(0,64,128,.06) !important;
+  transition: transform .22s var(--ease-out-quart), box-shadow .22s ease !important;
+}
+.fd3-tl-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 36px rgba(0,64,128,.10) !important;
+}
+
+/* Scroll-reveal base state */
+.fdb-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .6s var(--ease-out-quint), transform .6s var(--ease-out-quint);
+}
+.fdb-reveal.fdb-vis {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fdb-delay1 { transition-delay: .10s !important; }
+.fdb-delay2 { transition-delay: .20s !important; }
+.fdb-delay3 { transition-delay: .30s !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hv-sat, .hv-hub, .hv-sat-1, .hv-sat-2, .hv-sat-3, .hv-sat-4,
+  .fd5-copy, .fd5-visual, .jv-path, .jv-n1, .jv-n2, .jv-n3, .jv-n4, .jv-n5, .jv-badge,
+  .fdb-reveal { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
+
+/* =========================================================
+   VISUAL EFFECTS — Animations, blobs, tilt, shimmer, glow
+   ========================================================= */
+
+/* ── ANIMATED GRADIENT BACKGROUND ── */
+@keyframes gradShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.welcome-hero {
+  background-size: 300% 300% !important;
+  animation: gradShift 14s ease infinite !important;
+}
+
+.fd5-hero {
+  background-size: 300% 300% !important;
+  animation: gradShift 16s ease infinite !important;
+}
+
+/* ── ANIMATED BACKGROUND BLOBS ── */
+@keyframes blobA {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33%       { transform: translate(40px,-30px) scale(1.12) rotate(8deg); }
+  66%       { transform: translate(-28px, 22px) scale(.93) rotate(-6deg); }
+}
+@keyframes blobB {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  40%       { transform: translate(-36px, 24px) scale(1.08) rotate(-10deg); }
+  70%       { transform: translate(26px,-20px) scale(.96) rotate(5deg); }
+}
+
+/* Blobs via ::before and ::after on hero wrappers */
+.welcome-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,212,200,.18) 0%, transparent 70%);
+  top: -100px; right: -80px;
+  animation: blobA 12s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Second blob via fd5-hero structural approach */
+.fd5-hero::before {
+  content: "";
+  position: absolute;
+  width: 560px; height: 420px;
+  border-radius: 60% 40% 50% 60% / 50% 60% 40% 50%;
+  background: radial-gradient(ellipse, rgba(0,184,170,.16) 0%, transparent 70%);
+  top: -60px; right: -40px;
+  animation: blobA 14s ease-in-out infinite;
+  pointer-events: none;
+}
+.fd5-hero::after {
+  content: "";
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50% 60% 40% 50% / 60% 40% 60% 40%;
+  background: radial-gradient(ellipse, rgba(0,64,128,.10) 0%, transparent 70%);
+  bottom: -60px; left: -40px;
+  animation: blobB 17s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ── SHIMMER ON BUTTONS ── */
+@keyframes shimmerBtn {
+  0%   { left: -120%; }
+  100% { left: 160%; }
+}
+
+.welcome-primary,
+.fd5-cta {
+  position: relative;
+  overflow: hidden;
+}
+.welcome-primary::before,
+.fd5-cta::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  left: -120%;
+  width: 60%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent);
+  transform: skewX(-18deg);
+  animation: shimmerBtn 3.2s ease-in-out infinite 1.5s;
+}
+
+/* ── GLOW EFFECT on teal accents ── */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,212,200,.35); }
+  50%       { box-shadow: 0 0 22px 6px rgba(0,212,200,.18); }
+}
+
+.fd5-dot { animation: pulseDot 2.4s ease-in-out infinite, glowPulse 2.4s ease-in-out infinite !important; }
+
+/* ── 3D TILT HOVER ON PATH CARDS ── */
+.welcome-path-piece {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform .2s var(--ease-out-quart), box-shadow .2s ease !important;
+}
+
+/* ── MORE FLOAT VARIATION FOR SATELLITE CARDS ── */
+.hv-hub {
+  animation: fd5FadeUp .7s var(--ease-out-quint) .08s both;
+}
+
+/* ── ANIMATED UNDERLINE on section headings ── */
+@keyframes underlineGrow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.welcome-section-head h2::after,
+.fd3-sec-title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 56px;
+  background: linear-gradient(90deg, #00D4C8, #004080);
+  border-radius: 2px;
+  margin-top: 12px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .6s var(--ease-out-quint);
+}
+
+.fdb-vis .welcome-section-head h2::after,
+.fdb-vis .fd3-sec-title::after {
+  transform: scaleX(1);
+}
+
+/* ── MORE DRAMATIC SECTION REVEALS ── */
+.fdb-reveal {
+  opacity: 0 !important;
+  transform: translateY(36px) !important;
+  transition: opacity .65s var(--ease-out-quint), transform .65s var(--ease-out-quint) !important;
+}
+.fdb-reveal.fdb-vis {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ── PATH PIECE LABELS with pulse dot ── */
+.piece-label::before {
+  content: "";
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-right: 8px;
+  vertical-align: middle;
+  animation: pulseDot 2s ease-in-out infinite;
+}
+
+/* ── OFFICE SCENE ANIMATIONS on fd5-visual ── */
+/* (steamRise defined below with the correct rise-and-fade keyframe) */
+
+/* ── CTA ARROW BOUNCE ── */
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(4px); }
+}
+.welcome-primary:hover svg,
+.fd5-cta:hover svg {
+  animation: arrowBounce .5s ease-in-out infinite;
+}
+
+/* ── CARD ENTRANCE from opacity scale ── */
+@keyframes cardIn {
+  from { opacity: 0; transform: scale(.92) translateY(20px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.fd3-task-card { animation: cardIn .55s var(--ease-out-quint) var(--delay,0s) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-hero, .fd5-hero {
+    animation: none !important;
+    background-size: 100% 100% !important;
+  }
+  .welcome-hero::before, .fd5-hero::before, .fd5-hero::after { animation: none !important; }
+  .welcome-primary::before, .fd5-cta::before { animation: none !important; }
+  .fd5-dot { animation: none !important; }
+  .piece-label::before { animation: none !important; }
+  .fd3-task-card { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
+
+/* ── PARTICLE FLOAT (used by JS) ── */
+@keyframes particleFloat {
+  0%, 100% { transform: translateY(0) translateX(0) scale(1); opacity: .7; }
+  25%       { transform: translateY(-24px) translateX(12px) scale(1.2); opacity: 1; }
+  50%       { transform: translateY(-44px) translateX(-8px) scale(.85); opacity: .5; }
+  75%       { transform: translateY(-28px) translateX(18px) scale(1.1); opacity: .8; }
+}
+
+/* ── OFFICE SCENE: steam animation on mug ── */
+.fd5-visual path[stroke="rgba(180,180,180,.42)"],
+.fd5-visual path[stroke="rgba(180,180,180,.35)"],
+.fd5-visual path[stroke="rgba(180,180,180,.30)"] {
+  animation: steamRise 2.8s ease-in-out infinite;
+}
+
+/* ── BORDER GRADIENT ANIMATION on fd5-cta ── */
+@keyframes borderSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── WELCOME PATH BOARD: hide the dashed SVG path behind — let hover colors speak ── */
+.welcome-path-board::before { opacity: .45 !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-hero, .fd5-hero { animation: none !important; background-size: 100% !important; }
+  .welcome-hero::before, .fd5-hero::before, .fd5-hero::after { display: none !important; }
+  .welcome-primary::before, .fd5-cta::before { display: none !important; }
+  span[style*="particleFloat"] { display: none !important; }
+}
+
+/* =========================================================
+   /impeccable animate home
+   One rehearsed entrance → scroll stagger → micro-interactions
+   ========================================================= */
+
+/* ── 1. EASING TOKENS (site-wide) ── */
+:root {
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── 2. HERO ENTRANCE CHOREOGRAPHY ── */
+
+/* Remove the block-level animation from welcome-copy so children stagger */
+.welcome-copy { animation: none !important; opacity: 1 !important; }
+
+/* Shared child entrance keyframe */
+@keyframes heroChildIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Stagger: kicker → h1 → lead → CTA */
+.welcome-kicker  { animation: heroChildIn .5s var(--ease-out-quint) .08s both; }
+.welcome-copy h1 { animation: heroChildIn .6s var(--ease-out-quint) .20s both; }
+.welcome-lead    { animation: heroChildIn .5s var(--ease-out-quint) .36s both; }
+.welcome-actions { animation: heroChildIn .5s var(--ease-out-quint) .50s both; }
+
+/* Hub card: enters slightly ahead of satellites */
+.hv-hub { animation: hubEnter .55s var(--ease-out-quint) .38s both !important; }
+
+@keyframes hubEnter {
+  from { opacity: 0; transform: scale(.94) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ── 3. SATELLITE ENTRANCE → then float ── */
+
+/* Keyframe for entrance only */
+@keyframes satEnter {
+  from { opacity: 0; transform: scale(.78) translateY(18px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Multi-animation: entrance (.45s) + infinite float (begins after entrance) */
+.hv-sat-1 {
+  animation:
+    satEnter .45s var(--ease-out-quint) .55s both,
+    hvFloatA 5.2s 1.05s ease-in-out infinite !important;
+}
+.hv-sat-2 {
+  animation:
+    satEnter .45s var(--ease-out-quint) .70s both,
+    hvFloatB 5.8s 1.20s ease-in-out infinite !important;
+}
+.hv-sat-3 {
+  animation:
+    satEnter .45s var(--ease-out-quint) .82s both,
+    hvFloatC 4.9s 1.32s ease-in-out infinite !important;
+}
+.hv-sat-4 {
+  animation:
+    satEnter .45s var(--ease-out-quint) .94s both,
+    hvFloatA 6.1s 1.44s ease-in-out infinite !important;
+}
+
+/* ── 4. CONNECTING LINES: soft reveal with blur ── */
+
+@keyframes linesReveal {
+  from { opacity: 0; filter: blur(3px); }
+  to   { opacity: .38; filter: blur(0); }
+}
+
+.hn-lines {
+  animation: linesReveal .7s var(--ease-out-quint) .88s both;
+}
+
+/* ── 5. HUB PROGRESS BAR: fill animation ── */
+
+@keyframes progFill {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.hn-prog {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: progFill 1.4s var(--ease-out-expo) 1.2s both;
+}
+
+/* ── 6. SCROLL-STAGGER: path pieces + object cards ── */
+
+/* Use CSS custom property --rd (reveal-delay) from inline style */
+.fdb-reveal {
+  transition-delay: var(--rd, 0ms) !important;
+}
+
+/* Override: path pieces need scale + translateY (not just translateY) */
+.welcome-path-piece.fdb-reveal {
+  opacity: 0 !important;
+  transform: translateY(28px) scale(.97) !important;
+}
+.welcome-path-piece.fdb-reveal.fdb-vis {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  transition: opacity .6s var(--ease-out-quint) var(--rd, 0ms),
+              transform .6s var(--ease-out-quint) var(--rd, 0ms) !important;
+}
+
+/* Object cards: slide up with stagger */
+.welcome-object-list a.fdb-reveal {
+  opacity: 0 !important;
+  transform: translateY(22px) !important;
+}
+.welcome-object-list a.fdb-reveal.fdb-vis {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity .55s var(--ease-out-quint) var(--rd, 0ms),
+              transform .55s var(--ease-out-quint) var(--rd, 0ms) !important;
+}
+
+/* ── 7. MICRO-INTERACTIONS ── */
+
+/* CTA active press: quick scale-down tactile feedback */
+.welcome-primary:active,
+.fd5-cta:active {
+  transform: scale(.95) !important;
+  transition: transform .08s ease !important;
+}
+
+/* Path piece hover: lift already has tilt from JS, add glow */
+.welcome-path-piece:focus-visible {
+  outline: 3px solid rgba(0,212,200,.60);
+  outline-offset: 4px;
+}
+
+/* Object cards: colour-matched glow on focus */
+.welcome-object-list a:focus-visible {
+  outline: 3px solid #00D4C8;
+  outline-offset: 4px;
+  border-radius: 22px;
+}
+
+/* Kicker pulse dot animation (defined in pulseDot keyframe already) */
+.welcome-kicker span {
+  animation: pulseDot 2.4s ease-in-out 1s infinite !important;
+}
+
+/* Nav: smooth box-shadow on scroll (already has .scrolled class applied by JS) */
+.navbar { transition: box-shadow .25s ease, border-color .25s ease, background .25s ease; }
+
+/* ── 8. PREFERS-REDUCED-MOTION — full coverage ── */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Hero children: instant reveal, no motion */
+  .welcome-kicker,
+  .welcome-copy h1,
+  .welcome-lead,
+  .welcome-actions {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Hub and satellites */
+  .hv-hub,
+  .hv-sat-1,
+  .hv-sat-2,
+  .hv-sat-3,
+  .hv-sat-4 {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Lines and progress */
+  .hn-lines { animation: none !important; opacity: .38 !important; }
+  .hn-prog  { animation: none !important; transform: none !important; }
+
+  /* Scroll reveals: show immediately */
+  .welcome-path-piece.fdb-reveal,
+  .welcome-object-list a.fdb-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Kicker pulse */
+  .welcome-kicker span { animation: none !important; }
+}
+
+/* =========================================================
+   /impeccable animate first-day
+   Hero stagger → office scene settles in → living scene →
+   task + timeline scroll-stagger
+   ========================================================= */
+
+/* ── 1. HERO TEXT — stagger every child independently ── */
+
+/* Drop the block-level slide so children can own their timing */
+.fd5-copy { animation: none !important; opacity: 1 !important; }
+
+@keyframes fd5ChildIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* "วันแรก" (fd5-main) gets a distinct scale entrance — it's the hero word */
+@keyframes fd5MainIn {
+  from { opacity: 0; transform: translateY(22px) scale(.94); }
+  to   { opacity: 1; transform: translateY(0)  scale(1); }
+}
+
+.fd5-tag   { animation: fd5ChildIn .50s var(--ease-out-quint) .06s  both; }
+.fd5-sub   { animation: fd5ChildIn .50s var(--ease-out-quint) .18s  both; }
+.fd5-main  { animation: fd5MainIn  .62s var(--ease-out-quint) .28s  both; }
+.fd5-place { animation: fd5ChildIn .50s var(--ease-out-quint) .42s  both; }
+.fd5-lead  { animation: fd5ChildIn .48s var(--ease-out-quint) .56s  both; }
+.fd5-cta   { animation: fd5ChildIn .48s var(--ease-out-quint) .68s  both; }
+
+/* Visual column: refined entrance — scale from .97 as it slides in */
+.fd5-visual {
+  animation: fd5VisIn .72s var(--ease-out-quint) .22s both !important;
+}
+
+@keyframes fd5VisIn {
+  from { opacity: 0; transform: translateX(30px) scale(.97); }
+  to   { opacity: 1; transform: translateX(0)    scale(1); }
+}
+
+/* ── 2. OFFICE SCENE: elements settle onto the desk ── */
+
+/* Shared settle keyframe */
+@keyframes deskSettle {
+  from { opacity: 0; transform: translateY(14px) scale(.88); }
+  60%  { opacity: 1; transform: translateY(-3px)  scale(1.02); }
+  to   { opacity: 1; transform: translateY(0)      scale(1); }
+}
+
+/* Plant: settles from slightly above, delayed after visual enters */
+.fd5-plant {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: deskSettle .55s var(--ease-out-quint) .50s both;
+}
+
+/* Mug: arrives after laptop */
+.fd5-mug {
+  animation: deskSettle .50s var(--ease-out-quint) .80s both;
+}
+
+/* Badge: settles from slightly higher */
+.fd5-badge {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: deskSettle .45s var(--ease-out-quint) 1.00s both;
+}
+
+/* Post-it: settles last */
+.fd5-postit {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: deskSettle .45s var(--ease-out-quint) 1.12s both;
+}
+
+/* Chip: pops in + then bobs */
+@keyframes chipPop {
+  from { opacity: 0; transform: scale(.6) translateY(10px); }
+  70%  { opacity: 1; transform: scale(1.08) translateY(-4px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.fd5-chip {
+  animation:
+    chipPop   .50s var(--ease-out-quint) 1.20s both,
+    chipBob   4.4s 1.80s ease-in-out infinite;
+}
+
+@keyframes chipBob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-7px); }
+}
+
+/* ── 3. LIVING SCENE — continuous micro-animations ── */
+
+/* Plant: very gentle sway, organic rhythm */
+@keyframes plantSway {
+  0%, 100% { transform: rotate(0deg); }
+  30%       { transform: rotate(-2.5deg); }
+  70%       { transform: rotate(1.8deg); }
+}
+
+.fd5-plant {
+  animation:
+    deskSettle .55s var(--ease-out-quint) .50s both,
+    plantSway  7s   1.20s ease-in-out infinite;
+}
+
+/* Coffee steam: each wisp rises independently */
+@keyframes steamRise {
+  0%   { opacity: 0; transform: translateY(0) scaleX(1); }
+  25%  { opacity: .50; }
+  80%  { opacity: .28; transform: translateY(-16px) scaleX(.65); }
+  100% { opacity: 0;   transform: translateY(-22px) scaleX(.4); }
+}
+
+.fd5-steam {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: steamRise 3.2s var(--sd, 0s) ease-in-out infinite;
+}
+
+/* ── 4. TASK CARDS — fix conflict with fdb-reveal, proper stagger ── */
+
+/* Remove the animation that fires before scroll; let fdb-reveal own it */
+.fd3-task-card {
+  animation: none !important;
+}
+
+/* Richer task-card reveal: scale + rise (the fdb-reveal transition handles timing) */
+.fd3-task-card.fdb-reveal {
+  opacity: 0 !important;
+  transform: translateY(28px) scale(.96) !important;
+}
+.fd3-task-card.fdb-reveal.fdb-vis {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  transition:
+    opacity .58s var(--ease-out-quint) var(--rd, 0ms),
+    transform .58s var(--ease-out-quint) var(--rd, 0ms) !important;
+}
+
+/* ── 5. TIMELINE ITEMS — proper scroll stagger via --rd ── */
+
+/* Override old nth-child animation-delay approach */
+.fd3-tl-item { animation: none !important; }
+
+.fd3-tl-item.fdb-reveal {
+  opacity: 0 !important;
+  transform: translateX(-18px) !important;
+}
+.fd3-tl-item.fdb-reveal.fdb-vis {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  transition:
+    opacity .55s var(--ease-out-quint) var(--rd, 0ms),
+    transform .55s var(--ease-out-quint) var(--rd, 0ms) !important;
+}
+
+/* ── 6. SECTION HEAD REVEALS ── */
+
+/* fd3 section headings: slide up with blur-in */
+.fd3-sec-head.fdb-reveal {
+  opacity: 0 !important;
+  transform: translateY(20px) !important;
+  filter: blur(3px) !important;
+}
+.fd3-sec-head.fdb-reveal.fdb-vis {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  filter: blur(0) !important;
+  transition:
+    opacity  .60s var(--ease-out-quint),
+    transform .60s var(--ease-out-quint),
+    filter   .60s var(--ease-out-quint) !important;
+}
+
+/* ── 7. CTA MICRO-INTERACTION ── */
+
+.fd5-cta:active {
+  transform: scale(.95) !important;
+  transition: transform .07s ease !important;
+}
+
+/* Arrow nudge on hover */
+.fd5-cta:hover svg {
+  animation: arrowBounce .5s ease-in-out infinite;
+}
+
+/* ── 8. prefers-reduced-motion — full first-day coverage ── */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Hero text: instant reveal */
+  .fd5-tag, .fd5-sub, .fd5-main, .fd5-place, .fd5-lead, .fd5-cta {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .fd5-visual { animation: none !important; opacity: 1 !important; transform: none !important; }
+
+  /* Office scene */
+  .fd5-plant, .fd5-mug, .fd5-badge, .fd5-postit, .fd5-chip {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .fd5-steam { animation: none !important; }
+
+  /* Task cards */
+  .fd3-task-card.fdb-reveal,
+  .fd3-tl-item.fdb-reveal,
+  .fd3-sec-head.fdb-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  /* CTA */
+  .fd5-cta:active { transform: none !important; }
+  .fd5-cta:hover svg { animation: none !important; }
+}
+
+/* =========================================================
+   /impeccable optimize + colorize first-day
+   ========================================================= */
+
+/* ── OPTIMIZE: perf hints ── */
+
+/* gradShift animates background-position — declare intent */
+.fd5-hero {
+  will-change: background-position;
+}
+
+/* Bound section repaint — fd3 sections are independent scroll regions */
+.fd3-sec-tasks,
+.fd3-sec-timeline {
+  contain: layout style;
+}
+
+/* ── COLORIZE: Committed teal strategy activated across fd3 sections ── */
+
+/* ── TASK SECTION: Subtle teal wash — not dead white ── */
+.fd3-sec-tasks {
+  background:
+    radial-gradient(ellipse 60% 50% at 92% 8%, rgba(0,212,200,.07), transparent 50%),
+    linear-gradient(180deg, #F6FFFD 0%, #FFFFFF 60%) !important;
+}
+
+/* Calendar card — teal identity */
+.fd3-task-card--cal {
+  background:
+    radial-gradient(ellipse 70% 60% at 105% 96%, rgba(0,212,200,.22), transparent 44%),
+    linear-gradient(145deg, #F0FFFE 0%, #FAFFFF 100%) !important;
+  border-color: rgba(0,212,200,.24) !important;
+}
+
+/* Timesheet card — navy identity */
+.fd3-task-card--ts {
+  background:
+    radial-gradient(ellipse 70% 60% at 105% 96%, rgba(0,64,128,.14), transparent 44%),
+    linear-gradient(145deg, #F5F8FF 0%, #FAFBFF 100%) !important;
+  border-color: rgba(0,64,128,.18) !important;
+}
+
+/* ── TIMELINE SECTION: stronger brand presence ── */
+.fd3-sec-timeline {
+  background:
+    radial-gradient(ellipse 65% 55% at 88% 10%, rgba(0,212,200,.10), transparent 48%),
+    radial-gradient(ellipse 45% 40% at 8% 88%, rgba(0,64,128,.06), transparent 44%),
+    linear-gradient(180deg, #F4FDFD 0%, #FAFFFE 50%, #FFFFFF 100%) !important;
+}
+
+/* Timeline number badges: absorb --tl with a bolder treatment */
+.fd3-tl-num {
+  color: var(--tl, #66C5C5) !important;
+  font-weight: 800 !important;
+  border: 2px solid var(--tl, #66C5C5) !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: color-mix(in srgb, var(--tl, #66C5C5) 10%, #fff) !important;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--tl, #66C5C5) 14%, transparent) !important;
+  font-size: 14px !important;
+}
+
+/* Timeline line: branded colour instead of gray */
+.fd3-tl-line {
+  background: linear-gradient(180deg, var(--tl, #66C5C5) 0%, rgba(0,64,128,.18) 100%) !important;
+  opacity: .45 !important;
+}
+
+/* Timeline cards: top accent strip (full-width — not a side stripe) */
+.fd3-tl-card {
+  border-top: 3px solid var(--tl, #66C5C5) !important;
+  border-radius: 0 0 20px 20px !important;  /* keep existing bottom radius, flat top where stripe is */
+}
+
+/* Subtle card tint from --tl */
+.fd3-tl-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: color-mix(in srgb, var(--tl, #66C5C5) 5%, transparent);
+  pointer-events: none;
+}
+.fd3-tl-card { position: relative; overflow: hidden; }
+
+/* Timeline tags: use --tl color */
+.fd3-tl-tag {
+  color: var(--tl, #66C5C5) !important;
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase !important;
+}
+
+/* Timeline pills: tinted from --tl */
+.fd3-tl-pills span {
+  background: color-mix(in srgb, var(--tl, #66C5C5) 14%, #fff) !important;
+  color: color-mix(in srgb, var(--tl, #66C5C5) 70%, #002030) !important;
+  border: 1px solid color-mix(in srgb, var(--tl, #66C5C5) 28%, transparent) !important;
+  border-radius: 999px !important;
+  padding: 3px 12px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+/* ── ORIENTATION MAP: each step gets a teal wash + coloured icon box ── */
+.fd3-orient-step {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,212,200,.12), transparent 60%),
+    rgba(255,255,255,.88) !important;
+  border: 1px solid rgba(0,212,200,.18) !important;
+  box-shadow: 0 4px 16px rgba(0,212,200,.08) !important;
+  transition: transform .22s var(--ease-out-quart), box-shadow .22s ease !important;
+}
+
+.fd3-orient-step:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 28px rgba(0,212,200,.14) !important;
+}
+
+.fd3-orient-icon {
+  background: linear-gradient(135deg, rgba(0,212,200,.18), rgba(0,64,128,.08)) !important;
+  border: 1px solid rgba(0,212,200,.24) !important;
+  box-shadow: 0 4px 12px rgba(0,212,200,.12) !important;
+}
+
+/* Section tags: consistent teal brand voice */
+.fd3-sec-tag {
+  color: #00D4C8 !important;
+  font-weight: 800 !important;
+  letter-spacing: .04em !important;
+}
+
+.fd3-sec-tag-alt {
+  color: #0077AA !important;
+}
+
+/* Section titles: stronger navy */
+.fd3-sec-title {
+  color: #003060 !important;
+}
+
+/* Quote blocks: teal left surface tint (background, not stripe) */
+.fd3-tl-quote {
+  background: color-mix(in srgb, var(--tl, #66C5C5) 8%, #f8fffe) !important;
+  border-radius: 10px !important;
+  padding: 12px 16px !important;
+  font-style: italic !important;
+  color: #2A3D4A !important;
+  border: 1px solid color-mix(in srgb, var(--tl, #66C5C5) 20%, transparent) !important;
+}
+
+/* ── HERO: fd5-tag colour lift — connects to section system ── */
+.fd5-tag { color: #007A7A !important; }
+.fd5-place em { color: #007A7A !important; }
+
+/* ── reduced-motion: no new motion was added here, contain is safe ── */
+
+/* =========================================================
+   REDESIGN — Welcome-Path section (home) + Timeline section (first-day)
+   ========================================================= */
+
+/* ══ WELCOME-PATH: centered heading, stronger card palette ══ */
+
+/* Collapse the awkward 2-column split header → centered block */
+.welcome-section-head {
+  grid-template-columns: 1fr !important;
+  max-width: 640px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 56px !important;
+  text-align: center !important;
+  gap: 14px !important;
+}
+
+.welcome-section-head h2 {
+  font-size: clamp(2rem, 4.2vw, 3.2rem) !important;
+  color: #003060 !important;
+}
+
+.welcome-section-head p {
+  color: #4A5F72 !important;
+  max-width: 48ch;
+  margin: 0 auto;
+}
+
+/* Widen and breathe out the board */
+.welcome-path-board {
+  max-width: 1120px !important;
+  gap: 20px !important;
+}
+
+/* All cards: taller, generous padding, more radius */
+.welcome-path-piece {
+  min-height: 210px !important;
+  border-radius: 28px !important;
+  padding: 28px !important;
+  box-shadow: 0 14px 36px rgba(0,40,100,.13) !important;
+}
+
+/* Card icons: lift from 34% opacity to 56% so they actually read */
+.welcome-path-piece::after {
+  opacity: .58 !important;
+  width: 88px !important;
+  height: 88px !important;
+}
+
+/* piece-day (large left): richer navy with vivid teal highlight */
+.piece-day {
+  background:
+    radial-gradient(circle at 100% 0%,   rgba(0,212,200,.55), transparent 38%),
+    radial-gradient(circle at 0%   100%, rgba(77,148,255,.22), transparent 44%),
+    linear-gradient(148deg, #002A60 0%, #004FA8 100%) !important;
+  border: 1px solid rgba(0,212,200,.20) !important;
+}
+
+/* piece-office (top-right): vivid electric teal */
+.piece-office {
+  background:
+    radial-gradient(circle at 92% 10%, rgba(255,255,255,.50), transparent 32%),
+    linear-gradient(145deg, #00BFB8 0%, #009BB4 100%) !important;
+  color: #001C28 !important;
+  border: none !important;
+}
+
+/* piece-policy: replace the dull gray with deep indigo — brand-adjacent, distinct from navy */
+.piece-policy {
+  background:
+    radial-gradient(circle at 94% 110%, rgba(102,197,197,.28), transparent 40%),
+    linear-gradient(148deg, #2E2A7A 0%, #4640C8 100%) !important;
+  border: 1px solid rgba(102,197,197,.16) !important;
+}
+
+/* piece-story: keep the light feel but sharpen it */
+.piece-story {
+  background:
+    radial-gradient(circle at 88% 96%, rgba(0,212,200,.30), transparent 40%),
+    linear-gradient(148deg, #D4FAF6 0%, #EDFCFA 100%) !important;
+  color: #003A38 !important;
+  border: 1px solid rgba(0,212,200,.24) !important;
+  box-shadow: inset 0 0 0 1px rgba(0,212,200,.18), 0 14px 36px rgba(0,64,128,.10) !important;
+}
+
+/* Piece-label dots: match card tone */
+.piece-day .piece-label    { color: rgba(180,240,240,.90) !important; opacity: 1 !important; }
+.piece-policy .piece-label { color: rgba(180,200,255,.85) !important; opacity: 1 !important; }
+.piece-story .piece-label  { color: #007A70 !important; opacity: 1 !important; }
+.piece-office .piece-label { color: rgba(0,36,48,.62) !important; opacity: 1 !important; }
+
+/* Card headings */
+.piece-day h3,
+.piece-office h3,
+.piece-policy h3 { color: #FFFFFF !important; }
+.piece-story h3  { color: #003A38 !important; }
+
+/* ══ TIMELINE SECTION: bolder numbers, richer cards, cleaner structure ══ */
+
+/* Tighter, more dramatic section intro */
+.fd3-sec-tag-alt {
+  display: inline-block !important;
+  background: linear-gradient(135deg, #00D4C8, #0088AA) !important;
+  color: #FFFFFF !important;
+  padding: 5px 16px !important;
+  border-radius: 999px !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: .10em !important;
+  text-transform: uppercase !important;
+}
+
+/* Number badges: filled solid, not outlined — bold identity */
+.fd3-tl-num {
+  width: 46px !important;
+  height: 46px !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  background: var(--tl, #66C5C5) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 14px !important;  /* rounded square beats perfect circle */
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--tl, #66C5C5) 45%, transparent) !important;
+}
+
+/* Timeline line: clean single-colour from --tl */
+.fd3-tl-line {
+  background: var(--tl, #66C5C5) !important;
+  opacity: .28 !important;
+  width: 2px !important;
+}
+
+/* Remove the border-top strip — replace with a subtle full border using --tl */
+.fd3-tl-card {
+  border: 1.5px solid color-mix(in srgb, var(--tl, #66C5C5) 22%, #E8EEF2) !important;
+  border-top: 1.5px solid color-mix(in srgb, var(--tl, #66C5C5) 22%, #E8EEF2) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 6px 24px rgba(0,60,100,.08) !important;
+  background: #FFFFFF !important;
+}
+
+/* Suppress the ::before tint overlay — full border is enough */
+.fd3-tl-card::before { display: none !important; }
+
+/* Tag line inside card */
+.fd3-tl-tag {
+  color: var(--tl, #66C5C5) !important;
+  font-size: 10.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: .10em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
+}
+
+/* Timeline card title */
+.fd3-tl-title {
+  color: #003060 !important;
+  font-size: clamp(1.15rem, 2vw, 1.5rem) !important;
+  font-weight: 800 !important;
+}
+
+/* Pills: tighter, pill-shaped, --tl tinted */
+.fd3-tl-pills span {
+  background: color-mix(in srgb, var(--tl, #66C5C5) 12%, #f0fffe) !important;
+  color: color-mix(in srgb, var(--tl, #66C5C5) 80%, #002030) !important;
+  border: 1px solid color-mix(in srgb, var(--tl, #66C5C5) 30%, transparent) !important;
+  border-radius: 999px !important;
+  padding: 4px 12px !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+}
+
+/* Quote: cleaner, less visual weight */
+.fd3-tl-quote {
+  background: color-mix(in srgb, var(--tl, #66C5C5) 7%, #f8fffe) !important;
+  border: 1px solid color-mix(in srgb, var(--tl, #66C5C5) 18%, transparent) !important;
+  border-radius: 12px !important;
+  padding: 14px 18px !important;
+  font-size: 14px !important;
+  color: #2A4050 !important;
+  font-style: italic !important;
+  margin-top: 16px !important;
+}
+
+/* Orientation steps: sharper icons, less padding */
+.fd3-orient-step {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0,212,200,.18) !important;
+  box-shadow: 0 3px 12px rgba(0,212,200,.09) !important;
+  border-radius: 18px !important;
+  padding: 14px 10px 16px !important;
+  gap: 8px !important;
+}
+
+.fd3-orient-step:hover {
+  border-color: rgba(0,212,200,.38) !important;
+  box-shadow: 0 8px 24px rgba(0,212,200,.16) !important;
+  transform: translateY(-3px) !important;
+}
+
+.fd3-orient-icon {
+  background: linear-gradient(135deg, #E6FFFE, #D0F8F6) !important;
+  border: 1.5px solid rgba(0,212,200,.28) !important;
+  border-radius: 14px !important;
+  font-size: 22px !important;
+  box-shadow: none !important;
+}
+
+.fd3-orient-step strong {
+  color: #003060 !important;
+  font-size: 13px !important;
+}
+
+.fd3-orient-step small {
+  color: #4A6070 !important;
+  font-size: 11.5px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fd3-orient-step:hover { transform: none !important; }
+}
+
+/* =========================================================
+   ORIENTATION MAP — complete redesign
+   Numbered step badges + arrow connectors, clean white cards
+   ========================================================= */
+
+/* Container: extra top padding for the badges that float above cards */
+.fd3-orientation-map {
+  counter-reset: orient-n !important;
+  gap: 10px !important;
+  margin: 28px 0 4px !important;
+  padding-top: 18px !important;
+  align-items: start !important;
+  overflow: visible !important;
+}
+
+/* Remove the flat gradient bar that was the "connector" */
+.fd3-orientation-map::before {
+  display: none !important;
+}
+
+/* Each step: clean white card with teal border */
+.fd3-orient-step {
+  counter-increment: orient-n !important;
+  position: relative !important;
+  overflow: visible !important;
+  background: #FFFFFF !important;
+  border: 1.5px solid rgba(0,212,200,.28) !important;
+  border-radius: 20px !important;
+  padding: 22px 12px 18px !important;
+  gap: 10px !important;
+  box-shadow: 0 4px 18px rgba(0,212,200,.11), 0 1px 4px rgba(0,64,128,.06) !important;
+  min-height: unset !important;
+  transition: transform .22s var(--ease-out-quart), box-shadow .22s ease, border-color .2s !important;
+}
+
+.fd3-orient-step:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 32px rgba(0,212,200,.20), 0 3px 8px rgba(0,64,128,.08) !important;
+  border-color: rgba(0,212,200,.55) !important;
+}
+
+/* Number badge floats above each card */
+.fd3-orient-step::before {
+  content: counter(orient-n) !important;
+  position: absolute !important;
+  top: -14px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: linear-gradient(135deg, #00D4C8 0%, #009EB8 100%) !important;
+  color: #FFFFFF !important;
+  border-radius: 50% !important;
+  font-size: 11.5px !important;
+  font-weight: 900 !important;
+  font-family: var(--display) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  z-index: 2 !important;
+  box-shadow: 0 3px 10px rgba(0,212,200,.45) !important;
+  border: 2px solid #FFFFFF !important;
+}
+
+/* Arrow connector to the right of every step except the last */
+.fd3-orient-step:not(:last-child)::after {
+  content: "" !important;
+  position: absolute !important;
+  right: -14px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 18px !important;
+  height: 18px !important;
+  border-top: 2.5px solid #00D4C8 !important;
+  border-right: 2.5px solid #00D4C8 !important;
+  border-radius: 0 4px 0 0 !important;
+  transform: translateY(-50%) rotate(45deg) !important;
+  z-index: 3 !important;
+}
+
+/* Icon box: teal tinted, clean */
+.fd3-orient-icon {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 16px !important;
+  background: linear-gradient(145deg, #D8FBF9 0%, #B8F4F0 100%) !important;
+  border: 1.5px solid rgba(0,212,200,.30) !important;
+  box-shadow: 0 4px 10px rgba(0,212,200,.14) !important;
+  font-size: 22px !important;
+}
+
+/* Card text */
+.fd3-orient-step strong {
+  color: #003060 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+.fd3-orient-step small {
+  color: #4A6578 !important;
+  font-size: 11px !important;
+  line-height: 1.55 !important;
+}
+
+@media (max-width: 640px) {
+  /* Stack on mobile: remove the side arrows, show vertical flow */
+  .fd3-orient-step:not(:last-child)::after {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fd3-orient-step:hover { transform: none !important; }
+}
+
+/* =========================================================
+   ORIENTATION MAP V2 — 3 steps, colored blocks, no nested cards
+   ========================================================= */
+
+/* 3-column grid, remove top padding from previous badge design */
+.fd3-orientation-map {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 12px !important;
+  padding-top: 0 !important;
+  margin: 20px 0 6px !important;
+  counter-reset: orient-n !important;
+  overflow: visible !important;
+}
+
+/* No more gradient connector bar */
+.fd3-orientation-map::before { display: none !important; }
+
+/* Each step: solid colored block, no white nested-card look */
+.fd3-orient-step {
+  counter-increment: orient-n !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border: none !important;
+  border-radius: 16px !important;
+  padding: 20px 16px 18px !important;
+  gap: 12px !important;
+  min-height: 148px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-shadow: 0 6px 22px rgba(0,64,128,.14) !important;
+  transition: transform .22s var(--ease-out-quart), box-shadow .22s ease !important;
+}
+
+/* Step colours — progression from vivid teal to deep navy */
+.fd3-orient-step:nth-child(1) {
+  background: linear-gradient(145deg, #00C8BE 0%, #009EB8 100%) !important;
+}
+.fd3-orient-step:nth-child(2) {
+  background: linear-gradient(145deg, #1A8FA8 0%, #0068A0 100%) !important;
+}
+.fd3-orient-step:nth-child(3) {
+  background: linear-gradient(145deg, #004A90 0%, #003068 100%) !important;
+}
+
+/* Step number: top-left badge on the coloured block */
+.fd3-orient-step::before {
+  content: counter(orient-n) !important;
+  position: absolute !important;
+  top: 10px !important;
+  left: 12px !important;
+  width: 22px !important;
+  height: 22px !important;
+  background: rgba(255,255,255,.26) !important;
+  color: #FFFFFF !important;
+  border-radius: 50% !important;
+  font-size: 10.5px !important;
+  font-weight: 900 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  transform: none !important;
+  left: 12px !important;
+  top: 10px !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* No arrow connector — proximity reads as flow */
+.fd3-orient-step:not(:last-child)::after { display: none !important; }
+
+/* Icon: white semi-transparent circle */
+.fd3-orient-icon {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 50% !important;
+  background: rgba(255,255,255,.22) !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 24px !important;
+}
+
+/* Text: white on coloured background */
+.fd3-orient-step strong {
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+.fd3-orient-step small {
+  color: rgba(255,255,255,.75) !important;
+  font-size: 11.5px !important;
+  line-height: 1.5 !important;
+}
+
+/* Hover: subtle lift */
+.fd3-orient-step:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 32px rgba(0,64,128,.22) !important;
+}
+
+/* Decorative radial light in top-right corner */
+.fd3-orient-step::after {
+  content: "" !important;
+  position: absolute !important;
+  top: -24px !important;
+  right: -24px !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50% !important;
+  background: rgba(255,255,255,.12) !important;
+  pointer-events: none !important;
+  border: none !important;
+  transform: none !important;
+  z-index: 0 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fd3-orient-step:hover { transform: none !important; }
 }
