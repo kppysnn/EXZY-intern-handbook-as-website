@@ -374,169 +374,375 @@
   // js/pages/home.js
   var renderHome = () => `
 
-<!-- Welcome hero -->
-<section class="welcome-hero" aria-label="\u0E22\u0E34\u0E19\u0E14\u0E35\u0E15\u0E49\u0E2D\u0E19\u0E23\u0E31\u0E1A intern \u0E43\u0E2B\u0E21\u0E48">
-  <div class="welcome-hero-bg" aria-hidden="true"></div>
-
-  <div class="welcome-hero-inner">
-    <div class="welcome-copy">
-      <p class="welcome-kicker">
-        <span></span>
-        EXZY Intern Welcome
-      </p>
-      <h1>\u0E01\u0E49\u0E32\u0E27\u0E41\u0E23\u0E01\u0E17\u0E35\u0E48 EXZY \u0E04\u0E27\u0E23\u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E21\u0E35\u0E04\u0E19\u0E23\u0E2D\u0E2D\u0E22\u0E39\u0E48</h1>
-      <p class="welcome-lead">\u0E40\u0E1B\u0E34\u0E14\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E32\u0E16\u0E36\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E41\u0E25\u0E49\u0E27\u0E04\u0E48\u0E2D\u0E22 \u0E46 \u0E15\u0E32\u0E21\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E08\u0E32\u0E01\u0E01\u0E32\u0E23\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21 \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
-      <div class="welcome-actions">
-        <a href="#/first-day" class="welcome-primary" data-link>
-          \u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+<section class="ex-home-hero" aria-label="EXZY Intern Handbook">
+  <div class="ex-home-hero-inner">
+    <div class="ex-home-copy">
+      <p class="ex-home-kicker"><span></span>Official Intern Handbook</p>
+      <h1>EXZY Intern Handbook</h1>
+      <p class="ex-home-lead">\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E01\u0E25\u0E32\u0E07\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48 Intern \u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E2B\u0E25\u0E31\u0E07 Orientation: \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E04\u0E19\u0E17\u0E35\u0E48\u0E04\u0E27\u0E23\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 Timesheet \u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48\u0E1E\u0E1A\u0E1A\u0E48\u0E2D\u0E22 \u0E41\u0E25\u0E30\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E40\u0E25\u0E48\u0E32\u0E08\u0E32\u0E01\u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</p>
+      <div class="ex-home-actions">
+        <a href="#ex-home-contents" class="ex-home-primary">
+          \u0E40\u0E1B\u0E34\u0E14\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Handbook
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </a>
+        <a href="#/first-day" class="ex-home-secondary" data-link>\u0E44\u0E1B\u0E17\u0E35\u0E48 Day 1 Guide</a>
       </div>
     </div>
 
-    <div class="welcome-scene" aria-hidden="true">
-      <svg viewBox="0 0 760 560" role="img" xmlns="http://www.w3.org/2000/svg">
+    <div class="ex-office-scene fdb-reveal fdb-delay1" aria-hidden="true">
+      <svg viewBox="0 0 620 500" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="homeDesk" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#F7FCFC"/>
-            <stop offset="100%" stop-color="#E7F5F7"/>
+          <linearGradient id="osBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#D8EEFF"/>
+            <stop offset="100%" stop-color="#EEF7FF"/>
           </linearGradient>
-          <linearGradient id="homeNavy" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#004081"/>
-            <stop offset="100%" stop-color="#002D5C"/>
+          <linearGradient id="osFloor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F8FCFF"/>
+            <stop offset="100%" stop-color="#EBF5FF"/>
           </linearGradient>
-          <linearGradient id="homeTeal" x1="0" y1="0" x2="1" y2="1">
+          <linearGradient id="osTeal" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stop-color="#66C5C5"/>
-            <stop offset="100%" stop-color="#2A9FA7"/>
+            <stop offset="100%" stop-color="#2A8DA8"/>
           </linearGradient>
-          <filter id="homeSoftShadow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#004080" flood-opacity="0.16"/>
-          </filter>
+          <clipPath id="osWin">
+            <rect x="200" y="0" width="420" height="340" rx="0"/>
+          </clipPath>
         </defs>
 
-        <path d="M76 162C133 55 300 18 430 51c132 33 230 139 248 264 18 127-43 255-157 298-116 44-287 8-384-76C40 454 19 270 76 162Z" fill="#EEF8FA"/>
-        <path d="M104 387C216 349 301 330 401 351c84 18 165 60 268 43v98c-90 54-214 70-335 50-98-16-176-52-230-84v-71Z" fill="#D8F0F2"/>
+        <!-- Sky background -->
+        <rect width="620" height="500" fill="url(#osBg)"/>
 
-        <g filter="url(#homeSoftShadow)">
-          <path d="M118 342 628 291l58 146-520 65-48-160Z" fill="url(#homeDesk)"/>
-          <path d="M118 342 628 291l13 32-514 61-9-42Z" fill="#FFFFFF" opacity=".82"/>
+        <!-- Window glass area (large panoramic) -->
+        <rect x="200" y="0" width="420" height="340" fill="#D4ECFF" opacity=".55"/>
+
+        <!-- City skyline buildings (outside window) -->
+        <!-- Far background buildings (lighter) -->
+        <rect x="210" y="120" width="35" height="220" fill="#8BBCD8" opacity=".45"/>
+        <rect x="248" y="80"  width="50" height="260" fill="#7AADC9" opacity=".50"/>
+        <rect x="302" y="140" width="28" height="200" fill="#8BBCD8" opacity=".40"/>
+        <rect x="334" y="60"  width="70" height="280" fill="#6A9EC0" opacity=".55"/>
+        <rect x="408" y="110" width="40" height="230" fill="#7AADC9" opacity=".48"/>
+        <rect x="452" y="50"  width="60" height="290" fill="#5A8EB0" opacity=".60"/>
+        <rect x="516" y="130" width="45" height="210" fill="#7AADC9" opacity=".45"/>
+        <rect x="565" y="90"  width="55" height="250" fill="#6A9EC0" opacity=".52"/>
+
+        <!-- Mid-ground buildings (darker, more defined) -->
+        <rect x="215" y="180" width="30" height="160" fill="#3A6A98"/>
+        <!-- Windows on building 1 -->
+        <g fill="rgba(200,230,255,.55)" transform="translate(219,188)">
+          <rect width="6" height="5" rx="1"/><rect x="9" width="6" height="5" rx="1"/>
+          <rect y="10" width="6" height="5" rx="1"/><rect x="9" y="10" width="6" height="5" rx="1"/>
+          <rect y="20" width="6" height="5" rx="1"/><rect x="9" y="20" width="6" height="5" rx="1"/>
+          <rect y="30" width="6" height="5" rx="1"/><rect x="9" y="30" width="6" height="5" rx="1"/>
+          <rect y="40" width="6" height="5" rx="1"/><rect x="9" y="40" width="6" height="5" rx="1"/>
+        </g>
+        <rect x="260" y="140" width="55" height="200" fill="#2A5888"/>
+        <g fill="rgba(200,230,255,.48)" transform="translate(264,152)">
+          <rect width="8" height="6" rx="1"/><rect x="12" width="8" height="6" rx="1"/><rect x="24" width="8" height="6" rx="1"/>
+          <rect y="14" width="8" height="6" rx="1"/><rect x="12" y="14" width="8" height="6" rx="1"/><rect x="24" y="14" width="8" height="6" rx="1"/>
+          <rect y="28" width="8" height="6" rx="1"/><rect x="12" y="28" width="8" height="6" rx="1"/><rect x="24" y="28" width="8" height="6" rx="1"/>
+          <rect y="42" width="8" height="6" rx="1"/><rect x="12" y="42" width="8" height="6" rx="1"/>
+          <rect y="56" width="8" height="6" rx="1"/><rect x="12" y="56" width="8" height="6" rx="1"/><rect x="24" y="56" width="8" height="6" rx="1"/>
+        </g>
+        <rect x="340" y="100" width="80" height="240" fill="#1A4878"/>
+        <g fill="rgba(102,197,197,.38)" transform="translate(346,112)">
+          <rect width="10" height="7" rx="1"/><rect x="14" width="10" height="7" rx="1"/><rect x="28" width="10" height="7" rx="1"/>
+          <rect y="17" width="10" height="7" rx="1"/><rect x="14" y="17" width="10" height="7" rx="1"/><rect x="28" y="17" width="10" height="7" rx="1"/>
+          <rect y="34" width="10" height="7" rx="1"/><rect x="14" y="34" width="10" height="7" rx="1"/><rect x="28" y="34" width="10" height="7" rx="1"/>
+          <rect y="51" width="10" height="7" rx="1"/><rect x="14" y="51" width="10" height="7" rx="1"/>
+          <rect y="68" width="10" height="7" rx="1"/><rect x="14" y="68" width="10" height="7" rx="1"/><rect x="28" y="68" width="10" height="7" rx="1"/>
+          <rect y="85" width="10" height="7" rx="1"/><rect x="14" y="85" width="10" height="7" rx="1"/>
+          <rect y="102" width="10" height="7" rx="1"/><rect x="14" y="102" width="10" height="7" rx="1"/><rect x="28" y="102" width="10" height="7" rx="1"/>
+        </g>
+        <rect x="425" y="170" width="45" height="170" fill="#2A5888"/>
+        <rect x="475" y="90"  width="65" height="250" fill="#003060"/>
+        <g fill="rgba(102,197,197,.35)" transform="translate(480,100)">
+          <rect width="10" height="7" rx="1"/><rect x="14" width="10" height="7" rx="1"/><rect x="28" width="10" height="7" rx="1"/>
+          <rect y="17" width="10" height="7" rx="1"/><rect x="14" y="17" width="10" height="7" rx="1"/><rect x="28" y="17" width="10" height="7" rx="1"/>
+          <rect y="34" width="10" height="7" rx="1"/><rect x="14" y="34" width="10" height="7" rx="1"/>
+          <rect y="51" width="10" height="7" rx="1"/><rect x="14" y="51" width="10" height="7" rx="1"/><rect x="28" y="51" width="10" height="7" rx="1"/>
+          <rect y="68" width="10" height="7" rx="1"/><rect x="14" y="68" width="10" height="7" rx="1"/>
+          <rect y="85" width="10" height="7" rx="1"/><rect x="28" y="85" width="10" height="7" rx="1"/>
+          <rect y="102" width="10" height="7" rx="1"/><rect x="14" y="102" width="10" height="7" rx="1"/><rect x="28" y="102" width="10" height="7" rx="1"/>
+        </g>
+        <rect x="545" y="150" width="75" height="190" fill="#1A3C6A"/>
+
+        <!-- Horizon glow -->
+        <ellipse cx="420" cy="340" rx="280" ry="40" fill="#C8E6FF" opacity=".55"/>
+
+        <!-- Window frame dividers (glass panels) -->
+        <rect x="200" y="0"   width="4" height="340" fill="#8AAECC" opacity=".55"/>
+        <rect x="344" y="0"   width="4" height="340" fill="#8AAECC" opacity=".55"/>
+        <rect x="488" y="0"   width="4" height="340" fill="#8AAECC" opacity=".55"/>
+        <rect x="616" y="0"   width="4" height="340" fill="#8AAECC" opacity=".55"/>
+        <rect x="200" y="168" width="420" height="4" fill="#8AAECC" opacity=".45"/>
+
+        <!-- Office interior left wall (dark, teal accent) -->
+        <rect x="0" y="0" width="200" height="500" fill="#002A4A"/>
+        <rect x="0" y="0" width="200" height="8" fill="#66C5C5"/>
+        <!-- Left wall subtle texture -->
+        <rect x="20" y="40"  width="160" height="1" fill="rgba(255,255,255,.06)"/>
+        <rect x="20" y="80"  width="160" height="1" fill="rgba(255,255,255,.06)"/>
+        <rect x="20" y="120" width="160" height="1" fill="rgba(255,255,255,.06)"/>
+
+        <!-- Person 1 (standing, right area near window) -->
+        <g transform="translate(490,170)">
+          <circle cx="0" cy="0" r="20" fill="#002A4A"/>
+          <!-- Body -->
+          <rect x="-18" y="22" width="36" height="72" rx="10" fill="#1A4A7A"/>
+          <!-- Teal shirt accent -->
+          <rect x="-8" y="28" width="16" height="30" rx="4" fill="#66C5C5" opacity=".65"/>
+          <!-- Arms -->
+          <rect x="-32" y="26" width="16" height="48" rx="7" fill="#1A4A7A"/>
+          <rect x="16"  y="26" width="16" height="48" rx="7" fill="#1A4A7A"/>
+          <!-- Left arm holding tablet -->
+          <rect x="-44" y="50" width="28" height="20" rx="4" fill="#2A5A8A"/>
+          <!-- Legs -->
+          <rect x="-16" y="92" width="14" height="60" rx="6" fill="#0D2A48"/>
+          <rect x="2"   y="92" width="14" height="60" rx="6" fill="#0D2A48"/>
         </g>
 
-        <g transform="rotate(-6 359 279)" filter="url(#homeSoftShadow)">
-          <rect x="240" y="156" width="255" height="170" rx="18" fill="#DDE8EF"/>
-          <rect x="256" y="171" width="223" height="132" rx="10" fill="url(#homeNavy)"/>
-          <path d="M276 205h82M276 232h138M276 259h102" stroke="#66C5C5" stroke-width="10" stroke-linecap="round" opacity=".5"/>
-          <circle cx="443" cy="257" r="30" fill="#66C5C5" opacity=".24"/>
-          <path d="M293 329h154c18 0 33 13 37 31l4 17H255l5-18c5-18 15-30 33-30Z" fill="#C6D3DD"/>
-          <rect x="313" y="346" width="115" height="19" rx="8" fill="#AEBECD"/>
+        <!-- Person 2 (standing, center-right, female) -->
+        <g transform="translate(430,200)">
+          <circle cx="0" cy="0" r="18" fill="#1A2840"/>
+          <!-- Hair suggestion -->
+          <path d="M-18 5 Q-20 -12 0 -18 Q18 -12 18 5" fill="#0A1828"/>
+          <!-- Body -->
+          <rect x="-16" y="20" width="32" height="60" rx="9" fill="#FFFFFF"/>
+          <!-- Teal jacket/blazer -->
+          <rect x="-18" y="20" width="10" height="60" rx="5" fill="#66C5C5" opacity=".70"/>
+          <rect x="8"   y="20" width="10" height="60" rx="5" fill="#66C5C5" opacity=".70"/>
+          <!-- Holding folder -->
+          <rect x="16"  y="38" width="22" height="28" rx="3" fill="#E8EEF4"/>
+          <rect x="16"  y="38" width="22" height="5"  rx="2" fill="#004080"/>
+          <!-- Legs (dark trousers) -->
+          <rect x="-14" y="78" width="12" height="56" rx="5" fill="#1A2840"/>
+          <rect x="2"   y="78" width="12" height="56" rx="5" fill="#1A2840"/>
         </g>
 
-        <g transform="rotate(8 190 360)" filter="url(#homeSoftShadow)">
-          <rect x="92" y="260" width="170" height="190" rx="14" fill="#FFFFFF"/>
-          <rect x="92" y="260" width="20" height="190" rx="10" fill="#66C5C5"/>
-          <path d="M131 304h91M131 333h104M131 362h76M131 402h98" stroke="#004080" stroke-width="5" stroke-linecap="round" opacity=".17"/>
-          <circle cx="213" cy="405" r="18" fill="#66C5C5" opacity=".25"/>
+        <!-- Person 3 (walking toward viewer, right side) -->
+        <g transform="translate(570,210)">
+          <circle cx="0" cy="0" r="19" fill="#1A2840"/>
+          <path d="M-19 4 Q-18 -14 0 -19 Q18 -14 19 4" fill="#0A1828"/>
+          <rect x="-16" y="21" width="32" height="64" rx="9" fill="#004080"/>
+          <rect x="-5"  y="28" width="10" height="20" rx="3" fill="#66C5C5" opacity=".55"/>
+          <rect x="-22" y="24" width="8"  height="50" rx="4" fill="#004080"/>
+          <rect x="14"  y="24" width="8"  height="50" rx="4" fill="#004080"/>
+          <rect x="-14" y="83" width="11" height="52" rx="5" fill="#0D2040"/>
+          <rect x="3"   y="83" width="11" height="52" rx="5" fill="#0D2040"/>
         </g>
 
-        <g transform="rotate(-4 578 214)" filter="url(#homeSoftShadow)">
-          <rect x="518" y="118" width="142" height="158" rx="18" fill="#FFFFFF"/>
-          <rect x="518" y="118" width="142" height="42" rx="18" fill="url(#homeTeal)"/>
-          <rect x="518" y="146" width="142" height="18" fill="#66C5C5"/>
-          <g fill="#004080" opacity=".18">
-            <rect x="536" y="179" width="18" height="18" rx="5"/>
-            <rect x="565" y="179" width="18" height="18" rx="5"/>
-            <rect x="594" y="179" width="18" height="18" rx="5"/>
-            <rect x="623" y="179" width="18" height="18" rx="5"/>
-            <rect x="536" y="208" width="18" height="18" rx="5"/>
-            <rect x="565" y="208" width="18" height="18" rx="5"/>
-            <rect x="594" y="208" width="18" height="18" rx="5"/>
-            <rect x="623" y="208" width="18" height="18" rx="5"/>
-          </g>
-          <rect x="565" y="208" width="18" height="18" rx="5" fill="#004080" opacity=".64"/>
+        <!-- Floor (reflective office floor) -->
+        <polygon points="0,340 620,340 620,500 0,500" fill="url(#osFloor)"/>
+        <line x1="0" y1="340" x2="620" y2="340" stroke="#C8DDED" stroke-width="1.5"/>
+        <!-- Floor reflection streaks -->
+        <line x1="100" y1="340" x2="150" y2="500" stroke="rgba(255,255,255,.40)" stroke-width="1.5"/>
+        <line x1="300" y1="340" x2="380" y2="500" stroke="rgba(255,255,255,.30)" stroke-width="1.5"/>
+        <line x1="500" y1="340" x2="560" y2="500" stroke="rgba(255,255,255,.28)" stroke-width="1.5"/>
+
+        <!-- Meeting table (center) -->
+        <ellipse cx="350" cy="400" rx="130" ry="32" fill="#FFFFFF" opacity=".90"/>
+        <ellipse cx="350" cy="398" rx="130" ry="32" fill="#EEF4FA" stroke="#D8E6F0" stroke-width="1.5"/>
+        <!-- Laptop on table -->
+        <rect x="290" y="368" width="100" height="64" rx="6" fill="#E8EEF4"/>
+        <rect x="298" y="374" width="84" height="50" rx="4" fill="#002A4A"/>
+        <rect x="306" y="380" width="68" height="38" rx="3" fill="#003060"/>
+        <rect x="314" y="386" width="52" height="6" rx="2" fill="#66C5C5" opacity=".55"/>
+        <rect x="314" y="398" width="38" height="4" rx="2" fill="rgba(255,255,255,.30)"/>
+        <rect x="314" y="408" width="46" height="4" rx="2" fill="rgba(255,255,255,.22)"/>
+        <rect x="286" y="428" width="108" height="10" rx="3" fill="#D0DCE8"/>
+        <!-- Coffee cup -->
+        <rect x="415" y="390" width="20" height="24" rx="4" fill="#FFFFFF"/>
+        <ellipse cx="425" cy="390" rx="10" ry="4" fill="#66C5C5" opacity=".55"/>
+        <path d="M435 396 Q443 400 435 404" fill="none" stroke="#E8EEF4" stroke-width="4" stroke-linecap="round"/>
+
+        <!-- Person 4 (seated at table, left) -->
+        <g transform="translate(270,365)">
+          <circle cx="0" cy="0" r="17" fill="#1A2840"/>
+          <rect x="-14" y="18" width="28" height="40" rx="7" fill="#66C5C5" opacity=".80"/>
+          <rect x="-22" y="22" width="10" height="30" rx="5" fill="#66C5C5" opacity=".72"/>
+          <rect x="12"  y="22" width="10" height="30" rx="5" fill="#66C5C5" opacity=".72"/>
         </g>
 
-        <g transform="rotate(7 547 407)" filter="url(#homeSoftShadow)">
-          <path d="M475 318h138l43 43v130H475V318Z" fill="#FFFFFF"/>
-          <path d="M613 318v43h43" fill="#DDE8EF"/>
-          <path d="M498 374h92M498 404h120M498 434h82" stroke="#004080" stroke-width="7" stroke-linecap="round" opacity=".16"/>
-          <rect x="594" y="426" width="38" height="25" rx="6" fill="#66C5C5" opacity=".32"/>
+        <!-- Person 5 (seated at table, right) -->
+        <g transform="translate(440,358)">
+          <circle cx="0" cy="0" r="16" fill="#0A1828"/>
+          <rect x="-14" y="18" width="28" height="42" rx="7" fill="#FFFFFF"/>
+          <rect x="-6"  y="24" width="12" height="18" rx="3" fill="#004080" opacity=".70"/>
         </g>
 
-        <g filter="url(#homeSoftShadow)">
-          <rect x="160" y="112" width="138" height="82" rx="18" fill="#FFFFFF"/>
-          <path d="M188 155c18-30 67-30 84 0" fill="none" stroke="#66C5C5" stroke-width="8" stroke-linecap="round"/>
-          <circle cx="200" cy="144" r="15" fill="#004080" opacity=".82"/>
-          <circle cx="229" cy="132" r="18" fill="#66C5C5"/>
-          <circle cx="258" cy="145" r="15" fill="#707070"/>
+        <!-- Teal accent geometric shape (top-left, design element) -->
+        <polygon points="0,0 120,0 0,180" fill="#66C5C5" opacity=".18"/>
+        <polygon points="0,0 60,0 0,90"   fill="#66C5C5" opacity=".25"/>
+
+        <!-- Dot grid decoration (top-right) -->
+        <g fill="#004080" opacity=".18">
+          <circle cx="555" cy="18" r="3"/><circle cx="573" cy="18" r="3"/><circle cx="591" cy="18" r="3"/><circle cx="609" cy="18" r="3"/>
+          <circle cx="555" cy="36" r="3"/><circle cx="573" cy="36" r="3"/><circle cx="591" cy="36" r="3"/><circle cx="609" cy="36" r="3"/>
+          <circle cx="555" cy="54" r="3"/><circle cx="573" cy="54" r="3"/><circle cx="591" cy="54" r="3"/><circle cx="609" cy="54" r="3"/>
+          <circle cx="555" cy="72" r="3"/><circle cx="573" cy="72" r="3"/><circle cx="591" cy="72" r="3"/><circle cx="609" cy="72" r="3"/>
         </g>
 
-        <path d="M120 238c94-65 202-83 310-58 76 17 136 57 196 96" fill="none" stroke="#66C5C5" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 14" opacity=".65"/>
-        <circle cx="122" cy="238" r="8" fill="#66C5C5"/>
-        <circle cx="430" cy="180" r="8" fill="#004080"/>
-        <circle cx="626" cy="276" r="8" fill="#707070"/>
+        <!-- Plus accent -->
+        <g stroke="#66C5C5" stroke-width="2.5" stroke-linecap="round" opacity=".55" transform="translate(542,140)">
+          <line x1="0" y1="-8" x2="0" y2="8"/>
+          <line x1="-8" y1="0" x2="8" y2="0"/>
+        </g>
+        <g stroke="#004080" stroke-width="2" stroke-linecap="round" opacity=".35" transform="translate(195,220)">
+          <line x1="0" y1="-6" x2="0" y2="6"/>
+          <line x1="-6" y1="0" x2="6" y2="0"/>
+        </g>
       </svg>
     </div>
-  </div>
-</section>
-
-<!-- Story path -->
-<section class="welcome-path" aria-labelledby="welcome-path-title">
-  <div class="welcome-section-head">
-    <h2 id="welcome-path-title">\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E48\u0E32\u0E19\u0E17\u0E31\u0E49\u0E07\u0E40\u0E27\u0E47\u0E1A\u0E43\u0E19\u0E04\u0E23\u0E31\u0E49\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27</h2>
-    <p>\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E2A\u0E16\u0E32\u0E19\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E39\u0E48\u0E15\u0E23\u0E07\u0E2B\u0E19\u0E49\u0E32 \u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E21\u0E35\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E40\u0E25\u0E47\u0E01 \u0E46 \u0E1A\u0E19\u0E42\u0E15\u0E4A\u0E30\u0E17\u0E33\u0E07\u0E32\u0E19</p>
-  </div>
-
-  <div class="welcome-path-board">
-    <a href="#/first-day" class="welcome-path-piece piece-day" data-link>
-      <span class="piece-label">\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E21\u0E32\u0E16\u0E36\u0E07</span>
-      <h3>\u0E40\u0E14\u0E34\u0E19\u0E15\u0E32\u0E21 Day 1 Guide</h3>
-      <p>\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E0A\u0E49\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E2D\u0E30\u0E44\u0E23 \u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08 \u0E41\u0E25\u0E30\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21\u0E43\u0E04\u0E23</p>
-    </a>
-    <a href="#/getting-started/wifi" class="welcome-path-piece piece-office" data-link>
-      <span class="piece-label">\u0E19\u0E31\u0E48\u0E07\u0E17\u0E35\u0E48\u0E42\u0E15\u0E4A\u0E30\u0E41\u0E25\u0E49\u0E27</span>
-      <h3>\u0E15\u0E48\u0E2D Wi-Fi \u0E41\u0E25\u0E30\u0E08\u0E2D\u0E07\u0E2B\u0E49\u0E2D\u0E07</h3>
-      <p>\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E17\u0E31\u0E19\u0E17\u0E35 \u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E25\u0E48\u0E16\u0E32\u0E21\u0E2B\u0E25\u0E32\u0E22\u0E23\u0E2D\u0E1A</p>
-    </a>
-    <a href="#/policy/dress-code" class="welcome-path-piece piece-policy" data-link>
-      <span class="piece-label">\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E1E\u0E23\u0E38\u0E48\u0E07\u0E19\u0E35\u0E49</span>
-      <h3>\u0E40\u0E0A\u0E47\u0E01\u0E01\u0E15\u0E34\u0E01\u0E32\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</h3>
-      <p>Core Values, dress code, \u0E01\u0E32\u0E23\u0E25\u0E32 \u0E41\u0E25\u0E30\u0E02\u0E2D\u0E1A\u0E40\u0E02\u0E15\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E17\u0E33\u0E07\u0E32\u0E19\u0E23\u0E48\u0E27\u0E21\u0E01\u0E31\u0E19\u0E07\u0E48\u0E32\u0E22\u0E02\u0E36\u0E49\u0E19</p>
-    </a>
-    <a href="#/showcase/experiences" class="welcome-path-piece piece-story" data-link>
-      <span class="piece-label">\u0E2D\u0E22\u0E32\u0E01\u0E40\u0E2B\u0E47\u0E19\u0E20\u0E32\u0E1E\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E08\u0E23\u0E34\u0E07</span>
-      <h3>\u0E2D\u0E48\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</h3>
-      <p>\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C \u0E27\u0E34\u0E18\u0E35\u0E04\u0E34\u0E14 \u0E41\u0E25\u0E30\u0E1A\u0E17\u0E40\u0E23\u0E35\u0E22\u0E19\u0E08\u0E32\u0E01\u0E04\u0E19\u0E17\u0E35\u0E48\u0E40\u0E04\u0E22\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E15\u0E23\u0E07\u0E08\u0E38\u0E14\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E31\u0E19</p>
-    </a>
-  </div>
-</section>
-
-<!-- Quick objects -->
-<section class="welcome-objects" aria-labelledby="welcome-objects-title">
-  <div class="welcome-objects-inner">
-    <div class="welcome-object-copy">
-      <h2 id="welcome-objects-title">\u0E02\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E2B\u0E22\u0E34\u0E1A\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E27\u0E31\u0E19</h2>
-      <p>\u0E1A\u0E32\u0E07\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E2D\u0E48\u0E32\u0E19\u0E22\u0E32\u0E27 \u0E41\u0E04\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E2B\u0E49\u0E40\u0E08\u0E2D\u0E40\u0E23\u0E47\u0E27\u0E15\u0E2D\u0E19\u0E01\u0E33\u0E25\u0E31\u0E07\u0E17\u0E33\u0E07\u0E32\u0E19</p>
     </div>
-    <div class="welcome-object-list">
-      <a href="#/resources/timesheet" data-link>
-        <span class="object-icon object-sheet"></span>
-        <strong>Timesheet</strong>
-        <small>\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E41\u0E25\u0E30\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07</small>
+  </div>
+</section>
+
+<section class="ex-home-start" aria-labelledby="ex-home-start-title">
+  <div class="ex-home-start-inner">
+    <div class="ex-home-section-intro fdb-reveal">
+      <h2 id="ex-home-start-title">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E1A\u0E48\u0E2D\u0E22\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14</h2>
+      <p>\u0E16\u0E49\u0E32\u0E40\u0E1E\u0E34\u0E48\u0E07\u0E08\u0E1A Orientation \u0E2B\u0E23\u0E37\u0E2D\u0E01\u0E33\u0E25\u0E31\u0E07\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E40\u0E1B\u0E34\u0E14\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E2A\u0E32\u0E21\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D\u0E08\u0E38\u0E14\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E35\u0E48\u0E40\u0E23\u0E47\u0E27\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14</p>
+    </div>
+
+    <div class="ex-start-grid">
+      <a href="#/first-day" class="ex-start-card ex-start-card-primary fdb-reveal" data-link>
+        <span class="ex-start-index">Start</span>
+        <h3>Day 1 Guide</h3>
+        <p>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33 \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E08\u0E30\u0E44\u0E14\u0E49\u0E40\u0E08\u0E2D\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19</p>
+        <strong>\u0E40\u0E1B\u0E34\u0E14\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</strong>
       </a>
-      <a href="#/policy/leave" data-link>
-        <span class="object-icon object-leave"></span>
-        <strong>\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E25\u0E32</strong>
-        <small>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19 \u0E27\u0E31\u0E19\u0E25\u0E32 \u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07 HR</small>
+      <a href="#/getting-started/orientation" class="ex-start-card fdb-reveal fdb-delay1" data-link>
+        <span class="ex-start-index">After Orientation</span>
+        <h3>Orientation</h3>
+        <p>\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E14\u0E39\u0E2A\u0E44\u0E25\u0E14\u0E4C \u0E04\u0E48\u0E32\u0E19\u0E34\u0E22\u0E21 \u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C \u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1E\u0E37\u0E49\u0E19\u0E10\u0E32\u0E19\u0E02\u0E2D\u0E07 EXZY</p>
+        <strong>\u0E17\u0E1A\u0E17\u0E27\u0E19 Orientation</strong>
+      </a>
+      <a href="#/resources/timesheet" class="ex-start-card fdb-reveal fdb-delay2" data-link>
+        <span class="ex-start-index">Every Month</span>
+        <h3>Timesheet</h3>
+        <p>\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01 \u0E40\u0E27\u0E25\u0E32\u0E43\u0E19\u0E01\u0E32\u0E23\u0E2A\u0E48\u0E07 \u0E41\u0E25\u0E30\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR</p>
+        <strong>\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01 Timesheet</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
+  <div class="ex-folders-inner">
+    <div class="ex-home-section-intro fdb-reveal">
+      <h2 id="ex-folders-title">ทุกอย่างที่ intern ต้องรู้ รวมไว้ในที่เดียว</h2>
+      <p>เลือกหมวดหมู่ที่ต้องการ — แต่ละโฟลเดอร์เปิดสารบัญให้อ่านทันที</p>
+    </div>
+
+    <div class="ex-folder-grid">
+
+      <div class="ex-folder ex-folder--cyan" tabindex="0" role="button" aria-expanded="false">
+        <div class="ex-folder-tab">เริ่มต้น</div>
+        <div class="ex-folder-body">
+          <div class="ex-folder-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="26" height="20" rx="3"/><path d="M3 13h26M10 7V4M22 7V4"/><circle cx="16" cy="20" r="3" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Day 1 Guide</h3>
+          <p>ภาพรวมวันแรกและสิ่งที่ต้องทำ</p>
+        </div>
+        <div class="ex-folder-docs">
+          <a href="#/first-day" data-link class="ex-folder-doc">ตารางวันแรก</a>
+          <a href="#/first-day" data-link class="ex-folder-doc">สิ่งที่ต้องเตรียม</a>
+          <a href="#/first-day" data-link class="ex-folder-doc">คนที่ต้องรู้จัก</a>
+        </div>
+      </div>
+
+      <div class="ex-folder ex-folder--navy" tabindex="0" role="button" aria-expanded="false">
+        <div class="ex-folder-tab">ออฟฟิศ</div>
+        <div class="ex-folder-body">
+          <div class="ex-folder-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="26" height="24" rx="3"/><path d="M10 4v24M10 12h16M10 19h16"/></svg>
+          </div>
+          <h3>Orientation & ออฟฟิศ</h3>
+          <p>Wi-Fi, ห้องประชุม และข้อมูลออฟฟิศ</p>
+        </div>
+        <div class="ex-folder-docs">
+          <a href="#/getting-started/orientation" data-link class="ex-folder-doc">Orientation</a>
+          <a href="#/getting-started/wifi" data-link class="ex-folder-doc">Office Wi-Fi</a>
+          <a href="#/getting-started/meeting-rooms" data-link class="ex-folder-doc">Meeting Rooms</a>
+        </div>
+      </div>
+
+      <div class="ex-folder ex-folder--slate" tabindex="0" role="button" aria-expanded="false">
+        <div class="ex-folder-tab">บริษัท</div>
+        <div class="ex-folder-body">
+          <div class="ex-folder-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="16" cy="10" r="5"/><circle cx="7" cy="22" r="4"/><circle cx="25" cy="22" r="4"/><path d="M11 14 Q8 18 11 22M21 14 Q24 18 21 22"/></svg>
+          </div>
+          <h3>บริษัทและทีม</h3>
+          <p>โครงสร้างองค์กรและ Employee Directory</p>
+        </div>
+        <div class="ex-folder-docs">
+          <a href="#/employee/org-chart" data-link class="ex-folder-doc">โครงสร้างองค์กร</a>
+          <a href="#/employee/directory" data-link class="ex-folder-doc">Employee Contact</a>
+        </div>
+      </div>
+
+      <div class="ex-folder ex-folder--teal" tabindex="0" role="button" aria-expanded="false">
+        <div class="ex-folder-tab">นโยบาย</div>
+        <div class="ex-folder-body">
+          <div class="ex-folder-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3 L28 8v10c0 7-5 11-12 13C9 29 4 25 4 18V8L16 3Z"/><path d="M11 16l3 3 7-7"/></svg>
+          </div>
+          <h3>Work Policy</h3>
+          <p>กฎระเบียบ Dress Code และการลา</p>
+        </div>
+        <div class="ex-folder-docs">
+          <a href="#/policy/code-of-conduct" data-link class="ex-folder-doc">Core Values</a>
+          <a href="#/policy/dress-code" data-link class="ex-folder-doc">Dress Code</a>
+          <a href="#/policy/leave" data-link class="ex-folder-doc">Leave & Absence</a>
+        </div>
+      </div>
+
+      <div class="ex-folder ex-folder--warm" tabindex="0" role="button" aria-expanded="false">
+        <div class="ex-folder-tab">Resources</div>
+        <div class="ex-folder-body">
+          <div class="ex-folder-icon">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="14" height="14" rx="2"/><rect x="14" y="14" width="14" height="14" rx="2"/><rect x="4" y="18" width="8" height="10" rx="2"/><rect x="20" y="4" width="8" height="8" rx="2"/></svg>
+          </div>
+          <h3>Resources</h3>
+          <p>Timesheet, FAQs และ Showcase</p>
+        </div>
+        <div class="ex-folder-docs">
+          <a href="#/resources/timesheet" data-link class="ex-folder-doc">Timesheet</a>
+          <a href="#/resources/faqs" data-link class="ex-folder-doc">FAQs</a>
+          <a href="#/showcase/experiences" data-link class="ex-folder-doc">Intern Showcase</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="ex-home-quick" aria-labelledby="ex-home-quick-title">
+  <div class="ex-home-quick-inner">
+    <div class="ex-home-section-intro fdb-reveal">
+      <h2 id="ex-home-quick-title">\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E40\u0E1B\u0E34\u0E14\u0E1A\u0E48\u0E2D\u0E22</h2>
+      <p>\u0E17\u0E32\u0E07\u0E25\u0E31\u0E14\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
+    </div>
+
+    <div class="ex-quick-list">
+      <a href="#/getting-started/wifi" data-link>
+        <span>Wi-Fi</span>
+        <strong>\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E2D\u0E34\u0E19\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E40\u0E19\u0E47\u0E15\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</strong>
       </a>
       <a href="#/employee/directory" data-link>
-        <span class="object-icon object-people"></span>
-        <strong>Employee Contact</strong>
-        <small>\u0E2B\u0E32\u0E0A\u0E37\u0E48\u0E2D\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D</small>
+        <span>Contact</span>
+        <strong>\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D</strong>
+      </a>
+      <a href="#/policy/leave" data-link>
+        <span>Leave</span>
+        <strong>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E1B\u0E48\u0E27\u0E22</strong>
       </a>
       <a href="#/resources/faqs" data-link>
-        <span class="object-icon object-faq"></span>
-        <strong>FAQs</strong>
-        <small>\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48 intern \u0E40\u0E1B\u0E34\u0E14\u0E14\u0E39\u0E1A\u0E48\u0E2D\u0E22</small>
+        <span>FAQs</span>
+        <strong>\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48 intern \u0E21\u0E31\u0E01\u0E2A\u0E07\u0E2A\u0E31\u0E22</strong>
       </a>
     </div>
   </div>
@@ -547,536 +753,255 @@
   function renderFirstDay(data = {}) {
     const hrEmail = data.hr_email || "hr@exzyteam.com";
     return `
-<div class="fd3-page">
+<div class="ex-day-page">
 
-<!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 HERO \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
-<div class="fdw-hero">
+<section class="ex-day-hero ex-day-hero-v2" aria-label="Welcome to EXZY internship first day">
+  <div class="ex-day-hero-inner">
+    <div class="ex-day-hero-copy">
+      <p class="ex-day-chapter"><span></span>EXZY Internship \xB7 First Day</p>
+      <h1>Welcome to EXZY Internship \u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49</h1>
+      <p>\u0E43\u0E0A\u0E49\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01: \u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08 \u0E40\u0E08\u0E2D\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E44\u0E2B\u0E19\u0E1A\u0E49\u0E32\u0E07 \u0E41\u0E25\u0E30\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E27\u0E48\u0E32\u0E2D\u0E30\u0E44\u0E23\u0E04\u0E37\u0E2D\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E02\u0E2D\u0E07 EXZY \u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07</p>
+      <a href="#ex-day-tasks" class="ex-day-cta">\u0E14\u0E39\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</a>
+    </div>
 
-  <!-- \u2500\u2500 ILLUSTRATED WORKSPACE SCENE \u2500\u2500 -->
-  <div class="fdw-scene" aria-hidden="true">
-    <svg viewBox="0 0 1440 580" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="fdw-wall" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#FDF8F0"/>
-          <stop offset="100%" stop-color="#F5EDD8"/>
-        </linearGradient>
-        <linearGradient id="fdw-desk" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#E8C87A"/>
-          <stop offset="100%" stop-color="#C8A050"/>
-        </linearGradient>
-        <linearGradient id="fdw-screen" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#1A2E52"/>
-          <stop offset="100%" stop-color="#0E1F3A"/>
-        </linearGradient>
-        <filter id="fdw-shadow" x="-20%" y="-20%" width="140%" height="140%">
-          <feDropShadow dx="0" dy="6" stdDeviation="16" flood-color="rgba(60,30,0,0.18)"/>
-        </filter>
-        <filter id="fdw-soft" x="-10%" y="-10%" width="120%" height="120%">
-          <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="rgba(60,30,0,0.12)"/>
-        </filter>
-      </defs>
+    <div class="ex-day-smart-scene" aria-hidden="true">
+      <svg viewBox="0 0 620 500" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="smartDesk" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#FFFFFF"/>
+            <stop offset="1" stop-color="#DFF4F6"/>
+          </linearGradient>
+          <linearGradient id="smartScreen" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#004080"/>
+            <stop offset="1" stop-color="#06213E"/>
+          </linearGradient>
+          <linearGradient id="smartTeal" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#66C5C5"/>
+            <stop offset="1" stop-color="#2A8DA8"/>
+          </linearGradient>
+          <filter id="smartShadow" x="-20%" y="-20%" width="140%" height="150%">
+            <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#004080" flood-opacity=".14"/>
+          </filter>
+        </defs>
+        <path d="M74 112C128 31 276 19 401 58c126 39 208 125 205 236-3 112-95 202-222 219-126 17-272-39-342-137C-27 279 20 193 74 112Z" fill="#E7F7F9"/>
+        <path d="M70 344c100-46 198-51 299-28 77 18 151 17 230-20l27 75c-88 70-211 92-332 70-86-15-166-47-247-90l23-7Z" fill="#CFEFF2"/>
 
-      <!-- WALL -->
-      <rect width="1440" height="580" fill="url(#fdw-wall)"/>
+        <g filter="url(#smartShadow)">
+          <path d="M70 315 492 258l52 114-433 68-41-125Z" fill="url(#smartDesk)"/>
+        </g>
 
-      <!-- WINDOW \u2014 upper right, morning light -->
-      <rect x="980" y="30" width="210" height="270" rx="6" fill="#FEFCF5"/>
-      <rect x="980" y="30" width="210" height="270" rx="6" fill="none" stroke="#D4BE8A" stroke-width="8"/>
-      <line x1="980" y1="165" x2="1190" y2="165" stroke="#D4BE8A" stroke-width="4"/>
-      <line x1="1085" y1="30" x2="1085" y2="300" stroke="#D4BE8A" stroke-width="4"/>
-      <!-- morning light rays washing across wall -->
-      <polygon points="980,30 540,580 760,580 1190,30" fill="rgba(255,220,80,0.09)"/>
-      <polygon points="1085,30 640,580 820,580 1190,110" fill="rgba(255,220,80,0.06)"/>
-      <polygon points="1190,30 820,580 960,580 1190,80" fill="rgba(255,220,80,0.04)"/>
+        <g transform="rotate(-4 305 230)" filter="url(#smartShadow)">
+          <rect x="191" y="124" width="254" height="174" rx="18" fill="#D5E4EC"/>
+          <rect x="206" y="140" width="224" height="132" rx="12" fill="url(#smartScreen)"/>
+          <path d="M232 180h82M232 210h132M232 239h92" stroke="#66C5C5" stroke-width="9" stroke-linecap="round" opacity=".46"/>
+          <circle cx="381" cy="225" r="30" fill="#66C5C5" opacity=".18"/>
+          <rect x="251" y="306" width="151" height="22" rx="9" fill="#A9BECC"/>
+        </g>
 
-      <!-- WALL ART \u2014 small framed print left of window -->
-      <rect x="720" y="55" width="130" height="100" rx="4" fill="#EDE5D8" filter="url(#fdw-soft)"/>
-      <rect x="726" y="61" width="118" height="88" rx="2" fill="#F5EDE0"/>
-      <!-- abstract art: a few coloured shapes -->
-      <circle cx="765" cy="105" r="24" fill="rgba(102,197,197,0.35)"/>
-      <rect x="775" y="78" width="14" height="38" rx="3" fill="rgba(0,64,128,0.2)"/>
-      <ellipse cx="800" cy="115" rx="16" ry="10" fill="rgba(245,158,11,0.25)"/>
+        <g transform="rotate(7 139 296)" filter="url(#smartShadow)">
+          <rect x="60" y="210" width="150" height="166" rx="15" fill="#FFFFFF"/>
+          <rect x="60" y="210" width="150" height="43" rx="15" fill="url(#smartTeal)"/>
+          <path d="M84 283h86M84 314h61M84 344h75" stroke="#004080" stroke-width="8" stroke-linecap="round" opacity=".13"/>
+          <rect x="126" y="307" width="28" height="28" rx="8" fill="#004080" opacity=".70"/>
+        </g>
 
-      <!-- WALL SHELF + PLANT -->
-      <rect x="200" y="210" width="90" height="8" rx="2" fill="#C8B07A"/>
-      <rect x="224" y="182" width="28" height="30" rx="3" fill="#707070"/>
-      <ellipse cx="238" cy="178" rx="20" ry="28" fill="#66AA66" transform="rotate(-8,238,178)"/>
-      <ellipse cx="252" cy="172" rx="16" ry="22" fill="#55BB55" transform="rotate(18,252,172)"/>
-      <ellipse cx="224" cy="174" rx="14" ry="20" fill="#44A044" transform="rotate(-22,224,174)"/>
+        <g transform="rotate(-8 475 257)" filter="url(#smartShadow)">
+          <rect x="408" y="170" width="128" height="176" rx="18" fill="#FFFFFF"/>
+          <rect x="432" y="199" width="80" height="56" rx="16" fill="#66C5C5" opacity=".28"/>
+          <path d="M430 286h77M430 311h52" stroke="#004080" stroke-width="7" stroke-linecap="round" opacity=".16"/>
+          <circle cx="510" cy="313" r="14" fill="#004080" opacity=".82"/>
+        </g>
 
-      <!-- DESK SURFACE \u2014 large, perspective trapezoid -->
-      <polygon points="0,330 1440,330 1440,580 0,580" fill="url(#fdw-desk)"/>
-      <!-- Desk edge highlight line -->
-      <line x1="0" y1="330" x2="1440" y2="330" stroke="#E8D090" stroke-width="3"/>
-      <!-- Very subtle wood grain -->
-      <line x1="0" y1="400" x2="1440" y2="398" stroke="rgba(160,110,30,0.06)" stroke-width="1.5"/>
-      <line x1="0" y1="470" x2="1440" y2="468" stroke="rgba(160,110,30,0.05)" stroke-width="1.5"/>
-      <!-- Desk mat under laptop -->
-      <rect x="350" y="325" width="480" height="240" rx="10" fill="rgba(0,40,80,0.06)" transform="rotate(-2,590,445)"/>
+        <g transform="rotate(8 455 111)" filter="url(#smartShadow)">
+          <rect x="368" y="64" width="166" height="92" rx="17" fill="#FFFFFF"/>
+          <circle cx="409" cy="110" r="17" fill="#66C5C5"/>
+          <circle cx="448" cy="110" r="18" fill="#004080"/>
+          <circle cx="489" cy="110" r="14" fill="#707070"/>
+          <path d="M396 84h81" stroke="#DDE8EF" stroke-width="8" stroke-linecap="round"/>
+        </g>
 
-      <!-- LAPTOP \u2014 main focal object -->
-      <!-- Laptop lid/screen back -->
-      <rect x="380" y="198" width="360" height="238" rx="14" fill="#DEDAD4" filter="url(#fdw-shadow)" transform="rotate(-2,560,317)"/>
-      <!-- Screen bezel -->
-      <rect x="392" y="208" width="336" height="218" rx="8" fill="#1C1C2E" transform="rotate(-2,560,317)"/>
-      <!-- Screen display -->
-      <rect x="398" y="214" width="324" height="206" rx="6" fill="url(#fdw-screen)" transform="rotate(-2,560,317)"/>
-      <!-- Screen glow: subtle EXZY-blue content suggestion -->
-      <rect x="404" y="220" width="312" height="194" rx="4" fill="#243A5E" opacity="0.6" transform="rotate(-2,560,317)"/>
-      <!-- camera dot -->
-      <circle cx="561" cy="216" r="3.5" fill="#0A0A1A" transform="rotate(-2,561,216)"/>
-      <!-- Screen glare reflection -->
-      <ellipse cx="475" cy="268" rx="30" ry="10" fill="rgba(255,255,255,0.07)" transform="rotate(-2,560,317)"/>
-      <!-- Keyboard / base -->
-      <rect x="392" y="430" width="336" height="34" rx="8" fill="#CCCAC4" filter="url(#fdw-soft)" transform="rotate(-2,560,447)"/>
-      <!-- trackpad -->
-      <rect x="482" y="436" width="160" height="24" rx="6" fill="#C0BEB8" transform="rotate(-2,560,448)"/>
+        <path d="M99 242c91-65 213-88 324-44 56 22 92 55 127 91" fill="none" stroke="#66C5C5" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 14" opacity=".72"/>
+        <circle cx="99" cy="242" r="8" fill="#66C5C5"/>
+        <circle cx="423" cy="198" r="8" fill="#004080"/>
+        <circle cx="550" cy="289" r="8" fill="#66C5C5"/>
+      </svg>
+    </div>
+  </div>
+</section>
 
-      <!-- COFFEE MUG \u2014 right of laptop -->
-      <ellipse cx="868" cy="388" rx="42" ry="26" fill="#55B8B8"/>
-      <ellipse cx="868" cy="362" rx="42" ry="26" fill="#66C5C5"/>
-      <rect x="826" y="362" width="84" height="26" fill="#66C5C5"/>
-      <!-- Coffee liquid surface -->
-      <ellipse cx="868" cy="362" rx="32" ry="19" fill="#7B4A28"/>
-      <!-- Latte art suggestion -->
-      <path d="M858 358 Q868 352 878 358" fill="none" stroke="rgba(240,220,180,0.5)" stroke-width="2" stroke-linecap="round"/>
-      <!-- Handle -->
-      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#66C5C5" stroke-width="10" stroke-linecap="round"/>
-      <path d="M910 368 Q935 378 910 388" fill="none" stroke="#7DD4D4" stroke-width="6" stroke-linecap="round"/>
-      <!-- Steam wisps -->
-      <path d="M854 352 Q858 336 853 320" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M868 348 Q873 330 868 312" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M882 352 Q887 336 882 320" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5" stroke-linecap="round"/>
+<section class="ex-day-tasks" id="ex-day-tasks" aria-labelledby="ex-day-tasks-title">
+  <div class="ex-section-head ex-section-head-left fdb-reveal">
+    <h2 id="ex-day-tasks-title">\u0E2A\u0E2D\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E01\u0E48\u0E2D\u0E19\u0E08\u0E1A\u0E27\u0E31\u0E19</h2>
+    <p>\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E08\u0E33\u0E17\u0E31\u0E49\u0E07 handbook \u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49 \u0E41\u0E04\u0E48\u0E1B\u0E34\u0E14\u0E2A\u0E2D\u0E07\u0E0A\u0E34\u0E49\u0E19\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
+  </div>
 
-      <!-- NOTEBOOK \u2014 left of laptop, slightly rotated -->
-      <rect x="80" y="345" width="220" height="175" rx="7" fill="#F0EAD8" filter="url(#fdw-shadow)" transform="rotate(6,190,432)"/>
-      <rect x="92" y="352" width="196" height="162" rx="4" fill="#FAFAF5" transform="rotate(6,190,432)"/>
-      <!-- Spiral spine -->
-      <rect x="80" y="345" width="14" height="175" rx="4" fill="#D4C48A" transform="rotate(6,190,432)"/>
-      <!-- Ruled lines -->
-      <line x1="106" y1="378" x2="278" y2="374" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
-      <line x1="106" y1="395" x2="278" y2="391" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
-      <line x1="106" y1="412" x2="278" y2="408" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
-      <line x1="106" y1="429" x2="278" y2="425" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
-      <line x1="106" y1="446" x2="278" y2="442" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" transform="rotate(6,190,432)"/>
-      <!-- Some handwriting/doodle suggestion -->
-      <path d="M115 385 Q140 380 155 390 Q165 398 160 408" fill="none" stroke="rgba(0,60,120,0.18)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
-      <line x1="115" y1="420" x2="185" y2="418" stroke="rgba(0,60,120,0.12)" stroke-width="1.5" stroke-linecap="round" transform="rotate(6,190,432)"/>
+  <div class="ex-task-stage">
+    <article class="ex-task-slip ex-task-calendar fdb-reveal fdb-delay1">
+      <div class="ex-task-visual" aria-hidden="true">
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <rect x="22" y="20" width="184" height="184" rx="18" fill="#FFFFFF"/>
+          <rect x="22" y="20" width="184" height="52" rx="18" fill="#66C5C5"/>
+          <path d="M22 56h184" stroke="#66C5C5" stroke-width="20"/>
+          <path d="M59 105h27M105 105h27M151 105h27M59 144h27M105 144h27M151 144h27" stroke="#004080" stroke-width="16" stroke-linecap="round" opacity=".12"/>
+          <rect x="105" y="136" width="27" height="27" rx="8" fill="#004080" opacity=".76"/>
+          <path d="M70 45h90" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+          <path d="M51 187h93" stroke="#66C5C5" stroke-width="9" stroke-linecap="round" opacity=".72"/>
+        </svg>
+      </div>
+      <div class="ex-task-content">
+        <span>Task 01</span>
+        <h3>Subscribe Google Calendar</h3>
+        <p>HR \u0E08\u0E30\u0E2A\u0E48\u0E07\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E01\u0E14\u0E40\u0E1B\u0E34\u0E14 Calendar \u0E41\u0E25\u0E49\u0E27 subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E41\u0E25\u0E30\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</p>
+        <div class="ex-mini-flow ex-mini-flow-emoji">
+          <div class="ex-flow-step"><span>\u{1F4E7}</span><b>\u0E23\u0E31\u0E1A Email \u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E08\u0E32\u0E01 HR</b></div>
+          <i></i>
+          <div class="ex-flow-step"><span>\u{1F4C5}</span><b>\u0E01\u0E14 Open Calendar</b></div>
+          <i></i>
+          <div class="ex-flow-step"><span>\u2705</span><b>\u0E01\u0E14 Subscribe \u0E17\u0E31\u0E49\u0E07 2 \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</b></div>
+        </div>
+        <p class="ex-task-note">\u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D <a href="mailto:${hrEmail}">${hrEmail}</a></p>
+      </div>
+    </article>
 
-      <!-- PEN beside notebook -->
-      <rect x="308" y="355" width="9" height="135" rx="4.5" fill="#0FA8A8" filter="url(#fdw-soft)" transform="rotate(10,312,422)"/>
-      <polygon points="312,350 307,340 317,340" fill="#0D9090" transform="rotate(10,312,345)"/>
-      <rect x="308" y="466" width="9" height="18" rx="4.5" fill="#0D9090" transform="rotate(10,312,475)"/>
+    <article class="ex-task-slip ex-task-timesheet fdb-reveal fdb-delay2">
+      <div class="ex-task-visual" aria-hidden="true">
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <path d="M48 18h117l45 45v156H48V18Z" fill="#FFFFFF"/>
+          <path d="M165 18v45h45" fill="#DCE8EE"/>
+          <rect x="69" y="52" width="82" height="12" rx="6" fill="#004080" opacity=".18"/>
+          <rect x="69" y="88" width="116" height="9" rx="4" fill="#66C5C5" opacity=".62"/>
+          <path d="M69 121h132M69 148h132M69 175h94" stroke="#004080" stroke-width="9" stroke-linecap="round" opacity=".12"/>
+          <circle cx="178" cy="175" r="22" fill="#66C5C5" opacity=".28"/>
+          <path d="M166 176h24" stroke="#004080" stroke-width="6" stroke-linecap="round" opacity=".28"/>
+        </svg>
+      </div>
+      <div class="ex-task-content">
+        <span>Task 02</span>
+        <h3>\u0E01\u0E23\u0E2D\u0E01 Timesheet</h3>
+        <p>\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E35\u0E48 HR \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 \u0E17\u0E33\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E41\u0E25\u0E30\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E40\u0E21\u0E37\u0E48\u0E2D\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</p>
+        <div class="ex-mini-flow ex-mini-flow-emoji">
+          <div class="ex-flow-step"><span>\u{1F4C2}</span><b>\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C Timesheet \u0E08\u0E32\u0E01 HR</b></div>
+          <i></i>
+          <div class="ex-flow-step"><span>\u270F\uFE0F</span><b>\u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E41\u0E25\u0E30\u0E01\u0E23\u0E2D\u0E01\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</b></div>
+          <i></i>
+          <div class="ex-flow-step"><span>\u{1F5A8}\uFE0F</span><b>\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</b></div>
+        </div>
+        <a href="#/resources/timesheet" class="ex-inline-link" data-link>\u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet</a>
+      </div>
+    </article>
+  </div>
+</section>
 
-      <!-- DESK SUCCULENT \u2014 far right -->
-      <ellipse cx="1300" cy="460" rx="36" ry="22" fill="#707070"/>
-      <ellipse cx="1300" cy="438" rx="36" ry="22" fill="#888888"/>
-      <rect x="1264" y="438" width="72" height="22" fill="#888888"/>
-      <!-- Leaves -->
-      <ellipse cx="1300" cy="416" rx="16" ry="26" fill="#5AAA60"/>
-      <ellipse cx="1283" cy="416" rx="13" ry="20" fill="#4CAF54" transform="rotate(-28,1283,416)"/>
-      <ellipse cx="1317" cy="416" rx="13" ry="20" fill="#66BB6A" transform="rotate(28,1317,416)"/>
-      <ellipse cx="1291" cy="404" rx="10" ry="16" fill="#43A047" transform="rotate(-18,1291,404)"/>
-      <ellipse cx="1310" cy="404" rx="10" ry="16" fill="#388E3C" transform="rotate(18,1310,404)"/>
+<section class="ex-day-road" aria-labelledby="ex-day-road-title">
+  <div class="ex-section-head fdb-reveal">
+    <h2 id="ex-day-road-title">\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</h2>
+    <p>\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E32\u0E08\u0E44\u0E14\u0E49\u0E40\u0E27\u0E25\u0E32\u0E19\u0E31\u0E14\u0E15\u0E48\u0E32\u0E07\u0E01\u0E31\u0E19 \u0E41\u0E15\u0E48\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E04\u0E37\u0E2D 4 step \u0E19\u0E35\u0E49</p>
+  </div>
 
-      <!-- POST-IT NOTE on laptop screen edge -->
-      <rect x="666" y="318" width="52" height="44" rx="2" fill="#66C5C5" opacity="0.85" filter="url(#fdw-soft)" transform="rotate(3,692,340)"/>
-      <line x1="672" y1="328" x2="712" y2="327" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
-      <line x1="672" y1="337" x2="712" y2="336" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
-      <line x1="672" y1="346" x2="700" y2="345" stroke="rgba(0,0,0,0.08)" stroke-width="1.2" transform="rotate(3,692,340)"/>
-
-      <!-- PHONE \u2014 right side of desk -->
-      <rect x="1060" y="378" width="70" height="118" rx="14" fill="#2A2838" filter="url(#fdw-soft)" transform="rotate(-6,1095,437)"/>
-      <rect x="1066" y="386" width="58" height="102" rx="9" fill="#1A1828" transform="rotate(-6,1095,437)"/>
-      <rect x="1078" y="480" width="30" height="4" rx="2" fill="rgba(255,255,255,0.2)" transform="rotate(-6,1095,482)"/>
-
+  <div class="ex-info-roadmap" aria-label="เส้นทางของวันแรก">
+    <svg class="ex-info-path" viewBox="0 0 1120 470" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M70 350C188 95 375 80 512 228c121 131 230 222 420-6 42-51 82-79 121-90" fill="none" stroke="#D6EEF2" stroke-width="46" stroke-linecap="round"/>
+      <path d="M70 350C188 95 375 80 512 228c121 131 230 222 420-6 42-51 82-79 121-90" fill="none" stroke="#66C5C5" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 18"/>
     </svg>
-  </div>
 
-  <!-- \u2500\u2500 GRADIENT OVERLAY so text is legible over scene \u2500\u2500 -->
-  <div class="fdw-overlay" aria-hidden="true"></div>
-
-  <!-- \u2500\u2500 CHAPTER OPENING TEXT \u2500\u2500 -->
-  <div class="fdw-text">
-
-    <p class="fdw-chapter-tag">
-      <span class="fdw-tag-line"></span>
-      Chapter One &nbsp;\xB7&nbsp; \u0E1A\u0E17\u0E17\u0E35\u0E48\u0E2B\u0E19\u0E36\u0E48\u0E07
-    </p>
-
-    <h1 class="fdw-h1">
-      <span class="fdw-h1-intro">\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D</span>
-      <span class="fdw-h1-main">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</span>
-      <span class="fdw-h1-place">\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13 \u0E17\u0E35\u0E48 <em>EXZY</em></span>
-    </h1>
-
-    <p class="fdw-lead">\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E43\u0E19\u0E27\u0E31\u0E19\u0E40\u0E14\u0E35\u0E22\u0E27<br>\u0E41\u0E04\u0E48\u0E21\u0E32\u0E16\u0E36\u0E07\u0E01\u0E47\u0E1E\u0E2D \u2014 \u0E17\u0E35\u0E48\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E40\u0E23\u0E32\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E44\u0E27\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E25\u0E49\u0E27</p>
-
-    <a href="#fd3-sec1" class="fdw-cta">
-      \u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
-
-  </div>
-
-</div>
-
-<!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 SECTION 1: Tasks \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
-<section class="fd3-section fd3-sec-tasks" id="fd3-sec1">
-  <div class="fd3-sec-head fdb-reveal">
-    <div class="fd3-sec-tag">\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</div>
-    <h2 class="fd3-sec-title">\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</h2>
-    <p class="fd3-sec-sub">\u0E2B\u0E25\u0E31\u0E07 Orientation \u0E40\u0E2A\u0E23\u0E47\u0E08 \u2014 \u0E17\u0E33 2 tasks \u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
-  </div>
-
-  <div class="fd3-task-grid">
-
-    <!-- Task 01: Calendar -->
-    <div class="fd3-task-card fd3-task-card--cal fdb-reveal fdb-delay1">
-      <!-- illustrated calendar graphic \u2014 decorative background -->
-      <div class="fd3-card-graphic" aria-hidden="true">
-        <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg">
-          <!-- Calendar shell -->
-          <rect width="160" height="180" rx="14" fill="rgba(102,197,197,0.10)"/>
-          <!-- Top header bar -->
-          <rect width="160" height="44" rx="14" fill="rgba(102,197,197,0.30)"/>
-          <rect y="30" width="160" height="14" fill="rgba(102,197,197,0.30)"/>
-          <!-- Month label -->
-          <rect x="42" y="14" width="76" height="10" rx="5" fill="rgba(255,255,255,0.55)"/>
-          <!-- Nav chevrons -->
-          <path d="M18 18 L14 22 L18 26" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M142 18 L146 22 L142 26" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <!-- Day-of-week headers -->
-          <g fill="rgba(0,64,128,0.25)">
-            <rect x="8"   y="52" width="16" height="6" rx="3"/>
-            <rect x="30"  y="52" width="16" height="6" rx="3"/>
-            <rect x="52"  y="52" width="16" height="6" rx="3"/>
-            <rect x="74"  y="52" width="16" height="6" rx="3"/>
-            <rect x="96"  y="52" width="16" height="6" rx="3"/>
-            <rect x="118" y="52" width="16" height="6" rx="3"/>
-            <rect x="140" y="52" width="14" height="6" rx="3"/>
-          </g>
-          <!-- Week rows -->
-          <g fill="rgba(0,64,128,0.10)">
-            <rect x="8"   y="65" width="16" height="16" rx="4"/>
-            <rect x="30"  y="65" width="16" height="16" rx="4"/>
-            <rect x="52"  y="65" width="16" height="16" rx="4"/>
-            <rect x="74"  y="65" width="16" height="16" rx="4"/>
-            <rect x="96"  y="65" width="16" height="16" rx="4"/>
-            <rect x="118" y="65" width="16" height="16" rx="4"/>
-            <rect x="140" y="65" width="14" height="16" rx="4"/>
-
-            <rect x="8"   y="87" width="16" height="16" rx="4"/>
-            <rect x="30"  y="87" width="16" height="16" rx="4"/>
-            <!-- TODAY: highlighted -->
-            <rect x="52"  y="87" width="16" height="16" rx="4" fill="rgba(102,197,197,0.75)"/>
-            <rect x="74"  y="87" width="16" height="16" rx="4"/>
-            <rect x="96"  y="87" width="16" height="16" rx="4"/>
-            <rect x="118" y="87" width="16" height="16" rx="4"/>
-            <rect x="140" y="87" width="14" height="16" rx="4"/>
-
-            <rect x="8"   y="109" width="16" height="16" rx="4"/>
-            <rect x="30"  y="109" width="16" height="16" rx="4"/>
-            <rect x="52"  y="109" width="16" height="16" rx="4"/>
-            <rect x="74"  y="109" width="16" height="16" rx="4"/>
-            <rect x="96"  y="109" width="16" height="16" rx="4"/>
-            <rect x="118" y="109" width="16" height="16" rx="4"/>
-            <rect x="140" y="109" width="14" height="16" rx="4"/>
-
-            <rect x="8"   y="131" width="16" height="16" rx="4"/>
-            <rect x="30"  y="131" width="16" height="16" rx="4"/>
-            <rect x="52"  y="131" width="16" height="16" rx="4"/>
-            <rect x="74"  y="131" width="16" height="16" rx="4"/>
-            <rect x="96"  y="131" width="16" height="16" rx="4"/>
-          </g>
-          <!-- event dot on highlighted day -->
-          <circle cx="60" cy="95" r="3" fill="rgba(255,255,255,0.9)"/>
-          <!-- two event bars below grid -->
-          <rect x="8"  y="154" width="70" height="8" rx="4" fill="rgba(102,197,197,0.35)"/>
-          <rect x="84" y="154" width="50" height="8" rx="4" fill="rgba(0,64,128,0.18)"/>
-          <rect x="8"  y="166" width="55" height="8" rx="4" fill="rgba(0,64,128,0.12)"/>
-        </svg>
+    <article class="ex-info-stop ex-info-stop-1 fdb-reveal" style="--stop:#66C5C5">
+      <span class="ex-info-pin">01</span>
+      <span class="ex-info-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V7l8-4 8 4v14"/><path d="M8 21v-8h8v8"/><path d="M8 9h.01M12 9h.01M16 9h.01"/></svg>
+      </span>
+      <small>Step 01</small>
+      <h3>Orientation</h3>
+      <p>รู้จัก EXZY ภาพรวมบริษัท เครื่องมือที่ต้องใช้ และเรื่องที่ควรถาม HR ให้ครบตั้งแต่ต้น</p>
+      <div class="ex-road-mini">
+        <span>🏢<b>EXZY</b></span>
+        <span>💻<b>Tools</b></span>
+        <span>📅<b>Calendar</b></span>
       </div>
-      <div class="fd3-task-body">
-        <div class="fd3-task-header">
-          <div class="fd3-task-ico" style="color:#66C5C5">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </div>
-          <div>
-            <div class="fd3-task-num" style="color:#66C5C5">Task 01</div>
-            <div class="fd3-task-name">Subscribe Google Calendar</div>
-          </div>
-        </div>
+    </article>
 
-        <p class="fd3-task-desc">Subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19 EXZY \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E41\u0E25\u0E30\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E42\u0E14\u0E22\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</p>
-
-        <div class="fd3-flow">
-          <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u{1F4E7}</div>
-            <div class="fd3-flow-text">\u0E23\u0E31\u0E1A Email<br>\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E08\u0E32\u0E01 HR</div>
-          </div>
-          <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u{1F4C5}</div>
-            <div class="fd3-flow-text">\u0E01\u0E14<br>Open Calendar</div>
-          </div>
-          <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon">\u2705</div>
-            <div class="fd3-flow-text">\u0E01\u0E14 Subscribe<br>\u0E17\u0E31\u0E49\u0E07 2 \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</div>
-          </div>
-        </div>
-
-        <div class="fd3-task-note">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          \u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A Email? \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E44\u0E14\u0E49\u0E17\u0E35\u0E48
-          <a href="mailto:${hrEmail}" class="fd3-task-note-email">${hrEmail}</a>
-        </div>
+    <article class="ex-info-stop ex-info-stop-2 fdb-reveal fdb-delay1" style="--stop:#004080">
+      <span class="ex-info-pin">02</span>
+      <span class="ex-info-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="3" fill="currentColor" opacity=".28"/><circle cx="15" cy="7" r="3" fill="currentColor" opacity=".58"/><circle cx="11" cy="15" r="5"/><path d="M4 20h16"/></svg>
+      </span>
+      <small>Step 02</small>
+      <h3>Metropolis &amp; CI</h3>
+      <p>เข้าใจภาพรวมที่บอกว่า “นี่คือ EXZY” ตั้งแต่โลโก้ ฟอนต์ สี layout การแต่งตัว ผู้คน และสถานที่</p>
+      <div class="ex-road-mini">
+        <span>✦<b>Logo</b></span>
+        <span>🎨<b>Color</b></span>
+        <span>👥<b>People</b></span>
       </div>
-    </div>
+    </article>
 
-    <!-- Task 02: Timesheet -->
-    <div class="fd3-task-card fd3-task-card--ts fdb-reveal fdb-delay2">
-      <!-- illustrated document/spreadsheet graphic -->
-      <div class="fd3-card-graphic" aria-hidden="true">
-        <svg viewBox="0 0 150 180" xmlns="http://www.w3.org/2000/svg">
-          <!-- Document with dog-ear corner -->
-          <polygon points="0,0 110,0 150,40 150,180 0,180" fill="rgba(0,64,128,0.09)"/>
-          <!-- Dog-ear fold -->
-          <polygon points="110,0 110,40 150,40" fill="rgba(0,64,128,0.18)"/>
-          <!-- Document header stripe -->
-          <rect width="110" height="30" fill="rgba(0,64,128,0.18)"/>
-          <!-- EXZY label bar in header -->
-          <rect x="12" y="10" width="55" height="8" rx="4" fill="rgba(102,197,197,0.55)"/>
-          <rect x="12" y="20" width="38" height="5" rx="2" fill="rgba(255,255,255,0.3)"/>
-          <!-- Column headers row -->
-          <rect x="8"  y="38" width="52" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
-          <rect x="66" y="38" width="28" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
-          <rect x="100" y="38" width="24" height="7" rx="3" fill="rgba(0,64,128,0.22)"/>
-          <!-- Data rows -->
-          <g fill="rgba(0,64,128,0.10)">
-            <rect x="8"  y="52" width="48" height="6" rx="2"/>
-            <rect x="66" y="52" width="22" height="6" rx="2"/>
-            <rect x="100" y="52" width="20" height="6" rx="2"/>
-
-            <rect x="8"  y="64" width="42" height="6" rx="2"/>
-            <rect x="66" y="64" width="26" height="6" rx="2"/>
-            <rect x="100" y="64" width="18" height="6" rx="2"/>
-
-            <rect x="8"  y="76" width="50" height="6" rx="2"/>
-            <rect x="66" y="76" width="20" height="6" rx="2"/>
-            <rect x="100" y="76" width="22" height="6" rx="2" fill="rgba(102,197,197,0.4)"/>
-
-            <rect x="8"  y="88" width="44" height="6" rx="2"/>
-            <rect x="66" y="88" width="24" height="6" rx="2"/>
-            <rect x="100" y="88" width="20" height="6" rx="2"/>
-
-            <rect x="8"  y="100" width="46" height="6" rx="2"/>
-            <rect x="66" y="100" width="22" height="6" rx="2"/>
-            <rect x="100" y="100" width="18" height="6" rx="2"/>
-          </g>
-          <!-- Divider -->
-          <line x1="6" y1="114" x2="144" y2="114" stroke="rgba(0,64,128,0.15)" stroke-width="1"/>
-          <!-- Total/footer row -->
-          <rect x="8"  y="120" width="62" height="7" rx="3" fill="rgba(0,64,128,0.16)"/>
-          <rect x="100" y="120" width="26" height="7" rx="3" fill="rgba(102,197,197,0.45)"/>
-          <!-- Signature lines -->
-          <line x1="8"  y1="140" x2="65" y2="140" stroke="rgba(0,64,128,0.2)" stroke-width="1.5"/>
-          <line x1="80" y1="140" x2="144" y2="140" stroke="rgba(0,64,128,0.2)" stroke-width="1.5"/>
-          <rect x="8"  y="144" width="32" height="4" rx="2" fill="rgba(0,64,128,0.1)"/>
-          <rect x="80" y="144" width="40" height="4" rx="2" fill="rgba(0,64,128,0.1)"/>
-          <!-- Approval stamp circle -->
-          <circle cx="118" cy="162" r="16" fill="none" stroke="rgba(102,197,197,0.45)" stroke-width="2"/>
-          <circle cx="118" cy="162" r="11" fill="none" stroke="rgba(102,197,197,0.25)" stroke-width="1" stroke-dasharray="3 2"/>
-          <rect x="110" y="159" width="16" height="6" rx="3" fill="rgba(102,197,197,0.4)"/>
-        </svg>
+    <article class="ex-info-stop ex-info-stop-3 fdb-reveal fdb-delay1" style="--stop:#2A8DA8">
+      <span class="ex-info-pin">03</span>
+      <span class="ex-info-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="10" r="2.8"/><path d="M3.5 20c.8-4 3.2-6 6.5-6s5.7 2 6.5 6"/><path d="M15 15c2.8.2 4.8 1.8 5.5 5"/></svg>
+      </span>
+      <small>Step 03</small>
+      <h3>Mentor &amp; Team</h3>
+      <p>เจอคนที่จะช่วยคุณระหว่าง internship รู้ว่าเรื่องไหนถาม mentor เรื่องไหนถาม team lead หรือเพื่อนร่วมทีม</p>
+      <div class="ex-road-mini">
+        <span>🧭<b>Mentor</b></span>
+        <span>🤝<b>Team</b></span>
+        <span>💬<b>Ask</b></span>
       </div>
-      <div class="fd3-task-body">
-        <div class="fd3-task-header">
-          <div class="fd3-task-ico" style="color:#F59E0B">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <div>
-            <div class="fd3-task-num" style="color:#004080">Task 02</div>
-            <div class="fd3-task-name">\u0E01\u0E23\u0E2D\u0E01 Timesheet</div>
-          </div>
-        </div>
+    </article>
 
-        <p class="fd3-task-desc">\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32-\u0E2D\u0E2D\u0E01\u0E07\u0E32\u0E19\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07 HR \u0E08\u0E30\u0E2A\u0E48\u0E07\u0E44\u0E1F\u0E25\u0E4C Excel \u0E43\u0E2B\u0E49\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</p>
-
-        <div class="fd3-flow">
-          <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u{1F4C2}</div>
-            <div class="fd3-flow-text">\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C<br>Timesheet \u0E08\u0E32\u0E01 HR</div>
-          </div>
-          <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          <div class="fd3-flow-step">
-            <div class="fd3-flow-icon">\u270F\uFE0F</div>
-            <div class="fd3-flow-text">\u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C<br>\u0E01\u0E23\u0E2D\u0E01\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</div>
-          </div>
-          <svg class="fd3-flow-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          <div class="fd3-flow-step fd3-flow-step-last">
-            <div class="fd3-flow-icon">\u{1F5A8}\uFE0F</div>
-            <div class="fd3-flow-text">\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR<br>\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</div>
-          </div>
-        </div>
-
-        <a href="#/resources/timesheet" class="fd3-task-link" data-link>
-          \u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet \u0E09\u0E1A\u0E31\u0E1A\u0E40\u0E15\u0E47\u0E21
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-
+    <article class="ex-info-stop ex-info-stop-4 fdb-reveal fdb-delay2" style="--stop:#004080">
+      <span class="ex-info-pin">04</span>
+      <span class="ex-info-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l3 3v18H6z"/><path d="M15 3v6h6"/><path d="M9 13h7M9 17h5"/></svg>
+      </span>
+      <small>Step 04</small>
+      <h3>Timesheet</h3>
+      <p>ปิดท้ายด้วยการกรอกเวลาเข้าออกตามจริง เพื่อให้ HR ตรวจและใช้ส่งเอกสารสิ้นเดือนได้ถูกต้อง</p>
+      <a href="#/resources/timesheet" class="ex-inline-link" data-link>เปิดหน้า Timesheet</a>
+    </article>
   </div>
 </section>
 
-<!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 SECTION 2: Timeline \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
-<section class="fd3-section fd3-sec-timeline" id="fd3-sec2">
-  <div class="fd3-sec-head fdb-reveal">
-    <div class="fd3-sec-tag fd3-sec-tag-alt">\u0E15\u0E32\u0E23\u0E32\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</div>
-    <h2 class="fd3-sec-title">4 \u0E0A\u0E48\u0E27\u0E07\u0E2A\u0E33\u0E04\u0E31\u0E0D\u0E43\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</h2>
-    <p class="fd3-sec-sub">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E41\u0E1A\u0E48\u0E07\u0E40\u0E1B\u0E47\u0E19 4 \u0E0A\u0E48\u0E27\u0E07\u0E2B\u0E25\u0E31\u0E01 \u2014 \u0E2D\u0E48\u0E32\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E43\u0E08\u0E41\u0E25\u0E30\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E08\u0E30\u0E40\u0E01\u0E34\u0E14\u0E2D\u0E30\u0E44\u0E23\u0E02\u0E36\u0E49\u0E19</p>
-  </div>
+<section class="ex-day-more" aria-labelledby="ex-day-more-title">
+  <div class="ex-day-more-inner fdb-reveal">
 
-  <div class="fd3-tl">
-
-    <div class="fd3-tl-item fdb-reveal" style="--tl:#66C5C5">
-      <div class="fd3-tl-side"><div class="fd3-tl-num">01</div><div class="fd3-tl-line"></div></div>
-      <div class="fd3-tl-card">
-        <div class="fd3-tl-tag">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E27\u0E31\u0E19</div>
-        <div class="fd3-tl-title">Orientation</div>
-        <p class="fd3-tl-sub">\u0E1B\u0E10\u0E21\u0E19\u0E34\u0E40\u0E17\u0E28\u0E01\u0E31\u0E1A HR \u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E41\u0E25\u0E30\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E07\u0E32\u0E19</p>
-        <div class="fd3-orientation-map" aria-label="Orientation flow">
-          <div class="fd3-orient-step">
-            <span class="fd3-orient-icon">\u{1F3E2}</span>
-            <strong>\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY</strong>
-            <small>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E41\u0E25\u0E30\u0E27\u0E34\u0E18\u0E35\u0E17\u0E33\u0E07\u0E32\u0E19</small>
-          </div>
-          <div class="fd3-orient-step">
-            <span class="fd3-orient-icon">\u{1F4C4}</span>
-            <strong>\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E2A\u0E33\u0E04\u0E31\u0E0D</strong>
-            <small>\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E31\u0E1A\u0E17\u0E23\u0E32\u0E1A</small>
-          </div>
-          <div class="fd3-orient-step">
-            <span class="fd3-orient-icon">\u{1F4BB}</span>
-            <strong>\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Tools</strong>
-            <small>\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E43\u0E2B\u0E49\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19</small>
-          </div>
-          <div class="fd3-orient-step">
-            <span class="fd3-orient-icon">\u{1F4C5}</span>
-            <strong>\u0E1C\u0E39\u0E01 Calendar</strong>
-            <small>\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</small>
-          </div>
-        </div>
-        <div class="fd3-tl-quote">"\u0E16\u0E32\u0E21\u0E44\u0E14\u0E49\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07 \u2014 Orientation \u0E04\u0E37\u0E2D\u0E40\u0E27\u0E25\u0E32\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E17\u0E35\u0E48\u0E08\u0E30\u0E40\u0E01\u0E47\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A" <em>\u2014 HR Team</em></div>
-      </div>
-    </div>
-
-    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#004080">
-      <div class="fd3-tl-side"><div class="fd3-tl-num">02</div><div class="fd3-tl-line"></div></div>
-      <div class="fd3-tl-card">
-        <div class="fd3-tl-tag">\u0E2D\u0E31\u0E15\u0E25\u0E31\u0E01\u0E29\u0E13\u0E4C\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19</div>
-        <div class="fd3-tl-title">Metropolis</div>
-        <p class="fd3-tl-sub">Work Theme & CI \u0E02\u0E2D\u0E07 EXZY \u2014 \u0E01\u0E33\u0E2B\u0E19\u0E14\u0E17\u0E34\u0E28\u0E17\u0E32\u0E07\u0E20\u0E32\u0E1E\u0E25\u0E31\u0E01\u0E29\u0E13\u0E4C\u0E41\u0E25\u0E30\u0E41\u0E19\u0E27\u0E04\u0E34\u0E14\u0E43\u0E19\u0E07\u0E32\u0E19\u0E17\u0E38\u0E01\u0E0A\u0E34\u0E49\u0E19</p>
-        <div class="fd3-tl-pills"><span>Work Theme \u0E02\u0E2D\u0E07\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17</span><span>\u0E2A\u0E48\u0E07\u0E1C\u0E25\u0E15\u0E48\u0E2D\u0E07\u0E32\u0E19\u0E17\u0E38\u0E01\u0E0A\u0E34\u0E49\u0E19</span><span>\u0E17\u0E38\u0E01\u0E04\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49</span></div>
-        <div class="fd3-tl-quote">"Metropolis \u0E04\u0E37\u0E2D\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48 EXZY \u0E21\u0E2D\u0E07\u0E42\u0E25\u0E01\u0E41\u0E25\u0E30\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E07\u0E32\u0E19 \u2014 \u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33\u0E0A\u0E34\u0E49\u0E19\u0E41\u0E23\u0E01"</div>
-      </div>
-    </div>
-
-    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#2A8DA8">
-      <div class="fd3-tl-side"><div class="fd3-tl-num">03</div><div class="fd3-tl-line"></div></div>
-      <div class="fd3-tl-card">
-        <div class="fd3-tl-tag">\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E31\u0E21\u0E1E\u0E31\u0E19\u0E18\u0E4C</div>
-        <div class="fd3-tl-title">Mentor & \u0E17\u0E35\u0E21</div>
-        <p class="fd3-tl-sub">\u0E1E\u0E1A Mentor \u0E41\u0E25\u0E30\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E43\u0E19\u0E17\u0E35\u0E21 \u2014 \u0E04\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E04\u0E38\u0E13\u0E15\u0E25\u0E2D\u0E14\u0E0A\u0E48\u0E27\u0E07 Internship</p>
-        <div class="fd3-tl-persons">
-          <div class="fd3-tl-person" style="--pc:#66C5C5">
-            <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
-            <div><div class="fd3-tl-person-role">Mentor</div><div class="fd3-tl-person-tip">\u0E04\u0E19\u0E41\u0E23\u0E01\u0E17\u0E35\u0E48\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E15\u0E34\u0E14\u0E1B\u0E31\u0E0D\u0E2B\u0E32</div></div>
-          </div>
-          <div class="fd3-tl-person" style="--pc:#004080">
-            <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
-            <div><div class="fd3-tl-person-role">Team Lead</div><div class="fd3-tl-person-tip">\u0E04\u0E38\u0E22\u0E44\u0E14\u0E49\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23 Feedback \u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21</div></div>
-          </div>
-          <div class="fd3-tl-person" style="--pc:#2A8DA8">
-            <div class="fd3-tl-person-av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-            <div><div class="fd3-tl-person-role">Teammates</div><div class="fd3-tl-person-tip">\u0E41\u0E19\u0E30\u0E19\u0E33\u0E15\u0E31\u0E27\u0E41\u0E25\u0E30\u0E08\u0E33\u0E0A\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fd3-tl-item fdb-reveal fdb-delay1" style="--tl:#F59E0B">
-      <div class="fd3-tl-side"><div class="fd3-tl-num">04</div></div>
-      <div class="fd3-tl-card">
-        <div class="fd3-tl-tag">\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</div>
-        <div class="fd3-tl-title">\u0E01\u0E23\u0E2D\u0E01 Timesheet</div>
-        <p class="fd3-tl-sub">\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32-\u0E2D\u0E2D\u0E01\u0E07\u0E32\u0E19\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07 \u0E01\u0E23\u0E2D\u0E01\u0E22\u0E49\u0E2D\u0E19\u0E2B\u0E25\u0E31\u0E07\u0E44\u0E14\u0E49 \u0E41\u0E15\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</p>
-        <div class="fd3-tl-ts">
-          <div class="fd3-tl-ts-row"><span class="fd3-tl-ts-k">\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32 / \u0E2D\u0E2D\u0E01</span><span class="fd3-tl-ts-v">\u0E01\u0E23\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19</span></div>
-          <div class="fd3-tl-ts-row"><span class="fd3-tl-ts-k">\u0E01\u0E23\u0E2D\u0E01\u0E22\u0E49\u0E2D\u0E19\u0E2B\u0E25\u0E31\u0E07</span><span class="fd3-tl-ts-v fd3-tl-ts-ok">\u0E17\u0E33\u0E44\u0E14\u0E49\u0E15\u0E25\u0E2D\u0E14</span></div>
-          <div class="fd3-tl-ts-row fd3-tl-ts-warn"><span class="fd3-tl-ts-k">\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331 \u0E17\u0E38\u0E01\u0E40\u0E14\u0E37\u0E2D\u0E19</span><span class="fd3-tl-ts-v">\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u2014 \u0E2B\u0E49\u0E32\u0E21\u0E25\u0E37\u0E21!</span></div>
-        </div>
-        <a href="#/resources/timesheet" class="fd3-tl-cta" data-link>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          \u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet \u0E09\u0E1A\u0E31\u0E1A\u0E40\u0E15\u0E47\u0E21
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 SECTION 3: Handbook \u2014 flows into footer \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 -->
-<section class="fd3-section fd3-sec-more" id="fd3-sec3">
-  <div class="fd3-more-inner">
-    <div class="fd3-more-head fdb-reveal">
-      <h2 class="fd3-more-title">\u0E22\u0E31\u0E07\u0E21\u0E35\u0E2D\u0E35\u0E01\u0E40\u0E22\u0E2D\u0E30\u0E43\u0E19 Handbook</h2>
-      <p class="fd3-more-sub">\u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B \u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E40\u0E2B\u0E25\u0E48\u0E32\u0E19\u0E35\u0E49\u0E08\u0E30\u0E21\u0E35\u0E1B\u0E23\u0E30\u0E42\u0E22\u0E0A\u0E19\u0E4C\u0E15\u0E25\u0E2D\u0E14\u0E0A\u0E48\u0E27\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
-    </div>
-
-    <div class="fd3-more-entries fdb-reveal">
-      <a href="#/getting-started/orientation" class="fd3-more-entry" data-link>
-        <span class="fd3-more-entry-dot" style="background:#66C5C5"></span>
-        <div class="fd3-more-entry-body">
-          <div class="fd3-more-entry-title">Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
-          <div class="fd3-more-entry-desc">Orientation slides \xB7 Wi-Fi \xB7 \u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21</div>
-        </div>
-        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#/policy/code-of-conduct" class="fd3-more-entry" data-link>
-        <span class="fd3-more-entry-dot" style="background:#004080"></span>
-        <div class="fd3-more-entry-body">
-          <div class="fd3-more-entry-title">Work Policy</div>
-          <div class="fd3-more-entry-desc">Core Values \xB7 Dress Code \xB7 \u0E01\u0E32\u0E23\u0E25\u0E32</div>
-        </div>
-        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#/resources/timesheet" class="fd3-more-entry" data-link>
-        <span class="fd3-more-entry-dot" style="background:#8B5CF6"></span>
-        <div class="fd3-more-entry-body">
-          <div class="fd3-more-entry-title">Resources & FAQs</div>
-          <div class="fd3-more-entry-desc">Timesheet \xB7 \u0E04\u0E33\u0E16\u0E32\u0E21\u0E1E\u0E1A\u0E1A\u0E48\u0E2D\u0E22 18 \u0E02\u0E49\u0E2D</div>
-        </div>
-        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#/showcase/experiences" class="fd3-more-entry" data-link>
-        <span class="fd3-more-entry-dot" style="background:#EC4899"></span>
-        <div class="fd3-more-entry-body">
-          <div class="fd3-more-entry-title">Showcase \u0E23\u0E38\u0E48\u0E19\u0E1E\u0E35\u0E48</div>
-          <div class="fd3-more-entry-desc">\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E41\u0E25\u0E30\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E08\u0E32\u0E01 intern \u0E17\u0E35\u0E48\u0E1C\u0E48\u0E32\u0E19\u0E21\u0E32</div>
-        </div>
-        <svg class="fd3-more-entry-arr" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    <div class="ex-more-headline">
+      <p class="ex-more-kicker"><span></span>Intern Handbook Map</p>
+      <h2 id="ex-day-more-title">วันแรกคือบทแรก<br>ส่วน Home คือแผนที่ทั้งเล่ม</h2>
+      <p>Handbook นี้มีข้อมูลครบสำหรับทั้ง internship — ออฟฟิศ นโยบาย คนในทีม เครื่องมือ และคำถามที่มักเจอ</p>
+      <a href="#/" class="ex-more-home" data-link>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        กลับไปหน้า Home
       </a>
     </div>
 
-    <div class="fd3-more-home fdb-reveal">
-      <a href="#/home" class="fd3-more-home-btn" data-link>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        \u0E40\u0E1B\u0E34\u0E14 Handbook \u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14
+    <div class="ex-more-chapters">
+      <a href="#/getting-started/orientation" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">01</span>
+        <span class="ex-more-ch-ico">🏢</span>
+        <b>Orientation &amp; Office</b>
+        <small>Wi-Fi, Meeting rooms, Orientation slides</small>
+      </a>
+      <a href="#/employee/org-chart" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">02</span>
+        <span class="ex-more-ch-ico">👥</span>
+        <b>บริษัทและทีม</b>
+        <small>โครงสร้างองค์กร, Employee Contact</small>
+      </a>
+      <a href="#/policy/code-of-conduct" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">03</span>
+        <span class="ex-more-ch-ico">📋</span>
+        <b>Work Policy</b>
+        <small>Core Values, Dress Code, การลา</small>
+      </a>
+      <a href="#/resources/faqs" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">04</span>
+        <span class="ex-more-ch-ico">❔</span>
+        <b>FAQs &amp; Resources</b>
+        <small>Timesheet, คำถามที่มักเจอ</small>
       </a>
     </div>
+
   </div>
 </section>
 
@@ -3353,6 +3278,56 @@
       sec.insertBefore(sep, sec.firstChild);
     });
     setupScrollWaypoints();
+    setupStoryMotion();
+  }
+  function setupStoryMotion() {
+    const appEl = document.getElementById("app");
+    if (!appEl) return;
+    const storyPage = appEl.querySelector(".ex-home-hero, .ex-day-page");
+    let rail = document.getElementById("ex-story-rail");
+    if (!storyPage) {
+      if (rail) rail.remove();
+      window.removeEventListener("scroll", window.__storyMotion || (() => {
+      }));
+      return;
+    }
+    if (!rail) {
+      rail = document.createElement("div");
+      rail.id = "ex-story-rail";
+      rail.setAttribute("aria-hidden", "true");
+      rail.innerHTML = "<span></span><i></i>";
+      document.body.appendChild(rail);
+    }
+    const motionTargets = Array.from(appEl.querySelectorAll([
+      ".ex-home-hero",
+      ".ex-binder-scene",
+      ".ex-home-start",
+      ".ex-home-contents",
+      ".ex-home-quick",
+      ".ex-day-hero",
+      ".ex-day-tasks",
+      ".ex-day-road",
+      ".ex-day-more",
+      ".ex-info-roadmap"
+    ].join(",")));
+    const update = () => {
+      const docH = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      const pct = Math.min(1, Math.max(0, (window.scrollY || window.pageYOffset) / docH));
+      rail.style.setProperty("--story-progress", pct.toFixed(4));
+      document.documentElement.style.setProperty("--ex-scroll", pct.toFixed(4));
+      motionTargets.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        const center = (r.top + r.height / 2) / window.innerHeight;
+        const local = Math.min(1, Math.max(0, 1 - Math.abs(center - 0.5) * 1.65));
+        el.style.setProperty("--section-focus", local.toFixed(3));
+        el.classList.toggle("is-scroll-focus", local > 0.52);
+      });
+    };
+    window.removeEventListener("scroll", window.__storyMotion || (() => {
+    }));
+    window.__storyMotion = update;
+    window.addEventListener("scroll", update, { passive: true });
+    update();
   }
   function setupScrollWaypoints() {
     const appEl = document.getElementById("app");

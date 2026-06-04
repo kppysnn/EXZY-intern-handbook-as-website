@@ -1081,6 +1081,60 @@ function initEnhancements() {
   });
 
   setupScrollWaypoints();
+  setupStoryMotion();
+}
+
+function setupStoryMotion() {
+  const appEl = document.getElementById('app');
+  if (!appEl) return;
+  const storyPage = appEl.querySelector('.ex-home-hero, .ex-day-page');
+  let rail = document.getElementById('ex-story-rail');
+  if (!storyPage) {
+    if (rail) rail.remove();
+    window.removeEventListener('scroll', window.__storyMotion || (()=>{}));
+    return;
+  }
+
+  if (!rail) {
+    rail = document.createElement('div');
+    rail.id = 'ex-story-rail';
+    rail.setAttribute('aria-hidden', 'true');
+    rail.innerHTML = '<span></span><i></i>';
+    document.body.appendChild(rail);
+  }
+
+  const motionTargets = Array.from(appEl.querySelectorAll([
+    '.ex-home-hero',
+    '.ex-binder-scene',
+    '.ex-home-start',
+    '.ex-home-contents',
+    '.ex-home-quick',
+    '.ex-day-hero',
+    '.ex-day-tasks',
+    '.ex-day-road',
+    '.ex-day-more',
+    '.ex-info-roadmap'
+  ].join(',')));
+
+  const update = () => {
+    const docH = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const pct = Math.min(1, Math.max(0, (window.scrollY || window.pageYOffset) / docH));
+    rail.style.setProperty('--story-progress', pct.toFixed(4));
+    document.documentElement.style.setProperty('--ex-scroll', pct.toFixed(4));
+
+    motionTargets.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      const center = (r.top + r.height / 2) / window.innerHeight;
+      const local = Math.min(1, Math.max(0, 1 - Math.abs(center - 0.5) * 1.65));
+      el.style.setProperty('--section-focus', local.toFixed(3));
+      el.classList.toggle('is-scroll-focus', local > 0.52);
+    });
+  };
+
+  window.removeEventListener('scroll', window.__storyMotion || (()=>{}));
+  window.__storyMotion = update;
+  window.addEventListener('scroll', update, { passive: true });
+  update();
 }
 
 // ===== Scroll Waypoints =====
