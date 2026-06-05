@@ -30098,7 +30098,7 @@ span[style*="particleFloat"] { display: none !important; }
   background: var(--stop);
   font-weight: 900;
   font-size: 1.1rem;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   box-shadow: 0 6px 18px color-mix(in srgb, var(--stop) 36%, transparent);
 }
 
