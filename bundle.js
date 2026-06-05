@@ -622,7 +622,7 @@
           <i></i>
           <div class="ex-flow-step"><span>\u{1F5A8}\uFE0F</span><b>\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</b></div>
         </div>
-        <a href="#/resources/timesheet" class="ex-inline-link" data-link>\u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet</a>
+        <a href="#/resources/timesheet" class="ex-task-btn" data-link>\u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet \u2192</a>
       </div>
     </article>
   </div>
@@ -642,10 +642,6 @@
 
     <article class="ex-info-stop ex-info-stop-1 fdb-reveal" style="--stop:#66C5C5">
       <span class="ex-info-pin">01</span>
-      <span class="ex-info-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V7l8-4 8 4v14"/><path d="M8 21v-8h8v8"/><path d="M8 9h.01M12 9h.01M16 9h.01"/></svg>
-      </span>
-      <small>Step 01</small>
       <h3>Orientation</h3>
       <p>\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 \u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49 \u0E41\u0E25\u0E30\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21 HR \u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E15\u0E49\u0E19</p>
       <div class="ex-road-mini">
@@ -657,10 +653,6 @@
 
     <article class="ex-info-stop ex-info-stop-2 fdb-reveal fdb-delay1" style="--stop:#004080">
       <span class="ex-info-pin">02</span>
-      <span class="ex-info-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="3" fill="currentColor" opacity=".28"/><circle cx="15" cy="7" r="3" fill="currentColor" opacity=".58"/><circle cx="11" cy="15" r="5"/><path d="M4 20h16"/></svg>
-      </span>
-      <small>Step 02</small>
       <h3>Metropolis &amp; CI</h3>
       <p>\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E17\u0E35\u0E48\u0E1A\u0E2D\u0E01\u0E27\u0E48\u0E32 "\u0E19\u0E35\u0E48\u0E04\u0E37\u0E2D EXZY" \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E42\u0E25\u0E42\u0E01\u0E49 \u0E1F\u0E2D\u0E19\u0E15\u0E4C \u0E2A\u0E35 layout \u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E15\u0E31\u0E27 \u0E1C\u0E39\u0E49\u0E04\u0E19 \u0E41\u0E25\u0E30\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48</p>
       <div class="ex-road-mini">
@@ -672,10 +664,6 @@
 
     <article class="ex-info-stop ex-info-stop-3 fdb-reveal fdb-delay1" style="--stop:#2A8DA8">
       <span class="ex-info-pin">03</span>
-      <span class="ex-info-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="10" r="2.8"/><path d="M3.5 20c.8-4 3.2-6 6.5-6s5.7 2 6.5 6"/><path d="M15 15c2.8.2 4.8 1.8 5.5 5"/></svg>
-      </span>
-      <small>Step 03</small>
       <h3>Mentor &amp; Team</h3>
       <p>\u0E40\u0E08\u0E2D\u0E04\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E04\u0E38\u0E13\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07 internship \u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 mentor \u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 team lead \u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E23\u0E48\u0E27\u0E21\u0E17\u0E35\u0E21</p>
       <div class="ex-road-mini">
@@ -687,13 +675,9 @@
 
     <article class="ex-info-stop ex-info-stop-4 fdb-reveal fdb-delay2" style="--stop:#004080">
       <span class="ex-info-pin">04</span>
-      <span class="ex-info-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l3 3v18H6z"/><path d="M15 3v6h6"/><path d="M9 13h7M9 17h5"/></svg>
-      </span>
-      <small>Step 04</small>
       <h3>Timesheet</h3>
       <p>\u0E1B\u0E34\u0E14\u0E17\u0E49\u0E32\u0E22\u0E14\u0E49\u0E27\u0E22\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49 HR \u0E15\u0E23\u0E27\u0E08\u0E41\u0E25\u0E30\u0E43\u0E0A\u0E49\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E44\u0E14\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07</p>
-      <a href="#/resources/timesheet" class="ex-inline-link" data-link>\u0E40\u0E1B\u0E34\u0E14\u0E2B\u0E19\u0E49\u0E32 Timesheet</a>
+      <a href="#/resources/timesheet" class="ex-road-btn" data-link>\u0E40\u0E1B\u0E34\u0E14\u0E2B\u0E19\u0E49\u0E32 Timesheet \u2192</a>
     </article>
   </div>
 </section>

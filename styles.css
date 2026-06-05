@@ -29189,7 +29189,7 @@ span[style*="particleFloat"] { display: none !important; }
 
 .ex-start-index {
   display: block;
-  margin-bottom: 44px;
+  margin-bottom: 16px;
   color: currentColor;
   opacity: .65;
   font-size: 12px;
@@ -29199,26 +29199,40 @@ span[style*="particleFloat"] { display: none !important; }
 .ex-start-card h3 {
   margin: 0;
   color: currentColor;
-  font-size: clamp(1.45rem, 2.2vw, 2rem);
-  line-height: 1.22;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.25;
 }
 
 .ex-start-card p {
   position: relative;
   max-width: 380px;
-  margin: 14px 0 0;
+  margin: 10px 0 0;
   color: currentColor;
   opacity: .72;
-  line-height: 1.75;
+  line-height: 1.68;
+  font-size: .95rem;
 }
 
 .ex-start-card strong {
   position: absolute;
   left: clamp(24px, 3vw, 32px);
-  right: clamp(24px, 3vw, 32px);
-  bottom: 26px;
+  bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255,255,255,.35);
+  background: rgba(255,255,255,.15);
   color: currentColor;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+}
+
+.ex-start-card:not(.ex-start-card-primary) strong {
+  border-color: rgba(0,64,128,.18);
+  background: rgba(0,64,128,.06);
 }
 
 .ex-chapter-index {
@@ -29519,6 +29533,49 @@ span[style*="particleFloat"] { display: none !important; }
 
 .ex-inline-link:hover {
   background: rgba(102,197,197,.22);
+}
+
+/* Task card timesheet button */
+.ex-task-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 11px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #66C5C5 0%, #2A8DA8 45%, #004080 100%);
+  box-shadow: 0 8px 22px rgba(0,64,128,.22);
+  transition: transform .2s ease, box-shadow .2s ease;
+  text-decoration: none;
+}
+.ex-task-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,64,128,.30);
+}
+
+/* Roadmap step 04 secondary button */
+.ex-road-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13.5px;
+  color: #004080;
+  border: 1.5px solid rgba(0,64,128,.28);
+  background: rgba(0,64,128,.06);
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+  text-decoration: none;
+}
+.ex-road-btn:hover {
+  background: rgba(0,64,128,.12);
+  border-color: rgba(0,64,128,.44);
+  transform: translateY(-2px);
 }
 
 .ex-day-road {
@@ -29921,12 +29978,14 @@ span[style*="particleFloat"] { display: none !important; }
 }
 
 .ex-flow-step {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 9px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  min-height: 58px;
-  padding: 11px 12px;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  min-height: 72px;
+  padding: 14px 10px;
   border-radius: 14px;
   background: rgba(255,255,255,.78);
   border: 1px solid rgba(0,64,128,.08);
@@ -29935,22 +29994,20 @@ span[style*="particleFloat"] { display: none !important; }
 .ex-flow-step span {
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 10px;
   background: rgba(102,197,197,.16);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .ex-flow-step b {
   display: block;
-  min-height: auto;
-  padding: 0;
-  border-radius: 0;
   color: #294158;
   background: transparent;
-  font-size: 12.2px;
-  line-height: 1.45;
+  font-size: 11.5px;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 .ex-mini-flow-emoji i {
@@ -30030,42 +30087,24 @@ span[style*="particleFloat"] { display: none !important; }
 .ex-info-stop-4 { right: 0; top: 60px; width: min(300px, 28vw); }
 
 .ex-info-pin {
-  position: absolute;
-  top: -22px;
-  left: 20px;
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 15px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
   color: #FFFFFF;
   background: var(--stop);
   font-weight: 900;
-  box-shadow: 0 14px 28px color-mix(in srgb, var(--stop) 34%, transparent);
-  animation: float-pin 6s ease-in-out infinite;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--stop) 36%, transparent);
 }
 
-.ex-info-icon {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  margin-left: auto;
-  border-radius: 16px;
-  color: #004080;
-  background: color-mix(in srgb, var(--stop) 16%, #FFFFFF);
-  font-size: 24px;
-}
+.ex-info-icon { display: none; }
 
-.ex-info-stop small {
-  display: block;
-  margin-top: 10px;
-  color: var(--stop);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
+.ex-info-stop small { display: none; }
 
 .ex-info-stop h3 {
   margin: 7px 0 0;
@@ -32126,7 +32165,19 @@ span[style*="particleFloat"] { display: none !important; }
 }
 
 .ex-day-hero-v2::before {
-  display: none !important;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(100deg,
+      rgba(255,255,255,.92) 0%,
+      rgba(255,255,255,.72) 26%,
+      rgba(255,255,255,.28) 46%,
+      rgba(255,255,255,.04) 60%,
+      transparent 72%
+    );
+  pointer-events: none;
 }
 
 .ex-day-hero-v2::after {
@@ -32157,8 +32208,12 @@ span[style*="particleFloat"] { display: none !important; }
 }
 
 .ex-day-hero-copy .ex-day-chapter span {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
   background: #66C5C5 !important;
-  box-shadow: 0 0 0 7px rgba(102,197,197,.22);
+  box-shadow: 0 0 0 4px rgba(102,197,197,.28);
+  flex-shrink: 0;
 }
 
 .ex-day-hero-copy h1 {
