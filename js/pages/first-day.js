@@ -1,16 +1,18 @@
-export function renderFirstDay(data = {}) {
-  const hrEmail = data.hr_email || 'hr@exzyteam.com';
+// js/pages/first-day.js — renderFirstDay template
+// Source of truth: this file. Build with: npm run build
 
-  return `
+export function renderFirstDay(data = {}) {
+    const hrEmail = data.hr_email || "hr@exzyteam.com";
+    return `
 <div class="ex-day-page">
 
 <section class="ex-day-hero ex-day-hero-v2" aria-label="Welcome to EXZY internship first day">
   <div class="ex-day-hero-inner">
     <div class="ex-day-hero-copy">
-      <p class="ex-day-chapter"><span></span>EXZY Internship · First Day</p>
-      <h1>Welcome to EXZY Internship วันแรกของคุณเริ่มจากหน้านี้</h1>
-      <p>ใช้หน้านี้เป็นแผนที่วันแรก: รู้ว่าต้องทำอะไรให้เสร็จ เจอขั้นตอนไหนบ้าง และเข้าใจว่าอะไรคือภาพรวมของ EXZY ก่อนเริ่มทำงานจริง</p>
-      <a href="#ex-day-tasks" class="ex-day-cta">ดูสิ่งที่ต้องทำวันนี้</a>
+      <p class="ex-day-chapter"><span></span>EXZY Internship \xB7 First Day</p>
+      <h1>Welcome to EXZY Internship \u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49</h1>
+      <p>\u0E43\u0E0A\u0E49\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01: \u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E23\u0E47\u0E08 \u0E40\u0E08\u0E2D\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E44\u0E2B\u0E19\u0E1A\u0E49\u0E32\u0E07 \u0E41\u0E25\u0E30\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E27\u0E48\u0E32\u0E2D\u0E30\u0E44\u0E23\u0E04\u0E37\u0E2D\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E02\u0E2D\u0E07 EXZY \u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07</p>
+      <a href="#ex-day-tasks" class="ex-day-cta">\u0E14\u0E39\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</a>
     </div>
 
     <div class="ex-day-smart-scene" aria-hidden="true">
@@ -80,8 +82,8 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-tasks" id="ex-day-tasks" aria-labelledby="ex-day-tasks-title">
   <div class="ex-section-head ex-section-head-left fdb-reveal">
-    <h2 id="ex-day-tasks-title">สองอย่างที่ต้องเสร็จก่อนจบวัน</h2>
-    <p>ไม่ต้องจำทั้ง handbook ตอนนี้ แค่ปิดสองชิ้นนี้ให้เรียบร้อยก่อนกลับบ้าน</p>
+    <h2 id="ex-day-tasks-title">\u0E2A\u0E2D\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E01\u0E48\u0E2D\u0E19\u0E08\u0E1A\u0E27\u0E31\u0E19</h2>
+    <p>\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E08\u0E33\u0E17\u0E31\u0E49\u0E07 handbook \u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49 \u0E41\u0E04\u0E48\u0E1B\u0E34\u0E14\u0E2A\u0E2D\u0E07\u0E0A\u0E34\u0E49\u0E19\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
   </div>
 
   <div class="ex-task-stage">
@@ -100,15 +102,15 @@ export function renderFirstDay(data = {}) {
       <div class="ex-task-content">
         <span>Task 01</span>
         <h3>Subscribe Google Calendar</h3>
-        <p>HR จะส่งคำเชิญทางอีเมล กดเปิด Calendar แล้ว subscribe ปฏิทินบริษัทเพื่อรับนัดหมายและกิจกรรมอัตโนมัติ</p>
+        <p>HR \u0E08\u0E30\u0E2A\u0E48\u0E07\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E01\u0E14\u0E40\u0E1B\u0E34\u0E14 Calendar \u0E41\u0E25\u0E49\u0E27 subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E41\u0E25\u0E30\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
-          <div class="ex-flow-step"><span>📧</span><b>รับ Email คำเชิญจาก HR</b></div>
+          <div class="ex-flow-step"><span>\u{1F4E7}</span><b>\u0E23\u0E31\u0E1A Email \u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E08\u0E32\u0E01 HR</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>📅</span><b>กด Open Calendar</b></div>
+          <div class="ex-flow-step"><span>\u{1F4C5}</span><b>\u0E01\u0E14 Open Calendar</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>✅</span><b>กด Subscribe ทั้ง 2 ปฏิทิน</b></div>
+          <div class="ex-flow-step"><span>\u2705</span><b>\u0E01\u0E14 Subscribe \u0E17\u0E31\u0E49\u0E07 2 \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</b></div>
         </div>
-        <p class="ex-task-note">ถ้าไม่ได้รับอีเมล ติดต่อ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
+        <p class="ex-task-note">\u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D <a href="mailto:${hrEmail}">${hrEmail}</a></p>
       </div>
     </article>
 
@@ -126,16 +128,16 @@ export function renderFirstDay(data = {}) {
       </div>
       <div class="ex-task-content">
         <span>Task 02</span>
-        <h3>กรอก Timesheet</h3>
-        <p>กรอกเวลาเข้าออกตามจริงในไฟล์ที่ HR ส่งให้ ทำทุกวัน และพิมพ์ส่ง HR เมื่อสิ้นเดือน</p>
+        <h3>\u0E01\u0E23\u0E2D\u0E01 Timesheet</h3>
+        <p>\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E35\u0E48 HR \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 \u0E17\u0E33\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E41\u0E25\u0E30\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E40\u0E21\u0E37\u0E48\u0E2D\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
-          <div class="ex-flow-step"><span>📂</span><b>รับไฟล์ Timesheet จาก HR</b></div>
+          <div class="ex-flow-step"><span>\u{1F4C2}</span><b>\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C Timesheet \u0E08\u0E32\u0E01 HR</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>✏️</span><b>เปิดไฟล์และกรอกวันนี้</b></div>
+          <div class="ex-flow-step"><span>\u270F\uFE0F</span><b>\u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E41\u0E25\u0E30\u0E01\u0E23\u0E2D\u0E01\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>🖨️</span><b>พิมพ์ส่ง HR สิ้นเดือน</b></div>
+          <div class="ex-flow-step"><span>\u{1F5A8}\uFE0F</span><b>\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</b></div>
         </div>
-        <a href="#/resources/timesheet" class="ex-inline-link" data-link>ดูคู่มือ Timesheet</a>
+        <a href="#/resources/timesheet" class="ex-inline-link" data-link>\u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet</a>
       </div>
     </article>
   </div>
@@ -143,14 +145,14 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-road" aria-labelledby="ex-day-road-title">
   <div class="ex-section-head fdb-reveal">
-    <h2 id="ex-day-road-title">เส้นทางของวันแรก</h2>
-    <p>ทุกคนอาจได้เวลานัดต่างกัน แต่สิ่งที่ต้องเจอเหมือนกันคือ 4 step นี้</p>
+    <h2 id="ex-day-road-title">\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</h2>
+    <p>\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E32\u0E08\u0E44\u0E14\u0E49\u0E40\u0E27\u0E25\u0E32\u0E19\u0E31\u0E14\u0E15\u0E48\u0E32\u0E07\u0E01\u0E31\u0E19 \u0E41\u0E15\u0E48\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E04\u0E37\u0E2D 4 step \u0E19\u0E35\u0E49</p>
   </div>
 
-  <div class="ex-info-roadmap" aria-label="First day infographic roadmap">
+  <div class="ex-info-roadmap" aria-label="เส้นทางของวันแรก">
     <svg class="ex-info-path" viewBox="0 0 1120 470" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M64 354C174 210 218 84 332 126c68 28 98 126 188 146c80 18 142-24 192-90c42-52 90-118 146-118" fill="none" stroke="#D6EEF2" stroke-width="48" stroke-linecap="round"/>
-      <path d="M64 354C174 210 218 84 332 126c68 28 98 126 188 146c80 18 142-24 192-90c42-52 90-118 146-118" fill="none" stroke="#66C5C5" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 16"/>
+      <path d="M70 350C188 95 375 80 512 228c121 131 230 222 420-6 42-51 82-79 121-90" fill="none" stroke="#D6EEF2" stroke-width="46" stroke-linecap="round"/>
+      <path d="M70 350C188 95 375 80 512 228c121 131 230 222 420-6 42-51 82-79 121-90" fill="none" stroke="#66C5C5" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 18"/>
     </svg>
 
     <article class="ex-info-stop ex-info-stop-1 fdb-reveal" style="--stop:#66C5C5">
@@ -159,13 +161,13 @@ export function renderFirstDay(data = {}) {
         <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V7l8-4 8 4v14"/><path d="M8 21v-8h8v8"/><path d="M8 9h.01M12 9h.01M16 9h.01"/></svg>
       </span>
       <small>Step 01</small>
-        <h3>Orientation</h3>
-        <p>รู้จัก EXZY ภาพรวมบริษัท เครื่องมือที่ต้องใช้ และเรื่องที่ควรถาม HR ให้ครบตั้งแต่ต้น</p>
-        <div class="ex-road-mini">
-          <span>🏢<b>EXZY</b></span>
-          <span>💻<b>Tools</b></span>
-          <span>📅<b>Calendar</b></span>
-        </div>
+      <h3>Orientation</h3>
+      <p>รู้จัก EXZY ภาพรวมบริษัท เครื่องมือที่ต้องใช้ และเรื่องที่ควรถาม HR ให้ครบตั้งแต่ต้น</p>
+      <div class="ex-road-mini">
+        <span>🏢<b>EXZY</b></span>
+        <span>💻<b>Tools</b></span>
+        <span>📅<b>Calendar</b></span>
+      </div>
     </article>
 
     <article class="ex-info-stop ex-info-stop-2 fdb-reveal fdb-delay1" style="--stop:#004080">
@@ -174,13 +176,13 @@ export function renderFirstDay(data = {}) {
         <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="3" fill="currentColor" opacity=".28"/><circle cx="15" cy="7" r="3" fill="currentColor" opacity=".58"/><circle cx="11" cy="15" r="5"/><path d="M4 20h16"/></svg>
       </span>
       <small>Step 02</small>
-        <h3>Metropolis & CI</h3>
-        <p>เข้าใจภาพรวมที่บอกว่า “นี่คือ EXZY” ตั้งแต่โลโก้ ฟอนต์ สี layout การแต่งตัว ผู้คน และสถานที่</p>
-        <div class="ex-road-mini">
-          <span>✦<b>Logo</b></span>
-          <span>🎨<b>Color</b></span>
-          <span>👥<b>People</b></span>
-        </div>
+      <h3>Metropolis &amp; CI</h3>
+      <p>เข้าใจภาพรวมที่บอกว่า “นี่คือ EXZY” ตั้งแต่โลโก้ ฟอนต์ สี layout การแต่งตัว ผู้คน และสถานที่</p>
+      <div class="ex-road-mini">
+        <span>✦<b>Logo</b></span>
+        <span>🎨<b>Color</b></span>
+        <span>👥<b>People</b></span>
+      </div>
     </article>
 
     <article class="ex-info-stop ex-info-stop-3 fdb-reveal fdb-delay1" style="--stop:#2A8DA8">
@@ -189,13 +191,13 @@ export function renderFirstDay(data = {}) {
         <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="10" r="2.8"/><path d="M3.5 20c.8-4 3.2-6 6.5-6s5.7 2 6.5 6"/><path d="M15 15c2.8.2 4.8 1.8 5.5 5"/></svg>
       </span>
       <small>Step 03</small>
-        <h3>Mentor & Team</h3>
-        <p>เจอคนที่จะช่วยคุณระหว่าง internship รู้ว่าเรื่องไหนถาม mentor เรื่องไหนถาม team lead หรือเพื่อนร่วมทีม</p>
-        <div class="ex-road-mini">
-          <span>🧭<b>Mentor</b></span>
-          <span>🤝<b>Team</b></span>
-          <span>💬<b>Ask</b></span>
-        </div>
+      <h3>Mentor &amp; Team</h3>
+      <p>เจอคนที่จะช่วยคุณระหว่าง internship รู้ว่าเรื่องไหนถาม mentor เรื่องไหนถาม team lead หรือเพื่อนร่วมทีม</p>
+      <div class="ex-road-mini">
+        <span>🧭<b>Mentor</b></span>
+        <span>🤝<b>Team</b></span>
+        <span>💬<b>Ask</b></span>
+      </div>
     </article>
 
     <article class="ex-info-stop ex-info-stop-4 fdb-reveal fdb-delay2" style="--stop:#004080">
@@ -213,24 +215,47 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-more" aria-labelledby="ex-day-more-title">
   <div class="ex-day-more-inner fdb-reveal">
-    <div class="ex-more-copy">
-      <p class="ex-more-kicker">Intern Handbook Navigation</p>
-      <h2 id="ex-day-more-title">หน้า Home คือบ้านหลักของ handbook นี้</h2>
-      <p>เริ่มที่วันแรก แล้วกลับไปหน้า Home เมื่อไหร่ก็ยังเห็นทุกบท ทุกหมวดที่ช่วยให้ฝึกงานราบรื่น: office, policy, tools, FAQs และเส้นทางต่อจากนี้</p>
+
+    <div class="ex-more-headline">
+      <p class="ex-more-kicker"><span></span>Intern Handbook Map</p>
+      <h2 id="ex-day-more-title">วันแรกคือบทแรก<br>ส่วน Home คือแผนที่ทั้งเล่ม</h2>
+      <p>Handbook นี้มีข้อมูลครบสำหรับทั้ง internship — ออฟฟิศ นโยบาย คนในทีม เครื่องมือ และคำถามที่มักเจอ</p>
       <a href="#/" class="ex-more-home" data-link>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         กลับไปหน้า Home
-        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
-    <div class="ex-more-map" aria-label="Intern handbook sections">
-      <a href="#/getting-started/orientation" data-link><span>01</span><b>Orientation & Office</b></a>
-      <a href="#/policy/code-of-conduct" data-link><span>02</span><b>Work Policy</b></a>
-      <a href="#/resources/faqs" data-link><span>03</span><b>FAQs</b></a>
-      <a href="#/showcase/experiences" data-link><span>04</span><b>Intern Stories</b></a>
+
+    <div class="ex-more-chapters">
+      <a href="#/getting-started/orientation" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">01</span>
+        <span class="ex-more-ch-ico">🏢</span>
+        <b>Orientation &amp; Office</b>
+        <small>Wi-Fi, Meeting rooms, Orientation slides</small>
+      </a>
+      <a href="#/employee/org-chart" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">02</span>
+        <span class="ex-more-ch-ico">👥</span>
+        <b>บริษัทและทีม</b>
+        <small>โครงสร้างองค์กร, Employee Contact</small>
+      </a>
+      <a href="#/policy/code-of-conduct" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">03</span>
+        <span class="ex-more-ch-ico">📋</span>
+        <b>Work Policy</b>
+        <small>Core Values, Dress Code, การลา</small>
+      </a>
+      <a href="#/resources/faqs" data-link class="ex-more-ch">
+        <span class="ex-more-ch-num">04</span>
+        <span class="ex-more-ch-ico">❔</span>
+        <b>FAQs &amp; Resources</b>
+        <small>Timesheet, คำถามที่มักเจอ</small>
+      </a>
     </div>
+
   </div>
 </section>
 
 </div>
 `;
-}
+  }

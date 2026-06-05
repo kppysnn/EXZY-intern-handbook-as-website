@@ -631,36 +631,36 @@
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-folders-title">ทุกอย่างที่ intern ต้องรู้ รวมไว้ในที่เดียว</h2>
-      <p>เลือกหมวดหมู่ที่ต้องการ — แต่ละโฟลเดอร์เปิดสารบัญให้อ่านทันที</p>
+      <h2 id="ex-folders-title">\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E35\u0E48 intern \u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49 \u0E23\u0E27\u0E21\u0E44\u0E27\u0E49\u0E43\u0E19\u0E17\u0E35\u0E48\u0E40\u0E14\u0E35\u0E22\u0E27</h2>
+      <p>\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E2B\u0E21\u0E27\u0E14\u0E2B\u0E21\u0E39\u0E48\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23 \u2014 \u0E41\u0E15\u0E48\u0E25\u0E30\u0E42\u0E1F\u0E25\u0E40\u0E14\u0E2D\u0E23\u0E4C\u0E40\u0E1B\u0E34\u0E14\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D\u0E43\u0E2B\u0E49\u0E2D\u0E48\u0E32\u0E19\u0E17\u0E31\u0E19\u0E17\u0E35</p>
     </div>
 
     <div class="ex-folder-grid">
 
       <div class="ex-folder ex-folder--cyan" tabindex="0" role="button" aria-expanded="false">
-        <div class="ex-folder-tab">เริ่มต้น</div>
+        <div class="ex-folder-tab">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19</div>
         <div class="ex-folder-body">
           <div class="ex-folder-icon">
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="26" height="20" rx="3"/><path d="M3 13h26M10 7V4M22 7V4"/><circle cx="16" cy="20" r="3" fill="currentColor" stroke="none"/></svg>
           </div>
           <h3>Day 1 Guide</h3>
-          <p>ภาพรวมวันแรกและสิ่งที่ต้องทำ</p>
+          <p>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33</p>
         </div>
         <div class="ex-folder-docs">
-          <a href="#/first-day" data-link class="ex-folder-doc">ตารางวันแรก</a>
-          <a href="#/first-day" data-link class="ex-folder-doc">สิ่งที่ต้องเตรียม</a>
-          <a href="#/first-day" data-link class="ex-folder-doc">คนที่ต้องรู้จัก</a>
+          <a href="#/first-day" data-link class="ex-folder-doc">\u0E15\u0E32\u0E23\u0E32\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</a>
+          <a href="#/first-day" data-link class="ex-folder-doc">\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21</a>
+          <a href="#/first-day" data-link class="ex-folder-doc">\u0E04\u0E19\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01</a>
         </div>
       </div>
 
       <div class="ex-folder ex-folder--navy" tabindex="0" role="button" aria-expanded="false">
-        <div class="ex-folder-tab">ออฟฟิศ</div>
+        <div class="ex-folder-tab">\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
         <div class="ex-folder-body">
           <div class="ex-folder-icon">
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="26" height="24" rx="3"/><path d="M10 4v24M10 12h16M10 19h16"/></svg>
           </div>
-          <h3>Orientation & ออฟฟิศ</h3>
-          <p>Wi-Fi, ห้องประชุม และข้อมูลออฟฟิศ</p>
+          <h3>Orientation & \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</h3>
+          <p>Wi-Fi, \u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21 \u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/getting-started/orientation" data-link class="ex-folder-doc">Orientation</a>
@@ -670,28 +670,28 @@
       </div>
 
       <div class="ex-folder ex-folder--slate" tabindex="0" role="button" aria-expanded="false">
-        <div class="ex-folder-tab">บริษัท</div>
+        <div class="ex-folder-tab">\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17</div>
         <div class="ex-folder-body">
           <div class="ex-folder-icon">
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="16" cy="10" r="5"/><circle cx="7" cy="22" r="4"/><circle cx="25" cy="22" r="4"/><path d="M11 14 Q8 18 11 22M21 14 Q24 18 21 22"/></svg>
           </div>
-          <h3>บริษัทและทีม</h3>
-          <p>โครงสร้างองค์กรและ Employee Directory</p>
+          <h3>\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21</h3>
+          <p>\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23\u0E41\u0E25\u0E30 Employee Directory</p>
         </div>
         <div class="ex-folder-docs">
-          <a href="#/employee/org-chart" data-link class="ex-folder-doc">โครงสร้างองค์กร</a>
+          <a href="#/employee/org-chart" data-link class="ex-folder-doc">\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</a>
           <a href="#/employee/directory" data-link class="ex-folder-doc">Employee Contact</a>
         </div>
       </div>
 
       <div class="ex-folder ex-folder--teal" tabindex="0" role="button" aria-expanded="false">
-        <div class="ex-folder-tab">นโยบาย</div>
+        <div class="ex-folder-tab">\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22</div>
         <div class="ex-folder-body">
           <div class="ex-folder-icon">
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3 L28 8v10c0 7-5 11-12 13C9 29 4 25 4 18V8L16 3Z"/><path d="M11 16l3 3 7-7"/></svg>
           </div>
           <h3>Work Policy</h3>
-          <p>กฎระเบียบ Dress Code และการลา</p>
+          <p>\u0E01\u0E0E\u0E23\u0E30\u0E40\u0E1A\u0E35\u0E22\u0E1A Dress Code \u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E25\u0E32</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/policy/code-of-conduct" data-link class="ex-folder-doc">Core Values</a>
@@ -707,7 +707,7 @@
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="14" height="14" rx="2"/><rect x="14" y="14" width="14" height="14" rx="2"/><rect x="4" y="18" width="8" height="10" rx="2"/><rect x="20" y="4" width="8" height="8" rx="2"/></svg>
           </div>
           <h3>Resources</h3>
-          <p>Timesheet, FAQs และ Showcase</p>
+          <p>Timesheet, FAQs \u0E41\u0E25\u0E30 Showcase</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/resources/timesheet" data-link class="ex-folder-doc">Timesheet</a>
@@ -898,7 +898,7 @@
     <p>\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E32\u0E08\u0E44\u0E14\u0E49\u0E40\u0E27\u0E25\u0E32\u0E19\u0E31\u0E14\u0E15\u0E48\u0E32\u0E07\u0E01\u0E31\u0E19 \u0E41\u0E15\u0E48\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E04\u0E37\u0E2D 4 step \u0E19\u0E35\u0E49</p>
   </div>
 
-  <div class="ex-info-roadmap" aria-label="เส้นทางของวันแรก">
+  <div class="ex-info-roadmap" aria-label="\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01">
     <svg class="ex-info-path" viewBox="0 0 1120 470" preserveAspectRatio="none" aria-hidden="true">
       <path d="M70 350C188 95 375 80 512 228c121 131 230 222 420-6 42-51 82-79 121-90" fill="none" stroke="#D6EEF2" stroke-width="46" stroke-linecap="round"/>
       <path d="M70 350C188 95 375 80 512 228c121 131 230 222 420-6 42-51 82-79 121-90" fill="none" stroke="#66C5C5" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 18"/>
@@ -911,11 +911,11 @@
       </span>
       <small>Step 01</small>
       <h3>Orientation</h3>
-      <p>รู้จัก EXZY ภาพรวมบริษัท เครื่องมือที่ต้องใช้ และเรื่องที่ควรถาม HR ให้ครบตั้งแต่ต้น</p>
+      <p>\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 \u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49 \u0E41\u0E25\u0E30\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21 HR \u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E15\u0E49\u0E19</p>
       <div class="ex-road-mini">
-        <span>🏢<b>EXZY</b></span>
-        <span>💻<b>Tools</b></span>
-        <span>📅<b>Calendar</b></span>
+        <span>\u{1F3E2}<b>EXZY</b></span>
+        <span>\u{1F4BB}<b>Tools</b></span>
+        <span>\u{1F4C5}<b>Calendar</b></span>
       </div>
     </article>
 
@@ -926,11 +926,11 @@
       </span>
       <small>Step 02</small>
       <h3>Metropolis &amp; CI</h3>
-      <p>เข้าใจภาพรวมที่บอกว่า “นี่คือ EXZY” ตั้งแต่โลโก้ ฟอนต์ สี layout การแต่งตัว ผู้คน และสถานที่</p>
+      <p>\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E17\u0E35\u0E48\u0E1A\u0E2D\u0E01\u0E27\u0E48\u0E32 \u201C\u0E19\u0E35\u0E48\u0E04\u0E37\u0E2D EXZY\u201D \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E42\u0E25\u0E42\u0E01\u0E49 \u0E1F\u0E2D\u0E19\u0E15\u0E4C \u0E2A\u0E35 layout \u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E15\u0E31\u0E27 \u0E1C\u0E39\u0E49\u0E04\u0E19 \u0E41\u0E25\u0E30\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48</p>
       <div class="ex-road-mini">
-        <span>✦<b>Logo</b></span>
-        <span>🎨<b>Color</b></span>
-        <span>👥<b>People</b></span>
+        <span>\u2726<b>Logo</b></span>
+        <span>\u{1F3A8}<b>Color</b></span>
+        <span>\u{1F465}<b>People</b></span>
       </div>
     </article>
 
@@ -941,11 +941,11 @@
       </span>
       <small>Step 03</small>
       <h3>Mentor &amp; Team</h3>
-      <p>เจอคนที่จะช่วยคุณระหว่าง internship รู้ว่าเรื่องไหนถาม mentor เรื่องไหนถาม team lead หรือเพื่อนร่วมทีม</p>
+      <p>\u0E40\u0E08\u0E2D\u0E04\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E04\u0E38\u0E13\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07 internship \u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 mentor \u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 team lead \u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E23\u0E48\u0E27\u0E21\u0E17\u0E35\u0E21</p>
       <div class="ex-road-mini">
-        <span>🧭<b>Mentor</b></span>
-        <span>🤝<b>Team</b></span>
-        <span>💬<b>Ask</b></span>
+        <span>\u{1F9ED}<b>Mentor</b></span>
+        <span>\u{1F91D}<b>Team</b></span>
+        <span>\u{1F4AC}<b>Ask</b></span>
       </div>
     </article>
 
@@ -956,8 +956,8 @@
       </span>
       <small>Step 04</small>
       <h3>Timesheet</h3>
-      <p>ปิดท้ายด้วยการกรอกเวลาเข้าออกตามจริง เพื่อให้ HR ตรวจและใช้ส่งเอกสารสิ้นเดือนได้ถูกต้อง</p>
-      <a href="#/resources/timesheet" class="ex-inline-link" data-link>เปิดหน้า Timesheet</a>
+      <p>\u0E1B\u0E34\u0E14\u0E17\u0E49\u0E32\u0E22\u0E14\u0E49\u0E27\u0E22\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49 HR \u0E15\u0E23\u0E27\u0E08\u0E41\u0E25\u0E30\u0E43\u0E0A\u0E49\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E44\u0E14\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07</p>
+      <a href="#/resources/timesheet" class="ex-inline-link" data-link>\u0E40\u0E1B\u0E34\u0E14\u0E2B\u0E19\u0E49\u0E32 Timesheet</a>
     </article>
   </div>
 </section>
@@ -967,38 +967,38 @@
 
     <div class="ex-more-headline">
       <p class="ex-more-kicker"><span></span>Intern Handbook Map</p>
-      <h2 id="ex-day-more-title">วันแรกคือบทแรก<br>ส่วน Home คือแผนที่ทั้งเล่ม</h2>
-      <p>Handbook นี้มีข้อมูลครบสำหรับทั้ง internship — ออฟฟิศ นโยบาย คนในทีม เครื่องมือ และคำถามที่มักเจอ</p>
+      <h2 id="ex-day-more-title">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E04\u0E37\u0E2D\u0E1A\u0E17\u0E41\u0E23\u0E01<br>\u0E2A\u0E48\u0E27\u0E19 Home \u0E04\u0E37\u0E2D\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E17\u0E31\u0E49\u0E07\u0E40\u0E25\u0E48\u0E21</h2>
+      <p>Handbook \u0E19\u0E35\u0E49\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E04\u0E23\u0E1A\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E17\u0E31\u0E49\u0E07 internship \u2014 \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21 \u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D \u0E41\u0E25\u0E30\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E40\u0E08\u0E2D</p>
       <a href="#/" class="ex-more-home" data-link>
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        กลับไปหน้า Home
+        \u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E2B\u0E19\u0E49\u0E32 Home
       </a>
     </div>
 
     <div class="ex-more-chapters">
       <a href="#/getting-started/orientation" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">01</span>
-        <span class="ex-more-ch-ico">🏢</span>
+        <span class="ex-more-ch-ico">\u{1F3E2}</span>
         <b>Orientation &amp; Office</b>
         <small>Wi-Fi, Meeting rooms, Orientation slides</small>
       </a>
       <a href="#/employee/org-chart" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">02</span>
-        <span class="ex-more-ch-ico">👥</span>
-        <b>บริษัทและทีม</b>
-        <small>โครงสร้างองค์กร, Employee Contact</small>
+        <span class="ex-more-ch-ico">\u{1F465}</span>
+        <b>\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21</b>
+        <small>\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23, Employee Contact</small>
       </a>
       <a href="#/policy/code-of-conduct" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">03</span>
-        <span class="ex-more-ch-ico">📋</span>
+        <span class="ex-more-ch-ico">\u{1F4CB}</span>
         <b>Work Policy</b>
-        <small>Core Values, Dress Code, การลา</small>
+        <small>Core Values, Dress Code, \u0E01\u0E32\u0E23\u0E25\u0E32</small>
       </a>
       <a href="#/resources/faqs" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">04</span>
-        <span class="ex-more-ch-ico">❔</span>
+        <span class="ex-more-ch-ico">\u2754</span>
         <b>FAQs &amp; Resources</b>
-        <small>Timesheet, คำถามที่มักเจอ</small>
+        <small>Timesheet, \u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E40\u0E08\u0E2D</small>
       </a>
     </div>
 
