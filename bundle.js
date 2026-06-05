@@ -636,7 +636,7 @@
 
   <div class="ex-info-roadmap" aria-label="\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01">
     <svg class="ex-info-path" viewBox="0 0 1120 600" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M80 330 C180 330,310 130,425 130 C540 130,620 330,728 330 C836 330,900 130,976 130" fill="none" stroke="#D6EEF2" stroke-width="46" stroke-linecap="round"/>
+      <path d="M80 330 C180 330,310 130,425 130 C540 130,620 330,728 330 C836 330,900 130,976 130" fill="none" stroke="#D0D6DF" stroke-width="46" stroke-linecap="round"/>
       <path d="M80 330 C180 330,310 130,425 130 C540 130,620 330,728 330 C836 330,900 130,976 130" fill="none" stroke="#66C5C5" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 18"/>
     </svg>
 
@@ -651,7 +651,7 @@
       </div>
     </article>
 
-    <article class="ex-info-stop ex-info-stop-2 fdb-reveal fdb-delay1" style="--stop:#004080">
+    <article class="ex-info-stop ex-info-stop-2 fdb-reveal fdb-delay1" style="--stop:#004081">
       <span class="ex-info-pin">02</span>
       <h3>Metropolis &amp; CI</h3>
       <p>\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E17\u0E35\u0E48\u0E1A\u0E2D\u0E01\u0E27\u0E48\u0E32 "\u0E19\u0E35\u0E48\u0E04\u0E37\u0E2D EXZY" \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E42\u0E25\u0E42\u0E01\u0E49 \u0E1F\u0E2D\u0E19\u0E15\u0E4C \u0E2A\u0E35 layout \u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E15\u0E31\u0E27 \u0E1C\u0E39\u0E49\u0E04\u0E19 \u0E41\u0E25\u0E30\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48</p>
@@ -662,7 +662,7 @@
       </div>
     </article>
 
-    <article class="ex-info-stop ex-info-stop-3 fdb-reveal fdb-delay1" style="--stop:#2A8DA8">
+    <article class="ex-info-stop ex-info-stop-3 fdb-reveal fdb-delay1" style="--stop:#586782">
       <span class="ex-info-pin">03</span>
       <h3>Mentor &amp; Team</h3>
       <p>\u0E40\u0E08\u0E2D\u0E04\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E04\u0E38\u0E13\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07 internship \u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 mentor \u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 team lead \u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E23\u0E48\u0E27\u0E21\u0E17\u0E35\u0E21</p>
@@ -673,7 +673,7 @@
       </div>
     </article>
 
-    <article class="ex-info-stop ex-info-stop-4 fdb-reveal fdb-delay2" style="--stop:#004080">
+    <article class="ex-info-stop ex-info-stop-4 fdb-reveal fdb-delay2" style="--stop:#004081">
       <span class="ex-info-pin">04</span>
       <h3>Timesheet</h3>
       <p>\u0E1B\u0E34\u0E14\u0E17\u0E49\u0E32\u0E22\u0E14\u0E49\u0E27\u0E22\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49 HR \u0E15\u0E23\u0E27\u0E08\u0E41\u0E25\u0E30\u0E43\u0E0A\u0E49\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E44\u0E14\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07</p>
@@ -829,8 +829,8 @@
         <div style="font-family:var(--display); font-size:2.2rem; font-weight:900; color:var(--ink); line-height:1;">200 \u0E3F</div>
         <div style="font-size:13px; color:var(--muted); margin-top:4px;">\u0E15\u0E48\u0E2D\u0E27\u0E31\u0E19</div>
       </div>
-      <div style="background:linear-gradient(135deg,rgba(245,158,11,.08),rgba(245,158,11,.03)); border:1px solid rgba(245,158,11,.25); border-radius:var(--radius); padding:20px;">
-        <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:#D97706; margin-bottom:8px;">\u0E19\u0E2D\u0E01\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48</div>
+      <div style="background:linear-gradient(135deg,var(--warning-soft),rgba(248,249,250,.72)); border:1px solid rgba(255,204,0,.42); border-radius:var(--radius); padding:20px;">
+        <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); margin-bottom:8px;">\u0E19\u0E2D\u0E01\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48</div>
         <div style="font-family:var(--display); font-size:2.2rem; font-weight:900; color:var(--ink); line-height:1;">300 \u0E3F</div>
         <div style="font-size:13px; color:var(--muted); margin-top:4px;">\u0E15\u0E48\u0E2D\u0E27\u0E31\u0E19</div>
       </div>
@@ -925,7 +925,7 @@
           </div>
           <button class="wn-connect-btn wf2-connect-btn" data-wifi="staff">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A + \u0E40\u0E1B\u0E34\u0E14 Wi-Fi Settings
+            \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19
           </button>
           <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern \u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u2014 \u0E44\u0E21\u0E48\u0E41\u0E0A\u0E23\u0E4C\u0E01\u0E31\u0E1A\u0E1A\u0E38\u0E04\u0E04\u0E25\u0E20\u0E32\u0E22\u0E19\u0E2D\u0E01</p>
         </div>
@@ -968,7 +968,7 @@
           </div>
           <button class="wn-connect-btn wn-connect-guest wf2-connect-btn" data-wifi="guest">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A + \u0E40\u0E1B\u0E34\u0E14 Wi-Fi Settings
+            \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19
           </button>
           <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E02\u0E01\u0E17\u0E35\u0E48\u0E21\u0E32\u0E40\u0E22\u0E37\u0E2D\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u2014 \u0E41\u0E0A\u0E23\u0E4C\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E01\u0E31\u0E1A\u0E04\u0E19\u0E17\u0E35\u0E48\u0E21\u0E32\u0E1E\u0E1A\u0E01\u0E31\u0E19\u0E08\u0E23\u0E34\u0E07 \u0E46</p>
         </div>
@@ -991,7 +991,7 @@
           <div class="wn-how-n">2</div>
           <div class="wn-how-content">
             <div class="wn-how-title">\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A</div>
-            <div class="wn-how-desc">\u0E01\u0E14\u0E1B\u0E38\u0E48\u0E21 "\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A" \u2014 \u0E23\u0E2B\u0E31\u0E2A\u0E08\u0E30\u0E16\u0E39\u0E01\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E44\u0E1B clipboard \u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E40\u0E1B\u0E34\u0E14 Settings</div>
+            <div class="wn-how-desc">\u0E01\u0E14\u0E1B\u0E38\u0E48\u0E21 "\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19" \u0E41\u0E25\u0E49\u0E27\u0E19\u0E33\u0E44\u0E1B\u0E27\u0E32\u0E07\u0E43\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Wi-Fi \u0E02\u0E2D\u0E07\u0E2D\u0E38\u0E1B\u0E01\u0E23\u0E13\u0E4C</div>
           </div>
         </div>
         <div class="wn-how-step">
@@ -1243,56 +1243,56 @@
     {
       title: "Marketing",
       abbr: "MKT",
-      color: "#F59E0B",
+      color: "#FFCC00",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
       desc: "\u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E41\u0E1A\u0E23\u0E19\u0E14\u0E4C\u0E41\u0E25\u0E30\u0E2A\u0E23\u0E49\u0E32\u0E07 Awareness"
     },
     {
       title: "HR",
       abbr: "HR",
-      color: "#10B981",
+      color: "#82C566",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
       desc: "\u0E1A\u0E23\u0E34\u0E2B\u0E32\u0E23\u0E1A\u0E38\u0E04\u0E25\u0E32\u0E01\u0E23\u0E41\u0E25\u0E30\u0E14\u0E39\u0E41\u0E25 Intern"
     },
     {
       title: "Accounting",
       abbr: "ACC",
-      color: "#3B82F6",
+      color: "#929EB4",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><path d="M11 8h4M11 12h4M11 16h4"/></svg>`,
       desc: "\u0E01\u0E32\u0E23\u0E40\u0E07\u0E34\u0E19 \u0E1A\u0E31\u0E0D\u0E0A\u0E35 \u0E41\u0E25\u0E30\u0E40\u0E1A\u0E35\u0E49\u0E22\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07"
     },
     {
       title: "Development",
       abbr: "DEV",
-      color: "#8B5CF6",
+      color: "#004081",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
       desc: "\u0E1E\u0E31\u0E12\u0E19\u0E32\u0E0B\u0E2D\u0E1F\u0E15\u0E4C\u0E41\u0E27\u0E23\u0E4C\u0E41\u0E25\u0E30\u0E23\u0E30\u0E1A\u0E1A"
     },
     {
       title: "Solution Engineer",
       abbr: "SE",
-      color: "#EC4899",
+      color: "#586782",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 15.54a5 5 0 0 1 0-7.07"/></svg>`,
       desc: "\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E41\u0E25\u0E30\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07 Solution"
     },
     {
       title: "Design",
       abbr: "DSN",
-      color: "#F97316",
+      color: "#66C5C5",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22L6.5 14.5C6.5 14.5 3 13 3 10c0-3 2-5 5-5"/></svg>`,
       desc: "\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A UX/UI \u0E41\u0E25\u0E30\u0E2A\u0E37\u0E48\u0E2D\u0E01\u0E23\u0E32\u0E1F\u0E34\u0E01"
     },
     {
       title: "IT Support",
       abbr: "ITS",
-      color: "#06B6D4",
+      color: "#D0D6DF",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>`,
       desc: "\u0E14\u0E39\u0E41\u0E25\u0E2D\u0E38\u0E1B\u0E01\u0E23\u0E13\u0E4C IT \u0E41\u0E25\u0E30 Network"
     },
     {
       title: "Sales",
       abbr: "SLS",
-      color: "#EF4444",
+      color: "#F3554F",
       icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
       desc: "\u0E02\u0E32\u0E22\u0E2A\u0E34\u0E19\u0E04\u0E49\u0E32\u0E41\u0E25\u0E30\u0E1A\u0E23\u0E34\u0E01\u0E32\u0E23\u0E02\u0E2D\u0E07 EXZY"
     }
@@ -1359,7 +1359,7 @@
               <button type="submit" class="dir-pw-btn" id="dir-pw-btn">${I.lock} \u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01</button>
             </form>
             <div class="dir-gate-err" id="dir-gate-err" hidden>${I.info} \u0E23\u0E2B\u0E31\u0E2A\u0E44\u0E21\u0E48\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07 \u2014 \u0E25\u0E2D\u0E07\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07 \u0E2B\u0E23\u0E37\u0E2D\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E23\u0E2B\u0E31\u0E2A\u0E43\u0E19 Admin Panel</div>
-            <div class="dir-gate-hint">\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19: <code style="background:#f0f4f8;padding:2px 6px;border-radius:4px;font-size:12px;">hr@exzy</code> &nbsp;\xB7&nbsp; \u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E44\u0E14\u0E49\u0E17\u0E35\u0E48 Admin Panel</div>
+            <div class="dir-gate-hint">\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E02\u0E49\u0E32\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E08\u0E32\u0E01 HR \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49</div>
           </div>
         </div>
       `
@@ -1549,7 +1549,7 @@
     <!-- Policy Hero Banner -->
     <div class="policy-time-hero anim-up">
       <div class="policy-time-main">
-        <h2 style="color:#fff !important">9:00 \u2013 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 \u2013 19:00</h2>
+        <h2 style="color:var(--on-dark) !important">9:00 \u2013 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 \u2013 19:00</h2>
         <p>\u0E40\u0E27\u0E25\u0E32\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \xB7 \u0E08\u0E31\u0E19\u0E17\u0E23\u0E4C \u2013 \u0E28\u0E38\u0E01\u0E23\u0E4C \xB7 \u0E02\u0E36\u0E49\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E01\u0E31\u0E1A\u0E41\u0E1C\u0E19\u0E01\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E21\u0E2D\u0E1A\u0E2B\u0E21\u0E32\u0E22</p>
       </div>
       <div class="policy-time-stats">
@@ -1653,8 +1653,8 @@
     <h2>\u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E2A\u0E16\u0E32\u0E19\u0E01\u0E32\u0E23\u0E13\u0E4C</h2>
     <div class="dress-grid-v2">
       <div class="dress-card-v2 anim-up">
-        <div class="dress-card-v2-icon" style="background:rgba(102,197,197,.12); color:#0e6060;">${I.shirt}</div>
-        <div class="dress-card-v2-style" style="color:#0e6060;">Smart Casual</div>
+        <div class="dress-card-v2-icon" style="background:var(--cyan-soft); color:var(--navy);">${I.shirt}</div>
+        <div class="dress-card-v2-style" style="color:var(--navy);">Smart Casual</div>
         <h4>\u0E27\u0E31\u0E19\u0E17\u0E33\u0E07\u0E32\u0E19\u0E1B\u0E01\u0E15\u0E34</h4>
         <ul>
           <li>\u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E42\u0E1B\u0E42\u0E25 / \u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E40\u0E0A\u0E34\u0E49\u0E15</li>
@@ -1663,8 +1663,8 @@
         </ul>
       </div>
       <div class="dress-card-v2 anim-up" data-delay="80">
-        <div class="dress-card-v2-icon" style="background:rgba(59,130,246,.12); color:#1e3a8a;">${I.people}</div>
-        <div class="dress-card-v2-style" style="color:#1e3a8a;">Business Casual</div>
+        <div class="dress-card-v2-icon" style="background:var(--mist); color:var(--ink);">${I.people}</div>
+        <div class="dress-card-v2-style" style="color:var(--ink);">Business Casual</div>
         <h4>\u0E21\u0E35\u0E19\u0E31\u0E14\u0E1E\u0E1A\u0E25\u0E39\u0E01\u0E04\u0E49\u0E32</h4>
         <ul>
           <li>\u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E40\u0E0A\u0E34\u0E49\u0E15\u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E1A\u0E25\u0E40\u0E0B\u0E2D\u0E23\u0E4C</li>
@@ -1673,8 +1673,8 @@
         </ul>
       </div>
       <div class="dress-card-v2 anim-up" data-delay="160">
-        <div class="dress-card-v2-icon" style="background:rgba(139,92,246,.12); color:#4c1d95;">${I.sparkle}</div>
-        <div class="dress-card-v2-style" style="color:#4c1d95;">Casual Friday</div>
+        <div class="dress-card-v2-icon" style="background:var(--success-soft); color:var(--body);">${I.sparkle}</div>
+        <div class="dress-card-v2-style" style="color:var(--body);">Casual Friday</div>
         <h4>\u0E27\u0E31\u0E19\u0E28\u0E38\u0E01\u0E23\u0E4C / \u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21</h4>
         <ul>
           <li>\u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E22\u0E37\u0E14\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E44\u0E21\u0E48\u0E21\u0E35\u0E25\u0E32\u0E22\u0E44\u0E21\u0E48\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21</li>
@@ -1775,7 +1775,7 @@
     <!-- Timesheet Hero Banner -->
     <div class="ts-hero-banner anim-up">
       <div class="ts-hero-left">
-        <h2 style="color:#fff !important">\u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \xB7 \u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</h2>
+        <h2 style="color:var(--on-dark) !important">\u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \xB7 \u0E2A\u0E48\u0E07\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</h2>
         <p>HR \u0E08\u0E30\u0E2A\u0E48\u0E07\u0E44\u0E1F\u0E25\u0E4C Excel Timesheet \u0E43\u0E2B\u0E49\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</p>
         <div class="ts-hero-badges">
           <span class="ts-hero-badge">
@@ -1800,17 +1800,17 @@
         <div class="ts-step-desc">HR \u0E2A\u0E48\u0E07 Excel Timesheet \u0E43\u0E2B\u0E49\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</div>
       </div>
       <div class="ts-step-v anim-up" data-delay="80">
-        <div class="ts-step-node" style="background:#3B82F6">2</div>
+        <div class="ts-step-node" style="background:var(--navy)">2</div>
         <div class="ts-step-title">\u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19</div>
         <div class="ts-step-desc">\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32-\u0E2D\u0E2D\u0E01\u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E27\u0E31\u0E19</div>
       </div>
       <div class="ts-step-v anim-up" data-delay="160">
-        <div class="ts-step-node" style="background:#8B5CF6">3</div>
+        <div class="ts-step-node" style="background:var(--slate)">3</div>
         <div class="ts-step-title">\u0E23\u0E30\u0E1A\u0E38\u0E01\u0E32\u0E23\u0E25\u0E32</div>
         <div class="ts-step-desc">\u0E27\u0E31\u0E19\u0E2B\u0E22\u0E38\u0E14/\u0E25\u0E32 \u0E23\u0E30\u0E1A\u0E38\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E43\u0E19\u0E04\u0E2D\u0E25\u0E31\u0E21\u0E19\u0E4C Summary</div>
       </div>
       <div class="ts-step-v anim-up" data-delay="240">
-        <div class="ts-step-node" style="background:#EF4444">4</div>
+        <div class="ts-step-node" style="background:var(--error)">4</div>
         <div class="ts-step-title">\u0E22\u0E37\u0E48\u0E19 HR \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331</div>
         <div class="ts-step-desc">\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 \u0E41\u0E25\u0E49\u0E27\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR \u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E42\u0E14\u0E22\u0E15\u0E23\u0E07</div>
       </div>
@@ -2163,7 +2163,7 @@
         const pass = which === "staff" ? d.wifi_staff_pass : d.wifi_guest_pass;
         if (navigator.clipboard?.writeText) {
           navigator.clipboard.writeText(pass).then(() => {
-            showToast(`\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E02\u0E2D\u0E07 ${ssid} \u0E41\u0E25\u0E49\u0E27 \xB7 \u0E40\u0E1B\u0E34\u0E14\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Wi-Fi`);
+            showToast(`\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E02\u0E2D\u0E07 ${ssid} \u0E41\u0E25\u0E49\u0E27`);
           });
         }
       });
@@ -2210,7 +2210,7 @@
         var pass = which === "staff" ? d.wifi_staff_pass : d.wifi_guest_pass;
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(pass || "").then(function() {
-            showToast("\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E02\u0E2D\u0E07 " + ssid + " \u0E41\u0E25\u0E49\u0E27 \xB7 \u0E40\u0E1B\u0E34\u0E14\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Wi-Fi");
+            showToast("\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E02\u0E2D\u0E07 " + ssid + " \u0E41\u0E25\u0E49\u0E27");
           });
         }
       });
@@ -2472,12 +2472,14 @@
     function setMobileMenu(open) {
       if (open) {
         navbar.classList.add("mobile-open");
+        burger?.setAttribute("aria-expanded", "true");
         if (showcaseGroup && navLinks && showcaseGroup.parentElement !== navLinks) {
           showcaseGroup.classList.add("nav-showcase-mobile");
           navLinks.appendChild(showcaseGroup);
         }
       } else {
         navbar.classList.remove("mobile-open");
+        burger?.setAttribute("aria-expanded", "false");
         if (showcaseGroup && navRight && showcaseGroup.parentElement !== navRight) {
           showcaseGroup.classList.remove("nav-showcase-mobile");
           navRight.appendChild(showcaseGroup);
