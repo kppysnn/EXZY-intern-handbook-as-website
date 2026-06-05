@@ -113,7 +113,7 @@ export const renderInternshipPolicy = () => pageWrap({
     <!-- Policy Hero Banner -->
     <div class="policy-time-hero anim-up">
       <div class="policy-time-main">
-        <h2 style="color:#fff !important">9:00 – 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 – 19:00</h2>
+        <h2 style="color:var(--on-dark) !important">9:00 – 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 – 19:00</h2>
         <p>เวลาฝึกงาน · จันทร์ – ศุกร์ · ขึ้นอยู่กับแผนกที่ได้รับมอบหมาย</p>
       </div>
       <div class="policy-time-stats">
@@ -218,8 +218,8 @@ export const renderDressCode = () => pageWrap({
     <h2>การแต่งกายในแต่ละสถานการณ์</h2>
     <div class="dress-grid-v2">
       <div class="dress-card-v2 anim-up">
-        <div class="dress-card-v2-icon" style="background:rgba(102,197,197,.12); color:#0e6060;">${I.shirt}</div>
-        <div class="dress-card-v2-style" style="color:#0e6060;">Smart Casual</div>
+        <div class="dress-card-v2-icon" style="background:var(--cyan-soft); color:var(--navy);">${I.shirt}</div>
+        <div class="dress-card-v2-style" style="color:var(--navy);">Smart Casual</div>
         <h4>วันทำงานปกติ</h4>
         <ul>
           <li>เสื้อโปโล / เสื้อเชิ้ต</li>
@@ -228,8 +228,8 @@ export const renderDressCode = () => pageWrap({
         </ul>
       </div>
       <div class="dress-card-v2 anim-up" data-delay="80">
-        <div class="dress-card-v2-icon" style="background:rgba(59,130,246,.12); color:#1e3a8a;">${I.people}</div>
-        <div class="dress-card-v2-style" style="color:#1e3a8a;">Business Casual</div>
+        <div class="dress-card-v2-icon" style="background:var(--mist); color:var(--ink);">${I.people}</div>
+        <div class="dress-card-v2-style" style="color:var(--ink);">Business Casual</div>
         <h4>มีนัดพบลูกค้า</h4>
         <ul>
           <li>เสื้อเชิ้ตหรือเบลเซอร์</li>
@@ -238,8 +238,8 @@ export const renderDressCode = () => pageWrap({
         </ul>
       </div>
       <div class="dress-card-v2 anim-up" data-delay="160">
-        <div class="dress-card-v2-icon" style="background:rgba(139,92,246,.12); color:#4c1d95;">${I.sparkle}</div>
-        <div class="dress-card-v2-style" style="color:#4c1d95;">Casual Friday</div>
+        <div class="dress-card-v2-icon" style="background:var(--success-soft); color:var(--body);">${I.sparkle}</div>
+        <div class="dress-card-v2-style" style="color:var(--body);">Casual Friday</div>
         <h4>วันศุกร์ / กิจกรรม</h4>
         <ul>
           <li>เสื้อยืดสะอาด ไม่มีลายไม่เหมาะสม</li>
@@ -277,7 +277,7 @@ export const renderLeave = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.info}</span>
       <div>
-        <h4>การลาจะไม่สามารถเก็บชั่วโมงการฝึกงานได้</h4>
+        <h4>วันที่ลาจะไม่นับเป็นชั่วโมงฝึกงาน</h4>
         <p>บริษัทเซ็นรับรองตามชั่วโมงฝึกงานจริงเท่านั้น — ลาบ่อยอาจส่งผลต่อชั่วโมงที่ต้องส่งสถาบัน จัดการวันลาให้ดีนะ</p>
       </div>
     </div>
@@ -326,7 +326,7 @@ export const renderLeave = () => pageWrap({
       <span class="ic">${I.shield}</span>
       <div>
         <h4>การลาที่มากเกินไป</h4>
-        <p>ถ้าลาบ่อยจนเกินไปและทีมเห็นว่าไม่เหมาะสม บริษัทอาจพิจารณายุติการฝึกงานและแจ้งมหาวิทยาลัย — เปิดใจคุยกับพี่เลี้ยงก่อนเสมอนะ</p>
+        <p>ถ้าลาบ่อยจนเกินไปและทีมเห็นว่าไม่เหมาะสม บริษัทอาจพิจารณายุติการฝึกงานและแจ้งมหาวิทยาลัย — ลองคุยกับพี่เลี้ยงก่อนดีที่สุด</p>
       </div>
     </div>
   `,

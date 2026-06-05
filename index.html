@@ -15,10 +15,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?t=1780384614" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?t=1780384614" />
   <link rel="manifest" href="/site.webmanifest?t=1780384614" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg?t=1780384614" color="#00A859" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?t=1780384614" color="#66C5C5" />
+  <meta name="msapplication-TileColor" content="#F8F9FA" />
   <meta name="msapplication-TileImage" content="/mstile-150x150.png?t=1780384614" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#F8F9FA" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -55,7 +55,7 @@
         <img src="./logo.png" alt="EXZY" />
       </a>
 
-      <nav class="nav-links" aria-label="Main">
+      <nav class="nav-links" id="nav-mobile-menu" aria-label="Main">
         <a href="#/home" class="nav-item nav-home" data-link>Home</a>
 
         <div class="nav-group">
@@ -130,7 +130,7 @@
         </div>
       </nav>
 
-      <button class="nav-burger" aria-label="Menu" id="burger">
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile-menu" id="burger">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -226,5 +226,6 @@
   </footer>
 
   <script src="./bundle.js?v=20260604-2"></script>
+  <script>if (location.hostname === 'localhost') new EventSource('/esbuild').addEventListener('change', () => location.reload());</script>
 </body>
 </html>

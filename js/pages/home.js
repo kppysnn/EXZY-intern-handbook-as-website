@@ -23,18 +23,18 @@ export var renderHome = () => `
         Welcome to EXZY Internship
       </p>
       <h1>EXZY Intern Handbook</h1>
-      <p class="ex-home-lead">ศูนย์รวมข้อมูลหลัง Orientation สำหรับ intern ที่อยากกลับมาเช็กทุกอย่างในที่เดียว: วันแรก ออฟฟิศ นโยบาย ทีม Timesheet และคำถามที่มักต้องถาม HR ซ้ำ</p>
+      <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องใช้ตลอดการฝึกงานไว้ที่นี่ — งานที่ต้องทำ ออฟฟิศ ทีม หรือนโยบาย </br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามนั้นเอง!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
-          \u0E40\u0E1B\u0E34\u0E14\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Handbook
+          ดูหัวข้อทั้งหมด
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </a>
-        <a href="#/first-day" class="ex-home-secondary" data-link>\u0E44\u0E1B\u0E17\u0E35\u0E48 Day 1 Guide</a>
+        <a href="#/first-day" class="ex-home-secondary" data-link>เริ่มจาก Day 1 Guide</a>
       </div>
     </div>
   </div>
   <a href="#ex-home-start" class="ex-home-scroll-cue" aria-label="เลื่อนลงไปดูส่วนถัดไป">
-    <span>เลื่อนดูต่อ</span>
+    <span>เลื่อนเพื่อดูต่อ</span>
     <i aria-hidden="true"></i>
   </a>
 </section>
@@ -42,28 +42,28 @@ export var renderHome = () => `
 <section class="ex-home-start" id="ex-home-start" aria-labelledby="ex-home-start-title">
   <div class="ex-home-start-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-home-start-title">เริ่มจากสิ่งที่ intern มักต้องเปิดก่อน</h2>
-      <p>หน้า First Day ยังคือจุดเริ่มของวันแรก ส่วน Home นี้คือโต๊ะสารบัญกลางที่ช่วยให้กลับมาหาข้อมูลได้เร็ว โดยไม่ต้องไล่อ่านอีเมลหลายฉบับ</p>
+      <h2 id="ex-home-start-title">3 หัวข้อสำคัญที่ intern ควรรู้</h2>
+      <p>เนื้อหาหลักที่ช่วยให้เห็นภาพรวมของการฝึกงาน สิ่งที่ต้องเจอ งานที่ต้องทำตลอดการฝึกงาน</p>
     </div>
 
     <div class="ex-start-grid">
       <a href="#/first-day" class="ex-start-card ex-start-card-primary fdb-reveal" data-link>
         <span class="ex-start-index">Start</span>
         <h3>Day 1 Guide</h3>
-        <p>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33 \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E08\u0E30\u0E44\u0E14\u0E49\u0E40\u0E08\u0E2D\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19</p>
-        <strong>\u0E40\u0E1B\u0E34\u0E14\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</strong>
+        <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และสิ่งที่จะได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
+        <strong>ดู Day 1 Guide</strong>
       </a>
       <a href="#/getting-started/orientation" class="ex-start-card fdb-reveal fdb-delay1" data-link>
-        <span class="ex-start-index">After Orientation</span>
+        <span class="ex-start-index">First step</span>
         <h3>Orientation</h3>
-        <p>\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E14\u0E39\u0E2A\u0E44\u0E25\u0E14\u0E4C \u0E04\u0E48\u0E32\u0E19\u0E34\u0E22\u0E21 \u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C \u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1E\u0E37\u0E49\u0E19\u0E10\u0E32\u0E19\u0E02\u0E2D\u0E07 EXZY</p>
-        <strong>\u0E17\u0E1A\u0E17\u0E27\u0E19 Orientation</strong>
+        <p>สามารถกลับมาดูสไลด์ core values โปรเจกต์ที่ต้องทำ และข้อมูลพื้นฐานของ EXZY</p>
+        <strong>ดูข้อมูลจาก Orientation</strong>
       </a>
       <a href="#/resources/timesheet" class="ex-start-card fdb-reveal fdb-delay2" data-link>
         <span class="ex-start-index">Every Month</span>
         <h3>Timesheet</h3>
-        <p>\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01 \u0E40\u0E27\u0E25\u0E32\u0E43\u0E19\u0E01\u0E32\u0E23\u0E2A\u0E48\u0E07 \u0E41\u0E25\u0E30\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR</p>
-        <strong>\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01 Timesheet</strong>
+        <p>ขั้นตอนกรอก Timesheet และส่งเอกสารให้ HR</p>
+        <strong>ดูวิธีกรอก Timesheet</strong>
       </a>
     </div>
   </div>
@@ -72,8 +72,8 @@ export var renderHome = () => `
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-folders-title">เปิดแฟ้มข้อมูลกลางของ EXZY Intern</h2>
-      <p>ข้อมูลถูกแยกเป็นหมวดเหมือนแฟ้มเอกสารของ HR: แตะหรือโฟกัสที่โฟลเดอร์เพื่อดูหน้าที่เกี่ยวข้อง แล้วเลือกไปยังหัวข้อที่ต้องใช้ทันที</p>
+      <h2 id="ex-folders-title">รวมเรื่องที่ intern ต้องใช้ไว้ในที่เดียว</h2>
+      <p>ข้อมูลที่ intern มักต้องใช้ระหว่างฝึกงาน ทั้งเรื่องการทำงานในออฟฟิศ ทีม นโยบาย เอกสาร และ FAQs</p>
     </div>
 
     <div class="ex-folder-grid">
@@ -148,7 +148,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="14" height="14" rx="2"/><rect x="14" y="14" width="14" height="14" rx="2"/><rect x="4" y="18" width="8" height="10" rx="2"/><rect x="20" y="4" width="8" height="8" rx="2"/></svg>
           </div>
           <h3>Resources</h3>
-          <p>ของที่ต้องกลับมาใช้ระหว่างฝึกงาน</p>
+          <p>ข้อมูลที่ใช้บ่อยระหว่างฝึกงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/resources/timesheet" data-link class="ex-folder-doc"><span>01</span> Timesheet</a>
@@ -164,26 +164,26 @@ export var renderHome = () => `
 <section class="ex-home-quick" aria-labelledby="ex-home-quick-title">
   <div class="ex-home-quick-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-home-quick-title">\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E40\u0E1B\u0E34\u0E14\u0E1A\u0E48\u0E2D\u0E22</h2>
-      <p>\u0E17\u0E32\u0E07\u0E25\u0E31\u0E14\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
+      <h2 id="ex-home-quick-title">ข้อมูลที่ใช้บ่อยระหว่างฝึกงาน</h2>
+      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้สะดวกขึ้น ทั้งการเชื่อมต่อ ติดต่อ แจ้งลา และหาคำตอบเบื้องต้น</p>
     </div>
 
     <div class="ex-quick-list">
       <a href="#/getting-started/wifi" data-link>
         <span>Wi-Fi</span>
-        <strong>\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E2D\u0E34\u0E19\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E40\u0E19\u0E47\u0E15\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</strong>
+        <strong>เชื่อมต่ออินเทอร์เน็ตในออฟฟิศ</strong>
       </a>
       <a href="#/employee/directory" data-link>
         <span>Contact</span>
-        <strong>\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D</strong>
+        <strong>รายชื่อและช่องทางติดต่อคนในทีม</strong>
       </a>
       <a href="#/policy/leave" data-link>
         <span>Leave</span>
-        <strong>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E1B\u0E48\u0E27\u0E22</strong>
+        <strong>ขั้นตอนการแจ้งลาและการลาป่วย</strong>
       </a>
       <a href="#/resources/faqs" data-link>
         <span>FAQs</span>
-        <strong>\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48 intern \u0E21\u0E31\u0E01\u0E2A\u0E07\u0E2A\u0E31\u0E22</strong>
+        <strong>คำถามที่ intern มักสงสัย</strong>
       </a>
     </div>
   </div>

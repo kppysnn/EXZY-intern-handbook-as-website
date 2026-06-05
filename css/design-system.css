@@ -1,0 +1,116 @@
+/* =========================================================
+   EXZY Intern Handbook Design System
+   CI palette only:
+   #929EB4 #707070 #586782 #D0D6DF #82C566 #505050
+   #F3554F #66C5C5 #FFCC00 #F8F9FA #001122 #004081
+   ========================================================= */
+
+:root {
+  /* EXZY CI palette */
+  --ci-bluegray: #929EB4;
+  --ci-muted: #707070;
+  --ci-slate: #586782;
+  --ci-line: #D0D6DF;
+  --ci-success: #82C566;
+  --ci-body: #505050;
+  --ci-error: #F3554F;
+  --ci-teal: #66C5C5;
+  --ci-warning: #FFCC00;
+  --ci-bg: #F8F9FA;
+  --ci-ink: #001122;
+  --ci-navy: #004081;
+
+  /* Legacy aliases retained while page CSS is being simplified. */
+  --cyan: var(--ci-teal);
+  --navy: var(--ci-navy);
+  --ink: var(--ci-navy);
+  --muted: var(--ci-muted);
+  --body: var(--ci-body);
+  --slate: var(--ci-slate);
+  --bluegray: var(--ci-bluegray);
+  --bg: var(--ci-bg);
+  --surface: var(--ci-bg);
+  --surface-2: var(--ci-line);
+  --mist: var(--ci-line);
+  --success: var(--ci-success);
+  --warning: var(--ci-warning);
+  --error: var(--ci-error);
+  --on-dark: var(--ci-bg);
+
+  --cyan-soft: rgba(102,197,197,0.14);
+  --navy-soft: rgba(0,64,129,0.10);
+  --success-soft: rgba(130,197,102,0.16);
+  --warning-soft: rgba(255,204,0,0.18);
+  --error-soft: rgba(243,85,79,0.12);
+  --line: var(--ci-line);
+  --line-soft: rgba(208,214,223,0.72);
+
+  --grad: linear-gradient(135deg, #66C5C5 0%, #004081 100%);
+  --grad-soft: linear-gradient(135deg, rgba(102,197,197,0.12), rgba(0,64,129,0.07));
+
+  --shadow-sm: 0 1px 2px rgba(0,64,129,0.04), 0 1px 1px rgba(0,17,34,0.02);
+  --shadow-md: 0 4px 14px rgba(0,64,129,0.07);
+  --shadow-lg: 0 16px 34px rgba(0,64,129,0.10);
+
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --nav-h: 72px;
+  --maxw: 1240px;
+
+  --thai: "Noto Sans Thai Local", "Noto Sans Thai", "Sora", system-ui, sans-serif;
+  --display: "Noto Sans Thai Local", "Sora", "Noto Sans Thai", system-ui, sans-serif;
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --z-dropdown: 100;
+  --z-sticky: 120;
+  --z-modal-backdrop: 800;
+  --z-modal: 900;
+  --z-toast: 1000;
+  --z-tooltip: 1100;
+}
+
+.u-container {
+  width: min(100% - 36px, 1184px);
+  margin-inline: auto;
+}
+
+.u-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-gap, 16px);
+}
+
+.u-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--cluster-gap, 10px);
+}
+
+.u-grid-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min, 280px)), 1fr));
+  gap: var(--grid-gap, 16px);
+}
+
+.u-surface {
+  background: var(--ci-bg);
+  border: 1px solid var(--ci-line);
+  border-radius: var(--radius);
+}
+
+.u-muted {
+  color: var(--ci-muted);
+}
+
+.u-navy {
+  color: var(--ci-navy);
+}
+
+.u-focus-ring:focus-visible {
+  outline: 3px solid rgba(102,197,197,0.58);
+  outline-offset: 3px;
+}

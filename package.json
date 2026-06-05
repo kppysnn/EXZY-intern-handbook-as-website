@@ -1,7 +1,11 @@
 {
   "scripts": {
-    "build": "esbuild app.js --bundle --format=iife --outfile=bundle.js",
-    "watch": "esbuild app.js --bundle --format=iife --outfile=bundle.js --watch"
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "esbuild app.js --bundle --format=iife --outfile=bundle.js",
+    "build:css": "node scripts/purge-css.mjs css/legacy.css styles.css",
+    "visual:qa": "node scripts/visual-qa.mjs",
+    "watch": "esbuild app.js --bundle --format=iife --outfile=bundle.js --watch",
+    "dev": "esbuild app.js --bundle --format=iife --outfile=bundle.js --watch --serve=3000 --servedir=."
   },
   "devDependencies": {
     "esbuild": "^0.28.0"

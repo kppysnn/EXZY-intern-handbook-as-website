@@ -7,7 +7,7 @@ export const renderDirectory = () => {
     return pageWrap({
       crumbs: [["Home", "#/home"], ["Company", null], ["Employee Contact", null]],
       title: "Employee Contact",
-      lead: "ข้อมูลติดต่อพนักงานถูกป้องกันไว้ กรุณาใส่รหัสเพื่อเข้าดูข้อมูล",
+      lead: "ข้อมูลติดต่อพนักงานถูกป้องกันไว้ ใส่รหัสเพื่อเข้าดูรายชื่อได้เลย",
       body: `
         <div class="dir-gate">
           <div class="dir-gate-card anim-up">
@@ -21,7 +21,7 @@ export const renderDirectory = () => {
               <button type="submit" class="dir-pw-btn" id="dir-pw-btn">${I.lock} ปลดล็อก</button>
             </form>
             <div class="dir-gate-err" id="dir-gate-err" hidden>${I.info} รหัสไม่ถูกต้อง — ลองอีกครั้ง หรือตรวจสอบรหัสใน Admin Panel</div>
-            <div class="dir-gate-hint">รหัสเริ่มต้น: <code style="background:#f0f4f8;padding:2px 6px;border-radius:4px;font-size:12px;">hr@exzy</code> &nbsp;·&nbsp; เปลี่ยนได้ที่ Admin Panel</div>
+            <div class="dir-gate-hint">ขอรหัสเข้าดูข้อมูลจาก HR หรือพี่เลี้ยงก่อนใช้งานหน้านี้</div>
           </div>
         </div>
       `,

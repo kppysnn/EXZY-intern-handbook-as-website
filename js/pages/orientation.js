@@ -95,13 +95,13 @@ export const renderOrientation = () => pageWrap({
 
     <!-- Benefits mini-cards -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0 28px;">
-      <div style="background:linear-gradient(135deg,rgba(102,197,197,.08),rgba(0,64,128,.04)); border:1px solid rgba(102,197,197,.25); border-radius:var(--radius); padding:20px;">
+      <div style="background:linear-gradient(135deg,rgba(102,197,197,.08),rgba(0,64,129,.04)); border:1px solid rgba(102,197,197,.25); border-radius:var(--radius); padding:20px;">
         <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--cyan); margin-bottom:8px;">ในออฟฟิศ</div>
         <div style="font-family:var(--display); font-size:2.2rem; font-weight:900; color:var(--ink); line-height:1;">200 ฿</div>
         <div style="font-size:13px; color:var(--muted); margin-top:4px;">ต่อวัน</div>
       </div>
-      <div style="background:linear-gradient(135deg,rgba(245,158,11,.08),rgba(245,158,11,.03)); border:1px solid rgba(245,158,11,.25); border-radius:var(--radius); padding:20px;">
-        <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:#D97706; margin-bottom:8px;">นอกสถานที่</div>
+      <div style="background:linear-gradient(135deg,var(--warning-soft),rgba(248,249,250,.72)); border:1px solid rgba(255,204,0,.42); border-radius:var(--radius); padding:20px;">
+        <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); margin-bottom:8px;">นอกสถานที่</div>
         <div style="font-family:var(--display); font-size:2.2rem; font-weight:900; color:var(--ink); line-height:1;">300 ฿</div>
         <div style="font-size:13px; color:var(--muted); margin-top:4px;">ต่อวัน</div>
       </div>
@@ -116,7 +116,7 @@ export const renderOrientation = () => pageWrap({
     </ul>
 
     <h3>Workshop และ Dining</h3>
-    <p>EXZY จัดกิจกรรม Workshop เสริมทักษะ และกิจกรรม Dining ประจำเดือน/ทีม เพื่อสร้างความสัมพันธ์ที่ดีระหว่างเพื่อนร่วมงาน</p>
+    <p>EXZY จัดกิจกรรม Workshop เสริมทักษะ และกิจกรรม Dining ประจำเดือน/ทีม เพื่อให้รู้จักทีมและเพื่อนร่วมงานมากขึ้น</p>
     <div class="callout callout-note anim-up" style="margin-top:12px;">
       <span class="ic">${I.info}</span>
       <div><p>Intern สามารถเลือกเข้าร่วมเฉพาะกิจกรรมที่สนใจ และสามารถปฏิเสธการเข้าร่วมได้ตามความสมัครใจ</p></div>

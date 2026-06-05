@@ -39,11 +39,11 @@ export const renderMeetingRooms = () => pageWrap({
         <div class="mr-v2-vis">
           <svg class="mr-room-plan" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="8" width="224" height="144" rx="10" stroke="rgba(102,197,197,0.45)" stroke-width="2" fill="rgba(102,197,197,0.04)"/>
-            <rect x="58" y="46" width="124" height="68" rx="6" stroke="rgba(0,64,128,0.35)" stroke-width="2" fill="rgba(0,64,128,0.07)"/>
-            <rect x="38" y="57" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="38" y="74" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/>
-            <rect x="190" y="57" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="190" y="74" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/>
-            <rect x="70" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="100" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="130" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="160" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/>
-            <rect x="70" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="100" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="130" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="160" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/>
+            <rect x="58" y="46" width="124" height="68" rx="6" stroke="rgba(0,64,129,0.35)" stroke-width="2" fill="rgba(0,64,129,0.07)"/>
+            <rect x="38" y="57" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="38" y="74" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/>
+            <rect x="190" y="57" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="190" y="74" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/>
+            <rect x="70" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="100" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="130" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="160" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/>
+            <rect x="70" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="100" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="130" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="160" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/>
             <rect x="18" y="56" width="6" height="48" rx="3" fill="rgba(102,197,197,0.55)"/>
             <circle cx="120" cy="80" r="22" stroke="rgba(102,197,197,0.18)" stroke-width="1.5" fill="none"/>
           </svg>
@@ -86,10 +86,10 @@ export const renderMeetingRooms = () => pageWrap({
           <div class="mr-v2-card-vis">
             <svg viewBox="0 0 160 96" fill="none">
               <rect x="5" y="5" width="150" height="86" rx="6" stroke="rgba(102,197,197,0.4)" stroke-width="1.5" fill="rgba(102,197,197,0.04)"/>
-              <rect x="20" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="63" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="106" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="42" y="58" width="76" height="16" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
+              <rect x="20" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="63" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="106" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="42" y="58" width="76" height="16" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
             </svg>
           </div>
           <div class="mr-v2-card-body">
@@ -110,12 +110,12 @@ export const renderMeetingRooms = () => pageWrap({
           <div class="mr-v2-card-vis">
             <svg viewBox="0 0 160 96" fill="none">
               <rect x="5" y="5" width="150" height="86" rx="6" stroke="rgba(102,197,197,0.4)" stroke-width="1.5" fill="rgba(102,197,197,0.04)"/>
-              <rect x="42" y="32" width="76" height="38" rx="4" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="24" y="39" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="126" y="39" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="52" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="75" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="98" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
+              <rect x="42" y="32" width="76" height="38" rx="4" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="24" y="39" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="126" y="39" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="52" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="75" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="98" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
             </svg>
           </div>
           <div class="mr-v2-card-body">
@@ -136,11 +136,11 @@ export const renderMeetingRooms = () => pageWrap({
           <div class="mr-v2-card-vis">
             <svg viewBox="0 0 160 96" fill="none">
               <rect x="5" y="5" width="150" height="86" rx="6" stroke="rgba(102,197,197,0.4)" stroke-width="1.5" fill="rgba(102,197,197,0.04)"/>
-              <rect x="54" y="32" width="52" height="30" rx="4" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="35" y="37" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="115" y="37" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="63" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="87" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
+              <rect x="54" y="32" width="52" height="30" rx="4" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="35" y="37" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="115" y="37" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="63" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="87" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
             </svg>
           </div>
           <div class="mr-v2-card-body">

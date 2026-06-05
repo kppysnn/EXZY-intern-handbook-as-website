@@ -9,7 +9,7 @@ export const renderTimesheet = () => pageWrap({
     <!-- Timesheet Hero Banner -->
     <div class="ts-hero-banner anim-up">
       <div class="ts-hero-left">
-        <h2 style="color:#fff !important">กรอกทุกวัน · ส่งสิ้นเดือน</h2>
+        <h2 style="color:var(--on-dark) !important">กรอกทุกวัน · ส่งสิ้นเดือน</h2>
         <p>HR จะส่งไฟล์ Excel Timesheet ให้ทางอีเมลตั้งแต่วันแรก</p>
         <div class="ts-hero-badges">
           <span class="ts-hero-badge">
@@ -34,17 +34,17 @@ export const renderTimesheet = () => pageWrap({
         <div class="ts-step-desc">HR ส่ง Excel Timesheet ให้ทางอีเมลตั้งแต่วันแรก</div>
       </div>
       <div class="ts-step-v anim-up" data-delay="80">
-        <div class="ts-step-node" style="background:#3B82F6">2</div>
+        <div class="ts-step-node" style="background:var(--navy)">2</div>
         <div class="ts-step-title">กรอกทุกวัน</div>
         <div class="ts-step-desc">กรอกเวลาเข้า-ออกและงานที่ทำในแต่ละวัน</div>
       </div>
       <div class="ts-step-v anim-up" data-delay="160">
-        <div class="ts-step-node" style="background:#8B5CF6">3</div>
+        <div class="ts-step-node" style="background:var(--slate)">3</div>
         <div class="ts-step-title">ระบุการลา</div>
         <div class="ts-step-desc">วันหยุด/ลา ระบุประเภทในคอลัมน์ Summary</div>
       </div>
       <div class="ts-step-v anim-up" data-delay="240">
-        <div class="ts-step-node" style="background:#EF4444">4</div>
+        <div class="ts-step-node" style="background:var(--error)">4</div>
         <div class="ts-step-title">ยื่น HR วันที่ 30–31</div>
         <div class="ts-step-desc">พิมพ์เอกสาร แล้วยื่นให้ HR ที่ออฟฟิศโดยตรง</div>
       </div>
@@ -99,7 +99,7 @@ export const renderTimesheet = () => pageWrap({
 export const renderFaqs = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Resources", null], ["FAQs", null]],
   title: "Frequently Asked Questions",
-  lead: "รวมคำถามที่ Intern ถามบ่อยที่สุด — เช็คตรงนี้ก่อน แล้วอาจไม่ต้องถามพี่เลย",
+  lead: "รวมคำถามที่ Intern ถามบ่อยที่สุด — เช็กตรงนี้ก่อน แล้วอาจไม่ต้องถามพี่เลย",
   body: `
     <!-- Filter Tabs -->
     <div class="faq-filter" id="faq-filter">

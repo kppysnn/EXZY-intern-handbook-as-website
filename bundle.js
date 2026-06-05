@@ -394,18 +394,18 @@
         Welcome to EXZY Internship
       </p>
       <h1>EXZY Intern Handbook</h1>
-      <p class="ex-home-lead">\u0E28\u0E39\u0E19\u0E22\u0E4C\u0E23\u0E27\u0E21\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2B\u0E25\u0E31\u0E07 Orientation \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A intern \u0E17\u0E35\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E40\u0E0A\u0E47\u0E01\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E43\u0E19\u0E17\u0E35\u0E48\u0E40\u0E14\u0E35\u0E22\u0E27: \u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E17\u0E35\u0E21 Timesheet \u0E41\u0E25\u0E30\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E16\u0E32\u0E21 HR \u0E0B\u0E49\u0E33</p>
+      <p class="ex-home-lead">\u0E23\u0E27\u0E21\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48 intern \u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E44\u0E27\u0E49\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48 \u2014 \u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33 \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E17\u0E35\u0E21 \u0E2B\u0E23\u0E37\u0E2D\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 </br>\u0E2B\u0E32\u0E01\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E2A\u0E07\u0E2A\u0E31\u0E22 website \u0E19\u0E35\u0E49\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E15\u0E2D\u0E1A\u0E04\u0E33\u0E16\u0E32\u0E21\u0E19\u0E31\u0E49\u0E19\u0E40\u0E2D\u0E07!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
-          \u0E40\u0E1B\u0E34\u0E14\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Handbook
+          \u0E14\u0E39\u0E2B\u0E31\u0E27\u0E02\u0E49\u0E2D\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </a>
-        <a href="#/first-day" class="ex-home-secondary" data-link>\u0E44\u0E1B\u0E17\u0E35\u0E48 Day 1 Guide</a>
+        <a href="#/first-day" class="ex-home-secondary" data-link>\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01 Day 1 Guide</a>
       </div>
     </div>
   </div>
   <a href="#ex-home-start" class="ex-home-scroll-cue" aria-label="\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E44\u0E1B\u0E14\u0E39\u0E2A\u0E48\u0E27\u0E19\u0E16\u0E31\u0E14\u0E44\u0E1B">
-    <span>\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E14\u0E39\u0E15\u0E48\u0E2D</span>
+    <span>\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39\u0E15\u0E48\u0E2D</span>
     <i aria-hidden="true"></i>
   </a>
 </section>
@@ -413,27 +413,27 @@
 <section class="ex-home-start" id="ex-home-start" aria-labelledby="ex-home-start-title">
   <div class="ex-home-start-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-home-start-title">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48 intern \u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E1B\u0E34\u0E14\u0E01\u0E48\u0E2D\u0E19</h2>
-      <p>\u0E2B\u0E19\u0E49\u0E32 First Day \u0E22\u0E31\u0E07\u0E04\u0E37\u0E2D\u0E08\u0E38\u0E14\u0E40\u0E23\u0E34\u0E48\u0E21\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E2A\u0E48\u0E27\u0E19 Home \u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D\u0E42\u0E15\u0E4A\u0E30\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D\u0E01\u0E25\u0E32\u0E07\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E2B\u0E32\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E44\u0E14\u0E49\u0E40\u0E23\u0E47\u0E27 \u0E42\u0E14\u0E22\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E25\u0E48\u0E2D\u0E48\u0E32\u0E19\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E2B\u0E25\u0E32\u0E22\u0E09\u0E1A\u0E31\u0E1A</p>
+      <h2 id="ex-home-start-title">3 \u0E2B\u0E31\u0E27\u0E02\u0E49\u0E2D\u0E2A\u0E33\u0E04\u0E31\u0E0D\u0E17\u0E35\u0E48 intern \u0E04\u0E27\u0E23\u0E23\u0E39\u0E49</h2>
+      <p>\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32\u0E2B\u0E25\u0E31\u0E01\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E02\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D \u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
     </div>
 
     <div class="ex-start-grid">
       <a href="#/first-day" class="ex-start-card ex-start-card-primary fdb-reveal" data-link>
         <span class="ex-start-index">Start</span>
         <h3>Day 1 Guide</h3>
-        <p>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33 \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E08\u0E30\u0E44\u0E14\u0E49\u0E40\u0E08\u0E2D\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19</p>
-        <strong>\u0E40\u0E1B\u0E34\u0E14\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</strong>
+        <p>\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33 \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E08\u0E30\u0E44\u0E14\u0E49\u0E40\u0E08\u0E2D\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
+        <strong>\u0E14\u0E39 Day 1 Guide</strong>
       </a>
       <a href="#/getting-started/orientation" class="ex-start-card fdb-reveal fdb-delay1" data-link>
-        <span class="ex-start-index">After Orientation</span>
+        <span class="ex-start-index">First step</span>
         <h3>Orientation</h3>
-        <p>\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E14\u0E39\u0E2A\u0E44\u0E25\u0E14\u0E4C \u0E04\u0E48\u0E32\u0E19\u0E34\u0E22\u0E21 \u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C \u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1E\u0E37\u0E49\u0E19\u0E10\u0E32\u0E19\u0E02\u0E2D\u0E07 EXZY</p>
-        <strong>\u0E17\u0E1A\u0E17\u0E27\u0E19 Orientation</strong>
+        <p>\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E14\u0E39\u0E2A\u0E44\u0E25\u0E14\u0E4C core values \u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33 \u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1E\u0E37\u0E49\u0E19\u0E10\u0E32\u0E19\u0E02\u0E2D\u0E07 EXZY</p>
+        <strong>\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E08\u0E32\u0E01 Orientation</strong>
       </a>
       <a href="#/resources/timesheet" class="ex-start-card fdb-reveal fdb-delay2" data-link>
         <span class="ex-start-index">Every Month</span>
         <h3>Timesheet</h3>
-        <p>\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01 \u0E40\u0E27\u0E25\u0E32\u0E43\u0E19\u0E01\u0E32\u0E23\u0E2A\u0E48\u0E07 \u0E41\u0E25\u0E30\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR</p>
+        <p>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E23\u0E2D\u0E01 Timesheet \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E43\u0E2B\u0E49 HR</p>
         <strong>\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01 Timesheet</strong>
       </a>
     </div>
@@ -443,8 +443,8 @@
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-folders-title">\u0E40\u0E1B\u0E34\u0E14\u0E41\u0E1F\u0E49\u0E21\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E01\u0E25\u0E32\u0E07\u0E02\u0E2D\u0E07 EXZY Intern</h2>
-      <p>\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E16\u0E39\u0E01\u0E41\u0E22\u0E01\u0E40\u0E1B\u0E47\u0E19\u0E2B\u0E21\u0E27\u0E14\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E41\u0E1F\u0E49\u0E21\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E02\u0E2D\u0E07 HR: \u0E41\u0E15\u0E30\u0E2B\u0E23\u0E37\u0E2D\u0E42\u0E1F\u0E01\u0E31\u0E2A\u0E17\u0E35\u0E48\u0E42\u0E1F\u0E25\u0E40\u0E14\u0E2D\u0E23\u0E4C\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39\u0E2B\u0E19\u0E49\u0E32\u0E17\u0E35\u0E48\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E02\u0E49\u0E2D\u0E07 \u0E41\u0E25\u0E49\u0E27\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E44\u0E1B\u0E22\u0E31\u0E07\u0E2B\u0E31\u0E27\u0E02\u0E49\u0E2D\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E17\u0E31\u0E19\u0E17\u0E35</p>
+      <h2 id="ex-folders-title">\u0E23\u0E27\u0E21\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48 intern \u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E44\u0E27\u0E49\u0E43\u0E19\u0E17\u0E35\u0E48\u0E40\u0E14\u0E35\u0E22\u0E27</h2>
+      <p>\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48 intern \u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E17\u0E31\u0E49\u0E07\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E17\u0E35\u0E21 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 \u0E41\u0E25\u0E30 FAQs</p>
     </div>
 
     <div class="ex-folder-grid">
@@ -519,7 +519,7 @@
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="14" height="14" rx="2"/><rect x="14" y="14" width="14" height="14" rx="2"/><rect x="4" y="18" width="8" height="10" rx="2"/><rect x="20" y="4" width="8" height="8" rx="2"/></svg>
           </div>
           <h3>Resources</h3>
-          <p>\u0E02\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
+          <p>\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E1A\u0E48\u0E2D\u0E22\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/resources/timesheet" data-link class="ex-folder-doc"><span>01</span> Timesheet</a>
@@ -535,8 +535,8 @@
 <section class="ex-home-quick" aria-labelledby="ex-home-quick-title">
   <div class="ex-home-quick-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-home-quick-title">\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E40\u0E1B\u0E34\u0E14\u0E1A\u0E48\u0E2D\u0E22</h2>
-      <p>\u0E17\u0E32\u0E07\u0E25\u0E31\u0E14\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
+      <h2 id="ex-home-quick-title">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E1A\u0E48\u0E2D\u0E22\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</h2>
+      <p>\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E43\u0E0A\u0E49\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E44\u0E14\u0E49\u0E2A\u0E30\u0E14\u0E27\u0E01\u0E02\u0E36\u0E49\u0E19 \u0E17\u0E31\u0E49\u0E07\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D \u0E41\u0E08\u0E49\u0E07\u0E25\u0E32 \u0E41\u0E25\u0E30\u0E2B\u0E32\u0E04\u0E33\u0E15\u0E2D\u0E1A\u0E40\u0E1A\u0E37\u0E49\u0E2D\u0E07\u0E15\u0E49\u0E19</p>
     </div>
 
     <div class="ex-quick-list">
@@ -546,11 +546,11 @@
       </a>
       <a href="#/employee/directory" data-link>
         <span>Contact</span>
-        <strong>\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D</strong>
+        <strong>\u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21</strong>
       </a>
       <a href="#/policy/leave" data-link>
         <span>Leave</span>
-        <strong>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E1B\u0E48\u0E27\u0E22</strong>
+        <strong>\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E32\u0E23\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E25\u0E32\u0E1B\u0E48\u0E27\u0E22</strong>
       </a>
       <a href="#/resources/faqs" data-link>
         <span>FAQs</span>
@@ -574,8 +574,8 @@
   <div class="ex-day-hero-inner">
     <div class="ex-day-hero-copy">
       <p class="ex-day-chapter"><span></span>EXZY Internship \xB7 First Day</p>
-      <h1>Welcome to EXZY Internship \u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49</h1>
-      <p>\u0E43\u0E0A\u0E49\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01<br>\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23 \u0E40\u0E08\u0E2D\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E44\u0E2B\u0E19\u0E1A\u0E49\u0E32\u0E07<br>\u0E41\u0E25\u0E30\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E02\u0E2D\u0E07 EXZY</p>
+      <h1><span class="h1-intro">Welcome to</span><span class="h1-brand">EXZY Internship</span><span class="h1-thai">\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E43\u0E2B\u0E49\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</span></h1>
+      <p>\u0E40\u0E0A\u0E47\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2B\u0E25\u0E31\u0E07 Orientation<br>\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23 \u0E40\u0E08\u0E2D\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E44\u0E2B\u0E19\u0E1A\u0E49\u0E32\u0E07<br>\u0E41\u0E25\u0E30\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07</p>
       <a href="#ex-day-tasks" class="ex-day-cta">\u0E14\u0E39\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</a>
     </div>
   </div>
@@ -583,8 +583,8 @@
 
 <section class="ex-day-tasks" id="ex-day-tasks" aria-labelledby="ex-day-tasks-title">
   <div class="ex-section-head ex-section-head-left fdb-reveal">
-    <h2 id="ex-day-tasks-title">\u0E2A\u0E2D\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E2A\u0E23\u0E47\u0E08\u0E01\u0E48\u0E2D\u0E19\u0E08\u0E1A\u0E27\u0E31\u0E19</h2>
-    <p>\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E08\u0E33\u0E17\u0E31\u0E49\u0E07 handbook \u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49 \u0E41\u0E04\u0E48\u0E1B\u0E34\u0E14\u0E2A\u0E2D\u0E07\u0E0A\u0E34\u0E49\u0E19\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E49\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
+    <h2 id="ex-day-tasks-title">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E14\u0E49\u0E27\u0E22 2 \u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E2A\u0E33\u0E04\u0E31\u0E0D</h2>
+    <p>\u0E2D\u0E22\u0E48\u0E32\u0E25\u0E37\u0E21 Subscribe Calendar \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E27\u0E31\u0E19\u0E2B\u0E22\u0E38\u0E14\u0E02\u0E2D\u0E07\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 \u0E41\u0E25\u0E30\u0E01\u0E23\u0E2D\u0E01 Timesheet \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E25\u0E07\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E07\u0E32\u0E19\u0E43\u0E19\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
   </div>
 
   <div class="ex-task-stage">
@@ -595,15 +595,15 @@
       <div class="ex-task-content">
         <span>Task 01</span>
         <h3>Subscribe Google Calendar</h3>
-        <p>HR \u0E08\u0E30\u0E2A\u0E48\u0E07\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E01\u0E14\u0E40\u0E1B\u0E34\u0E14 Calendar \u0E41\u0E25\u0E49\u0E27 subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E23\u0E31\u0E1A\u0E19\u0E31\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E41\u0E25\u0E30\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34</p>
+        <p>HR \u0E08\u0E30\u0E2A\u0E48\u0E07\u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E01\u0E14\u0E40\u0E1B\u0E34\u0E14 Calendar \u0E41\u0E25\u0E49\u0E27 subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39\u0E27\u0E31\u0E19\u0E2B\u0E22\u0E38\u0E14\u0E1B\u0E23\u0E30\u0E08\u0E33\u0E1B\u0E35\u0E02\u0E2D\u0E07\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
           <div class="ex-flow-step"><span>\u{1F4E7}</span><b>\u0E23\u0E31\u0E1A Email \u0E04\u0E33\u0E40\u0E0A\u0E34\u0E0D\u0E08\u0E32\u0E01 HR</b></div>
           <i></i>
           <div class="ex-flow-step"><span>\u{1F4C5}</span><b>\u0E01\u0E14 Open Calendar</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>\u2705</span><b>\u0E01\u0E14 Subscribe \u0E17\u0E31\u0E49\u0E07 2 \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</b></div>
+          <div class="ex-flow-step"><span>\u2705</span><b>\u0E01\u0E14 Subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</b></div>
         </div>
-        <p class="ex-task-note">\u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D <a href="mailto:${hrEmail}">${hrEmail}</a></p>
+        <p class="ex-task-note">\u0E2B\u0E32\u0E01\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A Calendar invitation \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D <a href="mailto:${hrEmail}">${hrEmail}</a></p>
       </div>
     </article>
 
@@ -614,13 +614,13 @@
       <div class="ex-task-content">
         <span>Task 02</span>
         <h3>\u0E01\u0E23\u0E2D\u0E01 Timesheet</h3>
-        <p>\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E35\u0E48 HR \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 \u0E17\u0E33\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E41\u0E25\u0E30\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E40\u0E21\u0E37\u0E48\u0E2D\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</p>
+        <p>\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E07\u0E32\u0E19\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E44\u0E1F\u0E25\u0E4C\u0E17\u0E35\u0E48 HR \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 \u0E17\u0E33\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E41\u0E25\u0E30\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E40\u0E1B\u0E47\u0E19\u0E01\u0E23\u0E30\u0E14\u0E32\u0E29\u0E15\u0E2D\u0E19\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 (\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30-31)</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
           <div class="ex-flow-step"><span>\u{1F4C2}</span><b>\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C Timesheet \u0E08\u0E32\u0E01 HR</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>\u270F\uFE0F</span><b>\u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E41\u0E25\u0E30\u0E01\u0E23\u0E2D\u0E01\u0E27\u0E31\u0E19\u0E19\u0E35\u0E49</b></div>
+          <div class="ex-flow-step"><span>\u270F\uFE0F</span><b>\u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E41\u0E25\u0E30\u0E40\u0E23\u0E34\u0E48\u0E21\u0E01\u0E23\u0E2D\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>\u{1F5A8}\uFE0F</span><b>\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19</b></div>
+          <div class="ex-flow-step"><span>\u{1F5A8}\uFE0F</span><b>\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 </br>(\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30-31)</b></div>
         </div>
         <a href="#/resources/timesheet" class="ex-task-btn" data-link>\u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet \u2192</a>
       </div>
@@ -630,8 +630,8 @@
 
 <section class="ex-day-road" aria-labelledby="ex-day-road-title">
   <div class="ex-section-head fdb-reveal">
-    <h2 id="ex-day-road-title">\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</h2>
-    <p>\u0E17\u0E38\u0E01\u0E04\u0E19\u0E2D\u0E32\u0E08\u0E44\u0E14\u0E49\u0E40\u0E27\u0E25\u0E32\u0E19\u0E31\u0E14\u0E15\u0E48\u0E32\u0E07\u0E01\u0E31\u0E19 \u0E41\u0E15\u0E48\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E04\u0E37\u0E2D 4 step \u0E19\u0E35\u0E49</p>
+    <h2 id="ex-day-road-title">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E08\u0E2D\u0E01\u0E31\u0E1A\u0E2D\u0E30\u0E44\u0E23\u0E1A\u0E49\u0E32\u0E07</h2>
+    <p>4 steps \u0E2B\u0E25\u0E31\u0E01 \u0E17\u0E35\u0E48 intern \u0E08\u0E30\u0E44\u0E14\u0E49\u0E40\u0E08\u0E2D\u0E43\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E01\u0E32\u0E23\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E01\u0E32\u0E23\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19</p>
   </div>
 
   <div class="ex-info-roadmap" aria-label="\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01">
@@ -643,7 +643,7 @@
     <article class="ex-info-stop ex-info-stop-1 fdb-reveal" style="--stop:#66C5C5">
       <span class="ex-info-pin">01</span>
       <h3>Orientation</h3>
-      <p>\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 \u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49 \u0E41\u0E25\u0E30\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E04\u0E27\u0E23\u0E16\u0E32\u0E21 HR \u0E43\u0E2B\u0E49\u0E04\u0E23\u0E1A\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E15\u0E49\u0E19</p>
+      <p>\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 EXZY \u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E30\u0E2B\u0E32\u0E01\u0E21\u0E35\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E16\u0E32\u0E21 \u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E16\u0E32\u0E21\u0E1E\u0E35\u0E48 HR \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22!</p>
       <div class="ex-road-mini">
         <span>\u{1F3E2}<b>EXZY</b></span>
         <span>\u{1F4BB}<b>Tools</b></span>
@@ -653,8 +653,8 @@
 
     <article class="ex-info-stop ex-info-stop-2 fdb-reveal fdb-delay1" style="--stop:#004081">
       <span class="ex-info-pin">02</span>
-      <h3>Metropolis &amp; CI</h3>
-      <p>\u0E40\u0E02\u0E49\u0E32\u0E43\u0E08\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E17\u0E35\u0E48\u0E1A\u0E2D\u0E01\u0E27\u0E48\u0E32 "\u0E19\u0E35\u0E48\u0E04\u0E37\u0E2D EXZY" \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E42\u0E25\u0E42\u0E01\u0E49 \u0E1F\u0E2D\u0E19\u0E15\u0E4C \u0E2A\u0E35 layout \u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E15\u0E31\u0E27 \u0E1C\u0E39\u0E49\u0E04\u0E19 \u0E41\u0E25\u0E30\u0E2A\u0E16\u0E32\u0E19\u0E17\u0E35\u0E48</p>
+      <h3>Metropolis</h3>
+      <p>\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E15\u0E31\u0E27\u0E15\u0E19\u0E02\u0E2D\u0E07 EXZY \u0E1C\u0E48\u0E32\u0E19\u0E42\u0E25\u0E42\u0E01\u0E49 \u0E2A\u0E35 \u0E1F\u0E2D\u0E19\u0E15\u0E4C \u0E2A\u0E44\u0E15\u0E25\u0E4C\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E30\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</p>
       <div class="ex-road-mini">
         <span>\u2726<b>Logo</b></span>
         <span>\u{1F3A8}<b>Color</b></span>
@@ -665,7 +665,7 @@
     <article class="ex-info-stop ex-info-stop-3 fdb-reveal fdb-delay1" style="--stop:#586782">
       <span class="ex-info-pin">03</span>
       <h3>Mentor &amp; Team</h3>
-      <p>\u0E40\u0E08\u0E2D\u0E04\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E04\u0E38\u0E13\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07 internship \u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 mentor \u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19\u0E16\u0E32\u0E21 team lead \u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E23\u0E48\u0E27\u0E21\u0E17\u0E35\u0E21</p>
+      <p>\u0E1E\u0E39\u0E14\u0E04\u0E38\u0E22\u0E01\u0E31\u0E1A\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E17\u0E35\u0E48\u0E08\u0E30\u0E14\u0E39\u0E41\u0E25\u0E04\u0E38\u0E13\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E01\u0E31\u0E1A\u0E2A\u0E21\u0E32\u0E0A\u0E34\u0E01\u0E43\u0E19\u0E17\u0E35\u0E21\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19\u0E14\u0E49\u0E27\u0E22 \u0E41\u0E25\u0E30\u0E1E\u0E39\u0E14\u0E04\u0E38\u0E22\u0E16\u0E36\u0E07\u0E04\u0E27\u0E32\u0E21\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E41\u0E25\u0E30\u0E04\u0E27\u0E32\u0E21\u0E04\u0E32\u0E14\u0E2B\u0E27\u0E31\u0E07\u0E43\u0E19\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</p>
       <div class="ex-road-mini">
         <span>\u{1F9ED}<b>Mentor</b></span>
         <span>\u{1F91D}<b>Team</b></span>
@@ -676,8 +676,8 @@
     <article class="ex-info-stop ex-info-stop-4 fdb-reveal fdb-delay2" style="--stop:#004081">
       <span class="ex-info-pin">04</span>
       <h3>Timesheet</h3>
-      <p>\u0E1B\u0E34\u0E14\u0E17\u0E49\u0E32\u0E22\u0E14\u0E49\u0E27\u0E22\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49 HR \u0E15\u0E23\u0E27\u0E08\u0E41\u0E25\u0E30\u0E43\u0E0A\u0E49\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E44\u0E14\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07</p>
-      <a href="#/resources/timesheet" class="ex-road-btn" data-link>\u0E40\u0E1B\u0E34\u0E14\u0E2B\u0E19\u0E49\u0E32 Timesheet \u2192</a>
+      <p>\u0E40\u0E23\u0E34\u0E48\u0E21\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u0E2D\u0E2D\u0E01\u0E15\u0E32\u0E21\u0E08\u0E23\u0E34\u0E07 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E01\u0E47\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E07\u0E32\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E0A\u0E49\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E43\u0E2B\u0E49\u0E01\u0E31\u0E1A hr \u0E17\u0E38\u0E01\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E44\u0E14\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07</p>
+      <a href="#/resources/timesheet" class="ex-road-btn" data-link>\u0E14\u0E39\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01 Timesheet \u2192</a>
     </article>
   </div>
 </section>
@@ -687,8 +687,8 @@
 
     <div class="ex-more-headline">
       <p class="ex-more-kicker"><span></span>Intern Handbook Map</p>
-      <h2 id="ex-day-more-title">\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E04\u0E37\u0E2D\u0E1A\u0E17\u0E41\u0E23\u0E01<br>\u0E2A\u0E48\u0E27\u0E19 Home \u0E04\u0E37\u0E2D\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48\u0E17\u0E31\u0E49\u0E07\u0E40\u0E25\u0E48\u0E21</h2>
-      <p>Handbook \u0E19\u0E35\u0E49\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E04\u0E23\u0E1A\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E17\u0E31\u0E49\u0E07 internship \u2014 \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21 \u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D \u0E41\u0E25\u0E30\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48\u0E21\u0E31\u0E01\u0E40\u0E08\u0E2D</p>
+      <h2 id="ex-day-more-title">\u0E2D\u0E48\u0E32\u0E19\u0E15\u0E48\u0E2D\u0E43\u0E19 <br>Intern Handbook</h2>
+      <p>\u0E2D\u0E48\u0E32\u0E19\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E17\u0E35\u0E48 intern \u0E04\u0E27\u0E23\u0E23\u0E39\u0E49\u0E41\u0E25\u0E30\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21 \u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E02\u0E49\u0E2D\u0E07</p>
       <a href="#/" class="ex-more-home" data-link>
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         \u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E2B\u0E19\u0E49\u0E32 Home
@@ -824,7 +824,7 @@
 
     <!-- Benefits mini-cards -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0 28px;">
-      <div style="background:linear-gradient(135deg,rgba(102,197,197,.08),rgba(0,64,128,.04)); border:1px solid rgba(102,197,197,.25); border-radius:var(--radius); padding:20px;">
+      <div style="background:linear-gradient(135deg,rgba(102,197,197,.08),rgba(0,64,129,.04)); border:1px solid rgba(102,197,197,.25); border-radius:var(--radius); padding:20px;">
         <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--cyan); margin-bottom:8px;">\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</div>
         <div style="font-family:var(--display); font-size:2.2rem; font-weight:900; color:var(--ink); line-height:1;">200 \u0E3F</div>
         <div style="font-size:13px; color:var(--muted); margin-top:4px;">\u0E15\u0E48\u0E2D\u0E27\u0E31\u0E19</div>
@@ -845,7 +845,7 @@
     </ul>
 
     <h3>Workshop \u0E41\u0E25\u0E30 Dining</h3>
-    <p>EXZY \u0E08\u0E31\u0E14\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21 Workshop \u0E40\u0E2A\u0E23\u0E34\u0E21\u0E17\u0E31\u0E01\u0E29\u0E30 \u0E41\u0E25\u0E30\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21 Dining \u0E1B\u0E23\u0E30\u0E08\u0E33\u0E40\u0E14\u0E37\u0E2D\u0E19/\u0E17\u0E35\u0E21 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E31\u0E21\u0E1E\u0E31\u0E19\u0E18\u0E4C\u0E17\u0E35\u0E48\u0E14\u0E35\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19</p>
+    <p>EXZY \u0E08\u0E31\u0E14\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21 Workshop \u0E40\u0E2A\u0E23\u0E34\u0E21\u0E17\u0E31\u0E01\u0E29\u0E30 \u0E41\u0E25\u0E30\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21 Dining \u0E1B\u0E23\u0E30\u0E08\u0E33\u0E40\u0E14\u0E37\u0E2D\u0E19/\u0E17\u0E35\u0E21 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E17\u0E35\u0E21\u0E41\u0E25\u0E30\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19\u0E21\u0E32\u0E01\u0E02\u0E36\u0E49\u0E19</p>
     <div class="callout callout-note anim-up" style="margin-top:12px;">
       <span class="ic">${I.info}</span>
       <div><p>Intern \u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E40\u0E02\u0E49\u0E32\u0E23\u0E48\u0E27\u0E21\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21\u0E17\u0E35\u0E48\u0E2A\u0E19\u0E43\u0E08 \u0E41\u0E25\u0E30\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E1B\u0E0F\u0E34\u0E40\u0E2A\u0E18\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E23\u0E48\u0E27\u0E21\u0E44\u0E14\u0E49\u0E15\u0E32\u0E21\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E21\u0E31\u0E04\u0E23\u0E43\u0E08</p></div>
@@ -970,7 +970,7 @@
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
             \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19
           </button>
-          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E02\u0E01\u0E17\u0E35\u0E48\u0E21\u0E32\u0E40\u0E22\u0E37\u0E2D\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u2014 \u0E41\u0E0A\u0E23\u0E4C\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E01\u0E31\u0E1A\u0E04\u0E19\u0E17\u0E35\u0E48\u0E21\u0E32\u0E1E\u0E1A\u0E01\u0E31\u0E19\u0E08\u0E23\u0E34\u0E07 \u0E46</p>
+          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E02\u0E01\u0E17\u0E35\u0E48\u0E21\u0E32\u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u2014 \u0E41\u0E0A\u0E23\u0E4C\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E01\u0E31\u0E1A\u0E04\u0E19\u0E17\u0E35\u0E48\u0E21\u0E32\u0E1E\u0E1A\u0E01\u0E31\u0E19\u0E08\u0E23\u0E34\u0E07 \u0E46</p>
         </div>
       </div>
     </div>
@@ -1053,11 +1053,11 @@
         <div class="mr-v2-vis">
           <svg class="mr-room-plan" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="8" width="224" height="144" rx="10" stroke="rgba(102,197,197,0.45)" stroke-width="2" fill="rgba(102,197,197,0.04)"/>
-            <rect x="58" y="46" width="124" height="68" rx="6" stroke="rgba(0,64,128,0.35)" stroke-width="2" fill="rgba(0,64,128,0.07)"/>
-            <rect x="38" y="57" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="38" y="74" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/>
-            <rect x="190" y="57" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="190" y="74" width="12" height="10" rx="2" fill="rgba(0,64,128,0.22)"/>
-            <rect x="70" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="100" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="130" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="160" y="28" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/>
-            <rect x="70" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="100" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="130" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/><rect x="160" y="121" width="12" height="11" rx="2" fill="rgba(0,64,128,0.22)"/>
+            <rect x="58" y="46" width="124" height="68" rx="6" stroke="rgba(0,64,129,0.35)" stroke-width="2" fill="rgba(0,64,129,0.07)"/>
+            <rect x="38" y="57" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="38" y="74" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/>
+            <rect x="190" y="57" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="190" y="74" width="12" height="10" rx="2" fill="rgba(0,64,129,0.22)"/>
+            <rect x="70" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="100" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="130" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="160" y="28" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/>
+            <rect x="70" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="100" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="130" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/><rect x="160" y="121" width="12" height="11" rx="2" fill="rgba(0,64,129,0.22)"/>
             <rect x="18" y="56" width="6" height="48" rx="3" fill="rgba(102,197,197,0.55)"/>
             <circle cx="120" cy="80" r="22" stroke="rgba(102,197,197,0.18)" stroke-width="1.5" fill="none"/>
           </svg>
@@ -1100,10 +1100,10 @@
           <div class="mr-v2-card-vis">
             <svg viewBox="0 0 160 96" fill="none">
               <rect x="5" y="5" width="150" height="86" rx="6" stroke="rgba(102,197,197,0.4)" stroke-width="1.5" fill="rgba(102,197,197,0.04)"/>
-              <rect x="20" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="63" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="106" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="42" y="58" width="76" height="16" rx="3" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
+              <rect x="20" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="63" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="106" y="26" width="34" height="20" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="42" y="58" width="76" height="16" rx="3" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
             </svg>
           </div>
           <div class="mr-v2-card-body">
@@ -1124,12 +1124,12 @@
           <div class="mr-v2-card-vis">
             <svg viewBox="0 0 160 96" fill="none">
               <rect x="5" y="5" width="150" height="86" rx="6" stroke="rgba(102,197,197,0.4)" stroke-width="1.5" fill="rgba(102,197,197,0.04)"/>
-              <rect x="42" y="32" width="76" height="38" rx="4" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="24" y="39" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="126" y="39" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="52" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="75" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="98" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
+              <rect x="42" y="32" width="76" height="38" rx="4" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="24" y="39" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="126" y="39" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="52" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="75" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="98" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
             </svg>
           </div>
           <div class="mr-v2-card-body">
@@ -1150,11 +1150,11 @@
           <div class="mr-v2-card-vis">
             <svg viewBox="0 0 160 96" fill="none">
               <rect x="5" y="5" width="150" height="86" rx="6" stroke="rgba(102,197,197,0.4)" stroke-width="1.5" fill="rgba(102,197,197,0.04)"/>
-              <rect x="54" y="32" width="52" height="30" rx="4" stroke="rgba(0,64,128,0.3)" stroke-width="1.5" fill="rgba(0,64,128,0.06)"/>
-              <rect x="35" y="37" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="115" y="37" width="10" height="9" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="63" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
-              <rect x="87" y="18" width="10" height="8" rx="2" fill="rgba(0,64,128,0.22)"/>
+              <rect x="54" y="32" width="52" height="30" rx="4" stroke="rgba(0,64,129,0.3)" stroke-width="1.5" fill="rgba(0,64,129,0.06)"/>
+              <rect x="35" y="37" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="115" y="37" width="10" height="9" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="63" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
+              <rect x="87" y="18" width="10" height="8" rx="2" fill="rgba(0,64,129,0.22)"/>
             </svg>
           </div>
           <div class="mr-v2-card-body">
@@ -1345,7 +1345,7 @@
       return pageWrap({
         crumbs: [["Home", "#/home"], ["Company", null], ["Employee Contact", null]],
         title: "Employee Contact",
-        lead: "\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E16\u0E39\u0E01\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E44\u0E27\u0E49 \u0E01\u0E23\u0E38\u0E13\u0E32\u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E02\u0E49\u0E32\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25",
+        lead: "\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E16\u0E39\u0E01\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E44\u0E27\u0E49 \u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E02\u0E49\u0E32\u0E14\u0E39\u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22",
         body: `
         <div class="dir-gate">
           <div class="dir-gate-card anim-up">
@@ -1711,7 +1711,7 @@
     <div class="callout anim-up">
       <span class="ic">${I.info}</span>
       <div>
-        <h4>\u0E01\u0E32\u0E23\u0E25\u0E32\u0E08\u0E30\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E01\u0E47\u0E1A\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49</h4>
+        <h4>\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E25\u0E32\u0E08\u0E30\u0E44\u0E21\u0E48\u0E19\u0E31\u0E1A\u0E40\u0E1B\u0E47\u0E19\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</h4>
         <p>\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E40\u0E0B\u0E47\u0E19\u0E23\u0E31\u0E1A\u0E23\u0E2D\u0E07\u0E15\u0E32\u0E21\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u2014 \u0E25\u0E32\u0E1A\u0E48\u0E2D\u0E22\u0E2D\u0E32\u0E08\u0E2A\u0E48\u0E07\u0E1C\u0E25\u0E15\u0E48\u0E2D\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E2A\u0E48\u0E07\u0E2A\u0E16\u0E32\u0E1A\u0E31\u0E19 \u0E08\u0E31\u0E14\u0E01\u0E32\u0E23\u0E27\u0E31\u0E19\u0E25\u0E32\u0E43\u0E2B\u0E49\u0E14\u0E35\u0E19\u0E30</p>
       </div>
     </div>
@@ -1760,7 +1760,7 @@
       <span class="ic">${I.shield}</span>
       <div>
         <h4>\u0E01\u0E32\u0E23\u0E25\u0E32\u0E17\u0E35\u0E48\u0E21\u0E32\u0E01\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B</h4>
-        <p>\u0E16\u0E49\u0E32\u0E25\u0E32\u0E1A\u0E48\u0E2D\u0E22\u0E08\u0E19\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E40\u0E2B\u0E47\u0E19\u0E27\u0E48\u0E32\u0E44\u0E21\u0E48\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21 \u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E2D\u0E32\u0E08\u0E1E\u0E34\u0E08\u0E32\u0E23\u0E13\u0E32\u0E22\u0E38\u0E15\u0E34\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30\u0E41\u0E08\u0E49\u0E07\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22 \u2014 \u0E40\u0E1B\u0E34\u0E14\u0E43\u0E08\u0E04\u0E38\u0E22\u0E01\u0E31\u0E1A\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E2A\u0E21\u0E2D\u0E19\u0E30</p>
+        <p>\u0E16\u0E49\u0E32\u0E25\u0E32\u0E1A\u0E48\u0E2D\u0E22\u0E08\u0E19\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E40\u0E2B\u0E47\u0E19\u0E27\u0E48\u0E32\u0E44\u0E21\u0E48\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21 \u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E2D\u0E32\u0E08\u0E1E\u0E34\u0E08\u0E32\u0E23\u0E13\u0E32\u0E22\u0E38\u0E15\u0E34\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30\u0E41\u0E08\u0E49\u0E07\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22 \u2014 \u0E25\u0E2D\u0E07\u0E04\u0E38\u0E22\u0E01\u0E31\u0E1A\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E14\u0E35\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14</p>
       </div>
     </div>
   `
@@ -1864,7 +1864,7 @@
   var renderFaqs = () => pageWrap({
     crumbs: [["Home", "#/home"], ["Resources", null], ["FAQs", null]],
     title: "Frequently Asked Questions",
-    lead: "\u0E23\u0E27\u0E21\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48 Intern \u0E16\u0E32\u0E21\u0E1A\u0E48\u0E2D\u0E22\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14 \u2014 \u0E40\u0E0A\u0E47\u0E04\u0E15\u0E23\u0E07\u0E19\u0E35\u0E49\u0E01\u0E48\u0E2D\u0E19 \u0E41\u0E25\u0E49\u0E27\u0E2D\u0E32\u0E08\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E16\u0E32\u0E21\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E22",
+    lead: "\u0E23\u0E27\u0E21\u0E04\u0E33\u0E16\u0E32\u0E21\u0E17\u0E35\u0E48 Intern \u0E16\u0E32\u0E21\u0E1A\u0E48\u0E2D\u0E22\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14 \u2014 \u0E40\u0E0A\u0E47\u0E01\u0E15\u0E23\u0E07\u0E19\u0E35\u0E49\u0E01\u0E48\u0E2D\u0E19 \u0E41\u0E25\u0E49\u0E27\u0E2D\u0E32\u0E08\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E16\u0E32\u0E21\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E22",
     body: `
     <!-- Filter Tabs -->
     <div class="faq-filter" id="faq-filter">

@@ -62,7 +62,7 @@ export const renderWifi = () => pageWrap({
           </div>
           <button class="wn-connect-btn wf2-connect-btn" data-wifi="staff">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            คัดลอกรหัส + เปิด Wi-Fi Settings
+            คัดลอกรหัสผ่าน
           </button>
           <p class="wn-note">สำหรับพนักงาน / Intern เท่านั้น — ไม่แชร์กับบุคคลภายนอก</p>
         </div>
@@ -105,9 +105,9 @@ export const renderWifi = () => pageWrap({
           </div>
           <button class="wn-connect-btn wn-connect-guest wf2-connect-btn" data-wifi="guest">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            คัดลอกรหัส + เปิด Wi-Fi Settings
+            คัดลอกรหัสผ่าน
           </button>
-          <p class="wn-note">สำหรับแขกที่มาเยือนออฟฟิศ — แชร์เฉพาะกับคนที่มาพบกันจริง ๆ</p>
+          <p class="wn-note">สำหรับแขกที่มาที่ออฟฟิศ — แชร์เฉพาะกับคนที่มาพบกันจริง ๆ</p>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@ export const renderWifi = () => pageWrap({
           <div class="wn-how-n">2</div>
           <div class="wn-how-content">
             <div class="wn-how-title">คัดลอกรหัส</div>
-            <div class="wn-how-desc">กดปุ่ม "คัดลอกรหัส" — รหัสจะถูกคัดลอกไป clipboard พร้อมเปิด Settings</div>
+            <div class="wn-how-desc">กดปุ่ม "คัดลอกรหัสผ่าน" แล้วนำไปวางในหน้าตั้งค่า Wi-Fi ของอุปกรณ์</div>
           </div>
         </div>
         <div class="wn-how-step">
