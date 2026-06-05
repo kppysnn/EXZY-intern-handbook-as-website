@@ -10669,6 +10669,7 @@ p.hero-word, div.hero-word { display: block; }
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 .slc-header-facebook { background: linear-gradient(135deg, #1877F2 0%, #0C5FD8 100%); }
 .slc-header-medium   { background: linear-gradient(135deg, #003830 0%, #00ab6c 100%); }
