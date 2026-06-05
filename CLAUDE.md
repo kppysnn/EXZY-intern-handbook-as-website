@@ -1,0 +1,67 @@
+# EXZY Intern Handbook — Project Rules for Claude
+
+## Build & Deploy Workflow (MANDATORY)
+
+เมื่อผู้ใช้สั่ง "commit and push", "push ขึ้น git", "deploy ไป Vercel" หรือคำที่มีความหมายเดียวกัน ให้ทำตามขั้นตอนนี้เสมอ:
+
+### ขั้นตอน (ห้ามข้าม)
+
+```
+1. แก้ไขไฟล์ source จริง: js/pages/*.js (home.js, first-day.js ฯลฯ)
+   → ห้ามแก้ bundle.js โดยตรง (มันคือ build output ไม่ใช่ source)
+
+2. รัน build เพื่อ regenerate bundle.js จาก source ที่แก้ไขแล้ว:
+   npm run build
+
+3. Verify ว่า build สำเร็จและ content ครบ:
+   node --check bundle.js
+
+4. git add ทุกไฟล์ที่เปลี่ยน รวมถึง:
+   - js/pages/*.js (source files ที่แก้)
+   - bundle.js (built output)
+   - styles.css (ถ้าแก้)
+   - index.html (ถ้าแก้)
+   - vercel.json (ถ้าแก้)
+
+5. git commit พร้อม message ที่อธิบาย changes
+
+6. git push origin main
+```
+
+### เหตุผล
+
+- Vercel รัน `npm run build` ทุกครั้งที่ deploy
+- ถ้าแก้ `bundle.js` โดยตรงแต่ไม่ sync กลับ source → Vercel จะ rebuild จาก source เก่า ทำให้ changes หาย
+- Source of truth คือ `js/pages/*.js` และ `app.js`
+
+### Project Structure
+
+```
+app.js              ← entry point (import จาก js/pages/*)
+js/pages/
+  home.js           ← renderHome() — หน้า Home
+  first-day.js      ← renderFirstDay() — หน้า First Day
+  orientation.js
+  wifi.js
+  ... (หน้าอื่นๆ)
+bundle.js           ← BUILD OUTPUT (esbuild จาก app.js)
+styles.css          ← ไฟล์ CSS ทั้งหมด
+index.html          ← HTML shell (มี versioned CSS link)
+vercel.json         ← Vercel config (buildCommand: npm run build)
+```
+
+### Quick Reference
+
+```bash
+# แก้หน้า home
+code js/pages/home.js
+
+# แก้หน้า first-day
+code js/pages/first-day.js
+
+# Build + commit + push
+npm run build && \
+git add js/pages/ bundle.js styles.css index.html && \
+git commit -m "your message" && \
+git push origin main
+```
