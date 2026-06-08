@@ -37,12 +37,13 @@ export function acc(q, a) {
 
 const _sectionMeta = {
   "Getting Started": { num: "01", label: "Getting Started", section: "getting-started" },
-  "Work Policy":     { num: "02", label: "Work Policy",     section: "policy" },
-  "Resources":       { num: "03", label: "Resources",       section: "resources" },
-  "Company":         { num: "04", label: "Company",         section: "company" },
-  "Employee":        { num: "04", label: "Company",         section: "company" },
-  "Showcase":        { num: "05", label: "Showcase",        section: "showcase" },
-  "Admin":           { num: "06", label: "Admin",           section: "admin" },
+  "Intern Tasks":    { num: "02", label: "Intern Tasks",    section: "tasks" },
+  "Company":         { num: "03", label: "Company",         section: "company" },
+  "Employee":        { num: "03", label: "Company",         section: "company" },
+  "Work Policy":     { num: "04", label: "Work Policy",     section: "policy" },
+  "Resources":       { num: "05", label: "Resources",       section: "resources" },
+  "Showcase":        { num: "06", label: "Showcase",        section: "showcase" },
+  "Admin":           { num: "07", label: "Admin",           section: "admin" },
 };
 
 export function pageWrap({ crumbs, title, lead, body, toc }) {
@@ -69,12 +70,11 @@ export function pageWrap({ crumbs, title, lead, body, toc }) {
     <!-- PAGE HERO BAND -->
     <div class="page-hero-band" data-section="${meta.section || 'getting-started'}">
       <div class="phb-inner">
-        <div class="breadcrumb anim-up" style="margin-bottom:10px;">${crumbHtml}</div>
-        <div class="phb-eyebrow anim-up" data-delay="40">
+        <div class="phb-eyebrow anim-up">
           ${meta.label}
         </div>
-        <h1 class="phb-title anim-up" data-delay="80">${title}</h1>
-        <p class="phb-lead anim-up" data-delay="130">${lead}</p>
+        <h1 class="phb-title anim-up" data-delay="40">${title}</h1>
+        <p class="phb-lead anim-up" data-delay="90">${lead}</p>
       </div>
       <div class="phb-deco-num" aria-hidden="true">${meta.num}</div>
     </div>

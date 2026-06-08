@@ -68,25 +68,25 @@ export const renderOrientation = () => pageWrap({
     <div class="proj-cards">
       <div class="proj-card anim-up">
         <div class="proj-num">01</div>
-        <h4>Project or Report</h4>
+        <h3>Project or Report</h3>
         <p>โปรเจกต์หรือรายงานที่รับผิดชอบดูแลและนำส่งมหาวิทยาลัย</p>
       </div>
       <div class="proj-card anim-up" data-delay="80">
         <div class="proj-num">02</div>
-        <h4>Team Project</h4>
+        <h3>Team Project</h3>
         <p>โปรเจกต์ที่พี่เลี้ยงของแต่ละ Team Assign ให้ตามทักษะและสายงาน</p>
       </div>
       <div class="proj-card anim-up" data-delay="160">
         <div class="proj-num">03</div>
-        <h4>HR Project</h4>
-        <p>โปรเจกต์ที่ HR Assign ให้เพื่อสนับสนุนงานภายในองค์กร</p>
+        <h3>HR / BD Project</h3>
+        <p>งาน content ที่ HR หรือ BD assign ให้ เผยแพร่บนช่องทาง public และส่งก่อนจบฝึกงาน 2 อาทิตย์</p>
       </div>
     </div>
 
     <div class="callout anim-up" style="margin-top:20px;">
       <span class="ic">${I.info}</span>
       <div>
-        <h4>หมายเหตุ</h4>
+        <h3>หมายเหตุ</h3>
         <p>รูปแบบโปรเจกต์อาจแตกต่างกันตามเงื่อนไขมหาวิทยาลัยหรือทักษะ — Intern ทุกคนต้องรับผิดชอบงานที่ได้รับมอบหมายด้วยตัวเอง</p>
       </div>
     </div>
@@ -110,7 +110,7 @@ export const renderOrientation = () => pageWrap({
     <p>เอกสารที่ต้องใช้ในการขอรับเบี้ยเลี้ยง (กำหนดส่งวันที่ 30–31 ของทุกเดือน):</p>
     <ul>
       <li>สำเนาบัตรประชาชน พร้อมเซ็นสำเนาถูกต้อง — ส่งทุกเดือน</li>
-      <li>เอกสาร Intern Timesheet — <a href="#/resources/timesheet" data-link class="inline-link">ดูวิธีกรอก</a> — ส่งทุกเดือน</li>
+      <li>เอกสาร Intern Timesheet — <a href="#/tasks/timesheet" data-link class="inline-link">ดูวิธีกรอก</a> — ส่งทุกเดือน</li>
       <li>สำเนา Bookbank ของบัญชีที่ต้องการใช้รับเงิน — ส่งแค่เดือนแรก</li>
       <li style="margin-top:6px;color:var(--navy);font-weight:600;">📅 กำหนดส่ง: วันที่ 30–31 ของทุกเดือน · 📄 วิธีส่ง: พิมพ์ออกกระดาษและยื่นให้ HR ที่ออฟฟิศ</li>
     </ul>
@@ -127,7 +127,8 @@ export const renderOrientation = () => pageWrap({
       <div class="ae-links">
         <a href="#/policy/code-of-conduct" class="ae-chip" data-link>${I.shield} Core Values</a>
         <a href="#/policy/internship" class="ae-chip" data-link>${I.clock} Internship Policy</a>
-        <a href="#/resources/timesheet" class="ae-chip" data-link>${I.doc} Timesheet</a>
+        <a href="#/tasks/timesheet" class="ae-chip" data-link>${I.doc} Timesheet</a>
+        <a href="#/tasks/hr-bd-project" class="ae-chip" data-link>${I.edit} HR / BD Project</a>
         <a href="#/employee/org-chart" class="ae-chip" data-link>${I.people} โครงสร้างองค์กร</a>
       </div>
     </div>

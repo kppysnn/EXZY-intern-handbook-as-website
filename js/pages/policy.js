@@ -98,7 +98,7 @@ export const renderCodeOfConduct = () => pageWrap({
     <div class="callout" style="margin-top:36px;">
       <span class="ic">${I.sparkle}</span>
       <div>
-        <h4>นำ Core Values ไปใช้ในการทำงาน</h4>
+        <h2>นำ Core Values ไปใช้ในการทำงาน</h2>
         <p>ค่านิยมเหล่านี้เป็นแกนหลักของการทำงานที่นี่ — Intern ที่ใช้มันจริง ๆ ทุกวัน มีโอกาสได้รับการพิจารณาเป็นพนักงานประจำหลังจบฝึกงาน</p>
       </div>
     </div>
@@ -149,7 +149,7 @@ export const renderInternshipPolicy = () => pageWrap({
     <div class="callout anim-up" style="margin-bottom:28px;">
       <span class="ic">${I.info}</span>
       <div>
-        <h4>เวลาทำงานขึ้นอยู่กับแผนกที่ได้รับมอบหมาย</h4>
+        <h3>เวลาทำงานขึ้นอยู่กับแผนกที่ได้รับมอบหมาย</h3>
         <p>ถามพี่เลี้ยงหรือ HR ว่าแผนกของตัวเองใช้กะไหน — ทำงาน 8 ชม. (ไม่รวมพักเที่ยง 1 ชม.) จันทร์ – ศุกร์</p>
       </div>
     </div>
@@ -159,42 +159,33 @@ export const renderInternshipPolicy = () => pageWrap({
       <div class="rule-card">
         <div class="rule-icon">${I.door}</div>
         <div class="rule-body">
-          <h4>มาออฟฟิศ หรือสถานที่ที่ Assign ไว้เท่านั้น</h4>
+          <h3>มาออฟฟิศ หรือสถานที่ที่ Assign ไว้เท่านั้น</h3>
           <p>ต้องเข้าฝึกที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม Assign ไว้ — ไม่แน่ใจ ให้ถามพี่เลี้ยงก่อนทุกครั้ง · <strong>ไม่อนุญาต WFH</strong> สำหรับ Intern</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.clock}</div>
         <div class="rule-body">
-          <h4>ลงเวลาเข้า – ออกทุกวัน</h4>
+          <h3>ลงเวลาเข้า – ออกทุกวัน</h3>
           <p>กรอก Timesheet ทุกวันที่มา — บริษัทเซ็นรับรองตามชั่วโมงฝึกงานจริง</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.doc}</div>
         <div class="rule-body">
-          <h4>ดูแลชั่วโมงตัวเองด้วยนะ</h4>
+          <h3>ดูแลชั่วโมงตัวเองด้วยนะ</h3>
           <p>บริหารชั่วโมงฝึกงานและเอกสารต่าง ๆ เองเลย — พี่เลี้ยงช่วยแนะนำได้ แต่ต้องติดตามเองด้วย</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.calendar}</div>
         <div class="rule-body">
-          <h4>วันหยุดบริษัท 15 วัน/ปี</h4>
+          <h3>วันหยุดบริษัท 15 วัน/ปี</h3>
           <p>Subscribe Staff holiday calendar ไว้ได้เลย — จะได้ไม่พลาดวันหยุดของบริษัท</p>
         </div>
       </div>
     </div>
 
-    <div class="page-cta-strip">
-      <div>
-        <h4>อ่าน Policy แล้ว — ไปดู Timesheet กันต่อ</h4>
-        <p>กรอกให้ถูกต้อง ส่งทุกสิ้นเดือน แล้วจะได้รับเบี้ยเลี้ยงตรงเวลา</p>
-      </div>
-      <div class="cta-btns">
-        <a href="#/resources/timesheet" class="btn btn-primary" data-link>ดู Timesheet ${I.arrow}</a>
-      </div>
-    </div>
   `,
 });
 
@@ -206,12 +197,15 @@ export const renderDressCode = () => pageWrap({
     <!-- Dress Hero V2 -->
     <div class="dress-hero-v2 anim-up">
       <div>
-        <div class="dress-tag-v2">EXZY Core Value · Tidiness</div>
-        <h3>สะอาด เรียบร้อย เหมาะสม</h3>
-        <p>"พร้อม สะอาดเรียบร้อย เตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดีคือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
+        <div class="dress-tag-v2" style="color:#ffffff;">EXZY Core Value · Tidiness</div>
+        <h2 style="color:#ffffff;">สะอาด เรียบร้อย เหมาะสม</h2>
+        <p style="color:rgba(255,255,255,.82);">"พร้อม สะอาดเรียบร้อย เตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดีคือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
       </div>
-      <div class="dress-hero-img">
-        <img src="dress-code-reference.png" alt="EXZY professional dress example" />
+      <div class="dress-hero-img dress-hero-img--placeholder">
+        <div class="dress-img-placeholder">
+          <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 30l10-10 8 8 6-6 12 12"/><circle cx="16" cy="18" r="3"/></svg>
+          <span>เพิ่มรูปภาพ</span>
+        </div>
       </div>
     </div>
 
@@ -220,7 +214,7 @@ export const renderDressCode = () => pageWrap({
       <div class="dress-card-v2 anim-up">
         <div class="dress-card-v2-icon" style="background:var(--cyan-soft); color:var(--navy);">${I.shirt}</div>
         <div class="dress-card-v2-style" style="color:var(--navy);">Smart Casual</div>
-        <h4>วันทำงานปกติ</h4>
+        <h3>วันทำงานปกติ</h3>
         <ul>
           <li>เสื้อโปโล / เสื้อเชิ้ต</li>
           <li>กางเกงผ้า / กางเกงยีนสีเข้ม</li>
@@ -230,7 +224,7 @@ export const renderDressCode = () => pageWrap({
       <div class="dress-card-v2 anim-up" data-delay="80">
         <div class="dress-card-v2-icon" style="background:var(--mist); color:var(--ink);">${I.people}</div>
         <div class="dress-card-v2-style" style="color:var(--ink);">Business Casual</div>
-        <h4>มีนัดพบลูกค้า</h4>
+        <h3>มีนัดพบลูกค้า</h3>
         <ul>
           <li>เสื้อเชิ้ตหรือเบลเซอร์</li>
           <li>กางเกง / กระโปรงทรงสุภาพ</li>
@@ -240,7 +234,7 @@ export const renderDressCode = () => pageWrap({
       <div class="dress-card-v2 anim-up" data-delay="160">
         <div class="dress-card-v2-icon" style="background:var(--success-soft); color:var(--body);">${I.sparkle}</div>
         <div class="dress-card-v2-style" style="color:var(--body);">Casual Friday</div>
-        <h4>วันศุกร์ / กิจกรรม</h4>
+        <h3>วันศุกร์ / กิจกรรม</h3>
         <ul>
           <li>เสื้อยืดสะอาด ไม่มีลายไม่เหมาะสม</li>
           <li>กางเกงยีน / กางเกง chino</li>
@@ -262,7 +256,7 @@ export const renderDressCode = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.sparkle}</span>
       <div>
-        <h4>เมื่อไม่แน่ใจ ให้สังเกตทีม</h4>
+        <h3>เมื่อไม่แน่ใจ ให้สังเกตทีม</h3>
         <p>ไม่แน่ใจก็ไม่เป็นไร — ลองดูว่าพี่ ๆ ในทีมแต่งยังไง หรือจะถามตรง ๆ ก็ได้เลย</p>
       </div>
     </div>
@@ -277,7 +271,7 @@ export const renderLeave = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.info}</span>
       <div>
-        <h4>วันที่ลาจะไม่นับเป็นชั่วโมงฝึกงาน</h4>
+        <h3>วันที่ลาจะไม่นับเป็นชั่วโมงฝึกงาน</h3>
         <p>บริษัทเซ็นรับรองตามชั่วโมงฝึกงานจริงเท่านั้น — ลาบ่อยอาจส่งผลต่อชั่วโมงที่ต้องส่งสถาบัน จัดการวันลาให้ดีนะ</p>
       </div>
     </div>
@@ -288,21 +282,21 @@ export const renderLeave = () => pageWrap({
       <div class="leave-step anim-left" data-delay="0">
         <div class="leave-step-node">1</div>
         <div class="leave-step-card">
-          <h4>แจ้ง Teamlead และ Senior</h4>
+          <h3>แจ้ง Teamlead และ Senior</h3>
           <p>แจ้งขอลากับ Teamlead และ Senior ก่อนเป็นอันดับแรก ก่อนส่งอีเมล</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="100">
         <div class="leave-step-node">2</div>
         <div class="leave-step-card">
-          <h4>ส่ง Email แจ้งการลาให้ HR</h4>
+          <h3>ส่ง Email แจ้งการลาให้ HR</h3>
           <p>ส่งอีเมลแจ้งลาไปที่ <a href="mailto:hr@exzyteam.com" class="inline-link">hr@exzyteam.com</a> ระบุเหตุผลและจำนวนวันที่จะลา</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="200">
         <div class="leave-step-node">3</div>
         <div class="leave-step-card">
-          <h4>CC อีเมล Teamlead และ Senior</h4>
+          <h3>CC อีเมล Teamlead และ Senior</h3>
           <p>CC อีเมลไปหา Teamlead และ Senior ในอีเมลเดียวกัน เพื่อให้ทุกคนรับทราบพร้อมกัน</p>
         </div>
       </div>
@@ -325,7 +319,7 @@ export const renderLeave = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.shield}</span>
       <div>
-        <h4>การลาที่มากเกินไป</h4>
+        <h3>การลาที่มากเกินไป</h3>
         <p>ถ้าลาบ่อยจนเกินไปและทีมเห็นว่าไม่เหมาะสม บริษัทอาจพิจารณายุติการฝึกงานและแจ้งมหาวิทยาลัย — ลองคุยกับพี่เลี้ยงก่อนดีที่สุด</p>
       </div>
     </div>

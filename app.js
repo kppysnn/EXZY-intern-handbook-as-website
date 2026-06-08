@@ -19,6 +19,7 @@ import { renderOrgChart } from './js/pages/org-chart.js';
 import { renderDirectory } from './js/pages/directory.js';
 import { renderCodeOfConduct, renderInternshipPolicy, renderDressCode, renderLeave } from './js/pages/policy.js';
 import { renderTimesheet, renderFaqs } from './js/pages/resources.js';
+import { renderHrBdProject } from './js/pages/tasks.js';
 
 // ===== Page Routes =====
 const Pages = {
@@ -33,6 +34,8 @@ const Pages = {
   "policy/internship":             () => renderInternshipPolicy(),
   "policy/dress-code":             () => renderDressCode(),
   "policy/leave":                  () => renderLeave(),
+  "tasks/timesheet":               () => renderTimesheet(),
+  "tasks/hr-bd-project":           () => renderHrBdProject(),
   "resources/timesheet":           () => renderTimesheet(),
   "resources/faqs":                () => renderFaqs(),
   "showcase/experiences":          () => showcasePage("experiences"),
@@ -454,6 +457,23 @@ function hydratePage() {
     activate(0);
   })();
 
+  // ----- FAQ filter tabs -----
+  (function() {
+    var filter = document.getElementById('faq-filter');
+    if (!filter) return;
+    filter.addEventListener('click', function(e) {
+      var btn = e.target.closest('.faq-filter-btn');
+      if (!btn) return;
+      var cat = btn.dataset.faqCat;
+      document.querySelectorAll('.faq-filter-btn').forEach(function(b) { b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      document.querySelectorAll('.faq-group').forEach(function(g) {
+        if (cat === 'all' || g.dataset.faqGroup === cat) g.classList.add('is-visible');
+        else g.classList.remove('is-visible');
+      });
+    });
+  })();
+
   // ----- Counter animations -----
   app.querySelectorAll('[data-count-to]').forEach(function(el) {
     var target = parseFloat(el.getAttribute('data-count-to'));
@@ -543,22 +563,22 @@ function initNav() {
   const burger = document.getElementById("burger");
   const navLinks = document.querySelector(".nav-links");
   const navRight = document.querySelector(".nav-right");
-  const showcaseGroup = navRight ? navRight.querySelector(".nav-group") : null;
+  const promotedNavItem = navRight ? navRight.querySelector("[data-nav-mobile-promote]") : null;
 
   function setMobileMenu(open) {
     if (open) {
       navbar.classList.add("mobile-open");
       burger?.setAttribute("aria-expanded", "true");
-      if (showcaseGroup && navLinks && showcaseGroup.parentElement !== navLinks) {
-        showcaseGroup.classList.add("nav-showcase-mobile");
-        navLinks.appendChild(showcaseGroup);
+      if (promotedNavItem && navLinks && promotedNavItem.parentElement !== navLinks) {
+        promotedNavItem.classList.add("nav-promoted-mobile");
+        navLinks.appendChild(promotedNavItem);
       }
     } else {
       navbar.classList.remove("mobile-open");
       burger?.setAttribute("aria-expanded", "false");
-      if (showcaseGroup && navRight && showcaseGroup.parentElement !== navRight) {
-        showcaseGroup.classList.remove("nav-showcase-mobile");
-        navRight.appendChild(showcaseGroup);
+      if (promotedNavItem && navRight && promotedNavItem.parentElement !== navRight) {
+        promotedNavItem.classList.remove("nav-promoted-mobile");
+        navRight.appendChild(promotedNavItem);
       }
       document.querySelectorAll(".nav-group.open").forEach(g => g.classList.remove("open"));
     }
@@ -670,45 +690,45 @@ function initAdminMode() {
       <div class="admin-section" data-tab="wifi">
         <div class="admin-section-title">Wi-Fi สำหรับพนักงาน / Intern</div>
         <div class="admin-field">
-          <label>SSID (ชื่อเครือข่าย)</label>
-          <input class="admin-input mono" data-field="wifi_staff_ssid" value="${escAttr(d.wifi_staff_ssid)}" />
+          <label for="admin-wifi_staff_ssid">SSID (ชื่อเครือข่าย)</label>
+          <input id="admin-wifi_staff_ssid" class="admin-input mono" data-field="wifi_staff_ssid" value="${escAttr(d.wifi_staff_ssid)}" />
         </div>
         <div class="admin-field">
-          <label>รหัสผ่าน</label>
-          <input class="admin-input mono" data-field="wifi_staff_pass" value="${escAttr(d.wifi_staff_pass)}" />
+          <label for="admin-wifi_staff_pass">รหัสผ่าน</label>
+          <input id="admin-wifi_staff_pass" class="admin-input mono" data-field="wifi_staff_pass" value="${escAttr(d.wifi_staff_pass)}" />
         </div>
         <div class="admin-section-title" style="margin-top:24px;">Wi-Fi สำหรับแขก (Guest)</div>
         <div class="admin-field">
-          <label>SSID (ชื่อเครือข่าย)</label>
-          <input class="admin-input mono" data-field="wifi_guest_ssid" value="${escAttr(d.wifi_guest_ssid)}" />
+          <label for="admin-wifi_guest_ssid">SSID (ชื่อเครือข่าย)</label>
+          <input id="admin-wifi_guest_ssid" class="admin-input mono" data-field="wifi_guest_ssid" value="${escAttr(d.wifi_guest_ssid)}" />
         </div>
         <div class="admin-field">
-          <label>รหัสผ่าน</label>
-          <input class="admin-input mono" data-field="wifi_guest_pass" value="${escAttr(d.wifi_guest_pass)}" />
+          <label for="admin-wifi_guest_pass">รหัสผ่าน</label>
+          <input id="admin-wifi_guest_pass" class="admin-input mono" data-field="wifi_guest_pass" value="${escAttr(d.wifi_guest_pass)}" />
         </div>
       </div>
 
       <div class="admin-section" data-tab="links" style="display:none;">
         <div class="admin-section-title">เอกสาร Orientation</div>
         <div class="admin-field">
-          <label>Google Slides embed URL (แสดงแบบ iframe)</label>
-          <input class="admin-input mono" data-field="orientation_slides_url" value="${escAttr(d.orientation_slides_url)}" placeholder="https://docs.google.com/presentation/d/.../embed?..." />
+          <label for="admin-orientation_slides_url">Google Slides embed URL (แสดงแบบ iframe)</label>
+          <input id="admin-orientation_slides_url" class="admin-input mono" data-field="orientation_slides_url" value="${escAttr(d.orientation_slides_url)}" placeholder="https://docs.google.com/presentation/d/.../embed?..." />
           <p class="hint">Google Slides → File → Share → Publish to web → Embed → คัดลอก src ของ iframe มาวางที่นี่</p>
         </div>
         <div class="admin-field">
-          <label>ลิงก์ PDF ดาวน์โหลด (Google Drive หรือ URL ตรง)</label>
-          <input class="admin-input mono" data-field="orientation_pdf_url" value="${escAttr(d.orientation_pdf_url)}" placeholder="https://drive.google.com/uc?export=download&id=..." />
+          <label for="admin-orientation_pdf_url">ลิงก์ PDF ดาวน์โหลด (Google Drive หรือ URL ตรง)</label>
+          <input id="admin-orientation_pdf_url" class="admin-input mono" data-field="orientation_pdf_url" value="${escAttr(d.orientation_pdf_url)}" placeholder="https://drive.google.com/uc?export=download&id=..." />
           <p class="hint">หากใช้ Google Drive: เปิดไฟล์ → Share → Copy link แล้วเปลี่ยน /view เป็น /export?format=pdf เพื่อให้ดาวน์โหลดได้ตรง</p>
         </div>
         <div class="admin-section-title" style="margin-top:24px;">Employee Directory</div>
         <div class="admin-field">
-          <label>Google Sheet embed URL</label>
-          <input class="admin-input mono" data-field="directory_sheet_url" value="${escAttr(d.directory_sheet_url)}" placeholder="https://docs.google.com/spreadsheets/d/.../pubhtml?widget=true&headers=false" />
+          <label for="admin-directory_sheet_url">Google Sheet embed URL</label>
+          <input id="admin-directory_sheet_url" class="admin-input mono" data-field="directory_sheet_url" value="${escAttr(d.directory_sheet_url)}" placeholder="https://docs.google.com/spreadsheets/d/.../pubhtml?widget=true&headers=false" />
           <p class="hint">Google Sheet → File → Share → Publish to web → Embed → คัดลอก src ของ iframe</p>
         </div>
         <div class="admin-field">
-          <label>รหัสเข้า Employee Contact</label>
-          <input class="admin-input mono" data-field="directory_access_key" value="${escAttr(d.directory_access_key || ADMIN_PASSWORD)}" placeholder="ตั้งรหัสสำหรับหน้า Employee Contact" />
+          <label for="admin-directory_access_key">รหัสเข้า Employee Contact</label>
+          <input id="admin-directory_access_key" class="admin-input mono" data-field="directory_access_key" value="${escAttr(d.directory_access_key || ADMIN_PASSWORD)}" placeholder="ตั้งรหัสสำหรับหน้า Employee Contact" />
           <p class="hint">ใช้สำหรับปลดล็อกหน้า Employee Contact เพื่อดูข้อมูลติดต่อพนักงาน</p>
         </div>
       </div>
@@ -728,7 +748,7 @@ function initAdminMode() {
         <div style="border-top:1px solid var(--line-soft); margin-top:20px; padding-top:18px;">
           <div class="admin-section-title" style="margin-bottom:12px;">เพิ่มรายการใหม่</div>
           <div class="admin-field">
-            <label>หมวดหมู่</label>
+            <label for="sc-cat">หมวดหมู่</label>
             <select class="admin-input" id="sc-cat">
               <option value="experiences">Experiences (คลิป / รีวิว)</option>
               <option value="projects">Projects (ผลงาน)</option>
@@ -736,21 +756,21 @@ function initAdminMode() {
             </select>
           </div>
           <div class="admin-field">
-            <label>ชื่อเรื่อง / Title</label>
+            <label for="sc-title">ชื่อเรื่อง / Title</label>
             <input class="admin-input" id="sc-title" placeholder="เช่น หนึ่งวันในชีวิต intern Designer" />
           </div>
           <div class="admin-field" style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
             <div>
-              <label>Badge / Platform</label>
+              <label for="sc-badge">Badge / Platform</label>
               <input class="admin-input" id="sc-badge" placeholder="TikTok, Medium, Project…" />
             </div>
             <div>
-              <label>Meta (ความยาว / ประเภท)</label>
+              <label for="sc-meta">Meta (ความยาว / ประเภท)</label>
               <input class="admin-input" id="sc-meta" placeholder="2 นาที, 8 min read, UI/UX…" />
             </div>
           </div>
           <div class="admin-field">
-            <label>ลิงก์ URL (ถ้ามี)</label>
+            <label for="sc-url">ลิงก์ URL (ถ้ามี)</label>
             <input class="admin-input mono" id="sc-url" placeholder="https://..." />
           </div>
           <button class="btn btn-primary" id="sc-add" style="width:100%; margin-top:4px; justify-content:center;">
@@ -762,16 +782,16 @@ function initAdminMode() {
       <div class="admin-section" data-tab="hr" style="display:none;">
         <div class="admin-section-title">ข้อมูลติดต่อ HR</div>
         <div class="admin-field">
-          <label>ชื่อ HR</label>
-          <input class="admin-input" data-field="hr_name" value="${escAttr(d.hr_name)}" />
+          <label for="admin-hr_name">ชื่อ HR</label>
+          <input id="admin-hr_name" class="admin-input" data-field="hr_name" value="${escAttr(d.hr_name)}" />
         </div>
         <div class="admin-field">
-          <label>อีเมล HR</label>
-          <input class="admin-input mono" data-field="hr_email" value="${escAttr(d.hr_email)}" />
+          <label for="admin-hr_email">อีเมล HR</label>
+          <input id="admin-hr_email" class="admin-input mono" data-field="hr_email" value="${escAttr(d.hr_email)}" />
         </div>
         <div class="admin-field">
-          <label>เบอร์โทร HR</label>
-          <input class="admin-input mono" data-field="hr_phone" value="${escAttr(d.hr_phone)}" />
+          <label for="admin-hr_phone">เบอร์โทร HR</label>
+          <input id="admin-hr_phone" class="admin-input mono" data-field="hr_phone" value="${escAttr(d.hr_phone)}" />
         </div>
       </div>
     `;
@@ -996,7 +1016,9 @@ function initEnhancements() {
     '.mr-feat-card', '.ptask-card', '.howto-step', '.rule-card',
     '.show-real-card', '.hbe-card', '.proj-card'
   ].join(',');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll(tiltTargets).forEach(el => {
+    if (prefersReducedMotion) return;
     if (el.__tiltAttached) return;
     el.__tiltAttached = true;
     el.style.transformOrigin = 'center';
@@ -1011,7 +1033,7 @@ function initEnhancements() {
     });
     el.addEventListener('pointerleave', () => {
       el.style.transform = '';
-      el.style.transition = 'transform 0.6s cubic-bezier(0.34,1.2,0.64,1)';
+      el.style.transition = 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
       setTimeout(() => { el.style.transition = ''; }, 650);
     });
   });
@@ -1031,12 +1053,13 @@ function initEnhancements() {
     });
     el.addEventListener('pointerleave', () => {
       el.style.transform = '';
-      el.style.transition = 'transform 0.5s ease';
+      el.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
       setTimeout(() => { el.style.transition = ''; }, 550);
     });
   });
 
   document.querySelectorAll('.btn-primary, .btn-cta-hero, .btn-hero').forEach(btn => {
+    if (prefersReducedMotion) return;
     if (btn.__magneticAttached) return;
     btn.__magneticAttached = true;
     btn.addEventListener('pointermove', e => {
@@ -1050,7 +1073,7 @@ function initEnhancements() {
     });
     btn.addEventListener('pointerleave', () => {
       btn.style.transform = '';
-      btn.style.transition = 'transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1)';
+      btn.style.transition = 'transform 0.55s cubic-bezier(0.16, 1, 0.3, 1)';
       setTimeout(() => { btn.style.transition = ''; }, 600);
     });
   });

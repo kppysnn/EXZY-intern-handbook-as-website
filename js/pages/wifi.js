@@ -2,7 +2,7 @@ import { I } from '../icons.js';
 import { pageWrap } from '../helpers.js';
 
 export const renderWifi = () => pageWrap({
-  crumbs: [["Home", "#/home"], ["Getting Started", null], ["Office Wi-Fi", null]],
+  crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
   title: "Office Wi-Fi",
   lead: "เลือกเครือข่ายที่ใช้งาน แล้วสแกน QR หรือคัดลอกรหัสผ่านได้เลย",
   body: `
@@ -112,31 +112,37 @@ export const renderWifi = () => pageWrap({
       </div>
     </div>
 
-    <!-- How to connect steps -->
-    <div class="wn-how">
-      <div class="wn-how-label">วิธีเชื่อมต่อ</div>
-      <div class="wn-how-steps">
-        <div class="wn-how-step">
-          <div class="wn-how-n">1</div>
-          <div class="wn-how-content">
-            <div class="wn-how-title">สแกน QR Code</div>
-            <div class="wn-how-desc">เปิดกล้องมือถือ ชี้ที่ QR ด้านบน — กดลิงก์เพื่อเชื่อมต่อ Wi-Fi ทันที</div>
+    <!-- How to connect steps redesign -->
+    <div class="wn-how-v2">
+      <div class="wn-how-v2-head">
+        <span class="wn-how-v2-label">วิธีเชื่อมต่อ</span>
+        <p class="wn-how-v2-sub">ทำได้ 2 วิธี เลือกวิธีที่สะดวกได้เลย</p>
+      </div>
+      <div class="wn-how-v2-tracks">
+        <div class="wn-how-v2-track wn-how-v2-qr">
+          <div class="wn-how-v2-track-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h.01M14 18h3M17 14v4M20 14v.01M20 18v.01"/></svg>
           </div>
+          <div class="wn-how-v2-track-title">วิธีที่ 1 — สแกน QR</div>
+          <ol class="wn-how-v2-steps">
+            <li>เปิดกล้องมือถือ</li>
+            <li>ชี้ที่ QR ด้านบน</li>
+            <li>กดลิงก์ที่ขึ้นมา — เชื่อมต่อทันที</li>
+          </ol>
         </div>
-        <div class="wn-how-sep">หรือ</div>
-        <div class="wn-how-step">
-          <div class="wn-how-n">2</div>
-          <div class="wn-how-content">
-            <div class="wn-how-title">คัดลอกรหัส</div>
-            <div class="wn-how-desc">กดปุ่ม "คัดลอกรหัสผ่าน" แล้วนำไปวางในหน้าตั้งค่า Wi-Fi ของอุปกรณ์</div>
-          </div>
+        <div class="wn-how-v2-divider">
+          <span>หรือ</span>
         </div>
-        <div class="wn-how-step">
-          <div class="wn-how-n">3</div>
-          <div class="wn-how-content">
-            <div class="wn-how-title">เลือก SSID แล้ววางรหัส</div>
-            <div class="wn-how-desc">เลือกชื่อเครือข่าย → วางรหัสผ่าน → กด เชื่อมต่อ</div>
+        <div class="wn-how-v2-track wn-how-v2-manual">
+          <div class="wn-how-v2-track-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
           </div>
+          <div class="wn-how-v2-track-title">วิธีที่ 2 — ใส่รหัสเอง</div>
+          <ol class="wn-how-v2-steps">
+            <li>ไปที่ตั้งค่า Wi-Fi</li>
+            <li>เลือกชื่อเครือข่าย (SSID)</li>
+            <li>กด "คัดลอกรหัสผ่าน" แล้ววาง</li>
+          </ol>
         </div>
       </div>
     </div>

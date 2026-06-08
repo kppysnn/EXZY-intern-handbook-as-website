@@ -43,7 +43,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./styles.css?v=1780572199" />
+  <link rel="stylesheet" href="./styles.css?v=1780610001" />
   <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
   <script src="./employee-data.js"></script>
 </head>
@@ -58,31 +58,35 @@
       <nav class="nav-links" id="nav-mobile-menu" aria-label="Main">
         <a href="#/home" class="nav-item nav-home" data-link>Home</a>
 
+        <a href="#/first-day" class="nav-item nav-day1" data-link>Day 1 Guide</a>
+
         <div class="nav-group">
           <button class="nav-item nav-toggle" aria-haspopup="true" aria-expanded="false">
-            Orientation &amp; Office
+            Intern Tasks
             <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
               <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
           <div class="nav-menu">
-            <a href="#/first-day" data-link class="nav-menu-highlight">⚡ Day 1 Guide</a>
-            <a href="#/getting-started/orientation" data-link>Orientation</a>
-            <a href="#/getting-started/wifi" data-link>Office Wi-Fi</a>
-            <a href="#/getting-started/meeting-rooms" data-link>Meeting Rooms</a>
+            <a href="#/tasks/timesheet" data-link>Timesheet</a>
+            <a href="#/tasks/hr-bd-project" data-link>HR / BD Project</a>
+            <a href="#/showcase/experiences" data-link>Showcase Examples</a>
           </div>
         </div>
 
         <div class="nav-group">
           <button class="nav-item nav-toggle" aria-haspopup="true" aria-expanded="false">
-            Company
+            Company &amp; Office
             <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
               <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
           <div class="nav-menu">
+            <a href="#/getting-started/orientation" data-link>Orientation</a>
             <a href="#/employee/org-chart" data-link>โครงสร้างองค์กร</a>
             <a href="#/employee/directory" data-link>Employee Contact</a>
+            <a href="#/getting-started/wifi" data-link>Office Wi-Fi</a>
+            <a href="#/getting-started/meeting-rooms" data-link>Meeting Rooms</a>
           </div>
         </div>
 
@@ -101,33 +105,12 @@
           </div>
         </div>
 
-        <div class="nav-group">
-          <button class="nav-item nav-toggle" aria-haspopup="true" aria-expanded="false">
-            Resources
-            <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
-              <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="nav-menu">
-            <a href="#/resources/timesheet" data-link>Timesheet</a>
-            <a href="#/resources/faqs" data-link>FAQs</a>
-          </div>
-        </div>
       </nav>
 
-      <nav class="nav-right" aria-label="Showcase">
-        <div class="nav-group">
-          <button class="nav-item nav-toggle nav-showcase nav-showcase-highlight" aria-haspopup="true" aria-expanded="false">
-            <span class="showcase-nav-label">Showcase</span>
-            <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true">
-              <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="nav-menu nav-menu-right">
-            <a href="#/showcase/experiences" data-link>Intern Experiences</a>
-            <a href="#/showcase/blog" data-link>Intern's Blog</a>
-          </div>
-        </div>
+      <nav class="nav-right" aria-label="Help">
+        <a href="#/resources/faqs" class="nav-item nav-support nav-support-highlight" data-link data-nav-mobile-promote>
+          <span class="support-nav-label">FAQs</span>
+        </a>
       </nav>
 
       <button class="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile-menu" id="burger">
@@ -196,18 +179,19 @@
     <div class="footer-inner">
       <div class="footer-col footer-brand">
         <img src="logo-dark-white.png" alt="EXZY" class="footer-logo" />
-        <p class="footer-tag">Intern Handbook — รวมทุกข้อมูลที่จำเป็นไว้ในที่เดียว เพื่อเริ่มต้นเส้นทางการฝึกงานอย่างราบรื่น</p>
+        <p class="footer-tag">Intern Handbook, รวมข้อมูลที่ intern ต้องใช้ไว้ในที่เดียว เพื่อเช็กสิ่งที่ต้องทำได้ง่ายขึ้น</p>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
-        <a href="#">About EXZY</a>
-        <a href="#">Contact HR</a>
+        <a href="https://www.exzysmartoffice.com" target="_blank" rel="noopener">About EXZY</a>
+        <a href="#/employee/directory" data-link>Contact HR</a>
         <a href="https://www.exzysmartoffice.com" target="_blank" rel="noopener">Company Website ↗</a>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="#/getting-started/orientation" data-link>Orientation</a>
-        <a href="#/resources/timesheet" data-link>Timesheet</a>
+        <a href="#/tasks/timesheet" data-link>Timesheet</a>
+        <a href="#/tasks/hr-bd-project" data-link>HR / BD Project</a>
         <a href="#/resources/faqs" data-link>FAQs</a>
       </div>
       <div class="footer-col footer-social">

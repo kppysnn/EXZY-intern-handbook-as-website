@@ -2,26 +2,30 @@ import { I } from '../icons.js';
 import { pageWrap, acc } from '../helpers.js';
 
 export const renderTimesheet = () => pageWrap({
-  crumbs: [["Home", "#/home"], ["Resources", null], ["Timesheet", null]],
+  crumbs: [["Home", "#/home"], ["Intern Tasks", null], ["Timesheet", null]],
   title: "Intern Timesheet",
   lead: "กรอกทุกวัน ส่งทุกสิ้นเดือน — แค่นี้เลย ดูตัวอย่างและวิธีกรอกได้ที่นี่",
   body: `
-    <!-- Timesheet Hero Banner -->
-    <div class="ts-hero-banner anim-up">
-      <div class="ts-hero-left">
-        <h2 style="color:var(--on-dark) !important">กรอกทุกวัน · ส่งสิ้นเดือน</h2>
-        <p>HR จะส่งไฟล์ Excel Timesheet ให้ทางอีเมลตั้งแต่วันแรก</p>
-        <div class="ts-hero-badges">
-          <span class="ts-hero-badge">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            ส่งทุกสิ้นเดือน
-          </span>
-          <span class="ts-hero-badge">
-            ${I.calendar} วันที่ 30–31
-          </span>
-          <span class="ts-hero-badge">
-            ${I.doc} พิมพ์ + ยื่น HR
-          </span>
+    <!-- Timesheet Rule Cards -->
+    <div class="ts-rule-cards anim-up">
+      <div class="ts-rule-card ts-rule-daily">
+        <div class="ts-rule-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="ts-rule-content">
+          <div class="ts-rule-freq">ทุกวัน</div>
+          <h3>กรอก Timesheet</h3>
+          <p>ลงเวลาเข้า–ออก และงานที่ทำในแต่ละวัน ทำทันทีก่อนกลับบ้าน</p>
+        </div>
+      </div>
+      <div class="ts-rule-card ts-rule-monthly">
+        <div class="ts-rule-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+        </div>
+        <div class="ts-rule-content">
+          <div class="ts-rule-freq">สิ้นเดือน (30–31)</div>
+          <h3>พิมพ์ + ยื่น HR</h3>
+          <p>พิมพ์เอกสารออกกระดาษ แล้วยื่นให้ HR โดยตรงที่ออฟฟิศ</p>
         </div>
       </div>
     </div>
@@ -79,20 +83,11 @@ export const renderTimesheet = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.doc}</span>
       <div>
-        <h4>วิธีส่ง — พิมพ์และยื่นกระดาษที่ออฟฟิศ</h4>
+        <h3>วิธีส่ง — พิมพ์และยื่นกระดาษที่ออฟฟิศ</h3>
         <p>พิมพ์เอกสารทั้งหมดออกกระดาษ แล้วนำยื่นให้ HR โดยตรงที่ออฟฟิศ <strong>ภายในวันที่ 30–31</strong> ของทุกเดือน — ไม่รับทางอีเมล</p>
       </div>
     </div>
 
-    <div class="page-cta-strip">
-      <div>
-        <h4>ยังมีคำถามอีกไหม?</h4>
-        <p>มีคำถามที่ Intern ถามบ่อยรวมไว้ใน FAQs — ดูได้เลย</p>
-      </div>
-      <div class="cta-btns">
-        <a href="#/resources/faqs" class="btn btn-primary" data-link>ดู FAQs ${I.arrow}</a>
-      </div>
-    </div>
   `,
 });
 
@@ -130,7 +125,7 @@ export const renderFaqs = () => pageWrap({
         ${acc("1. วันแรกของการฝึกงาน ต้องเตรียมอะไรบ้าง?", "มาถึงออฟฟิศประมาณ 9:45 น. (ก่อนเวลา 10:00 น.) · พบกับ HR ที่ลงทะเบียน · เตรียมสำเนาบัตรประชาชนและสำเนา Bookbank ของ KBank (ใช้แค่เดือนแรก) · พร้อมโน้ตบุ๊กของตัวเองหากมี · อ่าน Orientation ของ EXZY ล่วงหน้าได้จากเมนู <a href=\"#/getting-started/orientation\" data-link>Orientation</a>")}
         ${acc("2. Wi-Fi ใช้รหัสอะไร? เชื่อมต่อยังไง?", "<strong>Staff Wi-Fi:</strong> SSID <code>ExzyUniFi</code> · Password <code>maetyzxe</code><br/><strong>Guest Wi-Fi:</strong> SSID <code>Exzy_Guest</code> · Password <code>imaguest</code><br/>ไปที่หน้า <a href=\"#/getting-started/wifi\" data-link>Office Wi-Fi</a> เพื่อสแกน QR code เชื่อมต่อได้ทันที")}
         ${acc("3. เวลาฝึกงานเป็นยังไง? พักกลางวันกี่โมง?", "เวลาฝึกงาน <strong>9:00 – 18:00 น.</strong> หรือ <strong>10:00 – 19:00 น.</strong> ขึ้นอยู่กับแผนก — ให้ถามพี่เลี้ยงว่าแผนกตัวเองใช้กะไหน · พักกลางวัน <strong>12:00 – 13:00 น.</strong> · วันละ 8 ชั่วโมง · มีวันหยุดประจำปี 15 วัน")}
-        ${acc("4. Timesheet ส่งยังไง? ส่งเมื่อไหร่?", "HR จะส่งไฟล์ Excel Timesheet ให้คุณทางอีเมลตั้งแต่วันแรก · กรอกเวลาเข้า-ออกงานและรายละเอียดที่ทำในแต่ละวัน · ส่งกลับให้ HR ทุกสิ้นเดือน (วันที่ 30–31) · ดูคอลัมน์และวิธีกรอกที่หน้า <a href=\"#/resources/timesheet\" data-link>Timesheet</a>")}
+        ${acc("4. Timesheet ส่งยังไง? ส่งเมื่อไหร่?", "HR จะส่งไฟล์ Excel Timesheet ให้คุณทางอีเมลตั้งแต่วันแรก · กรอกเวลาเข้า-ออกงานและรายละเอียดที่ทำในแต่ละวัน · ส่งกลับให้ HR ทุกสิ้นเดือน (วันที่ 30–31) · ดูคอลัมน์และวิธีกรอกที่หน้า <a href=\"#/tasks/timesheet\" data-link>Timesheet</a>")}
         ${acc("5. เบี้ยเลี้ยงเท่าไหร่? ต้องส่งเอกสารอะไรบ้าง?", "<strong>วันละ 200 บาท</strong> เมื่อเข้าฝึกงานที่บริษัท · <strong>วันละ 300 บาท</strong> เมื่อเข้าฝึกงานนอกสถานที่<br/>เอกสารที่ต้องส่ง (กำหนดส่ง <strong>วันที่ 30–31 ของทุกเดือน</strong>):<br/>· สำเนาบัตรประชาชน พร้อมเซ็นสำเนาถูกต้อง (ส่งทุกเดือน)<br/>· เอกสาร Intern Timesheet (ส่งทุกเดือน)<br/>· สำเนา Bookbank KBank (ส่งแค่เดือนแรก)<br/><strong>วิธีส่ง:</strong> พิมพ์เอกสารออกกระดาษและยื่นให้ HR โดยตรงที่ออฟฟิศ — ไม่รับทางอีเมล")}
         ${acc("6. ฝึกงานที่บ้าน (WFH) ได้ไหม?", "<strong>ไม่ได้</strong> — Intern ต้องเข้าฝึกที่บริษัทหรือสถานที่ที่ทีม Assign เท่านั้น ทางบริษัทไม่อนุญาตให้ขอฝึกงานจากที่บ้าน")}
       </div>
@@ -165,7 +160,7 @@ export const renderFaqs = () => pageWrap({
         <h2>การทำงานและการเติบโต</h2>
       </div>
       <div class="accordion">
-        ${acc("12. ต้องทำโปรเจกต์อะไรบ้างระหว่างฝึกงาน?", "Intern จะต้องรับผิดชอบโปรเจกต์ 3 ประเภท:<br/><strong>1. Project / Report</strong> — โปรเจกต์ที่นำส่งมหาวิทยาลัย<br/><strong>2. Dev Team Project</strong> — โปรเจกต์ที่ Dev Team led by EXZY Assign ให้<br/><strong>3. HR / BD Project</strong> — โปรเจกต์ที่ HR หรือ BD Assign ให้<br/>ทั้ง 3 ข้อต้องส่งตามระยะเวลาที่ทางมหาวิทยาลัยและ EXZY กำหนด")}
+        ${acc("12. ต้องทำโปรเจกต์อะไรบ้างระหว่างฝึกงาน?", "Intern จะต้องรับผิดชอบโปรเจกต์ 3 ประเภท:<br/><strong>1. Project / Report</strong> โปรเจกต์ที่นำส่งมหาวิทยาลัย<br/><strong>2. Team Project</strong> โปรเจกต์ที่พี่เลี้ยงหรือทีม assign ให้ตามสายงาน<br/><strong>3. HR / BD Project</strong> งาน content ที่ HR หรือ BD assign ให้ ต้องเผยแพร่บนช่องทาง public และส่งก่อนจบฝึกงาน 2 อาทิตย์<br/>ดูรายละเอียดที่หน้า <a href=\"#/tasks/hr-bd-project\" data-link>HR / BD Project</a>")}
         ${acc("13. ไม่เข้าใจงานที่ได้รับมอบหมาย ทำยังไง?", "<strong>ถามพี่เลี้ยงทันที</strong> — ไม่ต้องเก็บไว้คนเดียว · เขียน notes ก่อนถามว่าตรงไหนที่ไม่เข้าใจ จะช่วยให้พี่เลี้ยงตอบได้ตรงประเด็น")}
       </div>
     </div>
@@ -173,38 +168,21 @@ export const renderFaqs = () => pageWrap({
     <div class="callout" style="margin-top:32px;">
       <span class="ic">${I.mail}</span>
       <div>
-        <h4>มีคำถามอื่น ๆ?</h4>
+        <h3>มีคำถามอื่น ๆ?</h3>
         <p>ถามพี่เลี้ยงโดยตรง หรือส่งอีเมลถึง HR ที่ <a href="mailto:hr@exzyteam.com"><strong>hr@exzyteam.com</strong></a></p>
       </div>
     </div>
 
     <div class="page-cta-strip">
       <div>
-        <h4>พร้อมดูผลงานและประสบการณ์ของรุ่นพี่?</h4>
-        <p>Intern รุ่นก่อนฝากประสบการณ์ บทความ และ Project ไว้ที่ Showcase</p>
+        <h3>กำลังจะทำ HR / BD Project?</h3>
+        <p>ดูรายละเอียดงานก่อน แล้วค่อยเปิด Showcase เพื่อดูตัวอย่างจาก intern รุ่นก่อน</p>
       </div>
       <div class="cta-btns">
-        <a href="#/showcase/experiences" class="btn btn-ghost" data-link>Intern Experiences ${I.arrow}</a>
+        <a href="#/tasks/hr-bd-project" class="btn btn-ghost" data-link>ดูรายละเอียดงาน ${I.arrow}</a>
         <a href="#/showcase/blog" class="btn btn-primary" data-link>Intern Blog ${I.arrow}</a>
       </div>
     </div>
 
-    <script>
-      (function() {
-        var filter = document.getElementById('faq-filter');
-        if (!filter) return;
-        filter.addEventListener('click', function(e) {
-          var btn = e.target.closest('.faq-filter-btn');
-          if (!btn) return;
-          var cat = btn.dataset.faqCat;
-          document.querySelectorAll('.faq-filter-btn').forEach(function(b) { b.classList.remove('is-active'); });
-          btn.classList.add('is-active');
-          document.querySelectorAll('.faq-group').forEach(function(g) {
-            if (cat === 'all' || g.dataset.faqGroup === cat) g.classList.add('is-visible');
-            else g.classList.remove('is-visible');
-          });
-        });
-      })();
-    </script>
   `,
 });

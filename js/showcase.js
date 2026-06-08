@@ -176,8 +176,8 @@ export function showcasePage(active) {
     ["blog", "Intern's Blog"],
   ];
   const titleMap = {
-    experiences: ["Intern Experiences", "รวมประสบการณ์ฝึกงาน — คลิป รีวิว และเรื่องเล่าจาก intern รุ่นพี่ที่เผยแพร่บนแพลตฟอร์มต่าง ๆ"],
-    blog: ["Intern's Blog", "บทความและบทสัมภาษณ์เชิงลึก — เรื่องราวการเติบโตในแต่ละแผนกและ tips สำหรับ intern รุ่นถัดไป"],
+    experiences: ["Intern Experiences", "ตัวอย่าง HR / BD Project จาก intern รุ่นก่อน ทั้งคลิป รีวิว และเรื่องเล่าที่เผยแพร่บนช่องทาง public"],
+    blog: ["Intern's Blog", "ตัวอย่างบทความและเรื่องเล่าจาก intern รุ่นก่อน ใช้ดูแนวทางก่อนทำชิ้นงานของตัวเอง"],
   };
   const items = getShowcaseItems(active);
   const emptyNote = items.length === 0
@@ -187,13 +187,20 @@ export function showcasePage(active) {
   return `
     <section class="page-header">
       <div class="section-inner">
-        <div class="crumb"><a href="#/home" data-link>Home</a> <span style="opacity:.5; margin:0 6px;">/</span> Showcase <span style="opacity:.5; margin:0 6px;">/</span> ${titleMap[active][0]}</div>
+        <div class="crumb"><a href="#/home" data-link>Home</a> <span style="opacity:.5; margin:0 6px;">/</span> Intern Tasks <span style="opacity:.5; margin:0 6px;">/</span> Showcase <span style="opacity:.5; margin:0 6px;">/</span> ${titleMap[active][0]}</div>
         <h1>${titleMap[active][0]}</h1>
         <p class="page-lead">${titleMap[active][1]}</p>
       </div>
     </section>
     <section class="section">
       <div class="section-inner">
+        <div class="callout anim-up" style="margin-bottom:22px;">
+          <span class="ic">${I.info}</span>
+          <div>
+            <h4>Showcase ใช้ทำอะไร</h4>
+            <p>หน้านี้เป็นตัวอย่างงาน HR / BD Project จาก intern รุ่นก่อน ใช้ดูไอเดียก่อนเริ่มทำชิ้นงานของตัวเองได้ งานจริงเลือก format ได้ตามถนัด และควรอ่านรายละเอียดงานก่อนที่หน้า <a href="#/tasks/hr-bd-project" data-link>HR / BD Project</a></p>
+          </div>
+        </div>
         <div class="tabs">
           ${tabs.map(([k, label]) => `
             <a href="#/showcase/${k}" data-link class="tab ${k === active ? 'is-active' : ''}">${label}</a>

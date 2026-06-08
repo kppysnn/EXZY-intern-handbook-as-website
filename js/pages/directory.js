@@ -17,7 +17,7 @@ export const renderDirectory = () => {
             <h3 class="dir-gate-title">Protected Employee Contact</h3>
             <p class="dir-gate-desc">เพื่อความเป็นส่วนตัวของพนักงาน หน้านี้ต้องใช้รหัสก่อนเข้าดูรายชื่อและข้อมูลติดต่อ</p>
             <form class="dir-gate-form" id="dir-gate-form">
-              <input type="password" class="dir-pw-input" id="dir-pw-input" placeholder="กรอกรหัสสำหรับดูข้อมูล" autocomplete="off" />
+              <input type="password" class="dir-pw-input" id="dir-pw-input" aria-label="รหัสสำหรับดูข้อมูลพนักงาน" placeholder="กรอกรหัสสำหรับดูข้อมูล" autocomplete="off" />
               <button type="submit" class="dir-pw-btn" id="dir-pw-btn">${I.lock} ปลดล็อก</button>
             </form>
             <div class="dir-gate-err" id="dir-gate-err" hidden>${I.info} รหัสไม่ถูกต้อง — ลองอีกครั้ง หรือตรวจสอบรหัสใน Admin Panel</div>
@@ -51,9 +51,9 @@ export const renderDirectory = () => {
       <div class="dir-toolbar">
         <div class="dir-search">
           <span class="dir-search-ico">${I.search}</span>
-          <input type="text" id="dir-q" placeholder="ค้นหาด้วยรหัส, ชื่อ, ชื่อเล่น, อีเมล หรือทีม..." />
+          <input type="text" id="dir-q" aria-label="ค้นหาพนักงานด้วยรหัส ชื่อ ชื่อเล่น อีเมล หรือทีม" placeholder="ค้นหาด้วยรหัส, ชื่อ, ชื่อเล่น, อีเมล หรือทีม..." />
         </div>
-        <select id="dir-team">
+        <select id="dir-team" aria-label="กรองตามทีม">
           <option value="">ทุกทีม</option>
           ${teams.map(t => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join("")}
         </select>

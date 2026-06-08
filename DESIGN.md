@@ -3,19 +3,19 @@ name: EXZY Intern Handbook
 description: The official intern handbook for EXZY Co., Ltd. — everything a new intern needs, in one place.
 colors:
   exzy-teal: "#66C5C5"
-  exzy-navy: "#004080"
-  ink: "#004081"
-  body: "#1A2230"
-  body-secondary: "#3A4757"
-  muted: "#707070"
-  bg: "#FFFFFF"
-  surface: "#FBFCFD"
+  exzy-navy: "#004081"
+  ink: "#001122"
+  body: "#505050"
+  slate: "#586782"
+  bluegray: "#929EB4"
+  muted: "#626262"
+  bg: "#F8F9FA"
   surface-2: "#F2F6F8"
-  line: "#E5ECEF"
-  line-soft: "#EEF2F5"
-  footer-bg: "#0E1A2B"
-  amber: "#F5A623"
-  error: "#C84040"
+  line: "#D0D6DF"
+  footer-bg: "#001122"
+  warning: "#FFCC00"
+  success: "#82C566"
+  error: "#F3554F"
 typography:
   display:
     fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Sora', system-ui, sans-serif"
@@ -122,29 +122,29 @@ The system rejects two failure modes by name. First: the over-designed SaaS land
 EXZY's CI colors are used directly. Teal is the live signal; navy is the structural anchor; white is the reading ground. No new saturated accents; identity comes from these three.
 
 ### Primary
-- **EXZY Teal** (`#66C5C5`): The primary accent. Hover states, active navigation indicators, badge backgrounds and text, focus rings (`box-shadow: 0 0 0 4px rgba(102,197,197,0.16)`), icon accents, and the leading color of the brand gradient. Its translucent form (`rgba(102,197,197,0.10–0.18)`) tints surfaces on interaction and in soft backgrounds.
+- **EXZY Teal** (`#66C5C5`): The primary accent ("live signal"). Hover states, active navigation indicators, badge backgrounds and text, focus rings (`outline: 3px solid rgba(102,197,197,0.58)`), thin decorative underlines/accents, and the leading color of the brand gradient. Its translucent form (`--cyan-soft: rgba(102,197,197,0.14)`, `--sec-soft: rgba(102,197,197,0.10)`) tints surfaces on interaction, callouts, and soft backgrounds.
 
 ### Secondary
-- **EXZY Navy** (`#004080`): The structural anchor. Gradient terminal, shadow tints, deep high-emphasis text. The gradient `linear-gradient(135deg, #66C5C5 0%, #2A8DA8 45%, #004080 100%)` is the brand's only gradient — used exclusively on the primary button and hero CTA.
+- **EXZY Navy** (`#004081`): The structural anchor. Icon/badge/block fills, gradient terminal, shadow tints (`rgba(0,64,129,...)`), deep high-emphasis text. The gradient `linear-gradient(135deg, #66C5C5 0%, #004081 100%)` (token `--grad`) is the brand's only gradient — used exclusively on the primary button, hero CTA, and the welcome card's primary action.
 
 ### Tertiary
-- **Warm Amber** (`#F5A623`): Category color dot only. Never on text or surfaces.
-- **Error Red** (`#C84040`): Validation error text beneath form fields only.
+- **Warning** (`#FFCC00`): Caution/notice states (callout-warn, badges). Never the default text or surface color.
+- **Success** (`#82C566`): Confirmation states only.
+- **Error** (`#F3554F`): Validation error text and destructive-state indicators beneath form fields.
 
 ### Neutral
-- **Ink** (`#004081`): Interactive elements (links, nav items, button labels), key text on white. Visually identical to EXZY Navy — they operate as one.
-- **Body** (`#1A2230`): All running body text. Near-black with a navy tint; not pure black, which would read as harsh against the white surfaces.
-- **Body Secondary** (`#3A4757`): Lead text, card body paragraphs, secondary descriptions. Lighter than Ink; signals supporting content.
-- **Muted** (`#707070`): Captions, subtitles, subdued labels. Always verify 4.5:1 contrast against the background in use.
-- **Background** (`#FFFFFF`): Page background. Pure white; no warm or cool tint.
-- **Surface** (`#FBFCFD`): Section alternation. Barely off-white with a faint blue cast; creates visual rhythm between sections without competing with content.
-- **Surface-2** (`#F2F6F8`): Component and inner-card backgrounds.
-- **Line** (`#E5ECEF`): Default border for all cards, inputs, and dividers.
-- **Line Soft** (`#EEF2F5`): Softer section separators and subtle dividers.
-- **Footer** (`#0E1A2B`): Deep navy footer surface. Text on footer: `#B7C2D0` (mid) and `#8A98AB` (muted).
+- **Ink** (`#001122`): The deepest text/surface tone — heading text, footer background, dark hero/card surfaces. Token `--ci-ink`.
+- **Body** (`#505050`): All running body text. Token `--ci-body`.
+- **Slate** (`#586782`): Secondary/supporting text — lead copy, card descriptions, sub-labels. Token `--ci-slate`.
+- **Bluegray** (`#929EB4`): Tertiary muted text and inactive/guest indicators. Token `--ci-bluegray`.
+- **Muted** (`#626262`): Captions, subtitles, subdued labels — darkened from the CI's `#707070` to clear WCAG AA (4.6:1) on the `#F8F9FA` background. Always verify 4.5:1 contrast against the background in use.
+- **Background** (`#F8F9FA`): Page background and default surface. Off-white with a cool cast; aliased as `--surface`.
+- **Surface-2** (`#F2F6F8`): Component and inner-card background tint.
+- **Line** (`#D0D6DF`): Default border for cards, inputs, and dividers. Soft variant: `rgba(208,214,223,0.72)`.
+- **Footer / Dark Surfaces** (`#001122`): Deep-navy/ink surfaces (footer, dark hero cards, wifi network cards). Body text on these surfaces uses translucent off-white (`rgba(248,249,250, .5–.72)`) tuned to clear 4.5:1 against `#001122`.
 
 ### Named Rules
-**The One Gradient Rule.** The cyan-to-navy gradient appears in exactly one place: the primary button (and its hero CTA variant). It is the brand's most saturated visual signal, and its rarity is what makes it land. Prohibited on backgrounds, cards, text, and any other surface.
+**The One Gradient Rule.** The teal-to-navy gradient (`--grad: linear-gradient(135deg, #66C5C5 0%, #004081 100%)`) appears in exactly three places: `.btn-primary`, `.btn-cta-hero`, and `.welcome-primary`. It is the brand's most saturated visual signal, and its rarity is what makes it land. Prohibited on backgrounds, cards, text, icons, badges, and any other surface — use solid `--ci-teal` (thin accents/underlines) or `--ci-navy` (icon/badge/block fills) instead.
 
 **The CI Anchor Rule.** Do not add new saturated accent colors without a specific semantic role (error, warning, category label). The teal-and-navy pair is the identity. A third accent dilutes it.
 
@@ -170,14 +170,13 @@ EXZY's CI colors are used directly. Teal is the live signal; navy is the structu
 
 ## 4. Elevation
 
-Flat by default. Surfaces have no ambient shadow at rest. Depth is a state response: hover lifts a card 2–6px with a navy-tinted shadow; active presses it back down; focused inputs receive a teal glow ring. Every shadow in the system uses `rgba(0, 64, 128, ...)` as its tint, not `rgba(0, 0, 0, ...)`. Navy-tinted shadows stay visually continuous with the brand palette.
+Flat by default. Surfaces have no ambient shadow at rest. Depth is a state response: hover lifts a card with a navy-tinted shadow; active presses it back down; focused inputs receive a teal glow ring. Every shadow in the system uses `rgba(0, 64, 129, ...)` (navy) or `rgba(0, 17, 34, ...)` (ink) as its tint, not pure black. Navy-tinted shadows stay visually continuous with the brand palette.
 
-### Shadow Vocabulary
-- **Subtle** (`0 1px 2px rgba(0,64,128,0.04), 0 1px 1px rgba(0,0,0,0.02)`): Resting state for very small elevated elements. Used sparingly.
-- **Card** (`0 4px 16px rgba(0,64,128,0.06), 0 2px 4px rgba(0,0,0,0.02)`): Card hover lift. Never applied at rest.
-- **Overlay** (`0 16px 40px rgba(0,64,128,0.08), 0 4px 12px rgba(0,64,128,0.04)`): Dropdown menus, nav dropdowns, modals. Distinguishes floating surfaces.
-- **Button** (`0 8px 24px rgba(0,64,128,0.22)`): Primary CTA button only. The deepest shadow in the system; signals the highest-priority action on screen.
-- **Focus Ring** (`0 0 0 4px rgba(102,197,197,0.16)`): Input focus state. Teal-tinted ring, not a traditional outline.
+### Shadow Vocabulary (live tokens in `css/design-system.css`)
+- **`--shadow-sm`** (`0 1px 2px rgba(0,64,129,0.04), 0 1px 1px rgba(0,17,34,0.02)`): Resting state for very small elevated elements. Used sparingly.
+- **`--shadow-md`** (`0 4px 14px rgba(0,64,129,0.07)`): Card hover lift, dropdowns. Never applied at rest on static cards.
+- **`--shadow-lg`** (`0 16px 34px rgba(0,64,129,0.10)`): Modals, overlays, the deepest floating surfaces.
+- **Focus Ring** (`outline: 3px solid rgba(102,197,197,0.58); outline-offset: 3px`): Input/interactive focus-visible state via `.u-focus-ring`. Teal-tinted outline, not a box-shadow ring.
 
 ### Named Rules
 **The State-Shadow Rule.** Shadows communicate state, not decoration. Flat at rest. Lifted on hover. Floating on overlay. Applying a shadow to a static, non-interactive surface is prohibited.
@@ -188,33 +187,33 @@ Flat by default. Surfaces have no ambient shadow at rest. Depth is a state respo
 Tactile and reliable. Fully rounded by CI convention. Respond to hover with micro-lift and deepened shadow. Arrow icons animate `translateX(3px)` on hover — standard for all CTA buttons.
 
 - **Shape:** 999px (fully rounded — CI identity, non-negotiable).
-- **Primary:** EXZY gradient background, white text, `padding: 14px 24px`, weight 600, size 15px. Button shadow. Hero variant adds continuous glow animation (`glow-cta`).
-- **Primary Hover:** `translateY(-1px)`, shadow deepens to `0 12px 30px rgba(0,64,128,0.28)`, `filter: brightness(1.04)`.
-- **Ghost:** Transparent, ink text, `border: 1px solid rgba(0,64,128,0.22)`. Hover: teal-tint background `rgba(102,197,197,0.10)`, border shifts to `#66C5C5`.
+- **Primary:** `--grad` background, `#F8F9FA` text, button shadow `0 8px 24px rgba(0,64,129,0.22)` plus an inset highlight. A diagonal sheen sweeps across on hover (`::after` translateX, transform-only).
+- **Primary Hover:** `translateY(-1px)`, shadow deepens to `0 12px 30px rgba(0,64,129,0.28)`, `filter: brightness(1.04)`.
+- **Ghost:** Transparent, ink text, `border: 1px solid rgba(0,64,129,0.22)`. Hover: teal-tint background `rgba(102,197,197,0.10)`, border shifts to `#66C5C5`.
 
 ### Cards / Containers
 - **Corner Style:** Gently curved (14px, `--radius`). Large containers use 22px (`--radius-lg`). Inner link items use 18px.
-- **Background:** White on Surface sections; creates a layering effect without elevation.
-- **Elevation:** Flat at rest. On hover: `translateY(-2px)` + Card shadow + border shifts to `rgba(102,197,197,0.45)`.
-- **Border:** `1px solid var(--line)` at rest. The teal border accent on hover is the primary interactive signal for cards.
+- **Background:** `--ci-bg` (`#F8F9FA`) by default, `--surface-2` (`#F2F6F8`) for inner/component tints; creates a layering effect without elevation.
+- **Elevation:** Flat at rest. On hover: lift + `--shadow-md`/`--shadow-lg` + border shifts toward `rgba(102,197,197,...)`.
+- **Border:** `1px solid var(--ci-line)` (`#D0D6DF`) at rest. The teal border accent on hover is the primary interactive signal for cards.
 - **Padding:** 28px default. Compact variants (inner items) use 16–22px.
 
 ### Badges / Chips
-- **Teal variant:** `rgba(102,197,197,0.12)` bg, `#66C5C5` text, 999px radius, `padding: 9px 14px`, Label scale.
-- **Navy variant:** `rgba(0,64,128,0.10)` bg, `#004080` text. Used for feature/highlighted states.
-- **Interactive chip (link-pill):** White bg, ink text, `border: 1px solid rgba(0,64,128,0.12)`. Hover lifts with Card shadow.
+- **Teal variant:** `--cyan-soft` (`rgba(102,197,197,0.14)`) bg, `#66C5C5` text, 999px radius, Label scale.
+- **Navy variant:** `--navy-soft` (`rgba(0,64,129,0.10)`) bg, `#004081` text. Used for feature/highlighted states.
+- **Interactive chip / link-pill:** `--ci-bg` background, ink text, `1px solid var(--ci-line)`. Hover lifts with `--shadow-md`.
 
 ### Inputs / Fields
-- **Default:** White bg, `1px solid var(--line)` border, 10px radius, `padding: 11px 14px`, 14.5px ink text.
-- **Focus:** Border shifts to `#66C5C5`; glow ring `box-shadow: 0 0 0 4px rgba(102,197,197,0.16)`.
-- **Error:** Error text below field, `#C84040`, 13px, weight 500.
+- **Default:** `--ci-bg` background, `1px solid var(--ci-line)` border, 10px radius, `padding: 11px 14px`, ink text.
+- **Focus:** Border shifts to `#66C5C5`; focus-visible outline `3px solid rgba(102,197,197,0.58)` via `.u-focus-ring`.
+- **Error:** Error text below field, `#F3554F`, weight 500.
 - **Disabled:** `opacity: 0.5` as default until explicitly designed.
 
 ### Navigation
-- **Style:** Sticky, 72px height. Frosted glass: `background: rgba(255,255,255,0.92)` + `backdrop-filter: blur(14px)`. The glass treatment is structural here; the nav is always present above content.
-- **Items:** 14.5px, weight 500, `#2C3744`. Hover: ink color + `rgba(102,197,197,0.10)` bg, 10px radius.
-- **Dropdowns:** White bg, `--line` border, 14px radius, Overlay shadow, fade in with 4px translateY entrance over 180ms.
-- **Mobile:** Burger icon collapses to slide-in drawer at 768px.
+- **Style:** Sticky, 72px height (`--nav-h`). Frosted glass on scroll/over content. The glass treatment is structural here; the nav is always present above content.
+- **Items:** Weight 500, ink-toned label. Hover: ink color + `rgba(102,197,197,0.10)` bg, rounded.
+- **Dropdowns:** `--ci-bg` background, `--ci-line` border, 14px radius, `--shadow-lg`, fade-in entrance.
+- **Mobile:** Burger icon collapses the nav into a `position: absolute` panel anchored with `left: 0; right: 0` below `--nav-h` (≤1100px breakpoint).
 
 ### Handbook Index (Signature Component)
 The homepage table of contents: numbered chapters, colored semantic dot (teal for orientation, amber for company, blue for policy, purple for resources, pink for showcase), chapter label, optional badge, and a right-arrow. Each row is a full-width link. The numbered sequence is content-driven; these numbers carry real chapter information, not decorative scaffolding.
@@ -222,9 +221,9 @@ The homepage table of contents: numbered chapters, colored semantic dot (teal fo
 ## 6. Do's and Don'ts
 
 ### Do:
-- **Do** use EXZY CI colors exactly as defined: `#66C5C5`, `#004080` / `#004081`, `#FFFFFF`. These are brand assets, not starting points.
+- **Do** use the CI palette exactly as defined in `css/design-system.css`: `--ci-teal #66C5C5`, `--ci-navy #004081`, `--ci-ink #001122`, `--ci-bg #F8F9FA`. These are brand assets, not starting points.
 - **Do** set body line-height at 1.75. Thai rendering requires it; reducing it is a readability defect, not a design choice.
-- **Do** use navy-tinted shadows (`rgba(0, 64, 128, ...)`) at all elevation levels. Black shadows look generic and break the brand color continuity.
+- **Do** use navy-tinted shadows (`rgba(0, 64, 129, ...)`) at all elevation levels. Black shadows look generic and break the brand color continuity.
 - **Do** let card borders shift to the teal accent on hover — this is the system's primary card interaction signal.
 - **Do** cap body copy line lengths at 65–75ch. Long unbroken Thai lines at full viewport width are hard to scan.
 - **Do** use `text-wrap: balance` on h1–h3. Thai headings with tone marks break awkwardly without it.
