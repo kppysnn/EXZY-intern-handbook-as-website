@@ -86,6 +86,42 @@ function hydratePage() {
     }
   }
 
+  // ----- Hero video autoplay -----
+  document.querySelectorAll("[data-home-hero-video]").forEach(video => {
+    const source = video.querySelector("source")?.getAttribute("src") || video.getAttribute("src");
+    if (source && video.getAttribute("src") !== source) video.setAttribute("src", source);
+
+    const tryPlay = () => {
+      if (source && !video.currentSrc) video.src = source;
+      const playPromise = video.play?.();
+      if (playPromise?.catch) playPromise.catch(() => {});
+    };
+
+    video.muted = true;
+    video.defaultMuted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("defaultMuted", "");
+    video.setAttribute("loop", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    video.setAttribute("autoplay", "");
+    video.preload = "auto";
+    video.load?.();
+
+    tryPlay();
+    requestAnimationFrame(tryPlay);
+    [150, 350, 700, 1200, 2200].forEach(delay => setTimeout(tryPlay, delay));
+    video.addEventListener("loadeddata", tryPlay, { once: true });
+    video.addEventListener("canplay", tryPlay, { once: true });
+    window.addEventListener("pageshow", tryPlay, { once: true });
+
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden && video.paused) tryPlay();
+    }, { once: true });
+  });
+
   // ----- Wi-Fi tabs -----
   const wifiTabs = document.querySelectorAll(".wifi-tab[data-wifi-tab]");
   if (wifiTabs.length) {
@@ -184,7 +220,7 @@ function hydratePage() {
       const pass = which === "staff" ? d.wifi_staff_pass : d.wifi_guest_pass;
       if (navigator.clipboard?.writeText) {
         navigator.clipboard.writeText(pass).then(() => {
-          showToast(`คัดลอกรหัสของ ${ssid} แล้ว · เปิดการตั้งค่า Wi-Fi`);
+          showToast(`คัดลอกรหัสของ ${ssid} แล้ว`);
         });
       }
     });
@@ -235,7 +271,7 @@ function hydratePage() {
       var pass = which === 'staff' ? d.wifi_staff_pass : d.wifi_guest_pass;
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(pass || '').then(function() {
-          showToast('คัดลอกรหัสของ ' + ssid + ' แล้ว · เปิดการตั้งค่า Wi-Fi');
+          showToast('คัดลอกรหัสของ ' + ssid + ' แล้ว');
         });
       }
     });
@@ -512,12 +548,14 @@ function initNav() {
   function setMobileMenu(open) {
     if (open) {
       navbar.classList.add("mobile-open");
+      burger?.setAttribute("aria-expanded", "true");
       if (showcaseGroup && navLinks && showcaseGroup.parentElement !== navLinks) {
         showcaseGroup.classList.add("nav-showcase-mobile");
         navLinks.appendChild(showcaseGroup);
       }
     } else {
       navbar.classList.remove("mobile-open");
+      burger?.setAttribute("aria-expanded", "false");
       if (showcaseGroup && navRight && showcaseGroup.parentElement !== navRight) {
         showcaseGroup.classList.remove("nav-showcase-mobile");
         navRight.appendChild(showcaseGroup);

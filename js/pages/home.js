@@ -50,19 +50,19 @@ export var renderHome = () => `
       <a href="#/first-day" class="ex-start-card ex-start-card-primary fdb-reveal" data-link>
         <span class="ex-start-index">Start</span>
         <h3>Day 1 Guide</h3>
-        <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และสิ่งที่จะได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
+        <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และ</br>สิ่งที่จะได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
         <strong>ดู Day 1 Guide</strong>
       </a>
       <a href="#/getting-started/orientation" class="ex-start-card fdb-reveal fdb-delay1" data-link>
         <span class="ex-start-index">First step</span>
         <h3>Orientation</h3>
-        <p>สามารถกลับมาดูสไลด์ core values โปรเจกต์ที่ต้องทำ และข้อมูลพื้นฐานของ EXZY</p>
+        <p>ข้อมูลการฝึกงาน นโยบาย</br> โปรเจกต์ที่ต้องทำ</br>และข้อมูลพื้นฐานของ EXZY</p>
         <strong>ดูข้อมูลจาก Orientation</strong>
       </a>
       <a href="#/resources/timesheet" class="ex-start-card fdb-reveal fdb-delay2" data-link>
         <span class="ex-start-index">Every Month</span>
         <h3>Timesheet</h3>
-        <p>ขั้นตอนกรอก Timesheet และส่งเอกสารให้ HR</p>
+        <p>ขั้นตอนกรอก Timesheet </br>และส่งเอกสารให้ HR</p>
         <strong>ดูวิธีกรอก Timesheet</strong>
       </a>
     </div>
@@ -85,7 +85,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="26" height="20" rx="3"/><path d="M3 13h26M10 7V4M22 7V4"/><circle cx="16" cy="20" r="3" fill="currentColor" stroke="none"/></svg>
           </div>
           <h3>Day 1 Guide</h3>
-          <p>ลิงก์ที่ intern ควรเห็นก่อนเริ่มงานจริง</p>
+          <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และสิ่งที่จะได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/first-day" data-link class="ex-folder-doc"><span>01</span> ตารางวันแรก</a>
@@ -101,7 +101,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="26" height="24" rx="3"/><path d="M10 4v24M10 12h16M10 19h16"/></svg>
           </div>
           <h3>Orientation & ออฟฟิศ</h3>
-          <p>เรื่องพื้นฐานที่เคยกระจายอยู่หลายอีเมล</p>
+          <p>ข้อมูลเกี่ยวกับการ Orientation และรายละเอียดของออฟฟิศ</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/getting-started/orientation" data-link class="ex-folder-doc"><span>01</span> Orientation</a>
@@ -117,7 +117,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="16" cy="10" r="5"/><circle cx="7" cy="22" r="4"/><circle cx="25" cy="22" r="4"/><path d="M11 14 Q8 18 11 22M21 14 Q24 18 21 22"/></svg>
           </div>
           <h3>บริษัทและทีม</h3>
-          <p>รู้ว่าใครอยู่ทีมไหนและควรติดต่อใคร</p>
+          <p>ข้อมูลเกี่ยวกับบริษัทและทีมงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/employee/org-chart" data-link class="ex-folder-doc"><span>01</span> โครงสร้างองค์กร</a>
@@ -132,7 +132,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3 L28 8v10c0 7-5 11-12 13C9 29 4 25 4 18V8L16 3Z"/><path d="M11 16l3 3 7-7"/></svg>
           </div>
           <h3>Work Policy</h3>
-          <p>สิ่งที่ช่วยให้ทำงานถูกวิธีตั้งแต่สัปดาห์แรก</p>
+          <p>นโยบายและข้อบังคับในการทำงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/policy/code-of-conduct" data-link class="ex-folder-doc"><span>01</span> Core Values</a>
@@ -165,13 +165,13 @@ export var renderHome = () => `
   <div class="ex-home-quick-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <h2 id="ex-home-quick-title">ข้อมูลที่ใช้บ่อยระหว่างฝึกงาน</h2>
-      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้สะดวกขึ้น ทั้งการเชื่อมต่อ ติดต่อ แจ้งลา และหาคำตอบเบื้องต้น</p>
+      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้สะดวกขึ้น ทั้งการเชื่อมต่อ Wi-Fi, ช่องทางการติดต่อ, การแจ้งลา และคำถามเบื้องต้นที่ intern อาจต้องการรู้คำตอบ</p>
     </div>
 
     <div class="ex-quick-list">
       <a href="#/getting-started/wifi" data-link>
         <span>Wi-Fi</span>
-        <strong>เชื่อมต่ออินเทอร์เน็ตในออฟฟิศ</strong>
+        <strong>เชื่อมต่ออินเทอร์เน็ต</br>ในออฟฟิศ</strong>
       </a>
       <a href="#/employee/directory" data-link>
         <span>Contact</span>
@@ -179,7 +179,7 @@ export var renderHome = () => `
       </a>
       <a href="#/policy/leave" data-link>
         <span>Leave</span>
-        <strong>ขั้นตอนการแจ้งลาและการลาป่วย</strong>
+        <strong>ขั้นตอนการแจ้งลาและ</br>การลาป่วย</strong>
       </a>
       <a href="#/resources/faqs" data-link>
         <span>FAQs</span>
