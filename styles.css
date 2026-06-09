@@ -11608,10 +11608,11 @@ html::-webkit-scrollbar { display: none !important; }
 }
 
 
-/* Restore overflow:hidden so decorative ::before blob stays inside card */
-.ex-start-card { overflow: hidden !important; }
+/* overflow:visible keeps button shadow/hover intact;
+   clip-path on ::before limits the blob to the card's bottom-right area */
+.ex-start-card { overflow: visible !important; }
 
-.ex-start-card::before { clip-path: none !important; }
+.ex-start-card::before { clip-path: inset(0 54px 54px 0 round 0 0 18px 0) !important; }
 
 
 
