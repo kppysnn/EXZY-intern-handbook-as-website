@@ -34285,34 +34285,39 @@ html::-webkit-scrollbar { display: none !important; }
 
 
 /* ════════════════════════════════════════════════════════════
-   DEFINITIVE CALLOUT ICON FIX
-   Icon was escaping the box because flex-start puts a 32px
-   icon flush against the top padding edge at the rounded corner.
-   Solution: absolute-position the icon; block-layout the callout.
+   CALLOUT + RULE-CARD ICON FIX
+   Root cause: --radius is 14px; icon at (18-22px from corner)
+   leaves only 4-8px gap — visually looks like it's at the edge.
+   Fix: align-items:center moves icon to vertical mid-point,
+   always far from the corner regardless of card height.
    ════════════════════════════════════════════════════════════ */
 .callout {
-  position: relative !important;
-  overflow: hidden !important;
-  display: block !important;
-  padding: 18px 20px 18px 66px !important;
+  position: static !important;
+  overflow: visible !important;
+  display: flex !important;
+  gap: 14px !important;
+  align-items: center !important;
+  padding: 20px 22px !important;
 }
 .callout .ic {
-  position: absolute !important;
-  left: 18px !important;
-  top: 18px !important;
+  position: static !important;
+  flex-shrink: 0 !important;
+  align-self: center !important;
+  width: 32px !important;
+  height: 32px !important;
   margin: 0 !important;
   transform: none !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 32px !important;
-  height: 32px !important;
 }
-/* icon without .ic wrapper (direct SVG siblings) stays aligned */
-.callout > svg:first-child {
-  position: absolute;
-  left: 18px;
-  top: 18px;
+/* rule-card: same fix — center icon so it's not at the corner */
+.rule-card {
+  align-items: center !important;
+}
+.rule-icon {
+  margin-top: 0 !important;
+  align-self: center !important;
 }
 
 
