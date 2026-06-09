@@ -1329,20 +1329,14 @@
     title: "\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23",
     lead: "EXZY \u0E21\u0E35 9 \u0E41\u0E1C\u0E19\u0E01\u0E2B\u0E25\u0E31\u0E01 \u2014 \u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E41\u0E15\u0E48\u0E25\u0E30\u0E1D\u0E48\u0E32\u0E22\u0E41\u0E25\u0E30\u0E2B\u0E19\u0E49\u0E32\u0E17\u0E35\u0E48\u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E01\u0E48\u0E2D\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01",
     body: `
-    <!-- Company Banner -->
-    <div class="oc-banner anim-up">
-      <div class="oc-banner-left">
-        <div class="oc-banner-badge">Head Office \xB7 Bangkok</div>
-        <div class="oc-banner-name">EXZY Co., Ltd.</div>
-        <div class="oc-banner-tagline">"Excellence by design, Advance by technology"</div>
-      </div>
-      <div class="oc-banner-right" aria-hidden="true">
-        <svg viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5" stroke-linecap="round">
-          <circle cx="32" cy="16" r="8"/>
-          <circle cx="16" cy="44" r="7"/>
-          <circle cx="48" cy="44" r="7"/>
-          <path d="M32 24v8M26 35 18 38M38 35l8 3"/>
-        </svg>
+    <!-- Company HQ card (compact, centered) -->
+    <div class="oc-hq-card anim-up">
+      <div class="oc-hq-badge">Head Office \xB7 Bangkok</div>
+      <div class="oc-hq-name">EXZY Co., Ltd.</div>
+      <div class="oc-hq-tagline">"Excellence by design, Advance by technology"</div>
+      <div class="oc-hq-pills">
+        <span class="oc-hq-pill">9 \u0E41\u0E1C\u0E19\u0E01</span>
+        <span class="oc-hq-pill">Smart Office Solution</span>
       </div>
     </div>
 
@@ -1806,46 +1800,21 @@
     title: "Intern Timesheet",
     lead: "\u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E2A\u0E48\u0E07\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 \u2014 \u0E41\u0E04\u0E48\u0E19\u0E35\u0E49\u0E40\u0E25\u0E22 \u0E14\u0E39\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E41\u0E25\u0E30\u0E27\u0E34\u0E18\u0E35\u0E01\u0E23\u0E2D\u0E01\u0E44\u0E14\u0E49\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48",
     body: `
-    <!-- Timesheet Rule Cards -->
-    <div class="ts-rule-cards anim-up">
-      <div class="ts-rule-card ts-rule-daily">
-        <div class="ts-rule-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <div class="ts-rule-content">
-          <div class="ts-rule-freq">\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19</div>
-          <h3>\u0E01\u0E23\u0E2D\u0E01 Timesheet</h3>
-          <p>\u0E25\u0E07\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u2013\u0E2D\u0E2D\u0E01 \u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E27\u0E31\u0E19 \u0E17\u0E33\u0E17\u0E31\u0E19\u0E17\u0E35\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A\u0E1A\u0E49\u0E32\u0E19</p>
-        </div>
-      </div>
-      <div class="ts-rule-card ts-rule-monthly">
-        <div class="ts-rule-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
-        </div>
-        <div class="ts-rule-content">
-          <div class="ts-rule-freq">\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 (30\u201331)</div>
-          <h3>\u0E1E\u0E34\u0E21\u0E1E\u0E4C + \u0E22\u0E37\u0E48\u0E19 HR</h3>
-          <p>\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E2D\u0E2D\u0E01\u0E01\u0E23\u0E30\u0E14\u0E32\u0E29 \u0E41\u0E25\u0E49\u0E27\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR \u0E42\u0E14\u0E22\u0E15\u0E23\u0E07\u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Visual Steps V2 -->
-    <div class="ts-steps-v2">
+    <!-- Timesheet Flow V3 -->
+    <div class="ts-flow-v3 anim-up">
       ${[
-      { n: "01", color: "var(--cyan)", title: "\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E32\u0E01 HR", desc: "HR \u0E2A\u0E48\u0E07 Excel Timesheet \u0E43\u0E2B\u0E49\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01", delay: 0 },
-      { n: "02", color: "var(--navy)", title: "\u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19", desc: "\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32-\u0E2D\u0E2D\u0E01\u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E27\u0E31\u0E19", delay: 60 },
-      { n: "03", color: "var(--slate)", title: "\u0E23\u0E30\u0E1A\u0E38\u0E01\u0E32\u0E23\u0E25\u0E32", desc: "\u0E27\u0E31\u0E19\u0E2B\u0E22\u0E38\u0E14/\u0E25\u0E32 \u0E23\u0E30\u0E1A\u0E38\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E43\u0E19\u0E04\u0E2D\u0E25\u0E31\u0E21\u0E19\u0E4C Summary", delay: 120 },
-      { n: "04", color: "#C0392B", title: "\u0E22\u0E37\u0E48\u0E19 HR \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331", desc: "\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 \u0E41\u0E25\u0E49\u0E27\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR \u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E42\u0E14\u0E22\u0E15\u0E23\u0E07", delay: 180 }
+      { n: "01", bg: "var(--cyan)", when: "\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01", what: "\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E32\u0E01 HR", note: "HR \u0E2A\u0E48\u0E07 Excel Timesheet \u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25" },
+      { n: "02", bg: "var(--navy)", when: "\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19", what: "\u0E01\u0E23\u0E2D\u0E01 Timesheet", note: "\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u2013\u0E2D\u0E2D\u0E01 \u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33 \u0E17\u0E33\u0E01\u0E48\u0E2D\u0E19\u0E01\u0E25\u0E31\u0E1A" },
+      { n: "03", bg: "var(--slate)", when: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E01\u0E32\u0E23\u0E25\u0E32", what: "\u0E23\u0E30\u0E1A\u0E38\u0E01\u0E32\u0E23\u0E25\u0E32", note: "\u0E23\u0E30\u0E1A\u0E38\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E43\u0E19\u0E04\u0E2D\u0E25\u0E31\u0E21\u0E19\u0E4C Summary" },
+      { n: "04", bg: "#C0392B", when: "\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331", what: "\u0E1E\u0E34\u0E21\u0E1E\u0E4C + \u0E22\u0E37\u0E48\u0E19 HR", note: "\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E01\u0E23\u0E30\u0E14\u0E32\u0E29 \u0E22\u0E37\u0E48\u0E19\u0E42\u0E14\u0E22\u0E15\u0E23\u0E07\u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28" }
     ].map((s) => `
-        <div class="tsv2-item anim-up" data-delay="${s.delay}">
-          <div class="tsv2-num" style="background:${s.color}">${s.n}</div>
-          <div class="tsv2-body">
-            <div class="tsv2-title">${s.title}</div>
-            <div class="tsv2-desc">${s.desc}</div>
-          </div>
+        <div class="ts-fv3-step">
+          <div class="ts-fv3-dot" style="background:${s.bg}">${s.n}</div>
+          <div class="ts-fv3-when">${s.when}</div>
+          <div class="ts-fv3-what">${s.what}</div>
+          <div class="ts-fv3-note">${s.note}</div>
         </div>
-      `).join('<div class="tsv2-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h8M9 5l3 3-3 3"/></svg></div>')}
+      `).join("")}
     </div>
 
     <h2>\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Timesheet</h2>

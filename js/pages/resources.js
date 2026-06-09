@@ -6,46 +6,21 @@ export const renderTimesheet = () => pageWrap({
   title: "Intern Timesheet",
   lead: "กรอกทุกวัน ส่งทุกสิ้นเดือน — แค่นี้เลย ดูตัวอย่างและวิธีกรอกได้ที่นี่",
   body: `
-    <!-- Timesheet Rule Cards -->
-    <div class="ts-rule-cards anim-up">
-      <div class="ts-rule-card ts-rule-daily">
-        <div class="ts-rule-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        </div>
-        <div class="ts-rule-content">
-          <div class="ts-rule-freq">ทุกวัน</div>
-          <h3>กรอก Timesheet</h3>
-          <p>ลงเวลาเข้า–ออก และงานที่ทำในแต่ละวัน ทำทันทีก่อนกลับบ้าน</p>
-        </div>
-      </div>
-      <div class="ts-rule-card ts-rule-monthly">
-        <div class="ts-rule-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
-        </div>
-        <div class="ts-rule-content">
-          <div class="ts-rule-freq">สิ้นเดือน (30–31)</div>
-          <h3>พิมพ์ + ยื่น HR</h3>
-          <p>พิมพ์เอกสารออกกระดาษ แล้วยื่นให้ HR โดยตรงที่ออฟฟิศ</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Visual Steps V2 -->
-    <div class="ts-steps-v2">
+    <!-- Timesheet Flow V3 -->
+    <div class="ts-flow-v3 anim-up">
       ${[
-        { n:'01', color:'var(--cyan)', title:'รับไฟล์จาก HR', desc:'HR ส่ง Excel Timesheet ให้ทางอีเมลตั้งแต่วันแรก', delay:0 },
-        { n:'02', color:'var(--navy)', title:'กรอกทุกวัน', desc:'กรอกเวลาเข้า-ออกและงานที่ทำในแต่ละวัน', delay:60 },
-        { n:'03', color:'var(--slate)', title:'ระบุการลา', desc:'วันหยุด/ลา ระบุประเภทในคอลัมน์ Summary', delay:120 },
-        { n:'04', color:'#C0392B', title:'ยื่น HR วันที่ 30–31', desc:'พิมพ์เอกสาร แล้วยื่นให้ HR ที่ออฟฟิศโดยตรง', delay:180 },
+        { n:'01', bg:'var(--cyan)',   when:'วันแรก',       what:'รับไฟล์จาก HR',   note:'HR ส่ง Excel Timesheet ทางอีเมล' },
+        { n:'02', bg:'var(--navy)',   when:'ทุกวัน',        what:'กรอก Timesheet',  note:'เวลาเข้า–ออก และงานที่ทำ ทำก่อนกลับ' },
+        { n:'03', bg:'var(--slate)',  when:'เมื่อมีการลา',  what:'ระบุการลา',        note:'ระบุประเภทในคอลัมน์ Summary' },
+        { n:'04', bg:'#C0392B',       when:'วันที่ 30–31',  what:'พิมพ์ + ยื่น HR', note:'พิมพ์กระดาษ ยื่นโดยตรงที่ออฟฟิศ' },
       ].map(s => `
-        <div class="tsv2-item anim-up" data-delay="${s.delay}">
-          <div class="tsv2-num" style="background:${s.color}">${s.n}</div>
-          <div class="tsv2-body">
-            <div class="tsv2-title">${s.title}</div>
-            <div class="tsv2-desc">${s.desc}</div>
-          </div>
+        <div class="ts-fv3-step">
+          <div class="ts-fv3-dot" style="background:${s.bg}">${s.n}</div>
+          <div class="ts-fv3-when">${s.when}</div>
+          <div class="ts-fv3-what">${s.what}</div>
+          <div class="ts-fv3-note">${s.note}</div>
         </div>
-      `).join('<div class="tsv2-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h8M9 5l3 3-3 3"/></svg></div>')}
+      `).join('')}
     </div>
 
     <h2>ตัวอย่างเอกสาร Timesheet</h2>

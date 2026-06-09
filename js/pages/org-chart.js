@@ -36,20 +36,14 @@ export const renderOrgChart = () => pageWrap({
   title: "โครงสร้างองค์กร",
   lead: "EXZY มี 9 แผนกหลัก — ทำความรู้จักแต่ละฝ่ายและหน้าที่รับผิดชอบก่อนวันแรก",
   body: `
-    <!-- Company Banner -->
-    <div class="oc-banner anim-up">
-      <div class="oc-banner-left">
-        <div class="oc-banner-badge">Head Office · Bangkok</div>
-        <div class="oc-banner-name">EXZY Co., Ltd.</div>
-        <div class="oc-banner-tagline">"Excellence by design, Advance by technology"</div>
-      </div>
-      <div class="oc-banner-right" aria-hidden="true">
-        <svg viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5" stroke-linecap="round">
-          <circle cx="32" cy="16" r="8"/>
-          <circle cx="16" cy="44" r="7"/>
-          <circle cx="48" cy="44" r="7"/>
-          <path d="M32 24v8M26 35 18 38M38 35l8 3"/>
-        </svg>
+    <!-- Company HQ card (compact, centered) -->
+    <div class="oc-hq-card anim-up">
+      <div class="oc-hq-badge">Head Office · Bangkok</div>
+      <div class="oc-hq-name">EXZY Co., Ltd.</div>
+      <div class="oc-hq-tagline">"Excellence by design, Advance by technology"</div>
+      <div class="oc-hq-pills">
+        <span class="oc-hq-pill">9 แผนก</span>
+        <span class="oc-hq-pill">Smart Office Solution</span>
       </div>
     </div>
 
