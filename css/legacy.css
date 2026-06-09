@@ -34314,3 +34314,24 @@ html::-webkit-scrollbar { display: none !important; }
   left: 18px;
   top: 18px;
 }
+
+
+/* ════════════════════════════════════════════════════════════
+   PATCH 3 — dress-code h2 color + navbar logo background
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Dress Hero V2 h2: override .prose h2 { color:#001122 !important } ── */
+.dress-hero-v2 h2 {
+  color: #F8F9FA !important;
+}
+/* Also fix h3 inside hero in case template ever uses h3 */
+.dress-hero-v2 h3 {
+  color: #F8F9FA !important;
+}
+
+/* ── Navbar logo: blend white PNG background with navbar ── */
+.nav-logo img {
+  mix-blend-mode: multiply;
+  /* Fallback: ensure no extra white box-model background */
+  background: transparent;
+}
