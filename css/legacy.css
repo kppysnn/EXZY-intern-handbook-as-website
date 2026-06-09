@@ -34279,9 +34279,9 @@ html::-webkit-scrollbar { display: none !important; }
   word-break: break-word;
 }
 
-/* Prevent .ex-start-card from ever clipping visible content */
-.ex-start-card { overflow: visible !important; }
-.ex-start-card::before { clip-path: inset(0 round 18px); }
+/* Restore overflow:hidden so decorative ::before blob stays inside card */
+.ex-start-card { overflow: hidden !important; }
+.ex-start-card::before { clip-path: none !important; }
 
 
 /* ════════════════════════════════════════════════════════════
@@ -34332,6 +34332,52 @@ html::-webkit-scrollbar { display: none !important; }
 /* Also fix h3 inside hero in case template ever uses h3 */
 .dress-hero-v2 h3 {
   color: #F8F9FA !important;
+}
+
+.dress-hero-v2 {
+  grid-template-columns: minmax(0, .9fr) minmax(340px, 1.1fr) !important;
+  gap: clamp(24px, 4vw, 52px) !important;
+  overflow: hidden;
+}
+
+.dress-hero-img--asset {
+  width: min(100%, 560px);
+  justify-self: center;
+  align-self: end;
+  overflow: visible !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.dress-hero-img--asset img {
+  width: 100% !important;
+  max-height: 360px;
+  display: block;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 18px 26px rgba(0,17,34,.24));
+}
+
+@media (max-width: 880px) {
+  .dress-hero-v2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .dress-hero-img--asset {
+    width: min(100%, 520px);
+    justify-self: start;
+  }
+
+  .dress-hero-img--asset img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 520px) {
+  .dress-hero-img--asset img {
+    max-height: 230px;
+  }
 }
 
 /* ── Navbar logo: blend white PNG background with navbar ── */
