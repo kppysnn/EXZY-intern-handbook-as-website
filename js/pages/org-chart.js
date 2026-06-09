@@ -36,29 +36,39 @@ export const renderOrgChart = () => pageWrap({
   title: "โครงสร้างองค์กร",
   lead: "EXZY มี 9 แผนกหลัก — ทำความรู้จักแต่ละฝ่ายและหน้าที่รับผิดชอบก่อนวันแรก",
   body: `
-    <!-- Company Header Card -->
-    <div class="oc-company-card oc-company-card-sm anim-up">
-      <div class="oc-company-eyebrow">Head Office · Bangkok</div>
-      <div class="oc-company-name">EXZY Co., Ltd.</div>
-      <div class="oc-company-tagline">"Excellence by design, Advance by technology"</div>
+    <!-- Company Banner -->
+    <div class="oc-banner anim-up">
+      <div class="oc-banner-left">
+        <div class="oc-banner-badge">Head Office · Bangkok</div>
+        <div class="oc-banner-name">EXZY Co., Ltd.</div>
+        <div class="oc-banner-tagline">"Excellence by design, Advance by technology"</div>
+      </div>
+      <div class="oc-banner-right" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="32" cy="16" r="8"/>
+          <circle cx="16" cy="44" r="7"/>
+          <circle cx="48" cy="44" r="7"/>
+          <path d="M32 24v8M26 35 18 38M38 35l8 3"/>
+        </svg>
+      </div>
     </div>
 
-    <!-- Connector -->
-    <div class="oc-connector" aria-hidden="true">
-      <div class="oc-connector-stem"></div>
-      <div class="oc-connector-branch"></div>
+    <!-- Tree connector -->
+    <div class="oc-tree-connector" aria-hidden="true">
+      <div class="oc-tree-stem"></div>
+      <div class="oc-tree-branch"></div>
     </div>
 
-    <!-- Department Grid V2 -->
-    <div class="oc-dept-grid">
+    <!-- Department cards -->
+    <div class="oc-grid-v3">
       ${depts.map((d, i) => `
-        <div class="oc-dept-v2 anim-up" data-delay="${i * 40}" style="--dv-color:${d.color}">
-          <div class="oc-dept-v2-icon">${d.icon}</div>
-          <div>
-            <div class="oc-dept-v2-abbr">${d.abbr}</div>
-            <div class="oc-dept-v2-name">${d.title}</div>
+        <div class="oc-card-v3 anim-up" data-delay="${i * 35}" style="--oc3-accent:${d.color}">
+          <div class="oc-card-v3-top">
+            <div class="oc-card-v3-icon">${d.icon}</div>
+            <span class="oc-card-v3-abbr">${d.abbr}</span>
           </div>
-          <div class="oc-dept-v2-desc">${d.desc}</div>
+          <div class="oc-card-v3-title">${d.title}</div>
+          <div class="oc-card-v3-desc">${d.desc}</div>
         </div>
       `).join('')}
     </div>

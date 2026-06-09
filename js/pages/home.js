@@ -82,9 +82,8 @@ export var renderHome = () => `
       <article class="ex-start-card fdb-reveal fdb-delay2">
         <span class="ex-start-icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="16" cy="16" r="12"/>
-            <path d="M10 16h12M16 10v12"/>
-            <path d="M8 23c3-2 5-3 8-3s5 1 8 3"/>
+            <path d="M8 4h16v24l-8-5-8 5V4z"/>
+            <path d="M12 12h8M12 17h5"/>
           </svg>
         </span>
         <h3>ข้อมูลที่ใช้บ่อย</h3>

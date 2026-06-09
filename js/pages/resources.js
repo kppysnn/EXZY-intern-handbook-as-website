@@ -30,28 +30,22 @@ export const renderTimesheet = () => pageWrap({
       </div>
     </div>
 
-    <!-- Visual Steps -->
-    <div class="ts-steps-visual">
-      <div class="ts-step-v anim-up" data-delay="0">
-        <div class="ts-step-node" style="background:var(--cyan)">1</div>
-        <div class="ts-step-title">รับไฟล์จาก HR</div>
-        <div class="ts-step-desc">HR ส่ง Excel Timesheet ให้ทางอีเมลตั้งแต่วันแรก</div>
-      </div>
-      <div class="ts-step-v anim-up" data-delay="80">
-        <div class="ts-step-node" style="background:var(--navy)">2</div>
-        <div class="ts-step-title">กรอกทุกวัน</div>
-        <div class="ts-step-desc">กรอกเวลาเข้า-ออกและงานที่ทำในแต่ละวัน</div>
-      </div>
-      <div class="ts-step-v anim-up" data-delay="160">
-        <div class="ts-step-node" style="background:var(--slate)">3</div>
-        <div class="ts-step-title">ระบุการลา</div>
-        <div class="ts-step-desc">วันหยุด/ลา ระบุประเภทในคอลัมน์ Summary</div>
-      </div>
-      <div class="ts-step-v anim-up" data-delay="240">
-        <div class="ts-step-node" style="background:var(--error)">4</div>
-        <div class="ts-step-title">ยื่น HR วันที่ 30–31</div>
-        <div class="ts-step-desc">พิมพ์เอกสาร แล้วยื่นให้ HR ที่ออฟฟิศโดยตรง</div>
-      </div>
+    <!-- Visual Steps V2 -->
+    <div class="ts-steps-v2">
+      ${[
+        { n:'01', color:'var(--cyan)', title:'รับไฟล์จาก HR', desc:'HR ส่ง Excel Timesheet ให้ทางอีเมลตั้งแต่วันแรก', delay:0 },
+        { n:'02', color:'var(--navy)', title:'กรอกทุกวัน', desc:'กรอกเวลาเข้า-ออกและงานที่ทำในแต่ละวัน', delay:60 },
+        { n:'03', color:'var(--slate)', title:'ระบุการลา', desc:'วันหยุด/ลา ระบุประเภทในคอลัมน์ Summary', delay:120 },
+        { n:'04', color:'#C0392B', title:'ยื่น HR วันที่ 30–31', desc:'พิมพ์เอกสาร แล้วยื่นให้ HR ที่ออฟฟิศโดยตรง', delay:180 },
+      ].map(s => `
+        <div class="tsv2-item anim-up" data-delay="${s.delay}">
+          <div class="tsv2-num" style="background:${s.color}">${s.n}</div>
+          <div class="tsv2-body">
+            <div class="tsv2-title">${s.title}</div>
+            <div class="tsv2-desc">${s.desc}</div>
+          </div>
+        </div>
+      `).join('<div class="tsv2-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h8M9 5l3 3-3 3"/></svg></div>')}
     </div>
 
     <h2>ตัวอย่างเอกสาร Timesheet</h2>

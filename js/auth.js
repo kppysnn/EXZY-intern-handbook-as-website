@@ -11,8 +11,8 @@ export const DEFAULT_ADMIN_DATA = {
   hr_email: "hr@exzyteam.com",
   hr_name: "Ninan A. (นินัน)",
   hr_phone: "0926244471",
-  orientation_slides_url: "",
-  orientation_pdf_url: "",
+  orientation_slides_url: "./static/Mini-Internship-Orientation.pdf",
+  orientation_pdf_url: "./static/Mini-Internship-Orientation.pdf",
   directory_sheet_url: "",
   directory_access_key: "hr@exzy",
   directory_sheet_iframe: "",
@@ -23,7 +23,14 @@ export function loadAdminData() {
   try {
     const raw = localStorage.getItem(ADMIN_STORE_KEY);
     if (!raw) return { ...DEFAULT_ADMIN_DATA };
-    return { ...DEFAULT_ADMIN_DATA, ...JSON.parse(raw) };
+    const stored = JSON.parse(raw);
+    const merged = { ...DEFAULT_ADMIN_DATA };
+    for (const key of Object.keys(stored)) {
+      // don't let empty strings override URL defaults
+      if (stored[key] === "" && DEFAULT_ADMIN_DATA[key] !== "") continue;
+      merged[key] = stored[key];
+    }
+    return merged;
   } catch (e) {
     return { ...DEFAULT_ADMIN_DATA };
   }

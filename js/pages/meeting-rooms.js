@@ -169,14 +169,5 @@ export const renderMeetingRooms = () => pageWrap({
       </div>
     </div>
 
-    <div class="page-cta-strip">
-      <div>
-        <h4>ดูได้เลยว่าแต่ละทีมทำอะไร</h4>
-        <p>โครงสร้างองค์กร EXZY — รู้ไว้จะได้รู้ว่าติดต่อใครตอนไหน</p>
-      </div>
-      <div class="cta-btns">
-        <a href="#/employee/org-chart" class="btn btn-primary" data-link>โครงสร้างองค์กร ${I.arrow}</a>
-      </div>
-    </div>
   `,
 });

@@ -110,24 +110,37 @@ export const renderInternshipPolicy = () => pageWrap({
   title: "Internship Policy",
   lead: "ไม่ต้องจำทุกอย่าง — อ่านครั้งเดียวก่อน แล้วกลับมาดูได้เสมอเมื่อมีข้อสงสัย",
   body: `
-    <!-- Policy Hero Banner -->
-    <div class="policy-time-hero anim-up">
-      <div class="policy-time-main">
-        <h2 style="color:var(--on-dark) !important">9:00 – 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 – 19:00</h2>
-        <p>เวลาฝึกงาน · จันทร์ – ศุกร์ · ขึ้นอยู่กับแผนกที่ได้รับมอบหมาย</p>
+    <!-- Policy Hero Banner V2 -->
+    <div class="policy-hero-v2 anim-up">
+      <div class="phv2-left">
+        <div class="phv2-eyebrow">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="8" r="7"/><path d="M8 5v3.5l2 2"/></svg>
+          เวลาทำงาน
+        </div>
+        <div class="phv2-time">
+          <span class="phv2-shift">9:00 – 18:00</span>
+          <span class="phv2-or">หรือ</span>
+          <span class="phv2-shift">10:00 – 19:00</span>
+        </div>
+        <p class="phv2-sub">จันทร์ – ศุกร์ · ขึ้นอยู่กับแผนกที่ได้รับมอบหมาย</p>
       </div>
-      <div class="policy-time-stats">
-        <div class="pts-item">
-          <span class="pts-num" data-count-to="8">8</span>
-          <span class="pts-label">ชม./วัน</span>
+      <div class="phv2-stats">
+        <div class="phv2-stat">
+          <span class="phv2-num" data-count-to="8">8</span>
+          <span class="phv2-unit">ชั่วโมง</span>
+          <span class="phv2-desc">ต่อวัน</span>
         </div>
-        <div class="pts-item">
-          <span class="pts-num" data-count-to="1">1</span>
-          <span class="pts-label">ชม.พักเที่ยง</span>
+        <div class="phv2-divider"></div>
+        <div class="phv2-stat">
+          <span class="phv2-num" data-count-to="1">1</span>
+          <span class="phv2-unit">ชั่วโมง</span>
+          <span class="phv2-desc">พักเที่ยง</span>
         </div>
-        <div class="pts-item">
-          <span class="pts-num" data-count-to="15">15</span>
-          <span class="pts-label">วันหยุด/ปี</span>
+        <div class="phv2-divider"></div>
+        <div class="phv2-stat">
+          <span class="phv2-num" data-count-to="15">15</span>
+          <span class="phv2-unit">วัน</span>
+          <span class="phv2-desc">หยุด/ปี</span>
         </div>
       </div>
     </div>
@@ -229,16 +242,6 @@ export const renderDressCode = () => pageWrap({
           <li>เสื้อเชิ้ตหรือเบลเซอร์</li>
           <li>กางเกง / กระโปรงทรงสุภาพ</li>
           <li>รองเท้าหุ้มส้นหรือคัทชู</li>
-        </ul>
-      </div>
-      <div class="dress-card-v2 anim-up" data-delay="160">
-        <div class="dress-card-v2-icon" style="background:var(--success-soft); color:var(--body);">${I.sparkle}</div>
-        <div class="dress-card-v2-style" style="color:var(--body);">Casual Friday</div>
-        <h3>วันศุกร์ / กิจกรรม</h3>
-        <ul>
-          <li>เสื้อยืดสะอาด ไม่มีลายไม่เหมาะสม</li>
-          <li>กางเกงยีน / กางเกง chino</li>
-          <li>รองเท้าผ้าใบ</li>
         </ul>
       </div>
     </div>

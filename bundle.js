@@ -45,8 +45,8 @@
     hr_email: "hr@exzyteam.com",
     hr_name: "Ninan A. (\u0E19\u0E34\u0E19\u0E31\u0E19)",
     hr_phone: "0926244471",
-    orientation_slides_url: "",
-    orientation_pdf_url: "",
+    orientation_slides_url: "./static/Mini-Internship-Orientation.pdf",
+    orientation_pdf_url: "./static/Mini-Internship-Orientation.pdf",
     directory_sheet_url: "",
     directory_access_key: "hr@exzy",
     directory_sheet_iframe: "",
@@ -56,7 +56,13 @@
     try {
       const raw = localStorage.getItem(ADMIN_STORE_KEY);
       if (!raw) return { ...DEFAULT_ADMIN_DATA };
-      return { ...DEFAULT_ADMIN_DATA, ...JSON.parse(raw) };
+      const stored = JSON.parse(raw);
+      const merged = { ...DEFAULT_ADMIN_DATA };
+      for (const key of Object.keys(stored)) {
+        if (stored[key] === "" && DEFAULT_ADMIN_DATA[key] !== "") continue;
+        merged[key] = stored[key];
+      }
+      return merged;
     } catch (e) {
       return { ...DEFAULT_ADMIN_DATA };
     }
@@ -460,9 +466,8 @@
       <article class="ex-start-card fdb-reveal fdb-delay2">
         <span class="ex-start-icon" aria-hidden="true">
           <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="16" cy="16" r="12"/>
-            <path d="M10 16h12M16 10v12"/>
-            <path d="M8 23c3-2 5-3 8-3s5 1 8 3"/>
+            <path d="M8 4h16v24l-8-5-8 5V4z"/>
+            <path d="M12 12h8M12 17h5"/>
           </svg>
         </span>
         <h3>\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E1A\u0E48\u0E2D\u0E22</h3>
@@ -1250,15 +1255,6 @@
       </div>
     </div>
 
-    <div class="page-cta-strip">
-      <div>
-        <h4>\u0E14\u0E39\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22\u0E27\u0E48\u0E32\u0E41\u0E15\u0E48\u0E25\u0E30\u0E17\u0E35\u0E21\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23</h4>
-        <p>\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23 EXZY \u2014 \u0E23\u0E39\u0E49\u0E44\u0E27\u0E49\u0E08\u0E30\u0E44\u0E14\u0E49\u0E23\u0E39\u0E49\u0E27\u0E48\u0E32\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E43\u0E04\u0E23\u0E15\u0E2D\u0E19\u0E44\u0E2B\u0E19</p>
-      </div>
-      <div class="cta-btns">
-        <a href="#/employee/org-chart" class="btn btn-primary" data-link>\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23 ${I.arrow}</a>
-      </div>
-    </div>
   `
   });
 
@@ -1333,29 +1329,39 @@
     title: "\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23",
     lead: "EXZY \u0E21\u0E35 9 \u0E41\u0E1C\u0E19\u0E01\u0E2B\u0E25\u0E31\u0E01 \u2014 \u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E41\u0E15\u0E48\u0E25\u0E30\u0E1D\u0E48\u0E32\u0E22\u0E41\u0E25\u0E30\u0E2B\u0E19\u0E49\u0E32\u0E17\u0E35\u0E48\u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E01\u0E48\u0E2D\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01",
     body: `
-    <!-- Company Header Card -->
-    <div class="oc-company-card oc-company-card-sm anim-up">
-      <div class="oc-company-eyebrow">Head Office \xB7 Bangkok</div>
-      <div class="oc-company-name">EXZY Co., Ltd.</div>
-      <div class="oc-company-tagline">"Excellence by design, Advance by technology"</div>
+    <!-- Company Banner -->
+    <div class="oc-banner anim-up">
+      <div class="oc-banner-left">
+        <div class="oc-banner-badge">Head Office \xB7 Bangkok</div>
+        <div class="oc-banner-name">EXZY Co., Ltd.</div>
+        <div class="oc-banner-tagline">"Excellence by design, Advance by technology"</div>
+      </div>
+      <div class="oc-banner-right" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="32" cy="16" r="8"/>
+          <circle cx="16" cy="44" r="7"/>
+          <circle cx="48" cy="44" r="7"/>
+          <path d="M32 24v8M26 35 18 38M38 35l8 3"/>
+        </svg>
+      </div>
     </div>
 
-    <!-- Connector -->
-    <div class="oc-connector" aria-hidden="true">
-      <div class="oc-connector-stem"></div>
-      <div class="oc-connector-branch"></div>
+    <!-- Tree connector -->
+    <div class="oc-tree-connector" aria-hidden="true">
+      <div class="oc-tree-stem"></div>
+      <div class="oc-tree-branch"></div>
     </div>
 
-    <!-- Department Grid V2 -->
-    <div class="oc-dept-grid">
+    <!-- Department cards -->
+    <div class="oc-grid-v3">
       ${depts.map((d, i) => `
-        <div class="oc-dept-v2 anim-up" data-delay="${i * 40}" style="--dv-color:${d.color}">
-          <div class="oc-dept-v2-icon">${d.icon}</div>
-          <div>
-            <div class="oc-dept-v2-abbr">${d.abbr}</div>
-            <div class="oc-dept-v2-name">${d.title}</div>
+        <div class="oc-card-v3 anim-up" data-delay="${i * 35}" style="--oc3-accent:${d.color}">
+          <div class="oc-card-v3-top">
+            <div class="oc-card-v3-icon">${d.icon}</div>
+            <span class="oc-card-v3-abbr">${d.abbr}</span>
           </div>
-          <div class="oc-dept-v2-desc">${d.desc}</div>
+          <div class="oc-card-v3-title">${d.title}</div>
+          <div class="oc-card-v3-desc">${d.desc}</div>
         </div>
       `).join("")}
     </div>
@@ -1577,24 +1583,37 @@
     title: "Internship Policy",
     lead: "\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E08\u0E33\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07 \u2014 \u0E2D\u0E48\u0E32\u0E19\u0E04\u0E23\u0E31\u0E49\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E48\u0E2D\u0E19 \u0E41\u0E25\u0E49\u0E27\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E14\u0E39\u0E44\u0E14\u0E49\u0E40\u0E2A\u0E21\u0E2D\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E2A\u0E07\u0E2A\u0E31\u0E22",
     body: `
-    <!-- Policy Hero Banner -->
-    <div class="policy-time-hero anim-up">
-      <div class="policy-time-main">
-        <h2 style="color:var(--on-dark) !important">9:00 \u2013 18:00 <span style="opacity:.5;font-weight:400;">/</span> 10:00 \u2013 19:00</h2>
-        <p>\u0E40\u0E27\u0E25\u0E32\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \xB7 \u0E08\u0E31\u0E19\u0E17\u0E23\u0E4C \u2013 \u0E28\u0E38\u0E01\u0E23\u0E4C \xB7 \u0E02\u0E36\u0E49\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E01\u0E31\u0E1A\u0E41\u0E1C\u0E19\u0E01\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E21\u0E2D\u0E1A\u0E2B\u0E21\u0E32\u0E22</p>
+    <!-- Policy Hero Banner V2 -->
+    <div class="policy-hero-v2 anim-up">
+      <div class="phv2-left">
+        <div class="phv2-eyebrow">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="8" r="7"/><path d="M8 5v3.5l2 2"/></svg>
+          \u0E40\u0E27\u0E25\u0E32\u0E17\u0E33\u0E07\u0E32\u0E19
+        </div>
+        <div class="phv2-time">
+          <span class="phv2-shift">9:00 \u2013 18:00</span>
+          <span class="phv2-or">\u0E2B\u0E23\u0E37\u0E2D</span>
+          <span class="phv2-shift">10:00 \u2013 19:00</span>
+        </div>
+        <p class="phv2-sub">\u0E08\u0E31\u0E19\u0E17\u0E23\u0E4C \u2013 \u0E28\u0E38\u0E01\u0E23\u0E4C \xB7 \u0E02\u0E36\u0E49\u0E19\u0E2D\u0E22\u0E39\u0E48\u0E01\u0E31\u0E1A\u0E41\u0E1C\u0E19\u0E01\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E21\u0E2D\u0E1A\u0E2B\u0E21\u0E32\u0E22</p>
       </div>
-      <div class="policy-time-stats">
-        <div class="pts-item">
-          <span class="pts-num" data-count-to="8">8</span>
-          <span class="pts-label">\u0E0A\u0E21./\u0E27\u0E31\u0E19</span>
+      <div class="phv2-stats">
+        <div class="phv2-stat">
+          <span class="phv2-num" data-count-to="8">8</span>
+          <span class="phv2-unit">\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07</span>
+          <span class="phv2-desc">\u0E15\u0E48\u0E2D\u0E27\u0E31\u0E19</span>
         </div>
-        <div class="pts-item">
-          <span class="pts-num" data-count-to="1">1</span>
-          <span class="pts-label">\u0E0A\u0E21.\u0E1E\u0E31\u0E01\u0E40\u0E17\u0E35\u0E48\u0E22\u0E07</span>
+        <div class="phv2-divider"></div>
+        <div class="phv2-stat">
+          <span class="phv2-num" data-count-to="1">1</span>
+          <span class="phv2-unit">\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07</span>
+          <span class="phv2-desc">\u0E1E\u0E31\u0E01\u0E40\u0E17\u0E35\u0E48\u0E22\u0E07</span>
         </div>
-        <div class="pts-item">
-          <span class="pts-num" data-count-to="15">15</span>
-          <span class="pts-label">\u0E27\u0E31\u0E19\u0E2B\u0E22\u0E38\u0E14/\u0E1B\u0E35</span>
+        <div class="phv2-divider"></div>
+        <div class="phv2-stat">
+          <span class="phv2-num" data-count-to="15">15</span>
+          <span class="phv2-unit">\u0E27\u0E31\u0E19</span>
+          <span class="phv2-desc">\u0E2B\u0E22\u0E38\u0E14/\u0E1B\u0E35</span>
         </div>
       </div>
     </div>
@@ -1695,16 +1714,6 @@
           <li>\u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E40\u0E0A\u0E34\u0E49\u0E15\u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E1A\u0E25\u0E40\u0E0B\u0E2D\u0E23\u0E4C</li>
           <li>\u0E01\u0E32\u0E07\u0E40\u0E01\u0E07 / \u0E01\u0E23\u0E30\u0E42\u0E1B\u0E23\u0E07\u0E17\u0E23\u0E07\u0E2A\u0E38\u0E20\u0E32\u0E1E</li>
           <li>\u0E23\u0E2D\u0E07\u0E40\u0E17\u0E49\u0E32\u0E2B\u0E38\u0E49\u0E21\u0E2A\u0E49\u0E19\u0E2B\u0E23\u0E37\u0E2D\u0E04\u0E31\u0E17\u0E0A\u0E39</li>
-        </ul>
-      </div>
-      <div class="dress-card-v2 anim-up" data-delay="160">
-        <div class="dress-card-v2-icon" style="background:var(--success-soft); color:var(--body);">${I.sparkle}</div>
-        <div class="dress-card-v2-style" style="color:var(--body);">Casual Friday</div>
-        <h3>\u0E27\u0E31\u0E19\u0E28\u0E38\u0E01\u0E23\u0E4C / \u0E01\u0E34\u0E08\u0E01\u0E23\u0E23\u0E21</h3>
-        <ul>
-          <li>\u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E22\u0E37\u0E14\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E44\u0E21\u0E48\u0E21\u0E35\u0E25\u0E32\u0E22\u0E44\u0E21\u0E48\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21</li>
-          <li>\u0E01\u0E32\u0E07\u0E40\u0E01\u0E07\u0E22\u0E35\u0E19 / \u0E01\u0E32\u0E07\u0E40\u0E01\u0E07 chino</li>
-          <li>\u0E23\u0E2D\u0E07\u0E40\u0E17\u0E49\u0E32\u0E1C\u0E49\u0E32\u0E43\u0E1A</li>
         </ul>
       </div>
     </div>
@@ -1821,28 +1830,22 @@
       </div>
     </div>
 
-    <!-- Visual Steps -->
-    <div class="ts-steps-visual">
-      <div class="ts-step-v anim-up" data-delay="0">
-        <div class="ts-step-node" style="background:var(--cyan)">1</div>
-        <div class="ts-step-title">\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E32\u0E01 HR</div>
-        <div class="ts-step-desc">HR \u0E2A\u0E48\u0E07 Excel Timesheet \u0E43\u0E2B\u0E49\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</div>
-      </div>
-      <div class="ts-step-v anim-up" data-delay="80">
-        <div class="ts-step-node" style="background:var(--navy)">2</div>
-        <div class="ts-step-title">\u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19</div>
-        <div class="ts-step-desc">\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32-\u0E2D\u0E2D\u0E01\u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E27\u0E31\u0E19</div>
-      </div>
-      <div class="ts-step-v anim-up" data-delay="160">
-        <div class="ts-step-node" style="background:var(--slate)">3</div>
-        <div class="ts-step-title">\u0E23\u0E30\u0E1A\u0E38\u0E01\u0E32\u0E23\u0E25\u0E32</div>
-        <div class="ts-step-desc">\u0E27\u0E31\u0E19\u0E2B\u0E22\u0E38\u0E14/\u0E25\u0E32 \u0E23\u0E30\u0E1A\u0E38\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E43\u0E19\u0E04\u0E2D\u0E25\u0E31\u0E21\u0E19\u0E4C Summary</div>
-      </div>
-      <div class="ts-step-v anim-up" data-delay="240">
-        <div class="ts-step-node" style="background:var(--error)">4</div>
-        <div class="ts-step-title">\u0E22\u0E37\u0E48\u0E19 HR \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331</div>
-        <div class="ts-step-desc">\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 \u0E41\u0E25\u0E49\u0E27\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR \u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E42\u0E14\u0E22\u0E15\u0E23\u0E07</div>
-      </div>
+    <!-- Visual Steps V2 -->
+    <div class="ts-steps-v2">
+      ${[
+      { n: "01", color: "var(--cyan)", title: "\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E32\u0E01 HR", desc: "HR \u0E2A\u0E48\u0E07 Excel Timesheet \u0E43\u0E2B\u0E49\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01", delay: 0 },
+      { n: "02", color: "var(--navy)", title: "\u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19", desc: "\u0E01\u0E23\u0E2D\u0E01\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32-\u0E2D\u0E2D\u0E01\u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E27\u0E31\u0E19", delay: 60 },
+      { n: "03", color: "var(--slate)", title: "\u0E23\u0E30\u0E1A\u0E38\u0E01\u0E32\u0E23\u0E25\u0E32", desc: "\u0E27\u0E31\u0E19\u0E2B\u0E22\u0E38\u0E14/\u0E25\u0E32 \u0E23\u0E30\u0E1A\u0E38\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E43\u0E19\u0E04\u0E2D\u0E25\u0E31\u0E21\u0E19\u0E4C Summary", delay: 120 },
+      { n: "04", color: "#C0392B", title: "\u0E22\u0E37\u0E48\u0E19 HR \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331", desc: "\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 \u0E41\u0E25\u0E49\u0E27\u0E22\u0E37\u0E48\u0E19\u0E43\u0E2B\u0E49 HR \u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E42\u0E14\u0E22\u0E15\u0E23\u0E07", delay: 180 }
+    ].map((s) => `
+        <div class="tsv2-item anim-up" data-delay="${s.delay}">
+          <div class="tsv2-num" style="background:${s.color}">${s.n}</div>
+          <div class="tsv2-body">
+            <div class="tsv2-title">${s.title}</div>
+            <div class="tsv2-desc">${s.desc}</div>
+          </div>
+        </div>
+      `).join('<div class="tsv2-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h8M9 5l3 3-3 3"/></svg></div>')}
     </div>
 
     <h2>\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Timesheet</h2>
@@ -1993,14 +1996,6 @@
     <h2 id="about">\u0E07\u0E32\u0E19\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D\u0E2D\u0E30\u0E44\u0E23</h2>
     <p>HR / BD Project \u0E40\u0E1B\u0E47\u0E19\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E43\u0E2B\u0E49 intern \u0E2A\u0E23\u0E49\u0E32\u0E07 content \u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY \u0E40\u0E0A\u0E48\u0E19 culture, employee activity, \u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19, \u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E25\u0E2D\u0E07\u0E17\u0E33 \u0E2B\u0E23\u0E37\u0E2D\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E2D\u0E22\u0E32\u0E01\u0E40\u0E25\u0E48\u0E32\u0E43\u0E2B\u0E49 intern \u0E23\u0E38\u0E48\u0E19\u0E16\u0E31\u0E14\u0E44\u0E1B\u0E40\u0E2B\u0E47\u0E19\u0E20\u0E32\u0E1E\u0E21\u0E32\u0E01\u0E02\u0E36\u0E49\u0E19</p>
     <p>\u0E07\u0E32\u0E19\u0E19\u0E35\u0E49\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E21\u0E35\u0E44\u0E27\u0E49\u0E41\u0E04\u0E48\u0E42\u0E0A\u0E27\u0E4C\u0E1C\u0E25\u0E07\u0E32\u0E19 \u0E41\u0E15\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E43\u0E19\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48 intern \u0E15\u0E49\u0E2D\u0E07\u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E04\u0E39\u0E48\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01 Timesheet \u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E08\u0E32\u0E01\u0E17\u0E35\u0E21\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07</p>
-
-    <div class="callout anim-up">
-      <span class="ic">${I.info}</span>
-      <div>
-        <h3>\u0E43\u0E04\u0E23\u0E40\u0E1B\u0E47\u0E19\u0E04\u0E19 assign</h3>
-        <p>\u0E07\u0E32\u0E19\u0E19\u0E35\u0E49\u0E21\u0E2D\u0E1A\u0E2B\u0E21\u0E32\u0E22\u0E42\u0E14\u0E22 HR \u0E2B\u0E23\u0E37\u0E2D BD \u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E2D\u0E32\u0E08\u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E32\u0E21\u0E0A\u0E48\u0E27\u0E07\u0E40\u0E27\u0E25\u0E32\u0E41\u0E25\u0E30\u0E42\u0E08\u0E17\u0E22\u0E4C\u0E02\u0E2D\u0E07\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 \u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E41\u0E19\u0E48\u0E43\u0E08\u0E27\u0E48\u0E32\u0E42\u0E08\u0E17\u0E22\u0E4C\u0E23\u0E2D\u0E1A\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E04\u0E37\u0E2D\u0E2D\u0E30\u0E44\u0E23 \u0E43\u0E2B\u0E49\u0E16\u0E32\u0E21 HR \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E17\u0E35\u0E48\u0E14\u0E39\u0E41\u0E25\u0E07\u0E32\u0E19\u0E19\u0E35\u0E49\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33</p>
-      </div>
-    </div>
 
     <h2 id="format">\u0E17\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E30\u0E44\u0E23\u0E44\u0E14\u0E49\u0E1A\u0E49\u0E32\u0E07</h2>
     <p>\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E23\u0E39\u0E1B\u0E41\u0E1A\u0E1A\u0E17\u0E35\u0E48\u0E16\u0E19\u0E31\u0E14\u0E44\u0E14\u0E49 \u0E44\u0E21\u0E48\u0E08\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19 \u0E02\u0E2D\u0E41\u0E04\u0E48\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E02\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E30\u0E40\u0E1C\u0E22\u0E41\u0E1E\u0E23\u0E48\u0E43\u0E2B\u0E49\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E40\u0E02\u0E49\u0E32\u0E16\u0E36\u0E07\u0E44\u0E14\u0E49\u0E08\u0E23\u0E34\u0E07</p>
