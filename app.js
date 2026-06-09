@@ -38,9 +38,9 @@ const Pages = {
   "tasks/hr-bd-project":           () => renderHrBdProject(),
   "resources/timesheet":           () => renderTimesheet(),
   "resources/faqs":                () => renderFaqs(),
-  "showcase/experiences":          () => showcasePage("experiences"),
-  "showcase/projects":             () => showcasePage("experiences"),
-  "showcase/blog":                 () => showcasePage("blog"),
+  "showcase/experiences":          () => showcasePage(),
+  "showcase/projects":             () => showcasePage(),
+  "showcase/blog":                 () => showcasePage(),
 };
 
 // ===== ROUTER =====

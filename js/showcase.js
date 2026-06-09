@@ -59,16 +59,16 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
   },
 ]);
 
-function getShowcaseItems(active) {
-  const base = REAL_SHOWCASE_ITEMS.filter(i => i.category === active);
+function getAllShowcaseItems() {
+  const base = [...REAL_SHOWCASE_ITEMS];
 
   const adminData = loadAdminData();
   let adminItems = [];
   try { adminItems = JSON.parse(adminData.showcase_items || "[]"); } catch (e) {}
   const adminReal = adminItems
-    .filter(i => i && i.category === active && /^https?:\/\//i.test(String(i.url || "").trim()))
+    .filter(i => i && /^https?:\/\//i.test(String(i.url || "").trim()))
     .map(i => ({
-      category: active,
+      category: i.category || "experiences",
       kind: "link",
       platform: i.badge || "External",
       track: i.meta || "",
@@ -170,45 +170,31 @@ function renderShowcaseCard(item) {
   `;
 }
 
-export function showcasePage(active) {
-  const tabs = [
-    ["experiences", "Intern Experiences"],
-    ["blog", "Intern's Blog"],
-  ];
-  const titleMap = {
-    experiences: ["Intern Experiences", "ตัวอย่าง HR / BD Project จาก intern รุ่นก่อน ทั้งคลิป รีวิว และเรื่องเล่าที่เผยแพร่บนช่องทาง public"],
-    blog: ["Intern's Blog", "ตัวอย่างบทความและเรื่องเล่าจาก intern รุ่นก่อน ใช้ดูแนวทางก่อนทำชิ้นงานของตัวเอง"],
-  };
-  const items = getShowcaseItems(active);
-  const emptyNote = items.length === 0
+export function showcasePage(_active) {
+  const items = getAllShowcaseItems();
+  const videoItems = items.filter(i => i.kind === "video");
+  const linkItems  = items.filter(i => i.kind !== "video");
+  const emptyNote  = items.length === 0
     ? `<div class="show-real-empty">${I.info} ตอนนี้ยังไม่มีลิงก์ผลงานจริงในหมวดนี้</div>`
     : "";
+
+  const videoHtml = videoItems.map(renderShowcaseCard).join("");
+  const linkHtml  = linkItems.map(renderShowcaseCard).join("");
 
   return `
     <section class="page-header">
       <div class="section-inner">
-        <div class="crumb"><a href="#/home" data-link>Home</a> <span style="opacity:.5; margin:0 6px;">/</span> Intern Tasks <span style="opacity:.5; margin:0 6px;">/</span> Showcase <span style="opacity:.5; margin:0 6px;">/</span> ${titleMap[active][0]}</div>
-        <h1>${titleMap[active][0]}</h1>
-        <p class="page-lead">${titleMap[active][1]}</p>
+        <div class="crumb"><a href="#/home" data-link>Home</a> <span style="opacity:.5; margin:0 6px;">/</span> Intern Tasks <span style="opacity:.5; margin:0 6px;">/</span> Showcase</div>
+        <h1>Intern Showcase</h1>
+        <p class="page-lead">ตัวอย่างผลงาน HR Project จาก intern รุ่นก่อน ทั้งคลิป บทความ และโพสต์ที่เผยแพร่บนช่องทาง public</p>
       </div>
     </section>
     <section class="section">
       <div class="section-inner">
-        <div class="callout anim-up" style="margin-bottom:22px;">
-          <span class="ic">${I.info}</span>
-          <div>
-            <h4>Showcase ใช้ทำอะไร</h4>
-            <p>หน้านี้เป็นตัวอย่างงาน HR / BD Project จาก intern รุ่นก่อน ใช้ดูไอเดียก่อนเริ่มทำชิ้นงานของตัวเองได้ งานจริงเลือก format ได้ตามถนัด และควรอ่านรายละเอียดงานก่อนที่หน้า <a href="#/tasks/hr-bd-project" data-link>HR / BD Project</a></p>
-          </div>
-        </div>
-        <div class="tabs">
-          ${tabs.map(([k, label]) => `
-            <a href="#/showcase/${k}" data-link class="tab ${k === active ? 'is-active' : ''}">${label}</a>
-          `).join("")}
-        </div>
         ${emptyNote}
-        <div class="showcase-real-grid">
-          ${items.map(renderShowcaseCard).join("")}
+        <div class="showcase-mixed-grid">
+          ${videoHtml}
+          <div class="showcase-link-subgrid">${linkHtml}</div>
         </div>
       </div>
     </section>

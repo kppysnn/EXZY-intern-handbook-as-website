@@ -17,7 +17,7 @@ export function renderFirstDay(data = {}) {
         <span class="ex-day-h1-brand">EXZY Internship</span>
         <span class="ex-day-h1-sub">วันแรกของการฝึกงาน</span>
       </h1>
-      <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ เช็กงานที่ต้องทำ คนที่ต้องเจอ และลิงก์ที่ต้องใช้ต่อ</p>
+      <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ มาทำความรู้จักกับ EXZY </br>และการทำงานที่นี่กัน!</p>
       <a href="#ex-day-tasks" class="ex-day-cta">ดูสิ่งที่ต้องทำวันนี้</a>
     </div>
   </div>
@@ -25,7 +25,7 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-tasks" id="ex-day-tasks" aria-labelledby="ex-day-tasks-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-tasks-title">เริ่มต้นด้วย 2 เรื่องสำคัญ</h2>
+    <h2 id="ex-day-tasks-title">2 เรื่องที่ต้องทำ</h2>
     <p>อย่าลืม Subscribe Calendar เพื่อติดตามวันหยุดของบริษัท และกรอก Timesheet เพื่อลงเวลาเข้าออกงานในระหว่างการฝึกงาน</p>
   </div>
 
@@ -37,7 +37,7 @@ export function renderFirstDay(data = {}) {
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 01</span>
         <h3>Subscribe Google Calendar</h3>
-        <p>HR จะส่งคำเชิญทางอีเมล กดเปิด Calendar แล้ว subscribe ปฏิทินบริษัทเพื่อดูวันหยุดประจำปีของบริษัท</p>
+        <p>HR จะส่งคำเชิญให้ทางอีเมล กดเปิด Calendar แล้ว subscribe ปฏิทินบริษัทเพื่อดูวันหยุดประจำปีของบริษัท</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
           <div class="ex-flow-step"><span>📧</span><b>รับ Email คำเชิญจาก HR</b></div>
           <i></i>
@@ -45,7 +45,7 @@ export function renderFirstDay(data = {}) {
           <i></i>
           <div class="ex-flow-step"><span>✅</span><b>กด Subscribe ปฏิทิน</b></div>
         </div>
-        <p class="ex-task-note">หากไม่ได้รับ Calendar invitation ติดต่อ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
+        <p class="ex-task-note">ถ้าไม่ได้รับ Calendar invitation ติดต่อ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
       </div>
     </article>
 
@@ -56,13 +56,13 @@ export function renderFirstDay(data = {}) {
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 02</span>
         <h3>กรอก Timesheet</h3>
-        <p>กรอกเวลาเข้าออกงานตามจริงในไฟล์ที่ HR ส่งให้ ทำทุกวัน และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน (วันที่ 30-31)</p>
+        <p>กรอกเวลาเข้าออกงานตามจริงในไฟล์ที่ HR ส่งให้ แนะนำให้ทำทุกวันจะได้ไม่ลืมสิ่งที่ทำ และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน </br>(วันที่ 30-31)</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
           <div class="ex-flow-step"><span>📂</span><b>รับไฟล์ Timesheet จาก HR</b></div>
           <i></i>
           <div class="ex-flow-step"><span>✏️</span><b>เปิดไฟล์และเริ่มกรอกข้อมูล</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>🖨️</span><b>พิมพ์ส่ง HR สิ้นเดือน <br>(วันที่ 30-31)</b></div>
+          <div class="ex-flow-step"><span>🖨️</span><b>พิมพ์ส่ง HR สิ้นเดือน </br>(วันที่ 30-31)</b></div>
         </div>
         <a href="#/tasks/timesheet" class="ex-task-btn" data-link>ดูคู่มือ Timesheet →</a>
       </div>
@@ -72,8 +72,8 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-road" aria-labelledby="ex-day-road-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-road-title">วันแรกต้องเจอกับอะไรบ้าง</h2>
-    <p>4 steps หลัก ที่ intern จะได้เจอในวันแรก ตั้งแต่การทำความรู้จัก EXZY ไปจนถึงการเริ่มทำงาน</p>
+    <h2 id="ex-day-road-title">วันแรกต้องเจอกับอะไรบ้าง ?</h2>
+    <p>4 อย่างที่ intern จะได้เจอในวันแรก ตั้งแต่การทำความรู้จัก EXZY ไปจนถึงการเริ่มทำงาน</p>
   </div>
 
   <div class="ex-info-roadmap" aria-label="เส้นทางของวันแรก">
@@ -130,7 +130,7 @@ export function renderFirstDay(data = {}) {
     <div class="ex-more-headline">
       <p class="ex-more-kicker"><span></span>Intern Handbook Map</p>
       <h2 id="ex-day-more-title">อ่านต่อใน <br>Intern Handbook</h2>
-      <p>เรื่องที่ intern ควรรู้และต้องใช้ตลอดการฝึกงาน ตั้งแต่นโยบาย ออฟฟิศ คนในทีม และข้อมูลที่เกี่ยวข้อง</p>
+      <p>เรื่องที่ intern ควรรู้และต้องใช้ตลอดการฝึกงาน ตั้งแต่นโยบาย ออฟฟิศ คนในทีม และข้อมูลอื่น ๆ อีกมากมาย</p>
       <a href="#/" class="ex-more-home" data-link>
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         กลับไปหน้า Home

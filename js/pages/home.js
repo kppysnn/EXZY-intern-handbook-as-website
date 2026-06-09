@@ -42,7 +42,7 @@ export var renderHome = () => `
 <section class="ex-home-start" id="ex-home-start" aria-labelledby="ex-home-start-title">
   <div class="ex-home-start-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-home-start-title">สามเรื่องที่ถูกเปิดดูบ่อย</h2>
+      <h2 id="ex-home-start-title"> 3 เรื่องที่ถูกเปิดดูบ่อย</h2>
       <p>สิ่งที่ต้องเจอในวันแรก ๆ งานที่ต้องทำ และข้อมูลที่อาจจะเปิดดูอยู่บ่อย ๆ</p>
     </div>
 
@@ -55,7 +55,7 @@ export var renderHome = () => `
             <circle cx="16" cy="21" r="2.5" fill="currentColor" stroke="none"/>
           </svg>
         </span>
-        <h3>วันแรกจะเจออะไรบ้่าง</h3>
+        <h3>วันแรกจะเจออะไรบ้าง ?</h3>
         <p>หากเพิ่งมาวันแรก แล้วยังไม่รู้ว่าจะเจอกับอะไรบ้าง ลองดู Day 1 Guide ได้ที่นี่</p>
         <div class="ex-start-actions">
           <a href="#/first-day" class="ex-start-link ex-start-link-primary" data-link>ดู Day 1 Guide</a>
@@ -71,7 +71,7 @@ export var renderHome = () => `
           </svg>
         </span>
         <h3>งานที่ต้องรับผิดชอบ</h3>
-        <p>มี 2 อย่างที่ต้องทำตลอดการฝึกงานก็คือ การกรอก Timesheet ทุกวัน และส่ง HR / BD Project ก่อนจบฝึกงาน</p>
+        <p>มี 2 อย่างที่ต้องทำตลอดการฝึกงาน </br>คือการกรอก Timesheet ทุกวัน </br>และส่ง HR / BD Project ก่อนจบฝึกงาน</p>
         <div class="ex-start-actions">
           <a href="#/tasks/timesheet" class="ex-start-link" data-link>Timesheet</a>
           <a href="#/tasks/hr-bd-project" class="ex-start-link" data-link>HR / BD Project</a>
@@ -86,8 +86,8 @@ export var renderHome = () => `
             <path d="M12 12h8M12 17h5"/>
           </svg>
         </span>
-        <h3>ข้อมูลที่ใช้บ่อย</h3>
-        <p>สิ่งที่ได้ใช้บ่อยระหว่างฝึกงาน เช่น Wi-Fi, รายชื่อพนักงาน, FAQs รวบรวมคำถาม-ตอบ ไว้ในที่เดียว</p>
+        <h3>ตัวช่วยระหว่างฝึกงาน</h3>
+        <p>ข้อมูลที่จะช่วยให้ทำงานได้ง่ายขึ้น เช่น Wi-Fi, </br>รายชื่อพนักงาน, FAQs รวบรวมคำถาม-ตอบ </br>ไว้ในที่เดียว</p>
         <div class="ex-start-actions">
           <a href="#/resources/faqs" class="ex-start-link" data-link>FAQs</a>
           <a href="#/getting-started/wifi" class="ex-start-link" data-link>Office Wi-Fi</a>
@@ -114,7 +114,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="26" height="20" rx="3"/><path d="M3 13h26M10 7V4M22 7V4"/><circle cx="16" cy="20" r="3" fill="currentColor" stroke="none"/></svg>
           </div>
           <h3>Day 1 Guide</h3>
-          <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และสิ่งที่จะได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
+          <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และสิ่งที่จะได้เจอ</br>ในช่วงเริ่มต้นการฝึกงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/first-day" data-link class="ex-folder-doc"><span>01</span> ตารางวันแรก</a>
@@ -146,7 +146,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 5h18v24H7z"/><path d="M11 10h10M11 15h10M11 20h7"/><path d="M23 4v5h5"/></svg>
           </div>
           <h3>งานที่ต้องรับผิดชอบ</h3>
-          <p>สิ่งที่ intern ต้องทำและส่งระหว่างฝึกงาน ทั้งเอกสารรายเดือนและงาน content ก่อนจบฝึกงาน</p>
+          <p>สิ่งที่ intern ต้องทำและส่งระหว่างฝึกงาน ทั้งเอกสารรายเดือน</br>และ HR project ก่อนจบฝึกงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/tasks/timesheet" data-link class="ex-folder-doc"><span>01</span> Timesheet</a>
@@ -162,7 +162,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="16" cy="10" r="5"/><circle cx="7" cy="22" r="4"/><circle cx="25" cy="22" r="4"/><path d="M11 14 Q8 18 11 22M21 14 Q24 18 21 22"/></svg>
           </div>
           <h3>บริษัทและทีม</h3>
-          <p>ข้อมูลเกี่ยวกับบริษัทและทีมงาน</p>
+          <p>ข้อมูลเกี่ยวกับบริษัทและทีม</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/employee/org-chart" data-link class="ex-folder-doc"><span>01</span> โครงสร้างองค์กร</a>
@@ -177,7 +177,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3 L28 8v10c0 7-5 11-12 13C9 29 4 25 4 18V8L16 3Z"/><path d="M11 16l3 3 7-7"/></svg>
           </div>
           <h3>Work Policy</h3>
-          <p>นโยบายและข้อบังคับในการทำงาน</p>
+          <p>นโยบายและกฏระเบียบในการทำงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/policy/code-of-conduct" data-link class="ex-folder-doc"><span>01</span> Core Values</a>
@@ -208,7 +208,7 @@ export var renderHome = () => `
   <div class="ex-home-quick-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <h2 id="ex-home-quick-title">ข้อมูลที่ใช้บ่อย</h2>
-      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้สะดวกขึ้น ทั้งการเชื่อมต่อ Wi-Fi, ช่องทางการติดต่อ, การแจ้งลา และคำถามเบื้องต้นที่ intern อาจต้องการรู้คำตอบ</p>
+      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้ง่ายขึ้น ทั้งการเชื่อมต่อ Wi-Fi, ช่องทางการติดต่อ, การแจ้งลา </br>และคำถามเบื้องต้นที่ intern อาจต้องการรู้คำตอบ</p>
     </div>
 
     <div class="ex-quick-list">
@@ -222,7 +222,7 @@ export var renderHome = () => `
       </a>
       <a href="#/policy/leave" data-link>
         <span>Leave</span>
-        <strong>ขั้นตอนการแจ้งลาและ<br>การลาป่วย</strong>
+        <strong>ขั้นตอนการแจ้งลา</br>และการลาป่วย</strong>
       </a>
       <a href="#/resources/faqs" data-link>
         <span>FAQs</span>

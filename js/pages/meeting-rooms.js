@@ -4,7 +4,7 @@ import { pageWrap } from '../helpers.js';
 export const renderMeetingRooms = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Getting Started", null], ["Meeting Rooms", null]],
   title: "Meeting Rooms",
-  lead: "ห้องประชุมในออฟฟิศ EXZY มีทั้งหมด 4 ห้องกระจายอยู่ใน 2 ชั้น — จองได้หลายช่องทางตามสะดวก",
+  lead: "ห้องประชุมในออฟฟิศ EXZY มีทั้งหมด 4 ห้อง <span style=\"white-space:nowrap\">โดยจะอยู่ที่ชั้น 1 และชั้น 2</span>",
   body: `
     <!-- Overview Stats -->
     <div class="mr-overview anim-up">
@@ -51,7 +51,6 @@ export const renderMeetingRooms = () => pageWrap({
         <div class="mr-v2-info">
           <div class="mr-v2-head">
             <div class="mr-v2-name"><span>X</span>cellent</div>
-            <span class="mr-room-badge mr-room-closed">ห้องปิด</span>
           </div>
           <p class="mr-v2-desc">ห้องประชุมหลักของออฟฟิศ เหมาะสำหรับการประชุมภายในทีม และการรับรองลูกค้าหรือแขกจากภายนอก</p>
           <div class="mr-v2-meta">
@@ -83,20 +82,11 @@ export const renderMeetingRooms = () => pageWrap({
       <div class="mr-v2-grid">
         <div class="mr-v2-card anim-up" data-delay="100">
           <div class="mr-v2-card-vis">
-            <!-- [REPLACE: ใส่รูปห้อง Xpert Area · 4:3 landscape · 640×480px ขึ้นไป] -->
-            <div class="mr-room-img-placeholder mr-room-img-sm" aria-label="ภาพห้อง Xpert Area">
-              <svg viewBox="0 0 48 48" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.35">
-                <rect x="4" y="8" width="40" height="32" rx="4"/>
-                <circle cx="18" cy="20" r="5"/>
-                <path d="M4 36l10-10 6 6 8-10 16 14"/>
-              </svg>
-              <span>Photo</span>
-            </div>
+            <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xpert-area.jpg" alt="พื้นที่ประชุม Xpert Area พร้อมโต๊ะประชุม จอ และเก้าอี้" loading="lazy" />
           </div>
           <div class="mr-v2-card-body">
             <div class="mr-v2-card-head">
               <div class="mr-v2-card-name"><span>X</span>pert Area</div>
-              <span class="mr-room-badge mr-room-open">พื้นที่เปิด</span>
             </div>
             <div class="mr-v2-cap">${I.people}<span>6–8 ท่าน</span></div>
             <p class="mr-v2-card-desc">พื้นที่โต๊ะประชุมแบบเปิดโล่ง เหมาะสำหรับระดมความคิดและประชุมกลุ่ม</p>
@@ -109,20 +99,18 @@ export const renderMeetingRooms = () => pageWrap({
 
         <div class="mr-v2-card anim-up" data-delay="200">
           <div class="mr-v2-card-vis">
-            <!-- [REPLACE: ใส่รูปห้อง Xtream Room · 4:3 landscape · 640×480px ขึ้นไป] -->
-            <div class="mr-room-img-placeholder mr-room-img-sm" aria-label="ภาพห้อง Xtream Room">
-              <svg viewBox="0 0 48 48" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.35">
-                <rect x="4" y="8" width="40" height="32" rx="4"/>
-                <circle cx="18" cy="20" r="5"/>
-                <path d="M4 36l10-10 6 6 8-10 16 14"/>
-              </svg>
-              <span>Photo</span>
+            <div class="mr-room-gallery" aria-label="รูปห้อง Xtream Room">
+              <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtream-front.jpg" alt="มุมหน้าห้อง Xtream Room พร้อมป้ายห้องและจอจองห้อง" loading="lazy" />
+              <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtream-inside.jpg" alt="ภายในห้อง Xtream Room พร้อมโต๊ะประชุม จอ และเก้าอี้" loading="lazy" />
+            </div>
+            <div class="mr-room-gallery-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
             </div>
           </div>
           <div class="mr-v2-card-body">
             <div class="mr-v2-card-head">
               <div class="mr-v2-card-name"><span>X</span>tream Room</div>
-              <span class="mr-room-badge mr-room-closed">ห้องปิด</span>
             </div>
             <div class="mr-v2-cap">${I.people}<span>3–5 ท่าน</span></div>
             <p class="mr-v2-card-desc">ห้องขนาดกลาง เหมาะสำหรับประชุมกลุ่มเล็กหรือ Workshop</p>
@@ -135,20 +123,11 @@ export const renderMeetingRooms = () => pageWrap({
 
         <div class="mr-v2-card anim-up" data-delay="300">
           <div class="mr-v2-card-vis">
-            <!-- [REPLACE: ใส่รูปห้อง Xtar Room · 4:3 landscape · 640×480px ขึ้นไป] -->
-            <div class="mr-room-img-placeholder mr-room-img-sm" aria-label="ภาพห้อง Xtar Room">
-              <svg viewBox="0 0 48 48" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.35">
-                <rect x="4" y="8" width="40" height="32" rx="4"/>
-                <circle cx="18" cy="20" r="5"/>
-                <path d="M4 36l10-10 6 6 8-10 16 14"/>
-              </svg>
-              <span>Photo</span>
-            </div>
+            <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtra.jpg" alt="มุมหน้าห้อง Xtra Room พร้อมป้ายห้องและจอจองห้อง" loading="lazy" />
           </div>
           <div class="mr-v2-card-body">
             <div class="mr-v2-card-head">
-              <div class="mr-v2-card-name"><span>X</span>tar Room</div>
-              <span class="mr-room-badge mr-room-closed">ห้องปิด</span>
+              <div class="mr-v2-card-name"><span>X</span>tra Room</div>
             </div>
             <div class="mr-v2-cap">${I.people}<span>2–3 ท่าน</span></div>
             <p class="mr-v2-card-desc">ห้องขนาดเล็ก เหมาะสำหรับ 1:1 หรือประชุมสั้นเฉพาะกิจ</p>
@@ -162,10 +141,18 @@ export const renderMeetingRooms = () => pageWrap({
     </div>
 
     <div class="callout anim-up">
+      <span class="ic">${I.people}</span>
+      <div>
+        <h4>การจองห้องประชุม</h4>
+        <p>Intern ไม่สามารถจองห้องประชุมได้เอง หากต้องการใช้ห้องประชุม ให้แจ้งพี่เลี้ยงของตัวเองเพื่อให้พี่เลี้ยงจองห้องให้</p>
+      </div>
+    </div>
+
+    <div class="callout anim-up" style="margin-top:12px;">
       <span class="ic">${I.info}</span>
       <div>
         <h4>ก่อนออกจากห้อง</h4>
-        <p>เก็บอุปกรณ์ ปิดไฟ ปิดจอ และทิ้งขยะก่อนออกทุกครั้ง — ถ้าเจออุปกรณ์มีปัญหาแจ้ง IT ได้เลย</p>
+        <p>เก็บอุปกรณ์ ปิดไฟ ปิดจอ และทิ้งขยะก่อนออกทุกครั้ง</p>
       </div>
     </div>
 

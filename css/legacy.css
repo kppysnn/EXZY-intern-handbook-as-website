@@ -11319,10 +11319,11 @@ p.hero-word, div.hero-word { display: block; }
 
 /* ── Redesigned breadcrumb ── */
 .breadcrumb { font-size: 12.5px; color: var(--muted); display: flex; align-items: center; flex-wrap: wrap; gap: 2px; }
-.breadcrumb a { color: var(--sec); text-decoration: none; font-weight: 600; transition: opacity .15s; }
+.breadcrumb a { color: var(--sec); text-decoration: none; font-weight: 600; transition: opacity .15s; white-space: nowrap; }
 .breadcrumb a:hover { opacity: .75; }
-.breadcrumb-sep { color: var(--line); padding: 0 4px; }
-.breadcrumb-cur { color: var(--ink); font-weight: 600; }
+.breadcrumb-sep { color: var(--line); padding: 0 4px; white-space: nowrap; }
+.breadcrumb-cur { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.breadcrumb > span { white-space: nowrap; }
 
 /* ── Enhanced prose ── */
 .prose h2 {
@@ -12228,6 +12229,55 @@ p.hero-word, div.hero-word { display: block; }
 }
 .mr-v2-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
 .mr-v2-card-vis { background: linear-gradient(135deg, #F8F9FA, #F8F9FA); padding: 16px; }
+.mr-room-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.mr-room-photo-sm {
+  min-height: 180px;
+}
+.mr-room-gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(102, 197, 197, .75) transparent;
+  padding-bottom: 4px;
+}
+.mr-room-gallery::-webkit-scrollbar {
+  height: 6px;
+}
+.mr-room-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+.mr-room-gallery::-webkit-scrollbar-thumb {
+  background: rgba(102, 197, 197, .75);
+  border-radius: 999px;
+}
+.mr-room-gallery .mr-room-photo {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+.mr-room-gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+.mr-room-gallery-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(0, 64, 128, .22);
+}
+.mr-room-gallery-dots span:first-child {
+  background: var(--cyan);
+}
 .mr-v2-card-body { padding: 16px 18px; }
 .mr-v2-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; gap: 8px; flex-wrap: wrap; }
 .mr-v2-card-name { font-size: 14px; font-weight: 700; color: var(--ink); }
@@ -29511,14 +29561,16 @@ span[style*="particleFloat"] { display: none !important; }
 
 .ex-start-link-primary {
   color: #F8F9FA;
-  border-color: transparent;
+  border: none !important;
+  outline: none !important;
   background: linear-gradient(135deg, #66C5C5 0%, #004080 100%);
   box-shadow: 0 4px 12px rgba(0,64,128,.20);
 }
 
 .ex-start-link-primary:hover {
   color: #F8F9FA;
-  border-color: transparent;
+  border: none !important;
+  outline: none !important;
   background: linear-gradient(135deg, #66C5C5 0%, #004080 100%);
 }
 
@@ -29794,6 +29846,10 @@ span[style*="particleFloat"] { display: none !important; }
 
 .ex-task-visual {
   align-self: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+  isolation: isolate;
 }
 
 .ex-task-visual svg {
@@ -32909,6 +32965,31 @@ span[style*="particleFloat"] { display: none !important; }
 }
 
 /* Task card 3D images */
+.ex-task-visual::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 54px);
+  z-index: 0;
+  width: min(132px, 78%);
+  height: 34px;
+  border-radius: 999px;
+  background: rgba(0, 64, 129, .18);
+  filter: blur(20px);
+  opacity: .55;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  pointer-events: none;
+}
+
+.ex-task-timesheet .ex-task-visual::before {
+  top: calc(50% + 58px);
+  width: min(140px, 82%);
+  height: 36px;
+  background: rgba(0, 17, 34, .16);
+  opacity: .5;
+  transform: translate(-50%, -50%) rotate(-12deg);
+}
+
 .ex-task-visual img {
   display: block;
   width: 100%;
@@ -32916,7 +32997,9 @@ span[style*="particleFloat"] { display: none !important; }
   height: auto;
   object-fit: contain;
   margin: 0 auto;
-  filter: drop-shadow(0 14px 24px rgba(0,64,129,.14));
+  filter: none !important;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 760px) {
@@ -34136,7 +34219,7 @@ html::-webkit-scrollbar { display: none !important; }
 .oc-hq-tagline {
   font-size: 11.5px;
   color: rgba(248,249,250,.5);
-  font-style: italic;
+  font-style: normal;
   margin-bottom: 14px;
   line-height: 1.5;
   position: relative;
@@ -34247,7 +34330,14 @@ html::-webkit-scrollbar { display: none !important; }
    ──────────────────────────────────────────── */
 .callout .ic { margin-top: 2px !important; }
 .faq-section-hd { align-items: center !important; }
-.faq-section-ico { align-self: center !important; }
+.faq-section-ico {
+  flex-shrink: 0 !important;
+  align-self: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.faq-section-ico svg { display: block !important; }
 
 /* ────────────────────────────────────────────
    TEXT OVERFLOW — prevent clipping on all cards
@@ -34386,4 +34476,746 @@ html::-webkit-scrollbar { display: none !important; }
   mix-blend-mode: multiply;
   /* Fallback: ensure no extra white box-model background */
   background: transparent;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   MULTI-PAGE FIXES — Core Values / Dress Code / Leave
+   ════════════════════════════════════════════════════════════ */
+
+/* Dress hero: text gets more space, image column smaller */
+.dress-hero-v2 {
+  grid-template-columns: 1.3fr minmax(0, 260px) !important;
+  align-items: end !important;
+}
+.dress-hero-img--asset img {
+  max-height: 260px !important;
+}
+
+/* Dress grid: fill full width (remove old 560px cap) */
+.dress-grid-v2 {
+  max-width: 100% !important;
+  gap: 20px !important;
+}
+
+/* Dress card h3: match the intended h4 sizing */
+.dress-card-v2 h3 {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: var(--ink) !important;
+  margin: 0 0 10px !important;
+  line-height: 1.4 !important;
+}
+
+/* Dress card bullet: plain disc */
+.dress-card-v2 ul li::before { display: none !important; }
+.dress-card-v2 ul { list-style: disc !important; padding-left: 18px !important; }
+.dress-card-v2 ul li { padding-left: 0 !important; }
+
+/* Leave step node: navy background, white text */
+.leave-step-node {
+  background: var(--navy) !important;
+  color: #F8F9FA !important;
+  box-shadow: 0 4px 12px rgba(0,64,128,.18) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   PATCH 4 — Multi-page refinements
+   ════════════════════════════════════════════════════════════ */
+
+/* ── Leave & Absence: deadline card accent bars → blue tones ── */
+.leave-dl-sick::before  { background: #004081 !important; }
+.leave-dl-biz::before   { background: #66C5C5 !important; }
+
+
+/* ── First-day: Task 01/02 badge — solid color label ── */
+.ex-task-badge {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  color: var(--navy, #004081) !important;
+  animation: none !important;
+}
+.ex-task-badge::after { display: none !important; }
+
+
+/* ── Resources: Timesheet sample image fills frame ── */
+.ts-figure img {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+
+/* ── Resources: Timesheet Flow section wrapper ── */
+.ts-flow-section {
+  background: rgba(102,197,197,.04);
+  border: 1px solid rgba(102,197,197,.2);
+  border-radius: var(--radius-lg, 16px);
+  padding: 22px 24px 18px;
+  margin: 0 0 40px;
+}
+.ts-flow-section-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--cyan, #66C5C5);
+  margin: 0 0 14px;
+}
+.ts-flow-section .ts-flow-v3 {
+  margin: 0;
+}
+
+
+/* ── Showcase: equal card widths + heights ── */
+.showcase-real-grid {
+  align-items: stretch !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+}
+.show-real-card {
+  height: 100% !important;
+}
+/* show-real-media-link had align-items:center from an old rule — stretch so header fills full card width */
+.show-real-media-link {
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+}
+/* Fixed header height so all card headers are the same size */
+.showcase-real-grid .show-real-card .slc-header {
+  height: 128px !important;
+  min-height: 128px !important;
+  max-height: 128px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+}
+
+
+/* ── Orientation: EXZY intro feature card ── */
+.exzy-intro-card {
+  background: linear-gradient(135deg, rgba(0,64,129,.04) 0%, rgba(102,197,197,.06) 100%);
+  border: 1.5px solid rgba(0,64,129,.14);
+  border-left: 4px solid #66C5C5;
+  border-radius: 0 var(--radius-lg, 16px) var(--radius-lg, 16px) 0;
+  padding: 24px 28px;
+  margin: 12px 0 28px;
+}
+.exzy-intro-tagline {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--navy, #004081);
+  margin: 0 0 14px;
+  line-height: 1.45;
+}
+
+
+/* ── Orientation: Allowance & Benefits redesign ── */
+.ob-allowance-card {
+  border: 1px solid rgba(102,197,197,.22);
+  border-radius: var(--radius-lg, 16px);
+  overflow: hidden;
+  margin: 20px 0 28px;
+}
+.ob-rates-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ob-rate {
+  padding: 24px 28px;
+}
+.ob-rate--office {
+  background: linear-gradient(135deg, rgba(102,197,197,.12) 0%, rgba(0,64,128,.07) 100%);
+  border-right: 1px solid rgba(102,197,197,.18);
+}
+.ob-rate--field {
+  background: linear-gradient(135deg, rgba(255,204,0,.1) 0%, rgba(248,249,250,.5) 100%);
+}
+.ob-rate-tag {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--cyan, #66C5C5);
+  margin-bottom: 8px;
+}
+.ob-rate--field .ob-rate-tag { color: var(--ink, #001122); }
+.ob-rate-num {
+  font-family: var(--display, 'Sora', sans-serif);
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--ink, #001122);
+  line-height: 1;
+}
+.ob-rate-num span { font-size: 1.4rem; font-weight: 700; }
+.ob-rate-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.ob-docs-section {
+  padding: 20px 24px 18px;
+  background: rgba(248,249,250,.65);
+  border-top: 1px solid rgba(0,64,128,.07);
+}
+.ob-docs-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.ob-docs-due {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  padding: 2px 9px;
+  border-radius: 99px;
+  background: rgba(0,64,128,.08);
+  color: var(--navy, #004081);
+}
+.ob-doc-rows { display: flex; flex-direction: column; gap: 11px; margin-bottom: 16px; }
+.ob-doc-row { display: flex; align-items: center; gap: 10px; }
+.ob-doc-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--cyan, #66C5C5);
+  flex-shrink: 0;
+}
+.ob-doc-text { flex: 1; font-size: 13.5px; color: var(--ink); line-height: 1.5; }
+.ob-doc-freq {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  border-radius: 99px;
+  flex-shrink: 0;
+}
+.ob-freq-monthly { background: rgba(102,197,197,.15); color: var(--navy, #004081); }
+.ob-freq-once    { background: rgba(255,204,0,.2); color: #6b4f00; }
+.ob-submit-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: center;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--navy, #004081);
+  padding: 10px 14px;
+  background: rgba(0,64,128,.04);
+  border-radius: 8px;
+  border-left: 3px solid rgba(0,64,128,.16);
+}
+.ob-info-sep { color: var(--muted); }
+
+/* Lead text: remove max-width cap so long single-line text fits */
+.phb-lead { max-width: none !important; }
+
+/* Showcase: TikTok left, 2×2 link cards right */
+.showcase-real-grid { height: auto !important; }
+.show-real-card { height: auto !important; min-height: 0 !important; }
+
+.showcase-mixed-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 2fr !important;
+  gap: 24px !important;
+  align-items: start !important;
+}
+.showcase-mixed-grid .show-real-card-tiktok {
+  align-self: start !important;
+}
+.showcase-mixed-grid .show-real-card-tiktok .show-real-media-video {
+  aspect-ratio: 9 / 16 !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+.showcase-mixed-grid .show-real-card {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+.showcase-mixed-grid .show-real-media-link {
+  width: 100% !important;
+  padding: 0 !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+}
+.showcase-mixed-grid .show-real-media-link .slc-header {
+  width: 100% !important;
+  min-height: 148px !important;
+  border-radius: 0 !important;
+}
+.showcase-mixed-grid .show-real-media-video,
+.showcase-mixed-grid .show-real-media-video iframe {
+  width: 100% !important;
+}
+/* 2×2 link card subgrid: equal height within each row */
+.showcase-link-subgrid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   PATCH 5 — page-wide card balance and header rhythm
+   ════════════════════════════════════════════════════════════ */
+
+:root {
+  --card-pad: clamp(20px, 2.2vw, 28px);
+  --card-gap: clamp(14px, 1.7vw, 20px);
+}
+
+.nav-inner {
+  max-width: var(--maxw) !important;
+  height: var(--nav-h) !important;
+  padding-inline: clamp(18px, 3vw, 36px) !important;
+}
+
+.page-hero-band {
+  min-height: clamp(190px, 21vw, 252px) !important;
+  display: grid !important;
+  align-items: center !important;
+}
+
+.phb-inner {
+  width: min(100% - 56px, 1184px) !important;
+  margin-inline: auto !important;
+}
+
+.phb-title {
+  max-width: 760px !important;
+  text-wrap: balance !important;
+}
+
+.phb-lead {
+  max-width: 68ch !important;
+  text-wrap: pretty !important;
+  margin-top: 12px !important;
+}
+
+.page-hero-band + .section {
+  padding-top: clamp(36px, 5vw, 60px) !important;
+}
+
+.section {
+  padding-block: clamp(58px, 8vw, 90px) !important;
+}
+
+.section-inner {
+  padding-inline: clamp(18px, 3vw, 28px) !important;
+}
+
+.prose h2 {
+  margin-top: clamp(36px, 5vw, 56px) !important;
+  margin-bottom: 14px !important;
+  text-wrap: balance !important;
+}
+
+.prose h2:first-child {
+  margin-top: 0 !important;
+}
+
+.card-grid,
+.rule-grid,
+.proj-cards,
+.dress-grid-v2,
+.ts-col-grid,
+.mr-v2-grid,
+.ex-start-grid-priority,
+.showcase-link-subgrid {
+  align-items: stretch !important;
+  gap: var(--card-gap) !important;
+}
+
+.rule-grid,
+.proj-cards,
+.mr-v2-grid,
+.ex-start-grid-priority {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)) !important;
+}
+
+.dress-grid-v2,
+.ts-col-grid,
+.leave-deadline-row,
+.showcase-link-subgrid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)) !important;
+}
+
+.card,
+.reference-card,
+.journey-card,
+.cv-card,
+.rule-card,
+.dress-card-v2,
+.proj-card,
+.ts-col-item,
+.wifi-card,
+.wn-panel,
+.mr-v2-main,
+.mr-v2-card,
+.ptask-card,
+.howto-step,
+.leave-dl-card,
+.oc-card-v3,
+.oc-dept-v2,
+.ex-start-card,
+.ex-folder,
+.ex-quick-list a,
+.ob-allowance-card {
+  border-radius: var(--radius) !important;
+  border-color: var(--ci-line) !important;
+  box-shadow: none !important;
+}
+
+.card,
+.reference-card,
+.journey-card,
+.rule-card,
+.dress-card-v2,
+.proj-card,
+.ts-col-item,
+.wifi-card,
+.mr-v2-card,
+.ptask-card,
+.howto-step,
+.leave-dl-card,
+.oc-card-v3,
+.oc-dept-v2,
+.ex-start-card,
+.ex-folder,
+.ex-quick-list a {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: auto !important;
+  height: 100% !important;
+  padding: var(--card-pad) !important;
+  gap: 12px !important;
+  transition: transform .22s var(--ease-out-quart), border-color .22s ease, box-shadow .22s var(--ease-out-quart) !important;
+}
+
+.card:hover,
+.reference-card:hover,
+.journey-card:hover,
+.rule-card:hover,
+.dress-card-v2:hover,
+.proj-card:hover,
+.ts-col-item:hover,
+.wifi-card:hover,
+.mr-v2-main:hover,
+.mr-v2-card:hover,
+.ptask-card:hover,
+.howto-step:hover,
+.leave-dl-card:hover,
+.oc-card-v3:hover,
+.oc-dept-v2:hover,
+.ex-start-card:hover,
+.ex-folder:hover,
+.ex-quick-list a:hover {
+  transform: translateY(-2px) !important;
+  border-color: rgba(102,197,197,0.5) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.ex-start-card {
+  min-height: clamp(232px, 24vw, 292px) !important;
+  justify-content: flex-start !important;
+}
+
+.ex-start-card h3 {
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem) !important;
+  line-height: 1.42 !important;
+}
+
+.ex-start-card p {
+  max-width: 42ch !important;
+  margin: 0 !important;
+  line-height: 1.72 !important;
+}
+
+.ex-start-icon {
+  margin-bottom: 4px !important;
+}
+
+.ex-start-actions,
+.card .card-link,
+.journey-card .card-link,
+.mr-v2-tags {
+  margin-top: auto !important;
+}
+
+.ex-start-actions {
+  padding-top: 8px !important;
+}
+
+.rule-card {
+  display: grid !important;
+  grid-template-columns: 48px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 16px !important;
+}
+
+.rule-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.rule-body {
+  min-width: 0 !important;
+}
+
+.rule-body h3,
+.rule-body h4,
+.proj-card h3,
+.dress-card-v2 h3,
+.dress-card-v2 h4,
+.mr-v2-card-name,
+.leave-dl-time,
+.card h3 {
+  margin-top: 0 !important;
+  text-wrap: balance !important;
+}
+
+.rule-body p,
+.proj-card p,
+.dress-card-v2 li,
+.mr-v2-card-desc,
+.leave-dl-note,
+.card p,
+.reference-card p {
+  text-wrap: pretty !important;
+}
+
+.cv-card {
+  padding: 0 !important;
+}
+
+.cv-card-head {
+  padding: clamp(18px, 2.4vw, 26px) !important;
+}
+
+.cv-card-body {
+  padding: clamp(18px, 2.4vw, 26px) !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)) !important;
+  gap: 12px !important;
+}
+
+.cv-point {
+  min-height: 100% !important;
+}
+
+.proj-card {
+  justify-content: flex-start !important;
+  min-height: 184px !important;
+}
+
+.proj-num {
+  margin-bottom: 4px !important;
+}
+
+.dress-card-v2 ul {
+  margin-top: 2px !important;
+}
+
+.dress-card-v2 ul li {
+  line-height: 1.72 !important;
+  padding-block: 7px !important;
+}
+
+.ts-col-item {
+  display: grid !important;
+  grid-template-columns: 30px minmax(0, 1fr) !important;
+  align-items: start !important;
+}
+
+.ts-col-n {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.mr-v2-main {
+  overflow: hidden !important;
+}
+
+.mr-v2-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.mr-v2-card-body {
+  display: flex !important;
+  flex: 1 !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  padding: 18px !important;
+}
+
+.mr-v2-card-desc {
+  margin-bottom: 0 !important;
+}
+
+.mr-v2-tags {
+  padding-top: 4px !important;
+}
+
+.leave-dl-card {
+  justify-content: center !important;
+  min-height: 136px !important;
+}
+
+.callout {
+  align-items: flex-start !important;
+  padding: clamp(18px, 2vw, 22px) !important;
+}
+
+.callout .ic {
+  margin-top: 3px !important;
+}
+
+.ex-folder {
+  justify-content: space-between !important;
+}
+
+.ex-folder-docs {
+  margin-top: auto !important;
+}
+
+.ex-quick-list a {
+  min-height: 142px !important;
+  justify-content: space-between !important;
+}
+
+.ex-quick-list strong {
+  margin-top: 0 !important;
+}
+
+.exzy-intro-card,
+.ob-submit-info {
+  border-left-width: 1px !important;
+  border-radius: var(--radius) !important;
+}
+
+@media (max-width: 760px) {
+  .phb-inner {
+    width: min(100% - 36px, 1184px) !important;
+  }
+
+  .page-hero-band {
+    min-height: 170px !important;
+  }
+
+  .section {
+    padding-block: 46px !important;
+  }
+
+  .rule-card {
+    grid-template-columns: 40px minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .rule-icon {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .ex-start-card,
+  .ex-folder,
+  .ex-quick-list a {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+
+
+/* Restore Internship Policy rule cards to their original compact sizing. */
+.rule-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  align-items: stretch !important;
+  margin-top: 8px !important;
+}
+
+.rule-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 22px 20px 24px !important;
+  border-radius: var(--radius) !important;
+  background: #F8F9FA !important;
+  overflow: visible !important;
+  justify-content: flex-start !important;
+}
+
+.rule-icon {
+  width: 42px !important;
+  height: 42px !important;
+  flex: 0 0 42px !important;
+  align-self: flex-start !important;
+  margin-top: 2px !important;
+  border-radius: 12px !important;
+}
+
+.rule-body {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+.rule-card h3,
+.rule-card h4 {
+  margin: 0 0 7px !important;
+  font-size: 15px !important;
+  line-height: 1.48 !important;
+}
+
+.rule-card p {
+  margin: 0 !important;
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+}
+
+@media (max-width: 760px) {
+  .rule-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ────────────────────────────────────────────
+   FAQ FILTER BUTTON — border & outline fixes
+   ──────────────────────────────────────────── */
+.faq-filter-btn { outline: none !important; }
+.faq-filter-btn.is-active { border: none !important; }
+
+/* ────────────────────────────────────────────
+   FAQ SECTION ICON — vertical alignment
+   ──────────────────────────────────────────── */
+.faq-section-hd {
+  align-items: center !important;
+  display: flex !important;
+}
+.faq-section-ico {
+  flex-shrink: 0 !important;
+  align-self: center !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.faq-section-hd h2 {
+  margin: 0 !important;
+  line-height: 1.3 !important;
+  align-self: center !important;
 }

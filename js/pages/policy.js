@@ -4,7 +4,7 @@ import { pageWrap } from '../helpers.js';
 export const renderCodeOfConduct = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Core Values", null]],
   title: "EXZY Core Values",
-  lead: "Excellence by design, Advance by technology — 5 ค่านิยมที่คุณจะได้ยิน ได้ใช้ และได้เห็นทุกวันที่นี่",
+  lead: "ค่านิยมที่สะท้อนอยู่ในงาน ทีม และวิธีคิดของ EXZY",
   body: `
     <div class="cv-wrap">
 
@@ -98,8 +98,8 @@ export const renderCodeOfConduct = () => pageWrap({
     <div class="callout" style="margin-top:36px;">
       <span class="ic">${I.sparkle}</span>
       <div>
-        <h2>นำ Core Values ไปใช้ในการทำงาน</h2>
-        <p>ค่านิยมเหล่านี้เป็นแกนหลักของการทำงานที่นี่ — Intern ที่ใช้มันจริง ๆ ทุกวัน มีโอกาสได้รับการพิจารณาเป็นพนักงานประจำหลังจบฝึกงาน</p>
+        <h4>นำ Core Values ไปปรับใช้ในการทำงาน</h4>
+        <p>ค่านิยมเหล่านี้เป็นแกนหลักของการทำงานของ EXZY หากเข้าใจและปรับใช้ค่านิยมเหล่านี้กับการทำงานของตัวเอง แปลว่าคุณกำลังเข้าใจความเป็น EXZY มากขึ้นแล้วล่ะ!</p>
       </div>
     </div>
   `,
@@ -108,7 +108,7 @@ export const renderCodeOfConduct = () => pageWrap({
 export const renderInternshipPolicy = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Internship Policy", null]],
   title: "Internship Policy",
-  lead: "ไม่ต้องจำทุกอย่าง — อ่านครั้งเดียวก่อน แล้วกลับมาดูได้เสมอเมื่อมีข้อสงสัย",
+  lead: "เรื่องพื้นฐานที่ intern ควรรู้เกี่ยวกับเวลาเข้างาน สถานที่ฝึกงาน และนับชั่วโมงฝึกงาน",
   body: `
     <!-- Policy Hero Banner V2 -->
     <div class="policy-hero-v2 anim-up">
@@ -148,13 +148,13 @@ export const renderInternshipPolicy = () => pageWrap({
     <h2>ตารางวันทำงาน (แล้วแต่แผนก)</h2>
     <div class="shift-row anim-up">
       <div class="shift-item">
-        <div class="shift-label">กะ A · บางแผนก</div>
+        <div class="shift-label">บางแผนก</div>
         <div class="shift-time">9:00 – 18:00</div>
         <div class="shift-noon">พักเที่ยง 12:00 – 13:00</div>
       </div>
       <div class="shift-divider">หรือ</div>
       <div class="shift-item">
-        <div class="shift-label">กะ B · บางแผนก</div>
+        <div class="shift-label">บางแผนก</div>
         <div class="shift-time">10:00 – 19:00</div>
         <div class="shift-noon">พักเที่ยง 12:00 – 13:00</div>
       </div>
@@ -162,8 +162,8 @@ export const renderInternshipPolicy = () => pageWrap({
     <div class="callout anim-up" style="margin-bottom:28px;">
       <span class="ic">${I.info}</span>
       <div>
-        <h3>เวลาทำงานขึ้นอยู่กับแผนกที่ได้รับมอบหมาย</h3>
-        <p>ถามพี่เลี้ยงหรือ HR ว่าแผนกของตัวเองใช้กะไหน — ทำงาน 8 ชม. (ไม่รวมพักเที่ยง 1 ชม.) จันทร์ – ศุกร์</p>
+        <h3>เวลาทำงานขึ้นอยู่กับแผนกที่ตัวเองอยู่</h3>
+        <p>ถามพี่เลี้ยงหรือ HR ว่าแผนกของตัวเองยึดตามเวลาไหน - ทำงาน 8 ชม. (ไม่รวมพักเที่ยง 1 ชม.) จันทร์ – ศุกร์</p>
       </div>
     </div>
 
@@ -173,28 +173,28 @@ export const renderInternshipPolicy = () => pageWrap({
         <div class="rule-icon">${I.door}</div>
         <div class="rule-body">
           <h3>มาออฟฟิศ หรือสถานที่ที่ Assign ไว้เท่านั้น</h3>
-          <p>ต้องเข้าฝึกที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม Assign ไว้ — ไม่แน่ใจ ให้ถามพี่เลี้ยงก่อนทุกครั้ง · <strong>ไม่อนุญาต WFH</strong> สำหรับ Intern</p>
+          <p>ต้องเข้าฝึกงานที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม Assign ไว้เท่านั้น </br><strong>ไม่อนุญาต WFH</strong> สำหรับ Intern แต่หากมีความจำเป็น ต้องแจ้งพี่เลี้ยง</br>และติดต่อ HR ก่อนเสมอ</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.clock}</div>
         <div class="rule-body">
           <h3>ลงเวลาเข้า – ออกทุกวัน</h3>
-          <p>กรอก Timesheet ทุกวันที่มา — บริษัทเซ็นรับรองตามชั่วโมงฝึกงานจริง</p>
+          <p>กรอก Timesheet ทุกวันที่มาทำงาน — บริษัทจะเซ็นรับรองตามชั่วโมงฝึกงานจริง</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.doc}</div>
         <div class="rule-body">
           <h3>ดูแลชั่วโมงตัวเองด้วยนะ</h3>
-          <p>บริหารชั่วโมงฝึกงานและเอกสารต่าง ๆ เองเลย — พี่เลี้ยงช่วยแนะนำได้ แต่ต้องติดตามเองด้วย</p>
+          <p>บริหารชั่วโมงฝึกงานและรับผิดชอบเอกสารต่าง ๆ ด้วยตัวเอง — พี่เลี้ยงช่วยแนะนำได้ แต่ต้องติดตามเองด้วย</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.calendar}</div>
         <div class="rule-body">
           <h3>วันหยุดบริษัท 15 วัน/ปี</h3>
-          <p>Subscribe Staff holiday calendar ไว้ได้เลย — จะได้ไม่พลาดวันหยุดของบริษัท</p>
+          <p>Subscribe Staff holiday calendar ไว้ได้เลย จะได้ไม่พลาดวันหยุดของบริษัท</p>
         </div>
       </div>
     </div>
@@ -205,20 +205,17 @@ export const renderInternshipPolicy = () => pageWrap({
 export const renderDressCode = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Dress Code", null]],
   title: "Dress Code",
-  lead: "แต่งตัวยังไงดี? — แนวทางการแต่งกายที่ EXZY ตามแต่ละสถานการณ์",
+  lead: "แนวทางการแต่งกายที่ EXZY สามารถปรับตามแต่ละสถานการณ์",
   body: `
     <!-- Dress Hero V2 -->
     <div class="dress-hero-v2 anim-up">
       <div>
-        <div class="dress-tag-v2" style="color:#ffffff;">EXZY Core Value · Tidiness</div>
+        <div class="dress-tag-v2" style="color:#ffffff;">EXZY Core Value · Aesthetic Design</div>
         <h2 style="color:#ffffff;">สะอาด เรียบร้อย เหมาะสม</h2>
-        <p style="color:rgba(255,255,255,.82);">"พร้อม สะอาดเรียบร้อย เตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดีคือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
+        <p style="color:rgba(255,255,255,.82);">"สะอาดเรียบร้อย และเตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดี</br>คือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
       </div>
-      <div class="dress-hero-img dress-hero-img--placeholder">
-        <div class="dress-img-placeholder">
-          <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 30l10-10 8 8 6-6 12 12"/><circle cx="16" cy="18" r="3"/></svg>
-          <span>เพิ่มรูปภาพ</span>
-        </div>
+      <div class="dress-hero-img dress-hero-img--asset">
+        <img src="./static/dress-code-outfits.png" alt="ตัวอย่างเสื้อผ้าและรองเท้าสำหรับแต่งกายแบบ Smart Casual ที่ EXZY" loading="lazy" />
       </div>
     </div>
 
@@ -229,8 +226,8 @@ export const renderDressCode = () => pageWrap({
         <div class="dress-card-v2-style" style="color:var(--navy);">Smart Casual</div>
         <h3>วันทำงานปกติ</h3>
         <ul>
-          <li>เสื้อโปโล / เสื้อเชิ้ต</li>
-          <li>กางเกงผ้า / กางเกงยีนสีเข้ม</li>
+          <li>เสื้อโปโล / เสื้อยืดที่สุภาพ</li>
+          <li>กางเกงผ้า / กางเกงยีน</li>
           <li>รองเท้าผ้าใบ / คัทชู สีสุภาพ</li>
         </ul>
       </div>
@@ -239,7 +236,7 @@ export const renderDressCode = () => pageWrap({
         <div class="dress-card-v2-style" style="color:var(--ink);">Business Casual</div>
         <h3>มีนัดพบลูกค้า</h3>
         <ul>
-          <li>เสื้อเชิ้ตหรือเบลเซอร์</li>
+          <li>เสื้อเชิ้ต</li>
           <li>กางเกง / กระโปรงทรงสุภาพ</li>
           <li>รองเท้าหุ้มส้นหรือคัทชู</li>
         </ul>
@@ -250,7 +247,7 @@ export const renderDressCode = () => pageWrap({
     <div class="dress-dont-grid">
       <div class="dress-dont-item"><span class="dress-dont-x">✕</span> เสื้อกล้าม / เสื้อแขนกุด</div>
       <div class="dress-dont-item"><span class="dress-dont-x">✕</span> กางเกงขาสั้น (เหนือเข่า)</div>
-      <div class="dress-dont-item"><span class="dress-dont-x">✕</span> รองเท้าแตะ</div>
+      <div class="dress-dont-item"><span class="dress-dont-x">✕</span> รองเท้าแตะ (สามารถนำมาเปลี่ยนได้หากมีความจำเป็น เช่น ฝนตกหรือบาดเจ็บ)</div>
       <div class="dress-dont-item"><span class="dress-dont-x">✕</span> เสื้อผ้ารัดรูป / โป๊เปลือยเกินไป</div>
       <div class="dress-dont-item"><span class="dress-dont-x">✕</span> เสื้อที่มีลายไม่เหมาะสมในที่ทำงาน</div>
       <div class="dress-dont-item"><span class="dress-dont-x">✕</span> ชุดออกกำลังกาย</div>
@@ -259,8 +256,8 @@ export const renderDressCode = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.sparkle}</span>
       <div>
-        <h3>เมื่อไม่แน่ใจ ให้สังเกตทีม</h3>
-        <p>ไม่แน่ใจก็ไม่เป็นไร — ลองดูว่าพี่ ๆ ในทีมแต่งยังไง หรือจะถามตรง ๆ ก็ได้เลย</p>
+        <h4>เมื่อไม่แน่ใจ ให้สังเกตเพื่อนร่วมงานคนอื่นดู</h4>
+        <p>ลองดูว่าพี่ ๆ ในออฟฟิศแต่งตัวกันยังไง หากสงสัยสามารถถามพี่เลี้ยงได้เลย</p>
       </div>
     </div>
   `,
@@ -269,39 +266,39 @@ export const renderDressCode = () => pageWrap({
 export const renderLeave = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Leave & Absence", null]],
   title: "Leave & Absence",
-  lead: "ป่วย หรือมีธุระ — แจ้งพี่เลี้ยงและส่งอีเมล HR ทำตามขั้นตอนง่าย ๆ นี้",
+  lead: "ป่วยหรือมีธุระ — แจ้งพี่เลี้ยงและส่งอีเมล HR ตามขั้นตอนนี้",
   body: `
-    <div class="callout anim-up">
-      <span class="ic">${I.info}</span>
-      <div>
-        <h3>วันที่ลาจะไม่นับเป็นชั่วโมงฝึกงาน</h3>
-        <p>บริษัทเซ็นรับรองตามชั่วโมงฝึกงานจริงเท่านั้น — ลาบ่อยอาจส่งผลต่อชั่วโมงที่ต้องส่งสถาบัน จัดการวันลาให้ดีนะ</p>
-      </div>
-    </div>
-
     <h2>วิธีการลางาน — 3 ขั้นตอน</h2>
 
     <div class="leave-process">
       <div class="leave-step anim-left" data-delay="0">
         <div class="leave-step-node">1</div>
         <div class="leave-step-card">
-          <h3>แจ้ง Teamlead และ Senior</h3>
-          <p>แจ้งขอลากับ Teamlead และ Senior ก่อนเป็นอันดับแรก ก่อนส่งอีเมล</p>
+          <h4>แจ้งพี่เลี้ยงและทีม</h4>
+          <p>แจ้งขอลากับพี่เลี้ยงและทีมก่อนเป็นอันดับแรก ก่อนส่งอีเมลให้ hr</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="100">
         <div class="leave-step-node">2</div>
         <div class="leave-step-card">
-          <h3>ส่ง Email แจ้งการลาให้ HR</h3>
+          <h4>ส่ง Email แจ้งการลาให้ HR</h4>
           <p>ส่งอีเมลแจ้งลาไปที่ <a href="mailto:hr@exzyteam.com" class="inline-link">hr@exzyteam.com</a> ระบุเหตุผลและจำนวนวันที่จะลา</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="200">
         <div class="leave-step-node">3</div>
         <div class="leave-step-card">
-          <h3>CC อีเมล Teamlead และ Senior</h3>
-          <p>CC อีเมลไปหา Teamlead และ Senior ในอีเมลเดียวกัน เพื่อให้ทุกคนรับทราบพร้อมกัน</p>
+          <h4>CC อีเมลพี่เลี้ยงและทีม</h4>
+          <p>CC อีเมลไปหาพี่เลี้ยงและทีมในอีเมลเดียวกันกับ hr เพื่อให้ทุกคนรับทราบ</p>
         </div>
+      </div>
+    </div>
+
+    <div class="callout anim-up">
+      <span class="ic">${I.info}</span>
+      <div>
+        <h4>วันที่ลาจะไม่นับเป็นชั่วโมงฝึกงาน</h4>
+        <p>บริษัทเซ็นรับรองตามชั่วโมงฝึกงานจริงเท่านั้น หากลาบ่อยอาจส่งผลต่อชั่วโมงฝึกงานที่ต้องยืนยันกับทางมหาวิทยาลัย จัดการวันลาและชั่วโมงฝึกงานให้ดีนะ!</p>
       </div>
     </div>
 
@@ -309,12 +306,12 @@ export const renderLeave = () => pageWrap({
     <div class="leave-deadline-row">
       <div class="leave-dl-card leave-dl-sick anim-up">
         <div class="leave-dl-type">ลาป่วย</div>
-        <div class="leave-dl-time">ก่อน 11:00 น.</div>
+        <div class="leave-dl-time">แจ้ง hr ก่อน 11:00 น.</div>
         <div class="leave-dl-note">ของวันที่ลางาน</div>
       </div>
       <div class="leave-dl-card leave-dl-biz anim-up" data-delay="80">
         <div class="leave-dl-type">ลากิจธุระ</div>
-        <div class="leave-dl-time">ล่วงหน้า 1 วัน</div>
+        <div class="leave-dl-time">แจ้ง hr ล่วงหน้า 1 วัน</div>
         <div class="leave-dl-note">วันทำการก่อนวันลา</div>
       </div>
     </div>
@@ -322,8 +319,8 @@ export const renderLeave = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.shield}</span>
       <div>
-        <h3>การลาที่มากเกินไป</h3>
-        <p>ถ้าลาบ่อยจนเกินไปและทีมเห็นว่าไม่เหมาะสม บริษัทอาจพิจารณายุติการฝึกงานและแจ้งมหาวิทยาลัย — ลองคุยกับพี่เลี้ยงก่อนดีที่สุด</p>
+        <h4>หากลามากเกินไป จะเกิดอะไรขึ้น ?</h4>
+        <p>ถ้าลาบ่อยจนเกินไปและทีมเห็นว่าไม่เหมาะสม บริษัทอาจพิจารณายุติการฝึกงานและแจ้งมหาวิทยาลัย หากมีปัญหาอะไรลองปรึกษาพี่เลี้ยงก่อนดีที่สุด</p>
       </div>
     </div>
   `,

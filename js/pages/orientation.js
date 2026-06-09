@@ -4,18 +4,18 @@ import { pageWrap } from '../helpers.js';
 export const renderOrientation = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Getting Started", null], ["Orientation", null]],
   title: "Orientation",
-  lead: "ทบทวนสิ่งที่ได้ฟังใน Orientation — slides, ค่านิยม, โปรเจกต์ที่จะได้ทำ และสิทธิประโยชน์ต่าง ๆ",
+  lead: "ทบทวนสิ่งที่ได้ฟังใน Orientation ทั้งรายละเอียดการฝึกงาน โปรเจกต์ที่จะได้ทำ และสิ่งที่ intern จะได้รับจากการฝึกงานที่ EXZY",
   toc: [
     ["slides", "สไลด์ปฐมนิเทศ"],
-    ["values", "EXZY Core Values"],
     ["intro", "เกี่ยวกับ EXZY"],
+    ["values", "EXZY Core Values"],
     ["projects", "โปรเจกต์ที่จะได้ทำ"],
     ["benefits", "เบี้ยเลี้ยงและกิจกรรม"],
     ["next", "ขั้นตอนถัดไป"],
   ],
   body: `
     <h2 id="slides">สไลด์ปฐมนิเทศ</h2>
-    <p>สรุปทุกอย่างที่คุณได้ฟังในวัน Orientation ไว้ที่นี่ — เปิดดูได้เสมอ หรือดาวน์โหลดเก็บไว้</p>
+    <p>recap เรื่องที่ได้ฟังใน Orientation อยากรู้อะไรเพิ่ม สามารถอ่านที่ presentation นี้ได้เลย</p>
 
     <div class="slides-full-embed" id="slides-embed-area">
       <div class="slides-embed-header">
@@ -31,8 +31,15 @@ export const renderOrientation = () => pageWrap({
       </div>
     </div>
 
+    <h2 id="intro">เกี่ยวกับ EXZY</h2>
+    <div class="exzy-intro-card anim-up">
+      <div class="exzy-intro-tagline">"Excellence by design, Advance by technology"</div>
+      <p style="margin:0 0 12px;">EXZY คือผู้เชี่ยวชาญด้าน <strong>Smart Office Solution</strong> แบบครบวงจร ให้บริการตั้งแต่การออกแบบ ติดตั้ง ไปจนถึงเชื่อมต่อระบบสำนักงานยุคใหม่ ทั้งระบบจองห้องประชุม ระบบเข้า-ออกอัจฉริยะ Video Conference และ Digital Signage </br></br>ในฐานะ Intern ของ EXZY คุณจะได้เป็นส่วนหนึ่งของทีม มีส่วนร่วมในการทำงาน และได้สร้างผลงานของตัวเองอย่างแน่นอน</p>
+      <p style="font-size:13px; color: var(--muted); margin:0;">อยากรู้จัก EXZY เพิ่มเติม? <a href="https://www.exzysmartoffice.com" target="_blank" rel="noopener" class="inline-link">เยี่ยมชมเว็บไซต์ ${I.external}</a></p>
+    </div>
+
     <h2 id="values">EXZY Core Values</h2>
-    <p>5 แนวคิดที่อยู่เบื้องหลังทุกการทำงานที่ EXZY — คุณจะได้เห็นและใช้สิ่งเหล่านี้ทุกวัน</p>
+    <p>แนวคิดที่อยู่เบื้องหลังการทำงานของ EXZY หากเข้าใจและนำไปใช้จริงแสดงว่าคุณเริ่มเป็นส่วหนึ่งของพวกเราแล้ว!</p>
 
     <!-- Compact CV Preview -->
     <div class="cv-wrap" style="gap:12px; margin-bottom:20px;">
@@ -57,19 +64,14 @@ export const renderOrientation = () => pageWrap({
 
     <a href="#/policy/code-of-conduct" class="btn btn-ghost" data-link style="margin-top:4px;">ดู Core Values ทั้งหมด ${I.arrow}</a>
 
-    <h2 id="intro">เกี่ยวกับ EXZY</h2>
-    <p><strong>"Excellence by design, Advance by technology"</strong></p>
-    <p>EXZY คือผู้เชี่ยวชาญด้าน <strong>Smart Office Solution</strong> แบบครบวงจร ให้บริการตั้งแต่การออกแบบ ติดตั้ง ไปจนถึงเชื่อมต่อระบบสำนักงานยุคใหม่ ทั้งระบบจองห้องประชุม ระบบเข้า-ออกอัจฉริยะ Video Conference และ Digital Signage — ในฐานะ Intern คุณจะได้เป็นส่วนหนึ่งของทีมจริง ไม่ใช่แค่สังเกตการณ์</p>
-    <p style="font-size:13.5px; color: var(--ink-muted);">อยากรู้จัก EXZY เพิ่มเติม? <a href="https://www.exzysmartoffice.com" target="_blank" rel="noopener" class="inline-link">เยี่ยมชมเว็บไซต์ ${I.external}</a></p>
-
     <h2 id="projects">โปรเจกต์ที่จะได้ทำ</h2>
-    <p>ตลอดการฝึกงาน Intern ทุกคนจะรับผิดชอบโปรเจกต์ <strong>3 ประเภท</strong> — แต่ละแบบมีจุดประสงค์ต่างกัน</p>
+    <p>ตลอดการฝึกงาน Intern ทุกคนจะรับผิดชอบโปรเจกต์ <strong>3 ประเภท</strong> โดยแต่ละแบบมีจุดประสงค์ต่างกัน</p>
 
     <div class="proj-cards">
       <div class="proj-card anim-up">
         <div class="proj-num">01</div>
         <h3>Project or Report</h3>
-        <p>โปรเจกต์หรือรายงานที่รับผิดชอบดูแลและนำส่งมหาวิทยาลัย</p>
+        <p>โปรเจกต์หรือรายงานที่รับผิดชอบดูแลและส่งกับทางมหาวิทยาลัย</p>
       </div>
       <div class="proj-card anim-up" data-delay="80">
         <div class="proj-num">02</div>
@@ -79,7 +81,7 @@ export const renderOrientation = () => pageWrap({
       <div class="proj-card anim-up" data-delay="160">
         <div class="proj-num">03</div>
         <h3>HR / BD Project</h3>
-        <p>งาน content ที่ HR หรือ BD assign ให้ เผยแพร่บนช่องทาง public และส่งก่อนจบฝึกงาน 2 อาทิตย์</p>
+        <p>Project ที่ HR assign ให้ เป็นการแชร์ประสบการณ์การฝึกงานที่ EXZY โดยต้องส่งก่อนจบฝึกงาน 2 อาทิตย์</p>
       </div>
     </div>
 
@@ -87,33 +89,55 @@ export const renderOrientation = () => pageWrap({
       <span class="ic">${I.info}</span>
       <div>
         <h3>หมายเหตุ</h3>
-        <p>รูปแบบโปรเจกต์อาจแตกต่างกันตามเงื่อนไขมหาวิทยาลัยหรือทักษะ — Intern ทุกคนต้องรับผิดชอบงานที่ได้รับมอบหมายด้วยตัวเอง</p>
+        <p>รูปแบบโปรเจกต์อาจแตกต่างกันตามเงื่อนไขมหาวิทยาลัยหรือทักษะของ intern แต่ละคน โดยทุกคนต้องรับผิดชอบงานที่ได้รับมอบหมายด้วยตัวเอง</p>
       </div>
     </div>
 
     <h2 id="benefits">เบี้ยเลี้ยงและกิจกรรม</h2>
 
-    <!-- Benefits mini-cards -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0 28px;">
-      <div style="background:linear-gradient(135deg,rgba(102,197,197,.08),rgba(0,64,129,.04)); border:1px solid rgba(102,197,197,.25); border-radius:var(--radius); padding:20px;">
-        <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--cyan); margin-bottom:8px;">ในออฟฟิศ</div>
-        <div style="font-family:var(--display); font-size:2.2rem; font-weight:900; color:var(--ink); line-height:1;">200 ฿</div>
-        <div style="font-size:13px; color:var(--muted); margin-top:4px;">ต่อวัน</div>
+    <div class="ob-allowance-card anim-up">
+      <div class="ob-rates-row">
+        <div class="ob-rate ob-rate--office">
+          <div class="ob-rate-tag">ในออฟฟิศ</div>
+          <div class="ob-rate-num">200 <span>฿</span></div>
+          <div class="ob-rate-sub">ต่อวัน</div>
+        </div>
+        <div class="ob-rate ob-rate--field">
+          <div class="ob-rate-tag">นอกสถานที่</div>
+          <div class="ob-rate-num">300 <span>฿</span></div>
+          <div class="ob-rate-sub">ต่อวัน</div>
+        </div>
       </div>
-      <div style="background:linear-gradient(135deg,var(--warning-soft),rgba(248,249,250,.72)); border:1px solid rgba(255,204,0,.42); border-radius:var(--radius); padding:20px;">
-        <div style="font-size:10.5px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--ink); margin-bottom:8px;">นอกสถานที่</div>
-        <div style="font-family:var(--display); font-size:2.2rem; font-weight:900; color:var(--ink); line-height:1;">300 ฿</div>
-        <div style="font-size:13px; color:var(--muted); margin-top:4px;">ต่อวัน</div>
+
+      <div class="ob-docs-section">
+        <div class="ob-docs-title">
+          เอกสารที่ต้องใช้ในการขอรับเบี้ยเลี้ยง
+          <span class="ob-docs-due">ส่งวันที่ 30–31 ของทุกเดือน</span>
+        </div>
+        <div class="ob-doc-rows">
+          <div class="ob-doc-row">
+            <span class="ob-doc-dot"></span>
+            <div class="ob-doc-text">สำเนาบัตรประชาชน พร้อมเซ็นสำเนาถูกต้อง</div>
+            <span class="ob-doc-freq ob-freq-monthly">ทุกเดือน</span>
+          </div>
+          <div class="ob-doc-row">
+            <span class="ob-doc-dot"></span>
+            <div class="ob-doc-text">เอกสาร Intern Timesheet — <a href="#/tasks/timesheet" data-link class="inline-link">ดูวิธีกรอก</a></div>
+            <span class="ob-doc-freq ob-freq-monthly">ทุกเดือน</span>
+          </div>
+          <div class="ob-doc-row">
+            <span class="ob-doc-dot"></span>
+            <div class="ob-doc-text">สำเนา Bookbank ของบัญชีที่ต้องการใช้รับเงิน พร้อมเซ็นสำเนาถูกต้อง</div>
+            <span class="ob-doc-freq ob-freq-once">เดือนแรก</span>
+          </div>
+        </div>
+        <div class="ob-submit-info">
+          <span>📅 กำหนดส่ง: วันที่ 30–31 ของทุกเดือน</span>
+          <span class="ob-info-sep">·</span>
+          <span>📄 วิธีส่ง: พิมพ์เอกสารเป็นกระดาษและนำไปใส่กล่องที่หน้าห้อง HR ที่ชั้น 4</span>
+        </div>
       </div>
     </div>
-
-    <p>เอกสารที่ต้องใช้ในการขอรับเบี้ยเลี้ยง (กำหนดส่งวันที่ 30–31 ของทุกเดือน):</p>
-    <ul>
-      <li>สำเนาบัตรประชาชน พร้อมเซ็นสำเนาถูกต้อง — ส่งทุกเดือน</li>
-      <li>เอกสาร Intern Timesheet — <a href="#/tasks/timesheet" data-link class="inline-link">ดูวิธีกรอก</a> — ส่งทุกเดือน</li>
-      <li>สำเนา Bookbank ของบัญชีที่ต้องการใช้รับเงิน — ส่งแค่เดือนแรก</li>
-      <li style="margin-top:6px;color:var(--navy);font-weight:600;">📅 กำหนดส่ง: วันที่ 30–31 ของทุกเดือน · 📄 วิธีส่ง: พิมพ์ออกกระดาษและยื่นให้ HR ที่ออฟฟิศ</li>
-    </ul>
 
     <h3>Workshop และ Dining</h3>
     <p>EXZY จัดกิจกรรม Workshop เสริมทักษะ และกิจกรรม Dining ประจำเดือน/ทีม เพื่อให้รู้จักทีมและเพื่อนร่วมงานมากขึ้น</p>

@@ -37,6 +37,7 @@ export function acc(q, a) {
 
 const _sectionMeta = {
   "Getting Started": { num: "01", label: "Getting Started", section: "getting-started" },
+  "Company & Office": { num: "01", label: "Getting Started", section: "getting-started" },
   "Intern Tasks":    { num: "02", label: "Intern Tasks",    section: "tasks" },
   "Company":         { num: "03", label: "Company",         section: "company" },
   "Employee":        { num: "03", label: "Company",         section: "company" },

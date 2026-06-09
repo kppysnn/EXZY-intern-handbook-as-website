@@ -15,13 +15,13 @@ export const renderDirectory = () => {
               <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
             <h3 class="dir-gate-title">Protected Employee Contact</h3>
-            <p class="dir-gate-desc">เพื่อความเป็นส่วนตัวของพนักงาน หน้านี้ต้องใช้รหัสก่อนเข้าดูรายชื่อและข้อมูลติดต่อ</p>
+            <p class="dir-gate-desc">เพื่อความเป็นส่วนตัวของพนักงาน </br>หน้านี้ต้องใช้รหัสก่อนเข้าดูรายชื่อและข้อมูลติดต่อ</p>
             <form class="dir-gate-form" id="dir-gate-form">
               <input type="password" class="dir-pw-input" id="dir-pw-input" aria-label="รหัสสำหรับดูข้อมูลพนักงาน" placeholder="กรอกรหัสสำหรับดูข้อมูล" autocomplete="off" />
               <button type="submit" class="dir-pw-btn" id="dir-pw-btn">${I.lock} ปลดล็อก</button>
             </form>
             <div class="dir-gate-err" id="dir-gate-err" hidden>${I.info} รหัสไม่ถูกต้อง — ลองอีกครั้ง หรือตรวจสอบรหัสใน Admin Panel</div>
-            <div class="dir-gate-hint">ขอรหัสเข้าดูข้อมูลจาก HR หรือพี่เลี้ยงก่อนใช้งานหน้านี้</div>
+            <div class="dir-gate-hint">ใส่รหัสที่ได้รับจาก HR เพื่อเข้าใช้งานหน้านี้</div>
           </div>
         </div>
       `,

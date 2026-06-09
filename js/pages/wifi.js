@@ -32,7 +32,7 @@ export const renderWifi = () => pageWrap({
           <div class="wn-qr-box">
             <div class="wn-qr" data-qr="staff"></div>
           </div>
-          <p class="wn-qr-tip">เปิดกล้อง → ชี้ที่ QR → กด เชื่อมต่อ</p>
+          <p class="wn-qr-tip">เปิดกล้อง → ส่องไปที่ QR → กด เชื่อมต่อ</p>
         </div>
         <!-- Info side -->
         <div class="wn-info-side">
@@ -60,11 +60,7 @@ export const renderWifi = () => pageWrap({
               </div>
             </div>
           </div>
-          <button class="wn-connect-btn wf2-connect-btn" data-wifi="staff">
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            คัดลอกรหัสผ่าน
-          </button>
-          <p class="wn-note">สำหรับพนักงาน / Intern เท่านั้น — ไม่แชร์กับบุคคลภายนอก</p>
+          <p class="wn-note">สำหรับพนักงาน / Intern เท่านั้น ห้ามแชร์ให้กับบุคคลภายนอก</p>
         </div>
       </div>
     </div>
@@ -76,7 +72,7 @@ export const renderWifi = () => pageWrap({
           <div class="wn-qr-box wn-qr-box-guest">
             <div class="wn-qr" data-qr="guest"></div>
           </div>
-          <p class="wn-qr-tip">เปิดกล้อง → ชี้ที่ QR → กด เชื่อมต่อ</p>
+          <p class="wn-qr-tip">เปิดกล้อง → ส่องไปที่ QR → กด เชื่อมต่อ</p>
         </div>
         <div class="wn-info-side">
           <div class="wn-network-badge wn-badge-guest">GUEST NETWORK</div>
@@ -103,11 +99,7 @@ export const renderWifi = () => pageWrap({
               </div>
             </div>
           </div>
-          <button class="wn-connect-btn wn-connect-guest wf2-connect-btn" data-wifi="guest">
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            คัดลอกรหัสผ่าน
-          </button>
-          <p class="wn-note">สำหรับแขกที่มาที่ออฟฟิศ — แชร์เฉพาะกับคนที่มาพบกันจริง ๆ</p>
+          <p class="wn-note">สำหรับแขกที่มาที่ออฟฟิศ</p>
         </div>
       </div>
     </div>
@@ -116,18 +108,18 @@ export const renderWifi = () => pageWrap({
     <div class="wn-how-v2">
       <div class="wn-how-v2-head">
         <span class="wn-how-v2-label">วิธีเชื่อมต่อ</span>
-        <p class="wn-how-v2-sub">ทำได้ 2 วิธี เลือกวิธีที่สะดวกได้เลย</p>
+        <p class="wn-how-v2-sub">เลือกวิธีที่สะดวกได้เลย</p>
       </div>
       <div class="wn-how-v2-tracks">
         <div class="wn-how-v2-track wn-how-v2-qr">
           <div class="wn-how-v2-track-icon">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h.01M14 18h3M17 14v4M20 14v.01M20 18v.01"/></svg>
           </div>
-          <div class="wn-how-v2-track-title">วิธีที่ 1 — สแกน QR</div>
+          <div class="wn-how-v2-track-title">วิธีที่ 1 — สแกน QR เพื่อเชื่อมต่อ</div>
           <ol class="wn-how-v2-steps">
             <li>เปิดกล้องมือถือ</li>
-            <li>ชี้ที่ QR ด้านบน</li>
-            <li>กดลิงก์ที่ขึ้นมา — เชื่อมต่อทันที</li>
+            <li>ส่องไปที่ QR ด้านบน</li>
+            <li>กดเชื่อมต่อ</li>
           </ol>
         </div>
         <div class="wn-how-v2-divider">

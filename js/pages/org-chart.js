@@ -34,16 +34,16 @@ const depts = [
 export const renderOrgChart = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Company", null], ["Org Chart", null]],
   title: "โครงสร้างองค์กร",
-  lead: "EXZY มี 9 แผนกหลัก — ทำความรู้จักแต่ละฝ่ายและหน้าที่รับผิดชอบก่อนวันแรก",
+  lead: "EXZY มี 9 แผนกหลัก ๆ สามารถทำความรู้จักแต่ละฝ่ายและหน้าที่คร่าว ๆ ได้จากแผนภาพนี้เลย",
   body: `
     <!-- Company HQ card (compact, centered) -->
     <div class="oc-hq-card anim-up">
       <div class="oc-hq-badge">Head Office · Bangkok</div>
+
       <div class="oc-hq-name">EXZY Co., Ltd.</div>
       <div class="oc-hq-tagline">"Excellence by design, Advance by technology"</div>
       <div class="oc-hq-pills">
-        <span class="oc-hq-pill">9 แผนก</span>
-        <span class="oc-hq-pill">Smart Office Solution</span>
+       
       </div>
     </div>
 
@@ -70,8 +70,8 @@ export const renderOrgChart = () => pageWrap({
     <div class="callout" style="margin-top:48px;">
       <span class="ic">${I.info}</span>
       <div>
-        <h4>ยังไม่รู้ว่าตัวเองอยู่แผนกไหน?</h4>
-        <p>ไม่ต้องกังวล — HR จะแจ้งแผนกและพี่เลี้ยงให้คุณทราบก่อนวันแรก · ดูรายชื่อพนักงานแต่ละทีมได้ใน <a href="#/employee/directory" data-link>Employee Directory</a></p>
+        <h4>ต้องการติดต่อใครสักคน?</h4>
+        <p>สามารถดูช่องทางการติดต่อของพนักงานได้ใน <a href="#/employee/directory" data-link>Employee Directory</a></p>
       </div>
     </div>
   `,
