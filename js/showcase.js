@@ -37,7 +37,6 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     preview: "สรุปประสบการณ์ฝึกงานสายออกแบบที่ EXZY และสิ่งที่เติบโตขึ้น",
     url: "https://www.facebook.com/share/p/RGb9rUnZ1rN5RzsC/",
     canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/",
-    cover: "sc-fb-design.jpg",
   },
   {
     category: "blog",
@@ -48,6 +47,7 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     summary: "บทความโดย @dangjaig",
     preview: "รีวิวมุมมองการเติบโตและการทำงานจริงในสาย Business Development",
     url: "https://medium.com/@dangjaig/ประสบการณ์ฝึกงานบริษัท-exzy-กับแนวความคิดที่เติบโตแบบก้าวกระโดด-eceb87feff69",
+    cover: "sc-medium-bd.jpg",
   },
   {
     category: "blog",

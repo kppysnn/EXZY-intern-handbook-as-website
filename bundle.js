@@ -227,8 +227,7 @@
       summary: "\u0E42\u0E1E\u0E2A\u0E15\u0E4C\u0E23\u0E35\u0E27\u0E34\u0E27\u0E42\u0E14\u0E22 Boat N'hap",
       preview: "\u0E2A\u0E23\u0E38\u0E1B\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E17\u0E35\u0E48 EXZY \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E02\u0E36\u0E49\u0E19",
       url: "https://www.facebook.com/share/p/RGb9rUnZ1rN5RzsC/",
-      canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/",
-      cover: "sc-fb-design.jpg"
+      canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/"
     },
     {
       category: "blog",
@@ -238,7 +237,8 @@
       title: "\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 EXZY \u0E01\u0E31\u0E1A\u0E41\u0E19\u0E27\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E41\u0E1A\u0E1A\u0E01\u0E49\u0E32\u0E27\u0E01\u0E23\u0E30\u0E42\u0E14\u0E14",
       summary: "\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E42\u0E14\u0E22 @dangjaig",
       preview: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E2A\u0E32\u0E22 Business Development",
-      url: "https://medium.com/@dangjaig/\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17-exzy-\u0E01\u0E31\u0E1A\u0E41\u0E19\u0E27\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E41\u0E1A\u0E1A\u0E01\u0E49\u0E32\u0E27\u0E01\u0E23\u0E30\u0E42\u0E14\u0E14-eceb87feff69"
+      url: "https://medium.com/@dangjaig/\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17-exzy-\u0E01\u0E31\u0E1A\u0E41\u0E19\u0E27\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E41\u0E1A\u0E1A\u0E01\u0E49\u0E32\u0E27\u0E01\u0E23\u0E30\u0E42\u0E14\u0E14-eceb87feff69",
+      cover: "sc-medium-bd.jpg"
     },
     {
       category: "blog",
@@ -435,7 +435,7 @@
 
     <div class="ex-must-grid">
       <article class="ex-must-card fdb-reveal">
-        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png')"></div>
+        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png');background-position:center 54%"></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">01 \xB7 Timesheet</span>
