@@ -35472,6 +35472,16 @@ html::-webkit-scrollbar { display: none !important; }
   line-height: 1.08 !important;
 }
 
+.ex-home-h1-eyebrow {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.62;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
 /* quick list icons — frosted glass tile */
 .ex-quick-list .ex-quick-ico {
   display: flex !important;

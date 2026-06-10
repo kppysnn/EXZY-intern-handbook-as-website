@@ -55,8 +55,7 @@ export const renderHrBdProject = () => pageWrap({
         <p>เริ่มจากดูตัวอย่างคลิป บทความ และโพสต์ของ intern รุ่นก่อน แล้วค่อยเลือกทำสิ่งที่เหมาะกับตัวเอง</p>
       </div>
       <div class="cta-btns">
-        <a href="#/showcase/experiences" class="btn btn-ghost" data-link>ดู Intern Experiences ${I.arrow}</a>
-        <a href="#/showcase/blog" class="btn btn-primary" data-link>ดู Intern Blog ${I.arrow}</a>
+        <a href="#/showcase/experiences" class="btn btn-primary" data-link>ดู Showcase ตัวอย่าง ${I.arrow}</a>
       </div>
     </div>
   `,

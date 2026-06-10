@@ -13,7 +13,7 @@ export var renderHome = () => `
 
   <div class="ex-home-hero-inner">
     <div class="ex-home-copy">
-      <h1>Welcome to EXZY<br>Intern Handbook</h1>
+      <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Intern Handbook</h1>
       <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องใช้ตลอดการฝึกงานไว้ที่นี่ — งานที่ต้องทำ ออฟฟิศ ทีม หรือนโยบาย <br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามนั้นเอง!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
