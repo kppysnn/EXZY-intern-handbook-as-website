@@ -314,7 +314,7 @@
       return `
       <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
         <div class="slc-photo">
-          <img class="slc-photo-img" src="${coverSrc}" alt="${escapeAttr(item.title)}" loading="lazy" />
+          <img class="slc-photo-img" src="${coverSrc}" alt="" loading="lazy" onerror="this.style.display='none'" />
           <div class="slc-photo-overlay slc-overlay-${platformSlug}">
             <div class="slc-platform-row">
               <div class="slc-platform-icon">${platformIcon(item.platform)}</div>
