@@ -2051,31 +2051,25 @@
       }
     }
     document.querySelectorAll("[data-home-hero-video]").forEach((video) => {
-      const source = video.querySelector("source")?.getAttribute("src") || video.getAttribute("src");
-      if (source && video.getAttribute("src") !== source) video.setAttribute("src", source);
-      const tryPlay = () => {
-        if (source && !video.currentSrc) video.src = source;
-        const playPromise = video.play?.();
-        if (playPromise?.catch) playPromise.catch(() => {
-        });
-      };
       video.muted = true;
       video.defaultMuted = true;
       video.loop = true;
       video.playsInline = true;
-      video.setAttribute("muted", "");
-      video.setAttribute("defaultMuted", "");
-      video.setAttribute("loop", "");
-      video.setAttribute("playsinline", "");
-      video.setAttribute("webkit-playsinline", "");
-      video.setAttribute("autoplay", "");
-      video.preload = "auto";
-      video.load?.();
-      tryPlay();
+      const tryPlay = () => {
+        if (video.paused) {
+          const p = video.play?.();
+          if (p?.catch) p.catch(() => {
+          });
+        }
+      };
+      if (video.readyState >= 2) {
+        tryPlay();
+      } else {
+        video.addEventListener("canplay", tryPlay, { once: true });
+        video.addEventListener("loadeddata", tryPlay, { once: true });
+      }
       requestAnimationFrame(tryPlay);
-      [150, 350, 700, 1200, 2200].forEach((delay) => setTimeout(tryPlay, delay));
-      video.addEventListener("loadeddata", tryPlay, { once: true });
-      video.addEventListener("canplay", tryPlay, { once: true });
+      [80, 250, 600, 1400].forEach((d) => setTimeout(tryPlay, d));
       window.addEventListener("pageshow", tryPlay, { once: true });
       document.addEventListener("visibilitychange", () => {
         if (!document.hidden && video.paused) tryPlay();
