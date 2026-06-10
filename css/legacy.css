@@ -10761,6 +10761,62 @@ p.hero-word, div.hero-word { display: block; }
   overflow: hidden;
 }
 
+/* showcase card — photo cover variant */
+.slc-photo {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background: #001122;
+  flex-shrink: 0;
+}
+.slc-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@media (prefers-reduced-motion: reduce) {
+  .slc-photo-img { transition: none; }
+}
+.show-real-card:hover .slc-photo-img {
+  transform: scale(1.06);
+}
+.slc-photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,17,34,.30) 0%,
+    rgba(0,17,34,.06) 38%,
+    rgba(0,17,34,.72) 72%,
+    rgba(0,17,34,.92) 100%
+  );
+}
+.slc-overlay-facebook {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,40,90,.35) 0%,
+    rgba(0,40,90,.08) 38%,
+    rgba(0,40,90,.75) 72%,
+    rgba(0,64,129,.92) 100%
+  );
+}
+.slc-overlay-medium {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.32) 0%,
+    rgba(0,0,0,.08) 38%,
+    rgba(0,17,34,.78) 72%,
+    rgba(0,17,34,.95) 100%
+  );
+}
+
 /* =========================================================
    NEW HOME PAGE — Handbook Landing
    ========================================================= */

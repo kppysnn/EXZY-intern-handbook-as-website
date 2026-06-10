@@ -25,6 +25,7 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     preview: "มุมมองการฝึกงาน 2 เดือน พร้อมสิ่งที่ได้เรียนรู้จากทีมจริง",
     url: "https://www.facebook.com/share/p/17PWAui7fs/",
     canonicalUrl: "https://www.facebook.com/ExzyTech/posts/2609136702451677/",
+    cover: "sc-fb-bd.jpg",
   },
   {
     category: "experiences",
@@ -36,6 +37,7 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     preview: "สรุปประสบการณ์ฝึกงานสายออกแบบที่ EXZY และสิ่งที่เติบโตขึ้น",
     url: "https://www.facebook.com/share/p/RGb9rUnZ1rN5RzsC/",
     canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/",
+    cover: "sc-fb-design.jpg",
   },
   {
     category: "blog",
@@ -56,6 +58,7 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     summary: "บทความโดย @gubsitt2019",
     preview: "รีวิวการทำโปรเจกต์จริงด้วย React และ Node.js ในช่วงฝึกงาน",
     url: "https://medium.com/@gubsitt2019/full-stack-developer-internship-review-building-real-projects-with-react-and-node-js-b6b1323a95cc",
+    cover: "sc-medium-dev.jpg",
   },
 ]);
 
@@ -122,9 +125,32 @@ function renderShowcaseMedia(item) {
   const trackPill = item.track
     ? `<span class="slc-track-pill">${escapeHtml(item.track)}</span>`
     : "";
+  const platformSlug = escapeAttr(String(item.platform || "link").toLowerCase());
+
+  if (item.cover) {
+    const coverSrc = escapeAttr(`./static/${item.cover}`);
+    return `
+      <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
+        <div class="slc-photo">
+          <img class="slc-photo-img" src="${coverSrc}" alt="${escapeAttr(item.title)}" loading="lazy" />
+          <div class="slc-photo-overlay slc-overlay-${platformSlug}">
+            <div class="slc-platform-row">
+              <div class="slc-platform-icon">${platformIcon(item.platform)}</div>
+              <span class="slc-platform-label">${escapeHtml(item.platform)}</span>
+              ${trackPill}
+            </div>
+            <p class="slc-headline">${escapeHtml(item.title)}</p>
+          </div>
+        </div>
+        <div class="slc-preview-strip">
+          <p>${escapeHtml(item.preview || item.summary || "เปิดลิงก์เพื่ออ่าน/รับชมแบบเต็ม")}</p>
+        </div>
+      </div>
+    `;
+  }
 
   return `
-    <div class="show-real-media show-real-media-link show-real-media-${escapeAttr(String(item.platform || "link").toLowerCase())}">
+    <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
       <div class="slc-header ${headerClass}">
         <div class="slc-platform-row">
           <div class="slc-platform-icon">${platformIcon(item.platform)}</div>

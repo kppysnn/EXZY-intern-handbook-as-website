@@ -215,7 +215,8 @@
       summary: "\u0E42\u0E1E\u0E2A\u0E15\u0E4C\u0E23\u0E35\u0E27\u0E34\u0E27\u0E42\u0E14\u0E22 EXZY Company Limited",
       preview: "\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 2 \u0E40\u0E14\u0E37\u0E2D\u0E19 \u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E08\u0E32\u0E01\u0E17\u0E35\u0E21\u0E08\u0E23\u0E34\u0E07",
       url: "https://www.facebook.com/share/p/17PWAui7fs/",
-      canonicalUrl: "https://www.facebook.com/ExzyTech/posts/2609136702451677/"
+      canonicalUrl: "https://www.facebook.com/ExzyTech/posts/2609136702451677/",
+      cover: "sc-fb-bd.jpg"
     },
     {
       category: "experiences",
@@ -226,7 +227,8 @@
       summary: "\u0E42\u0E1E\u0E2A\u0E15\u0E4C\u0E23\u0E35\u0E27\u0E34\u0E27\u0E42\u0E14\u0E22 Boat N'hap",
       preview: "\u0E2A\u0E23\u0E38\u0E1B\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E17\u0E35\u0E48 EXZY \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E02\u0E36\u0E49\u0E19",
       url: "https://www.facebook.com/share/p/RGb9rUnZ1rN5RzsC/",
-      canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/"
+      canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/",
+      cover: "sc-fb-design.jpg"
     },
     {
       category: "blog",
@@ -246,7 +248,8 @@
       title: "Full-Stack Developer Internship Review",
       summary: "\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E42\u0E14\u0E22 @gubsitt2019",
       preview: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E01\u0E32\u0E23\u0E17\u0E33\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C\u0E08\u0E23\u0E34\u0E07\u0E14\u0E49\u0E27\u0E22 React \u0E41\u0E25\u0E30 Node.js \u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19",
-      url: "https://medium.com/@gubsitt2019/full-stack-developer-internship-review-building-real-projects-with-react-and-node-js-b6b1323a95cc"
+      url: "https://medium.com/@gubsitt2019/full-stack-developer-internship-review-building-real-projects-with-react-and-node-js-b6b1323a95cc",
+      cover: "sc-medium-dev.jpg"
     }
   ]);
   function getAllShowcaseItems() {
@@ -305,8 +308,30 @@
     }
     const headerClass = platformHeaderClass(item.platform);
     const trackPill = item.track ? `<span class="slc-track-pill">${escapeHtml(item.track)}</span>` : "";
+    const platformSlug = escapeAttr(String(item.platform || "link").toLowerCase());
+    if (item.cover) {
+      const coverSrc = escapeAttr(`./static/${item.cover}`);
+      return `
+      <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
+        <div class="slc-photo">
+          <img class="slc-photo-img" src="${coverSrc}" alt="${escapeAttr(item.title)}" loading="lazy" />
+          <div class="slc-photo-overlay slc-overlay-${platformSlug}">
+            <div class="slc-platform-row">
+              <div class="slc-platform-icon">${platformIcon(item.platform)}</div>
+              <span class="slc-platform-label">${escapeHtml(item.platform)}</span>
+              ${trackPill}
+            </div>
+            <p class="slc-headline">${escapeHtml(item.title)}</p>
+          </div>
+        </div>
+        <div class="slc-preview-strip">
+          <p>${escapeHtml(item.preview || item.summary || "\u0E40\u0E1B\u0E34\u0E14\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2D\u0E48\u0E32\u0E19/\u0E23\u0E31\u0E1A\u0E0A\u0E21\u0E41\u0E1A\u0E1A\u0E40\u0E15\u0E47\u0E21")}</p>
+        </div>
+      </div>
+    `;
+    }
     return `
-    <div class="show-real-media show-real-media-link show-real-media-${escapeAttr(String(item.platform || "link").toLowerCase())}">
+    <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
       <div class="slc-header ${headerClass}">
         <div class="slc-platform-row">
           <div class="slc-platform-icon">${platformIcon(item.platform)}</div>
