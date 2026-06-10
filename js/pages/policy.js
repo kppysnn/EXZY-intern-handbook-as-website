@@ -173,7 +173,7 @@ export const renderInternshipPolicy = () => pageWrap({
         <div class="rule-icon">${I.door}</div>
         <div class="rule-body">
           <h3>มาออฟฟิศ หรือสถานที่ที่ Assign ไว้เท่านั้น</h3>
-          <p>ต้องเข้าฝึกงานที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม Assign ไว้เท่านั้น </br><strong>ไม่อนุญาต WFH</strong> สำหรับ Intern แต่หากมีความจำเป็น ต้องแจ้งพี่เลี้ยง</br>และติดต่อ HR ก่อนเสมอ</p>
+          <p>ต้องเข้าฝึกงานที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม Assign ไว้เท่านั้น <br><strong>ไม่อนุญาต WFH</strong> สำหรับ Intern แต่หากมีความจำเป็น ต้องแจ้งพี่เลี้ยง<br>และติดต่อ HR ก่อนเสมอ</p>
         </div>
       </div>
       <div class="rule-card">
@@ -212,7 +212,7 @@ export const renderDressCode = () => pageWrap({
       <div>
         <div class="dress-tag-v2" style="color:#ffffff;">EXZY Core Value · Aesthetic Design</div>
         <h2 style="color:#ffffff;">สะอาด เรียบร้อย เหมาะสม</h2>
-        <p style="color:rgba(255,255,255,.82);">"สะอาดเรียบร้อย และเตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดี</br>คือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
+        <p style="color:rgba(255,255,255,.82);">"สะอาดเรียบร้อย และเตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดี<br>คือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
       </div>
       <div class="dress-hero-img dress-hero-img--asset">
         <img src="./static/dress-code-outfits.png" alt="ตัวอย่างเสื้อผ้าและรองเท้าสำหรับแต่งกายแบบ Smart Casual ที่ EXZY" loading="lazy" />

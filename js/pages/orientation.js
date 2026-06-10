@@ -34,7 +34,7 @@ export const renderOrientation = () => pageWrap({
     <h2 id="intro">เกี่ยวกับ EXZY</h2>
     <div class="exzy-intro-card anim-up">
       <div class="exzy-intro-tagline">"Excellence by design, Advance by technology"</div>
-      <p style="margin:0 0 12px;">EXZY คือผู้เชี่ยวชาญด้าน <strong>Smart Office Solution</strong> แบบครบวงจร ให้บริการตั้งแต่การออกแบบ ติดตั้ง ไปจนถึงเชื่อมต่อระบบสำนักงานยุคใหม่ ทั้งระบบจองห้องประชุม ระบบเข้า-ออกอัจฉริยะ Video Conference และ Digital Signage </br></br>ในฐานะ Intern ของ EXZY คุณจะได้เป็นส่วนหนึ่งของทีม มีส่วนร่วมในการทำงาน และได้สร้างผลงานของตัวเองอย่างแน่นอน</p>
+      <p style="margin:0 0 12px;">EXZY คือผู้เชี่ยวชาญด้าน <strong>Smart Office Solution</strong> แบบครบวงจร ให้บริการตั้งแต่การออกแบบ ติดตั้ง ไปจนถึงเชื่อมต่อระบบสำนักงานยุคใหม่ ทั้งระบบจองห้องประชุม ระบบเข้า-ออกอัจฉริยะ Video Conference และ Digital Signage <br><br>ในฐานะ Intern ของ EXZY คุณจะได้เป็นส่วนหนึ่งของทีม มีส่วนร่วมในการทำงาน และได้สร้างผลงานของตัวเองอย่างแน่นอน</p>
       <p style="font-size:13px; color: var(--muted); margin:0;">อยากรู้จัก EXZY เพิ่มเติม? <a href="https://www.exzysmartoffice.com" target="_blank" rel="noopener" class="inline-link">เยี่ยมชมเว็บไซต์ ${I.external}</a></p>
     </div>
 
@@ -42,7 +42,7 @@ export const renderOrientation = () => pageWrap({
     <p>แนวคิดที่อยู่เบื้องหลังการทำงานของ EXZY หากเข้าใจและนำไปใช้จริงแสดงว่าคุณเริ่มเป็นส่วหนึ่งของพวกเราแล้ว!</p>
 
     <!-- Compact CV Preview -->
-    <div class="cv-wrap" style="gap:12px; margin-bottom:20px;">
+    <div class="cv-wrap cv-compact">
       ${[
         { c:'cv-c1', num:'01', name:'Win as a Team',           tag:'Goal · Work+ · Support' },
         { c:'cv-c2', num:'02', name:'Innovative',              tag:'Value added · Learn · Take risk' },
@@ -50,12 +50,12 @@ export const renderOrientation = () => pageWrap({
         { c:'cv-c4', num:'04', name:'Professional & Dynamic',  tag:'Adapt · Commit · Prepare' },
         { c:'cv-c5', num:'05', name:'Aesthetic Design',        tag:'Tidiness · Experience · WOW' },
       ].map((v,i) => `
-        <div class="cv-card ${v.c} anim-up" data-delay="${i*50}" style="--gap:0">
-          <div class="cv-card-head" style="padding:18px 24px; gap:16px;">
-            <div class="cv-card-big-num" style="font-size:2rem;">${v.num}</div>
+        <div class="cv-card ${v.c} anim-up" data-delay="${i*50}">
+          <div class="cv-card-head">
+            <div class="cv-card-big-num">${v.num}</div>
             <div class="cv-card-text-col">
-              <div class="cv-card-name" style="font-size:1rem;">${v.name}</div>
-              <p class="cv-card-tagline" style="font-size:12.5px;">${v.tag}</p>
+              <div class="cv-card-name">${v.name}</div>
+              <p class="cv-card-tagline">${v.tag}</p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ export const renderOrientation = () => pageWrap({
       </div>
       <div class="proj-card anim-up" data-delay="160">
         <div class="proj-num">03</div>
-        <h3>HR / BD Project</h3>
+        <h3>HR Project</h3>
         <p>Project ที่ HR assign ให้ เป็นการแชร์ประสบการณ์การฝึกงานที่ EXZY โดยต้องส่งก่อนจบฝึกงาน 2 อาทิตย์</p>
       </div>
     </div>
@@ -132,9 +132,9 @@ export const renderOrientation = () => pageWrap({
           </div>
         </div>
         <div class="ob-submit-info">
-          <span>📅 กำหนดส่ง: วันที่ 30–31 ของทุกเดือน</span>
+          <span><span aria-hidden="true">📅</span> กำหนดส่ง: วันที่ 30–31 ของทุกเดือน</span>
           <span class="ob-info-sep">·</span>
-          <span>📄 วิธีส่ง: พิมพ์เอกสารเป็นกระดาษและนำไปใส่กล่องที่หน้าห้อง HR ที่ชั้น 4</span>
+          <span><span aria-hidden="true">📄</span> วิธีส่ง: พิมพ์เอกสารเป็นกระดาษและนำไปใส่กล่องที่หน้าห้อง HR ที่ชั้น 4</span>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@ export const renderOrientation = () => pageWrap({
         <a href="#/policy/code-of-conduct" class="ae-chip" data-link>${I.shield} Core Values</a>
         <a href="#/policy/internship" class="ae-chip" data-link>${I.clock} Internship Policy</a>
         <a href="#/tasks/timesheet" class="ae-chip" data-link>${I.doc} Timesheet</a>
-        <a href="#/tasks/hr-bd-project" class="ae-chip" data-link>${I.edit} HR / BD Project</a>
+        <a href="#/tasks/hr-bd-project" class="ae-chip" data-link>${I.edit} HR Project</a>
         <a href="#/employee/org-chart" class="ae-chip" data-link>${I.people} โครงสร้างองค์กร</a>
       </div>
     </div>

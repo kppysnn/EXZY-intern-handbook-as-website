@@ -13,16 +13,7 @@ export var renderHome = () => `
 
   <div class="ex-home-hero-inner">
     <div class="ex-home-copy">
-      <p class="ex-home-kicker">
-        <span class="ex-home-kicker-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" focusable="false">
-            <path d="M8 6.5h10.5c3 0 5.5 2.4 5.5 5.5v13.5H12.8A4.8 4.8 0 0 1 8 20.7V6.5Z"/>
-            <path d="M12.5 10.7h7.2M12.5 15h7.2M12.5 19.3h5.2"/>
-          </svg>
-        </span>
-        Welcome to EXZY Internship
-      </p>
-      <h1>EXZY Intern Handbook</h1>
+      <h1>Welcome to EXZY<br>Intern Handbook</h1>
       <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องใช้ตลอดการฝึกงานไว้ที่นี่ — งานที่ต้องทำ ออฟฟิศ ทีม หรือนโยบาย <br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามนั้นเอง!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
@@ -42,58 +33,56 @@ export var renderHome = () => `
 <section class="ex-home-start" id="ex-home-start" aria-labelledby="ex-home-start-title">
   <div class="ex-home-start-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-home-start-title"> 3 เรื่องที่ถูกเปิดดูบ่อย</h2>
-      <p>สิ่งที่ต้องเจอในวันแรก ๆ งานที่ต้องทำ และข้อมูลที่อาจจะเปิดดูอยู่บ่อย ๆ</p>
+      <span class="ex-must-eyebrow">Timesheet · HR Project</span>
+      <h2 id="ex-home-start-title">งานที่ต้องทำ มีอะไรบ้าง ?</h2>
+      <p>intern ทุกคนจะต้องรับผิดชอบ 2 งานหลัก และต้องส่งให้กับ hr ตามที่กำหนด</p>
     </div>
 
-    <div class="ex-start-grid ex-start-grid-priority">
-      <article class="ex-start-card ex-start-card--day1 fdb-reveal">
-        <span class="ex-start-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="7" width="26" height="20" rx="3"/>
-            <path d="M3 13h26M10 7V4M22 7V4"/>
-            <circle cx="16" cy="21" r="2.5" fill="currentColor" stroke="none"/>
-          </svg>
-        </span>
-        <h3>วันแรกจะเจออะไรบ้าง ?</h3>
-        <p>หากเพิ่งมาวันแรก แล้วยังไม่รู้ว่าจะเจอกับอะไรบ้าง ลองดู Day 1 Guide ได้ที่นี่</p>
-        <div class="ex-start-actions">
-          <a href="#/first-day" class="ex-start-link ex-start-link-primary" data-link>ดู Day 1 Guide</a>
+    <div class="ex-must-grid">
+      <article class="ex-must-card fdb-reveal">
+        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png')"></div>
+        <div class="ex-must-content">
+          <div class="ex-must-header">
+            <span class="ex-must-label">01 · Timesheet</span>
+            <span class="ex-must-pill ex-must-pill--teal">ส่งทุกเดือน</span>
+          </div>
+          <h3 class="ex-must-title">Intern Timesheet</h3>
+          <ul class="ex-must-list">
+            <li>กรอกเวลาเข้า-ออกและงานที่ทำ <strong>ทุกวัน</strong></li>
+            <li>ส่งเอกสารเป็นกระดาษที่หน้าห้อง HR <strong>ชั้น 4</strong></li>
+            <li>กำหนดส่ง <strong>วันที่ 30–31 ของทุกเดือน</strong></li>
+          </ul>
+          <a href="#/tasks/timesheet" class="ex-must-btn" data-link>ดูวิธีกรอก Timesheet →</a>
         </div>
       </article>
 
-      <article class="ex-start-card fdb-reveal fdb-delay1">
-        <span class="ex-start-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 7h20v22H6z"/>
-            <path d="M11 13h10M11 18h10M11 23h6"/>
-            <path d="M22 4v6h6"/>
-          </svg>
-        </span>
-        <h3>งานที่ต้องรับผิดชอบ</h3>
-        <p>มี 2 อย่างที่ต้องทำตลอดการฝึกงาน </br>คือการกรอก Timesheet ทุกวัน </br>และส่ง HR / BD Project ก่อนจบฝึกงาน</p>
-        <div class="ex-start-actions">
-          <a href="#/tasks/timesheet" class="ex-start-link" data-link>Timesheet</a>
-          <a href="#/tasks/hr-bd-project" class="ex-start-link" data-link>HR / BD Project</a>
-          <a href="#/showcase/experiences" class="ex-start-link" data-link>ตัวอย่างงานรุ่นก่อน</a>
+      <article class="ex-must-card fdb-reveal fdb-delay1">
+        <div class="ex-must-photo" style="background-image:url('./static/card-project-photo.png')"></div>
+        <div class="ex-must-content">
+          <div class="ex-must-header">
+            <span class="ex-must-label">02 · HR Project</span>
+            <span class="ex-must-pill ex-must-pill--amber">ก่อนจบฝึกงาน</span>
+          </div>
+          <h3 class="ex-must-title">HR Project</h3>
+          <ul class="ex-must-list">
+            <li>ชิ้นงานที่เล่าประสบการณ์การฝึกงาน</li>
+            <li>เลือกรูปแบบได้ตามที่ถนัด ไม่ว่าจะเป็น <strong>คลิป บทความ โพสต์</strong></li>
+            <li>ต้องเผยแพร่บนช่องทาง <strong>public</strong></li>
+            <li>ส่งก่อนสิ้นสุดการฝึกงาน <strong>2 อาทิตย์</strong></li>
+          </ul>
+          <a href="#/tasks/hr-bd-project" class="ex-must-btn" data-link>ดูรายละเอียด Project →</a>
         </div>
       </article>
+    </div>
 
-      <article class="ex-start-card fdb-reveal fdb-delay2">
-        <span class="ex-start-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8 4h16v24l-8-5-8 5V4z"/>
-            <path d="M12 12h8M12 17h5"/>
-          </svg>
-        </span>
-        <h3>ตัวช่วยระหว่างฝึกงาน</h3>
-        <p>ข้อมูลที่จะช่วยให้ทำงานได้ง่ายขึ้น เช่น Wi-Fi, </br>รายชื่อพนักงาน, FAQs รวบรวมคำถาม-ตอบ </br>ไว้ในที่เดียว</p>
-        <div class="ex-start-actions">
-          <a href="#/resources/faqs" class="ex-start-link" data-link>FAQs</a>
-          <a href="#/getting-started/wifi" class="ex-start-link" data-link>Office Wi-Fi</a>
-          <a href="#/employee/directory" class="ex-start-link" data-link>Employee Contact</a>
-        </div>
-      </article>
+    <div class="ex-must-notice fdb-reveal">
+      <span class="ex-must-notice-ico">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </span>
+      <div>
+        <p>งานทั้งสองอย่างนี้เป็นส่วนหนึ่งของการฝึกงาน intern ทุกคนต้องส่งครบตามกำหนด ถึงจะผ่านการฝึกงาน</p>
+        <p>ดูตัวอย่างผลงานจาก intern รุ่นก่อนได้ที่ <a href="#/showcase/experiences" data-link>Intern Showcase</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -101,7 +90,7 @@ export var renderHome = () => `
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-folders-title">เลือกหมวดที่อยากรู้</h2>
+      <h2 id="ex-folders-title">รวมข้อมูลทั้งหมด</br>ที่ intern ต้องรู้ไว้ที่นี่</h2>
       <p>อยากรู้เรื่องไหน ? เลือกดูได้เลย</p>
     </div>
 
@@ -114,7 +103,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="26" height="20" rx="3"/><path d="M3 13h26M10 7V4M22 7V4"/><circle cx="16" cy="20" r="3" fill="currentColor" stroke="none"/></svg>
           </div>
           <h3>Day 1 Guide</h3>
-          <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และสิ่งที่จะได้เจอ</br>ในช่วงเริ่มต้นการฝึกงาน</p>
+          <p>รายละเอียดของวันแรก สิ่งที่ต้องทำ และสิ่งที่จะได้เจอ<br>ในช่วงเริ่มต้นการฝึกงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/first-day" data-link class="ex-folder-doc"><span>01</span> ตารางวันแรก</a>
@@ -146,11 +135,11 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 5h18v24H7z"/><path d="M11 10h10M11 15h10M11 20h7"/><path d="M23 4v5h5"/></svg>
           </div>
           <h3>งานที่ต้องรับผิดชอบ</h3>
-          <p>สิ่งที่ intern ต้องทำและส่งระหว่างฝึกงาน ทั้งเอกสารรายเดือน</br>และ HR project ก่อนจบฝึกงาน</p>
+          <p>สิ่งที่ intern ต้องทำและส่งระหว่างฝึกงาน ทั้งเอกสารรายเดือน<br>และ HR project ก่อนจบฝึกงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/tasks/timesheet" data-link class="ex-folder-doc"><span>01</span> Timesheet</a>
-          <a href="#/tasks/hr-bd-project" data-link class="ex-folder-doc"><span>02</span> HR / BD Project</a>
+          <a href="#/tasks/hr-bd-project" data-link class="ex-folder-doc"><span>02</span> HR Project</a>
           <a href="#/showcase/experiences" data-link class="ex-folder-doc"><span>03</span> Showcase Examples</a>
         </div>
       </div>
@@ -208,23 +197,35 @@ export var renderHome = () => `
   <div class="ex-home-quick-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <h2 id="ex-home-quick-title">ข้อมูลที่ใช้บ่อย</h2>
-      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้ง่ายขึ้น ทั้งการเชื่อมต่อ Wi-Fi, ช่องทางการติดต่อ, การแจ้งลา </br>และคำถามเบื้องต้นที่ intern อาจต้องการรู้คำตอบ</p>
+      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้ง่ายขึ้น ทั้งการเชื่อมต่อ Wi-Fi, ช่องทางการติดต่อ, การแจ้งลา <br>และคำถามเบื้องต้นที่ intern อาจต้องการรู้คำตอบ</p>
     </div>
 
     <div class="ex-quick-list">
       <a href="#/getting-started/wifi" data-link>
+        <span class="ex-quick-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </span>
         <span>Wi-Fi</span>
         <strong>เชื่อมต่ออินเทอร์เน็ต<br>ในออฟฟิศ</strong>
       </a>
       <a href="#/employee/directory" data-link>
+        <span class="ex-quick-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
         <span>Contact</span>
         <strong>รายชื่อและช่องทางติดต่อคนในทีม</strong>
       </a>
       <a href="#/policy/leave" data-link>
+        <span class="ex-quick-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M9 16l2 2 4-4"/></svg>
+        </span>
         <span>Leave</span>
-        <strong>ขั้นตอนการแจ้งลา</br>และการลาป่วย</strong>
+        <strong>ขั้นตอนการแจ้งลา<br>และการลาป่วย</strong>
       </a>
       <a href="#/resources/faqs" data-link>
+        <span class="ex-quick-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-width="3"/></svg>
+        </span>
         <span>FAQs</span>
         <strong>คำถามที่ intern มักสงสัย</strong>
       </a>

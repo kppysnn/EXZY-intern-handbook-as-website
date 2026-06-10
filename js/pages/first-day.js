@@ -13,19 +13,18 @@ export function renderFirstDay(data = {}) {
   <div class="ex-day-hero-inner">
     <div class="ex-day-hero-copy">
       <h1 class="ex-day-hero-h1">
-        <span class="ex-day-h1-welcome">Welcome to</span>
-        <span class="ex-day-h1-brand">EXZY Internship</span>
         <span class="ex-day-h1-sub">วันแรกของการฝึกงาน</span>
+        <span class="ex-day-h1-brand">Day 1 Guide</span>
       </h1>
-      <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ มาทำความรู้จักกับ EXZY </br>และการทำงานที่นี่กัน!</p>
-      <a href="#ex-day-tasks" class="ex-day-cta">ดูสิ่งที่ต้องทำวันนี้</a>
+      <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ มาเช็กสิ่งสำคัญที่ต้องทำ <br>และข้อมูลที่ควรรู้สำหรับวันแรกกัน!</p>
+      <a href="#ex-day-tasks" class="ex-day-cta">เช็กสิ่งที่ต้องทำวันนี้</a>
     </div>
   </div>
 </section>
 
 <section class="ex-day-tasks" id="ex-day-tasks" aria-labelledby="ex-day-tasks-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-tasks-title">2 เรื่องที่ต้องทำ</h2>
+    <h2 id="ex-day-tasks-title">2 เรื่องที่ต้องทำในวันแรก</h2>
     <p>อย่าลืม Subscribe Calendar เพื่อติดตามวันหยุดของบริษัท และกรอก Timesheet เพื่อลงเวลาเข้าออกงานในระหว่างการฝึกงาน</p>
   </div>
 
@@ -39,11 +38,11 @@ export function renderFirstDay(data = {}) {
         <h3>Subscribe Google Calendar</h3>
         <p>HR จะส่งคำเชิญให้ทางอีเมล กดเปิด Calendar แล้ว subscribe ปฏิทินบริษัทเพื่อดูวันหยุดประจำปีของบริษัท</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
-          <div class="ex-flow-step"><span>📧</span><b>รับ Email คำเชิญจาก HR</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">📧</span><b>รับ Email คำเชิญจาก HR</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>📅</span><b>กด Open Calendar</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">📅</span><b>กด Open Calendar</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>✅</span><b>กด Subscribe ปฏิทิน</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">✅</span><b>กด Subscribe ปฏิทิน</b></div>
         </div>
         <p class="ex-task-note">ถ้าไม่ได้รับ Calendar invitation ติดต่อ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
       </div>
@@ -56,13 +55,13 @@ export function renderFirstDay(data = {}) {
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 02</span>
         <h3>กรอก Timesheet</h3>
-        <p>กรอกเวลาเข้าออกงานตามจริงในไฟล์ที่ HR ส่งให้ แนะนำให้ทำทุกวันจะได้ไม่ลืมสิ่งที่ทำ และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน </br>(วันที่ 30-31)</p>
+        <p>กรอกเวลาเข้าออกงานตามจริงในไฟล์ที่ HR ส่งให้ แนะนำให้ทำทุกวันจะได้ไม่ลืมสิ่งที่ทำ <br>และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน (วันที่ 30-31)</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
-          <div class="ex-flow-step"><span>📂</span><b>รับไฟล์ Timesheet จาก HR</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">📂</span><b>รับไฟล์ Timesheet จาก HR</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>✏️</span><b>เปิดไฟล์และเริ่มกรอกข้อมูล</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">✏️</span><b>เปิดไฟล์และเริ่มกรอกข้อมูล</b></div>
           <i></i>
-          <div class="ex-flow-step"><span>🖨️</span><b>พิมพ์ส่ง HR สิ้นเดือน </br>(วันที่ 30-31)</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">🖨️</span><b>พิมพ์ส่ง HR สิ้นเดือน <br>(วันที่ 30-31)</b></div>
         </div>
         <a href="#/tasks/timesheet" class="ex-task-btn" data-link>ดูคู่มือ Timesheet →</a>
       </div>
@@ -87,9 +86,9 @@ export function renderFirstDay(data = {}) {
       <h3>Orientation</h3>
       <p>ทำความรู้จัก EXZY ภาพรวมบริษัท นโยบาย การฝึกงาน และหากมีเรื่อง<br>ที่อยากถาม สามารถถามพี่ HR ได้เลย!</p>
       <div class="ex-road-mini">
-        <span>🏢<b>EXZY</b></span>
-        <span>💻<b>Tools</b></span>
-        <span>📅<b>Calendar</b></span>
+        <span><span aria-hidden="true">🏢</span><b>EXZY</b></span>
+        <span><span aria-hidden="true">💻</span><b>Tools</b></span>
+        <span><span aria-hidden="true">📅</span><b>Calendar</b></span>
       </div>
     </article>
 
@@ -99,8 +98,8 @@ export function renderFirstDay(data = {}) {
       <p>รู้จักตัวตนของ EXZY ผ่านโลโก้ สี ฟอนต์ สไตล์งาน และบรรยากาศออฟฟิศ</p>
       <div class="ex-road-mini">
         <span><img src="./exzy-square-icon.png" style="width:20px;height:20px;object-fit:contain;border-radius:4px;" alt="EXZY"><b>Logo</b></span>
-        <span>🎨<b>Color</b></span>
-        <span>👥<b>People</b></span>
+        <span><span aria-hidden="true">🎨</span><b>Color</b></span>
+        <span><span aria-hidden="true">👥</span><b>People</b></span>
       </div>
     </article>
 
@@ -109,9 +108,9 @@ export function renderFirstDay(data = {}) {
       <h3>Mentor &amp; Team</h3>
       <p>พูดคุยกับพี่เลี้ยงที่จะดูแลคุณ<br>ตลอดการฝึกงาน ทำความรู้จักกับสมาชิกในทีมที่ต้องร่วมงานด้วย <br>และพูดคุยถึงความต้องการและ<br>ความคาดหวังในการฝึกงาน</p>
       <div class="ex-road-mini">
-        <span>🧭<b>Mentor</b></span>
-        <span>🤝<b>Team</b></span>
-        <span>💬<b>Ask</b></span>
+        <span><span aria-hidden="true">🧭</span><b>Mentor</b></span>
+        <span><span aria-hidden="true">🤝</span><b>Team</b></span>
+        <span><span aria-hidden="true">💬</span><b>Ask</b></span>
       </div>
     </article>
 
@@ -140,31 +139,31 @@ export function renderFirstDay(data = {}) {
     <div class="ex-more-chapters">
       <a href="#/getting-started/orientation" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">01</span>
-        <span class="ex-more-ch-ico">🏢</span>
+        <span class="ex-more-ch-ico" aria-hidden="true">🏢</span>
         <b>Orientation &amp; Office</b>
         <small>Wi-Fi, Meeting rooms, Orientation slides</small>
       </a>
       <a href="#/employee/org-chart" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">02</span>
-        <span class="ex-more-ch-ico">👥</span>
+        <span class="ex-more-ch-ico" aria-hidden="true">👥</span>
         <b>บริษัทและทีม</b>
         <small>โครงสร้างองค์กร, Employee Contact</small>
       </a>
       <a href="#/policy/code-of-conduct" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">03</span>
-        <span class="ex-more-ch-ico">📋</span>
+        <span class="ex-more-ch-ico" aria-hidden="true">📋</span>
         <b>Work Policy</b>
         <small>Core Values, Dress Code, การลา</small>
       </a>
       <a href="#/tasks/hr-bd-project" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">04</span>
-        <span class="ex-more-ch-ico">📝</span>
+        <span class="ex-more-ch-ico" aria-hidden="true">📝</span>
         <b>Intern Tasks</b>
         <small>Timesheet, HR / BD Project</small>
       </a>
       <a href="#/resources/faqs" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">05</span>
-        <span class="ex-more-ch-ico">❔</span>
+        <span class="ex-more-ch-ico" aria-hidden="true">❔</span>
         <b>FAQs &amp; Resources</b>
         <small>คำถามที่มักเจอระหว่างฝึกงาน</small>
       </a>

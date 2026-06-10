@@ -2,7 +2,7 @@ import { I } from '../icons.js';
 import { pageWrap } from '../helpers.js';
 
 export const renderHrBdProject = () => pageWrap({
-  crumbs: [["Home", "#/home"], ["Intern Tasks", null], ["HR / BD Project", null]],
+  crumbs: [["Home", "#/home"], ["Intern Tasks", null], ["HR Project", null]],
   title: "HR Project",
   lead: "งานที่ HR assign ให้ intern ทำก่อนจบฝึกงาน เลือกรูปแบบได้ตามที่ถนัด และต้องเผยแพร่บนช่องทาง public",
   toc: [
@@ -23,17 +23,17 @@ export const renderHrBdProject = () => pageWrap({
       <div class="proj-card anim-up">
         <div class="proj-num">01</div>
         <h3>Video / Short Clip</h3>
-        <p>คลิปรีวิวฝึกงาน คลิปเล่าเรื่อง</br>เกี่ยวกับงาน หรือ short video สำหรับ TikTok, Reels หรือ </br>YouTube Shorts</p>
+        <p>คลิปรีวิวฝึกงาน คลิปเล่าเรื่อง<br>เกี่ยวกับงาน หรือ short video สำหรับ TikTok, Reels หรือ <br>YouTube Shorts</p>
       </div>
       <div class="proj-card anim-up" data-delay="80">
         <div class="proj-num">02</div>
         <h3>Article / Blog</h3>
-        <p>บทความเล่าประสบการณ์การฝึกงาน </br>สิ่งที่ได้ลองทำ หรือคำแนะนำ</br>สำหรับ intern คนอื่น ๆ</p>
+        <p>บทความเล่าประสบการณ์การฝึกงาน <br>สิ่งที่ได้ลองทำ หรือคำแนะนำ<br>สำหรับ intern คนอื่น ๆ</p>
       </div>
       <div class="proj-card anim-up" data-delay="160">
         <div class="proj-num">03</div>
         <h3>Graphic / Post</h3>
-        <p>post ที่เล่าเรื่องการฝึกงาน</br>ให้อ่านง่ายบน social </br>หรือ public website </br>ที่ใส่ภาพประกอบการเล่าถึง</br>ประสบการณ์การฝึกงาน</p>
+        <p>post ที่เล่าเรื่องการฝึกงาน<br>ให้อ่านง่ายบน social <br>หรือ public website <br>ที่ใส่ภาพประกอบการเล่าถึง<br>ประสบการณ์การฝึกงาน</p>
       </div>  
     </div>
 
