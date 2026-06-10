@@ -40,7 +40,7 @@ export var renderHome = () => `
 
     <div class="ex-must-grid">
       <article class="ex-must-card fdb-reveal">
-        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png')"></div>
+        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png');background-position:center 54%"></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">01 · Timesheet</span>

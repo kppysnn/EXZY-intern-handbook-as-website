@@ -200,7 +200,7 @@
       platform: "TikTok",
       track: "MK",
       title: "\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E15\u0E33\u0E41\u0E2B\u0E19\u0E48\u0E07 Digital Marketing \u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E1A\u0E49\u0E32\u0E07 \u0E44\u0E1B\u0E14\u0E39\u0E01\u0E31\u0E19\u0E40\u0E25\u0E22!!",
-      summary: "\u0E42\u0E14\u0E22 \u0E09\u0E34\u0E07\u0E46\u0E23\u0E35\u0E27\u0E34\u0E27 (@ching_cyy2)",
+      summary: "\u0E09\u0E34\u0E07\u0E46\u0E23\u0E35\u0E27\u0E34\u0E27 (@ching_cyy2) \u0E1E\u0E32\u0E14\u0E39\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 Digital Marketing \u0E41\u0E1A\u0E1A day-in-the-life \u0E17\u0E38\u0E01 task \u0E17\u0E35\u0E48\u0E17\u0E33\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E27\u0E31\u0E19",
       preview: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 MK \u0E41\u0E1A\u0E1A\u0E40\u0E25\u0E48\u0E32\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E27\u0E31\u0E19",
       url: "https://vt.tiktok.com/ZSk4KdXFK/",
       canonicalUrl: "https://www.tiktok.com/@ching_cyy2/video/7344223770762136850",
@@ -212,11 +212,12 @@
       platform: "Facebook",
       track: "BD",
       title: "\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 Business Development",
-      summary: "\u0E42\u0E1E\u0E2A\u0E15\u0E4C\u0E23\u0E35\u0E27\u0E34\u0E27\u0E42\u0E14\u0E22 EXZY Company Limited",
+      summary: "EXZY \u0E23\u0E35\u0E27\u0E34\u0E27\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C intern \u0E2A\u0E32\u0E22 BD \u2014 \u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E17\u0E35\u0E48\u0E17\u0E33 \u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49 \u0E41\u0E25\u0E30\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E17\u0E35\u0E21",
       preview: "\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 2 \u0E40\u0E14\u0E37\u0E2D\u0E19 \u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E08\u0E32\u0E01\u0E17\u0E35\u0E21\u0E08\u0E23\u0E34\u0E07",
       url: "https://www.facebook.com/share/p/17PWAui7fs/",
       canonicalUrl: "https://www.facebook.com/ExzyTech/posts/2609136702451677/",
-      cover: "sc-fb-bd.jpg"
+      cover: "sc-medium-bd.jpg",
+      coverPosition: "center 20%"
     },
     {
       category: "experiences",
@@ -224,7 +225,7 @@
       platform: "Facebook",
       track: "Design",
       title: "\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 Designer",
-      summary: "\u0E42\u0E1E\u0E2A\u0E15\u0E4C\u0E23\u0E35\u0E27\u0E34\u0E27\u0E42\u0E14\u0E22 Boat N'hap",
+      summary: "Boat N'hap \u0E40\u0E25\u0E48\u0E32\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48 workflow \u0E08\u0E23\u0E34\u0E07\u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E17\u0E31\u0E01\u0E29\u0E30\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E02\u0E36\u0E49\u0E19\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07 2 \u0E40\u0E14\u0E37\u0E2D\u0E19",
       preview: "\u0E2A\u0E23\u0E38\u0E1B\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E17\u0E35\u0E48 EXZY \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E02\u0E36\u0E49\u0E19",
       url: "https://www.facebook.com/share/p/RGb9rUnZ1rN5RzsC/",
       canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/"
@@ -235,10 +236,11 @@
       platform: "Medium",
       track: "BD",
       title: "\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17 EXZY \u0E01\u0E31\u0E1A\u0E41\u0E19\u0E27\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E41\u0E1A\u0E1A\u0E01\u0E49\u0E32\u0E27\u0E01\u0E23\u0E30\u0E42\u0E14\u0E14",
-      summary: "\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E42\u0E14\u0E22 @dangjaig",
+      summary: "@dangjaig \u0E40\u0E25\u0E48\u0E32\u0E1A\u0E17\u0E40\u0E23\u0E35\u0E22\u0E19\u0E41\u0E25\u0E30\u0E41\u0E19\u0E27\u0E04\u0E34\u0E14\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E44\u0E1B\u0E08\u0E32\u0E01\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E2A\u0E32\u0E22 BD \u0E15\u0E25\u0E2D\u0E14\u0E0A\u0E48\u0E27\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19",
       preview: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E2A\u0E32\u0E22 Business Development",
       url: "https://medium.com/@dangjaig/\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17-exzy-\u0E01\u0E31\u0E1A\u0E41\u0E19\u0E27\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E41\u0E1A\u0E1A\u0E01\u0E49\u0E32\u0E27\u0E01\u0E23\u0E30\u0E42\u0E14\u0E14-eceb87feff69",
-      cover: "sc-medium-bd.jpg"
+      cover: "sc-fb-bd.webp",
+      coverPosition: "center 34%"
     },
     {
       category: "blog",
@@ -246,10 +248,11 @@
       platform: "Medium",
       track: "Dev",
       title: "Full-Stack Developer Internship Review",
-      summary: "\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E42\u0E14\u0E22 @gubsitt2019",
+      summary: "@gubsitt2019 \u0E23\u0E35\u0E27\u0E34\u0E27\u0E01\u0E32\u0E23\u0E2A\u0E23\u0E49\u0E32\u0E07 project \u0E08\u0E23\u0E34\u0E07\u0E14\u0E49\u0E27\u0E22 React + Node.js \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E40\u0E23\u0E34\u0E48\u0E21\u0E15\u0E49\u0E19\u0E08\u0E19\u0E2A\u0E48\u0E07\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19",
       preview: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E01\u0E32\u0E23\u0E17\u0E33\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C\u0E08\u0E23\u0E34\u0E07\u0E14\u0E49\u0E27\u0E22 React \u0E41\u0E25\u0E30 Node.js \u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19",
       url: "https://medium.com/@gubsitt2019/full-stack-developer-internship-review-building-real-projects-with-react-and-node-js-b6b1323a95cc",
-      cover: "sc-medium-dev.jpg"
+      cover: "sc-medium-dev.jpg",
+      coverPosition: "left top"
     }
   ]);
   function getAllShowcaseItems() {
@@ -282,14 +285,23 @@
     const map = { Facebook: "slc-header-facebook", Medium: "slc-header-medium", TikTok: "slc-header-tiktok" };
     return map[platform] || "slc-header-default";
   }
-  function platformIcon(platform) {
+  function platformIconBody(platform) {
     if (platform === "Facebook") {
-      return `<svg viewBox="0 0 24 24" width="13" height="13" fill="white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>`;
+      return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>`;
     }
     if (platform === "Medium") {
-      return `<svg viewBox="0 0 24 24" width="13" height="13" fill="white"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784L.353 3.49V3h6.92l5.33 11.707L17.05 3H23.7v.488l-1.865 1.786a.554.554 0 0 0-.21.528v13.24a.554.554 0 0 0 .21.528l1.827 1.786v.487h-9.19v-.487l1.893-1.838c.185-.185.185-.24.185-.528V7.377l-5.264 13.368h-.878L3.546 7.377v8.963a1.25 1.25 0 0 0 .343.976l2.464 2.988v.487H0v-.487l2.464-2.988a1.21 1.21 0 0 0 .382-.976V6.887z"/></svg>`;
+      return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784L.353 3.49V3h6.92l5.33 11.707L17.05 3H23.7v.488l-1.865 1.786a.554.554 0 0 0-.21.528v13.24a.554.554 0 0 0 .21.528l1.827 1.786v.487h-9.19v-.487l1.893-1.838c.185-.185.185-.24.185-.528V7.377l-5.264 13.368h-.878L3.546 7.377v8.963a1.25 1.25 0 0 0 .343.976l2.464 2.988v.487H0v-.487l2.464-2.988a1.21 1.21 0 0 0 .382-.976V6.887z"/></svg>`;
     }
-    return `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`;
+    if (platform === "TikTok") {
+      return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.19a8.24 8.24 0 0 0 4.82 1.54V7.27a4.85 4.85 0 0 1-1.05-.58z"/></svg>`;
+    }
+    return `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`;
+  }
+  function platformMarkLabel(platform) {
+    if (platform === "Facebook") return "FB";
+    if (platform === "Medium") return "MEDIUM";
+    if (platform === "TikTok") return "TIKTOK";
+    return String(platform || "LINK").toUpperCase();
   }
   function renderShowcaseMedia(item) {
     if (item.kind === "video" && item.platform === "TikTok" && item.tiktokVideoId) {
@@ -307,20 +319,18 @@
     `;
     }
     const headerClass = platformHeaderClass(item.platform);
-    const trackPill = item.track ? `<span class="slc-track-pill">${escapeHtml(item.track)}</span>` : "";
+    const markLabel = platformMarkLabel(item.platform);
     const platformSlug = escapeAttr(String(item.platform || "link").toLowerCase());
+    const cornerIcon = `<span class="slc-platform-corner-icon" title="${escapeAttr(item.platform)}">${platformIconBody(item.platform)}</span>`;
     if (item.cover) {
       const coverSrc = escapeAttr(`./static/${item.cover}`);
+      const coverPosition = item.coverPosition ? ` style="object-position:${escapeAttr(item.coverPosition)}"` : "";
       return `
       <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
         <div class="slc-photo">
-          <img class="slc-photo-img" src="${coverSrc}" alt="" loading="lazy" onerror="this.style.display='none'" />
+          <img class="slc-photo-img" src="${coverSrc}" alt="" loading="eager"${coverPosition} onerror="this.style.display='none'" />
+          ${cornerIcon}
           <div class="slc-photo-overlay slc-overlay-${platformSlug}">
-            <div class="slc-platform-row">
-              <div class="slc-platform-icon">${platformIcon(item.platform)}</div>
-              <span class="slc-platform-label">${escapeHtml(item.platform)}</span>
-              ${trackPill}
-            </div>
             <p class="slc-headline">${escapeHtml(item.title)}</p>
           </div>
         </div>
@@ -332,13 +342,11 @@
     }
     return `
     <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
-      <div class="slc-header ${headerClass}">
-        <div class="slc-platform-row">
-          <div class="slc-platform-icon">${platformIcon(item.platform)}</div>
-          <span class="slc-platform-label">${escapeHtml(item.platform)}</span>
-          ${trackPill}
+      <div class="slc-photo slc-photo-empty ${headerClass}">
+        ${cornerIcon}
+        <div class="slc-photo-overlay slc-overlay-${platformSlug}">
+          <p class="slc-headline">${escapeHtml(item.title)}</p>
         </div>
-        <p class="slc-headline">${escapeHtml(item.title)}</p>
       </div>
       <div class="slc-preview-strip">
         <p>${escapeHtml(item.preview || item.summary || "\u0E40\u0E1B\u0E34\u0E14\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2D\u0E48\u0E32\u0E19/\u0E23\u0E31\u0E1A\u0E0A\u0E21\u0E41\u0E1A\u0E1A\u0E40\u0E15\u0E47\u0E21")}</p>
@@ -351,12 +359,12 @@
     const actionText = item.kind === "video" ? "\u0E14\u0E39\u0E04\u0E25\u0E34\u0E1B\u0E40\u0E15\u0E47\u0E21" : item.platform === "Medium" ? "\u0E2D\u0E48\u0E32\u0E19\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21" : item.platform === "Facebook" ? "\u0E40\u0E1B\u0E34\u0E14\u0E42\u0E1E\u0E2A\u0E15\u0E4C" : "\u0E40\u0E1B\u0E34\u0E14\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E15\u0E49\u0E19\u0E09\u0E1A\u0E31\u0E1A";
     const meta = item.track ? `<span class="show-real-track">${escapeHtml(item.track)}</span>` : "";
     const platformClass = `show-real-card-${escapeAttr(String(item.platform || "external").toLowerCase())}`;
+    const trackClass = item.track ? `show-real-card-track-${escapeAttr(item.track.toLowerCase())}` : "";
     return `
-    <article class="show-real-card ${platformClass} fade-up">
+    <article class="show-real-card ${platformClass} ${trackClass}">
       ${renderShowcaseMedia(item)}
       <div class="show-real-body">
         <div class="show-real-meta">
-          <span class="show-real-badge">${escapeHtml(item.platform)}</span>
           ${meta}
         </div>
         <h4>${escapeHtml(item.title)}</h4>

@@ -56,6 +56,15 @@ for (const match of content.matchAll(/[A-Za-z_][A-Za-z0-9_-]{1,}/g)) {
   "fade-up",
   "fdb-reveal",
   "fdb-visible",
+  "show-real-card-tiktok",
+  "show-real-card-facebook",
+  "show-real-card-medium",
+  "show-real-platform-icon",
+  "slc-platform-corner-icon",
+  "show-real-card-track-bd",
+  "show-real-card-track-design",
+  "show-real-card-track-dev",
+  "show-real-card-track-mk",
 ].forEach((token) => tokens.add(token));
 
 const keepKeyframes = new Set();

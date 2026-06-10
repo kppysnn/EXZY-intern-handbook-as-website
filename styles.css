@@ -971,19 +971,6 @@ h2.section-title {
   margin-bottom: 10px;
 }
 
-.show-real-badge {
-  display: inline-flex;
-  align-items: center;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  padding: 4px 9px;
-  border-radius: 999px;
-  background: rgba(0,64,129,0.08);
-  color: var(--navy);
-  border: 1px solid rgba(0,64,129,0.15);
-}
-
 .show-real-track {
   font-size: 12px;
   font-weight: 700;
@@ -3939,53 +3926,11 @@ p.hero-word, div.hero-word { display: block; }
   background: transparent !important;
 }
 
-.slc-header {
-  padding: 22px 20px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .slc-header-facebook { background: linear-gradient(135deg, #586782 0%, #004081 100%); }
 
 .slc-header-medium   { background: linear-gradient(135deg, #001122 0%, #586782 100%); }
 
 .slc-header-default  { background: var(--ci-navy); }
-
-.slc-platform-row {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.slc-platform-icon {
-  width: 22px; height: 22px;
-  background: rgba(248,249,250,0.22);
-  border-radius: 5px;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-
-.slc-platform-icon svg { display: block; }
-
-.slc-platform-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(248,249,250,0.75);
-}
-
-.slc-track-pill {
-  margin-left: auto;
-  font-size: 10px;
-  font-weight: 700;
-  background: rgba(248,249,250,0.18);
-  color: rgba(248,249,250,0.88);
-  padding: 3px 8px;
-  border-radius: 999px;
-  white-space: nowrap;
-}
 
 .slc-headline {
   font-size: 14.5px;
@@ -4025,6 +3970,13 @@ p.hero-word, div.hero-word { display: block; }
   flex-shrink: 0;
   /* fallback bg shown when image fails or not set */
   background: linear-gradient(135deg, #0d2540 0%, #004081 100%);
+  isolation: isolate;
+}
+
+.slc-photo-empty {
+  background:
+    radial-gradient(circle at 78% 20%, rgba(102,197,197,.14), transparent 34%),
+    linear-gradient(135deg, #004081 0%, #002a56 58%, #001122 100%);
 }
 
 .slc-photo-img {
@@ -4033,6 +3985,7 @@ p.hero-word, div.hero-word { display: block; }
   object-fit: cover;
   object-position: center 20%;
   display: block;
+  filter: saturate(0.94) contrast(1.04) brightness(0.98);
   transition: transform .55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 @media (prefers-reduced-motion: reduce){
@@ -4049,39 +4002,18 @@ p.hero-word, div.hero-word { display: block; }
   inset: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 13px 16px 15px;
+  justify-content: flex-end;
+  padding: 14px 16px 15px;
   /* stronger bottom fade for text readability */
   background:
+    radial-gradient(circle at 18% 6%, rgba(255,255,255,.30), transparent 32%),
     linear-gradient(to bottom,
-      rgba(0,10,26,.52) 0%,
-      rgba(0,10,26,.10) 32%,
+      rgba(0,10,26,.46) 0%,
+      rgba(0,10,26,.08) 32%,
       rgba(0,10,26,.0)  50%,
       rgba(0,10,26,.55) 72%,
       rgba(0,10,26,.88) 100%);
-}
-
-/* platform icon row at top of photo */
-.slc-photo-overlay .slc-platform-row {
-  align-items: center;
-}
-
-.slc-photo-overlay .slc-platform-icon {
-  background: rgba(255,255,255,.18);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255,255,255,.22);
-}
-
-.slc-photo-overlay .slc-platform-label {
-  text-shadow: 0 1px 4px rgba(0,0,0,.5);
-}
-
-.slc-photo-overlay .slc-track-pill {
-  background: rgba(255,255,255,.22);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255,255,255,.25);
+  z-index: 1;
 }
 
 /* headline at bottom of photo */
@@ -5704,13 +5636,14 @@ p.hero-word, div.hero-word { display: block; }
   box-shadow: 0 10px 30px rgba(0,17,34,.06);
 }
 
-.show-real-media-link {
-  border-bottom: 0;
+.show-real-card-facebook,
+.show-real-card-medium {
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
-.slc-header {
-  min-height: 150px;
-  padding: 24px;
+.show-real-media-link {
+  border-bottom: 0;
 }
 
 .slc-header-facebook {
@@ -5806,9 +5739,11 @@ p.hero-word, div.hero-word { display: block; }
   flex-direction: column;
 }
 
-.slc-header {
-  min-height: 130px;
-  flex-shrink: 0;
+.show-real-card-facebook,
+.show-real-card-medium {
+  grid-template-rows: unset;
+  display: flex;
+  flex-direction: column;
 }
 
 .slc-headline {
@@ -5837,23 +5772,12 @@ p.hero-word, div.hero-word { display: block; }
 }
 
 
-/* Header strip — fixed compact height, no overflow */
-.slc-header {
-  min-height: 110px !important;
-  max-height: 160px !important;
-  padding: 18px 20px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 8px;
-  overflow: hidden;
-}
-
-.slc-platform-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
+/* Link-type cards (Facebook / Medium) */
+.show-real-card-facebook,
+.show-real-card-medium {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-rows: unset !important;
 }
 
 .slc-headline {
@@ -5989,6 +5913,16 @@ footer { margin-top: 0 !important; }
 
 
 /* ════════════════════════════════════════════════════════════
+   SHOWCASE — hide duplicate title in card body
+   (slc-headline in header already shows it)
+   ════════════════════════════════════════════════════════════ */
+.show-real-card-facebook .show-real-body h4,
+.show-real-card-medium .show-real-body h4 {
+  display: none !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
    PROSE headings — remove vertical bar icon
    ════════════════════════════════════════════════════════════ */
 .prose h2 { padding-left: 0 !important; }
@@ -5998,17 +5932,6 @@ footer { margin-top: 0 !important; }
 .prose h3 { padding-left: 0 !important; position: static !important; }
 
 .prose h3::before { display: none !important; }
-
-
-/* ════════════════════════════════════════════════════════════
-   SHOWCASE — Facebook/Medium header auto-height to fit frame
-   ════════════════════════════════════════════════════════════ */
-.slc-header {
-  min-height: unset !important;
-  max-height: unset !important;
-  height: auto !important;
-  padding: 20px 20px 18px !important;
-}
 
 
 /* Footer margin-top must be 0 so section 3 flows right in */
@@ -11807,6 +11730,17 @@ html::-webkit-scrollbar { display: none !important; }
   align-items: start !important;
 }
 
+.showcase-mixed-grid .show-real-card-tiktok {
+  align-self: start !important;
+  height: auto !important;
+}
+
+.showcase-mixed-grid .show-real-card-tiktok .show-real-media-video {
+  aspect-ratio: 9 / 16 !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+
 .showcase-mixed-grid .show-real-card {
   height: 100% !important;
   overflow: hidden !important;
@@ -11817,12 +11751,6 @@ html::-webkit-scrollbar { display: none !important; }
   padding: 0 !important;
   align-items: stretch !important;
   justify-content: flex-start !important;
-}
-
-.showcase-mixed-grid .show-real-media-link .slc-header {
-  width: 100% !important;
-  min-height: 148px !important;
-  border-radius: 0 !important;
 }
 
 .showcase-mixed-grid .show-real-media-video,
@@ -11837,7 +11765,76 @@ html::-webkit-scrollbar { display: none !important; }
   gap: 24px !important;
   align-items: stretch !important;
 }
+@media (max-width: 760px){
 
+  .showcase-mixed-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+  }
+
+
+  .showcase-link-subgrid {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+  }
+
+
+  .showcase-mixed-grid .show-real-card {
+    height: auto !important;
+  }
+
+
+  .showcase-mixed-grid .show-real-card-tiktok .show-real-media-video {
+    max-height: 680px !important;
+  }
+}
+
+
+
+/* ── Showcase cover: platform icon pinned top-left of photo ── */
+.slc-platform-corner-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(0, 64, 129, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ── Showcase meta row: platform icon + track badge ── */
+.show-real-platform-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+
+.show-real-meta .show-real-track {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 4px 11px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(102, 197, 197, 0.45);
+  background: rgba(102, 197, 197, 0.12);
+  color: #004081;
+}
 
 
 /* ════════════════════════════════════════════════════════════
