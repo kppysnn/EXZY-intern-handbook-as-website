@@ -6,7 +6,6 @@
 import { I } from './js/icons.js';
 import {
   loadAdminData, saveAdminData, isAdmin, setAdmin,
-  getDirectoryAccessKey, isDirectoryUnlocked, setDirectoryUnlocked,
   showToast, ADMIN_PASSWORD,
 } from './js/auth.js';
 import { showcasePage } from './js/showcase.js';
@@ -16,7 +15,6 @@ import { renderOrientation } from './js/pages/orientation.js';
 import { renderWifi } from './js/pages/wifi.js';
 import { renderMeetingRooms } from './js/pages/meeting-rooms.js';
 import { renderOrgChart } from './js/pages/org-chart.js';
-import { renderDirectory } from './js/pages/directory.js';
 import { renderCodeOfConduct, renderInternshipPolicy, renderDressCode, renderLeave } from './js/pages/policy.js';
 import { renderTimesheet, renderFaqs } from './js/pages/resources.js';
 import { renderHrBdProject } from './js/pages/tasks.js';
@@ -29,7 +27,6 @@ const Pages = {
   "getting-started/wifi":          () => renderWifi(),
   "getting-started/meeting-rooms": () => renderMeetingRooms(),
   "employee/org-chart":            () => renderOrgChart(),
-  "employee/directory":            () => renderDirectory(),
   "policy/code-of-conduct":        () => renderCodeOfConduct(),
   "policy/internship":             () => renderInternshipPolicy(),
   "policy/dress-code":             () => renderDressCode(),
@@ -275,65 +272,6 @@ function hydratePage() {
       }
     });
   });
-
-  // ----- Employee Directory gate / lock -----
-  const dirGateForm = document.getElementById("dir-gate-form");
-  const dirPwInput = document.getElementById("dir-pw-input");
-  const dirGateErr = document.getElementById("dir-gate-err");
-  if (dirGateForm && dirPwInput) {
-    dirGateForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const typed = dirPwInput.value.trim();
-      const expected = getDirectoryAccessKey();
-      if (!typed) return;
-      if (typed === expected) {
-        setDirectoryUnlocked(true);
-        showToast("ปลดล็อก Employee Contact แล้ว");
-        render();
-        return;
-      }
-      if (dirGateErr) dirGateErr.hidden = false;
-      dirPwInput.classList.add("is-error");
-    });
-    dirPwInput.addEventListener("input", () => {
-      if (dirGateErr) dirGateErr.hidden = true;
-      dirPwInput.classList.remove("is-error");
-    });
-  }
-
-  const dirLockBtn = document.getElementById("dir-lock-btn");
-  if (dirLockBtn) {
-    dirLockBtn.addEventListener("click", () => {
-      setDirectoryUnlocked(false);
-      showToast("ล็อก Employee Contact แล้ว");
-      render();
-    });
-  }
-
-  // ----- Employee Directory search / filter -----
-  const dirQ = document.getElementById("dir-q");
-  const dirTeam = document.getElementById("dir-team");
-  const dirCount = document.getElementById("dir-count");
-  const dirEmpty = document.getElementById("dir-empty");
-  const dirRows = document.querySelectorAll("#dir-tbody tr");
-  if (dirQ && dirRows.length) {
-    const filterDir = () => {
-      const q = dirQ.value.trim().toLowerCase();
-      const team = dirTeam.value;
-      let n = 0;
-      dirRows.forEach(tr => {
-        const matchQ = !q || tr.dataset.search.includes(q);
-        const matchT = !team || tr.dataset.team === team;
-        const show = matchQ && matchT;
-        tr.style.display = show ? "" : "none";
-        if (show) n++;
-      });
-      dirCount.textContent = `${n} คน`;
-      dirEmpty.hidden = n > 0;
-    };
-    dirQ.addEventListener("input", filterDir);
-    dirTeam.addEventListener("change", filterDir);
-  }
 
   // ----- Scroll-to buttons (data-scroll-to) -----
   app.querySelectorAll("[data-scroll-to]").forEach(btn => {
@@ -662,7 +600,6 @@ function initAdminMode() {
         if (target) target.style.display = "block";
       });
     });
-    initShowcaseAdmin();
   }
 
   function closeAdminModal() {
@@ -678,8 +615,6 @@ function initAdminMode() {
     return `
       <div class="admin-tabs">
         <button class="admin-tab is-active" data-tab="wifi">Wi-Fi</button>
-        <button class="admin-tab" data-tab="links">เอกสาร &amp; ลิงก์</button>
-        <button class="admin-tab" data-tab="showcase">Showcase</button>
         <button class="admin-tab" data-tab="hr">ข้อมูล HR</button>
       </div>
 
@@ -704,77 +639,6 @@ function initAdminMode() {
         </div>
       </div>
 
-      <div class="admin-section" data-tab="links" style="display:none;">
-        <div class="admin-section-title">เอกสาร Orientation</div>
-        <div class="admin-field">
-          <label for="admin-orientation_slides_url">Google Slides embed URL (แสดงแบบ iframe)</label>
-          <input id="admin-orientation_slides_url" class="admin-input mono" data-field="orientation_slides_url" value="${escAttr(d.orientation_slides_url)}" placeholder="https://docs.google.com/presentation/d/.../embed?..." />
-          <p class="hint">Google Slides → File → Share → Publish to web → Embed → คัดลอก src ของ iframe มาวางที่นี่</p>
-        </div>
-        <div class="admin-field">
-          <label for="admin-orientation_pdf_url">ลิงก์ PDF ดาวน์โหลด (Google Drive หรือ URL ตรง)</label>
-          <input id="admin-orientation_pdf_url" class="admin-input mono" data-field="orientation_pdf_url" value="${escAttr(d.orientation_pdf_url)}" placeholder="https://drive.google.com/uc?export=download&id=..." />
-          <p class="hint">หากใช้ Google Drive: เปิดไฟล์ → Share → Copy link แล้วเปลี่ยน /view เป็น /export?format=pdf เพื่อให้ดาวน์โหลดได้ตรง</p>
-        </div>
-        <div class="admin-section-title" style="margin-top:24px;">Employee Directory</div>
-        <div class="admin-field">
-          <label for="admin-directory_sheet_url">Google Sheet embed URL</label>
-          <input id="admin-directory_sheet_url" class="admin-input mono" data-field="directory_sheet_url" value="${escAttr(d.directory_sheet_url)}" placeholder="https://docs.google.com/spreadsheets/d/.../pubhtml?widget=true&headers=false" />
-          <p class="hint">Google Sheet → File → Share → Publish to web → Embed → คัดลอก src ของ iframe</p>
-        </div>
-        <div class="admin-field">
-          <label for="admin-directory_access_key">รหัสเข้า Employee Contact</label>
-          <input id="admin-directory_access_key" class="admin-input mono" data-field="directory_access_key" value="${escAttr(d.directory_access_key || ADMIN_PASSWORD)}" placeholder="ตั้งรหัสสำหรับหน้า Employee Contact" />
-          <p class="hint">ใช้สำหรับปลดล็อกหน้า Employee Contact เพื่อดูข้อมูลติดต่อพนักงาน</p>
-        </div>
-      </div>
-
-      <div class="admin-section" data-tab="showcase" style="display:none;">
-        <input type="hidden" id="sc-json" data-field="showcase_items" value="${escAttr(d.showcase_items || '[]')}" />
-
-        <div class="admin-section-title" style="margin-bottom:12px;">จัดการ Intern Showcase</div>
-        <div class="admin-sc-tabs" id="sc-tabs">
-          <button class="admin-sc-tab is-active" data-sc="experiences">Experiences</button>
-          <button class="admin-sc-tab" data-sc="projects">Projects</button>
-          <button class="admin-sc-tab" data-sc="blog">Blog</button>
-        </div>
-
-        <div id="sc-list" style="margin:16px 0 0;"></div>
-
-        <div style="border-top:1px solid var(--line-soft); margin-top:20px; padding-top:18px;">
-          <div class="admin-section-title" style="margin-bottom:12px;">เพิ่มรายการใหม่</div>
-          <div class="admin-field">
-            <label for="sc-cat">หมวดหมู่</label>
-            <select class="admin-input" id="sc-cat">
-              <option value="experiences">Experiences (คลิป / รีวิว)</option>
-              <option value="projects">Projects (ผลงาน)</option>
-              <option value="blog">Blog (บทความ)</option>
-            </select>
-          </div>
-          <div class="admin-field">
-            <label for="sc-title">ชื่อเรื่อง / Title</label>
-            <input class="admin-input" id="sc-title" placeholder="เช่น หนึ่งวันในชีวิต intern Designer" />
-          </div>
-          <div class="admin-field" style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-            <div>
-              <label for="sc-badge">Badge / Platform</label>
-              <input class="admin-input" id="sc-badge" placeholder="TikTok, Medium, Project…" />
-            </div>
-            <div>
-              <label for="sc-meta">Meta (ความยาว / ประเภท)</label>
-              <input class="admin-input" id="sc-meta" placeholder="2 นาที, 8 min read, UI/UX…" />
-            </div>
-          </div>
-          <div class="admin-field">
-            <label for="sc-url">ลิงก์ URL (ถ้ามี)</label>
-            <input class="admin-input mono" id="sc-url" placeholder="https://..." />
-          </div>
-          <button class="btn btn-primary" id="sc-add" style="width:100%; margin-top:4px; justify-content:center;">
-            ${I.plus} เพิ่มรายการ
-          </button>
-        </div>
-      </div>
-
       <div class="admin-section" data-tab="hr" style="display:none;">
         <div class="admin-section-title">ข้อมูลติดต่อ HR</div>
         <div class="admin-field">
@@ -791,98 +655,6 @@ function initAdminMode() {
         </div>
       </div>
     `;
-  }
-
-  function initShowcaseAdmin() {
-    const jsonField = modalBody.querySelector("#sc-json");
-    if (!jsonField) return;
-
-    let scItems = [];
-    try { scItems = JSON.parse(jsonField.value || "[]"); } catch (e) {}
-    let activeScTab = "experiences";
-
-    const SC_LABEL = { experiences: "Experiences", projects: "Projects", blog: "Blog" };
-
-    function syncJson() {
-      jsonField.value = JSON.stringify(scItems);
-    }
-
-    function renderList() {
-      const listEl = modalBody.querySelector("#sc-list");
-      if (!listEl) return;
-      const filtered = scItems.filter(i => i.category === activeScTab);
-      if (filtered.length === 0) {
-        listEl.innerHTML = `<p style="font-size:13px; color:var(--muted); padding:10px 0; margin:0;">ยังไม่มีรายการใน ${SC_LABEL[activeScTab]}</p>`;
-        return;
-      }
-      listEl.innerHTML = filtered.map((item) => {
-        const idx = scItems.indexOf(item);
-        const crossSvg = I.check.replace('M20 6L9 17l-5-5', 'M18 6L6 18M6 6l12 12');
-        return `<div class="sc-admin-item" data-idx="${idx}">
-          <div class="sc-admin-info">
-            <span class="badge" style="font-size:11px; padding:2px 9px; border-radius:6px;">${escAttr(item.badge)}</span>
-            <span class="sc-admin-title">${escAttr(item.title)}</span>
-            <span class="sc-admin-meta">${escAttr(item.meta)}</span>
-            ${item.url ? `<a href="${escAttr(item.url)}" target="_blank" class="sc-admin-link">${I.external}</a>` : ''}
-          </div>
-          <button class="sc-del-btn" data-idx="${idx}" title="ลบ" aria-label="ลบ">${crossSvg}</button>
-        </div>`;
-      }).join("");
-
-      listEl.querySelectorAll(".sc-del-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const idx = parseInt(btn.dataset.idx, 10);
-          scItems.splice(idx, 1);
-          syncJson();
-          renderList();
-        });
-      });
-    }
-
-    modalBody.querySelectorAll(".admin-sc-tab").forEach(tab => {
-      tab.addEventListener("click", () => {
-        modalBody.querySelectorAll(".admin-sc-tab").forEach(t => t.classList.remove("is-active"));
-        tab.classList.add("is-active");
-        activeScTab = tab.dataset.sc;
-        const catSel = modalBody.querySelector("#sc-cat");
-        if (catSel) catSel.value = activeScTab;
-        renderList();
-      });
-    });
-
-    const addBtn = modalBody.querySelector("#sc-add");
-    if (addBtn) {
-      addBtn.addEventListener("click", () => {
-        const titleEl = modalBody.querySelector("#sc-title");
-        const badgeEl = modalBody.querySelector("#sc-badge");
-        const metaEl  = modalBody.querySelector("#sc-meta");
-        const urlEl   = modalBody.querySelector("#sc-url");
-        const catEl   = modalBody.querySelector("#sc-cat");
-        const title = (titleEl ? titleEl.value : "").trim();
-        if (!title) { titleEl && titleEl.focus(); return; }
-        const newItem = {
-          id: Date.now().toString(36),
-          category: catEl ? catEl.value : "experiences",
-          badge: (badgeEl ? badgeEl.value : "").trim(),
-          meta:  (metaEl  ? metaEl.value  : "").trim(),
-          title,
-          url:   (urlEl   ? urlEl.value   : "").trim(),
-        };
-        scItems.push(newItem);
-        syncJson();
-        activeScTab = newItem.category;
-        modalBody.querySelectorAll(".admin-sc-tab").forEach(t => {
-          t.classList.toggle("is-active", t.dataset.sc === activeScTab);
-        });
-        if (titleEl) titleEl.value = "";
-        if (badgeEl) badgeEl.value = "";
-        if (metaEl)  metaEl.value  = "";
-        if (urlEl)   urlEl.value   = "";
-        renderList();
-      });
-    }
-
-    renderList();
   }
 
   loginSubmit.addEventListener("click", tryLogin);

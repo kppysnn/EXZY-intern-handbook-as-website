@@ -29810,8 +29810,11 @@ span[style*="particleFloat"] { display: none !important; }
 
 .ex-quick-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ex-quick-list a {

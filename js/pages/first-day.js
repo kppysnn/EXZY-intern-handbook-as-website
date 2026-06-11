@@ -3,6 +3,8 @@
 
 export function renderFirstDay(data = {}) {
     const hrEmail = data.hr_email || "hr@exzyteam.com";
+    const hrName  = data.hr_name  || "";
+    const hrPhone = data.hr_phone || "";
     return `
 <div class="ex-day-page">
 
@@ -44,7 +46,7 @@ export function renderFirstDay(data = {}) {
           <i></i>
           <div class="ex-flow-step"><span aria-hidden="true">✅</span><b>กด Subscribe ปฏิทิน</b></div>
         </div>
-        <p class="ex-task-note">ถ้าไม่ได้รับ Calendar invitation ติดต่อ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
+        <p class="ex-task-note">ถ้าไม่ได้รับ Calendar invitation ติดต่อ${hrName ? ` ${hrName}` : ''} ที่ <a href="mailto:${hrEmail}">${hrEmail}</a>${hrPhone ? ` หรือโทร ${hrPhone}` : ''}</p>
       </div>
     </article>
 
@@ -147,7 +149,7 @@ export function renderFirstDay(data = {}) {
         <span class="ex-more-ch-num">02</span>
         <span class="ex-more-ch-ico" aria-hidden="true">👥</span>
         <b>บริษัทและทีม</b>
-        <small>โครงสร้างองค์กร, Employee Contact</small>
+        <small>โครงสร้างองค์กร</small>
       </a>
       <a href="#/policy/code-of-conduct" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">03</span>

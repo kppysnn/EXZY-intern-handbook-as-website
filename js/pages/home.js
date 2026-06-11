@@ -155,7 +155,6 @@ export var renderHome = () => `
         </div>
         <div class="ex-folder-docs">
           <a href="#/employee/org-chart" data-link class="ex-folder-doc"><span>01</span> โครงสร้างองค์กร</a>
-          <a href="#/employee/directory" data-link class="ex-folder-doc"><span>02</span> Employee Contact</a>
         </div>
       </div>
 
@@ -207,13 +206,6 @@ export var renderHome = () => `
         </span>
         <span>Wi-Fi</span>
         <strong>เชื่อมต่ออินเทอร์เน็ต<br>ในออฟฟิศ</strong>
-      </a>
-      <a href="#/employee/directory" data-link>
-        <span class="ex-quick-ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </span>
-        <span>Contact</span>
-        <strong>รายชื่อและช่องทางติดต่อคนในทีม</strong>
       </a>
       <a href="#/policy/leave" data-link>
         <span class="ex-quick-ico" aria-hidden="true">

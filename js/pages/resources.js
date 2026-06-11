@@ -1,7 +1,10 @@
 import { I } from '../icons.js';
 import { pageWrap, acc } from '../helpers.js';
+import { loadAdminData } from '../auth.js';
 
-export const renderTimesheet = () => pageWrap({
+export const renderTimesheet = () => {
+  const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
+  return pageWrap({
   crumbs: [["Home", "#/home"], ["Intern Tasks", null], ["Timesheet", null]],
   title: "Intern Timesheet",
   lead: "Concept ง่าย ๆ กรอกทุกวัน ส่งทุกสิ้นเดือน แค่นี้เลย สามารถดูขั้นตอนการกรอกข้อมูลที่ถูกต้องได้ในหน้านี้",
@@ -26,12 +29,17 @@ export const renderTimesheet = () => pageWrap({
     </div>
 
     <h2>ตัวอย่างเอกสาร Timesheet</h2>
-    <p>HR จะส่งไฟล์ Timesheet ให้ทางอีเมลตั้งแต่วันแรก เปิดไฟล์นั้นเป็นแม่แบบในการกรอกได้เลย</p>
+    <p>เอกสาร Timesheet ของ EXZY มีรูปแบบดังนี้ — ใช้เป็นอ้างอิงเมื่อกรอกข้อมูล</p>
+    <figure class="ts-figure">
+      <img src="timesheet-sample.png" alt="ตัวอย่างเอกสาร Intern Timesheet ของ EXZY" />
+      <figcaption>ตัวอย่าง Intern Timesheet · ส่งให้ HR ทุกสิ้นเดือนของการฝึกงาน</figcaption>
+    </figure>
+
     <div class="callout callout-note anim-up">
       <span class="ic">${I.mail}</span>
       <div>
         <h3>รับไฟล์ Timesheet จาก HR</h3>
-        <p>เช็กอีเมลที่ได้ให้ไว้กับ HR — ไฟล์จะถูกส่งมาในวันแรกของการฝึกงาน หากไม่ได้รับ ติดต่อ <a href="mailto:hr@exzyteam.com">hr@exzyteam.com</a> ได้เลย</p>
+        <p>เช็กอีเมลที่ได้ให้ไว้กับ HR — ไฟล์จะถูกส่งมาในวันแรกของการฝึกงาน หากไม่ได้รับ ติดต่อ <a href="mailto:${hrEmail}">${hrEmail}</a> ได้เลย</p>
       </div>
     </div>
 
@@ -64,8 +72,11 @@ export const renderTimesheet = () => pageWrap({
 
   `,
 });
+};
 
-export const renderFaqs = () => pageWrap({
+export const renderFaqs = () => {
+  const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
+  return pageWrap({
   crumbs: [["Home", "#/home"], ["Resources", null], ["FAQs", null]],
   title: "Frequently Asked Questions",
   lead: "รวมคำถามพร้อมคำตอบที่ Intern มักสงสัยเกี่ยวกับการฝึกงานที่ EXZY ",
@@ -110,8 +121,8 @@ export const renderFaqs = () => pageWrap({
         <h2>เรื่องการลา</h2>
       </div>
       <div class="accordion">
-        ${acc("9. รู้สึกไม่สบาย มาทำงานไม่ไหว ทำยังไง?", "<strong>1.</strong> แจ้งพี่เลี้ยงและทีมทันที<br/><strong>2.</strong> ส่งอีเมลแจ้งลาถึง <a href=\"mailto:hr@exzyteam.com\">hr@exzyteam.com</a> <strong>ก่อน 11:00 น.</strong> ของวันที่ลา<br/><strong>3.</strong> CC อีเมลพี่เลี้ยงและทีมไปด้วย<br/>ระบุอาการและจำนวนวันที่จะหยุด · วันที่ลาไม่นับเป็นชั่วโมงฝึกงาน · ดูขั้นตอนเพิ่มเติมที่ <a href=\"#/policy/leave\" data-link>Leave &amp; Absence</a>")}
-        ${acc("10. มีธุระต้องลา ทำยังไง?", "<strong>1.</strong> แจ้งพี่เลี้ยงและทีมก่อน<br/><strong>2.</strong> ส่งอีเมลแจ้งลา <strong>ล่วงหน้า 1 วันทำการ</strong> ไปที่ <a href=\"mailto:hr@exzyteam.com\">hr@exzyteam.com</a><br/><strong>3.</strong> CC อีเมลพี่เลี้ยงและทีมไปด้วย<br/>ระบุเหตุผล · วันที่ลาไม่นับเป็นชั่วโมงฝึกงาน")}
+        ${acc("9. รู้สึกไม่สบาย มาทำงานไม่ไหว ทำยังไง?", "<strong>1.</strong> แจ้งพี่เลี้ยงและทีมทันที<br/><strong>2.</strong> ส่งอีเมลแจ้งลาถึง <a href=\"mailto:${hrEmail}\">${hrEmail}</a> <strong>ก่อน 11:00 น.</strong> ของวันที่ลา<br/><strong>3.</strong> CC อีเมลพี่เลี้ยงและทีมไปด้วย<br/>ระบุอาการและจำนวนวันที่จะหยุด · วันที่ลาไม่นับเป็นชั่วโมงฝึกงาน · ดูขั้นตอนเพิ่มเติมที่ <a href=\"#/policy/leave\" data-link>Leave &amp; Absence</a>")}
+        ${acc("10. มีธุระต้องลา ทำยังไง?", "<strong>1.</strong> แจ้งพี่เลี้ยงและทีมก่อน<br/><strong>2.</strong> ส่งอีเมลแจ้งลา <strong>ล่วงหน้า 1 วันทำการ</strong> ไปที่ <a href=\"mailto:${hrEmail}\">${hrEmail}</a><br/><strong>3.</strong> CC อีเมลพี่เลี้ยงและทีมไปด้วย<br/>ระบุเหตุผล · วันที่ลาไม่นับเป็นชั่วโมงฝึกงาน")}
         ${acc("11. ลาเรียน / ลาสอบ ทำยังไง?", "แจ้งพี่เลี้ยงและส่งอีเมล HR ล่วงหน้า พร้อมแนบกำหนดการสอบหรือตารางเรียนของมหาวิทยาลัย · บริษัทจะพิจารณาเป็นรายกรณี")}
       </div>
     </div>
@@ -146,3 +157,4 @@ export const renderFaqs = () => pageWrap({
 
   `,
 });
+};

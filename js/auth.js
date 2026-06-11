@@ -1,6 +1,5 @@
 const ADMIN_STORE_KEY = "exzy_admin_data_v1";
 const ADMIN_SESSION_KEY = "exzy_admin_session";
-const DIR_ACCESS_SESSION_KEY = "exzy_directory_access_session";
 export const ADMIN_PASSWORD = "hr@exzy";
 
 export const DEFAULT_ADMIN_DATA = {
@@ -11,12 +10,6 @@ export const DEFAULT_ADMIN_DATA = {
   hr_email: "hr@exzyteam.com",
   hr_name: "Ninan A. (นินัน)",
   hr_phone: "0926244471",
-  orientation_slides_url: "./static/Mini-Internship-Orientation.pdf",
-  orientation_pdf_url: "./static/Mini-Internship-Orientation.pdf",
-  directory_sheet_url: "",
-  directory_access_key: "hr@exzy",
-  directory_sheet_iframe: "",
-  showcase_items: "[]",
 };
 
 export function loadAdminData() {
@@ -58,26 +51,6 @@ export function setAdmin(state) {
   try {
     if (state) sessionStorage.setItem(ADMIN_SESSION_KEY, "1");
     else sessionStorage.removeItem(ADMIN_SESSION_KEY);
-  } catch (e) {}
-}
-
-export function getDirectoryAccessKey() {
-  const data = loadAdminData();
-  return String(data.directory_access_key || ADMIN_PASSWORD).trim();
-}
-
-export function isDirectoryUnlocked() {
-  try {
-    return sessionStorage.getItem(DIR_ACCESS_SESSION_KEY) === "1";
-  } catch (e) {
-    return false;
-  }
-}
-
-export function setDirectoryUnlocked(state) {
-  try {
-    if (state) sessionStorage.setItem(DIR_ACCESS_SESSION_KEY, "1");
-    else sessionStorage.removeItem(DIR_ACCESS_SESSION_KEY);
   } catch (e) {}
 }
 

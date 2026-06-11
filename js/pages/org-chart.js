@@ -67,12 +67,5 @@ export const renderOrgChart = () => pageWrap({
       `).join('')}
     </div>
 
-    <div class="callout" style="margin-top:48px;">
-      <span class="ic">${I.info}</span>
-      <div>
-        <h4>ต้องการติดต่อใครสักคน?</h4>
-        <p>สามารถดูช่องทางการติดต่อของพนักงานได้ใน <a href="#/employee/directory" data-link>Employee Directory</a></p>
-      </div>
-    </div>
   `,
 });

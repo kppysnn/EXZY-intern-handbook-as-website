@@ -35,7 +35,6 @@
   // js/auth.js
   var ADMIN_STORE_KEY = "exzy_admin_data_v1";
   var ADMIN_SESSION_KEY = "exzy_admin_session";
-  var DIR_ACCESS_SESSION_KEY = "exzy_directory_access_session";
   var ADMIN_PASSWORD = "hr@exzy";
   var DEFAULT_ADMIN_DATA = {
     wifi_staff_ssid: "ExzyUniFi",
@@ -44,13 +43,7 @@
     wifi_guest_pass: "imaguest",
     hr_email: "hr@exzyteam.com",
     hr_name: "Ninan A. (\u0E19\u0E34\u0E19\u0E31\u0E19)",
-    hr_phone: "0926244471",
-    orientation_slides_url: "./static/Mini-Internship-Orientation.pdf",
-    orientation_pdf_url: "./static/Mini-Internship-Orientation.pdf",
-    directory_sheet_url: "",
-    directory_access_key: "hr@exzy",
-    directory_sheet_iframe: "",
-    showcase_items: "[]"
+    hr_phone: "0926244471"
   };
   function loadAdminData() {
     try {
@@ -87,24 +80,6 @@
     try {
       if (state) sessionStorage.setItem(ADMIN_SESSION_KEY, "1");
       else sessionStorage.removeItem(ADMIN_SESSION_KEY);
-    } catch (e) {
-    }
-  }
-  function getDirectoryAccessKey() {
-    const data = loadAdminData();
-    return String(data.directory_access_key || ADMIN_PASSWORD).trim();
-  }
-  function isDirectoryUnlocked() {
-    try {
-      return sessionStorage.getItem(DIR_ACCESS_SESSION_KEY) === "1";
-    } catch (e) {
-      return false;
-    }
-  }
-  function setDirectoryUnlocked(state) {
-    try {
-      if (state) sessionStorage.setItem(DIR_ACCESS_SESSION_KEY, "1");
-      else sessionStorage.removeItem(DIR_ACCESS_SESSION_KEY);
     } catch (e) {
     }
   }
@@ -537,7 +512,6 @@
         </div>
         <div class="ex-folder-docs">
           <a href="#/employee/org-chart" data-link class="ex-folder-doc"><span>01</span> \u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</a>
-          <a href="#/employee/directory" data-link class="ex-folder-doc"><span>02</span> Employee Contact</a>
         </div>
       </div>
 
@@ -590,13 +564,6 @@
         <span>Wi-Fi</span>
         <strong>\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E2D\u0E34\u0E19\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E40\u0E19\u0E47\u0E15<br>\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</strong>
       </a>
-      <a href="#/employee/directory" data-link>
-        <span class="ex-quick-ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </span>
-        <span>Contact</span>
-        <strong>\u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E04\u0E19\u0E43\u0E19\u0E17\u0E35\u0E21</strong>
-      </a>
       <a href="#/policy/leave" data-link>
         <span class="ex-quick-ico" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M9 16l2 2 4-4"/></svg>
@@ -619,6 +586,8 @@
   // js/pages/first-day.js
   function renderFirstDay(data = {}) {
     const hrEmail = data.hr_email || "hr@exzyteam.com";
+    const hrName = data.hr_name || "";
+    const hrPhone = data.hr_phone || "";
     return `
 <div class="ex-day-page">
 
@@ -660,7 +629,7 @@
           <i></i>
           <div class="ex-flow-step"><span aria-hidden="true">\u2705</span><b>\u0E01\u0E14 Subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</b></div>
         </div>
-        <p class="ex-task-note">\u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A Calendar invitation \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D <a href="mailto:${hrEmail}">${hrEmail}</a></p>
+        <p class="ex-task-note">\u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A Calendar invitation \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D${hrName ? ` ${hrName}` : ""} \u0E17\u0E35\u0E48 <a href="mailto:${hrEmail}">${hrEmail}</a>${hrPhone ? ` \u0E2B\u0E23\u0E37\u0E2D\u0E42\u0E17\u0E23 ${hrPhone}` : ""}</p>
       </div>
     </article>
 
@@ -763,7 +732,7 @@
         <span class="ex-more-ch-num">02</span>
         <span class="ex-more-ch-ico" aria-hidden="true">\u{1F465}</span>
         <b>\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21</b>
-        <small>\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23, Employee Contact</small>
+        <small>\u0E42\u0E04\u0E23\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E2D\u0E07\u0E04\u0E4C\u0E01\u0E23</small>
       </a>
       <a href="#/policy/code-of-conduct" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">03</span>
@@ -1360,113 +1329,8 @@
       `).join("")}
     </div>
 
-    <div class="callout" style="margin-top:48px;">
-      <span class="ic">${I.info}</span>
-      <div>
-        <h4>\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E43\u0E04\u0E23\u0E2A\u0E31\u0E01\u0E04\u0E19?</h4>
-        <p>\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E14\u0E39\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E01\u0E32\u0E23\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E02\u0E2D\u0E07\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49\u0E43\u0E19 <a href="#/employee/directory" data-link>Employee Directory</a></p>
-      </div>
-    </div>
   `
   });
-
-  // js/pages/directory.js
-  var renderDirectory = () => {
-    if (!isDirectoryUnlocked()) {
-      return pageWrap({
-        crumbs: [["Home", "#/home"], ["Company", null], ["Employee Contact", null]],
-        title: "Employee Contact",
-        lead: "\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E16\u0E39\u0E01\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E44\u0E27\u0E49 \u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E02\u0E49\u0E32\u0E14\u0E39\u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22",
-        body: `
-        <div class="dir-gate">
-          <div class="dir-gate-card anim-up">
-            <div class="dir-gate-icon">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <h3 class="dir-gate-title">Protected Employee Contact</h3>
-            <p class="dir-gate-desc">\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27\u0E02\u0E2D\u0E07\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 <br>\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E23\u0E2B\u0E31\u0E2A\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E02\u0E49\u0E32\u0E14\u0E39\u0E23\u0E32\u0E22\u0E0A\u0E37\u0E48\u0E2D\u0E41\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D</p>
-            <form class="dir-gate-form" id="dir-gate-form">
-              <input type="password" class="dir-pw-input" id="dir-pw-input" aria-label="\u0E23\u0E2B\u0E31\u0E2A\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19" placeholder="\u0E01\u0E23\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25" autocomplete="off" />
-              <button type="submit" class="dir-pw-btn" id="dir-pw-btn">${I.lock} \u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01</button>
-            </form>
-            <div class="dir-gate-err" id="dir-gate-err" hidden>${I.info} \u0E23\u0E2B\u0E31\u0E2A\u0E44\u0E21\u0E48\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07 \u2014 \u0E25\u0E2D\u0E07\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07 \u0E2B\u0E23\u0E37\u0E2D\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E23\u0E2B\u0E31\u0E2A\u0E43\u0E19 Admin Panel</div>
-            <div class="dir-gate-hint">\u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E08\u0E32\u0E01 HR \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E02\u0E49\u0E32\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49</div>
-          </div>
-        </div>
-      `
-      });
-    }
-    const DATA = window.EMPLOYEE_DATA || { records: [], teams: [] };
-    const emps = DATA.records.slice().sort((a, b) => {
-      const na = parseInt((a.id || "").replace(/\D/g, ""), 10);
-      const nb = parseInt((b.id || "").replace(/\D/g, ""), 10);
-      const va = isNaN(na) ? Infinity : na;
-      const vb = isNaN(nb) ? Infinity : nb;
-      return va - vb;
-    });
-    const teams = [...new Set(emps.map((e) => e.team).filter(Boolean))].sort();
-    return pageWrap({
-      crumbs: [["Home", "#/home"], ["Company", null], ["Employee Directory", null]],
-      title: "Employee Directory",
-      lead: "\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E0A\u0E37\u0E48\u0E2D \u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E2B\u0E23\u0E37\u0E2D\u0E17\u0E35\u0E21\u0E02\u0E2D\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19 \u2014 \u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E04\u0E49\u0E19\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22",
-      body: `
-      <div class="dir-topbar">
-        <span class="dir-mode-badge">${I.lock} Protected Data</span>
-        <button class="dir-lock-btn" id="dir-lock-btn" type="button">${I.lock} \u0E25\u0E47\u0E2D\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25</button>
-      </div>
-
-      <div class="dir-toolbar">
-        <div class="dir-search">
-          <span class="dir-search-ico">${I.search}</span>
-          <input type="text" id="dir-q" aria-label="\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E14\u0E49\u0E27\u0E22\u0E23\u0E2B\u0E31\u0E2A \u0E0A\u0E37\u0E48\u0E2D \u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19 \u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E2B\u0E23\u0E37\u0E2D\u0E17\u0E35\u0E21" placeholder="\u0E04\u0E49\u0E19\u0E2B\u0E32\u0E14\u0E49\u0E27\u0E22\u0E23\u0E2B\u0E31\u0E2A, \u0E0A\u0E37\u0E48\u0E2D, \u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19, \u0E2D\u0E35\u0E40\u0E21\u0E25 \u0E2B\u0E23\u0E37\u0E2D\u0E17\u0E35\u0E21..." />
-        </div>
-        <select id="dir-team" aria-label="\u0E01\u0E23\u0E2D\u0E07\u0E15\u0E32\u0E21\u0E17\u0E35\u0E21">
-          <option value="">\u0E17\u0E38\u0E01\u0E17\u0E35\u0E21</option>
-          ${teams.map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join("")}
-        </select>
-        <div class="dir-count" id="dir-count">${emps.length} \u0E04\u0E19</div>
-      </div>
-
-      <div class="dir-table-wrap">
-        <table class="dir-table" id="dir-table">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>\u0E0A\u0E37\u0E48\u0E2D-\u0E19\u0E32\u0E21\u0E2A\u0E01\u0E38\u0E25 (EN)</th>
-              <th>\u0E0A\u0E37\u0E48\u0E2D (TH)</th>
-              <th>\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E48\u0E19</th>
-              <th>\u0E17\u0E35\u0E21</th>
-              <th>\u0E2D\u0E35\u0E40\u0E21\u0E25</th>
-              <th>\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E42\u0E17\u0E23</th>
-            </tr>
-          </thead>
-          <tbody id="dir-tbody">
-            ${emps.map((e) => `
-              <tr data-team="${escapeHtml(e.team || "")}" data-search="${escapeHtml(((e.id || "") + " " + (e.fullName || "") + " " + (e.thaiName || "") + " " + (e.nickname || "") + " " + (e.team || "") + " " + (e.email || "")).toLowerCase())}">
-                <td class="dir-id">${escapeHtml(e.id || "\u2014")}</td>
-                <td>${escapeHtml(e.fullName || "\u2014")}</td>
-                <td>${escapeHtml(e.thaiName || "\u2014")}</td>
-                <td>${escapeHtml(e.nickname || "\u2014")}</td>
-                <td>${e.team ? `<span class="dir-tag">${escapeHtml(e.team)}</span>` : '<span class="dir-muted">\u2014</span>'}</td>
-                <td>${e.email ? `<a href="mailto:${escapeHtml(e.email)}" class="dir-email">${escapeHtml(e.email)}</a>` : '<span class="dir-muted">\u2014</span>'}</td>
-                <td>${escapeHtml(e.mobile || "") || '<span class="dir-muted">\u2014</span>'}</td>
-              </tr>
-            `).join("")}
-          </tbody>
-        </table>
-        <div id="dir-empty" class="dir-empty" hidden>\u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E15\u0E23\u0E07\u0E01\u0E31\u0E19</div>
-      </div>
-
-      <div class="callout" style="margin-top:24px;">
-        <span class="ic">${I.info}</span>
-        <div>
-          <h4>\u0E2B\u0E32\u0E44\u0E21\u0E48\u0E40\u0E08\u0E2D?</h4>
-          <p>\u0E25\u0E2D\u0E07\u0E16\u0E32\u0E21\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07 \u0E2B\u0E23\u0E37\u0E2D\u0E2A\u0E48\u0E07\u0E40\u0E21\u0E25\u0E2B\u0E32 HR \u0E17\u0E35\u0E48 <a href="mailto:hr@exzyteam.com">hr@exzyteam.com</a> \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
-        </div>
-      </div>
-    `
-    });
-  };
 
   // js/pages/policy.js
   var renderCodeOfConduct = () => pageWrap({
@@ -1728,11 +1592,13 @@
     </div>
   `
   });
-  var renderLeave = () => pageWrap({
-    crumbs: [["Home", "#/home"], ["Work Policy", null], ["Leave & Absence", null]],
-    title: "Leave & Absence",
-    lead: "\u0E1B\u0E48\u0E27\u0E22\u0E2B\u0E23\u0E37\u0E2D\u0E21\u0E35\u0E18\u0E38\u0E23\u0E30 \u2014 \u0E41\u0E08\u0E49\u0E07\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 HR \u0E15\u0E32\u0E21\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49",
-    body: `
+  var renderLeave = () => {
+    const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
+    return pageWrap({
+      crumbs: [["Home", "#/home"], ["Work Policy", null], ["Leave & Absence", null]],
+      title: "Leave & Absence",
+      lead: "\u0E1B\u0E48\u0E27\u0E22\u0E2B\u0E23\u0E37\u0E2D\u0E21\u0E35\u0E18\u0E38\u0E23\u0E30 \u2014 \u0E41\u0E08\u0E49\u0E07\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 HR \u0E15\u0E32\u0E21\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49",
+      body: `
     <h2>\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E25\u0E32\u0E07\u0E32\u0E19 \u2014 3 \u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19</h2>
 
     <div class="leave-process">
@@ -1747,7 +1613,7 @@
         <div class="leave-step-node">2</div>
         <div class="leave-step-card">
           <h4>\u0E2A\u0E48\u0E07 Email \u0E41\u0E08\u0E49\u0E07\u0E01\u0E32\u0E23\u0E25\u0E32\u0E43\u0E2B\u0E49 HR</h4>
-          <p>\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E44\u0E1B\u0E17\u0E35\u0E48 <a href="mailto:hr@exzyteam.com" class="inline-link">hr@exzyteam.com</a> \u0E23\u0E30\u0E1A\u0E38\u0E40\u0E2B\u0E15\u0E38\u0E1C\u0E25\u0E41\u0E25\u0E30\u0E08\u0E33\u0E19\u0E27\u0E19\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E25\u0E32</p>
+          <p>\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E44\u0E1B\u0E17\u0E35\u0E48 <a href="mailto:${hrEmail}" class="inline-link">${hrEmail}</a> \u0E23\u0E30\u0E1A\u0E38\u0E40\u0E2B\u0E15\u0E38\u0E1C\u0E25\u0E41\u0E25\u0E30\u0E08\u0E33\u0E19\u0E27\u0E19\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E25\u0E32</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="200">
@@ -1789,23 +1655,26 @@
       </div>
     </div>
   `
-  });
+    });
+  };
 
   // js/pages/resources.js
-  var renderTimesheet = () => pageWrap({
-    crumbs: [["Home", "#/home"], ["Intern Tasks", null], ["Timesheet", null]],
-    title: "Intern Timesheet",
-    lead: "Concept \u0E07\u0E48\u0E32\u0E22 \u0E46 \u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E2A\u0E48\u0E07\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 \u0E41\u0E04\u0E48\u0E19\u0E35\u0E49\u0E40\u0E25\u0E22 \u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E14\u0E39\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E14\u0E49\u0E43\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49",
-    body: `
+  var renderTimesheet = () => {
+    const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
+    return pageWrap({
+      crumbs: [["Home", "#/home"], ["Intern Tasks", null], ["Timesheet", null]],
+      title: "Intern Timesheet",
+      lead: "Concept \u0E07\u0E48\u0E32\u0E22 \u0E46 \u0E01\u0E23\u0E2D\u0E01\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19 \u0E2A\u0E48\u0E07\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 \u0E41\u0E04\u0E48\u0E19\u0E35\u0E49\u0E40\u0E25\u0E22 \u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E14\u0E39\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E14\u0E49\u0E43\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49",
+      body: `
     <div class="ts-flow-section">
       <p class="ts-flow-section-label">\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01 Timesheet</p>
       <div class="ts-flow-v3 anim-up">
         ${[
-      { n: "01", bg: "var(--cyan)", when: "\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01", what: "\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E32\u0E01 HR", note: "HR \u0E41\u0E0A\u0E23\u0E4C\u0E44\u0E1F\u0E25\u0E4C Timesheet \u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25" },
-      { n: "02", bg: "var(--navy)", when: "\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19", what: "\u0E01\u0E23\u0E2D\u0E01 Timesheet", note: "\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u2013\u0E2D\u0E2D\u0E01 \u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33" },
-      { n: "03", bg: "var(--slate)", when: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E01\u0E32\u0E23\u0E25\u0E32", what: "\u0E23\u0E30\u0E1A\u0E38\u0E01\u0E32\u0E23\u0E25\u0E32", note: "\u0E23\u0E30\u0E1A\u0E38\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E43\u0E19\u0E04\u0E2D\u0E25\u0E31\u0E21\u0E19\u0E4C Summary" },
-      { n: "04", bg: "var(--navy)", when: "\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331", what: "\u0E1E\u0E34\u0E21\u0E1E\u0E4C + \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 HR", note: "\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E23\u0E30\u0E14\u0E32\u0E29 \u0E17\u0E35\u0E48\u0E01\u0E25\u0E48\u0E2D\u0E07\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E49\u0E2D\u0E07\u0E02\u0E2D\u0E07 HR" }
-    ].map((s) => `
+        { n: "01", bg: "var(--cyan)", when: "\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01", what: "\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E32\u0E01 HR", note: "HR \u0E41\u0E0A\u0E23\u0E4C\u0E44\u0E1F\u0E25\u0E4C Timesheet \u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25" },
+        { n: "02", bg: "var(--navy)", when: "\u0E17\u0E38\u0E01\u0E27\u0E31\u0E19", what: "\u0E01\u0E23\u0E2D\u0E01 Timesheet", note: "\u0E40\u0E27\u0E25\u0E32\u0E40\u0E02\u0E49\u0E32\u2013\u0E2D\u0E2D\u0E01 \u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33" },
+        { n: "03", bg: "var(--slate)", when: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E01\u0E32\u0E23\u0E25\u0E32", what: "\u0E23\u0E30\u0E1A\u0E38\u0E01\u0E32\u0E23\u0E25\u0E32", note: "\u0E23\u0E30\u0E1A\u0E38\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17\u0E43\u0E19\u0E04\u0E2D\u0E25\u0E31\u0E21\u0E19\u0E4C Summary" },
+        { n: "04", bg: "var(--navy)", when: "\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30\u201331", what: "\u0E1E\u0E34\u0E21\u0E1E\u0E4C + \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 HR", note: "\u0E2A\u0E48\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E23\u0E30\u0E14\u0E32\u0E29 \u0E17\u0E35\u0E48\u0E01\u0E25\u0E48\u0E2D\u0E07\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E49\u0E2D\u0E07\u0E02\u0E2D\u0E07 HR" }
+      ].map((s) => `
           <div class="ts-fv3-step">
             <div class="ts-fv3-dot" style="background:${s.bg}">${s.n}</div>
             <div class="ts-fv3-when">${s.when}</div>
@@ -1817,12 +1686,17 @@
     </div>
 
     <h2>\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Timesheet</h2>
-    <p>HR \u0E08\u0E30\u0E2A\u0E48\u0E07\u0E44\u0E1F\u0E25\u0E4C Timesheet \u0E43\u0E2B\u0E49\u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C\u0E19\u0E31\u0E49\u0E19\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E21\u0E48\u0E41\u0E1A\u0E1A\u0E43\u0E19\u0E01\u0E32\u0E23\u0E01\u0E23\u0E2D\u0E01\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
+    <p>\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Timesheet \u0E02\u0E2D\u0E07 EXZY \u0E21\u0E35\u0E23\u0E39\u0E1B\u0E41\u0E1A\u0E1A\u0E14\u0E31\u0E07\u0E19\u0E35\u0E49 \u2014 \u0E43\u0E0A\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E49\u0E32\u0E07\u0E2D\u0E34\u0E07\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E01\u0E23\u0E2D\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25</p>
+    <figure class="ts-figure">
+      <img src="timesheet-sample.png" alt="\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Intern Timesheet \u0E02\u0E2D\u0E07 EXZY" />
+      <figcaption>\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07 Intern Timesheet \xB7 \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 HR \u0E17\u0E38\u0E01\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E02\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</figcaption>
+    </figure>
+
     <div class="callout callout-note anim-up">
       <span class="ic">${I.mail}</span>
       <div>
         <h3>\u0E23\u0E31\u0E1A\u0E44\u0E1F\u0E25\u0E4C Timesheet \u0E08\u0E32\u0E01 HR</h3>
-        <p>\u0E40\u0E0A\u0E47\u0E01\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E44\u0E27\u0E49\u0E01\u0E31\u0E1A HR \u2014 \u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E30\u0E16\u0E39\u0E01\u0E2A\u0E48\u0E07\u0E21\u0E32\u0E43\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E02\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E2B\u0E32\u0E01\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D <a href="mailto:hr@exzyteam.com">hr@exzyteam.com</a> \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
+        <p>\u0E40\u0E0A\u0E47\u0E01\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E44\u0E27\u0E49\u0E01\u0E31\u0E1A HR \u2014 \u0E44\u0E1F\u0E25\u0E4C\u0E08\u0E30\u0E16\u0E39\u0E01\u0E2A\u0E48\u0E07\u0E21\u0E32\u0E43\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E02\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E2B\u0E32\u0E01\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D <a href="mailto:${hrEmail}">${hrEmail}</a> \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
       </div>
     </div>
 
@@ -1854,12 +1728,15 @@
     </div>
 
   `
-  });
-  var renderFaqs = () => pageWrap({
-    crumbs: [["Home", "#/home"], ["Resources", null], ["FAQs", null]],
-    title: "Frequently Asked Questions",
-    lead: "\u0E23\u0E27\u0E21\u0E04\u0E33\u0E16\u0E32\u0E21\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E04\u0E33\u0E15\u0E2D\u0E1A\u0E17\u0E35\u0E48 Intern \u0E21\u0E31\u0E01\u0E2A\u0E07\u0E2A\u0E31\u0E22\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY ",
-    body: `
+    });
+  };
+  var renderFaqs = () => {
+    const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
+    return pageWrap({
+      crumbs: [["Home", "#/home"], ["Resources", null], ["FAQs", null]],
+      title: "Frequently Asked Questions",
+      lead: "\u0E23\u0E27\u0E21\u0E04\u0E33\u0E16\u0E32\u0E21\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E04\u0E33\u0E15\u0E2D\u0E1A\u0E17\u0E35\u0E48 Intern \u0E21\u0E31\u0E01\u0E2A\u0E07\u0E2A\u0E31\u0E22\u0E40\u0E01\u0E35\u0E48\u0E22\u0E27\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48 EXZY ",
+      body: `
     <!-- Filter Tabs -->
     <div class="faq-filter" id="faq-filter">
       <button class="faq-filter-btn is-active" data-faq-cat="all">
@@ -1900,8 +1777,8 @@
         <h2>\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E25\u0E32</h2>
       </div>
       <div class="accordion">
-        ${acc("9. \u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E44\u0E21\u0E48\u0E2A\u0E1A\u0E32\u0E22 \u0E21\u0E32\u0E17\u0E33\u0E07\u0E32\u0E19\u0E44\u0E21\u0E48\u0E44\u0E2B\u0E27 \u0E17\u0E33\u0E22\u0E31\u0E07\u0E44\u0E07?", '<strong>1.</strong> \u0E41\u0E08\u0E49\u0E07\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E17\u0E31\u0E19\u0E17\u0E35<br/><strong>2.</strong> \u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E16\u0E36\u0E07 <a href="mailto:hr@exzyteam.com">hr@exzyteam.com</a> <strong>\u0E01\u0E48\u0E2D\u0E19 11:00 \u0E19.</strong> \u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E25\u0E32<br/><strong>3.</strong> CC \u0E2D\u0E35\u0E40\u0E21\u0E25\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22<br/>\u0E23\u0E30\u0E1A\u0E38\u0E2D\u0E32\u0E01\u0E32\u0E23\u0E41\u0E25\u0E30\u0E08\u0E33\u0E19\u0E27\u0E19\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E2B\u0E22\u0E38\u0E14 \xB7 \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E25\u0E32\u0E44\u0E21\u0E48\u0E19\u0E31\u0E1A\u0E40\u0E1B\u0E47\u0E19\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \xB7 \u0E14\u0E39\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21\u0E17\u0E35\u0E48 <a href="#/policy/leave" data-link>Leave &amp; Absence</a>')}
-        ${acc("10. \u0E21\u0E35\u0E18\u0E38\u0E23\u0E30\u0E15\u0E49\u0E2D\u0E07\u0E25\u0E32 \u0E17\u0E33\u0E22\u0E31\u0E07\u0E44\u0E07?", '<strong>1.</strong> \u0E41\u0E08\u0E49\u0E07\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E01\u0E48\u0E2D\u0E19<br/><strong>2.</strong> \u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32 <strong>\u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32 1 \u0E27\u0E31\u0E19\u0E17\u0E33\u0E01\u0E32\u0E23</strong> \u0E44\u0E1B\u0E17\u0E35\u0E48 <a href="mailto:hr@exzyteam.com">hr@exzyteam.com</a><br/><strong>3.</strong> CC \u0E2D\u0E35\u0E40\u0E21\u0E25\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22<br/>\u0E23\u0E30\u0E1A\u0E38\u0E40\u0E2B\u0E15\u0E38\u0E1C\u0E25 \xB7 \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E25\u0E32\u0E44\u0E21\u0E48\u0E19\u0E31\u0E1A\u0E40\u0E1B\u0E47\u0E19\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19')}
+        ${acc("9. \u0E23\u0E39\u0E49\u0E2A\u0E36\u0E01\u0E44\u0E21\u0E48\u0E2A\u0E1A\u0E32\u0E22 \u0E21\u0E32\u0E17\u0E33\u0E07\u0E32\u0E19\u0E44\u0E21\u0E48\u0E44\u0E2B\u0E27 \u0E17\u0E33\u0E22\u0E31\u0E07\u0E44\u0E07?", '<strong>1.</strong> \u0E41\u0E08\u0E49\u0E07\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E17\u0E31\u0E19\u0E17\u0E35<br/><strong>2.</strong> \u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32\u0E16\u0E36\u0E07 <a href="mailto:${hrEmail}">${hrEmail}</a> <strong>\u0E01\u0E48\u0E2D\u0E19 11:00 \u0E19.</strong> \u0E02\u0E2D\u0E07\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E25\u0E32<br/><strong>3.</strong> CC \u0E2D\u0E35\u0E40\u0E21\u0E25\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22<br/>\u0E23\u0E30\u0E1A\u0E38\u0E2D\u0E32\u0E01\u0E32\u0E23\u0E41\u0E25\u0E30\u0E08\u0E33\u0E19\u0E27\u0E19\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E08\u0E30\u0E2B\u0E22\u0E38\u0E14 \xB7 \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E25\u0E32\u0E44\u0E21\u0E48\u0E19\u0E31\u0E1A\u0E40\u0E1B\u0E47\u0E19\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \xB7 \u0E14\u0E39\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21\u0E17\u0E35\u0E48 <a href="#/policy/leave" data-link>Leave &amp; Absence</a>')}
+        ${acc("10. \u0E21\u0E35\u0E18\u0E38\u0E23\u0E30\u0E15\u0E49\u0E2D\u0E07\u0E25\u0E32 \u0E17\u0E33\u0E22\u0E31\u0E07\u0E44\u0E07?", '<strong>1.</strong> \u0E41\u0E08\u0E49\u0E07\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E01\u0E48\u0E2D\u0E19<br/><strong>2.</strong> \u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E41\u0E08\u0E49\u0E07\u0E25\u0E32 <strong>\u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32 1 \u0E27\u0E31\u0E19\u0E17\u0E33\u0E01\u0E32\u0E23</strong> \u0E44\u0E1B\u0E17\u0E35\u0E48 <a href="mailto:${hrEmail}">${hrEmail}</a><br/><strong>3.</strong> CC \u0E2D\u0E35\u0E40\u0E21\u0E25\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22<br/>\u0E23\u0E30\u0E1A\u0E38\u0E40\u0E2B\u0E15\u0E38\u0E1C\u0E25 \xB7 \u0E27\u0E31\u0E19\u0E17\u0E35\u0E48\u0E25\u0E32\u0E44\u0E21\u0E48\u0E19\u0E31\u0E1A\u0E40\u0E1B\u0E47\u0E19\u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19')}
         ${acc("11. \u0E25\u0E32\u0E40\u0E23\u0E35\u0E22\u0E19 / \u0E25\u0E32\u0E2A\u0E2D\u0E1A \u0E17\u0E33\u0E22\u0E31\u0E07\u0E44\u0E07?", "\u0E41\u0E08\u0E49\u0E07\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25 HR \u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32 \u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E41\u0E19\u0E1A\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E01\u0E32\u0E23\u0E2A\u0E2D\u0E1A\u0E2B\u0E23\u0E37\u0E2D\u0E15\u0E32\u0E23\u0E32\u0E07\u0E40\u0E23\u0E35\u0E22\u0E19\u0E02\u0E2D\u0E07\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22 \xB7 \u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E08\u0E30\u0E1E\u0E34\u0E08\u0E32\u0E23\u0E13\u0E32\u0E40\u0E1B\u0E47\u0E19\u0E23\u0E32\u0E22\u0E01\u0E23\u0E13\u0E35")}
       </div>
     </div>
@@ -1935,7 +1812,8 @@
     </div>
 
   `
-  });
+    });
+  };
 
   // js/pages/tasks.js
   var renderHrBdProject = () => pageWrap({
@@ -2006,7 +1884,6 @@
     "getting-started/wifi": () => renderWifi(),
     "getting-started/meeting-rooms": () => renderMeetingRooms(),
     "employee/org-chart": () => renderOrgChart(),
-    "employee/directory": () => renderDirectory(),
     "policy/code-of-conduct": () => renderCodeOfConduct(),
     "policy/internship": () => renderInternshipPolicy(),
     "policy/dress-code": () => renderDressCode(),
@@ -2235,60 +2112,6 @@
         }
       });
     });
-    const dirGateForm = document.getElementById("dir-gate-form");
-    const dirPwInput = document.getElementById("dir-pw-input");
-    const dirGateErr = document.getElementById("dir-gate-err");
-    if (dirGateForm && dirPwInput) {
-      dirGateForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const typed = dirPwInput.value.trim();
-        const expected = getDirectoryAccessKey();
-        if (!typed) return;
-        if (typed === expected) {
-          setDirectoryUnlocked(true);
-          showToast("\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01 Employee Contact \u0E41\u0E25\u0E49\u0E27");
-          render();
-          return;
-        }
-        if (dirGateErr) dirGateErr.hidden = false;
-        dirPwInput.classList.add("is-error");
-      });
-      dirPwInput.addEventListener("input", () => {
-        if (dirGateErr) dirGateErr.hidden = true;
-        dirPwInput.classList.remove("is-error");
-      });
-    }
-    const dirLockBtn = document.getElementById("dir-lock-btn");
-    if (dirLockBtn) {
-      dirLockBtn.addEventListener("click", () => {
-        setDirectoryUnlocked(false);
-        showToast("\u0E25\u0E47\u0E2D\u0E01 Employee Contact \u0E41\u0E25\u0E49\u0E27");
-        render();
-      });
-    }
-    const dirQ = document.getElementById("dir-q");
-    const dirTeam = document.getElementById("dir-team");
-    const dirCount = document.getElementById("dir-count");
-    const dirEmpty = document.getElementById("dir-empty");
-    const dirRows = document.querySelectorAll("#dir-tbody tr");
-    if (dirQ && dirRows.length) {
-      const filterDir = () => {
-        const q = dirQ.value.trim().toLowerCase();
-        const team = dirTeam.value;
-        let n = 0;
-        dirRows.forEach((tr) => {
-          const matchQ = !q || tr.dataset.search.includes(q);
-          const matchT = !team || tr.dataset.team === team;
-          const show = matchQ && matchT;
-          tr.style.display = show ? "" : "none";
-          if (show) n++;
-        });
-        dirCount.textContent = `${n} \u0E04\u0E19`;
-        dirEmpty.hidden = n > 0;
-      };
-      dirQ.addEventListener("input", filterDir);
-      dirTeam.addEventListener("change", filterDir);
-    }
     app.querySelectorAll("[data-scroll-to]").forEach((btn) => {
       btn.addEventListener("click", (e) => {
         e.preventDefault();
@@ -2598,7 +2421,6 @@
           if (target) target.style.display = "block";
         });
       });
-      initShowcaseAdmin();
     }
     function closeAdminModal() {
       modal.hidden = true;
@@ -2611,8 +2433,6 @@
       return `
       <div class="admin-tabs">
         <button class="admin-tab is-active" data-tab="wifi">Wi-Fi</button>
-        <button class="admin-tab" data-tab="links">\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 &amp; \u0E25\u0E34\u0E07\u0E01\u0E4C</button>
-        <button class="admin-tab" data-tab="showcase">Showcase</button>
         <button class="admin-tab" data-tab="hr">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25 HR</button>
       </div>
 
@@ -2637,77 +2457,6 @@
         </div>
       </div>
 
-      <div class="admin-section" data-tab="links" style="display:none;">
-        <div class="admin-section-title">\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Orientation</div>
-        <div class="admin-field">
-          <label for="admin-orientation_slides_url">Google Slides embed URL (\u0E41\u0E2A\u0E14\u0E07\u0E41\u0E1A\u0E1A iframe)</label>
-          <input id="admin-orientation_slides_url" class="admin-input mono" data-field="orientation_slides_url" value="${escAttr(d.orientation_slides_url)}" placeholder="https://docs.google.com/presentation/d/.../embed?..." />
-          <p class="hint">Google Slides \u2192 File \u2192 Share \u2192 Publish to web \u2192 Embed \u2192 \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01 src \u0E02\u0E2D\u0E07 iframe \u0E21\u0E32\u0E27\u0E32\u0E07\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48</p>
-        </div>
-        <div class="admin-field">
-          <label for="admin-orientation_pdf_url">\u0E25\u0E34\u0E07\u0E01\u0E4C PDF \u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14 (Google Drive \u0E2B\u0E23\u0E37\u0E2D URL \u0E15\u0E23\u0E07)</label>
-          <input id="admin-orientation_pdf_url" class="admin-input mono" data-field="orientation_pdf_url" value="${escAttr(d.orientation_pdf_url)}" placeholder="https://drive.google.com/uc?export=download&id=..." />
-          <p class="hint">\u0E2B\u0E32\u0E01\u0E43\u0E0A\u0E49 Google Drive: \u0E40\u0E1B\u0E34\u0E14\u0E44\u0E1F\u0E25\u0E4C \u2192 Share \u2192 Copy link \u0E41\u0E25\u0E49\u0E27\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19 /view \u0E40\u0E1B\u0E47\u0E19 /export?format=pdf \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E44\u0E14\u0E49\u0E15\u0E23\u0E07</p>
-        </div>
-        <div class="admin-section-title" style="margin-top:24px;">Employee Directory</div>
-        <div class="admin-field">
-          <label for="admin-directory_sheet_url">Google Sheet embed URL</label>
-          <input id="admin-directory_sheet_url" class="admin-input mono" data-field="directory_sheet_url" value="${escAttr(d.directory_sheet_url)}" placeholder="https://docs.google.com/spreadsheets/d/.../pubhtml?widget=true&headers=false" />
-          <p class="hint">Google Sheet \u2192 File \u2192 Share \u2192 Publish to web \u2192 Embed \u2192 \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01 src \u0E02\u0E2D\u0E07 iframe</p>
-        </div>
-        <div class="admin-field">
-          <label for="admin-directory_access_key">\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E02\u0E49\u0E32 Employee Contact</label>
-          <input id="admin-directory_access_key" class="admin-input mono" data-field="directory_access_key" value="${escAttr(d.directory_access_key || ADMIN_PASSWORD)}" placeholder="\u0E15\u0E31\u0E49\u0E07\u0E23\u0E2B\u0E31\u0E2A\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E2B\u0E19\u0E49\u0E32 Employee Contact" />
-          <p class="hint">\u0E43\u0E0A\u0E49\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01\u0E2B\u0E19\u0E49\u0E32 Employee Contact \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19</p>
-        </div>
-      </div>
-
-      <div class="admin-section" data-tab="showcase" style="display:none;">
-        <input type="hidden" id="sc-json" data-field="showcase_items" value="${escAttr(d.showcase_items || "[]")}" />
-
-        <div class="admin-section-title" style="margin-bottom:12px;">\u0E08\u0E31\u0E14\u0E01\u0E32\u0E23 Intern Showcase</div>
-        <div class="admin-sc-tabs" id="sc-tabs">
-          <button class="admin-sc-tab is-active" data-sc="experiences">Experiences</button>
-          <button class="admin-sc-tab" data-sc="projects">Projects</button>
-          <button class="admin-sc-tab" data-sc="blog">Blog</button>
-        </div>
-
-        <div id="sc-list" style="margin:16px 0 0;"></div>
-
-        <div style="border-top:1px solid var(--line-soft); margin-top:20px; padding-top:18px;">
-          <div class="admin-section-title" style="margin-bottom:12px;">\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23\u0E43\u0E2B\u0E21\u0E48</div>
-          <div class="admin-field">
-            <label for="sc-cat">\u0E2B\u0E21\u0E27\u0E14\u0E2B\u0E21\u0E39\u0E48</label>
-            <select class="admin-input" id="sc-cat">
-              <option value="experiences">Experiences (\u0E04\u0E25\u0E34\u0E1B / \u0E23\u0E35\u0E27\u0E34\u0E27)</option>
-              <option value="projects">Projects (\u0E1C\u0E25\u0E07\u0E32\u0E19)</option>
-              <option value="blog">Blog (\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21)</option>
-            </select>
-          </div>
-          <div class="admin-field">
-            <label for="sc-title">\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07 / Title</label>
-            <input class="admin-input" id="sc-title" placeholder="\u0E40\u0E0A\u0E48\u0E19 \u0E2B\u0E19\u0E36\u0E48\u0E07\u0E27\u0E31\u0E19\u0E43\u0E19\u0E0A\u0E35\u0E27\u0E34\u0E15 intern Designer" />
-          </div>
-          <div class="admin-field" style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-            <div>
-              <label for="sc-badge">Badge / Platform</label>
-              <input class="admin-input" id="sc-badge" placeholder="TikTok, Medium, Project\u2026" />
-            </div>
-            <div>
-              <label for="sc-meta">Meta (\u0E04\u0E27\u0E32\u0E21\u0E22\u0E32\u0E27 / \u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17)</label>
-              <input class="admin-input" id="sc-meta" placeholder="2 \u0E19\u0E32\u0E17\u0E35, 8 min read, UI/UX\u2026" />
-            </div>
-          </div>
-          <div class="admin-field">
-            <label for="sc-url">\u0E25\u0E34\u0E07\u0E01\u0E4C URL (\u0E16\u0E49\u0E32\u0E21\u0E35)</label>
-            <input class="admin-input mono" id="sc-url" placeholder="https://..." />
-          </div>
-          <button class="btn btn-primary" id="sc-add" style="width:100%; margin-top:4px; justify-content:center;">
-            ${I.plus} \u0E40\u0E1E\u0E34\u0E48\u0E21\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23
-          </button>
-        </div>
-      </div>
-
       <div class="admin-section" data-tab="hr" style="display:none;">
         <div class="admin-section-title">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR</div>
         <div class="admin-field">
@@ -2724,95 +2473,6 @@
         </div>
       </div>
     `;
-    }
-    function initShowcaseAdmin() {
-      const jsonField = modalBody.querySelector("#sc-json");
-      if (!jsonField) return;
-      let scItems = [];
-      try {
-        scItems = JSON.parse(jsonField.value || "[]");
-      } catch (e) {
-      }
-      let activeScTab = "experiences";
-      const SC_LABEL = { experiences: "Experiences", projects: "Projects", blog: "Blog" };
-      function syncJson() {
-        jsonField.value = JSON.stringify(scItems);
-      }
-      function renderList() {
-        const listEl = modalBody.querySelector("#sc-list");
-        if (!listEl) return;
-        const filtered = scItems.filter((i) => i.category === activeScTab);
-        if (filtered.length === 0) {
-          listEl.innerHTML = `<p style="font-size:13px; color:var(--muted); padding:10px 0; margin:0;">\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E21\u0E35\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23\u0E43\u0E19 ${SC_LABEL[activeScTab]}</p>`;
-          return;
-        }
-        listEl.innerHTML = filtered.map((item) => {
-          const idx = scItems.indexOf(item);
-          const crossSvg = I.check.replace("M20 6L9 17l-5-5", "M18 6L6 18M6 6l12 12");
-          return `<div class="sc-admin-item" data-idx="${idx}">
-          <div class="sc-admin-info">
-            <span class="badge" style="font-size:11px; padding:2px 9px; border-radius:6px;">${escAttr(item.badge)}</span>
-            <span class="sc-admin-title">${escAttr(item.title)}</span>
-            <span class="sc-admin-meta">${escAttr(item.meta)}</span>
-            ${item.url ? `<a href="${escAttr(item.url)}" target="_blank" class="sc-admin-link">${I.external}</a>` : ""}
-          </div>
-          <button class="sc-del-btn" data-idx="${idx}" title="\u0E25\u0E1A" aria-label="\u0E25\u0E1A">${crossSvg}</button>
-        </div>`;
-        }).join("");
-        listEl.querySelectorAll(".sc-del-btn").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            const idx = parseInt(btn.dataset.idx, 10);
-            scItems.splice(idx, 1);
-            syncJson();
-            renderList();
-          });
-        });
-      }
-      modalBody.querySelectorAll(".admin-sc-tab").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          modalBody.querySelectorAll(".admin-sc-tab").forEach((t) => t.classList.remove("is-active"));
-          tab.classList.add("is-active");
-          activeScTab = tab.dataset.sc;
-          const catSel = modalBody.querySelector("#sc-cat");
-          if (catSel) catSel.value = activeScTab;
-          renderList();
-        });
-      });
-      const addBtn = modalBody.querySelector("#sc-add");
-      if (addBtn) {
-        addBtn.addEventListener("click", () => {
-          const titleEl = modalBody.querySelector("#sc-title");
-          const badgeEl = modalBody.querySelector("#sc-badge");
-          const metaEl = modalBody.querySelector("#sc-meta");
-          const urlEl = modalBody.querySelector("#sc-url");
-          const catEl = modalBody.querySelector("#sc-cat");
-          const title = (titleEl ? titleEl.value : "").trim();
-          if (!title) {
-            titleEl && titleEl.focus();
-            return;
-          }
-          const newItem = {
-            id: Date.now().toString(36),
-            category: catEl ? catEl.value : "experiences",
-            badge: (badgeEl ? badgeEl.value : "").trim(),
-            meta: (metaEl ? metaEl.value : "").trim(),
-            title,
-            url: (urlEl ? urlEl.value : "").trim()
-          };
-          scItems.push(newItem);
-          syncJson();
-          activeScTab = newItem.category;
-          modalBody.querySelectorAll(".admin-sc-tab").forEach((t) => {
-            t.classList.toggle("is-active", t.dataset.sc === activeScTab);
-          });
-          if (titleEl) titleEl.value = "";
-          if (badgeEl) badgeEl.value = "";
-          if (metaEl) metaEl.value = "";
-          if (urlEl) urlEl.value = "";
-          renderList();
-        });
-      }
-      renderList();
     }
     loginSubmit.addEventListener("click", tryLogin);
     pwInput.addEventListener("keydown", (e) => {

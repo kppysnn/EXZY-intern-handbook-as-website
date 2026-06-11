@@ -1,5 +1,6 @@
 import { I } from '../icons.js';
 import { pageWrap } from '../helpers.js';
+import { loadAdminData } from '../auth.js';
 
 export const renderCodeOfConduct = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Core Values", null]],
@@ -263,7 +264,9 @@ export const renderDressCode = () => pageWrap({
   `,
 });
 
-export const renderLeave = () => pageWrap({
+export const renderLeave = () => {
+  const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
+  return pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Leave & Absence", null]],
   title: "Leave & Absence",
   lead: "ป่วยหรือมีธุระ — แจ้งพี่เลี้ยงและส่งอีเมล HR ตามขั้นตอนนี้",
@@ -282,7 +285,7 @@ export const renderLeave = () => pageWrap({
         <div class="leave-step-node">2</div>
         <div class="leave-step-card">
           <h4>ส่ง Email แจ้งการลาให้ HR</h4>
-          <p>ส่งอีเมลแจ้งลาไปที่ <a href="mailto:hr@exzyteam.com" class="inline-link">hr@exzyteam.com</a> ระบุเหตุผลและจำนวนวันที่จะลา</p>
+          <p>ส่งอีเมลแจ้งลาไปที่ <a href="mailto:${hrEmail}" class="inline-link">${hrEmail}</a> ระบุเหตุผลและจำนวนวันที่จะลา</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="200">
@@ -325,3 +328,4 @@ export const renderLeave = () => pageWrap({
     </div>
   `,
 });
+};
