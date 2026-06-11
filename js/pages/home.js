@@ -13,7 +13,7 @@ export var renderHome = () => `
 
   <div class="ex-home-hero-inner">
     <div class="ex-home-copy">
-      <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Intern Handbook</h1>
+      <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship</br>Handbook</h1>
       <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องใช้ตลอดการฝึกงานไว้ที่นี่ — งานที่ต้องทำ ออฟฟิศ ทีม หรือนโยบาย <br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามนั้นเอง!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
@@ -40,7 +40,7 @@ export var renderHome = () => `
 
     <div class="ex-must-grid">
       <article class="ex-must-card fdb-reveal">
-        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png');background-position:center 54%"></div>
+        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png');background-position:center 48%"></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">01 · Timesheet</span>
@@ -57,7 +57,7 @@ export var renderHome = () => `
       </article>
 
       <article class="ex-must-card fdb-reveal fdb-delay1">
-        <div class="ex-must-photo" style="background-image:url('./static/card-project-photo.png')"></div>
+        <div class="ex-must-photo" style="background-image:url('./static/card-project-photo.png');background-position:center 30%"></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">02 · HR Project</span>
