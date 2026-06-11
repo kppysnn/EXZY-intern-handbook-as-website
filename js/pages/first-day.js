@@ -73,20 +73,15 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-road" aria-labelledby="ex-day-road-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-road-title">วันแรกต้องเจอกับอะไรบ้าง ?</h2>
-    <p>4 อย่างที่ intern จะได้เจอในวันแรก ตั้งแต่การทำความรู้จัก EXZY ไปจนถึงการเริ่มทำงาน</p>
+    <h2 id="ex-day-road-title">สิ่งที่จะได้เจอช่วงแรก</h2>
+    <p>ไม่จำเป็นต้องเกิดขึ้นตามลำดับ แต่นี่คือสิ่งที่ intern มักได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
   </div>
 
-  <div class="ex-info-roadmap" aria-label="เส้นทางของวันแรก">
-    <svg class="ex-info-path" viewBox="0 0 1120 600" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M60 320 C160 320,250 110,375 110 C500 110,600 320,720 320 C840 320,920 110,1060 110" fill="none" stroke="#D0D6DF" stroke-width="46" stroke-linecap="round"/>
-      <path d="M60 320 C160 320,250 110,375 110 C500 110,600 320,720 320 C840 320,920 110,1060 110" fill="none" stroke="#66C5C5" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 18"/>
-    </svg>
-
-    <article class="ex-info-stop ex-info-stop-1 fdb-reveal" style="--stop:#66C5C5">
-      <span class="ex-info-pin">01</span>
+  <div class="ex-day-items-grid">
+    <article class="ex-day-item fdb-reveal">
+      <span class="ex-day-item-num">01</span>
       <h3>Orientation</h3>
-      <p>ทำความรู้จัก EXZY ภาพรวมบริษัท นโยบาย การฝึกงาน และหากมีเรื่อง<br>ที่อยากถาม สามารถถามพี่ HR ได้เลย!</p>
+      <p>ทำความรู้จัก EXZY ภาพรวมบริษัท นโยบาย การฝึกงาน และหากมีเรื่องที่อยากถาม สามารถถามพี่ HR ได้เลย</p>
       <div class="ex-road-mini">
         <span><span aria-hidden="true">🏢</span><b>EXZY</b></span>
         <span><span aria-hidden="true">💻</span><b>Tools</b></span>
@@ -94,8 +89,8 @@ export function renderFirstDay(data = {}) {
       </div>
     </article>
 
-    <article class="ex-info-stop ex-info-stop-2 fdb-reveal fdb-delay1" style="--stop:#004081">
-      <span class="ex-info-pin">02</span>
+    <article class="ex-day-item fdb-reveal fdb-delay1">
+      <span class="ex-day-item-num">02</span>
       <h3>Metropolis</h3>
       <p>รู้จักตัวตนของ EXZY ผ่านโลโก้ สี ฟอนต์ สไตล์งาน และบรรยากาศออฟฟิศ</p>
       <div class="ex-road-mini">
@@ -105,10 +100,10 @@ export function renderFirstDay(data = {}) {
       </div>
     </article>
 
-    <article class="ex-info-stop ex-info-stop-3 fdb-reveal fdb-delay1" style="--stop:#586782">
-      <span class="ex-info-pin">03</span>
+    <article class="ex-day-item fdb-reveal fdb-delay1">
+      <span class="ex-day-item-num">03</span>
       <h3>Mentor &amp; Team</h3>
-      <p>พูดคุยกับพี่เลี้ยงที่จะดูแลคุณ<br>ตลอดการฝึกงาน ทำความรู้จักกับสมาชิกในทีมที่ต้องร่วมงานด้วย <br>และพูดคุยถึงความต้องการและ<br>ความคาดหวังในการฝึกงาน</p>
+      <p>พูดคุยกับพี่เลี้ยงที่จะดูแลตลอดการฝึกงาน ทำความรู้จักกับสมาชิกในทีม และพูดคุยถึงความคาดหวังร่วมกัน</p>
       <div class="ex-road-mini">
         <span><span aria-hidden="true">🧭</span><b>Mentor</b></span>
         <span><span aria-hidden="true">🤝</span><b>Team</b></span>
@@ -116,11 +111,13 @@ export function renderFirstDay(data = {}) {
       </div>
     </article>
 
-    <article class="ex-info-stop ex-info-stop-4 fdb-reveal fdb-delay2" style="--stop:#004081">
-      <span class="ex-info-pin">04</span>
+    <article class="ex-day-item fdb-reveal fdb-delay2">
+      <span class="ex-day-item-num">04</span>
       <h3>Timesheet</h3>
-      <p>เริ่มกรอกเวลาเข้าออกตามจริง <br>เพื่อเก็บข้อมูลการเข้างานเพื่อใช้<br>ส่งเอกสารให้กับ hr ทุกสิ้นเดือน<br>ได้ถูกต้อง</p>
-      <a href="#/tasks/timesheet" class="ex-road-btn" data-link>ดูวิธีกรอก Timesheet →</a>
+      <p>เริ่มกรอกเวลาเข้าออกตามจริงในไฟล์ที่ HR ส่งให้ เพื่อใช้ส่งเอกสารทุกสิ้นเดือน</p>
+      <div class="ex-road-mini">
+        <a href="#/tasks/timesheet" data-link><span aria-hidden="true">📋</span><b>ดูคู่มือ →</b></a>
+      </div>
     </article>
   </div>
 </section>
