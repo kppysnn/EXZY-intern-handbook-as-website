@@ -35795,7 +35795,7 @@ html::-webkit-scrollbar { display: none !important; }
    ========================================================= */
 .ex-day-items-grid {
   display: grid;
-  grid-template-columns: repeat(4, 210px);
+  grid-template-columns: repeat(4, 240px);
   justify-content: center;
   gap: 16px;
   max-width: 1160px;
@@ -35863,5 +35863,5 @@ html::-webkit-scrollbar { display: none !important; }
   .ex-day-items-grid { grid-template-columns: repeat(2, 210px); }
 }
 @media (max-width: 520px) {
-  .ex-day-items-grid { grid-template-columns: 210px; }
+  .ex-day-items-grid { grid-template-columns: 240px; }
 }
