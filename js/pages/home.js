@@ -40,7 +40,7 @@ export var renderHome = () => `
 
     <div class="ex-must-grid">
       <article class="ex-must-card fdb-reveal">
-        <div class="ex-must-photo" style="background-image:url('./static/card-timesheet-photo.png');background-position:center center"></div>
+        <div class="ex-must-photo"><img src="./static/card-timesheet-photo.png" alt="" loading="eager" /></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">01 · Timesheet</span>
@@ -57,7 +57,7 @@ export var renderHome = () => `
       </article>
 
       <article class="ex-must-card fdb-reveal fdb-delay1">
-        <div class="ex-must-photo" style="background-image:url('./static/card-project-photo.png');background-position:center center"></div>
+        <div class="ex-must-photo"><img src="./static/card-project-photo.png" alt="" loading="eager" /></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">02 · HR Project</span>

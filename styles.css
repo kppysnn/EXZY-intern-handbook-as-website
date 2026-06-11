@@ -12532,10 +12532,15 @@ html::-webkit-scrollbar { display: none !important; }
 
 .ex-must-photo {
   width: 100%;
-  height: 210px;
-  background-size: cover;
-  background-position: center 18%;
   flex-shrink: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.ex-must-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .ex-must-content {
@@ -12574,8 +12579,6 @@ html::-webkit-scrollbar { display: none !important; }
 @media (max-width: 740px){
 
   .ex-must-grid { grid-template-columns: 1fr !important; }
-
-  .ex-must-photo { height: 200px !important; }
 }
 
 
