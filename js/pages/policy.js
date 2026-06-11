@@ -211,9 +211,9 @@ export const renderDressCode = () => pageWrap({
     <!-- Dress Hero V2 -->
     <div class="dress-hero-v2 anim-up">
       <div>
-        <div class="dress-tag-v2" style="color:#ffffff;">EXZY Core Value · Aesthetic Design</div>
-        <h2 style="color:#ffffff;">สะอาด เรียบร้อย เหมาะสม</h2>
-        <p style="color:rgba(255,255,255,.82);">"สะอาดเรียบร้อย และเตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดี<br>คือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
+        <div class="dress-tag-v2" style="color:var(--on-dark);">EXZY Core Value · Aesthetic Design</div>
+        <h2 style="color:var(--on-dark);">สะอาด เรียบร้อย เหมาะสม</h2>
+        <p style="color:rgba(248,249,250,.82);">"สะอาดเรียบร้อย และเตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดี<br>คือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
       </div>
       <div class="dress-hero-img dress-hero-img--asset">
         <img src="./static/dress-code-outfits.png" alt="ตัวอย่างเสื้อผ้าและรองเท้าสำหรับแต่งกายแบบ Smart Casual ที่ EXZY" loading="lazy" />

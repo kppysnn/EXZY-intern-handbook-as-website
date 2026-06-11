@@ -5,7 +5,7 @@ export var renderHome = () => `
 
 <section class="ex-home-hero" aria-label="EXZY Intern Handbook">
   <div class="ex-home-video-banner" aria-label="บรรยากาศที่ EXZY">
-    <video class="ex-home-banner-video" src="./static/home-header-banner.mp4" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="auto" data-home-hero-video>
+    <video class="ex-home-banner-video" src="./static/home-header-banner.mp4" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="metadata" data-home-hero-video>
       <source src="./static/home-header-banner.mp4" type="video/mp4" />
     </video>
     <div class="ex-home-video-shade" aria-hidden="true"></div>

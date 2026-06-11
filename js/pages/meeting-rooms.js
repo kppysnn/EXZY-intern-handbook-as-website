@@ -4,7 +4,7 @@ import { pageWrap } from '../helpers.js';
 export const renderMeetingRooms = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Getting Started", null], ["Meeting Rooms", null]],
   title: "Meeting Rooms",
-  lead: "ห้องประชุมในออฟฟิศ EXZY มีทั้งหมด 4 ห้อง <span style=\"white-space:nowrap\">โดยจะอยู่ที่ชั้น 1 และชั้น 2</span>",
+  lead: "ห้องประชุมในออฟฟิศ EXZY มีทั้งหมด 4 ห้อง โดยจะอยู่ที่ชั้น 1 และชั้น 2",
   body: `
     <!-- Overview Stats -->
     <div class="mr-overview anim-up">

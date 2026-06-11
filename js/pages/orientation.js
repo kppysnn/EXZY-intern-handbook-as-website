@@ -22,8 +22,8 @@ export const renderOrientation = () => pageWrap({
         <span class="slides-icon">${I.book}</span>
         <span class="slides-title" data-text="orientation_slides_name">Mini Internship Orientation</span>
         <div class="slides-embed-actions">
-          <a href="#" data-link-key="orientation_slides_url" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">เปิดแท็บใหม่ ${I.external}</a>
-          <a href="#" data-link-key="orientation_pdf_url" download="Mini-Internship-Orientation.pdf" class="btn btn-primary btn-sm">${I.download} ดาวน์โหลด PDF</a>
+          <a href="./static/Mini-Internship-Orientation.pdf" data-link-key="orientation_slides_url" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">เปิดแท็บใหม่ ${I.external}</a>
+          <a href="./static/Mini-Internship-Orientation.pdf" data-link-key="orientation_pdf_url" download="Mini-Internship-Orientation.pdf" class="btn btn-primary btn-sm">${I.download} ดาวน์โหลด PDF</a>
         </div>
       </div>
       <div class="slides-embed-body" id="slides-embed-body">

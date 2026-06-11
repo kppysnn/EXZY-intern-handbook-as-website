@@ -3,8 +3,6 @@
 
 export function renderFirstDay(data = {}) {
     const hrEmail = data.hr_email || "hr@exzyteam.com";
-    const hrName  = data.hr_name  || "";
-    const hrPhone = data.hr_phone || "";
     return `
 <div class="ex-day-page">
 
@@ -33,7 +31,7 @@ export function renderFirstDay(data = {}) {
   <div class="ex-task-stage">
     <article class="ex-task-slip ex-task-calendar fdb-reveal fdb-delay1">
       <div class="ex-task-visual" aria-hidden="true">
-        <img src="./static/task-calendar-3d.png" alt="Google Calendar" />
+        <img src="./static/task-calendar-3d.png" alt="Google Calendar" loading="lazy" />
       </div>
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 01</span>
@@ -46,13 +44,13 @@ export function renderFirstDay(data = {}) {
           <i></i>
           <div class="ex-flow-step"><span aria-hidden="true">✅</span><b>กด Subscribe ปฏิทิน</b></div>
         </div>
-        <p class="ex-task-note">ถ้าไม่ได้รับ Calendar invitation ติดต่อ${hrName ? ` ${hrName}` : ''} ที่ <a href="mailto:${hrEmail}">${hrEmail}</a>${hrPhone ? ` หรือโทร ${hrPhone}` : ''}</p>
+        <p class="ex-task-note">ถ้าไม่ได้รับ Calendar invitation ติดต่อ HR ที่ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
       </div>
     </article>
 
     <article class="ex-task-slip ex-task-timesheet fdb-reveal fdb-delay2">
       <div class="ex-task-visual" aria-hidden="true">
-        <img src="./static/task-timesheet-3d.png" alt="Timesheet" />
+        <img src="./static/task-timesheet-3d.png" alt="Timesheet" loading="lazy" />
       </div>
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 02</span>
@@ -94,7 +92,7 @@ export function renderFirstDay(data = {}) {
       <h3>Metropolis</h3>
       <p>รู้จักตัวตนของ EXZY ผ่านโลโก้ สี ฟอนต์ สไตล์งาน และบรรยากาศออฟฟิศ</p>
       <div class="ex-road-mini">
-        <span><img src="./exzy-square-icon.png" style="width:20px;height:20px;object-fit:contain;border-radius:4px;" alt="EXZY"><b>Logo</b></span>
+        <span><img src="./exzy-square-icon.png" style="width:20px;height:20px;object-fit:contain;border-radius:4px;" alt="EXZY" loading="lazy"><b>Logo</b></span>
         <span><span aria-hidden="true">🎨</span><b>Color</b></span>
         <span><span aria-hidden="true">👥</span><b>People</b></span>
       </div>

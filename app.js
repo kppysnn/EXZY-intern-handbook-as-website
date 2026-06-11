@@ -251,8 +251,8 @@ function hydratePage() {
         }
       });
     }
-    wirePassToggle('v2-staff-pass-toggle', 'v2-staff-pass-display', 'maetyzxe');
-    wirePassToggle('v2-guest-pass-toggle', 'v2-guest-pass-display', 'imaguest');
+    wirePassToggle('v2-staff-pass-toggle', 'v2-staff-pass-display', '');
+    wirePassToggle('v2-guest-pass-toggle', 'v2-guest-pass-display', '');
   })();
 
   // ----- Wi-Fi V3 connect buttons -----

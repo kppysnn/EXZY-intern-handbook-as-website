@@ -2,12 +2,10 @@ const ADMIN_STORE_KEY = "exzy_admin_data_v1";
 
 export const DEFAULT_ADMIN_DATA = {
   wifi_staff_ssid: "ExzyUniFi",
-  wifi_staff_pass: "maetyzxe",
+  wifi_staff_pass: "",
   wifi_guest_ssid: "Exzy_Guest",
-  wifi_guest_pass: "imaguest",
+  wifi_guest_pass: "",
   hr_email: "hr@exzyteam.com",
-  hr_name: "Ninan A. (นินัน)",
-  hr_phone: "0926244471",
   orientation_slides_url: "./static/Mini-Internship-Orientation.pdf",
   orientation_pdf_url: "./static/Mini-Internship-Orientation.pdf",
 };

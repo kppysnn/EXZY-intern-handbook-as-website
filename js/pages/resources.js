@@ -31,7 +31,7 @@ export const renderTimesheet = () => {
     <h2>ตัวอย่างเอกสาร Timesheet</h2>
     <p>เอกสาร Timesheet ของ EXZY มีรูปแบบดังนี้ — ใช้เป็นอ้างอิงเมื่อกรอกข้อมูล</p>
     <figure class="ts-figure">
-      <img src="timesheet-sample.png" alt="ตัวอย่างเอกสาร Intern Timesheet ของ EXZY" />
+      <img src="timesheet-sample.png" alt="ตัวอย่างเอกสาร Intern Timesheet ของ EXZY" loading="lazy" />
       <figcaption>ตัวอย่าง Intern Timesheet · ส่งให้ HR ทุกสิ้นเดือนของการฝึกงาน</figcaption>
     </figure>
 
@@ -83,17 +83,17 @@ export const renderFaqs = () => {
   body: `
     <!-- Filter Tabs -->
     <div class="faq-filter" id="faq-filter">
-      <button class="faq-filter-btn is-active" data-faq-cat="all">
+      <button type="button" class="faq-filter-btn is-active" data-faq-cat="all">
         <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
         ทั้งหมด
       </button>
-      <button class="faq-filter-btn" data-faq-cat="work">
+      <button type="button" class="faq-filter-btn" data-faq-cat="work">
         ${I.doc} การทำงาน
       </button>
-      <button class="faq-filter-btn" data-faq-cat="leave">
+      <button type="button" class="faq-filter-btn" data-faq-cat="leave">
         ${I.help} การลา
       </button>
-      <button class="faq-filter-btn" data-faq-cat="life">
+      <button type="button" class="faq-filter-btn" data-faq-cat="life">
         ${I.people} ชีวิตในออฟฟิศ
       </button>
     </div>

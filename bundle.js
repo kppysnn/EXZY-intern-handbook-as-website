@@ -36,12 +36,10 @@
   var ADMIN_STORE_KEY = "exzy_admin_data_v1";
   var DEFAULT_ADMIN_DATA = {
     wifi_staff_ssid: "ExzyUniFi",
-    wifi_staff_pass: "maetyzxe",
+    wifi_staff_pass: "",
     wifi_guest_ssid: "Exzy_Guest",
-    wifi_guest_pass: "imaguest",
+    wifi_guest_pass: "",
     hr_email: "hr@exzyteam.com",
-    hr_name: "Ninan A. (\u0E19\u0E34\u0E19\u0E31\u0E19)",
-    hr_phone: "0926244471",
     orientation_slides_url: "./static/Mini-Internship-Orientation.pdf",
     orientation_pdf_url: "./static/Mini-Internship-Orientation.pdf"
   };
@@ -78,7 +76,7 @@
   function acc(q, a) {
     return `
     <div class="acc-item">
-      <button class="acc-trigger">${q}<span class="acc-icon">${I.plus}</span></button>
+      <button type="button" class="acc-trigger">${q}<span class="acc-icon">${I.plus}</span></button>
       <div class="acc-body"><div class="acc-body-inner">${a}</div></div>
     </div>
   `;
@@ -339,7 +337,7 @@
 
 <section class="ex-home-hero" aria-label="EXZY Intern Handbook">
   <div class="ex-home-video-banner" aria-label="\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E17\u0E35\u0E48 EXZY">
-    <video class="ex-home-banner-video" src="./static/home-header-banner.mp4" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="auto" data-home-hero-video>
+    <video class="ex-home-banner-video" src="./static/home-header-banner.mp4" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="metadata" data-home-hero-video>
       <source src="./static/home-header-banner.mp4" type="video/mp4" />
     </video>
     <div class="ex-home-video-shade" aria-hidden="true"></div>
@@ -563,8 +561,6 @@
   // js/pages/first-day.js
   function renderFirstDay(data = {}) {
     const hrEmail = data.hr_email || "hr@exzyteam.com";
-    const hrName = data.hr_name || "";
-    const hrPhone = data.hr_phone || "";
     return `
 <div class="ex-day-page">
 
@@ -593,7 +589,7 @@
   <div class="ex-task-stage">
     <article class="ex-task-slip ex-task-calendar fdb-reveal fdb-delay1">
       <div class="ex-task-visual" aria-hidden="true">
-        <img src="./static/task-calendar-3d.png" alt="Google Calendar" />
+        <img src="./static/task-calendar-3d.png" alt="Google Calendar" loading="lazy" />
       </div>
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 01</span>
@@ -606,13 +602,13 @@
           <i></i>
           <div class="ex-flow-step"><span aria-hidden="true">\u2705</span><b>\u0E01\u0E14 Subscribe \u0E1B\u0E0F\u0E34\u0E17\u0E34\u0E19</b></div>
         </div>
-        <p class="ex-task-note">\u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A Calendar invitation \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D${hrName ? ` ${hrName}` : ""} \u0E17\u0E35\u0E48 <a href="mailto:${hrEmail}">${hrEmail}</a>${hrPhone ? ` \u0E2B\u0E23\u0E37\u0E2D\u0E42\u0E17\u0E23 ${hrPhone}` : ""}</p>
+        <p class="ex-task-note">\u0E16\u0E49\u0E32\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A Calendar invitation \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E17\u0E35\u0E48 <a href="mailto:${hrEmail}">${hrEmail}</a></p>
       </div>
     </article>
 
     <article class="ex-task-slip ex-task-timesheet fdb-reveal fdb-delay2">
       <div class="ex-task-visual" aria-hidden="true">
-        <img src="./static/task-timesheet-3d.png" alt="Timesheet" />
+        <img src="./static/task-timesheet-3d.png" alt="Timesheet" loading="lazy" />
       </div>
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 02</span>
@@ -654,7 +650,7 @@
       <h3>Metropolis</h3>
       <p>\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01\u0E15\u0E31\u0E27\u0E15\u0E19\u0E02\u0E2D\u0E07 EXZY \u0E1C\u0E48\u0E32\u0E19\u0E42\u0E25\u0E42\u0E01\u0E49 \u0E2A\u0E35 \u0E1F\u0E2D\u0E19\u0E15\u0E4C \u0E2A\u0E44\u0E15\u0E25\u0E4C\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E30\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</p>
       <div class="ex-road-mini">
-        <span><img src="./exzy-square-icon.png" style="width:20px;height:20px;object-fit:contain;border-radius:4px;" alt="EXZY"><b>Logo</b></span>
+        <span><img src="./exzy-square-icon.png" style="width:20px;height:20px;object-fit:contain;border-radius:4px;" alt="EXZY" loading="lazy"><b>Logo</b></span>
         <span><span aria-hidden="true">\u{1F3A8}</span><b>Color</b></span>
         <span><span aria-hidden="true">\u{1F465}</span><b>People</b></span>
       </div>
@@ -757,8 +753,8 @@
         <span class="slides-icon">${I.book}</span>
         <span class="slides-title" data-text="orientation_slides_name">Mini Internship Orientation</span>
         <div class="slides-embed-actions">
-          <a href="#" data-link-key="orientation_slides_url" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">\u0E40\u0E1B\u0E34\u0E14\u0E41\u0E17\u0E47\u0E1A\u0E43\u0E2B\u0E21\u0E48 ${I.external}</a>
-          <a href="#" data-link-key="orientation_pdf_url" download="Mini-Internship-Orientation.pdf" class="btn btn-primary btn-sm">${I.download} \u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14 PDF</a>
+          <a href="./static/Mini-Internship-Orientation.pdf" data-link-key="orientation_slides_url" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">\u0E40\u0E1B\u0E34\u0E14\u0E41\u0E17\u0E47\u0E1A\u0E43\u0E2B\u0E21\u0E48 ${I.external}</a>
+          <a href="./static/Mini-Internship-Orientation.pdf" data-link-key="orientation_pdf_url" download="Mini-Internship-Orientation.pdf" class="btn btn-primary btn-sm">${I.download} \u0E14\u0E32\u0E27\u0E19\u0E4C\u0E42\u0E2B\u0E25\u0E14 PDF</a>
         </div>
       </div>
       <div class="slides-embed-body" id="slides-embed-body">
@@ -898,18 +894,18 @@
   var renderWifi = () => pageWrap({
     crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
     title: "Office Wi-Fi",
-    lead: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E49\u0E27\u0E2A\u0E41\u0E01\u0E19 QR \u0E2B\u0E23\u0E37\u0E2D\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22",
+    lead: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49 \u2014 \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E0A\u0E37\u0E48\u0E2D SSID \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22 \u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E02\u0E2D\u0E08\u0E32\u0E01 HR \u0E44\u0E14\u0E49\u0E42\u0E14\u0E22\u0E15\u0E23\u0E07",
     body: `
     <!-- Network type selector -->
     <div class="wn-selector">
-      <button class="wn-sel-btn wn-sel-active" data-wifi-tab-v2="staff">
+      <button type="button" class="wn-sel-btn wn-sel-active" data-wifi-tab-v2="staff">
         <span class="wn-sel-pip"></span>
         <div class="wn-sel-info">
           <span class="wn-sel-title">\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern</span>
           <span class="wn-sel-ssid">ExzyUniFi</span>
         </div>
       </button>
-      <button class="wn-sel-btn wn-sel-guest" data-wifi-tab-v2="guest">
+      <button type="button" class="wn-sel-btn wn-sel-guest" data-wifi-tab-v2="guest">
         <span class="wn-sel-pip wn-pip-guest"></span>
         <div class="wn-sel-info">
           <span class="wn-sel-title">\u0E41\u0E02\u0E01 (Guest)</span>
@@ -921,40 +917,28 @@
     <!-- Staff panel -->
     <div class="wn-panel" data-wifi-panel-v2="staff">
       <div class="wn-main">
-        <!-- QR side -->
-        <div class="wn-qr-side">
-          <div class="wn-qr-box">
-            <div class="wn-qr" data-qr="staff"></div>
-          </div>
-          <p class="wn-qr-tip">\u0E40\u0E1B\u0E34\u0E14\u0E01\u0E25\u0E49\u0E2D\u0E07 \u2192 \u0E2A\u0E48\u0E2D\u0E07\u0E44\u0E1B\u0E17\u0E35\u0E48 QR \u2192 \u0E01\u0E14 \u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</p>
-        </div>
-        <!-- Info side -->
-        <div class="wn-info-side">
+        <!-- Info side (full width \u2014 no QR since password is not stored here) -->
+        <div class="wn-info-side" style="flex:1;">
           <div class="wn-network-badge">STAFF NETWORK</div>
           <div class="wn-cred">
             <div class="wn-cred-row">
               <span class="wn-cred-k">Network (SSID)</span>
               <div class="wn-cred-v">
                 <code data-text="wifi_staff_ssid">ExzyUniFi</code>
-                <button class="wn-copy" data-copy="wifi_staff_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
+                <button type="button" class="wn-copy" data-copy="wifi_staff_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
                   <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 </button>
               </div>
             </div>
             <div class="wn-cred-row">
               <span class="wn-cred-k">Password</span>
-              <div class="wn-cred-v">
-                <code class="wifi-pass-dots" id="v2-staff-pass-display">\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022</code>
-                <button class="wn-copy" id="v2-staff-pass-toggle" title="\u0E41\u0E2A\u0E14\u0E07">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                </button>
-                <button class="wn-copy" data-copy="wifi_staff_pass" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                </button>
+              <div class="wn-cred-v wn-pass-hr-row">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.55;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="wn-pass-hr-label">\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</span>
               </div>
             </div>
           </div>
-          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern \u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u0E2B\u0E49\u0E32\u0E21\u0E41\u0E0A\u0E23\u0E4C\u0E43\u0E2B\u0E49\u0E01\u0E31\u0E1A\u0E1A\u0E38\u0E04\u0E04\u0E25\u0E20\u0E32\u0E22\u0E19\u0E2D\u0E01</p>
+          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern \u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u2014 \u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E40\u0E01\u0E47\u0E1A\u0E1A\u0E19 handbook \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E04\u0E27\u0E32\u0E21\u0E1B\u0E25\u0E2D\u0E14\u0E20\u0E31\u0E22</p>
         </div>
       </div>
     </div>
@@ -962,72 +946,60 @@
     <!-- Guest panel -->
     <div class="wn-panel wn-panel-guest" data-wifi-panel-v2="guest" hidden>
       <div class="wn-main">
-        <div class="wn-qr-side">
-          <div class="wn-qr-box wn-qr-box-guest">
-            <div class="wn-qr" data-qr="guest"></div>
-          </div>
-          <p class="wn-qr-tip">\u0E40\u0E1B\u0E34\u0E14\u0E01\u0E25\u0E49\u0E2D\u0E07 \u2192 \u0E2A\u0E48\u0E2D\u0E07\u0E44\u0E1B\u0E17\u0E35\u0E48 QR \u2192 \u0E01\u0E14 \u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</p>
-        </div>
-        <div class="wn-info-side">
+        <div class="wn-info-side" style="flex:1;">
           <div class="wn-network-badge wn-badge-guest">GUEST NETWORK</div>
           <div class="wn-cred">
             <div class="wn-cred-row">
               <span class="wn-cred-k">Network (SSID)</span>
               <div class="wn-cred-v">
                 <code data-text="wifi_guest_ssid">Exzy_Guest</code>
-                <button class="wn-copy" data-copy="wifi_guest_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
+                <button type="button" class="wn-copy" data-copy="wifi_guest_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
                   <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 </button>
               </div>
             </div>
             <div class="wn-cred-row">
               <span class="wn-cred-k">Password</span>
-              <div class="wn-cred-v">
-                <code class="wifi-pass-dots" id="v2-guest-pass-display">\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022</code>
-                <button class="wn-copy" id="v2-guest-pass-toggle" title="\u0E41\u0E2A\u0E14\u0E07">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                </button>
-                <button class="wn-copy" data-copy="wifi_guest_pass" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                </button>
+              <div class="wn-cred-v wn-pass-hr-row">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.55;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="wn-pass-hr-label">\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</span>
               </div>
             </div>
           </div>
-          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E02\u0E01\u0E17\u0E35\u0E48\u0E21\u0E32\u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</p>
+          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E02\u0E01\u0E17\u0E35\u0E48\u0E21\u0E32\u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u2014 \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</p>
         </div>
       </div>
     </div>
 
-    <!-- How to connect steps redesign -->
+    <!-- How to connect steps -->
     <div class="wn-how-v2">
       <div class="wn-how-v2-head">
         <span class="wn-how-v2-label">\u0E27\u0E34\u0E18\u0E35\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</span>
-        <p class="wn-how-v2-sub">\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48\u0E2A\u0E30\u0E14\u0E27\u0E01\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
+        <p class="wn-how-v2-sub">2 \u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19 \u0E40\u0E2A\u0E23\u0E47\u0E08\u0E43\u0E19\u0E44\u0E21\u0E48\u0E01\u0E35\u0E48\u0E19\u0E32\u0E17\u0E35</p>
       </div>
       <div class="wn-how-v2-tracks">
         <div class="wn-how-v2-track wn-how-v2-qr">
           <div class="wn-how-v2-track-icon">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h.01M14 18h3M17 14v4M20 14v.01M20 18v.01"/></svg>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <div class="wn-how-v2-track-title">\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48 1 \u2014 \u0E2A\u0E41\u0E01\u0E19 QR \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</div>
+          <div class="wn-how-v2-track-title">\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E17\u0E35\u0E48 1 \u2014 \u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR</div>
           <ol class="wn-how-v2-steps">
-            <li>\u0E40\u0E1B\u0E34\u0E14\u0E01\u0E25\u0E49\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E16\u0E37\u0E2D</li>
-            <li>\u0E2A\u0E48\u0E2D\u0E07\u0E44\u0E1B\u0E17\u0E35\u0E48 QR \u0E14\u0E49\u0E32\u0E19\u0E1A\u0E19</li>
-            <li>\u0E01\u0E14\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</li>
+            <li>\u0E17\u0E31\u0E01\u0E2B\u0E32 HR \u0E1C\u0E48\u0E32\u0E19 Line \u0E2B\u0E23\u0E37\u0E2D\u0E16\u0E32\u0E21\u0E15\u0E23\u0E07 \u0E46 \u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</li>
+            <li>\u0E41\u0E08\u0E49\u0E07\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E23\u0E2B\u0E31\u0E2A Wi-Fi \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A Intern</li>
           </ol>
         </div>
         <div class="wn-how-v2-divider">
-          <span>\u0E2B\u0E23\u0E37\u0E2D</span>
+          <span>\u0E41\u0E25\u0E49\u0E27</span>
         </div>
         <div class="wn-how-v2-track wn-how-v2-manual">
           <div class="wn-how-v2-track-icon">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
           </div>
-          <div class="wn-how-v2-track-title">\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48 2 \u2014 \u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E40\u0E2D\u0E07</div>
+          <div class="wn-how-v2-track-title">\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E17\u0E35\u0E48 2 \u2014 \u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</div>
           <ol class="wn-how-v2-steps">
             <li>\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Wi-Fi</li>
-            <li>\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22 (SSID)</li>
-            <li>\u0E01\u0E14 "\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19" \u0E41\u0E25\u0E49\u0E27\u0E27\u0E32\u0E07</li>
+            <li>\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22 (SSID) \u0E08\u0E32\u0E01\u0E14\u0E49\u0E32\u0E19\u0E1A\u0E19</li>
+            <li>\u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E08\u0E32\u0E01 HR \u0E41\u0E25\u0E49\u0E27\u0E01\u0E14\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</li>
           </ol>
         </div>
       </div>
@@ -1037,7 +1009,7 @@
       <span class="ic">${I.shield}</span>
       <div>
         <h4>\u0E23\u0E31\u0E01\u0E29\u0E32\u0E04\u0E27\u0E32\u0E21\u0E1B\u0E25\u0E2D\u0E14\u0E20\u0E31\u0E22</h4>
-        <p>\u0E23\u0E2B\u0E31\u0E2A Staff Wi-Fi \u0E43\u0E0A\u0E49\u0E20\u0E32\u0E22\u0E43\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u2014 \u0E16\u0E49\u0E32\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E08\u0E49\u0E07 IT \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E43\u0E19\u0E17\u0E35\u0E21</p>
+        <p>\u0E23\u0E2B\u0E31\u0E2A Staff Wi-Fi \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30 Intern \u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u2014 \u0E2B\u0E49\u0E32\u0E21\u0E41\u0E0A\u0E23\u0E4C\u0E43\u0E2B\u0E49\u0E1A\u0E38\u0E04\u0E04\u0E25\u0E20\u0E32\u0E22\u0E19\u0E2D\u0E01 \u0E16\u0E49\u0E32\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E08\u0E49\u0E07 HR \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E43\u0E19\u0E17\u0E35\u0E21</p>
       </div>
     </div>
   `
@@ -1047,7 +1019,7 @@
   var renderMeetingRooms = () => pageWrap({
     crumbs: [["Home", "#/home"], ["Getting Started", null], ["Meeting Rooms", null]],
     title: "Meeting Rooms",
-    lead: '\u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 EXZY \u0E21\u0E35\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14 4 \u0E2B\u0E49\u0E2D\u0E07 <span style="white-space:nowrap">\u0E42\u0E14\u0E22\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E0A\u0E31\u0E49\u0E19 1 \u0E41\u0E25\u0E30\u0E0A\u0E31\u0E49\u0E19 2</span>',
+    lead: "\u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 EXZY \u0E21\u0E35\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14 4 \u0E2B\u0E49\u0E2D\u0E07 \u0E42\u0E14\u0E22\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E0A\u0E31\u0E49\u0E19 1 \u0E41\u0E25\u0E30\u0E0A\u0E31\u0E49\u0E19 2",
     body: `
     <!-- Overview Stats -->
     <div class="mr-overview anim-up">
@@ -1514,9 +1486,9 @@
     <!-- Dress Hero V2 -->
     <div class="dress-hero-v2 anim-up">
       <div>
-        <div class="dress-tag-v2" style="color:#ffffff;">EXZY Core Value \xB7 Aesthetic Design</div>
-        <h2 style="color:#ffffff;">\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22 \u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21</h2>
-        <p style="color:rgba(255,255,255,.82);">"\u0E2A\u0E30\u0E2D\u0E32\u0E14\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22 \u0E41\u0E25\u0E30\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21" \u2014 \u0E15\u0E32\u0E21 EXZY Core Values \u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E17\u0E35\u0E48\u0E14\u0E35<br>\u0E04\u0E37\u0E2D\u0E2A\u0E48\u0E27\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E02\u0E2D\u0E07\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E21\u0E37\u0E2D\u0E2D\u0E32\u0E0A\u0E35\u0E1E\u0E41\u0E25\u0E30\u0E2A\u0E30\u0E17\u0E49\u0E2D\u0E19\u0E04\u0E48\u0E32\u0E19\u0E34\u0E22\u0E21\u0E02\u0E2D\u0E07\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17</p>
+        <div class="dress-tag-v2" style="color:var(--on-dark);">EXZY Core Value \xB7 Aesthetic Design</div>
+        <h2 style="color:var(--on-dark);">\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22 \u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21</h2>
+        <p style="color:rgba(248,249,250,.82);">"\u0E2A\u0E30\u0E2D\u0E32\u0E14\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22 \u0E41\u0E25\u0E30\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E21\u0E32\u0E30\u0E2A\u0E21" \u2014 \u0E15\u0E32\u0E21 EXZY Core Values \u0E01\u0E32\u0E23\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E17\u0E35\u0E48\u0E14\u0E35<br>\u0E04\u0E37\u0E2D\u0E2A\u0E48\u0E27\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E02\u0E2D\u0E07\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E21\u0E37\u0E2D\u0E2D\u0E32\u0E0A\u0E35\u0E1E\u0E41\u0E25\u0E30\u0E2A\u0E30\u0E17\u0E49\u0E2D\u0E19\u0E04\u0E48\u0E32\u0E19\u0E34\u0E22\u0E21\u0E02\u0E2D\u0E07\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17</p>
       </div>
       <div class="dress-hero-img dress-hero-img--asset">
         <img src="./static/dress-code-outfits.png" alt="\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2A\u0E37\u0E49\u0E2D\u0E1C\u0E49\u0E32\u0E41\u0E25\u0E30\u0E23\u0E2D\u0E07\u0E40\u0E17\u0E49\u0E32\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E15\u0E48\u0E07\u0E01\u0E32\u0E22\u0E41\u0E1A\u0E1A Smart Casual \u0E17\u0E35\u0E48 EXZY" loading="lazy" />
@@ -1662,7 +1634,7 @@
     <h2>\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Timesheet</h2>
     <p>\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Timesheet \u0E02\u0E2D\u0E07 EXZY \u0E21\u0E35\u0E23\u0E39\u0E1B\u0E41\u0E1A\u0E1A\u0E14\u0E31\u0E07\u0E19\u0E35\u0E49 \u2014 \u0E43\u0E0A\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E49\u0E32\u0E07\u0E2D\u0E34\u0E07\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E01\u0E23\u0E2D\u0E01\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25</p>
     <figure class="ts-figure">
-      <img src="timesheet-sample.png" alt="\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Intern Timesheet \u0E02\u0E2D\u0E07 EXZY" />
+      <img src="timesheet-sample.png" alt="\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23 Intern Timesheet \u0E02\u0E2D\u0E07 EXZY" loading="lazy" />
       <figcaption>\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07 Intern Timesheet \xB7 \u0E2A\u0E48\u0E07\u0E43\u0E2B\u0E49 HR \u0E17\u0E38\u0E01\u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19\u0E02\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</figcaption>
     </figure>
 
@@ -1713,17 +1685,17 @@
       body: `
     <!-- Filter Tabs -->
     <div class="faq-filter" id="faq-filter">
-      <button class="faq-filter-btn is-active" data-faq-cat="all">
+      <button type="button" class="faq-filter-btn is-active" data-faq-cat="all">
         <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
         \u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14
       </button>
-      <button class="faq-filter-btn" data-faq-cat="work">
+      <button type="button" class="faq-filter-btn" data-faq-cat="work">
         ${I.doc} \u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19
       </button>
-      <button class="faq-filter-btn" data-faq-cat="leave">
+      <button type="button" class="faq-filter-btn" data-faq-cat="leave">
         ${I.help} \u0E01\u0E32\u0E23\u0E25\u0E32
       </button>
-      <button class="faq-filter-btn" data-faq-cat="life">
+      <button type="button" class="faq-filter-btn" data-faq-cat="life">
         ${I.people} \u0E0A\u0E35\u0E27\u0E34\u0E15\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28
       </button>
     </div>
@@ -2070,8 +2042,8 @@
           }
         });
       }
-      wirePassToggle("v2-staff-pass-toggle", "v2-staff-pass-display", "maetyzxe");
-      wirePassToggle("v2-guest-pass-toggle", "v2-guest-pass-display", "imaguest");
+      wirePassToggle("v2-staff-pass-toggle", "v2-staff-pass-display", "");
+      wirePassToggle("v2-guest-pass-toggle", "v2-guest-pass-display", "");
     })();
     document.querySelectorAll(".wf2-connect-btn").forEach(function(btn) {
       btn.addEventListener("click", function() {

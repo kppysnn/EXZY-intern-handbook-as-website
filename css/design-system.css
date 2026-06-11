@@ -15,6 +15,7 @@
   --ci-body: #505050;
   --ci-error: #F3554F;
   --ci-teal: #66C5C5;
+  --ci-teal-text: #1a7a7a; /* darkened for WCAG AA (4.82:1 on #F8F9FA); use for text only */
   --ci-warning: #FFCC00;
   --ci-bg: #F8F9FA;
   --ci-ink: #001122;
@@ -22,6 +23,7 @@
 
   /* Legacy aliases retained while page CSS is being simplified. */
   --cyan: var(--ci-teal);
+  --cyan-text: var(--ci-teal-text);
   --navy: var(--ci-navy);
   --ink: var(--ci-navy);
   --muted: var(--ci-muted);
