@@ -74,7 +74,7 @@ export function renderFirstDay(data = {}) {
 <section class="ex-day-road" aria-labelledby="ex-day-road-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
     <h2 id="ex-day-road-title">สิ่งที่จะได้เจอช่วงแรก</h2>
-    <p>ไม่จำเป็นต้องเกิดขึ้นตามลำดับ แต่นี่คือสิ่งที่ intern มักได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
+    <p>นี่คือสิ่งที่ intern จะได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
   </div>
 
   <div class="ex-day-items-grid">
@@ -103,7 +103,7 @@ export function renderFirstDay(data = {}) {
     <article class="ex-day-item fdb-reveal fdb-delay1">
       <span class="ex-day-item-num">03</span>
       <h3>Mentor &amp; Team</h3>
-      <p>พูดคุยกับพี่เลี้ยงที่จะดูแลตลอดการฝึกงาน ทำความรู้จักกับสมาชิกในทีม และพูดคุยถึงความคาดหวังร่วมกัน</p>
+      <p>พูดคุยกับพี่เลี้ยงที่จะดูแลตลอดการฝึกงาน ทำความรู้จักกับสมาชิกในทีม และพูดคุยถึงความต้องการและความคาดหวังของการฝึกงาน</p>
       <div class="ex-road-mini">
         <span><span aria-hidden="true">🧭</span><b>Mentor</b></span>
         <span><span aria-hidden="true">🤝</span><b>Team</b></span>
@@ -114,7 +114,7 @@ export function renderFirstDay(data = {}) {
     <article class="ex-day-item fdb-reveal fdb-delay2">
       <span class="ex-day-item-num">04</span>
       <h3>Timesheet</h3>
-      <p>เริ่มกรอกเวลาเข้าออกตามจริงในไฟล์ที่ HR ส่งให้ เพื่อใช้ส่งเอกสารทุกสิ้นเดือน</p>
+      <p>เริ่มกรอกเวลาเข้าออกตามจริงในไฟล์ที่ HR ส่งให้ และส่งเอกสารทุกสิ้นเดือน (วันที่ 30-31)</p>
       <div class="ex-road-mini">
         <a href="#/tasks/timesheet" data-link><span aria-hidden="true">📋</span><b>ดูคู่มือ →</b></a>
       </div>
