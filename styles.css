@@ -11733,6 +11733,8 @@ html::-webkit-scrollbar { display: none !important; }
 .ex-day-item .ex-road-mini > a {
   border: 1px solid rgba(0,40,130,.12);
   background: rgba(0,40,130,.04);
+  width: 50px;
+  height: 66px;
 }
 @media (max-width: 900px){
 
