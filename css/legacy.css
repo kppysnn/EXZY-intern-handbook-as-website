@@ -35704,7 +35704,7 @@ html::-webkit-scrollbar { display: none !important; }
 .ex-must-card::after { display: none !important; }
 .ex-must-photo {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 2/1;
   flex-shrink: 0;
   overflow: hidden;
   line-height: 0;

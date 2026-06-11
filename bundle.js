@@ -422,7 +422,7 @@
 
     <div class="ex-must-grid">
       <article class="ex-must-card fdb-reveal">
-        <div class="ex-must-photo"><img src="./static/card-timesheet-photo.png" alt="" loading="eager" style="object-position:center 65%" /></div>
+        <div class="ex-must-photo"><img src="./static/card-timesheet-photo.png" alt="" loading="eager" style="object-position:center 60%" /></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">01 \xB7 Timesheet</span>
@@ -1137,15 +1137,7 @@
 
       <div class="mr-v2-main anim-up" data-delay="80">
         <div class="mr-v2-vis">
-          <!-- [REPLACE: \u0E43\u0E2A\u0E48\u0E23\u0E39\u0E1B\u0E2B\u0E49\u0E2D\u0E07 Xcellent \u0E0A\u0E31\u0E49\u0E19 1 \u0E17\u0E35\u0E48\u0E19\u0E35\u0E48 \xB7 \u0E41\u0E19\u0E30\u0E19\u0E33 16:9 landscape \xB7 960\xD7540px \u0E02\u0E36\u0E49\u0E19\u0E44\u0E1B] -->
-          <div class="mr-room-img-placeholder" aria-label="\u0E20\u0E32\u0E1E\u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21 Xcellent">
-            <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4">
-              <rect x="4" y="8" width="40" height="32" rx="4"/>
-              <circle cx="18" cy="20" r="5"/>
-              <path d="M4 36l10-10 6 6 8-10 16 14"/>
-            </svg>
-            <span>Meeting Room Photo</span>
-          </div>
+          <img class="mr-room-photo" src="./static/meeting-room-xcellent.jpg" alt="\u0E20\u0E32\u0E22\u0E43\u0E19\u0E2B\u0E49\u0E2D\u0E07\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21 Xcellent \u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E42\u0E15\u0E4A\u0E30\u0E1B\u0E23\u0E30\u0E0A\u0E38\u0E21\u0E41\u0E25\u0E30\u0E08\u0E2D" loading="lazy" style="object-position: center 70%;" />
           <div class="mr-v2-vis-cap">${I.people}&ensp;6\u20138 \u0E17\u0E48\u0E32\u0E19</div>
         </div>
         <div class="mr-v2-info">
@@ -1223,7 +1215,14 @@
 
         <div class="mr-v2-card anim-up" data-delay="300">
           <div class="mr-v2-card-vis">
-            <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtra.jpg" alt="\u0E21\u0E38\u0E21\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E49\u0E2D\u0E07 Xtra Room \u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E1B\u0E49\u0E32\u0E22\u0E2B\u0E49\u0E2D\u0E07\u0E41\u0E25\u0E30\u0E08\u0E2D\u0E08\u0E2D\u0E07\u0E2B\u0E49\u0E2D\u0E07" loading="lazy" />
+            <div class="mr-room-gallery" aria-label="\u0E23\u0E39\u0E1B\u0E2B\u0E49\u0E2D\u0E07 Xtra Room">
+              <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtra.jpg" alt="\u0E21\u0E38\u0E21\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E49\u0E2D\u0E07 Xtra Room \u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E1B\u0E49\u0E32\u0E22\u0E2B\u0E49\u0E2D\u0E07\u0E41\u0E25\u0E30\u0E08\u0E2D\u0E08\u0E2D\u0E07\u0E2B\u0E49\u0E2D\u0E07" loading="lazy" />
+              <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtra-inside.jpg" alt="\u0E20\u0E32\u0E22\u0E43\u0E19\u0E2B\u0E49\u0E2D\u0E07 Xtra Room" loading="lazy" />
+            </div>
+            <div class="mr-room-gallery-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
           </div>
           <div class="mr-v2-card-body">
             <div class="mr-v2-card-head">
