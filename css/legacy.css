@@ -35846,6 +35846,14 @@ html::-webkit-scrollbar { display: none !important; }
 .ex-day-item .ex-road-mini:has(> a:only-child) {
   justify-content: flex-start;
 }
+.ex-day-item .ex-road-mini > a:only-child {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  padding: 10px 14px;
+  gap: 6px;
+  font-size: 13px;
+}
 .ex-day-item .ex-road-mini > span,
 .ex-day-item .ex-road-mini > a {
   display: flex;
