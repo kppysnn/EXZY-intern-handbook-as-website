@@ -35795,7 +35795,8 @@ html::-webkit-scrollbar { display: none !important; }
    ========================================================= */
 .ex-day-items-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 210px);
+  justify-content: center;
   gap: 16px;
   max-width: 1160px;
   margin: 40px auto 0;
@@ -35804,7 +35805,7 @@ html::-webkit-scrollbar { display: none !important; }
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 26px;
+  padding: 24px 20px;
   background: rgba(248,249,250,.92);
   border: 1px solid rgba(0,64,129,.10);
   border-radius: 18px;
@@ -35848,8 +35849,8 @@ html::-webkit-scrollbar { display: none !important; }
   justify-content: center;
   gap: 4px;
   flex: 0 0 auto;
-  width: 50px;
-  height: 66px;
+  width: 46px;
+  height: 62px;
   padding: 8px 6px 7px;
   border-radius: 10px;
   font-size: 17px;
@@ -35859,8 +35860,8 @@ html::-webkit-scrollbar { display: none !important; }
   background: rgba(0,40,130,.04);
 }
 @media (max-width: 900px) {
-  .ex-day-items-grid { grid-template-columns: repeat(2, 1fr); }
+  .ex-day-items-grid { grid-template-columns: repeat(2, 210px); }
 }
 @media (max-width: 520px) {
-  .ex-day-items-grid { grid-template-columns: 1fr; }
+  .ex-day-items-grid { grid-template-columns: 210px; }
 }
