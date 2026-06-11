@@ -37,15 +37,7 @@ export const renderMeetingRooms = () => pageWrap({
 
       <div class="mr-v2-main anim-up" data-delay="80">
         <div class="mr-v2-vis">
-          <!-- [REPLACE: ใส่รูปห้อง Xcellent ชั้น 1 ที่นี่ · แนะนำ 16:9 landscape · 960×540px ขึ้นไป] -->
-          <div class="mr-room-img-placeholder" aria-label="ภาพห้องประชุม Xcellent">
-            <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4">
-              <rect x="4" y="8" width="40" height="32" rx="4"/>
-              <circle cx="18" cy="20" r="5"/>
-              <path d="M4 36l10-10 6 6 8-10 16 14"/>
-            </svg>
-            <span>Meeting Room Photo</span>
-          </div>
+          <img class="mr-room-photo" src="./static/meeting-room-xcellent.jpg" alt="ภายในห้องประชุม Xcellent พร้อมโต๊ะประชุมและจอ" loading="lazy" style="object-position: center 70%;" />
           <div class="mr-v2-vis-cap">${I.people}&ensp;6–8 ท่าน</div>
         </div>
         <div class="mr-v2-info">
@@ -123,7 +115,14 @@ export const renderMeetingRooms = () => pageWrap({
 
         <div class="mr-v2-card anim-up" data-delay="300">
           <div class="mr-v2-card-vis">
-            <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtra.jpg" alt="มุมหน้าห้อง Xtra Room พร้อมป้ายห้องและจอจองห้อง" loading="lazy" />
+            <div class="mr-room-gallery" aria-label="รูปห้อง Xtra Room">
+              <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtra.jpg" alt="มุมหน้าห้อง Xtra Room พร้อมป้ายห้องและจอจองห้อง" loading="lazy" />
+              <img class="mr-room-photo mr-room-photo-sm" src="./static/meeting-room-xtra-inside.jpg" alt="ภายในห้อง Xtra Room" loading="lazy" />
+            </div>
+            <div class="mr-room-gallery-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
           </div>
           <div class="mr-v2-card-body">
             <div class="mr-v2-card-head">

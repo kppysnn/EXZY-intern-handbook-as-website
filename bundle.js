@@ -439,7 +439,7 @@
       </article>
 
       <article class="ex-must-card fdb-reveal fdb-delay1">
-        <div class="ex-must-photo"><img src="./static/card-project-photo.png" alt="" loading="eager" style="object-position:center 35%" /></div>
+        <div class="ex-must-photo"><img src="./static/card-project-photo.png" alt="" loading="eager" style="object-position:center 45%" /></div>
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">02 \xB7 HR Project</span>
