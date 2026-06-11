@@ -1,6 +1,4 @@
 const ADMIN_STORE_KEY = "exzy_admin_data_v1";
-const ADMIN_SESSION_KEY = "exzy_admin_session";
-export const ADMIN_PASSWORD = "hr@exzy";
 
 export const DEFAULT_ADMIN_DATA = {
   wifi_staff_ssid: "ExzyUniFi",
@@ -29,31 +27,6 @@ export function loadAdminData() {
   } catch (e) {
     return { ...DEFAULT_ADMIN_DATA };
   }
-}
-
-export function saveAdminData(data) {
-  try {
-    localStorage.setItem(ADMIN_STORE_KEY, JSON.stringify(data));
-    return true;
-  } catch (e) {
-    console.error("save failed", e);
-    return false;
-  }
-}
-
-export function isAdmin() {
-  try {
-    return sessionStorage.getItem(ADMIN_SESSION_KEY) === "1";
-  } catch (e) {
-    return false;
-  }
-}
-
-export function setAdmin(state) {
-  try {
-    if (state) sessionStorage.setItem(ADMIN_SESSION_KEY, "1");
-    else sessionStorage.removeItem(ADMIN_SESSION_KEY);
-  } catch (e) {}
 }
 
 export function showToast(msg) {

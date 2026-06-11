@@ -4,10 +4,7 @@
    ============================================================ */
 
 import { I } from './js/icons.js';
-import {
-  loadAdminData, saveAdminData, isAdmin, setAdmin,
-  showToast, ADMIN_PASSWORD,
-} from './js/auth.js';
+import { loadAdminData, showToast } from './js/auth.js';
 import { showcasePage } from './js/showcase.js';
 import { renderHome } from './js/pages/home.js';
 import { renderFirstDay } from './js/pages/first-day.js';
@@ -535,183 +532,6 @@ function initNav() {
   onScroll();
 }
 
-// ===== Admin Mode UI =====
-function initAdminMode() {
-  const adminBar = document.getElementById("admin-bar");
-  const loginModal = document.getElementById("admin-login");
-  const modal = document.getElementById("admin-modal");
-  const modalBody = document.getElementById("admin-modal-body");
-  const pwInput = document.getElementById("admin-pw");
-  const pwErr = document.getElementById("admin-pw-err");
-  const loginSubmit = document.getElementById("admin-login-submit");
-  const openBtn = document.getElementById("admin-open");
-  const exitBtn = document.getElementById("admin-exit");
-  const saveBtn = document.getElementById("admin-save");
-
-  if (isAdmin()) {
-    adminBar.hidden = false;
-  }
-
-  document.addEventListener("keydown", e => {
-    if (e.ctrlKey && e.altKey && e.shiftKey && (e.key === "H" || e.key === "h")) {
-      e.preventDefault();
-      if (isAdmin()) openAdminModal();
-      else showAdminLogin();
-    }
-  });
-
-  const logo = document.querySelector(".nav-logo");
-  let clicks = 0, clickTimer = null;
-  if (logo) {
-    logo.addEventListener("click", e => {
-      clicks++;
-      if (clickTimer) clearTimeout(clickTimer);
-      if (clicks >= 8) {
-        e.preventDefault();
-        clicks = 0;
-        if (isAdmin()) openAdminModal();
-        else showAdminLogin();
-      } else {
-        clickTimer = setTimeout(() => { clicks = 0; }, 3000);
-      }
-    });
-  }
-
-  function showAdminLogin() {
-    loginModal.hidden = false;
-    pwErr.hidden = true;
-    pwInput.value = "";
-    setTimeout(() => pwInput.focus(), 50);
-  }
-
-  function hideAdminLogin() {
-    loginModal.hidden = true;
-  }
-
-  function openAdminModal() {
-    modalBody.innerHTML = buildAdminForm();
-    modal.hidden = false;
-    modalBody.querySelectorAll(".admin-tab").forEach(tab => {
-      tab.addEventListener("click", () => {
-        modalBody.querySelectorAll(".admin-tab").forEach(t => t.classList.remove("is-active"));
-        modalBody.querySelectorAll(".admin-section").forEach(s => s.style.display = "none");
-        tab.classList.add("is-active");
-        const target = modalBody.querySelector(`.admin-section[data-tab="${tab.dataset.tab}"]`);
-        if (target) target.style.display = "block";
-      });
-    });
-  }
-
-  function closeAdminModal() {
-    modal.hidden = true;
-  }
-
-  function escAttr(s) {
-    return String(s || "").replace(/"/g, "&quot;").replace(/</g, "&lt;");
-  }
-
-  function buildAdminForm() {
-    const d = loadAdminData();
-    return `
-      <div class="admin-tabs">
-        <button class="admin-tab is-active" data-tab="wifi">Wi-Fi</button>
-        <button class="admin-tab" data-tab="hr">ข้อมูล HR</button>
-      </div>
-
-      <div class="admin-section" data-tab="wifi">
-        <div class="admin-section-title">Wi-Fi สำหรับพนักงาน / Intern</div>
-        <div class="admin-field">
-          <label for="admin-wifi_staff_ssid">SSID (ชื่อเครือข่าย)</label>
-          <input id="admin-wifi_staff_ssid" class="admin-input mono" data-field="wifi_staff_ssid" value="${escAttr(d.wifi_staff_ssid)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-wifi_staff_pass">รหัสผ่าน</label>
-          <input id="admin-wifi_staff_pass" class="admin-input mono" data-field="wifi_staff_pass" value="${escAttr(d.wifi_staff_pass)}" />
-        </div>
-        <div class="admin-section-title" style="margin-top:24px;">Wi-Fi สำหรับแขก (Guest)</div>
-        <div class="admin-field">
-          <label for="admin-wifi_guest_ssid">SSID (ชื่อเครือข่าย)</label>
-          <input id="admin-wifi_guest_ssid" class="admin-input mono" data-field="wifi_guest_ssid" value="${escAttr(d.wifi_guest_ssid)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-wifi_guest_pass">รหัสผ่าน</label>
-          <input id="admin-wifi_guest_pass" class="admin-input mono" data-field="wifi_guest_pass" value="${escAttr(d.wifi_guest_pass)}" />
-        </div>
-      </div>
-
-      <div class="admin-section" data-tab="hr" style="display:none;">
-        <div class="admin-section-title">ข้อมูลติดต่อ HR</div>
-        <div class="admin-field">
-          <label for="admin-hr_name">ชื่อ HR</label>
-          <input id="admin-hr_name" class="admin-input" data-field="hr_name" value="${escAttr(d.hr_name)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-hr_email">อีเมล HR</label>
-          <input id="admin-hr_email" class="admin-input mono" data-field="hr_email" value="${escAttr(d.hr_email)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-hr_phone">เบอร์โทร HR</label>
-          <input id="admin-hr_phone" class="admin-input mono" data-field="hr_phone" value="${escAttr(d.hr_phone)}" />
-        </div>
-      </div>
-    `;
-  }
-
-  loginSubmit.addEventListener("click", tryLogin);
-  pwInput.addEventListener("keydown", e => { if (e.key === "Enter") tryLogin(); });
-  function tryLogin() {
-    const val = pwInput.value.trim();
-    if (val === ADMIN_PASSWORD) {
-      setAdmin(true);
-      adminBar.hidden = false;
-      hideAdminLogin();
-      showToast("เข้าสู่ระบบ Admin แล้ว");
-      openAdminModal();
-    } else {
-      pwErr.hidden = false;
-      pwInput.value = "";
-      pwInput.focus();
-    }
-  }
-
-  saveBtn.addEventListener("click", () => {
-    const data = loadAdminData();
-    modalBody.querySelectorAll("[data-field]").forEach(input => {
-      const k = input.getAttribute("data-field");
-      data[k] = input.value;
-    });
-    if (saveAdminData(data)) {
-      showToast("บันทึกแล้ว");
-      closeAdminModal();
-      render();
-    } else {
-      showToast("เกิดข้อผิดพลาดในการบันทึก");
-    }
-  });
-
-  openBtn.addEventListener("click", openAdminModal);
-  exitBtn.addEventListener("click", () => {
-    setAdmin(false);
-    adminBar.hidden = true;
-    showToast("ออกจาก Admin Mode แล้ว");
-  });
-
-  document.querySelectorAll("[data-close]").forEach(el => {
-    el.addEventListener("click", () => {
-      const target = el.getAttribute("data-close");
-      if (target === "login") hideAdminLogin();
-      else closeAdminModal();
-    });
-  });
-
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") {
-      if (!modal.hidden) closeAdminModal();
-      if (!loginModal.hidden) hideAdminLogin();
-    }
-  });
-}
-
 // ===== Enhancements (animations & micro-interactions) =====
 function initEnhancements() {
   if (!document.getElementById('scroll-progress')) {
@@ -1031,7 +851,6 @@ function setupScrollWaypoints() {
 function boot() {
   document.getElementById("year").textContent = new Date().getFullYear();
   initNav();
-  initAdminMode();
   render();
   setTimeout(initEnhancements, 80);
   window.addEventListener("hashchange", () => { render(); setTimeout(initEnhancements, 80); });

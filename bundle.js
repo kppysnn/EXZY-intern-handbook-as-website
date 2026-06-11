@@ -34,8 +34,6 @@
 
   // js/auth.js
   var ADMIN_STORE_KEY = "exzy_admin_data_v1";
-  var ADMIN_SESSION_KEY = "exzy_admin_session";
-  var ADMIN_PASSWORD = "hr@exzy";
   var DEFAULT_ADMIN_DATA = {
     wifi_staff_ssid: "ExzyUniFi",
     wifi_staff_pass: "maetyzxe",
@@ -60,29 +58,6 @@
       return merged;
     } catch (e) {
       return { ...DEFAULT_ADMIN_DATA };
-    }
-  }
-  function saveAdminData(data) {
-    try {
-      localStorage.setItem(ADMIN_STORE_KEY, JSON.stringify(data));
-      return true;
-    } catch (e) {
-      console.error("save failed", e);
-      return false;
-    }
-  }
-  function isAdmin() {
-    try {
-      return sessionStorage.getItem(ADMIN_SESSION_KEY) === "1";
-    } catch (e) {
-      return false;
-    }
-  }
-  function setAdmin(state) {
-    try {
-      if (state) sessionStorage.setItem(ADMIN_SESSION_KEY, "1");
-      else sessionStorage.removeItem(ADMIN_SESSION_KEY);
-    } catch (e) {
     }
   }
   function showToast(msg) {
@@ -2363,171 +2338,6 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
   }
-  function initAdminMode() {
-    const adminBar = document.getElementById("admin-bar");
-    const loginModal = document.getElementById("admin-login");
-    const modal = document.getElementById("admin-modal");
-    const modalBody = document.getElementById("admin-modal-body");
-    const pwInput = document.getElementById("admin-pw");
-    const pwErr = document.getElementById("admin-pw-err");
-    const loginSubmit = document.getElementById("admin-login-submit");
-    const openBtn = document.getElementById("admin-open");
-    const exitBtn = document.getElementById("admin-exit");
-    const saveBtn = document.getElementById("admin-save");
-    if (isAdmin()) {
-      adminBar.hidden = false;
-    }
-    document.addEventListener("keydown", (e) => {
-      if (e.ctrlKey && e.altKey && e.shiftKey && (e.key === "H" || e.key === "h")) {
-        e.preventDefault();
-        if (isAdmin()) openAdminModal();
-        else showAdminLogin();
-      }
-    });
-    const logo = document.querySelector(".nav-logo");
-    let clicks = 0, clickTimer = null;
-    if (logo) {
-      logo.addEventListener("click", (e) => {
-        clicks++;
-        if (clickTimer) clearTimeout(clickTimer);
-        if (clicks >= 8) {
-          e.preventDefault();
-          clicks = 0;
-          if (isAdmin()) openAdminModal();
-          else showAdminLogin();
-        } else {
-          clickTimer = setTimeout(() => {
-            clicks = 0;
-          }, 3e3);
-        }
-      });
-    }
-    function showAdminLogin() {
-      loginModal.hidden = false;
-      pwErr.hidden = true;
-      pwInput.value = "";
-      setTimeout(() => pwInput.focus(), 50);
-    }
-    function hideAdminLogin() {
-      loginModal.hidden = true;
-    }
-    function openAdminModal() {
-      modalBody.innerHTML = buildAdminForm();
-      modal.hidden = false;
-      modalBody.querySelectorAll(".admin-tab").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          modalBody.querySelectorAll(".admin-tab").forEach((t) => t.classList.remove("is-active"));
-          modalBody.querySelectorAll(".admin-section").forEach((s) => s.style.display = "none");
-          tab.classList.add("is-active");
-          const target = modalBody.querySelector(`.admin-section[data-tab="${tab.dataset.tab}"]`);
-          if (target) target.style.display = "block";
-        });
-      });
-    }
-    function closeAdminModal() {
-      modal.hidden = true;
-    }
-    function escAttr(s) {
-      return String(s || "").replace(/"/g, "&quot;").replace(/</g, "&lt;");
-    }
-    function buildAdminForm() {
-      const d = loadAdminData();
-      return `
-      <div class="admin-tabs">
-        <button class="admin-tab is-active" data-tab="wifi">Wi-Fi</button>
-        <button class="admin-tab" data-tab="hr">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25 HR</button>
-      </div>
-
-      <div class="admin-section" data-tab="wifi">
-        <div class="admin-section-title">Wi-Fi \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern</div>
-        <div class="admin-field">
-          <label for="admin-wifi_staff_ssid">SSID (\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22)</label>
-          <input id="admin-wifi_staff_ssid" class="admin-input mono" data-field="wifi_staff_ssid" value="${escAttr(d.wifi_staff_ssid)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-wifi_staff_pass">\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</label>
-          <input id="admin-wifi_staff_pass" class="admin-input mono" data-field="wifi_staff_pass" value="${escAttr(d.wifi_staff_pass)}" />
-        </div>
-        <div class="admin-section-title" style="margin-top:24px;">Wi-Fi \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E02\u0E01 (Guest)</div>
-        <div class="admin-field">
-          <label for="admin-wifi_guest_ssid">SSID (\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22)</label>
-          <input id="admin-wifi_guest_ssid" class="admin-input mono" data-field="wifi_guest_ssid" value="${escAttr(d.wifi_guest_ssid)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-wifi_guest_pass">\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</label>
-          <input id="admin-wifi_guest_pass" class="admin-input mono" data-field="wifi_guest_pass" value="${escAttr(d.wifi_guest_pass)}" />
-        </div>
-      </div>
-
-      <div class="admin-section" data-tab="hr" style="display:none;">
-        <div class="admin-section-title">\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR</div>
-        <div class="admin-field">
-          <label for="admin-hr_name">\u0E0A\u0E37\u0E48\u0E2D HR</label>
-          <input id="admin-hr_name" class="admin-input" data-field="hr_name" value="${escAttr(d.hr_name)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-hr_email">\u0E2D\u0E35\u0E40\u0E21\u0E25 HR</label>
-          <input id="admin-hr_email" class="admin-input mono" data-field="hr_email" value="${escAttr(d.hr_email)}" />
-        </div>
-        <div class="admin-field">
-          <label for="admin-hr_phone">\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E42\u0E17\u0E23 HR</label>
-          <input id="admin-hr_phone" class="admin-input mono" data-field="hr_phone" value="${escAttr(d.hr_phone)}" />
-        </div>
-      </div>
-    `;
-    }
-    loginSubmit.addEventListener("click", tryLogin);
-    pwInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") tryLogin();
-    });
-    function tryLogin() {
-      const val = pwInput.value.trim();
-      if (val === ADMIN_PASSWORD) {
-        setAdmin(true);
-        adminBar.hidden = false;
-        hideAdminLogin();
-        showToast("\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A Admin \u0E41\u0E25\u0E49\u0E27");
-        openAdminModal();
-      } else {
-        pwErr.hidden = false;
-        pwInput.value = "";
-        pwInput.focus();
-      }
-    }
-    saveBtn.addEventListener("click", () => {
-      const data = loadAdminData();
-      modalBody.querySelectorAll("[data-field]").forEach((input) => {
-        const k = input.getAttribute("data-field");
-        data[k] = input.value;
-      });
-      if (saveAdminData(data)) {
-        showToast("\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E41\u0E25\u0E49\u0E27");
-        closeAdminModal();
-        render();
-      } else {
-        showToast("\u0E40\u0E01\u0E34\u0E14\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E43\u0E19\u0E01\u0E32\u0E23\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01");
-      }
-    });
-    openBtn.addEventListener("click", openAdminModal);
-    exitBtn.addEventListener("click", () => {
-      setAdmin(false);
-      adminBar.hidden = true;
-      showToast("\u0E2D\u0E2D\u0E01\u0E08\u0E32\u0E01 Admin Mode \u0E41\u0E25\u0E49\u0E27");
-    });
-    document.querySelectorAll("[data-close]").forEach((el) => {
-      el.addEventListener("click", () => {
-        const target = el.getAttribute("data-close");
-        if (target === "login") hideAdminLogin();
-        else closeAdminModal();
-      });
-    });
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        if (!modal.hidden) closeAdminModal();
-        if (!loginModal.hidden) hideAdminLogin();
-      }
-    });
-  }
   function initEnhancements() {
     if (!document.getElementById("scroll-progress")) {
       const bar = document.createElement("div");
@@ -2844,7 +2654,6 @@
   function boot() {
     document.getElementById("year").textContent = (/* @__PURE__ */ new Date()).getFullYear();
     initNav();
-    initAdminMode();
     render();
     setTimeout(initEnhancements, 80);
     window.addEventListener("hashchange", () => {

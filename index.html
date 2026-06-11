@@ -116,61 +116,10 @@
       </button>
     </div>
 
-    <!-- Hidden admin trigger: Ctrl+Shift+A or 5 clicks on logo -->
-    <div id="admin-bar" class="admin-bar" hidden>
-      <span class="admin-dot"></span>
-      <span class="admin-label">Admin Mode</span>
-      <button class="admin-btn" id="admin-open">แก้ไขข้อมูล</button>
-      <button class="admin-btn admin-btn-ghost" id="admin-exit">ออก</button>
-    </div>
   </header>
 
   <!-- ===== APP ROOT ===== -->
   <main id="app"></main>
-
-  <!-- ===== ADMIN MODAL ===== -->
-  <div class="admin-modal" id="admin-modal" hidden>
-    <div class="admin-modal-bd" data-close></div>
-    <div class="admin-modal-card">
-      <div class="admin-modal-head">
-        <div>
-          <div class="admin-eyebrow">EXZY · HR Admin</div>
-          <h3>แก้ไขข้อมูลในเว็บไซต์</h3>
-        </div>
-        <button class="admin-x" data-close aria-label="Close">✕</button>
-      </div>
-
-      <div class="admin-modal-body" id="admin-modal-body"></div>
-
-      <div class="admin-modal-foot">
-        <button class="btn btn-ghost" data-close>ยกเลิก</button>
-        <button class="btn btn-primary" id="admin-save">บันทึก</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== ADMIN LOGIN ===== -->
-  <div class="admin-modal" id="admin-login" hidden>
-    <div class="admin-modal-bd" data-close="login"></div>
-    <div class="admin-modal-card admin-modal-card-sm">
-      <div class="admin-modal-head">
-        <div>
-          <div class="admin-eyebrow">Admin Access</div>
-          <h3>กรุณาใส่รหัสผ่าน</h3>
-        </div>
-        <button class="admin-x" data-close="login" aria-label="Close">✕</button>
-      </div>
-      <div class="admin-modal-body">
-        <p style="margin:0 0 16px; color: var(--muted); font-size: 14px;">รหัสผ่านนี้สำหรับทีม HR เพื่อแก้ไขข้อมูลในเว็บไซต์</p>
-        <input type="password" id="admin-pw" class="admin-input" placeholder="••••••••" autocomplete="off" />
-        <p id="admin-pw-err" class="admin-err" hidden>รหัสผ่านไม่ถูกต้อง</p>
-      </div>
-      <div class="admin-modal-foot">
-        <button class="btn btn-ghost" data-close="login">ยกเลิก</button>
-        <button class="btn btn-primary" id="admin-login-submit">เข้าสู่ระบบ</button>
-      </div>
-    </div>
-  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
