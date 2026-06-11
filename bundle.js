@@ -220,17 +220,6 @@
       coverPosition: "center 20%"
     },
     {
-      category: "experiences",
-      kind: "link",
-      platform: "Facebook",
-      track: "Design",
-      title: "\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 Designer",
-      summary: "Boat N'hap \u0E40\u0E25\u0E48\u0E32\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48 workflow \u0E08\u0E23\u0E34\u0E07\u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E17\u0E31\u0E01\u0E29\u0E30\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E02\u0E36\u0E49\u0E19\u0E43\u0E19\u0E0A\u0E48\u0E27\u0E07 2 \u0E40\u0E14\u0E37\u0E2D\u0E19",
-      preview: "\u0E2A\u0E23\u0E38\u0E1B\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E01\u0E32\u0E23\u0E13\u0E4C\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E17\u0E35\u0E48 EXZY \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E40\u0E15\u0E34\u0E1A\u0E42\u0E15\u0E02\u0E36\u0E49\u0E19",
-      url: "https://www.facebook.com/share/p/RGb9rUnZ1rN5RzsC/",
-      canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/"
-    },
-    {
       category: "blog",
       kind: "link",
       platform: "Medium",
@@ -330,12 +319,7 @@
         <div class="slc-photo">
           <img class="slc-photo-img" src="${coverSrc}" alt="" loading="eager"${coverPosition} onerror="this.style.display='none'" />
           ${cornerIcon}
-          <div class="slc-photo-overlay slc-overlay-${platformSlug}">
-            <p class="slc-headline">${escapeHtml(item.title)}</p>
-          </div>
-        </div>
-        <div class="slc-preview-strip">
-          <p>${escapeHtml(item.preview || item.summary || "\u0E40\u0E1B\u0E34\u0E14\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2D\u0E48\u0E32\u0E19/\u0E23\u0E31\u0E1A\u0E0A\u0E21\u0E41\u0E1A\u0E1A\u0E40\u0E15\u0E47\u0E21")}</p>
+          <div class="slc-photo-overlay slc-overlay-${platformSlug}"></div>
         </div>
       </div>
     `;
@@ -344,12 +328,7 @@
     <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
       <div class="slc-photo slc-photo-empty ${headerClass}">
         ${cornerIcon}
-        <div class="slc-photo-overlay slc-overlay-${platformSlug}">
-          <p class="slc-headline">${escapeHtml(item.title)}</p>
-        </div>
-      </div>
-      <div class="slc-preview-strip">
-        <p>${escapeHtml(item.preview || item.summary || "\u0E40\u0E1B\u0E34\u0E14\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2D\u0E48\u0E32\u0E19/\u0E23\u0E31\u0E1A\u0E0A\u0E21\u0E41\u0E1A\u0E1A\u0E40\u0E15\u0E47\u0E21")}</p>
+        <div class="slc-photo-overlay slc-overlay-${platformSlug}"></div>
       </div>
     </div>
   `;

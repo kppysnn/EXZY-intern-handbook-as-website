@@ -29,17 +29,6 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     coverPosition: "center 20%",
   },
   {
-    category: "experiences",
-    kind: "link",
-    platform: "Facebook",
-    track: "Design",
-    title: "ประสบการณ์ฝึกงานสาย Designer",
-    summary: "Boat N'hap เล่าประสบการณ์ฝึกงานสายออกแบบ ตั้งแต่ workflow จริงไปจนถึงทักษะที่เติบโตขึ้นในช่วง 2 เดือน",
-    preview: "สรุปประสบการณ์ฝึกงานสายออกแบบที่ EXZY และสิ่งที่เติบโตขึ้น",
-    url: "https://www.facebook.com/share/p/RGb9rUnZ1rN5RzsC/",
-    canonicalUrl: "https://www.facebook.com/zirsabananaboat/posts/7588386527946459/",
-  },
-  {
     category: "blog",
     kind: "link",
     platform: "Medium",
@@ -171,12 +160,7 @@ function renderShowcaseMedia(item) {
         <div class="slc-photo">
           <img class="slc-photo-img" src="${coverSrc}" alt="" loading="eager"${coverPosition} onerror="this.style.display='none'" />
           ${cornerIcon}
-          <div class="slc-photo-overlay slc-overlay-${platformSlug}">
-            <p class="slc-headline">${escapeHtml(item.title)}</p>
-          </div>
-        </div>
-        <div class="slc-preview-strip">
-          <p>${escapeHtml(item.preview || item.summary || "เปิดลิงก์เพื่ออ่าน/รับชมแบบเต็ม")}</p>
+          <div class="slc-photo-overlay slc-overlay-${platformSlug}"></div>
         </div>
       </div>
     `;
@@ -186,12 +170,7 @@ function renderShowcaseMedia(item) {
     <div class="show-real-media show-real-media-link show-real-media-${platformSlug}">
       <div class="slc-photo slc-photo-empty ${headerClass}">
         ${cornerIcon}
-        <div class="slc-photo-overlay slc-overlay-${platformSlug}">
-          <p class="slc-headline">${escapeHtml(item.title)}</p>
-        </div>
-      </div>
-      <div class="slc-preview-strip">
-        <p>${escapeHtml(item.preview || item.summary || "เปิดลิงก์เพื่ออ่าน/รับชมแบบเต็ม")}</p>
+        <div class="slc-photo-overlay slc-overlay-${platformSlug}"></div>
       </div>
     </div>
   `;
