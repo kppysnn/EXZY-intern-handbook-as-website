@@ -32839,7 +32839,7 @@ span[style*="particleFloat"] { display: none !important; }
   letter-spacing: -.022em !important;
   line-height: .92 !important;
   margin-bottom: 0 !important;
-  text-wrap: balance;
+  white-space: nowrap;
 }
 
 /* "วันแรกของการฝึกงาน" — supporting context, no box, pure type */
