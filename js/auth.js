@@ -10,6 +10,8 @@ export const DEFAULT_ADMIN_DATA = {
   hr_email: "hr@exzyteam.com",
   hr_name: "Ninan A. (นินัน)",
   hr_phone: "0926244471",
+  orientation_slides_url: "./static/Mini-Internship-Orientation.pdf",
+  orientation_pdf_url: "./static/Mini-Internship-Orientation.pdf",
 };
 
 export function loadAdminData() {

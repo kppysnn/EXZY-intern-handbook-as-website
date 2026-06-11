@@ -19,7 +19,7 @@ const routes = [
   "getting-started/wifi",
   "getting-started/meeting-rooms",
   "employee/org-chart",
-  "employee/directory",
+  
   "policy/code-of-conduct",
   "policy/internship",
   "policy/dress-code",
