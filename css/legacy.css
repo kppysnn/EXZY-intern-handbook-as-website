@@ -35797,17 +35797,18 @@ html::-webkit-scrollbar { display: none !important; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-top: 40px;
+  max-width: 1160px;
+  margin: 40px auto 0;
 }
 .ex-day-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 24px 20px 20px;
-  background: #fff;
-  border: 1px solid rgba(0,40,130,.08);
+  padding: 26px;
+  background: rgba(248,249,250,.92);
+  border: 1px solid rgba(0,64,129,.10);
   border-radius: 18px;
-  box-shadow: 0 4px 16px rgba(0,24,80,.06);
+  box-shadow: 0 16px 42px rgba(0,64,129,.08);
 }
 .ex-day-item-num {
   display: inline-flex;
