@@ -28,3 +28,8 @@ node_modules/
 .claude/
 .github/skills/
 .impeccable/
+
+# Large video files — hosted on YouTube, not committed to repo
+static/*.mp4
+static/*.MOV
+static/*.mov

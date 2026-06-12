@@ -506,6 +506,44 @@
   </div>
 </section>
 
+<section class="ex-home-voices" aria-labelledby="ex-home-voices-title">
+  <div class="ex-home-voices-inner">
+    <div class="ex-home-section-intro fdb-reveal">
+      <span class="ex-must-eyebrow">Intern Voices</span>
+      <h2 id="ex-home-voices-title">\u0E25\u0E2D\u0E07\u0E14\u0E39\u0E0A\u0E35\u0E27\u0E34\u0E15 intern \u0E17\u0E35\u0E48 EXZY \u0E08\u0E32\u0E01\u0E04\u0E25\u0E34\u0E1B\u0E08\u0E23\u0E34\u0E07</h2>
+      <p>\u0E04\u0E25\u0E34\u0E1B\u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19 \u0E43\u0E0A\u0E49\u0E14\u0E39\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19 \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E41\u0E25\u0E30\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E23\u0E30\u0E2B\u0E27\u0E48\u0E32\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E27\u0E31\u0E19\u0E08\u0E23\u0E34\u0E07</p>
+    </div>
+
+    <div class="ex-voice-grid">
+      <article class="ex-voice-card fdb-reveal">
+        <div class="ex-voice-video">
+          <div class="yt-placeholder" style="background-image:url('./static/intern-voice-01-poster.jpg')">
+            <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>\u0E01\u0E33\u0E25\u0E31\u0E07\u0E08\u0E30\u0E21\u0E32\u0E40\u0E23\u0E47\u0E27 \u0E46 \u0E19\u0E35\u0E49</span></div>
+          </div>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">\u0E04\u0E25\u0E34\u0E1B\u0E08\u0E32\u0E01 intern</span>
+          <h3>\u0E40\u0E2B\u0E47\u0E19\u0E20\u0E32\u0E1E\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E23\u0E34\u0E07</h3>
+          <p>\u0E40\u0E1B\u0E34\u0E14\u0E14\u0E39\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E44\u0E27\u0E49\u0E01\u0E48\u0E2D\u0E19 \u0E08\u0E30\u0E44\u0E14\u0E49\u0E1E\u0E2D\u0E19\u0E36\u0E01\u0E2D\u0E2D\u0E01\u0E27\u0E48\u0E32\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01\u0E41\u0E25\u0E30\u0E0A\u0E48\u0E27\u0E07\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E08\u0E30\u0E1B\u0E23\u0E30\u0E21\u0E32\u0E13\u0E44\u0E2B\u0E19</p>
+        </div>
+      </article>
+
+      <article class="ex-voice-card fdb-reveal fdb-delay1">
+        <div class="ex-voice-video">
+          <div class="yt-placeholder" style="background-image:url('./static/intern-voice-02-poster.jpg')">
+            <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>\u0E01\u0E33\u0E25\u0E31\u0E07\u0E08\u0E30\u0E21\u0E32\u0E40\u0E23\u0E47\u0E27 \u0E46 \u0E19\u0E35\u0E49</span></div>
+          </div>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">Intern life</span>
+          <h3>\u0E2D\u0E35\u0E01\u0E21\u0E38\u0E21\u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19</h3>
+          <p>\u0E04\u0E25\u0E34\u0E1B\u0E2A\u0E31\u0E49\u0E19 \u0E46 \u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E08\u0E31\u0E07\u0E2B\u0E27\u0E30\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E43\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32\u0E01\u0E32\u0E23\u0E2D\u0E48\u0E32\u0E19\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
@@ -709,6 +747,54 @@
           <div class="ex-flow-step"><span aria-hidden="true">\u{1F5A8}\uFE0F</span><b>\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E2A\u0E48\u0E07 HR \u0E2A\u0E34\u0E49\u0E19\u0E40\u0E14\u0E37\u0E2D\u0E19 <br>(\u0E27\u0E31\u0E19\u0E17\u0E35\u0E48 30-31)</b></div>
         </div>
         <a href="#/tasks/timesheet" class="ex-task-btn" data-link>\u0E14\u0E39\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D Timesheet \u2192</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
+  <div class="ex-section-head ex-section-head-center fdb-reveal">
+    <h2 id="ex-day-videos-title">\u0E01\u0E48\u0E2D\u0E19\u0E21\u0E32\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01 \u0E25\u0E2D\u0E07\u0E14\u0E39\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E08\u0E23\u0E34\u0E07</h2>
+    <p>\u0E04\u0E25\u0E34\u0E1B\u0E2A\u0E31\u0E49\u0E19 \u0E46 \u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19 \u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E41\u0E25\u0E30\u0E23\u0E49\u0E32\u0E19\u0E23\u0E2D\u0E1A\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07</p>
+  </div>
+
+  <div class="ex-day-video-grid">
+    <article class="ex-day-video-card fdb-reveal">
+      <div class="ex-day-video-frame">
+        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-01-poster.jpg')">
+          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>\u0E01\u0E33\u0E25\u0E31\u0E07\u0E08\u0E30\u0E21\u0E32\u0E40\u0E23\u0E47\u0E27 \u0E46 \u0E19\u0E35\u0E49</span></div>
+        </div>
+      </div>
+      <div class="ex-day-video-copy">
+        <span>Lunch spots</span>
+        <h3>\u0E23\u0E49\u0E32\u0E19\u0E42\u0E1B\u0E23\u0E14\u0E43\u0E01\u0E25\u0E49\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</h3>
+        <p>\u0E14\u0E39\u0E44\u0E27\u0E49\u0E01\u0E48\u0E2D\u0E19\u0E1E\u0E31\u0E01\u0E40\u0E17\u0E35\u0E48\u0E22\u0E07 \u0E08\u0E30\u0E44\u0E14\u0E49\u0E1E\u0E2D\u0E19\u0E36\u0E01\u0E2D\u0E2D\u0E01\u0E27\u0E48\u0E32\u0E23\u0E2D\u0E1A \u0E46 \u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E43\u0E2B\u0E49\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E1A\u0E49\u0E32\u0E07</p>
+      </div>
+    </article>
+
+    <article class="ex-day-video-card fdb-reveal fdb-delay1">
+      <div class="ex-day-video-frame">
+        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-02-poster.jpg')">
+          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>\u0E01\u0E33\u0E25\u0E31\u0E07\u0E08\u0E30\u0E21\u0E32\u0E40\u0E23\u0E47\u0E27 \u0E46 \u0E19\u0E35\u0E49</span></div>
+        </div>
+      </div>
+      <div class="ex-day-video-copy">
+        <span>Office mood</span>
+        <h3>\u0E40\u0E2B\u0E47\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E01\u0E48\u0E2D\u0E19\u0E21\u0E32\u0E08\u0E23\u0E34\u0E07</h3>
+        <p>\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E08\u0E33\u0E17\u0E32\u0E07\u0E40\u0E02\u0E49\u0E32\u0E41\u0E25\u0E30\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E2B\u0E19\u0E49\u0E32 EXZY \u0E44\u0E14\u0E49\u0E07\u0E48\u0E32\u0E22\u0E02\u0E36\u0E49\u0E19\u0E43\u0E19\u0E27\u0E31\u0E19\u0E41\u0E23\u0E01</p>
+      </div>
+    </article>
+
+    <article class="ex-day-video-card fdb-reveal fdb-delay2">
+      <div class="ex-day-video-frame">
+        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-03-poster.jpg')">
+          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>\u0E01\u0E33\u0E25\u0E31\u0E07\u0E08\u0E30\u0E21\u0E32\u0E40\u0E23\u0E47\u0E27 \u0E46 \u0E19\u0E35\u0E49</span></div>
+        </div>
+      </div>
+      <div class="ex-day-video-copy">
+        <span>Lunch break</span>
+        <h3>\u0E1E\u0E34\u0E01\u0E31\u0E14\u0E02\u0E2D\u0E07\u0E01\u0E34\u0E19\u0E0A\u0E48\u0E27\u0E07\u0E1E\u0E31\u0E01\u0E40\u0E17\u0E35\u0E48\u0E22\u0E07</h3>
+        <p>\u0E16\u0E49\u0E32\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E23\u0E39\u0E49\u0E08\u0E30\u0E01\u0E34\u0E19\u0E2D\u0E30\u0E44\u0E23 \u0E04\u0E25\u0E34\u0E1B\u0E19\u0E35\u0E49\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E21\u0E35\u0E15\u0E31\u0E27\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E01\u0E48\u0E2D\u0E19\u0E2D\u0E2D\u0E01\u0E44\u0E1B\u0E1E\u0E31\u0E01\u0E01\u0E25\u0E32\u0E07\u0E27\u0E31\u0E19</p>
       </div>
     </article>
   </div>

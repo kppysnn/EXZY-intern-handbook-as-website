@@ -87,6 +87,44 @@ export var renderHome = () => `
   </div>
 </section>
 
+<section class="ex-home-voices" aria-labelledby="ex-home-voices-title">
+  <div class="ex-home-voices-inner">
+    <div class="ex-home-section-intro fdb-reveal">
+      <span class="ex-must-eyebrow">Intern Voices</span>
+      <h2 id="ex-home-voices-title">ลองดูชีวิต intern ที่ EXZY จากคลิปจริง</h2>
+      <p>คลิปจาก intern รุ่นก่อน ใช้ดูบรรยากาศการทำงาน ออฟฟิศ และชีวิตระหว่างฝึกงานก่อนเริ่มวันจริง</p>
+    </div>
+
+    <div class="ex-voice-grid">
+      <article class="ex-voice-card fdb-reveal">
+        <div class="ex-voice-video">
+          <div class="yt-placeholder" style="background-image:url('./static/intern-voice-01-poster.jpg')">
+            <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
+          </div>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">คลิปจาก intern</span>
+          <h3>เห็นภาพการฝึกงานก่อนเริ่มจริง</h3>
+          <p>เปิดดูบรรยากาศจริงในออฟฟิศไว้ก่อน จะได้พอนึกออกว่าวันแรกและช่วงฝึกงานจะประมาณไหน</p>
+        </div>
+      </article>
+
+      <article class="ex-voice-card fdb-reveal fdb-delay1">
+        <div class="ex-voice-video">
+          <div class="yt-placeholder" style="background-image:url('./static/intern-voice-02-poster.jpg')">
+            <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
+          </div>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">Intern life</span>
+          <h3>อีกมุมจาก intern รุ่นก่อน</h3>
+          <p>คลิปสั้น ๆ ที่ช่วยให้เห็นจังหวะชีวิตในบริษัทมากกว่าการอ่านคู่มืออย่างเดียว</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
