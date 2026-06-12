@@ -29195,6 +29195,14 @@ span[style*="particleFloat"] { display: none !important; }
   color: #F8F9FA;
   background: linear-gradient(135deg, #66C5C5 0%, #004080 100%);
   box-shadow: 0 14px 30px rgba(0,64,128,.22);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .ex-home-primary::after,
