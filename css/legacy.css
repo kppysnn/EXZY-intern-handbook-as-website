@@ -29320,7 +29320,9 @@ span[style*="particleFloat"] { display: none !important; }
   justify-content: center;
   gap: 10px;
   width: fit-content;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
   font-weight: 700;
   transition: transform .22s var(--ease-out-quart), box-shadow .22s var(--ease-out-quart), background .22s ease;
 }
@@ -35993,7 +35995,7 @@ html::-webkit-scrollbar { display: none !important; }
   flex: 1;
 }
 .ex-day-item .ex-road-mini {
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   flex-wrap: wrap;
 }

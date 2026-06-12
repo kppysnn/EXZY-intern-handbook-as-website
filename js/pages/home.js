@@ -14,7 +14,7 @@ export var renderHome = () => `
   <div class="ex-home-hero-inner">
     <div class="ex-home-copy">
       <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship<br>Handbook</h1>
-      <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องควรทราบเกี่ยวกับการฝึกงานไว้ที่นี่ — งานที่ได้รับมอบหมาย ทีม หรือนโยบาย <br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามให้เอง!</p>
+      <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องรู้ระหว่างฝึกงาน — งาน ทีม นโยบาย และคำตอบสำหรับทุกคำถาม</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
           ดูหัวข้อทั้งหมด
@@ -48,7 +48,7 @@ export var renderHome = () => `
           </div>
           <h3 class="ex-must-title">Intern Timesheet</h3>
           <ul class="ex-must-list">
-            <li>กรอกเวลาเข้า-ออกและงานที่ทำ <strong>ทุกวัน</strong></li>
+            <li>กรอกเวลาเข้า-ออกและงานที่ได้รับมอบหมาย <strong>ทุกวัน</strong></li>
             <li>ส่งเอกสารเป็นกระดาษที่หน้าห้อง HR <strong>ชั้น 4</strong></li>
             <li>กำหนดส่ง <strong>วันที่ 30–31 ของทุกเดือน</strong></li>
           </ul>

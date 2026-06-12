@@ -71,7 +71,7 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-road" aria-labelledby="ex-day-road-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-road-title">สิ่งที่จะได้เจอช่วงแรก</h2>
+    <h2 id="ex-day-road-title">เริ่มฝึกงานที่ EXZY ด้วย 4 เรื่องนี้</h2>
     <p>นี่คือสิ่งที่ intern จะได้เจอในช่วงเริ่มต้นการฝึกงาน</p>
   </div>
 
@@ -90,7 +90,7 @@ export function renderFirstDay(data = {}) {
     <article class="ex-day-item fdb-reveal fdb-delay1">
       <span class="ex-day-item-num">02</span>
       <h3>Metropolis</h3>
-      <p>รู้จักตัวตนของ EXZY ผ่านโลโก้ สี ฟอนต์ สไตล์งาน และบรรยากาศออฟฟิศ</p>
+      <p>Session จากทีม design <br>ที่จะพาไปรู้จัก Metropolis Concept <br>แนวคิดเบื้องหลัง Product Design <br>ของ Exzy</p>
       <div class="ex-road-mini">
         <span><img src="./exzy-square-icon.png" style="width:20px;height:20px;object-fit:contain;border-radius:4px;" alt="EXZY" loading="lazy"><b>Logo</b></span>
         <span><span aria-hidden="true">🎨</span><b>Color</b></span>
