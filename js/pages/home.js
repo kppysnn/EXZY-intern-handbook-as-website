@@ -14,7 +14,7 @@ export var renderHome = () => `
   <div class="ex-home-hero-inner">
     <div class="ex-home-copy">
       <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship<br>Handbook</h1>
-      <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องใช้ตลอดการฝึกงานไว้ที่นี่ — งานที่ต้องทำ ออฟฟิศ ทีม หรือนโยบาย <br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามนั้นเอง!</p>
+      <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องควรทราบเกี่ยวกับการฝึกงานไว้ที่นี่ — งานที่ได้รับมอบหมาย ทีม หรือนโยบาย <br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามให้เอง!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
           ดูหัวข้อทั้งหมด
@@ -34,7 +34,7 @@ export var renderHome = () => `
   <div class="ex-home-start-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <span class="ex-must-eyebrow">Timesheet · HR Project</span>
-      <h2 id="ex-home-start-title">งานที่ต้องทำ มีอะไรบ้าง ?</h2>
+      <h2 id="ex-home-start-title">Project สำหรับ intern มีอะไรบ้าง ?</h2>
       <p>intern ทุกคนจะต้องรับผิดชอบ 2 งานหลัก และต้องส่งให้กับ hr ตามที่กำหนด</p>
     </div>
 
@@ -67,8 +67,8 @@ export var renderHome = () => `
           <ul class="ex-must-list">
             <li>ชิ้นงานที่เล่าประสบการณ์การฝึกงาน</li>
             <li>เลือกรูปแบบได้ตามที่ถนัด ไม่ว่าจะเป็น <strong>คลิป บทความ โพสต์</strong></li>
-            <li>ต้องเผยแพร่บนช่องทาง <strong>public</strong></li>
             <li>ส่งก่อนสิ้นสุดการฝึกงาน <strong>2 อาทิตย์</strong></li>
+            <li>ลงเผยแพร่บนช่องทาง <strong>public</strong></li>
           </ul>
           <a href="#/tasks/hr-bd-project" class="ex-must-btn" data-link>ดูรายละเอียด Project →</a>
         </div>

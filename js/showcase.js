@@ -45,11 +45,41 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     kind: "link",
     platform: "Medium",
     track: "Dev",
-    title: "Full-Stack Developer Internship Review",
-    summary: "@gubsitt2019 รีวิวการสร้าง project จริงด้วย React + Node.js ตั้งแต่เริ่มต้นจนส่งงานจริงในช่วงฝึกงาน",
-    preview: "รีวิวการทำโปรเจกต์จริงด้วย React และ Node.js ในช่วงฝึกงาน",
+    title: "รีวิวฝึกงาน Full-Stack Developer",
+    summary: "@gubsitt2019 เล่าการสร้าง project จริงด้วย React + Node.js มีให้อ่านทั้งภาษาไทยและ English ใน card เดียว",
+    preview: "เลือกอ่านรีวิวโปรเจกต์จริงด้วย React และ Node.js ได้ทั้งภาษาไทยและ English",
     url: "https://medium.com/@gubsitt2019/full-stack-developer-internship-review-building-real-projects-with-react-and-node-js-b6b1323a95cc",
     cover: "sc-medium-dev.jpg",
+    coverPosition: "left top",
+    languageLinks: [
+      {
+        label: "ภาษาไทย",
+        action: "อ่านภาษาไทย",
+        title: "รีวิวฝึกงาน Full-Stack Developer",
+        url: "https://medium.com/@gubsitt2019/รีวิวฝึกงาน-full-stack-developer-สร้างโปรเจกต์จริงด้วย-react-และ-node-js-f5bc7e92857f",
+        cover: "sc-medium-dev-th.png",
+        coverPosition: "left top",
+      },
+      {
+        label: "English",
+        action: "Read in English",
+        title: "Full-Stack Developer Internship Review",
+        url: "https://medium.com/@gubsitt2019/full-stack-developer-internship-review-building-real-projects-with-react-and-node-js-b6b1323a95cc",
+        cover: "sc-medium-dev.jpg",
+        coverPosition: "left top",
+      },
+    ],
+  },
+  {
+    category: "blog",
+    kind: "link",
+    platform: "Medium",
+    track: "Dev",
+    title: "2 เดือนในทีม Dev ที่ EXZY",
+    summary: "@itthikorn.h เล่าการฝึกงาน Full Stack Developer ในทีม Dev ตลอด 2 เดือน ทั้งงานที่ได้ทำ วิธีทำงานกับทีม และสิ่งที่ได้เรียนรู้",
+    preview: "รีวิวการฝึกงาน Full Stack Developer จากมุมของ intern ทีม Dev",
+    url: "https://medium.com/@itthikorn.h/2-เดือนในทีม-dev-ที่-exzy-ประสบการณ์ฝึกงาน-full-stack-developer-ที่มากกว่างานคือการเติบโต-a198091636c0",
+    cover: "sc-medium-dev-itthikorn.png",
     coverPosition: "left top",
   },
 ]);
@@ -128,6 +158,15 @@ function platformMarkLabel(platform) {
   return String(platform || "LINK").toUpperCase();
 }
 
+function stableId(value) {
+  let hash = 0;
+  const text = String(value || "");
+  for (let i = 0; i < text.length; i += 1) {
+    hash = ((hash << 5) - hash + text.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash).toString(36);
+}
+
 function renderShowcaseMedia(item) {
   if (item.kind === "video" && item.platform === "TikTok" && item.tiktokVideoId) {
     const src = `https://www.tiktok.com/player/v1/${encodeURIComponent(item.tiktokVideoId)}?description=1&controls=1&rel=0`;
@@ -149,6 +188,52 @@ function renderShowcaseMedia(item) {
   const platformSlug = escapeAttr(String(item.platform || "link").toLowerCase());
 
   const cornerIcon = `<span class="slc-platform-corner-icon" title="${escapeAttr(item.platform)}">${platformIconBody(item.platform)}</span>`;
+
+  if (Array.isArray(item.languageLinks) && item.languageLinks.length > 0) {
+    const sliderId = `slc-lang-${stableId(item.url || item.title)}`;
+    const languageInputs = item.languageLinks.map((link, index) => `
+      <input
+        class="slc-lang-input slc-lang-input-${index + 1}"
+        type="radio"
+        name="${escapeAttr(sliderId)}"
+        id="${escapeAttr(`${sliderId}-${index}`)}"
+        ${index === 0 ? "checked" : ""} />
+    `).join("");
+    const languageControls = item.languageLinks.map((link, index) => `
+      <label class="slc-language-tab slc-language-tab-${index + 1}" for="${escapeAttr(`${sliderId}-${index}`)}">
+        ${escapeHtml(link.label || "")}
+      </label>
+    `).join("");
+    const languagePreviews = item.languageLinks.map((link, index) => {
+      const coverSrc = escapeAttr(`./static/${link.cover || item.cover}`);
+      const coverPosition = link.coverPosition || item.coverPosition
+        ? ` style="object-position:${escapeAttr(link.coverPosition || item.coverPosition)}"`
+        : "";
+      return `
+        <figure class="slc-language-slide">
+          <img class="slc-photo-img" src="${coverSrc}" alt="${escapeAttr(link.title || item.title)}" loading="${index === 0 ? "eager" : "lazy"}"${coverPosition} onerror="this.style.display='none'" />
+        </figure>
+      `;
+    }).join("");
+
+    return `
+      <div class="show-real-media show-real-media-link show-real-media-${platformSlug} show-real-media-bilingual">
+        <div class="slc-photo slc-photo-slider">
+          ${languageInputs}
+          <div class="slc-language-controls" aria-label="เลือกภาษา preview">
+            ${languageControls}
+          </div>
+          <div class="slc-language-viewport">
+            <div class="slc-language-track">
+              ${languagePreviews}
+            </div>
+          </div>
+          ${cornerIcon}
+          <div class="slc-photo-overlay slc-overlay-${platformSlug}"></div>
+        </div>
+      </div>
+    `;
+  }
 
   if (item.cover) {
     const coverSrc = escapeAttr(`./static/${item.cover}`);
@@ -188,9 +273,20 @@ function renderShowcaseCard(item) {
   const meta = item.track ? `<span class="show-real-track">${escapeHtml(item.track)}</span>` : "";
   const platformClass = `show-real-card-${escapeAttr(String(item.platform || "external").toLowerCase())}`;
   const trackClass = item.track ? `show-real-card-track-${escapeAttr(item.track.toLowerCase())}` : "";
+  const bilingualClass = Array.isArray(item.languageLinks) && item.languageLinks.length > 0
+    ? "show-real-card-bilingual"
+    : "";
+  const actions = Array.isArray(item.languageLinks) && item.languageLinks.length > 0
+    ? item.languageLinks.map(link => `
+        <a href="${escapeAttr(link.url || item.url || "#")}" target="_blank" rel="noopener" class="show-real-link show-real-link-language">
+          <span>${escapeHtml(link.action || link.label || "เปิดลิงก์")}</span>
+          ${I.external}
+        </a>
+      `).join("")
+    : `<a href="${safeUrl}" target="_blank" rel="noopener" class="show-real-link">${actionText} ${I.external}</a>`;
 
   return `
-    <article class="show-real-card ${platformClass} ${trackClass}">
+    <article class="show-real-card ${platformClass} ${trackClass} ${bilingualClass}">
       ${renderShowcaseMedia(item)}
       <div class="show-real-body">
         <div class="show-real-meta">
@@ -199,7 +295,7 @@ function renderShowcaseCard(item) {
         <h4>${escapeHtml(item.title)}</h4>
         <p class="show-real-summary">${escapeHtml(item.summary || "")}</p>
         <div class="show-real-actions">
-          <a href="${safeUrl}" target="_blank" rel="noopener" class="show-real-link">${actionText} ${I.external}</a>
+          ${actions}
         </div>
       </div>
     </article>
@@ -222,7 +318,7 @@ export function showcasePage(_active) {
       <div class="section-inner">
         <div class="crumb"><a href="#/home" data-link>Home</a> <span style="opacity:.5; margin:0 6px;">/</span> Intern Tasks <span style="opacity:.5; margin:0 6px;">/</span> Showcase</div>
         <h1>Intern Showcase</h1>
-        <p class="page-lead">ตัวอย่างผลงาน HR Project จาก intern รุ่นก่อน ทั้งคลิป บทความ และโพสต์ที่เผยแพร่บนช่องทาง public</p>
+        <p class="page-lead">เราได้รวบรวมผลงานของ intern รุ่นก่อนไว้แล้ว! ทั้งคลิป บทความ และโพสต์ที่เผยแพร่บนช่องทาง public</p>
       </div>
     </section>
     <section class="section">

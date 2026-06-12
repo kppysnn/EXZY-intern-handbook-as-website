@@ -116,7 +116,7 @@ export const renderInternshipPolicy = () => pageWrap({
       <div class="phv2-left">
         <div class="phv2-eyebrow">
           <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="8" r="7"/><path d="M8 5v3.5l2 2"/></svg>
-          เวลาทำงาน
+          เวลาฝึกงาน
         </div>
         <div class="phv2-time">
           <span class="phv2-shift">9:00 – 18:00</span>
@@ -211,7 +211,7 @@ export const renderDressCode = () => pageWrap({
     <!-- Dress Hero V2 -->
     <div class="dress-hero-v2 anim-up">
       <div>
-        <div class="dress-tag-v2" style="color:var(--on-dark);">EXZY Core Value · Aesthetic Design</div>
+        <div class="dress-tag-v2" style="color:#ffffff;">EXZY Core Value · Aesthetic Design</div>
         <h2 style="color:var(--on-dark);">สะอาด เรียบร้อย เหมาะสม</h2>
         <p style="color:rgba(248,249,250,.82);">"สะอาดเรียบร้อย และเตรียมการแต่งกายให้เหมาะสม" — ตาม EXZY Core Values การแต่งกายที่ดี<br>คือส่วนหนึ่งของความเป็นมืออาชีพและสะท้อนค่านิยมของบริษัท</p>
       </div>
@@ -225,21 +225,21 @@ export const renderDressCode = () => pageWrap({
       <div class="dress-card-v2 anim-up">
         <div class="dress-card-v2-icon" style="background:var(--cyan-soft); color:var(--navy);">${I.shirt}</div>
         <div class="dress-card-v2-style" style="color:var(--navy);">Smart Casual</div>
-        <h3>วันทำงานปกติ</h3>
+        <h3>ฝึกงานที่ออฟฟิศ</h3>
         <ul>
-          <li>เสื้อโปโล / เสื้อยืดที่สุภาพ</li>
-          <li>กางเกงผ้า / กางเกงยีน</li>
-          <li>รองเท้าผ้าใบ / คัทชู สีสุภาพ</li>
+          <li>เสื้อเชิ้ตแขนยาว/แขนสั้น เสื้อโปโล หรือเสื้อยืดสุภาพ</li>
+          <li>กางเกงขายาวหรือกระโปรง (สแล็ค ผ้า หรือส์)</li>
+          <li>รองเท้าผ้าใบ คัทชู หรือรัดส้น</li>
         </ul>
       </div>
       <div class="dress-card-v2 anim-up" data-delay="80">
         <div class="dress-card-v2-icon" style="background:var(--mist); color:var(--ink);">${I.people}</div>
         <div class="dress-card-v2-style" style="color:var(--ink);">Business Casual</div>
-        <h3>มีนัดพบลูกค้า</h3>
+        <h3>ฝึกงานนอกสถานที่</h3>
         <ul>
-          <li>เสื้อเชิ้ต</li>
-          <li>กางเกง / กระโปรงทรงสุภาพ</li>
-          <li>รองเท้าหุ้มส้นหรือคัทชู</li>
+          <li>ชุดนักศึกษา เสื้อเชิ้ตแขนยาว พร้อมสวมเบลเซอร์หรือสูททับ</li>
+          <li>กางเกงขายาวหรือกระโปรง (สแลค ผ้า หรือยีน)</li>
+          <li>รองเท้าผ้าใบ คัทชู หรือรัดส้น</li>
         </ul>
       </div>
     </div>

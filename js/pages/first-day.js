@@ -17,7 +17,7 @@ export function renderFirstDay(data = {}) {
         <span class="ex-day-h1-brand">Day 1 Guide</span>
       </h1>
       <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ มาเช็กสิ่งสำคัญที่ต้องทำ <br>และข้อมูลที่ควรรู้สำหรับวันแรกกัน!</p>
-      <a href="#ex-day-tasks" class="ex-day-cta">เช็กสิ่งที่ต้องทำวันนี้</a>
+      <button type="button" class="ex-day-cta" data-scroll-to="ex-day-tasks">เช็กสิ่งที่ต้องทำวันนี้</button>
     </div>
   </div>
 </section>
@@ -55,7 +55,7 @@ export function renderFirstDay(data = {}) {
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 02</span>
         <h3>กรอก Timesheet</h3>
-        <p>กรอกเวลาเข้าออกงานตามจริงในไฟล์ที่ HR ส่งให้ แนะนำให้ทำทุกวันจะได้ไม่ลืมสิ่งที่ทำ <br>และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน (วันที่ 30-31)</p>
+        <p>กรอกเวลาเข้าออกงานตามที่ได้รับมอบหมายในไฟล์ที่ HR ส่งให้ แนะนำให้ทำทุกวันจะได้ไม่ลืมสิ่งที่ทำ <br>และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน (วันที่ 30-31)</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
           <div class="ex-flow-step"><span aria-hidden="true">📂</span><b>รับไฟล์ Timesheet จาก HR</b></div>
           <i></i>
@@ -101,7 +101,7 @@ export function renderFirstDay(data = {}) {
     <article class="ex-day-item fdb-reveal fdb-delay1">
       <span class="ex-day-item-num">03</span>
       <h3>Mentor &amp; Team</h3>
-      <p>พูดคุยกับพี่เลี้ยงที่จะดูแลตลอดการฝึกงาน ทำความรู้จักกับสมาชิกในทีม และพูดคุยถึงความต้องการและความคาดหวังของการฝึกงาน</p>
+      <p>พูดคุยกับพี่เลี้ยงที่จะดูแลตลอดการฝึกงาน ทำความรู้จักกับสมาชิกในทีม และพูดคุยถึงความต้องการและความคาดหวังในการฝึกงาน</p>
       <div class="ex-road-mini">
         <span><span aria-hidden="true">🧭</span><b>Mentor</b></span>
         <span><span aria-hidden="true">🤝</span><b>Team</b></span>
@@ -112,9 +112,9 @@ export function renderFirstDay(data = {}) {
     <article class="ex-day-item fdb-reveal fdb-delay2">
       <span class="ex-day-item-num">04</span>
       <h3>Timesheet</h3>
-      <p>เริ่มกรอกเวลาเข้าออกตามจริงในไฟล์ที่ HR ส่งให้ และส่งเอกสารทุกสิ้นเดือน (วันที่ 30-31)</p>
+      <p>เริ่มกรอกเวลาเข้าออกตามที่ได้รับมอบหมายในไฟล์ที่ HR ส่งให้ และส่งเอกสารทุกสิ้นเดือน (วันที่ 30-31)</p>
       <div class="ex-road-mini">
-        <a href="#/tasks/timesheet" data-link><span aria-hidden="true">📋</span><b>ดูคู่มือ →</b></a>
+        <button type="button" class="ex-inline-link" data-link><span aria-hidden="true">📋</span><b>ดูคู่มือ →</b></button>
       </div>
     </article>
   </div>
