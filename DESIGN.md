@@ -18,29 +18,29 @@ colors:
   error: "#F3554F"
 typography:
   display:
-    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Sora', system-ui, sans-serif"
+    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Poppins', system-ui, sans-serif"
     fontSize: "clamp(2.125rem, 4.8vw, 3.5rem)"
     fontWeight: 700
     lineHeight: 1.6
     letterSpacing: "-0.01em"
   headline:
-    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Sora', system-ui, sans-serif"
+    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Poppins', system-ui, sans-serif"
     fontSize: "clamp(1.875rem, 4vw, 2.75rem)"
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: "-0.02em"
   title:
-    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Sora', system-ui, sans-serif"
+    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Poppins', system-ui, sans-serif"
     fontSize: "1.25rem"
     fontWeight: 700
     lineHeight: 1.4
   body:
-    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Sora', system-ui, sans-serif"
+    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Poppins', system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.75
   label:
-    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Sora', system-ui, sans-serif"
+    fontFamily: "'Noto Sans Thai Local', 'Noto Sans Thai', 'Poppins', system-ui, sans-serif"
     fontSize: "0.75rem"
     fontWeight: 700
     lineHeight: 1.4
@@ -150,9 +150,9 @@ EXZY's CI colors are used directly. Teal is the live signal; navy is the structu
 
 ## 3. Typography
 
-**Primary Font:** Noto Sans Thai Local / Noto Sans Thai (with Sora as Latin fallback)
+**Primary Font:** Noto Sans Thai Local / Noto Sans Thai (with Poppins as Latin fallback)
 
-**Character:** A single family across all roles. Noto Sans Thai is engineered for Thai readability; its proportions also serve English cleanly. Sora extends the display stack for Latin-heavy headings. No serif, no mono in the main reading flow. One family at multiple weights outperforms three competing typefaces on a bilingual surface.
+**Character:** A single family across all roles. Noto Sans Thai is engineered for Thai readability and covers all Thai copy. Poppins extends the stack for Latin-heavy headings and English copy. No serif, no mono in the main reading flow. One family per script outperforms three competing typefaces on a bilingual surface.
 
 ### Hierarchy
 - **Display** (700, clamp(34px → 56px), line-height 1.6, tracking -0.01em): Hero and primary page headings. Line-height 1.6 minimum; Thai tone marks require clearance above the base character.
@@ -166,7 +166,7 @@ EXZY's CI colors are used directly. Teal is the live signal; navy is the structu
 ### Named Rules
 **The Thai Line-Height Rule.** Body text never below 1.65; headings never below 1.2 for Thai. Tone marks (mai ek, mai tho, etc.) stack above the base glyph and collide with the line above at tighter settings.
 
-**The Single Family Rule.** One family covers all type roles. Do not introduce a second family without a concrete voice justification. Sora is a fallback, not a parallel display system.
+**The Single Family Rule.** One family covers all type roles. Do not introduce a second family without a concrete voice justification. Poppins is the Latin fallback, not a parallel display system.
 
 ## 4. Elevation
 

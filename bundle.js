@@ -345,7 +345,7 @@
 
   <div class="ex-home-hero-inner">
     <div class="ex-home-copy">
-      <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship</br>Handbook</h1>
+      <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship<br>Handbook</h1>
       <p class="ex-home-lead">\u0E23\u0E27\u0E21\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48 intern \u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E44\u0E27\u0E49\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48 \u2014 \u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E17\u0E33 \u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u0E17\u0E35\u0E21 \u0E2B\u0E23\u0E37\u0E2D\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22 <br>\u0E2B\u0E32\u0E01\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E2A\u0E07\u0E2A\u0E31\u0E22 website \u0E19\u0E35\u0E49\u0E08\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E15\u0E2D\u0E1A\u0E04\u0E33\u0E16\u0E32\u0E21\u0E19\u0E31\u0E49\u0E19\u0E40\u0E2D\u0E07!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
@@ -422,7 +422,7 @@
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-folders-title">\u0E23\u0E27\u0E21\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14</br>\u0E17\u0E35\u0E48 intern \u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E44\u0E27\u0E49\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48</h2>
+      <h2 id="ex-folders-title">\u0E23\u0E27\u0E21\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14<br>\u0E17\u0E35\u0E48 intern \u0E15\u0E49\u0E2D\u0E07\u0E23\u0E39\u0E49\u0E44\u0E27\u0E49\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48</h2>
       <p>\u0E2D\u0E22\u0E32\u0E01\u0E23\u0E39\u0E49\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E44\u0E2B\u0E19 ? \u0E40\u0E25\u0E37\u0E2D\u0E01\u0E14\u0E39\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
     </div>
 
@@ -1884,6 +1884,7 @@
       }
     }
     document.querySelectorAll("[data-home-hero-video]").forEach((video) => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
       video.muted = true;
       video.defaultMuted = true;
       video.loop = true;
@@ -1950,6 +1951,16 @@
         obs.observe(el);
       });
     })();
+    document.querySelectorAll('.ex-folder[tabindex="0"]').forEach(function(folder) {
+      folder.setAttribute("role", "button");
+      folder.addEventListener("keydown", function(e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          var firstLink = folder.querySelector("a[href]");
+          if (firstLink) firstLink.click();
+        }
+      });
+    });
     var fdaTabs = document.querySelectorAll(".fda-tab");
     if (fdaTabs.length) {
       window.fdaTab = function(idx) {
@@ -2073,12 +2084,7 @@
       const trigger = item.querySelector(".acc-trigger");
       const body = item.querySelector(".acc-body");
       trigger.addEventListener("click", () => {
-        const isOpen = item.classList.toggle("open");
-        if (isOpen) {
-          body.style.maxHeight = body.scrollHeight + "px";
-        } else {
-          body.style.maxHeight = "0";
-        }
+        item.classList.toggle("open");
       });
     });
     const tocLinks = app.querySelectorAll(".toc a[data-anchor]");

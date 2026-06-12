@@ -13,7 +13,7 @@ export var renderHome = () => `
 
   <div class="ex-home-hero-inner">
     <div class="ex-home-copy">
-      <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship</br>Handbook</h1>
+      <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship<br>Handbook</h1>
       <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องใช้ตลอดการฝึกงานไว้ที่นี่ — งานที่ต้องทำ ออฟฟิศ ทีม หรือนโยบาย <br>หากมีข้อสงสัย website นี้จะช่วยตอบคำถามนั้นเอง!</p>
       <div class="ex-home-actions">
         <a href="#ex-home-contents" class="ex-home-primary">
@@ -90,7 +90,7 @@ export var renderHome = () => `
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <h2 id="ex-folders-title">รวมข้อมูลทั้งหมด</br>ที่ intern ต้องรู้ไว้ที่นี่</h2>
+      <h2 id="ex-folders-title">รวมข้อมูลทั้งหมด<br>ที่ intern ต้องรู้ไว้ที่นี่</h2>
       <p>อยากรู้เรื่องไหน ? เลือกดูได้เลย</p>
     </div>
 

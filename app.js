@@ -85,6 +85,7 @@ function hydratePage() {
 
   // ----- Hero video autoplay -----
   document.querySelectorAll("[data-home-hero-video]").forEach(video => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     video.muted = true;
     video.defaultMuted = true;
     video.loop = true;
@@ -157,6 +158,18 @@ function hydratePage() {
     }, { threshold: 0.07 });
     revEls.forEach(function(el){ obs.observe(el); });
   })();
+
+  // ----- Folder keyboard navigation -----
+  document.querySelectorAll('.ex-folder[tabindex="0"]').forEach(function(folder) {
+    folder.setAttribute('role', 'button');
+    folder.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        var firstLink = folder.querySelector('a[href]');
+        if (firstLink) firstLink.click();
+      }
+    });
+  });
 
   // ----- fda tab panels -----
   var fdaTabs = document.querySelectorAll('.fda-tab');
@@ -288,12 +301,7 @@ function hydratePage() {
     const trigger = item.querySelector(".acc-trigger");
     const body = item.querySelector(".acc-body");
     trigger.addEventListener("click", () => {
-      const isOpen = item.classList.toggle("open");
-      if (isOpen) {
-        body.style.maxHeight = body.scrollHeight + "px";
-      } else {
-        body.style.maxHeight = "0";
-      }
+      item.classList.toggle("open");
     });
   });
 
