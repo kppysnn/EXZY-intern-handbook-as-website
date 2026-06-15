@@ -129,27 +129,23 @@ export function renderFirstDay(data = {}) {
   <div class="ex-day-video-grid">
     <article class="ex-day-video-card fdb-reveal">
       <div class="ex-day-video-frame">
-        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-01-poster.jpg')">
-          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/FKzHY0kpHlE" title="ปักหมุดร้านเด็ดชาว Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
-        <span>Lunch interview</span>
-        <h3>ร้านเด็ดประจำที่ intern กิน</h3>
-        <p>intern รุ่นก่อนเล่าว่าพักเที่ยงชอบไปกินที่ไหน ร้านไหนอร่อย และแนะนำอะไรบ้าง</p>
+        <span>แนะนำร้านเด็ด</span>
+        <h3>ปักหมุดร้านเด็ดชาว EXZY</h3>
+        <p>intern รุ่นก่อนรวมร้านอาหารที่ชอบไปกินรอบ ๆ บริษัท จะได้มีร้านในใจก่อนพักเที่ยงวันแรก</p>
       </div>
     </article>
 
     <article class="ex-day-video-card fdb-reveal fdb-delay1">
       <div class="ex-day-video-frame">
-        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-02-poster.jpg')">
-          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/jWSrBLB4Mg0" title="แจกพิกัดร้านเด็ดรอบ Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
-        <span>Restaurant tour</span>
-        <h3>พาเดินดูร้านอาหารรอบออฟฟิศ</h3>
-        <p>คลิปพาเดินดูร้านรอบ ๆ บริษัท จะได้มีตัวเลือกในหัวก่อนถึงเวลาพักกลางวันจริง</p>
+        <span>พิกัดร้านอาหาร</span>
+        <h3>แจกพิกัดร้านเด็ดรอบ EXZY</h3>
+        <p>คลิปพาเดินดูร้านรอบ ๆ บริษัท จะได้เตรียมตัวสำหรับมื้อเที่ยงได้เลยตั้งแต่วันแรก</p>
       </div>
     </article>
   </div>

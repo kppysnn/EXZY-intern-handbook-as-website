@@ -16,10 +16,10 @@ export var renderHome = () => `
       <h1><span class="ex-home-h1-eyebrow">Welcome to</span>EXZY Internship<br>Handbook</h1>
       <p class="ex-home-lead">รวมข้อมูลที่ intern ต้องรู้ระหว่างฝึกงาน — งาน ทีม นโยบาย และคำตอบสำหรับทุกคำถาม</p>
       <div class="ex-home-actions">
-        <a href="#ex-home-contents" class="ex-home-primary">
+        <button type="button" class="ex-home-primary" data-scroll-to="ex-home-contents">
           ดูหัวข้อทั้งหมด
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-        </a>
+        </button>
         <a href="#/first-day" class="ex-home-secondary" data-link>เริ่มจาก Day 1 Guide</a>
       </div>
     </div>
@@ -87,17 +87,34 @@ export var renderHome = () => `
   </div>
 </section>
 
-<section class="ex-home-office-tour" aria-labelledby="ex-home-ot-title">
-  <div class="ex-home-ot-inner">
-    <div class="ex-home-ot-video fdb-reveal">
-      <div class="yt-placeholder">
-        <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="40" height="40" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-      </div>
+<section class="ex-home-intern-life" aria-labelledby="ex-home-life-title">
+  <div class="ex-home-voices-inner">
+    <div class="ex-home-section-intro fdb-reveal">
+      <span class="ex-must-eyebrow">INTERN LIFE</span>
+      <h2 id="ex-home-life-title">ชีวิต intern ที่ EXZY<br>เป็นยังไงบ้าง?</h2>
+      <p>ดูก่อนเริ่มฝึกงาน จะได้พอนึกออกว่าบรรยากาศออฟฟิศและวันทำงานปกติเป็นแบบไหน</p>
     </div>
-    <div class="ex-home-ot-copy fdb-reveal fdb-delay1">
-      <span class="ex-voice-tag">Office Tour</span>
-      <h2 id="ex-home-ot-title">แต่ละชั้นที่ EXZY<br>มีทีมไหนอยู่บ้าง?</h2>
-      <p>ดูก่อนมาวันแรก จะได้รู้คร่าว ๆ ว่าออฟฟิศมีกี่ชั้น แต่ละชั้นมีทีมไหน พื้นที่ทำงานเป็นยังไง และมีอะไรอยู่ในบริษัทบ้าง</p>
+    <div class="ex-intern-life-grid">
+      <article class="ex-intern-life-card fdb-reveal">
+        <div class="ex-intern-life-video">
+          <iframe src="https://www.youtube.com/embed/ILybckeMZ7o" title="ตามติดชีวิต Intern ที่ Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">Intern Life</span>
+          <h3>ตามติดชีวิต intern ที่ EXZY</h3>
+          <p>ติดตามชีวิตในออฟฟิศของ intern ตั้งแต่เช้าจนเย็น ทั้งงานที่ทำ บรรยากาศ และทีมที่ได้ทำงานด้วย</p>
+        </div>
+      </article>
+      <article class="ex-intern-life-card fdb-reveal fdb-delay1">
+        <div class="ex-intern-life-video">
+          <iframe src="https://www.youtube.com/embed/9sfJ04-2Ck8" title="Exzy Lifestyle ในหนึ่งวัน" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">Intern Life</span>
+          <h3>EXZY lifestyle ในหนึ่งวัน</h3>
+          <p>ชมออฟฟิศและชีวิตประจำวันของ intern ที่ EXZY ตั้งแต่ต้นจนจบ ก่อนเริ่มฝึกงานจริง</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -110,12 +127,21 @@ export var renderHome = () => `
       <p>ลองดูรีวิวจาก intern ที่เคยฝึกงานกับ EXZY เพื่อเห็นบรรยากาศ งานที่ได้ทำ และประสบการณ์ตลอดช่วงฝึกงาน</p>
     </div>
 
+    <div class="ex-voice-featured fdb-reveal">
+      <div class="ex-voice-featured-video">
+        <iframe src="https://www.youtube.com/embed/W53e2n_09bA" title="ฝึกงาน Business Development ที่ EXZY — Dada" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="ex-voice-featured-copy">
+        <span class="ex-voice-tag">Intern review · BD</span>
+        <h3>ฝึกงาน Business Development ที่ EXZY</h3>
+        <p>น้องดาด้า นักศึกษา BAScii จุฬาลงกรณ์มหาวิทยาลัย ในโครงการ Founder Apprentice เล่าประสบการณ์ฝึกงานสาย BD กับ EXZY ตลอด 2 เดือน</p>
+      </div>
+    </div>
+
     <div class="ex-voice-grid">
       <article class="ex-voice-card fdb-reveal">
         <div class="ex-voice-video">
-          <div class="yt-placeholder" style="background-image:url('./static/intern-voice-01-poster.jpg')">
-            <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-          </div>
+          <iframe src="https://www.youtube.com/embed/T7hpAMXAo2I" title="Intern review — Grace" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
@@ -126,27 +152,12 @@ export var renderHome = () => `
 
       <article class="ex-voice-card fdb-reveal fdb-delay1">
         <div class="ex-voice-video">
-          <div class="yt-placeholder" style="background-image:url('./static/intern-voice-02-poster.jpg')">
-            <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-          </div>
+          <iframe src="https://www.youtube.com/embed/EhOba4jWhmI" title="Intern review — Nikki" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
           <h3>อีกมุมจาก intern รุ่นก่อน</h3>
           <p>คลิปสั้น ๆ ที่ช่วยให้เห็นจังหวะชีวิตในบริษัทมากกว่าการอ่านคู่มืออย่างเดียว</p>
-        </div>
-      </article>
-
-      <article class="ex-voice-card fdb-reveal fdb-delay2">
-        <div class="ex-voice-video">
-          <div class="yt-placeholder">
-            <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-          </div>
-        </div>
-        <div class="ex-voice-copy">
-          <span class="ex-voice-tag">Intern review</span>
-          <h3>ได้ทำอะไรบ้างระหว่างฝึกงาน</h3>
-          <p>intern จากหลายสายวิชาเล่าให้ฟังว่าแต่ละคนได้รับมอบหมายงานอะไร และได้เรียนรู้อะไรไปบ้าง</p>
         </div>
       </article>
     </div>

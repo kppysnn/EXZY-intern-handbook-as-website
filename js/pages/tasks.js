@@ -6,7 +6,7 @@ export const renderHrBdProject = () => pageWrap({
   title: "HR Project",
   lead: "งานที่ HR assign ให้ intern รับผิดชอบในช่วงฝึกงาน เลือกรูปแบบได้ตามที่ถนัด และต้องเผยแพร่บนช่องทาง public",
   toc: [
-    ["about", "งานนี้คืองานอะไร ?"],
+    ["about", "assignment นี้คืออะไร ?"],
     ["format", "ทำเป็นรูปแบบไหนได้บ้าง ?"],
     ["timeline", "ต้องส่งเมื่อไหร่ ?"],
     ["submit", "ส่งงานยังไง ?"],
@@ -28,7 +28,7 @@ export const renderHrBdProject = () => pageWrap({
       <div class="proj-card anim-up" data-delay="80">
         <div class="proj-num">02</div>
         <h3>Article / Blog</h3>
-        <p>บทความเล่าประสบการณ์การฝึกงาน <br>สิ่งที่ได้ลองทำ หรือคำแนะนำ<br>สำหรับ intern คนอื่น ๆ</p>
+        <p>บทความเล่าเรื่องงานหรือ project ที่ได้รับมอบหมายจากทีม หรืออยากสื่อสารให้คนเห็นภาพการฝึกงานกับ EXZY มากขึ้น</p>
       </div>
       <div class="proj-card anim-up" data-delay="160">
         <div class="proj-num">03</div>
@@ -47,7 +47,7 @@ export const renderHrBdProject = () => pageWrap({
     </ul>
 
     <h2 id="submit">ส่งงานยังไง ?</h2>
-    <p>เมื่อตรวจสอบและได้รับการยืนยันจาก HR และพี่เลี้ยงแล้วท สามารถนำคอนเทนต์ไปเผยแพร่บนช่องทางสาธารณะ <br>เช่น social media ต่าง ๆ, Medium, public blog หรือ website ที่เปิดให้เข้าถึงได้ ไม่ใช่ไฟล์ส่วนตัวที่เปิดไม่ได้จากภายนอก</p>
+    <p>เมื่อตรวจสอบและได้รับการยืนยันจาก HR และพี่เลี้ยงแล้ว สามารถนำคอนเทนต์ไปเผยแพร่บนช่องทางสาธารณะ <br>เช่น social media ต่าง ๆ, Medium, public blog หรือ website ที่เปิดให้เข้าถึงได้ ไม่ใช่ไฟล์ส่วนตัวที่เปิดไม่ได้จากภายนอก</p>
     <h2 id="examples">ดูตัวอย่างจาก intern รุ่นก่อนได้ที่</h2>
     <p>Showcase คือพื้นที่รวมผลงานของ intern รุ่นก่อน ใช้ดูเป็นแนวทางได้ ไม่จำเป็นต้องทำเหมือนคนอื่น ๆ สามารถเลือกวิธีเล่าประสบการณ์ที่เหมาะกับตัวเองและโจทย์ที่ได้เลย</p>
     <a href="#/showcase/experiences" class="btn btn-primary" data-link>ดู Showcase ตัวอย่าง ${I.arrow}</a>
