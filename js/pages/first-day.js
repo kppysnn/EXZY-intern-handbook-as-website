@@ -122,7 +122,7 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-videos-title">พักเที่ยงแล้ว ทานข้าวที่ไหนดี ?</h2>
+    <h2 id="ex-day-videos-title">พักเที่ยงแล้ว ทานข้าวที่ไหนดี ? 🍜</h2>
     <p>รวมคลิปแนะนำร้านอาหารรอบออฟฟิศ ทั้งร้านเด็ดที่พี่ ๆ แนะนำ และร้านใกล้ที่เดินไปกินได้ง่าย ๆ ไม่ไกล</p>
   </div>
 
@@ -134,7 +134,7 @@ export function renderFirstDay(data = {}) {
       <div class="ex-day-video-copy">
         <span>แนะนำร้านเด็ด</span>
         <h3>ปักหมุดร้านเด็ดชาว EXZY</h3>
-        <p>อยากรู้ว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ EXZY กัน!</p>
+        <p>อยากรู้ว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ EXZY กัน! 🤩</p>
       </div>
     </article>
 

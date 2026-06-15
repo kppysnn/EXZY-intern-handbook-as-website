@@ -6475,7 +6475,6 @@ span[style*="particleFloat"] { display: none !important; }
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   text-decoration: none;
   -webkit-appearance: none;
   appearance: none;

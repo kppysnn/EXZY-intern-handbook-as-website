@@ -18,7 +18,7 @@ export var renderHome = () => `
           ดูหัวข้อทั้งหมด
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </button>
-        <a href="#/first-day" class="ex-home-secondary" data-link>เริ่มจาก Day 1 Guide</a>
+        <a href="#/first-day" class="ex-home-secondary" data-link>เริ่มจาก Day 1 Guide 🌟</a>
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@ export var renderHome = () => `
     <div class="ex-home-section-intro fdb-reveal">
       <span class="ex-must-eyebrow">LIFE AT EXZY</span>
       <h2 id="ex-home-voices-title">ฝึกงานที่ EXZY เป็นยังไงบ้าง ?</h2>
-      <p>ลองดูรีวิวจาก intern ที่เคยฝึกงานกับ EXZY เพื่อเห็นบรรยากาศ งานที่ได้ทำ และประสบการณ์ตลอดช่วงฝึกงาน</p>
+      <p>ลองดูรีวิวจาก intern ที่เคยฝึกงานกับ EXZY เพื่อเห็นบรรยากาศ งานที่ได้ทำ และประสบการณ์ตลอดช่วงฝึกงาน 🎬</p>
     </div>
 
     <div class="ex-voice-featured fdb-reveal">
@@ -105,7 +105,7 @@ export var renderHome = () => `
       </div>
     </div>
 
-    <div class="ex-voice-divider" aria-hidden="true"><span>คลิปสั้น ๆ จาก intern รุ่นก่อน</span></div>
+    <div class="ex-voice-divider" aria-hidden="true"><span>คลิปสั้น ๆ จาก intern รุ่นก่อน 🎥</span></div>
 
     <div class="ex-voice-grid">
       <article class="ex-voice-card fdb-reveal">
