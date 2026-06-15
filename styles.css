@@ -6977,7 +6977,7 @@ span[style*="particleFloat"] { display: none !important; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(20px, 3vw, 36px);
-  max-width: 640px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
