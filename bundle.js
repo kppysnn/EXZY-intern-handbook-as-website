@@ -1080,7 +1080,7 @@
     const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
     return pageWrap({
       crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
-      title: "Office Wi-Fi \u{1F4F6}",
+      title: "Office Wi-Fi",
       lead: "\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22 \u2014 \u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E14\u0E39\u0E44\u0E14\u0E49\u0E14\u0E49\u0E32\u0E19\u0E25\u0E48\u0E32\u0E07",
       body: `
     <!-- Network cards -->
@@ -1122,7 +1122,7 @@
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
       </div>
       <div class="wifi-hr-copy">
-        <div class="wifi-hr-title">\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR</div>
+        <div class="wifi-hr-title">\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D hr</div>
         <p class="wifi-hr-sub">\u0E2B\u0E32\u0E01\u0E44\u0E21\u0E48\u0E17\u0E23\u0E32\u0E1A\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19 \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E17\u0E32\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25</p>
         <a href="mailto:${hrEmail}" class="btn btn-primary wifi-hr-btn">${I.mail} \u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E2B\u0E32 HR</a>
       </div>
@@ -1132,7 +1132,7 @@
       <span class="ic">${I.shield}</span>
       <div>
         <h4>\u0E23\u0E2B\u0E31\u0E2A Staff Wi-Fi \u0E2B\u0E49\u0E32\u0E21\u0E41\u0E0A\u0E23\u0E4C\u0E19\u0E30</h4>
-        <p>\u0E43\u0E0A\u0E49\u0E44\u0E14\u0E49\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30 Intern \u2014 \u0E16\u0E49\u0E32\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E08\u0E49\u0E07 HR \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E43\u0E19\u0E17\u0E35\u0E21</p>
+        <p>\u0E43\u0E0A\u0E49\u0E44\u0E14\u0E49\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30 Intern \u2014 \u0E16\u0E49\u0E32\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E08\u0E49\u0E07 HR \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07</p>
       </div>
     </div>
   `
