@@ -17,7 +17,7 @@ export function renderFirstDay(data = {}) {
         <span class="ex-day-h1-brand">Day 1 Guide</span>
       </h1>
       <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ มาเช็กสิ่งสำคัญที่ต้องทำ <br>และข้อมูลที่ควรรู้สำหรับวันแรกกัน!</p>
-      <button type="button" class="ex-day-cta" data-scroll-to="ex-day-tasks">เช็กสิ่งที่ต้องทำวันนี้</button>
+      <button type="button" class="ex-day-cta" data-scroll-to="ex-day-tasks">📍 เช็กสิ่งที่ต้องทำวันนี้</button>
     </div>
   </div>
 </section>
@@ -122,7 +122,7 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-videos-title">พักเที่ยงแล้ว ทานข้าวที่ไหนดี ? 🍜</h2>
+    <h2 id="ex-day-videos-title">พักเที่ยงแล้ว ทานข้าวที่ไหนดี ? 🥘</h2>
     <p>รวมคลิปแนะนำร้านอาหารรอบออฟฟิศ ทั้งร้านเด็ดที่พี่ ๆ แนะนำ และร้านใกล้ที่เดินไปกินได้ง่าย ๆ ไม่ไกล</p>
   </div>
 
