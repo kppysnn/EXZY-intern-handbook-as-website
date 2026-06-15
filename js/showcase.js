@@ -9,7 +9,9 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     platform: "TikTok",
     track: "MK",
     title: "ฝึกงานตำแหน่ง Digital Marketing ทำอะไรบ้าง ไปดูกันเลย!!",
+    titleHtml: "ฝึกงาน <strong>Digital Marketing</strong> ทำอะไรบ้าง? ไปดูกันเลย! 🎬 📲",
     summary: "ฉิงๆรีวิว (@ching_cyy2) พาดูชีวิตฝึกงานสาย Digital Marketing แบบ day-in-the-life ทุก task ที่ทำจริงในแต่ละวัน 🎬",
+    summaryHtml: "ฉิงๆรีวิว (@ching_cyy2) พาดูชีวิตฝึกงานสาย MK แบบ <strong>day-in-the-life</strong> ทุก task ที่ทำจริงในแต่ละวัน 📊",
     preview: "รีวิวฝึกงานสาย MK แบบเล่าให้เห็นงานจริงในแต่ละวัน",
     url: "https://vt.tiktok.com/ZSk4KdXFK/",
     canonicalUrl: "https://www.tiktok.com/@ching_cyy2/video/7344223770762136850",
@@ -21,7 +23,9 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     platform: "Facebook",
     track: "BD",
     title: "ประสบการณ์ฝึกงานสาย Business Development",
+    titleHtml: "ประสบการณ์ฝึกงานสาย <strong>Business Development</strong> 💼 🤝",
     summary: "EXZY รีวิวประสบการณ์ intern สาย BD — งานจริงที่ทำ สิ่งที่ได้เรียนรู้ และมุมมองจากทีม 💼",
+    summaryHtml: "EXZY รีวิวประสบการณ์ intern สาย BD — <strong>งานจริง</strong>ที่ทำ สิ่งที่ได้เรียนรู้ และมุมมองจากทีม 📝",
     preview: "มุมมองการฝึกงาน 2 เดือน พร้อมสิ่งที่ได้เรียนรู้จากทีมจริง",
     url: "https://www.facebook.com/share/p/17PWAui7fs/",
     canonicalUrl: "https://www.facebook.com/ExzyTech/posts/2609136702451677/",
@@ -34,7 +38,9 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     platform: "Medium",
     track: "BD",
     title: "ประสบการณ์ฝึกงานบริษัท EXZY กับแนวความคิดที่เติบโตแบบก้าวกระโดด",
+    titleHtml: "ประสบการณ์ฝึกงาน EXZY กับ<strong>แนวคิดที่เติบโตแบบก้าวกระโดด</strong> 🌱 💡",
     summary: "@dangjaig เล่าบทเรียนและแนวคิดที่เปลี่ยนไปจากการทำงานจริงในสาย BD ตลอดช่วงฝึกงาน 🌱",
+    summaryHtml: "@dangjaig เล่าบทเรียนและ<strong>แนวคิดที่เปลี่ยนไป</strong>จากการทำงานจริงในสาย BD ตลอดช่วงฝึกงาน 📖",
     preview: "รีวิวมุมมองการเติบโตและการทำงานจริงในสาย Business Development",
     url: "https://medium.com/@dangjaig/ประสบการณ์ฝึกงานบริษัท-exzy-กับแนวความคิดที่เติบโตแบบก้าวกระโดด-eceb87feff69",
     cover: "sc-fb-bd.webp",
@@ -46,7 +52,9 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     platform: "Medium",
     track: "Dev",
     title: "รีวิวฝึกงาน Full-Stack Developer",
+    titleHtml: "รีวิวฝึกงาน <strong>Full-Stack Developer</strong> ⚡ 🔧",
     summary: "@gubsitt2019 เล่าการสร้าง project จริงด้วย React + Node.js ตลอดช่วงฝึกงาน พร้อมรีวิวการทำงานในทีม Dev และสิ่งที่ได้เรียนรู้ ⚡",
+    summaryHtml: "@gubsitt2019 เล่าการสร้าง project จริงด้วย <strong>React + Node.js</strong> พร้อมรีวิวการทำงานในทีม Dev 🛠️",
     preview: "เลือกอ่านรีวิวโปรเจกต์จริงด้วย React และ Node.js ได้ทั้งภาษาไทยและ English",
     url: "https://medium.com/@gubsitt2019/full-stack-developer-internship-review-building-real-projects-with-react-and-node-js-b6b1323a95cc",
     cover: "sc-medium-dev.jpg",
@@ -76,7 +84,9 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     platform: "Medium",
     track: "Dev",
     title: "2 เดือนในทีม Dev ที่ EXZY",
+    titleHtml: "<strong>2 เดือน</strong>ในทีม Dev ที่ EXZY 🖥️",
     summary: "@itthikorn.h เล่าการฝึกงาน Full Stack Developer ในทีม Dev ตลอด 2 เดือน ทั้งงานที่ได้ทำ วิธีทำงานกับทีม และสิ่งที่ได้เรียนรู้ 🖥️",
+    summaryHtml: "@itthikorn.h เล่าการฝึกงาน <strong>Full Stack Developer</strong> ทั้งงานที่ได้ทำ วิธีทำงานกับทีม และสิ่งที่ได้เรียนรู้ 💪",
     preview: "รีวิวการฝึกงาน Full Stack Developer จากมุมของ intern ทีม Dev",
     url: "https://medium.com/@itthikorn.h/2-เดือนในทีม-dev-ที่-exzy-ประสบการณ์ฝึกงาน-full-stack-developer-ที่มากกว่างานคือการเติบโต-a198091636c0",
     cover: "sc-medium-dev-itthikorn.png",
@@ -292,8 +302,8 @@ function renderShowcaseCard(item) {
         <div class="show-real-meta">
           ${meta}
         </div>
-        <h4>${escapeHtml(item.title)}</h4>
-        <p class="show-real-summary">${escapeHtml(item.summary || "")}</p>
+        <h4>${item.titleHtml != null ? item.titleHtml : escapeHtml(item.title)}</h4>
+        <p class="show-real-summary">${item.summaryHtml != null ? item.summaryHtml : escapeHtml(item.summary || "")}</p>
         <div class="show-real-actions">
           ${actions}
         </div>
