@@ -4,7 +4,7 @@ import { pageWrap } from '../helpers.js';
 export const renderWifi = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
   title: "Office Wi-Fi",
-  lead: "เลือกเครือข่ายที่ต้องใช้ — คัดลอกชื่อ SSID ได้เลย รหัสผ่านขอจาก HR ได้โดยตรง",
+  lead: "เลือกเครือข่ายที่ต้องใช้ — คัดลอกชื่อ SSID ได้เลย รหัสผ่านขอจาก HR ได้โดยตรง 📶",
   body: `
     <!-- Network type selector -->
     <div class="wn-selector">
@@ -85,14 +85,14 @@ export const renderWifi = () => pageWrap({
     <div class="wn-how-v2">
       <div class="wn-how-v2-head">
         <span class="wn-how-v2-label">วิธีเชื่อมต่อ</span>
-        <p class="wn-how-v2-sub">2 ขั้นตอน เสร็จในไม่กี่นาที</p>
+        <p class="wn-how-v2-sub">2 ขั้นตอน เสร็จในไม่กี่นาที ✅</p>
       </div>
       <div class="wn-how-v2-tracks">
         <div class="wn-how-v2-track wn-how-v2-qr">
           <div class="wn-how-v2-track-icon">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <div class="wn-how-v2-track-title">ขั้นตอนที่ 1 — ขอรหัสผ่านจาก HR</div>
+          <div class="wn-how-v2-track-title">ขั้นตอนที่ 1 — ขอรหัสผ่านจาก HR 🔑</div>
           <ol class="wn-how-v2-steps">
             <li>ทักหา HR ผ่าน Line หรือถามตรง ๆ ที่ออฟฟิศ</li>
             <li>แจ้งว่าต้องการรหัส Wi-Fi สำหรับ Intern</li>
@@ -105,7 +105,7 @@ export const renderWifi = () => pageWrap({
           <div class="wn-how-v2-track-icon">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
           </div>
-          <div class="wn-how-v2-track-title">ขั้นตอนที่ 2 — เชื่อมต่อ</div>
+          <div class="wn-how-v2-track-title">ขั้นตอนที่ 2 — เชื่อมต่อ 📡</div>
           <ol class="wn-how-v2-steps">
             <li>ไปที่ตั้งค่า Wi-Fi</li>
             <li>เลือกชื่อเครือข่าย (SSID) จากด้านบน</li>

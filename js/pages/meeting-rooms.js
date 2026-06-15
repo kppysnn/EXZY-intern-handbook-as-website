@@ -142,7 +142,7 @@ export const renderMeetingRooms = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.people}</span>
       <div>
-        <h4>การจองห้องประชุม</h4>
+        <h4>การจองห้องประชุม 📅</h4>
         <p>Intern ไม่สามารถจองห้องประชุมได้เอง หากต้องการใช้ห้องประชุม ให้แจ้งพี่เลี้ยงของตัวเองเพื่อให้พี่เลี้ยงจองห้องให้</p>
       </div>
     </div>
@@ -150,7 +150,7 @@ export const renderMeetingRooms = () => pageWrap({
     <div class="callout anim-up" style="margin-top:12px;">
       <span class="ic">${I.info}</span>
       <div>
-        <h4>ก่อนออกจากห้อง</h4>
+        <h4>ก่อนออกจากห้อง 💡</h4>
         <p>เก็บอุปกรณ์ ปิดไฟ ปิดจอ และทิ้งขยะก่อนออกทุกครั้ง</p>
       </div>
     </div>

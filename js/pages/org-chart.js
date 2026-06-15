@@ -34,7 +34,7 @@ const depts = [
 export const renderOrgChart = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Company", null], ["Org Chart", null]],
   title: "โครงสร้างองค์กร",
-  lead: "EXZY มี 9 แผนกหลัก ๆ สามารถทำความรู้จักแต่ละฝ่ายและหน้าที่คร่าว ๆ ได้จากแผนภาพนี้เลย",
+  lead: "EXZY มี 9 แผนกหลัก ๆ สามารถทำความรู้จักแต่ละฝ่ายและหน้าที่คร่าว ๆ ได้จากแผนภาพนี้เลย 🏢",
   body: `
     <!-- Company HQ card (compact, centered) -->
     <div class="oc-hq-card anim-up">

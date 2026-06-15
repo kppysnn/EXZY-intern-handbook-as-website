@@ -109,7 +109,7 @@ export const renderCodeOfConduct = () => pageWrap({
 export const renderInternshipPolicy = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Internship Policy", null]],
   title: "Internship Policy",
-  lead: "เรื่องพื้นฐานที่ intern ควรรู้เกี่ยวกับเวลาเข้างาน สถานที่ฝึกงาน และนับชั่วโมงฝึกงาน",
+  lead: "เรื่องพื้นฐานที่ intern ควรรู้เกี่ยวกับเวลาเข้างาน สถานที่ฝึกงาน และนับชั่วโมงฝึกงาน ⏰",
   body: `
     <!-- Policy Hero Banner V2 -->
     <div class="policy-hero-v2 anim-up">
@@ -180,21 +180,21 @@ export const renderInternshipPolicy = () => pageWrap({
       <div class="rule-card">
         <div class="rule-icon">${I.clock}</div>
         <div class="rule-body">
-          <h3>ลงเวลาเข้า – ออกทุกวัน</h3>
+          <h3>ลงเวลาเข้า – ออกทุกวัน ✏️</h3>
           <p>กรอก Timesheet ทุกวันที่มาทำงาน — บริษัทจะเซ็นรับรองตามชั่วโมงฝึกงานจริง</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.doc}</div>
         <div class="rule-body">
-          <h3>ดูแลชั่วโมงตัวเองด้วยนะ</h3>
+          <h3>ดูแลชั่วโมงตัวเองด้วยนะ 🕐</h3>
           <p>บริหารชั่วโมงฝึกงานและรับผิดชอบเอกสารต่าง ๆ ด้วยตัวเอง — พี่เลี้ยงช่วยแนะนำได้ แต่ต้องติดตามเองด้วย</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.calendar}</div>
         <div class="rule-body">
-          <h3>วันหยุดบริษัท 15 วัน/ปี</h3>
+          <h3>วันหยุดบริษัท 15 วัน/ปี 🗓️</h3>
           <p>Subscribe Staff holiday calendar ไว้ได้เลย จะได้ไม่พลาดวันหยุดของบริษัท</p>
         </div>
       </div>
@@ -225,7 +225,7 @@ export const renderDressCode = () => pageWrap({
       <div class="dress-card-v2 anim-up">
         <div class="dress-card-v2-icon" style="background:var(--cyan-soft); color:var(--navy);">${I.shirt}</div>
         <div class="dress-card-v2-style" style="color:var(--navy);">Smart Casual</div>
-        <h3>ฝึกงานที่ออฟฟิศ</h3>
+        <h3>ฝึกงานที่ออฟฟิศ 🏢</h3>
         <ul>
           <li>เสื้อเชิ้ตแขนยาว/แขนสั้น เสื้อโปโล หรือเสื้อยืดสุภาพ</li>
           <li>กางเกงขายาวหรือกระโปรง (สแล็ค ผ้า หรือยีนส์)</li>
@@ -235,7 +235,7 @@ export const renderDressCode = () => pageWrap({
       <div class="dress-card-v2 anim-up" data-delay="80">
         <div class="dress-card-v2-icon" style="background:var(--mist); color:var(--ink);">${I.people}</div>
         <div class="dress-card-v2-style" style="color:var(--ink);">Business Casual</div>
-        <h3>ฝึกงานนอกสถานที่</h3>
+        <h3>ฝึกงานนอกสถานที่ 🚗</h3>
         <ul>
           <li>ชุดนักศึกษา เสื้อเชิ้ตแขนยาว พร้อมสวมเบลเซอร์หรือสูททับ</li>
           <li>กางเกงขายาวหรือกระโปรง (สแล็ค ผ้า หรือยีนส์)</li>
@@ -257,7 +257,7 @@ export const renderDressCode = () => pageWrap({
     <div class="callout anim-up">
       <span class="ic">${I.sparkle}</span>
       <div>
-        <h4>เมื่อไม่แน่ใจ ให้สังเกตเพื่อนร่วมงานคนอื่นดู</h4>
+        <h4>เมื่อไม่แน่ใจ ให้สังเกตเพื่อนร่วมงานคนอื่นดู 👀</h4>
         <p>ลองดูว่าพี่ ๆ ในออฟฟิศแต่งตัวกันยังไง หากสงสัยสามารถถามพี่เลี้ยงได้เลย</p>
       </div>
     </div>
@@ -277,21 +277,21 @@ export const renderLeave = () => {
       <div class="leave-step anim-left" data-delay="0">
         <div class="leave-step-node">1</div>
         <div class="leave-step-card">
-          <h4>แจ้งพี่เลี้ยงและทีม</h4>
+          <h4>แจ้งพี่เลี้ยงและทีม 💬</h4>
           <p>แจ้งขอลากับพี่เลี้ยงและทีมก่อนเป็นอันดับแรก ก่อนส่งอีเมลให้ HR</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="100">
         <div class="leave-step-node">2</div>
         <div class="leave-step-card">
-          <h4>ส่ง Email แจ้งการลาให้ HR</h4>
+          <h4>ส่ง Email แจ้งการลาให้ HR ✉️</h4>
           <p>ส่งอีเมลแจ้งลาไปที่ <a href="mailto:${hrEmail}" class="inline-link">${hrEmail}</a> ระบุเหตุผลและจำนวนวันที่จะลา</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="200">
         <div class="leave-step-node">3</div>
         <div class="leave-step-card">
-          <h4>CC อีเมลพี่เลี้ยงและทีม</h4>
+          <h4>CC อีเมลพี่เลี้ยงและทีม 📤</h4>
           <p>CC อีเมลไปหาพี่เลี้ยงและทีมในอีเมลเดียวกันกับ HR เพื่อให้ทุกคนรับทราบ</p>
         </div>
       </div>
@@ -308,12 +308,12 @@ export const renderLeave = () => {
     <h2>กำหนดเวลาแจ้งลา</h2>
     <div class="leave-deadline-row">
       <div class="leave-dl-card leave-dl-sick anim-up">
-        <div class="leave-dl-type">ลาป่วย</div>
+        <div class="leave-dl-type">🤒 ลาป่วย</div>
         <div class="leave-dl-time">แจ้ง HR ก่อน 11:00 น.</div>
         <div class="leave-dl-note">ของวันที่ลางาน</div>
       </div>
       <div class="leave-dl-card leave-dl-biz anim-up" data-delay="80">
-        <div class="leave-dl-type">ลากิจธุระ</div>
+        <div class="leave-dl-type">📋 ลากิจธุระ</div>
         <div class="leave-dl-time">แจ้ง HR ล่วงหน้า 1 วัน</div>
         <div class="leave-dl-note">วันทำการก่อนวันลา</div>
       </div>

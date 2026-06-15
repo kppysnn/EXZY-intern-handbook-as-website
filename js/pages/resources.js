@@ -28,7 +28,7 @@ export const renderTimesheet = () => {
       </div>
     </div>
 
-    <h2>ตัวอย่างเอกสาร Timesheet</h2>
+    <h2>ตัวอย่างเอกสาร Timesheet 📄</h2>
     <p>เอกสาร Timesheet ของ EXZY มีรูปแบบดังนี้ — ใช้เป็นอ้างอิงเมื่อกรอกข้อมูล</p>
     <figure class="ts-figure">
       <img src="timesheet-sample.png" alt="ตัวอย่างเอกสาร Intern Timesheet ของ EXZY" loading="lazy" />
@@ -54,7 +54,7 @@ export const renderTimesheet = () => {
       <div class="ts-col-item anim-up"><div class="ts-col-n">7</div><div class="ts-col-info"><strong>Incharge Name</strong><span>ชื่อพี่เลี้ยง / Supervisor</span></div></div>
     </div>
 
-    <h2 style="margin-top:48px;">เอกสารที่ต้องส่งให้ HR ทุกเดือน</h2>
+    <h2 style="margin-top:48px;">เอกสารที่ต้องส่งให้ HR ทุกเดือน 📮</h2>
     <p>กำหนดส่ง <strong>วันที่ 30–31 ของทุกเดือน</strong> — พิมพ์เอกสารเป็นกระดาษและนำไปใส่กล่องที่หน้าห้อง HR ที่ชั้น 4</p>
     <ul>
       <li><strong>สำเนาบัตรประชาชน</strong> พร้อมเซ็นสำเนาถูกต้อง — ส่งทุกเดือน</li>
