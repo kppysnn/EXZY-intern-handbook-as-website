@@ -122,8 +122,8 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-videos-title">พักเที่ยงวันแรกกินที่ไหนดี?</h2>
-    <p>ดูก่อนออกไปพักกลางวัน จะได้รู้ว่ารอบ ๆ บริษัทมีร้านอะไรบ้าง และ intern รุ่นก่อนชอบไปกินที่ไหน</p>
+    <h2 id="ex-day-videos-title">พักเที่ยงแล้ว ทานข้าวที่ไหนดี ?</h2>
+    <p>รวมคลิปแนะนำร้านอาหารรอบออฟฟิศ ทั้งร้านเด็ดที่พี่ ๆ แนะนำ และร้านใกล้ที่เดินไปกินได้ง่าย ๆ ไม่ไกล</p>
   </div>
 
   <div class="ex-day-video-grid">
@@ -134,7 +134,7 @@ export function renderFirstDay(data = {}) {
       <div class="ex-day-video-copy">
         <span>แนะนำร้านเด็ด</span>
         <h3>ปักหมุดร้านเด็ดชาว EXZY</h3>
-        <p>intern รุ่นก่อนรวมร้านอาหารที่ชอบไปกินรอบ ๆ บริษัท จะได้มีร้านในใจก่อนพักเที่ยงวันแรก</p>
+        <p>อยากรู้วว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ exzy กัน!</p>
       </div>
     </article>
 
@@ -144,8 +144,8 @@ export function renderFirstDay(data = {}) {
       </div>
       <div class="ex-day-video-copy">
         <span>พิกัดร้านอาหาร</span>
-        <h3>แจกพิกัดร้านเด็ดรอบ EXZY</h3>
-        <p>คลิปพาเดินดูร้านรอบ ๆ บริษัท จะได้เตรียมตัวสำหรับมื้อเที่ยงได้เลยตั้งแต่วันแรก</p>
+        <h3>รอบ ๆ บริษัทของเรา มีร้านไหนน่ากินบ้าง ?</h3>
+        <p>พิกัดร้านอาหารใกล้บริษัท ที่สามารถเดินไปได้ ไม่รู้จะไปกินที่ไหน ลองดูคลิปนี้เลย !</p>
       </div>
     </article>
   </div>

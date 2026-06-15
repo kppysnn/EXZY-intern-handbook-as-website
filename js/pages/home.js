@@ -116,8 +116,8 @@ export var renderHome = () => `
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
-          <h3>เห็นภาพการฝึกงานก่อนเริ่มจริง</h3>
-          <p>เปิดดูบรรยากาศจริงในออฟฟิศไว้ก่อน จะได้พอนึกออกว่าวันแรกและช่วงฝึกงานจะประมาณไหน</p>
+          <h3>ฝึกงาน Digital Marketing ที่ EXZY</h3>
+          <p>น้องเกรซ Digital Marketing Intern รีแคปงานที่ได้ทำและสิ่งที่ได้เรียนรู้ตลอดการฝึกงาน</p>
         </div>
       </article>
 
@@ -127,8 +127,8 @@ export var renderHome = () => `
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
-          <h3>อีกมุมจาก intern รุ่นก่อน</h3>
-          <p>คลิปสั้น ๆ ที่ช่วยให้เห็นจังหวะชีวิตในบริษัทมากกว่าการอ่านคู่มืออย่างเดียว</p>
+          <h3>recap UX/UI Designer Internship ที่ EXZY</h3>
+          <p>น้องนิกกี้ นักศึกษาจากมหาวิทยาลัยเทคโนโลยีสุรนารี รีแคปโปรเจกต์และงานที่ได้ทำตลอดการฝึกงาน 4 เดือน</p>
         </div>
       </article>
 
@@ -138,8 +138,8 @@ export var renderHome = () => `
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern Life</span>
-          <h3>ตามติดชีวิต intern ที่ EXZY</h3>
-          <p>ติดตามชีวิตในออฟฟิศของ intern ตั้งแต่เช้าจนเย็น ทั้งงานที่ทำ บรรยากาศ และทีมที่ได้ทำงานด้วย</p>
+          <h3>5 เดือนกับการฝึกงาน Developer ที่ EXZY</h3>
+          <p>แชร์มุมมองการฝึกงานสาย Developer ทั้งงานที่ได้ทำ ทีมที่ได้ร่วมงาน และสิ่งที่ได้เรียนรู้</p>
         </div>
       </article>
     </div>
