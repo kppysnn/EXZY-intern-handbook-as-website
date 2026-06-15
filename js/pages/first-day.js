@@ -129,7 +129,7 @@ export function renderFirstDay(data = {}) {
   <div class="ex-day-video-grid">
     <article class="ex-day-video-card fdb-reveal">
       <div class="ex-day-video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/FKzHY0kpHlE" title="ปักหมุดร้านเด็ดชาว Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/FKzHY0kpHlE" title="ปักหมุดร้านเด็ดชาว Exzy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
         <span>แนะนำร้านเด็ด</span>
@@ -140,7 +140,7 @@ export function renderFirstDay(data = {}) {
 
     <article class="ex-day-video-card fdb-reveal fdb-delay1">
       <div class="ex-day-video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/jWSrBLB4Mg0" title="แจกพิกัดร้านเด็ดรอบ Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/jWSrBLB4Mg0" title="แจกพิกัดร้านเด็ดรอบ Exzy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
         <span>พิกัดร้านอาหาร</span>
