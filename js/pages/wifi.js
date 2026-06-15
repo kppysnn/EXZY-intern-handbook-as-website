@@ -48,7 +48,7 @@ export const renderWifi = () => pageWrap({
               </div>
             </div>
           </div>
-          <p class="wn-note">สำหรับพนักงาน / Intern เท่านั้น — รหัสผ่านไม่ได้เก็บบน handbook เพื่อความปลอดภัย</p>
+          <p class="wn-note">สำหรับพนักงาน / Intern เท่านั้น — ติดต่อ HR เพื่อขอรหัสผ่าน</p>
         </div>
       </div>
     </div>
