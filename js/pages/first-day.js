@@ -143,8 +143,8 @@ export function renderFirstDay(data = {}) {
         <iframe src="https://www.youtube-nocookie.com/embed/jWSrBLB4Mg0" title="แจกพิกัดร้านเด็ดรอบ EXZY" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
-        <span>🍜 พิกัดร้านอาหาร</span>
-        <h3>รอบบริษัทของเรา ร้านไหนน่ากินบ้าง ?</h3>
+        <span>พิกัดร้านอาหาร</span>
+        <h3>🍜 รอบบริษัทของเรา ร้านไหนน่ากินบ้าง ?</h3>
         <p>พิกัดร้านอาหารใกล้บริษัท ที่สามารถเดินไปได้ <br>ไม่รู้จะไปกินที่ไหน ลองดูคลิปนี้เลย !</p>
       </div>
     </article>
