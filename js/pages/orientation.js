@@ -4,7 +4,7 @@ import { pageWrap } from '../helpers.js';
 export const renderOrientation = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Getting Started", null], ["Orientation", null]],
   title: "Orientation",
-  lead: "ทบทวนสิ่งที่ได้ฟังใน Orientation ทั้งรายละเอียดการฝึกงาน โปรเจกต์ที่จะได้ทำ และสิ่งที่ intern จะได้รับจากการฝึกงานที่ EXZY",
+  lead: "ทบทวนสิ่งที่ได้ฟังใน Orientation ทั้งรายละเอียดการฝึกงาน โปรเจกต์ที่ต้องรับผิดชอบ และเบี้ยเลี้ยงต่าง ๆ",
   toc: [
     ["slides", "สไลด์ปฐมนิเทศ"],
     ["intro", "เกี่ยวกับ EXZY"],
@@ -39,7 +39,7 @@ export const renderOrientation = () => pageWrap({
     </div>
 
     <h2 id="values">EXZY Core Values</h2>
-    <p>แนวคิดที่อยู่เบื้องหลังการทำงานของ EXZY หากเข้าใจและนำไปใช้จริงแสดงว่าคุณเริ่มเป็นส่วนหนึ่งของพวกเราแล้ว!</p>
+    <p>แนวคิดที่อยู่เบื้องหลังการทำงานของ EXZY — ลองทำความเข้าใจแต่ละข้อและนำไปปรับใช้ในการทำงานได้เลย</p>
 
     <!-- Compact CV Preview -->
     <div class="cv-wrap cv-compact">

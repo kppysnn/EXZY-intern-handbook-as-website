@@ -7,7 +7,7 @@ export const renderTimesheet = () => {
   return pageWrap({
   crumbs: [["Home", "#/home"], ["Intern Tasks", null], ["Timesheet", null]],
   title: "Intern Timesheet",
-  lead: "Concept ง่าย ๆ กรอกทุกวัน ส่งทุกสิ้นเดือน แค่นี้เลย สามารถดูขั้นตอนการกรอกข้อมูลที่ถูกต้องได้ในหน้านี้",
+  lead: "กรอกทุกวัน ส่งทุกสิ้นเดือน — ดูขั้นตอนและตัวอย่างเอกสารได้ด้านล่าง",
   body: `
     <div class="ts-flow-section">
       <p class="ts-flow-section-label">ขั้นตอนการกรอก Timesheet</p>
@@ -79,7 +79,7 @@ export const renderFaqs = () => {
   return pageWrap({
   crumbs: [["Home", "#/home"], ["Resources", null], ["FAQs", null]],
   title: "Frequently Asked Questions",
-  lead: "รวมคำถามพร้อมคำตอบที่ Intern มักสงสัยเกี่ยวกับการฝึกงานที่ EXZY ",
+  lead: "รวมคำถามพร้อมคำตอบที่ Intern มักสงสัยเกี่ยวกับการฝึกงานที่ EXZY",
   body: `
     <!-- Filter Tabs -->
     <div class="faq-filter" id="faq-filter">
