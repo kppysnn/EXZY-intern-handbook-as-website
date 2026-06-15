@@ -12367,7 +12367,8 @@ p.hero-word, div.hero-word { display: block; }
 .acc-icon { width: 24px; height: 24px; border-radius: 50%; background: var(--surface-2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform .25s, background .2s; }
 .acc-item.open .acc-icon { transform: rotate(45deg); background: var(--sec, var(--cyan)); color: #F8F9FA; }
 .acc-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }
-.acc-body-inner { overflow: hidden; min-height: 0; padding: 4px 20px 24px; font-size: 14.5px; color: var(--body); line-height: 1.8; }
+.acc-body-inner { overflow: hidden; min-height: 0; padding: 0 20px; font-size: 14.5px; color: var(--body); line-height: 1.8; }
+.acc-item.open .acc-body-inner { padding-top: 4px; padding-bottom: 24px; }
 
 /* ─────────────── MEETING ROOMS V2 ─────────────── */
 .mr-v2-section { margin: 48px 0; }

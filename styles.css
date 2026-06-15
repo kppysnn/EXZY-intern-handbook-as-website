@@ -3957,7 +3957,9 @@ p.hero-word, div.hero-word { display: block; }
 
 .acc-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }
 
-.acc-body-inner { overflow: hidden; min-height: 0; padding: 4px 20px 24px; font-size: 14.5px; color: var(--body); line-height: 1.8; }
+.acc-body-inner { overflow: hidden; min-height: 0; padding: 0 20px; font-size: 14.5px; color: var(--body); line-height: 1.8; }
+
+.acc-item.open .acc-body-inner { padding-top: 4px; padding-bottom: 24px; }
 
 
 /* ─────────────── MEETING ROOMS V2 ─────────────── */
