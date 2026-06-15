@@ -36389,10 +36389,17 @@ html::-webkit-scrollbar { display: none !important; }
   gap: 8px;
   flex-wrap: wrap;
 }
-.ex-day-item .ex-road-mini:has(> a:only-child) {
+.ex-day-item .ex-road-mini > button.ex-inline-link {
+  margin-top: 0;
+  padding: 10px 6px;
+  background: rgba(0,40,130,.04);
+}
+.ex-day-item .ex-road-mini:has(> a:only-child),
+.ex-day-item .ex-road-mini:has(> button:only-child) {
   justify-content: flex-start;
 }
-.ex-day-item .ex-road-mini > a:only-child {
+.ex-day-item .ex-road-mini > a:only-child,
+.ex-day-item .ex-road-mini > button:only-child {
   flex-direction: row;
   width: auto;
   height: auto;
@@ -36400,8 +36407,14 @@ html::-webkit-scrollbar { display: none !important; }
   gap: 6px;
   font-size: 13px;
 }
+.ex-day-item .ex-road-mini > a:only-child b,
+.ex-day-item .ex-road-mini > button:only-child b {
+  font-size: inherit;
+  line-height: inherit;
+}
 .ex-day-item .ex-road-mini > span,
-.ex-day-item .ex-road-mini > a {
+.ex-day-item .ex-road-mini > a,
+.ex-day-item .ex-road-mini > button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36417,6 +36430,10 @@ html::-webkit-scrollbar { display: none !important; }
   text-decoration: none;
   border: 1px solid rgba(0,40,130,.12);
   background: rgba(0,40,130,.04);
+  appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  margin: 0;
 }
 @media (max-width: 900px) {
   .ex-day-items-grid { grid-template-columns: repeat(2, 210px); }
