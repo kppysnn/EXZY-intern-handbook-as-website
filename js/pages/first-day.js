@@ -122,8 +122,8 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-videos-title">ดูบรรยากาศจริงก่อนเริ่มงาน</h2>
-    <p>คลิปสั้น ๆ จาก intern รุ่นก่อน ช่วยให้เห็นออฟฟิศและร้านรอบบริษัทก่อนถึงวันจริง</p>
+    <h2 id="ex-day-videos-title">พักเที่ยงวันแรกกินที่ไหนดี?</h2>
+    <p>ดูก่อนออกไปพักกลางวัน จะได้รู้ว่ารอบ ๆ บริษัทมีร้านอะไรบ้าง และ intern รุ่นก่อนชอบไปกินที่ไหน</p>
   </div>
 
   <div class="ex-day-video-grid">
@@ -134,9 +134,9 @@ export function renderFirstDay(data = {}) {
         </div>
       </div>
       <div class="ex-day-video-copy">
-        <span>Lunch spots</span>
-        <h3>ร้านโปรดใกล้ออฟฟิศ</h3>
-        <p>ดูไว้ก่อนพักเที่ยง จะได้พอนึกออกว่ารอบ ๆ บริษัทมีอะไรให้เลือกบ้าง</p>
+        <span>Lunch interview</span>
+        <h3>ร้านเด็ดประจำที่ intern กิน</h3>
+        <p>intern รุ่นก่อนเล่าว่าพักเที่ยงชอบไปกินที่ไหน ร้านไหนอร่อย และแนะนำอะไรบ้าง</p>
       </div>
     </article>
 
@@ -147,22 +147,9 @@ export function renderFirstDay(data = {}) {
         </div>
       </div>
       <div class="ex-day-video-copy">
-        <span>Office mood</span>
-        <h3>เห็นหน้าออฟฟิศก่อนมาจริง</h3>
-        <p>ช่วยให้จำทางเข้าและบรรยากาศหน้า EXZY ได้ง่ายขึ้นในวันแรก</p>
-      </div>
-    </article>
-
-    <article class="ex-day-video-card fdb-reveal fdb-delay2">
-      <div class="ex-day-video-frame">
-        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-03-poster.jpg')">
-          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-        </div>
-      </div>
-      <div class="ex-day-video-copy">
-        <span>Lunch break</span>
-        <h3>พิกัดของกินช่วงพักเที่ยง</h3>
-        <p>ถ้ายังไม่รู้จะกินอะไร คลิปนี้ช่วยให้มีตัวเลือกก่อนออกไปพักกลางวัน</p>
+        <span>Restaurant tour</span>
+        <h3>พาเดินดูร้านอาหารรอบออฟฟิศ</h3>
+        <p>คลิปพาเดินดูร้านรอบ ๆ บริษัท จะได้มีตัวเลือกในหัวก่อนถึงเวลาพักกลางวันจริง</p>
       </div>
     </article>
   </div>
