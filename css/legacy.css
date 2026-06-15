@@ -30166,10 +30166,9 @@ span[style*="particleFloat"] { display: none !important; }
 
 .ex-day-video-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 220px));
-  justify-content: center;
-  gap: 20px;
-  max-width: 720px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2.5vw, 24px);
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -30179,8 +30178,8 @@ span[style*="particleFloat"] { display: none !important; }
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(0,64,129,.10);
-  border-radius: 16px;
-  box-shadow: 0 8px 28px rgba(0,64,129,.10);
+  border-radius: 20px;
+  box-shadow: 0 10px 34px rgba(0,64,129,.10);
 }
 
 .ex-day-video-frame {
@@ -30223,7 +30222,7 @@ span[style*="particleFloat"] { display: none !important; }
   gap: 10px;
 }
 .yt-placeholder-inner span {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: rgba(255,255,255,.85);
   letter-spacing: .06em;
@@ -30234,48 +30233,45 @@ span[style*="particleFloat"] { display: none !important; }
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 6px;
-  padding: 14px 16px 16px;
+  gap: 8px;
+  padding: 20px 22px 22px;
 }
 
 .ex-day-video-copy span {
   width: fit-content;
   border-radius: 999px;
-  padding: 3px 10px;
+  padding: 5px 12px;
   border: 1px solid rgba(102,197,197,.34);
   background: rgba(102,197,197,.14);
   color: #004081;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: .04em;
-  text-transform: uppercase;
 }
 
 .ex-day-video-copy h3 {
   margin: 0;
   color: #001122;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: 1.35;
 }
 
 .ex-day-video-copy p {
   margin: 0;
   color: #505050;
-  font-size: 13px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.75;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .ex-day-video-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    max-width: 100%;
   }
   .ex-day-video-copy {
-    padding: 10px 12px 12px;
+    padding: 14px 16px 16px;
   }
   .ex-day-video-copy h3 {
-    font-size: .9rem;
+    font-size: .95rem;
   }
   .ex-day-video-copy p {
     display: none;
