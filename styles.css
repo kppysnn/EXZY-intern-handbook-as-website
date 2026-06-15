@@ -5329,7 +5329,7 @@ footer { margin-top: 0 !important; }
 .showcase-link-subgrid .show-real-summary {
   min-height: 39px;
   display: -webkit-box !important;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
