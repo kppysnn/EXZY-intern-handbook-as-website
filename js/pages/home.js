@@ -100,8 +100,8 @@ export var renderHome = () => `
       </div>
       <div class="ex-voice-featured-copy">
         <span class="ex-voice-tag">Intern review · BD</span>
-        <h3>ฝึกงาน Business&nbsp;Development ที่ EXZY</h3>
-        <p>น้องดาด้า นักศึกษา BAScii จุฬาลงกรณ์มหาวิทยาลัย <br>ในโครงการ Founder Apprentice <br>เล่าประสบการณ์ฝึกงานสาย BD กับ EXZY ตลอด 2 เดือน</p>
+        <h3>ฝึกงาน Business&nbsp;Development ที่ EXZY 🤝</h3>
+        <p>น้องดาด้า นักศึกษา BAScii จุฬาลงกรณ์มหาวิทยาลัย <br>ในโครงการ Founder Apprentice <br>เล่าประสบการณ์ฝึกงานสาย BD กับ EXZY ตลอด 2 เดือน ✨</p>
       </div>
     </div>
 
@@ -115,7 +115,7 @@ export var renderHome = () => `
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
           <h3>ฝึกงานสาย Digital Marketing กับ EXZY 💡</h3>
-          <p>น้องเกรซ Digital Marketing Intern รีแคปงานที่ได้ทำและสิ่งที่ได้เรียนรู้ตลอดการฝึกงาน</p>
+          <p>น้องเกรซ Digital Marketing Intern รีแคปงานที่ได้ทำและสิ่งที่ได้เรียนรู้ตลอดการฝึกงาน 📱</p>
         </div>
       </article>
 
@@ -126,7 +126,7 @@ export var renderHome = () => `
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
           <h3>recap UX/UI Designer Internship ที่ EXZY 🎨</h3>
-          <p>น้องนิกกี้ นักศึกษาจากมหาวิทยาลัยเทคโนโลยีสุรนารี <br>รีแคปโปรเจกต์และงานที่ได้ทำตลอดการฝึกงาน 4 เดือน</p>
+          <p>น้องนิกกี้ นักศึกษาจากมหาวิทยาลัยเทคโนโลยีสุรนารี <br>รีแคปโปรเจกต์และงานที่ได้ทำตลอดการฝึกงาน 4 เดือน ✍️</p>
         </div>
       </article>
 
@@ -137,7 +137,7 @@ export var renderHome = () => `
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern Life</span>
           <h3>5 เดือนกับการฝึกงาน Developer ที่ EXZY  💻</h3>
-          <p>แชร์มุมมองการฝึกงานสาย Developer ทั้งงานที่ได้ทำ ทีมที่ได้ร่วมงาน และสิ่งที่ได้เรียนรู้</p>
+          <p>แชร์มุมมองการฝึกงานสาย Developer ทั้งงานที่ได้ทำ ทีมที่ได้ร่วมงาน และสิ่งที่ได้เรียนรู้ 🛠️</p>
         </div>
       </article>
     </div>
