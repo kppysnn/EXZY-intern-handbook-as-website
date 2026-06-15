@@ -506,37 +506,6 @@
   </div>
 </section>
 
-<section class="ex-home-intern-life" aria-labelledby="ex-home-life-title">
-  <div class="ex-home-voices-inner">
-    <div class="ex-home-section-intro fdb-reveal">
-      <span class="ex-must-eyebrow">INTERN LIFE</span>
-      <h2 id="ex-home-life-title">\u0E0A\u0E35\u0E27\u0E34\u0E15 intern \u0E17\u0E35\u0E48 EXZY<br>\u0E40\u0E1B\u0E47\u0E19\u0E22\u0E31\u0E07\u0E44\u0E07\u0E1A\u0E49\u0E32\u0E07?</h2>
-      <p>\u0E14\u0E39\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E08\u0E30\u0E44\u0E14\u0E49\u0E1E\u0E2D\u0E19\u0E36\u0E01\u0E2D\u0E2D\u0E01\u0E27\u0E48\u0E32\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E41\u0E25\u0E30\u0E27\u0E31\u0E19\u0E17\u0E33\u0E07\u0E32\u0E19\u0E1B\u0E01\u0E15\u0E34\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E1A\u0E1A\u0E44\u0E2B\u0E19</p>
-    </div>
-    <div class="ex-intern-life-grid">
-      <article class="ex-intern-life-card fdb-reveal">
-        <div class="ex-intern-life-video">
-          <iframe src="https://www.youtube.com/embed/ILybckeMZ7o" title="\u0E15\u0E32\u0E21\u0E15\u0E34\u0E14\u0E0A\u0E35\u0E27\u0E34\u0E15 Intern \u0E17\u0E35\u0E48 Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="ex-voice-copy">
-          <span class="ex-voice-tag">Intern Life</span>
-          <h3>\u0E15\u0E32\u0E21\u0E15\u0E34\u0E14\u0E0A\u0E35\u0E27\u0E34\u0E15 intern \u0E17\u0E35\u0E48 EXZY</h3>
-          <p>\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E02\u0E2D\u0E07 intern \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E40\u0E0A\u0E49\u0E32\u0E08\u0E19\u0E40\u0E22\u0E47\u0E19 \u0E17\u0E31\u0E49\u0E07\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33 \u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28 \u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33\u0E07\u0E32\u0E19\u0E14\u0E49\u0E27\u0E22</p>
-        </div>
-      </article>
-      <article class="ex-intern-life-card fdb-reveal fdb-delay1">
-        <div class="ex-intern-life-video">
-          <iframe src="https://www.youtube.com/embed/9sfJ04-2Ck8" title="Exzy Lifestyle \u0E43\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E27\u0E31\u0E19" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="ex-voice-copy">
-          <span class="ex-voice-tag">Intern Life</span>
-          <h3>EXZY lifestyle \u0E43\u0E19\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E27\u0E31\u0E19</h3>
-          <p>\u0E0A\u0E21\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E41\u0E25\u0E30\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E1B\u0E23\u0E30\u0E08\u0E33\u0E27\u0E31\u0E19\u0E02\u0E2D\u0E07 intern \u0E17\u0E35\u0E48 EXZY \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E15\u0E49\u0E19\u0E08\u0E19\u0E08\u0E1A \u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="ex-home-voices" aria-labelledby="ex-home-voices-title">
   <div class="ex-home-voices-inner">
@@ -577,6 +546,17 @@
           <span class="ex-voice-tag">Intern review</span>
           <h3>\u0E2D\u0E35\u0E01\u0E21\u0E38\u0E21\u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19</h3>
           <p>\u0E04\u0E25\u0E34\u0E1B\u0E2A\u0E31\u0E49\u0E19 \u0E46 \u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E40\u0E2B\u0E47\u0E19\u0E08\u0E31\u0E07\u0E2B\u0E27\u0E30\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E43\u0E19\u0E1A\u0E23\u0E34\u0E29\u0E31\u0E17\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32\u0E01\u0E32\u0E23\u0E2D\u0E48\u0E32\u0E19\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27</p>
+        </div>
+      </article>
+
+      <article class="ex-voice-card fdb-reveal fdb-delay2">
+        <div class="ex-voice-video">
+          <iframe src="https://www.youtube.com/embed/ILybckeMZ7o" title="\u0E15\u0E32\u0E21\u0E15\u0E34\u0E14\u0E0A\u0E35\u0E27\u0E34\u0E15 Intern \u0E17\u0E35\u0E48 Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">Intern Life</span>
+          <h3>\u0E15\u0E32\u0E21\u0E15\u0E34\u0E14\u0E0A\u0E35\u0E27\u0E34\u0E15 intern \u0E17\u0E35\u0E48 EXZY</h3>
+          <p>\u0E15\u0E34\u0E14\u0E15\u0E32\u0E21\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E43\u0E19\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28\u0E02\u0E2D\u0E07 intern \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E40\u0E0A\u0E49\u0E32\u0E08\u0E19\u0E40\u0E22\u0E47\u0E19 \u0E17\u0E31\u0E49\u0E07\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33 \u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28 \u0E41\u0E25\u0E30\u0E17\u0E35\u0E21\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33\u0E07\u0E32\u0E19\u0E14\u0E49\u0E27\u0E22</p>
         </div>
       </article>
     </div>

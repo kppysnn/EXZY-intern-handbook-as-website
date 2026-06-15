@@ -87,37 +87,6 @@ export var renderHome = () => `
   </div>
 </section>
 
-<section class="ex-home-intern-life" aria-labelledby="ex-home-life-title">
-  <div class="ex-home-voices-inner">
-    <div class="ex-home-section-intro fdb-reveal">
-      <span class="ex-must-eyebrow">INTERN LIFE</span>
-      <h2 id="ex-home-life-title">ชีวิต intern ที่ EXZY<br>เป็นยังไงบ้าง?</h2>
-      <p>ดูก่อนเริ่มฝึกงาน จะได้พอนึกออกว่าบรรยากาศออฟฟิศและวันทำงานปกติเป็นแบบไหน</p>
-    </div>
-    <div class="ex-intern-life-grid">
-      <article class="ex-intern-life-card fdb-reveal">
-        <div class="ex-intern-life-video">
-          <iframe src="https://www.youtube.com/embed/ILybckeMZ7o" title="ตามติดชีวิต Intern ที่ Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="ex-voice-copy">
-          <span class="ex-voice-tag">Intern Life</span>
-          <h3>ตามติดชีวิต intern ที่ EXZY</h3>
-          <p>ติดตามชีวิตในออฟฟิศของ intern ตั้งแต่เช้าจนเย็น ทั้งงานที่ทำ บรรยากาศ และทีมที่ได้ทำงานด้วย</p>
-        </div>
-      </article>
-      <article class="ex-intern-life-card fdb-reveal fdb-delay1">
-        <div class="ex-intern-life-video">
-          <iframe src="https://www.youtube.com/embed/9sfJ04-2Ck8" title="Exzy Lifestyle ในหนึ่งวัน" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="ex-voice-copy">
-          <span class="ex-voice-tag">Intern Life</span>
-          <h3>EXZY lifestyle ในหนึ่งวัน</h3>
-          <p>ชมออฟฟิศและชีวิตประจำวันของ intern ที่ EXZY ตั้งแต่ต้นจนจบ ก่อนเริ่มฝึกงานจริง</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="ex-home-voices" aria-labelledby="ex-home-voices-title">
   <div class="ex-home-voices-inner">
@@ -158,6 +127,17 @@ export var renderHome = () => `
           <span class="ex-voice-tag">Intern review</span>
           <h3>อีกมุมจาก intern รุ่นก่อน</h3>
           <p>คลิปสั้น ๆ ที่ช่วยให้เห็นจังหวะชีวิตในบริษัทมากกว่าการอ่านคู่มืออย่างเดียว</p>
+        </div>
+      </article>
+
+      <article class="ex-voice-card fdb-reveal fdb-delay2">
+        <div class="ex-voice-video">
+          <iframe src="https://www.youtube.com/embed/ILybckeMZ7o" title="ตามติดชีวิต Intern ที่ Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="ex-voice-copy">
+          <span class="ex-voice-tag">Intern Life</span>
+          <h3>ตามติดชีวิต intern ที่ EXZY</h3>
+          <p>ติดตามชีวิตในออฟฟิศของ intern ตั้งแต่เช้าจนเย็น ทั้งงานที่ทำ บรรยากาศ และทีมที่ได้ทำงานด้วย</p>
         </div>
       </article>
     </div>
