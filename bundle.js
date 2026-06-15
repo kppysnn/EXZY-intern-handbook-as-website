@@ -1128,26 +1128,7 @@
       </div>
     </div>
 
-    <!-- Steps -->
-    <h2 style="margin-top:40px;">\u0E27\u0E34\u0E18\u0E35\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</h2>
-    <div class="wifi-steps anim-up">
-      <div class="wifi-step">
-        <div class="wifi-step-n">1</div>
-        <div class="wifi-step-body">
-          <strong>\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR</strong>
-          <p>\u0E43\u0E0A\u0E49\u0E1B\u0E38\u0E48\u0E21\u0E14\u0E49\u0E32\u0E19\u0E1A\u0E19 \u0E2B\u0E23\u0E37\u0E2D\u0E2A\u0E48\u0E07\u0E15\u0E23\u0E07\u0E17\u0E35\u0E48 <a href="mailto:${hrEmail}" class="inline-link">${hrEmail}</a></p>
-        </div>
-      </div>
-      <div class="wifi-step">
-        <div class="wifi-step-n">2</div>
-        <div class="wifi-step-body">
-          <strong>\u0E40\u0E1B\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Wi-Fi \u0E41\u0E25\u0E30\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22</strong>
-          <p>\u0E40\u0E25\u0E37\u0E2D\u0E01 <code>ExzyUniFi</code> \u0E41\u0E25\u0E49\u0E27\u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E08\u0E32\u0E01 HR</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="callout anim-up" style="margin-top:32px;">
+    <div class="callout anim-up" style="margin-top:8px;">
       <span class="ic">${I.shield}</span>
       <div>
         <h4>\u0E23\u0E2B\u0E31\u0E2A Staff Wi-Fi \u0E2B\u0E49\u0E32\u0E21\u0E41\u0E0A\u0E23\u0E4C\u0E19\u0E30</h4>

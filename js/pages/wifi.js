@@ -54,26 +54,7 @@ export const renderWifi = () => {
       </div>
     </div>
 
-    <!-- Steps -->
-    <h2 style="margin-top:40px;">วิธีเชื่อมต่อ</h2>
-    <div class="wifi-steps anim-up">
-      <div class="wifi-step">
-        <div class="wifi-step-n">1</div>
-        <div class="wifi-step-body">
-          <strong>ส่งอีเมลขอรหัสผ่านจาก HR</strong>
-          <p>ใช้ปุ่มด้านบน หรือส่งตรงที่ <a href="mailto:${hrEmail}" class="inline-link">${hrEmail}</a></p>
-        </div>
-      </div>
-      <div class="wifi-step">
-        <div class="wifi-step-n">2</div>
-        <div class="wifi-step-body">
-          <strong>เปิดตั้งค่า Wi-Fi และเลือกเครือข่าย</strong>
-          <p>เลือก <code>ExzyUniFi</code> แล้วใส่รหัสผ่านที่ได้จาก HR</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="callout anim-up" style="margin-top:32px;">
+    <div class="callout anim-up" style="margin-top:8px;">
       <span class="ic">${I.shield}</span>
       <div>
         <h4>รหัส Staff Wi-Fi ห้ามแชร์นะ</h4>
