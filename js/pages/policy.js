@@ -278,7 +278,7 @@ export const renderLeave = () => {
         <div class="leave-step-node">1</div>
         <div class="leave-step-card">
           <h4>แจ้งพี่เลี้ยงและทีม</h4>
-          <p>แจ้งขอลากับพี่เลี้ยงและทีมก่อนเป็นอันดับแรก ก่อนส่งอีเมลให้ hr</p>
+          <p>แจ้งขอลากับพี่เลี้ยงและทีมก่อนเป็นอันดับแรก ก่อนส่งอีเมลให้ HR</p>
         </div>
       </div>
       <div class="leave-step anim-left" data-delay="100">
@@ -292,7 +292,7 @@ export const renderLeave = () => {
         <div class="leave-step-node">3</div>
         <div class="leave-step-card">
           <h4>CC อีเมลพี่เลี้ยงและทีม</h4>
-          <p>CC อีเมลไปหาพี่เลี้ยงและทีมในอีเมลเดียวกันกับ hr เพื่อให้ทุกคนรับทราบ</p>
+          <p>CC อีเมลไปหาพี่เลี้ยงและทีมในอีเมลเดียวกันกับ HR เพื่อให้ทุกคนรับทราบ</p>
         </div>
       </div>
     </div>
@@ -309,12 +309,12 @@ export const renderLeave = () => {
     <div class="leave-deadline-row">
       <div class="leave-dl-card leave-dl-sick anim-up">
         <div class="leave-dl-type">ลาป่วย</div>
-        <div class="leave-dl-time">แจ้ง hr ก่อน 11:00 น.</div>
+        <div class="leave-dl-time">แจ้ง HR ก่อน 11:00 น.</div>
         <div class="leave-dl-note">ของวันที่ลางาน</div>
       </div>
       <div class="leave-dl-card leave-dl-biz anim-up" data-delay="80">
         <div class="leave-dl-type">ลากิจธุระ</div>
-        <div class="leave-dl-time">แจ้ง hr ล่วงหน้า 1 วัน</div>
+        <div class="leave-dl-time">แจ้ง HR ล่วงหน้า 1 วัน</div>
         <div class="leave-dl-note">วันทำการก่อนวันลา</div>
       </div>
     </div>

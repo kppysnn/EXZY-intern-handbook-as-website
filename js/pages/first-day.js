@@ -134,7 +134,7 @@ export function renderFirstDay(data = {}) {
       <div class="ex-day-video-copy">
         <span>แนะนำร้านเด็ด</span>
         <h3>ปักหมุดร้านเด็ดชาว EXZY</h3>
-        <p>อยากรู้วว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ exzy กัน!</p>
+        <p>อยากรู้ว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ EXZY กัน!</p>
       </div>
     </article>
 

@@ -35,7 +35,7 @@ export var renderHome = () => `
     <div class="ex-home-section-intro fdb-reveal">
       <span class="ex-must-eyebrow">Timesheet · HR Project</span>
       <h2 id="ex-home-start-title">Project สำหรับ intern มีอะไรบ้าง ?</h2>
-      <p>intern ทุกคนจะต้องรับผิดชอบ 2 งานหลัก และต้องส่งให้กับ hr ตามที่กำหนด</p>
+      <p>intern ทุกคนจะต้องรับผิดชอบ 2 งานหลัก และต้องส่งให้กับ HR ตามที่กำหนด</p>
     </div>
 
     <div class="ex-must-grid">
@@ -224,7 +224,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3 L28 8v10c0 7-5 11-12 13C9 29 4 25 4 18V8L16 3Z"/><path d="M11 16l3 3 7-7"/></svg>
           </div>
           <h3>Work Policy</h3>
-          <p>นโยบายและกฏระเบียบในการทำงาน</p>
+          <p>นโยบายและกฎระเบียบในการทำงาน</p>
         </div>
         <div class="ex-folder-docs">
           <a href="#/policy/code-of-conduct" data-link class="ex-folder-doc"><span>01</span> Core Values</a>

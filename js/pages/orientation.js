@@ -39,7 +39,7 @@ export const renderOrientation = () => pageWrap({
     </div>
 
     <h2 id="values">EXZY Core Values</h2>
-    <p>แนวคิดที่อยู่เบื้องหลังการทำงานของ EXZY หากเข้าใจและนำไปใช้จริงแสดงว่าคุณเริ่มเป็นส่วหนึ่งของพวกเราแล้ว!</p>
+    <p>แนวคิดที่อยู่เบื้องหลังการทำงานของ EXZY หากเข้าใจและนำไปใช้จริงแสดงว่าคุณเริ่มเป็นส่วนหนึ่งของพวกเราแล้ว!</p>
 
     <!-- Compact CV Preview -->
     <div class="cv-wrap cv-compact">
