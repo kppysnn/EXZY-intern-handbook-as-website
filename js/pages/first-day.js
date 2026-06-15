@@ -123,7 +123,7 @@ export function renderFirstDay(data = {}) {
 <section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
     <h2 id="ex-day-videos-title">พักเที่ยงแล้ว ทานข้าวที่ไหนดี ? 🥘</h2>
-    <p>รวมคลิปแนะนำร้านอาหารรอบออฟฟิศ ทั้งร้านเด็ดที่พี่ ๆ แนะนำ และร้านใกล้ที่เดินไปกินได้ง่าย ๆ ไม่ไกล 😋</p>
+    <p>รวมคลิปแนะนำร้านอาหารรอบออฟฟิศ ทั้งร้านเด็ดที่พี่ ๆ แนะนำ และร้านใกล้ที่เดินไปกินได้ง่าย ๆ ไม่ไกล 😋🥢</p>
   </div>
 
   <div class="ex-day-video-grid">
@@ -134,8 +134,8 @@ export function renderFirstDay(data = {}) {
       <div class="ex-day-video-copy">
         <span>แนะนำร้านเด็ด</span>
         <h3>📌 ปักหมุดร้านเด็ดชาว EXZY</h3>
-        <p>อยากรู้ว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ EXZY กัน! 🤩</p>
-      </div>
+        <p>อยากรู้ว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ EXZY กัน! 🤩🍗</p>
+      </div> 
     </article>
 
     <article class="ex-day-video-card fdb-reveal fdb-delay1">
@@ -145,7 +145,7 @@ export function renderFirstDay(data = {}) {
       <div class="ex-day-video-copy">
         <span>พิกัดร้านอาหาร</span>
         <h3>🍜 รอบบริษัทของเรา ร้านไหนน่ากินบ้าง ?</h3>
-        <p>พิกัดร้านอาหารใกล้บริษัท ที่สามารถเดินไปได้ <br>ไม่รู้จะไปกินที่ไหน ลองดูคลิปนี้เลย ! 🍽️</p>
+        <p>พิกัดร้านอาหารใกล้บริษัท ที่สามารถเดินไปได้ <br>ไม่รู้จะไปกินที่ไหน ลองดูคลิปนี้เลย ! ✨🍽️😋</p>
       </div>
     </article>
   </div>
