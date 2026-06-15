@@ -107,6 +107,8 @@ export var renderHome = () => `
       </div>
     </div>
 
+    <div class="ex-voice-divider" aria-hidden="true"><span>คลิปสั้น ๆ จาก intern รุ่นก่อน</span></div>
+
     <div class="ex-voice-grid">
       <article class="ex-voice-card fdb-reveal">
         <div class="ex-voice-video">

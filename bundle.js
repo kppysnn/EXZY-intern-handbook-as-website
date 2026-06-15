@@ -526,6 +526,8 @@
       </div>
     </div>
 
+    <div class="ex-voice-divider" aria-hidden="true"><span>\u0E04\u0E25\u0E34\u0E1B\u0E2A\u0E31\u0E49\u0E19 \u0E46 \u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19</span></div>
+
     <div class="ex-voice-grid">
       <article class="ex-voice-card fdb-reveal">
         <div class="ex-voice-video">
