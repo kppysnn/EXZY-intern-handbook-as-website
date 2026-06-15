@@ -29,7 +29,7 @@ export function teamCard(badge, title, sub, roles) {
 export function acc(q, a) {
   return `
     <div class="acc-item">
-      <button type="button" class="acc-trigger">${q}<span class="acc-icon">${I.plus}</span></button>
+      <button type="button" class="acc-trigger" aria-expanded="false">${q}<span class="acc-icon">${I.plus}</span></button>
       <div class="acc-body"><div class="acc-body-inner">${a}</div></div>
     </div>
   `;

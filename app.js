@@ -299,9 +299,9 @@ function hydratePage() {
   // ----- Accordion handlers -----
   app.querySelectorAll(".acc-item").forEach(item => {
     const trigger = item.querySelector(".acc-trigger");
-    const body = item.querySelector(".acc-body");
     trigger.addEventListener("click", () => {
-      item.classList.toggle("open");
+      const isOpen = item.classList.toggle("open");
+      trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
   });
 

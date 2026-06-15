@@ -76,7 +76,7 @@
   function acc(q, a) {
     return `
     <div class="acc-item">
-      <button type="button" class="acc-trigger">${q}<span class="acc-icon">${I.plus}</span></button>
+      <button type="button" class="acc-trigger" aria-expanded="false">${q}<span class="acc-icon">${I.plus}</span></button>
       <div class="acc-body"><div class="acc-body-inner">${a}</div></div>
     </div>
   `;
@@ -424,9 +424,7 @@
 
 <section class="ex-home-hero" aria-label="EXZY Intern Handbook">
   <div class="ex-home-video-banner" aria-label="\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E17\u0E35\u0E48 EXZY">
-    <video class="ex-home-banner-video" src="./static/home-header-banner.mp4" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="metadata" data-home-hero-video>
-      <source src="./static/home-header-banner.mp4" type="video/mp4" />
-    </video>
+    <video class="ex-home-banner-video" src="./static/home-header-banner.mp4" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="metadata" data-home-hero-video></video>
     <div class="ex-home-video-shade" aria-hidden="true"></div>
   </div>
 
@@ -2252,9 +2250,9 @@
     });
     app.querySelectorAll(".acc-item").forEach((item) => {
       const trigger = item.querySelector(".acc-trigger");
-      const body = item.querySelector(".acc-body");
       trigger.addEventListener("click", () => {
-        item.classList.toggle("open");
+        const isOpen = item.classList.toggle("open");
+        trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
       });
     });
     const tocLinks = app.querySelectorAll(".toc a[data-anchor]");
