@@ -7034,7 +7034,7 @@ span[style*="particleFloat"] { display: none !important; }
   margin: 0;
   color: #001122;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
-  line-height: 1.35;
+  line-height: 1.55;
 }
 
 
