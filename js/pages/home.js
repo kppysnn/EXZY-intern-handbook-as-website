@@ -132,7 +132,7 @@ export var renderHome = () => `
 
       <article class="ex-voice-card fdb-reveal fdb-delay2">
         <div class="ex-voice-video">
-          <iframe src="https://www.youtube-nocookie.com/embed/ILybckeMZ7o" title="ตามติดชีวิต Intern ที่ Exzy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/ILybckeMZ7o" title="ตามติดชีวิต Intern ที่ EXZY" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern Life</span>

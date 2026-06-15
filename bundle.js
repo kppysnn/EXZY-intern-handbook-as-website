@@ -551,7 +551,7 @@
 
       <article class="ex-voice-card fdb-reveal fdb-delay2">
         <div class="ex-voice-video">
-          <iframe src="https://www.youtube-nocookie.com/embed/ILybckeMZ7o" title="\u0E15\u0E32\u0E21\u0E15\u0E34\u0E14\u0E0A\u0E35\u0E27\u0E34\u0E15 Intern \u0E17\u0E35\u0E48 Exzy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/ILybckeMZ7o" title="\u0E15\u0E32\u0E21\u0E15\u0E34\u0E14\u0E0A\u0E35\u0E27\u0E34\u0E15 Intern \u0E17\u0E35\u0E48 EXZY" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern Life</span>
@@ -792,7 +792,7 @@
     <article class="ex-day-item fdb-reveal fdb-delay1">
       <span class="ex-day-item-num">02</span>
       <h3>Metropolis</h3>
-      <p>Session \u0E08\u0E32\u0E01\u0E17\u0E35\u0E21 design <br>\u0E17\u0E35\u0E48\u0E08\u0E30\u0E1E\u0E32\u0E44\u0E1B\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 Metropolis Concept <br>\u0E41\u0E19\u0E27\u0E04\u0E34\u0E14\u0E40\u0E1A\u0E37\u0E49\u0E2D\u0E07\u0E2B\u0E25\u0E31\u0E07 Product Design <br>\u0E02\u0E2D\u0E07 Exzy</p>
+      <p>Session \u0E08\u0E32\u0E01\u0E17\u0E35\u0E21 design <br>\u0E17\u0E35\u0E48\u0E08\u0E30\u0E1E\u0E32\u0E44\u0E1B\u0E23\u0E39\u0E49\u0E08\u0E31\u0E01 Metropolis Concept <br>\u0E41\u0E19\u0E27\u0E04\u0E34\u0E14\u0E40\u0E1A\u0E37\u0E49\u0E2D\u0E07\u0E2B\u0E25\u0E31\u0E07 Product Design <br>\u0E02\u0E2D\u0E07 EXZY</p>
       <div class="ex-road-mini">
         <span><img src="./exzy-square-icon.png" style="width:20px;height:20px;object-fit:contain;border-radius:4px;" alt="EXZY" loading="lazy"><b>Logo</b></span>
         <span><span aria-hidden="true">\u{1F3A8}</span><b>Color</b></span>
@@ -831,7 +831,7 @@
   <div class="ex-day-video-grid">
     <article class="ex-day-video-card fdb-reveal">
       <div class="ex-day-video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/FKzHY0kpHlE" title="\u0E1B\u0E31\u0E01\u0E2B\u0E21\u0E38\u0E14\u0E23\u0E49\u0E32\u0E19\u0E40\u0E14\u0E47\u0E14\u0E0A\u0E32\u0E27 Exzy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/FKzHY0kpHlE" title="\u0E1B\u0E31\u0E01\u0E2B\u0E21\u0E38\u0E14\u0E23\u0E49\u0E32\u0E19\u0E40\u0E14\u0E47\u0E14\u0E0A\u0E32\u0E27 EXZY" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
         <span>\u0E41\u0E19\u0E30\u0E19\u0E33\u0E23\u0E49\u0E32\u0E19\u0E40\u0E14\u0E47\u0E14</span>
@@ -842,7 +842,7 @@
 
     <article class="ex-day-video-card fdb-reveal fdb-delay1">
       <div class="ex-day-video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/jWSrBLB4Mg0" title="\u0E41\u0E08\u0E01\u0E1E\u0E34\u0E01\u0E31\u0E14\u0E23\u0E49\u0E32\u0E19\u0E40\u0E14\u0E47\u0E14\u0E23\u0E2D\u0E1A Exzy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/jWSrBLB4Mg0" title="\u0E41\u0E08\u0E01\u0E1E\u0E34\u0E01\u0E31\u0E14\u0E23\u0E49\u0E32\u0E19\u0E40\u0E14\u0E47\u0E14\u0E23\u0E2D\u0E1A EXZY" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
         <span>\u0E1E\u0E34\u0E01\u0E31\u0E14\u0E23\u0E49\u0E32\u0E19\u0E2D\u0E32\u0E2B\u0E32\u0E23</span>
