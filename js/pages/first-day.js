@@ -133,7 +133,7 @@ export function renderFirstDay(data = {}) {
       </div>
       <div class="ex-day-video-copy">
         <span>แนะนำร้านเด็ด</span>
-        <h3>ปักหมุดร้านเด็ดชาว EXZY</h3>
+        <h3>📌 ปักหมุดร้านเด็ดชาว EXZY</h3>
         <p>อยากรู้ว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ EXZY กัน! 🤩</p>
       </div>
     </article>
@@ -143,7 +143,7 @@ export function renderFirstDay(data = {}) {
         <iframe src="https://www.youtube-nocookie.com/embed/jWSrBLB4Mg0" title="แจกพิกัดร้านเด็ดรอบ EXZY" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-day-video-copy">
-        <span>พิกัดร้านอาหาร</span>
+        <span>🍜 พิกัดร้านอาหาร</span>
         <h3>รอบบริษัทของเรา ร้านไหนน่ากินบ้าง ?</h3>
         <p>พิกัดร้านอาหารใกล้บริษัท ที่สามารถเดินไปได้ <br>ไม่รู้จะไปกินที่ไหน ลองดูคลิปนี้เลย !</p>
       </div>
