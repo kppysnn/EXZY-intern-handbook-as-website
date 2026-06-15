@@ -69,54 +69,6 @@ export function renderFirstDay(data = {}) {
   </div>
 </section>
 
-<section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
-  <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-videos-title">ก่อนมาวันแรก ลองดูบรรยากาศจริง</h2>
-    <p>คลิปสั้น ๆ จาก intern รุ่นก่อน ช่วยให้เห็นออฟฟิศและร้านรอบบริษัทก่อนเริ่มงานจริง</p>
-  </div>
-
-  <div class="ex-day-video-grid">
-    <article class="ex-day-video-card fdb-reveal">
-      <div class="ex-day-video-frame">
-        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-01-poster.jpg')">
-          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-        </div>
-      </div>
-      <div class="ex-day-video-copy">
-        <span>Lunch spots</span>
-        <h3>ร้านโปรดใกล้ออฟฟิศ</h3>
-        <p>ดูไว้ก่อนพักเที่ยง จะได้พอนึกออกว่ารอบ ๆ บริษัทมีอะไรให้เลือกบ้าง</p>
-      </div>
-    </article>
-
-    <article class="ex-day-video-card fdb-reveal fdb-delay1">
-      <div class="ex-day-video-frame">
-        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-02-poster.jpg')">
-          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-        </div>
-      </div>
-      <div class="ex-day-video-copy">
-        <span>Office mood</span>
-        <h3>เห็นหน้าออฟฟิศก่อนมาจริง</h3>
-        <p>ช่วยให้จำทางเข้าและบรรยากาศหน้า EXZY ได้ง่ายขึ้นในวันแรก</p>
-      </div>
-    </article>
-
-    <article class="ex-day-video-card fdb-reveal fdb-delay2">
-      <div class="ex-day-video-frame">
-        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-03-poster.jpg')">
-          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
-        </div>
-      </div>
-      <div class="ex-day-video-copy">
-        <span>Lunch break</span>
-        <h3>พิกัดของกินช่วงพักเที่ยง</h3>
-        <p>ถ้ายังไม่รู้จะกินอะไร คลิปนี้ช่วยให้มีตัวเลือกก่อนออกไปพักกลางวัน</p>
-      </div>
-    </article>
-  </div>
-</section>
-
 <section class="ex-day-road" aria-labelledby="ex-day-road-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
     <h2 id="ex-day-road-title">เริ่มฝึกงานที่ EXZY ด้วย 4 เรื่องนี้</h2>
@@ -163,6 +115,54 @@ export function renderFirstDay(data = {}) {
       <p>เริ่มกรอกเวลาเข้าออกตามที่ได้รับมอบหมายในไฟล์ที่ HR ส่งให้ และส่งเอกสารทุกสิ้นเดือน (วันที่ 30-31)</p>
       <div class="ex-road-mini">
         <button type="button" class="ex-inline-link" data-link><span aria-hidden="true">📋</span><b>ดูคู่มือ →</b></button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
+  <div class="ex-section-head ex-section-head-center fdb-reveal">
+    <h2 id="ex-day-videos-title">ดูบรรยากาศจริงก่อนเริ่มงาน</h2>
+    <p>คลิปสั้น ๆ จาก intern รุ่นก่อน ช่วยให้เห็นออฟฟิศและร้านรอบบริษัทก่อนถึงวันจริง</p>
+  </div>
+
+  <div class="ex-day-video-grid">
+    <article class="ex-day-video-card fdb-reveal">
+      <div class="ex-day-video-frame">
+        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-01-poster.jpg')">
+          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
+        </div>
+      </div>
+      <div class="ex-day-video-copy">
+        <span>Lunch spots</span>
+        <h3>ร้านโปรดใกล้ออฟฟิศ</h3>
+        <p>ดูไว้ก่อนพักเที่ยง จะได้พอนึกออกว่ารอบ ๆ บริษัทมีอะไรให้เลือกบ้าง</p>
+      </div>
+    </article>
+
+    <article class="ex-day-video-card fdb-reveal fdb-delay1">
+      <div class="ex-day-video-frame">
+        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-02-poster.jpg')">
+          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
+        </div>
+      </div>
+      <div class="ex-day-video-copy">
+        <span>Office mood</span>
+        <h3>เห็นหน้าออฟฟิศก่อนมาจริง</h3>
+        <p>ช่วยให้จำทางเข้าและบรรยากาศหน้า EXZY ได้ง่ายขึ้นในวันแรก</p>
+      </div>
+    </article>
+
+    <article class="ex-day-video-card fdb-reveal fdb-delay2">
+      <div class="ex-day-video-frame">
+        <div class="yt-placeholder" style="background-image:url('./static/first-day-voice-03-poster.jpg')">
+          <div class="yt-placeholder-inner"><svg viewBox="0 0 24 24" width="36" height="36" fill="none"><rect width="24" height="24" rx="5" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg><span>กำลังจะมาเร็ว ๆ นี้</span></div>
+        </div>
+      </div>
+      <div class="ex-day-video-copy">
+        <span>Lunch break</span>
+        <h3>พิกัดของกินช่วงพักเที่ยง</h3>
+        <p>ถ้ายังไม่รู้จะกินอะไร คลิปนี้ช่วยให้มีตัวเลือกก่อนออกไปพักกลางวัน</p>
       </div>
     </article>
   </div>
