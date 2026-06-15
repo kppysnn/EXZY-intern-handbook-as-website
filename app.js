@@ -552,7 +552,7 @@ function initEnhancements() {
     const scroll = window.scrollY || window.pageYOffset;
     const docH = document.documentElement.scrollHeight - window.innerHeight;
     const pct = docH > 0 ? Math.min(100, (scroll / docH) * 100) : 0;
-    if (progressBar) progressBar.style.width = pct + '%';
+    if (progressBar) progressBar.style.transform = 'scaleX(' + (pct / 100) + ')';
   };
   window.removeEventListener('scroll', window.__scrollProgress || (()=>{}));
   window.__scrollProgress = onScrollProgress;
