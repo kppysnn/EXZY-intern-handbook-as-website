@@ -5318,17 +5318,11 @@ footer { margin-top: 0 !important; }
 
 
 /* ════════════════════════════════════════════════════════════
-   SHOWCASE — hide duplicate title in card body
-   (slc-headline in header already shows it)
+   SHOWCASE — h4 title visible on all card types
    ════════════════════════════════════════════════════════════ */
-.show-real-card-facebook .show-real-body h4,
-.show-real-card-medium .show-real-body h4 {
-  display: none !important;
-}
-
-
-.show-real-card-bilingual .show-real-body h4 {
+.show-real-card .show-real-body h4 {
   display: -webkit-box !important;
+  font-weight: 600 !important;
 }
 
 
