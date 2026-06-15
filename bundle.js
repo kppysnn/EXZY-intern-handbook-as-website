@@ -1096,7 +1096,7 @@
         </div>
         <div class="wifi-net-pass-row">
           <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          <span>\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR</span>
+          <span>\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR</span>
         </div>
       </div>
 
@@ -1111,7 +1111,7 @@
         </div>
         <div class="wifi-net-pass-row">
           <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          <span>\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 EXZY \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</span>
+          <span>\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR</span>
         </div>
       </div>
     </div>
