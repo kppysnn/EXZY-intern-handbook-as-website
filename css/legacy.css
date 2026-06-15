@@ -36545,9 +36545,9 @@ html:not(.js-ready) .fdb-reveal {
   color: #fff;
   margin-bottom: 6px;
 }
-.wifi-hr-sub {
+.wifi-hr-block .wifi-hr-sub {
   font-size: 13.5px;
-  color: #fff;
+  color: #fff !important;
   margin: 0 0 18px;
   line-height: 1.6;
 }
