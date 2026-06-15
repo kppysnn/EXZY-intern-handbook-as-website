@@ -98,7 +98,7 @@ export var renderHome = () => `
 
     <div class="ex-voice-featured fdb-reveal">
       <div class="ex-voice-featured-video">
-        <iframe src="https://www.youtube.com/embed/W53e2n_09bA" title="ฝึกงาน Business Development ที่ EXZY — Dada" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/W53e2n_09bA" title="ฝึกงาน Business Development ที่ EXZY — Dada" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-voice-featured-copy">
         <span class="ex-voice-tag">Intern review · BD</span>
@@ -112,7 +112,7 @@ export var renderHome = () => `
     <div class="ex-voice-grid">
       <article class="ex-voice-card fdb-reveal">
         <div class="ex-voice-video">
-          <iframe src="https://www.youtube.com/embed/T7hpAMXAo2I" title="Intern review — Grace" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/T7hpAMXAo2I" title="Intern review — Grace" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
@@ -123,7 +123,7 @@ export var renderHome = () => `
 
       <article class="ex-voice-card fdb-reveal fdb-delay1">
         <div class="ex-voice-video">
-          <iframe src="https://www.youtube.com/embed/EhOba4jWhmI" title="Intern review — Nikki" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/EhOba4jWhmI" title="Intern review — Nikki" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern review</span>
@@ -134,7 +134,7 @@ export var renderHome = () => `
 
       <article class="ex-voice-card fdb-reveal fdb-delay2">
         <div class="ex-voice-video">
-          <iframe src="https://www.youtube.com/embed/ILybckeMZ7o" title="ตามติดชีวิต Intern ที่ Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/ILybckeMZ7o" title="ตามติดชีวิต Intern ที่ Exzy" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern Life</span>
