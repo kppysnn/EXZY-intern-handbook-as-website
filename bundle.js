@@ -1076,129 +1076,87 @@
   });
 
   // js/pages/wifi.js
-  var renderWifi = () => pageWrap({
-    crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
-    title: "Office Wi-Fi",
-    lead: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49 \u2014 \u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E0A\u0E37\u0E48\u0E2D SSID \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22 \u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E02\u0E2D\u0E08\u0E32\u0E01 HR \u0E44\u0E14\u0E49\u0E42\u0E14\u0E22\u0E15\u0E23\u0E07 \u{1F4F6}",
-    body: `
-    <!-- Network type selector -->
-    <div class="wn-selector">
-      <button type="button" class="wn-sel-btn wn-sel-active" data-wifi-tab-v2="staff">
-        <span class="wn-sel-pip"></span>
-        <div class="wn-sel-info">
-          <span class="wn-sel-title">\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern</span>
-          <span class="wn-sel-ssid">ExzyUniFi</span>
+  var renderWifi = () => {
+    const { hr_email: hrEmail = "hr@exzyteam.com" } = loadAdminData();
+    return pageWrap({
+      crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
+      title: "Office Wi-Fi \u{1F4F6}",
+      lead: "\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR \u0E44\u0E14\u0E49\u0E40\u0E25\u0E22 \u2014 \u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E14\u0E39\u0E44\u0E14\u0E49\u0E14\u0E49\u0E32\u0E19\u0E25\u0E48\u0E32\u0E07",
+      body: `
+    <!-- Network cards -->
+    <div class="wifi-net-cards">
+      <div class="wifi-net-card wifi-net-staff anim-up">
+        <div class="wifi-net-badge">\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern</div>
+        <div class="wifi-net-label">Network (SSID)</div>
+        <div class="wifi-net-ssid-row">
+          <code class="wifi-net-ssid" data-text="wifi_staff_ssid">ExzyUniFi</code>
+          <button type="button" class="wn-copy wifi-net-copy" data-copy="wifi_staff_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01 SSID">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
         </div>
-      </button>
-      <button type="button" class="wn-sel-btn wn-sel-guest" data-wifi-tab-v2="guest">
-        <span class="wn-sel-pip wn-pip-guest"></span>
-        <div class="wn-sel-info">
-          <span class="wn-sel-title">\u0E41\u0E02\u0E01 (Guest)</span>
-          <span class="wn-sel-ssid">Exzy_Guest</span>
+        <div class="wifi-net-pass-row">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span>\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR</span>
         </div>
-      </button>
-    </div>
+      </div>
 
-    <!-- Staff panel -->
-    <div class="wn-panel" data-wifi-panel-v2="staff">
-      <div class="wn-main">
-        <!-- Info side (full width \u2014 no QR since password is not stored here) -->
-        <div class="wn-info-side" style="flex:1;">
-          <div class="wn-network-badge">STAFF NETWORK</div>
-          <div class="wn-cred">
-            <div class="wn-cred-row">
-              <span class="wn-cred-k">Network (SSID)</span>
-              <div class="wn-cred-v">
-                <code data-text="wifi_staff_ssid">ExzyUniFi</code>
-                <button type="button" class="wn-copy" data-copy="wifi_staff_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                </button>
-              </div>
-            </div>
-            <div class="wn-cred-row">
-              <span class="wn-cred-k">Password</span>
-              <div class="wn-cred-v wn-pass-hr-row">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.55;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span class="wn-pass-hr-label">\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</span>
-              </div>
-            </div>
-          </div>
-          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 / Intern \u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u2014 \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</p>
+      <div class="wifi-net-card wifi-net-guest anim-up" data-delay="80">
+        <div class="wifi-net-badge wifi-net-badge-guest">\u0E41\u0E02\u0E01 (Guest)</div>
+        <div class="wifi-net-label">Network (SSID)</div>
+        <div class="wifi-net-ssid-row">
+          <code class="wifi-net-ssid" data-text="wifi_guest_ssid">Exzy_Guest</code>
+          <button type="button" class="wn-copy wifi-net-copy" data-copy="wifi_guest_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01 SSID">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+        <div class="wifi-net-pass-row">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span>\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19 EXZY \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</span>
         </div>
       </div>
     </div>
 
-    <!-- Guest panel -->
-    <div class="wn-panel wn-panel-guest" data-wifi-panel-v2="guest" hidden>
-      <div class="wn-main">
-        <div class="wn-info-side" style="flex:1;">
-          <div class="wn-network-badge wn-badge-guest">GUEST NETWORK</div>
-          <div class="wn-cred">
-            <div class="wn-cred-row">
-              <span class="wn-cred-k">Network (SSID)</span>
-              <div class="wn-cred-v">
-                <code data-text="wifi_guest_ssid">Exzy_Guest</code>
-                <button type="button" class="wn-copy" data-copy="wifi_guest_ssid" title="\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01">
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                </button>
-              </div>
-            </div>
-            <div class="wn-cred-row">
-              <span class="wn-cred-k">Password</span>
-              <div class="wn-cred-v wn-pass-hr-row">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:.55;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span class="wn-pass-hr-label">\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D HR \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</span>
-              </div>
-            </div>
-          </div>
-          <p class="wn-note">\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E41\u0E02\u0E01\u0E17\u0E35\u0E48\u0E21\u0E32\u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28 \u2014 \u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19</p>
+    <!-- HR contact -->
+    <div class="wifi-hr-block anim-up">
+      <div class="wifi-hr-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </div>
+      <div class="wifi-hr-copy">
+        <div class="wifi-hr-title">\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR</div>
+        <p class="wifi-hr-sub">\u0E41\u0E08\u0E49\u0E07\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E23\u0E2B\u0E31\u0E2A Wi-Fi \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A Intern \u2014 HR \u0E08\u0E30\u0E15\u0E2D\u0E1A\u0E01\u0E25\u0E31\u0E1A\u0E43\u0E2B\u0E49</p>
+        <a href="mailto:${hrEmail}" class="btn btn-primary wifi-hr-btn">${I.mail} \u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E2B\u0E32 HR</a>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <h2 style="margin-top:40px;">\u0E27\u0E34\u0E18\u0E35\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</h2>
+    <div class="wifi-steps anim-up">
+      <div class="wifi-step">
+        <div class="wifi-step-n">1</div>
+        <div class="wifi-step-body">
+          <strong>\u0E2A\u0E48\u0E07\u0E2D\u0E35\u0E40\u0E21\u0E25\u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR</strong>
+          <p>\u0E43\u0E0A\u0E49\u0E1B\u0E38\u0E48\u0E21\u0E14\u0E49\u0E32\u0E19\u0E1A\u0E19 \u0E2B\u0E23\u0E37\u0E2D\u0E2A\u0E48\u0E07\u0E15\u0E23\u0E07\u0E17\u0E35\u0E48 <a href="mailto:${hrEmail}" class="inline-link">${hrEmail}</a></p>
+        </div>
+      </div>
+      <div class="wifi-step">
+        <div class="wifi-step-n">2</div>
+        <div class="wifi-step-body">
+          <strong>\u0E40\u0E1B\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Wi-Fi \u0E41\u0E25\u0E30\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22</strong>
+          <p>\u0E40\u0E25\u0E37\u0E2D\u0E01 <code>ExzyUniFi</code> \u0E41\u0E25\u0E49\u0E27\u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E08\u0E32\u0E01 HR</p>
         </div>
       </div>
     </div>
 
-    <!-- How to connect steps -->
-    <div class="wn-how-v2">
-      <div class="wn-how-v2-head">
-        <span class="wn-how-v2-label">\u0E27\u0E34\u0E18\u0E35\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</span>
-        <p class="wn-how-v2-sub">2 \u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19 \u0E40\u0E2A\u0E23\u0E47\u0E08\u0E43\u0E19\u0E44\u0E21\u0E48\u0E01\u0E35\u0E48\u0E19\u0E32\u0E17\u0E35 \u2705</p>
-      </div>
-      <div class="wn-how-v2-tracks">
-        <div class="wn-how-v2-track wn-how-v2-qr">
-          <div class="wn-how-v2-track-icon">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div class="wn-how-v2-track-title">\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E17\u0E35\u0E48 1 \u2014 \u0E02\u0E2D\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E08\u0E32\u0E01 HR \u{1F511}</div>
-          <ol class="wn-how-v2-steps">
-            <li>\u0E17\u0E31\u0E01\u0E2B\u0E32 HR \u0E1C\u0E48\u0E32\u0E19 Line \u0E2B\u0E23\u0E37\u0E2D\u0E16\u0E32\u0E21\u0E15\u0E23\u0E07 \u0E46 \u0E17\u0E35\u0E48\u0E2D\u0E2D\u0E1F\u0E1F\u0E34\u0E28</li>
-            <li>\u0E41\u0E08\u0E49\u0E07\u0E27\u0E48\u0E32\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E23\u0E2B\u0E31\u0E2A Wi-Fi \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A Intern</li>
-          </ol>
-        </div>
-        <div class="wn-how-v2-divider">
-          <span>\u0E41\u0E25\u0E49\u0E27</span>
-        </div>
-        <div class="wn-how-v2-track wn-how-v2-manual">
-          <div class="wn-how-v2-track-icon">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-          </div>
-          <div class="wn-how-v2-track-title">\u0E02\u0E31\u0E49\u0E19\u0E15\u0E2D\u0E19\u0E17\u0E35\u0E48 2 \u2014 \u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D \u{1F4E1}</div>
-          <ol class="wn-how-v2-steps">
-            <li>\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32 Wi-Fi</li>
-            <li>\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E0A\u0E37\u0E48\u0E2D\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22 (SSID) \u0E08\u0E32\u0E01\u0E14\u0E49\u0E32\u0E19\u0E1A\u0E19</li>
-            <li>\u0E43\u0E2A\u0E48\u0E23\u0E2B\u0E31\u0E2A\u0E1C\u0E48\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E08\u0E32\u0E01 HR \u0E41\u0E25\u0E49\u0E27\u0E01\u0E14\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-
-    <div class="callout" style="margin-top:28px;">
+    <div class="callout anim-up" style="margin-top:32px;">
       <span class="ic">${I.shield}</span>
       <div>
-        <h4>\u0E23\u0E31\u0E01\u0E29\u0E32\u0E04\u0E27\u0E32\u0E21\u0E1B\u0E25\u0E2D\u0E14\u0E20\u0E31\u0E22</h4>
-        <p>\u0E23\u0E2B\u0E31\u0E2A Staff Wi-Fi \u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30 Intern \u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19 \u2014 \u0E2B\u0E49\u0E32\u0E21\u0E41\u0E0A\u0E23\u0E4C\u0E43\u0E2B\u0E49\u0E1A\u0E38\u0E04\u0E04\u0E25\u0E20\u0E32\u0E22\u0E19\u0E2D\u0E01 \u0E16\u0E49\u0E32\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E08\u0E49\u0E07 HR \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E43\u0E19\u0E17\u0E35\u0E21</p>
+        <h4>\u0E23\u0E2B\u0E31\u0E2A Staff Wi-Fi \u0E2B\u0E49\u0E32\u0E21\u0E41\u0E0A\u0E23\u0E4C\u0E19\u0E30</h4>
+        <p>\u0E43\u0E0A\u0E49\u0E44\u0E14\u0E49\u0E40\u0E09\u0E1E\u0E32\u0E30\u0E1E\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E41\u0E25\u0E30 Intern \u2014 \u0E16\u0E49\u0E32\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E43\u0E2B\u0E49\u0E41\u0E08\u0E49\u0E07 HR \u0E2B\u0E23\u0E37\u0E2D\u0E1E\u0E35\u0E48\u0E43\u0E19\u0E17\u0E35\u0E21</p>
       </div>
     </div>
   `
-  });
+    });
+  };
 
   // js/pages/meeting-rooms.js
   var renderMeetingRooms = () => pageWrap({

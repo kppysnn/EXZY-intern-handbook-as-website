@@ -1143,10 +1143,6 @@ h2.section-title {
 
 .howto-step p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
 
-
-/* ===== UTIL ===== */
-.flex { display: flex; }
-
 .center { align-items: center; }
 
 
@@ -1642,6 +1638,38 @@ h2.section-title {
 .wifi-panel { animation: fadeUp .35s ease; }
 
 .wifi-panel[hidden] { display: none; }
+
+
+/* Wi-Fi 3-step guide */
+.wifi-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.wifi-step {
+  background: #F8F9FA;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  position: relative;
+}
+
+.wifi-step h4 {
+  font-family: var(--display);
+  font-size: 16px;
+  color: var(--ink);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.wifi-step p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
 
 
 /* ===== INTERNSHIP POLICY HOURS HERO — see redesigned styles near end of file ===== */
@@ -4676,143 +4704,11 @@ p.hero-word, div.hero-word { display: block; }
 
 .wf2-connect-btn:hover { opacity: .85; }
 
-
-/* ─────────────── WIFI V4 (wn-*) ─────────────── */
-.wn-selector {
-  display: flex;
-  gap: 0;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.wn-sel-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 20px;
-  background: var(--surface);
-  border: none;
-  cursor: pointer;
-  transition: background .15s;
-  border-right: 1px solid var(--line);
-  text-align: left;
-}
-
-.wn-sel-btn:last-child { border-right: none; }
-
-.wn-sel-btn.wn-sel-active { background: var(--bg); }
-
-.wn-sel-btn:hover:not(.wn-sel-active) { background: var(--surface-2, var(--surface)); }
-
-.wn-sel-pip {
-  position: relative;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: var(--cyan);
-  flex-shrink: 0;
-  box-shadow: 0 0 0 3px rgba(102,197,197,.2);
-}
-
-.wn-pip-guest { background: #929EB4; box-shadow: 0 0 0 3px rgba(146,158,180,.2); }
-
-.wn-sel-active .wn-sel-pip::after {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  border: 2px solid rgba(102,197,197,.5);
-  animation: pipPulse 2s ease-out infinite;
-  pointer-events: none;
-}
-
 @keyframes pipPulse { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.7); opacity: 0; } }
-
-.wn-sel-info { display: flex; flex-direction: column; gap: 1px; }
-
-.wn-sel-title { font-size: 13.5px; font-weight: 700; color: var(--ink); }
-
-.wn-sel-ssid { font-size: 11px; color: var(--muted); font-family: monospace; }
-
-.wn-sel-active .wn-sel-title { color: var(--cyan-text); }
-
-
-/* Panel */
-.wn-panel {
-  background: #001122;
-  border-radius: var(--radius);
-  border: 1px solid rgba(102,197,197,.18);
-  overflow: hidden;
-  margin-bottom: 28px;
-}
-
-.wn-panel[hidden] { display: none; }
-
-.wn-panel-guest { border-color: rgba(146,158,180,.2); }
-
-.wn-main {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  min-height: 220px;
-}
 
 .wn-qr { width: 100%; height: 100%; }
 
 .wn-qr svg { width: 100%; height: auto; }
-
-
-.wn-info-side {
-  padding: 28px 28px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: center;
-}
-
-.wn-network-badge {
-  display: inline-flex;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: #001122;
-  background: var(--cyan);
-  padding: 3px 10px;
-  border-radius: 4px;
-  align-self: flex-start;
-}
-
-.wn-badge-guest { background: #929EB4; }
-
-.wn-cred { display: flex; flex-direction: column; gap: 10px; }
-
-.wn-cred-row { display: flex; flex-direction: column; gap: 5px; }
-
-.wn-cred-k { font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: rgba(248,249,250,.55); }
-
-.wn-cred-v {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(248,249,250,.06);
-  border: 1px solid rgba(248,249,250,.1);
-  border-radius: 8px;
-  padding: 8px 12px;
-}
-
-.wn-cred-v code {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 15px;
-  font-weight: 600;
-  color: #F8F9FA;
-  background: none;
-  border: none;
-  padding: 0;
-  flex: 1;
-  letter-spacing: .03em;
-}
 
 .wn-copy {
   width: 26px; height: 26px;
@@ -4829,124 +4725,6 @@ p.hero-word, div.hero-word { display: block; }
 .wn-copy:hover { background: var(--cyan); color: #001122; border-color: var(--cyan); }
 
 .wn-copy.is-copied { background: #66C5C5; color: #F8F9FA; border-color: #66C5C5; }
-
-.wn-note { font-size: 11.5px; color: rgba(248,249,250,.5); margin: 0; line-height: 1.5; }
-@media (max-width: 680px){
-
-  .wn-selector { flex-direction: column; }
-
-  .wn-sel-btn { border-right: none; border-bottom: 1px solid var(--line); }
-
-  .wn-sel-btn:last-child { border-bottom: none; }
-
-  .wn-main { grid-template-columns: 1fr; }
-}
-
-
-/* ── Wi-Fi How-To V2 ─────────────────────────────────────────── */
-.wn-how-v2 {
-  margin-top: 36px;
-  padding: 28px 28px 24px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(102,197,197,.08) 0%, rgba(0,64,128,.07) 100%);
-  border: 1px solid rgba(102,197,197,.22);
-}
-
-.wn-how-v2-head {
-  margin-bottom: 24px;
-}
-
-.wn-how-v2-label {
-  display: block;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: #004080;
-  margin-bottom: 4px;
-}
-
-.wn-how-v2-sub {
-  font-size: 14px;
-  color: var(--muted);
-  margin: 0;
-}
-
-.wn-how-v2-tracks {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 0;
-  align-items: start;
-}
-
-.wn-how-v2-track {
-  padding: 20px 22px;
-  border-radius: 14px;
-  background: #F8F9FA;
-  border: 1px solid var(--line);
-}
-
-.wn-how-v2-qr { border-color: rgba(102,197,197,.3); }
-
-.wn-how-v2-manual { border-color: rgba(0,64,128,.15); }
-
-.wn-how-v2-track-icon {
-  width: 44px; height: 44px;
-  border-radius: 12px;
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 12px;
-}
-
-.wn-how-v2-qr .wn-how-v2-track-icon { background: rgba(102,197,197,.14); color: #3DA8A8; }
-
-.wn-how-v2-manual .wn-how-v2-track-icon { background: rgba(0,64,128,.1); color: #004080; }
-
-.wn-how-v2-track-title {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--ink);
-  margin-bottom: 12px;
-}
-
-.wn-how-v2-steps {
-  margin: 0;
-  padding-left: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.wn-how-v2-steps li {
-  font-size: 13px;
-  color: var(--body);
-  line-height: 1.5;
-}
-
-.wn-how-v2-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 16px;
-  padding-top: 52px;
-}
-
-.wn-how-v2-divider span {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--muted);
-  background: var(--surface);
-  padding: 4px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-}
-@media (max-width: 600px){
-
-  .wn-how-v2-tracks { grid-template-columns: 1fr; }
-
-  .wn-how-v2-divider { padding: 12px 0; }
-}
 
 
 /* ============================================================
@@ -4999,85 +4777,10 @@ p.hero-word, div.hero-word { display: block; }
   padding: 56px 0;
 }
 
-
-/* Wi-Fi: light, high-contrast panel with visible QR */
-.wn-selector {
-  border-radius: 12px;
-  background: #F8F9FA;
-  padding: 6px;
-  border-color: #D0D6DF;
-}
-
-.wn-sel-btn {
-  border: 0;
-  border-radius: 8px;
-  background: transparent;
-}
-
-.wn-sel-btn.wn-sel-active,
-.wn-sel-btn.is-active {
-  background: #F8F9FA;
-  box-shadow: 0 8px 22px rgba(0,64,129,.08);
-}
-
-.wn-sel-btn.wn-sel-active .wn-sel-title,
-.wn-sel-btn.is-active .wn-sel-title {
-  color: #004081;
-}
-
-.wn-panel {
-  background: #F8F9FA;
-  border-color: #D0D6DF;
-  border-radius: 16px;
-  box-shadow: 0 18px 45px rgba(0,17,34,.08);
-}
-
-.wn-panel-guest {
-  border-color: #D0D6DF;
-}
-@media (min-width: 681px){
-
-  .wn-main {
-    grid-template-columns: 260px 1fr;
-  }
-}
-
 .wn-qr svg {
   width: 100%;
   height: 100%;
   display: block;
-}
-
-.wn-qr-tip,
-.wn-note {
-  color: #586782;
-}
-
-.wn-info-side {
-  gap: 18px;
-}
-
-.wn-network-badge {
-  color: #004081;
-  background: #F8F9FA;
-}
-
-.wn-badge-guest {
-  color: var(--body);
-  background: #F8F9FA;
-}
-
-.wn-cred-k {
-  color: #707070;
-}
-
-.wn-cred-v {
-  background: #F8F9FA;
-  border-color: #D0D6DF;
-}
-
-.wn-cred-v code {
-  color: #001122;
 }
 
 .wn-copy {
@@ -5159,10 +4862,6 @@ p.hero-word, div.hero-word { display: block; }
   .page-header h1,
   .phb-title {
     font-size: 28px;
-  }
-
-  .wn-main {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -5288,12 +4987,6 @@ p.hero-word, div.hero-word { display: block; }
   border-top: 1px solid var(--line);
   margin-top: 36px;
 }
-
-
-/* WiFi page strip */
-.wn-panel { background: #F8F9FA !important; border-radius: 16px !important; border: 1px solid var(--line) !important; }
-
-.wn-panel .wn-main { padding: 24px !important; }
 @media (max-width: 640px){
 
   .page-hero-band { padding: calc(var(--nav-h) + 14px) 0 18px !important; }
@@ -9769,68 +9462,6 @@ a,
 }
 
 
-.wn-selector {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 10px !important;
-  margin: 0 0 20px !important;
-  padding: 6px !important;
-  border-radius: 14px !important;
-}
-
-
-.wn-sel-btn {
-  min-height: 68px;
-  border-radius: 10px !important;
-  border: 1px solid transparent !important;
-  background: transparent !important;
-}
-
-
-.wn-sel-btn.wn-sel-active,
-.wn-sel-btn:hover {
-  background: #F8F9FA !important;
-  border-color: rgba(102,197,197,0.48) !important;
-}
-
-
-.wn-sel-pip,
-.wn-pip-guest {
-  background: var(--ci-teal) !important;
-  box-shadow: 0 0 0 5px rgba(102,197,197,0.18) !important;
-}
-
-
-.wn-panel {
-  border-radius: var(--radius-lg) !important;
-  box-shadow: 0 14px 30px rgba(0,64,129,0.07) !important;
-}
-
-
-.wn-main {
-  display: grid !important;
-  grid-template-columns: minmax(220px, 0.46fr) minmax(0, 1fr) !important;
-  gap: clamp(24px, 5vw, 48px) !important;
-  align-items: center !important;
-}
-
-
-.wn-qr-box,
-.wn-cred-v code,
-.wifi-pw code,
-.dir-pw-input,
-.admin-input {
-  background: #F8F9FA !important;
-  color: var(--ci-ink) !important;
-  border-color: var(--ci-line) !important;
-}
-
-
-.wn-cred-row {
-  border-color: rgba(208,214,223,0.72) !important;
-}
-
-
 .wn-how-n,
 .ts-col-n,
 .acc-icon,
@@ -12255,4 +11886,186 @@ html:not(.js-ready) .fdb-reveal {
   opacity: 1 !important;
   transform: none !important;
   transition: none !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   WIFI PAGE — redesigned layout
+   ════════════════════════════════════════════════════════════ */
+.wifi-net-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.wifi-net-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px 24px;
+  background: var(--surface);
+}
+
+.wifi-net-staff { border-color: rgba(0,64,129,.22); background: rgba(0,64,129,.03); }
+
+.wifi-net-guest { border-color: var(--line); }
+
+.wifi-net-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: rgba(0,64,129,.08);
+  border-radius: 6px;
+  padding: 3px 8px;
+  margin-bottom: 16px;
+}
+
+.wifi-net-badge-guest { color: var(--muted); background: var(--surface-2); }
+
+.wifi-net-label {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.wifi-net-ssid-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.wifi-net-ssid {
+  font-family: var(--mono, monospace);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  background: none;
+  padding: 0;
+}
+
+.wifi-net-copy {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+  transition: background .15s, color .15s;
+}
+
+.wifi-net-copy:hover { background: var(--surface-2); color: var(--ink); }
+
+.wifi-net-pass-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+
+.wifi-hr-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--navy);
+  border-radius: 16px;
+  padding: 28px 32px;
+  color: rgba(248,249,250,.9);
+  margin-bottom: 8px;
+}
+
+.wifi-hr-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(248,249,250,.9);
+  margin-top: 2px;
+}
+
+.wifi-hr-copy { flex: 1; }
+
+.wifi-hr-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.wifi-hr-sub {
+  font-size: 13.5px;
+  color: rgba(248,249,250,.7);
+  margin: 0 0 18px;
+  line-height: 1.6;
+}
+
+.wifi-hr-btn {
+  background: rgba(255,255,255,.15) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.25) !important;
+}
+
+.wifi-hr-btn:hover {
+  background: rgba(255,255,255,.25) !important;
+}
+
+
+.wifi-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.wifi-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.wifi-step-n {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 1px;
+}
+
+.wifi-step-body strong { font-size: 14.5px; color: var(--ink); display: block; margin-bottom: 4px; }
+
+.wifi-step-body p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.6; }
+
+.wifi-step-body code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+@media (max-width: 560px){
+
+  .wifi-net-cards { grid-template-columns: 1fr; }
+
+  .wifi-hr-block { flex-direction: column; gap: 14px; padding: 22px 20px; }
+
+  .wifi-hr-icon { width: 40px; height: 40px; }
 }
