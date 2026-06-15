@@ -139,7 +139,7 @@ export const renderOrientation = () => pageWrap({
       </div>
     </div>
 
-    <h3>Workshop และ Dining</h3>
+    <h3>Workshop และ Dining 🎊</h3>
     <p>EXZY จัดกิจกรรม Workshop เสริมทักษะ และกิจกรรม Dining ประจำเดือน/ทีม เพื่อให้รู้จักทีมและเพื่อนร่วมงานมากขึ้น</p>
     <div class="callout callout-note anim-up" style="margin-top:12px;">
       <span class="ic">${I.info}</span>
