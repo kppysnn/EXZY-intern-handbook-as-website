@@ -33,7 +33,7 @@ export var renderHome = () => `
     <div class="ex-home-section-intro fdb-reveal">
       <span class="ex-must-eyebrow">Timesheet · HR Project</span>
       <h2 id="ex-home-start-title">Project สำหรับ intern มีอะไรบ้าง ?</h2>
-      <p>intern ทุกคนจะต้องรับผิดชอบ 2 งานหลัก และต้องส่งให้กับ HR ตามที่กำหนด</p>
+      <p>intern ทุกคนจะต้องรับผิดชอบ 2 งานหลัก และต้องส่งให้กับ HR ตามที่กำหนด 📋</p>
     </div>
 
     <div class="ex-must-grid">
@@ -148,7 +148,7 @@ export var renderHome = () => `
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <h2 id="ex-folders-title">รวมข้อมูลทั้งหมด<br>ที่ intern ต้องรู้ไว้ที่นี่</h2>
-      <p>อยากรู้เรื่องไหน ? เลือกดูได้เลย</p>
+      <p>อยากรู้เรื่องไหน ? เลือกดูได้เลย 👇</p>
     </div>
 
     <div class="ex-folder-grid">
@@ -253,7 +253,7 @@ export var renderHome = () => `
   <div class="ex-home-quick-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <h2 id="ex-home-quick-title">ข้อมูลที่ใช้บ่อย</h2>
-      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้ง่ายขึ้น ทั้งการเชื่อมต่อ Wi-Fi, ช่องทางการติดต่อ, การแจ้งลา <br>และคำถามเบื้องต้นที่ intern อาจต้องการรู้คำตอบ</p>
+      <p>เรื่องที่ช่วยให้ใช้ชีวิตในออฟฟิศได้ง่ายขึ้น ทั้งการเชื่อมต่อ Wi-Fi, ช่องทางการติดต่อ, การแจ้งลา <br>และคำถามเบื้องต้นที่ intern อาจต้องการรู้คำตอบ 🔖</p>
     </div>
 
     <div class="ex-quick-list">

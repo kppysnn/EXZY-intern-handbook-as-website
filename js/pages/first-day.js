@@ -16,7 +16,7 @@ export function renderFirstDay(data = {}) {
         <span class="ex-day-h1-sub">วันแรกของการฝึกงาน</span>
         <span class="ex-day-h1-brand">Day 1 Guide</span>
       </h1>
-      <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ มาเช็กสิ่งสำคัญที่ต้องทำ <br>และข้อมูลที่ควรรู้สำหรับวันแรกกัน!</p>
+      <p class="ex-day-hero-lead">ก่อนเริ่มงานวันนี้ มาเช็กสิ่งสำคัญที่ต้องทำ <br>และข้อมูลที่ควรรู้สำหรับวันแรกกัน! ☀️</p>
       <button type="button" class="ex-day-cta" data-scroll-to="ex-day-tasks">📍 เช็กสิ่งที่ต้องทำวันนี้</button>
     </div>
   </div>
@@ -25,7 +25,7 @@ export function renderFirstDay(data = {}) {
 <section class="ex-day-tasks" id="ex-day-tasks" aria-labelledby="ex-day-tasks-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
     <h2 id="ex-day-tasks-title">2 เรื่องที่ต้องทำในวันแรก</h2>
-    <p>อย่าลืม Subscribe Calendar เพื่อติดตามวันหยุดของบริษัท และกรอก Timesheet เพื่อลงเวลาเข้าออกงานในระหว่างการฝึกงาน</p>
+    <p>อย่าลืม Subscribe Calendar เพื่อติดตามวันหยุดของบริษัท และกรอก Timesheet เพื่อลงเวลาเข้าออกงานในระหว่างการฝึกงาน 🔔</p>
   </div>
 
   <div class="ex-task-stage">
@@ -156,7 +156,7 @@ export function renderFirstDay(data = {}) {
 
     <div class="ex-more-headline">
       <p class="ex-more-kicker"><span></span>Intern Handbook Map</p>
-      <h2 id="ex-day-more-title">อ่านต่อใน <br>Intern Handbook</h2>
+      <h2 id="ex-day-more-title">อ่านต่อใน <br>Intern Handbook 📚</h2>
       <p>เรื่องที่ intern ควรรู้และต้องใช้ตลอดการฝึกงาน ตั้งแต่นโยบาย ออฟฟิศ คนในทีม และข้อมูลอื่น ๆ อีกมากมาย</p>
       <a href="#/" class="ex-more-home" data-link>
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
