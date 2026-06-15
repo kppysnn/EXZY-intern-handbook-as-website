@@ -91,7 +91,7 @@ export var renderHome = () => `
 <section class="ex-home-voices" aria-labelledby="ex-home-voices-title">
   <div class="ex-home-voices-inner">
     <div class="ex-home-section-intro fdb-reveal">
-      <span class="ex-must-eyebrow">INTERN VOICES</span>
+      <span class="ex-must-eyebrow">LIFE AT EXZY</span>
       <h2 id="ex-home-voices-title">ฝึกงานที่ EXZY เป็นยังไงบ้าง ?</h2>
       <p>ลองดูรีวิวจาก intern ที่เคยฝึกงานกับ EXZY เพื่อเห็นบรรยากาศ งานที่ได้ทำ และประสบการณ์ตลอดช่วงฝึกงาน</p>
     </div>
@@ -102,7 +102,7 @@ export var renderHome = () => `
       </div>
       <div class="ex-voice-featured-copy">
         <span class="ex-voice-tag">Intern review · BD</span>
-        <h3>ฝึกงาน Business Development ที่ EXZY</h3>
+        <h3>ฝึกงาน Business&nbsp;Development ที่ EXZY</h3>
         <p>น้องดาด้า นักศึกษา BAScii จุฬาลงกรณ์มหาวิทยาลัย ในโครงการ Founder Apprentice เล่าประสบการณ์ฝึกงานสาย BD กับ EXZY ตลอด 2 เดือน</p>
       </div>
     </div>
