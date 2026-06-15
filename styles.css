@@ -6432,7 +6432,7 @@ span[style*="particleFloat"] { display: none !important; }
   justify-content: center;
   gap: 10px;
   width: fit-content;
-  border-radius: var(--radius-sm);
+  border-radius: 999px;
   border: none;
   cursor: pointer;
   font-weight: 700;
@@ -11882,7 +11882,7 @@ html::-webkit-scrollbar { display: none !important; }
   background: #004080;
   border: none;
   color: #fff;
-  border-radius: 9px;
+  border-radius: 999px;
   padding: 10px 18px;
   font-size: 13px;
   font-weight: 700;
