@@ -12008,7 +12008,7 @@ html:not(.js-ready) .fdb-reveal {
 
 .wifi-hr-sub {
   font-size: 13.5px;
-  color: rgba(248,249,250,.7);
+  color: #fff;
   margin: 0 0 18px;
   line-height: 1.6;
 }

@@ -49,7 +49,7 @@ export const renderWifi = () => {
       </div>
       <div class="wifi-hr-copy">
         <div class="wifi-hr-title">ส่งอีเมลขอรหัสผ่านจาก HR</div>
-        <p class="wifi-hr-sub">แจ้งว่าต้องการรหัส Wi-Fi สำหรับ Intern — HR จะตอบกลับให้</p>
+        <p class="wifi-hr-sub">หากไม่ทราบรหัสผ่าน ติดต่อ HR ทางอีเมล</p>
         <a href="mailto:${hrEmail}" class="btn btn-primary wifi-hr-btn">${I.mail} ส่งอีเมลหา HR</a>
       </div>
     </div>
