@@ -7,7 +7,7 @@ export const renderWifi = () => {
   return pageWrap({
   crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
   title: "Office Wi-Fi",
-  lead: "ส่งอีเมลขอรหัสผ่านจาก HR ได้เลย — ชื่อเครือข่ายดูได้ด้านล่าง",
+  lead: "เชื่อ Wi-Fi และรหัสผ่านสำหรับพนักงานและแขก พร้อมวิธีติดต่อ HR หากต้องการความช่วยเหลือในการเชื่อมต่อ",
   body: `
     <!-- Network cards -->
     <div class="wifi-net-cards">

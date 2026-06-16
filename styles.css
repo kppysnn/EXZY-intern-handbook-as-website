@@ -1640,38 +1640,6 @@ h2.section-title {
 .wifi-panel[hidden] { display: none; }
 
 
-/* Wi-Fi 3-step guide */
-.wifi-steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 10px;
-}
-
-.wifi-step {
-  background: #F8F9FA;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 22px 20px;
-  position: relative;
-}
-
-.wifi-step h4 {
-  font-family: var(--display);
-  font-size: 16px;
-  color: var(--ink);
-  font-weight: 700;
-  margin: 0 0 8px;
-}
-
-.wifi-step p {
-  font-size: 13.5px;
-  line-height: 1.6;
-  color: var(--muted);
-  margin: 0;
-}
-
-
 /* ===== INTERNSHIP POLICY HOURS HERO — see redesigned styles near end of file ===== */
 
 /* Rule grid */
@@ -12022,45 +11990,6 @@ html:not(.js-ready) .fdb-reveal {
 .wifi-hr-btn:hover {
   background: rgba(255,255,255,.25) !important;
 }
-
-
-.wifi-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.wifi-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 18px 20px;
-}
-
-.wifi-step-n {
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--navy);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13px;
-  margin-top: 1px;
-}
-
-.wifi-step-body strong { font-size: 14.5px; color: var(--ink); display: block; margin-bottom: 4px; }
-
-.wifi-step-body p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.6; }
-
-.wifi-step-body code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
 @media (max-width: 560px){
 
   .wifi-net-cards { grid-template-columns: 1fr; }
