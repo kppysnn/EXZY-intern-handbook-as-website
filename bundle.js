@@ -573,6 +573,44 @@
   </div>
 </section>
 
+<section class="ex-home-reminders" aria-labelledby="ex-home-reminders-title">
+  <div class="ex-home-reminders-inner">
+    <div class="ex-home-reminders-head fdb-reveal">
+      <span class="ex-home-reminders-mark">\u0E2B\u0E49\u0E32\u0E21\u0E25\u0E37\u0E21</span>
+      <div>
+        <h2 id="ex-home-reminders-title">\u0E40\u0E0A\u0E47\u0E01 2 \u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E19\u0E35\u0E49\u0E01\u0E48\u0E2D\u0E19\u0E43\u0E01\u0E25\u0E49\u0E08\u0E1A\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</h2>
+        <p>\u0E2A\u0E2D\u0E07\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E19\u0E35\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E1C\u0E37\u0E48\u0E2D\u0E40\u0E27\u0E25\u0E32\u0E43\u0E2B\u0E49\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E2B\u0E23\u0E37\u0E2D HR \u0E15\u0E23\u0E27\u0E08 \u0E2D\u0E22\u0E48\u0E32\u0E23\u0E2D\u0E17\u0E33\u0E15\u0E2D\u0E19\u0E2A\u0E31\u0E1B\u0E14\u0E32\u0E2B\u0E4C\u0E2A\u0E38\u0E14\u0E17\u0E49\u0E32\u0E22</p>
+      </div>
+    </div>
+
+    <div class="ex-home-reminders-grid">
+      <article class="ex-home-reminder-card ex-home-reminder-card--project fdb-reveal">
+        <div class="ex-home-reminder-top">
+          <span class="ex-home-reminder-label">HR Project</span>
+          <span class="ex-home-reminder-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+          </span>
+        </div>
+        <strong class="ex-home-reminder-deadline">2 \u0E2D\u0E32\u0E17\u0E34\u0E15\u0E22\u0E4C<br><span>\u0E01\u0E48\u0E2D\u0E19\u0E08\u0E1A\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19</span></strong>
+        <p>\u0E2A\u0E48\u0E07 draft \u0E43\u0E2B\u0E49\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E41\u0E25\u0E30 HR \u0E15\u0E23\u0E27\u0E08\u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E21\u0E35\u0E40\u0E27\u0E25\u0E32\u0E40\u0E0A\u0E47\u0E01\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32 \u0E41\u0E01\u0E49\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14 \u0E41\u0E25\u0E30\u0E40\u0E1C\u0E22\u0E41\u0E1E\u0E23\u0E48\u0E1A\u0E19\u0E0A\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07 public \u0E44\u0E14\u0E49\u0E17\u0E31\u0E19</p>
+        <a href="#/tasks/hr-bd-project" data-link>\u0E14\u0E39\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14 HR Project \u2192</a>
+      </article>
+
+      <article class="ex-home-reminder-card ex-home-reminder-card--university fdb-reveal fdb-delay1">
+        <div class="ex-home-reminder-top">
+          <span class="ex-home-reminder-label">\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22</span>
+          <span class="ex-home-reminder-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+          </span>
+        </div>
+        <strong class="ex-home-reminder-deadline">1 \u0E2D\u0E32\u0E17\u0E34\u0E15\u0E22\u0E4C<br><span>\u0E2B\u0E23\u0E37\u0E2D 5 \u0E27\u0E31\u0E19\u0E17\u0E33\u0E01\u0E32\u0E23</span></strong>
+        <p>\u0E16\u0E49\u0E32\u0E21\u0E35\u0E23\u0E32\u0E22\u0E07\u0E32\u0E19 \u0E41\u0E1C\u0E19\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 \u0E41\u0E1A\u0E1A\u0E1B\u0E23\u0E30\u0E40\u0E21\u0E34\u0E19 \u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E2D\u0E01\u0E2A\u0E32\u0E23\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E2B\u0E49\u0E1E\u0E35\u0E48\u0E40\u0E25\u0E35\u0E49\u0E22\u0E07\u0E40\u0E0B\u0E47\u0E19 \u0E43\u0E2B\u0E49\u0E2A\u0E48\u0E07\u0E15\u0E23\u0E27\u0E08\u0E25\u0E48\u0E27\u0E07\u0E2B\u0E19\u0E49\u0E32 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E1C\u0E37\u0E48\u0E2D\u0E40\u0E27\u0E25\u0E32\u0E41\u0E01\u0E49\u0E44\u0E02\u0E43\u0E2B\u0E49\u0E17\u0E31\u0E19\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E02\u0E2D\u0E07\u0E21\u0E2B\u0E32\u0E27\u0E34\u0E17\u0E22\u0E32\u0E25\u0E31\u0E22</p>
+        <a href="#/policy/internship" data-link>\u0E14\u0E39 Internship Policy \u2192</a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="ex-folders-section" id="ex-home-contents" aria-labelledby="ex-folders-title">
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">

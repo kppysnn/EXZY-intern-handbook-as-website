@@ -35842,18 +35842,20 @@ html::-webkit-scrollbar { display: none !important; }
 }
 
 .callout-warn {
-  background: rgba(255,204,0,0.08) !important;
-  border-color: rgba(0,64,129,0.22) !important;
+  background:
+    linear-gradient(180deg, rgba(255,204,0,0.46), rgba(255,204,0,0.30)) !important;
+  border-color: #FFCC00 !important;
+  box-shadow: 0 0 0 1px rgba(0,64,129,0.08) inset !important;
 }
 
 .callout-warn .ic {
   width: 34px !important;
   height: 34px !important;
   border-radius: 11px !important;
-  color: var(--ci-navy) !important;
-  background: var(--ci-bg) !important;
-  border: 1px solid rgba(0,64,129,0.18) !important;
-  box-shadow: 0 1px 0 rgba(248,249,250,0.9) inset !important;
+  color: var(--ci-bg) !important;
+  background: var(--ci-navy) !important;
+  border: 1px solid rgba(0,17,34,0.18) !important;
+  box-shadow: 0 1px 0 rgba(248,249,250,0.26) inset !important;
 }
 
 .callout-warn h4 {
@@ -35862,6 +35864,207 @@ html::-webkit-scrollbar { display: none !important; }
 
 .callout-warn p {
   color: var(--ci-body) !important;
+}
+
+.ex-home-reminders {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(68px, 8vw, 104px) clamp(20px, 5vw, 60px);
+  background: #003061;
+  color: var(--ci-bg);
+}
+
+.ex-home-reminders::before {
+  content: "";
+  position: absolute;
+  inset: 26px clamp(20px, 7vw, 84px) auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(102,197,197,.72), transparent);
+  opacity: .62;
+  pointer-events: none;
+}
+
+.ex-home-reminders-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.ex-home-reminders-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 760px;
+  margin: 0 auto clamp(28px, 4vw, 42px);
+  text-align: center;
+}
+
+.ex-home-reminders-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: rgba(102,197,197,0.18);
+  color: #F8F9FA;
+  border: 1px solid rgba(102,197,197,0.52);
+  font-weight: 900;
+  font-size: clamp(1rem, 1.6vw, 1.22rem);
+  line-height: 1.2;
+  box-shadow: 0 10px 26px rgba(0,17,34,0.16);
+}
+
+.ex-home-reminders h2 {
+  margin: 0;
+  color: var(--ci-bg) !important;
+  font-size: clamp(1.8rem, 4vw, 3.05rem);
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.ex-home-reminders-head p {
+  max-width: 62ch;
+  margin: 0;
+  color: rgba(248,249,250,0.78) !important;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.ex-home-reminders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 26px);
+  align-items: stretch;
+}
+
+.ex-home-reminder-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 318px;
+  padding: clamp(22px, 3vw, 30px);
+  border-radius: 18px;
+  border: 1px solid rgba(102,197,197,0.30);
+  background: #F8F9FA;
+  color: var(--ci-ink);
+  transition:
+    transform .24s var(--ease-out-quart),
+    border-color .2s ease;
+}
+
+.ex-home-reminder-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(102,197,197,0.72);
+}
+
+.ex-home-reminder-card--project {
+  background: #E9F7F8;
+  border-color: rgba(102,197,197,0.62);
+}
+
+.ex-home-reminder-card--university {
+  background: #F2F6F8;
+  border-color: rgba(0,64,129,0.18);
+}
+
+.ex-home-reminder-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.ex-home-reminder-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: rgba(0,64,129,0.10);
+  color: var(--ci-navy);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ex-home-reminder-card--project .ex-home-reminder-label {
+  background: rgba(0,64,129,0.12);
+  color: var(--ci-navy);
+}
+
+.ex-home-reminder-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--ci-navy);
+  color: var(--ci-bg);
+  flex: 0 0 auto;
+}
+
+.ex-home-reminder-deadline {
+  display: block;
+  margin: 0 0 16px;
+  color: var(--ci-ink);
+  font-size: clamp(2.1rem, 4.6vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.ex-home-reminder-deadline span {
+  display: inline-block;
+  color: var(--ci-navy);
+  font-size: clamp(1.15rem, 2vw, 1.62rem);
+  letter-spacing: -0.01em;
+}
+
+.ex-home-reminder-card p {
+  margin: 0;
+  color: #29394f;
+  font-size: 14.5px;
+  line-height: 1.72;
+  text-wrap: pretty;
+}
+
+.ex-home-reminder-card a {
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 20px;
+  color: var(--ci-navy);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ex-home-reminder-card a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 860px) {
+  .ex-home-reminders-head {
+    align-items: center;
+    text-align: center;
+  }
+
+  .ex-home-reminders-mark {
+    width: fit-content;
+  }
+
+  .ex-home-reminders-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ex-home-reminder-card {
+    min-height: 0;
+  }
 }
 
 .ex-folder {
