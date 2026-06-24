@@ -147,7 +147,7 @@ export var renderHome = () => `
 <section class="ex-home-reminders" aria-labelledby="ex-home-reminders-title">
   <div class="ex-home-reminders-inner">
     <div class="ex-home-reminders-head fdb-reveal">
-      <span class="ex-home-reminders-mark">ห้ามลืม</span>
+      <span class="ex-home-reminders-mark">‼️ ห้ามลืม ‼️</span>
       <div>
         <h2 id="ex-home-reminders-title">จัดการงานและเอกสารให้ทันเวลา</h2>
         <p>อย่าลืม! HR Project ต้องส่งให้ทันเวลา และหากมีงานเอกสารจากมหาวิทยาลัยที่ต้องให้พี่เลี้ยงหรือ HR ช่วยดู ควรส่งล่วงหน้า เพื่อให้มีเวลาตรวจและแก้ไข</p>
