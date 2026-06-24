@@ -11259,7 +11259,7 @@ html::-webkit-scrollbar { display: none !important; }
 .ex-home-reminders-inner {
   position: relative;
   z-index: 1;
-  max-width: 1140px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -11269,9 +11269,17 @@ html::-webkit-scrollbar { display: none !important; }
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  max-width: 760px;
+  width: min(100%, 780px);
   margin: 0 auto clamp(28px, 4vw, 42px);
-  text-align: center;
+  text-align: center !important;
+}
+
+
+.ex-home-reminders-head > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -11293,21 +11301,25 @@ html::-webkit-scrollbar { display: none !important; }
 
 
 .ex-home-reminders h2 {
+  width: 100%;
+  max-width: 760px;
   margin: 0;
   color: var(--ci-bg) !important;
   font-size: clamp(1.8rem, 4vw, 3.05rem);
   line-height: 1.22;
   letter-spacing: -0.02em;
+  text-align: center !important;
   text-wrap: balance;
 }
 
 
 .ex-home-reminders-head p {
-  max-width: 62ch;
+  width: min(100%, 680px);
   margin: 0;
   color: rgba(248,249,250,0.78) !important;
   font-size: 1rem;
   line-height: 1.75;
+  text-align: center !important;
   text-wrap: pretty;
 }
 
@@ -11317,12 +11329,15 @@ html::-webkit-scrollbar { display: none !important; }
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(18px, 2.4vw, 26px);
   align-items: stretch;
+  width: 100%;
+  margin-inline: auto;
 }
 
 
 .ex-home-reminder-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  align-items: start;
   min-height: 318px;
   padding: clamp(22px, 3vw, 30px);
   border-radius: 18px;
@@ -11423,7 +11438,7 @@ html::-webkit-scrollbar { display: none !important; }
 
 .ex-home-reminder-card a {
   width: fit-content;
-  margin-top: auto;
+  align-self: end;
   padding-top: 20px;
   color: var(--ci-navy);
   font-size: 14px;
