@@ -59,13 +59,13 @@ export var renderHome = () => `
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">02 · HR Project</span>
-            <span class="ex-must-pill ex-must-pill--amber">ก่อนจบฝึกงาน</span>
+            <span class="ex-must-pill ex-must-pill--amber">ส่งก่อน 2 อาทิตย์</span>
           </div>
           <h3 class="ex-must-title">HR Project</h3>
           <ul class="ex-must-list">
+            <li>ส่งให้พี่เลี้ยงและ HR ตรวจ <strong>ก่อนจบฝึกงานอย่างน้อย 2 อาทิตย์</strong></li>
             <li>ชิ้นงานที่เล่าประสบการณ์การฝึกงาน</li>
             <li>เลือกรูปแบบได้ตามที่ถนัด ไม่ว่าจะเป็น <strong>คลิป บทความ โพสต์</strong></li>
-            <li>ส่งก่อนสิ้นสุดการฝึกงาน <strong>2 อาทิตย์</strong></li>
             <li>ลงเผยแพร่บนช่องทาง <strong>public</strong></li>
           </ul>
           <a href="#/tasks/hr-bd-project" class="ex-must-btn" data-link>ดูรายละเอียด Project →</a>

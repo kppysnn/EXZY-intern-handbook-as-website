@@ -35841,6 +35841,29 @@ html::-webkit-scrollbar { display: none !important; }
   margin-top: 3px !important;
 }
 
+.callout-warn {
+  background: rgba(255,204,0,0.08) !important;
+  border-color: rgba(0,64,129,0.22) !important;
+}
+
+.callout-warn .ic {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 11px !important;
+  color: var(--ci-navy) !important;
+  background: var(--ci-bg) !important;
+  border: 1px solid rgba(0,64,129,0.18) !important;
+  box-shadow: 0 1px 0 rgba(248,249,250,0.9) inset !important;
+}
+
+.callout-warn h4 {
+  color: var(--ci-navy) !important;
+}
+
+.callout-warn p {
+  color: var(--ci-body) !important;
+}
+
 .ex-folder {
   justify-content: space-between !important;
 }

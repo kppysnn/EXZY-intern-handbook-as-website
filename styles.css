@@ -1262,6 +1262,13 @@ h2.section-title {
   transform: translateY(-2px);
 }
 
+.callout-warn {
+  border-left-color: #FFCC00;
+  background: rgba(255,204,0,0.06);
+}
+
+.callout-warn h4 { color: #707070; }
+
 
 /* ============================================================
    PAGE HERO BAND — shown at top of every inner page
@@ -3745,6 +3752,10 @@ p.hero-word, div.hero-word { display: block; }
 .callout h4 { font-size: 14px; font-weight: 700; color: var(--ink); margin: 0 0 4px; }
 
 .callout p  { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.65; }
+
+.callout-warn { background: rgba(255,204,0,0.10); }
+
+.callout-warn .ic { color: #FFCC00; }
 
 .callout-note { background: var(--sec-soft); }
 
@@ -9504,6 +9515,17 @@ a,
 }
 
 
+.callout-warn {
+  border-color: rgba(255,204,0,0.48) !important;
+  background: rgba(255,204,0,0.16) !important;
+}
+
+
+.callout-warn h4 {
+  color: var(--ci-ink) !important;
+}
+
+
 .faq-filter {
   margin-bottom: 26px !important;
   gap: 10px !important;
@@ -11182,6 +11204,33 @@ html::-webkit-scrollbar { display: none !important; }
 
 .callout .ic {
   margin-top: 3px !important;
+}
+
+
+.callout-warn {
+  background: rgba(255,204,0,0.08) !important;
+  border-color: rgba(0,64,129,0.22) !important;
+}
+
+
+.callout-warn .ic {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 11px !important;
+  color: var(--ci-navy) !important;
+  background: var(--ci-bg) !important;
+  border: 1px solid rgba(0,64,129,0.18) !important;
+  box-shadow: 0 1px 0 rgba(248,249,250,0.9) inset !important;
+}
+
+
+.callout-warn h4 {
+  color: var(--ci-navy) !important;
+}
+
+
+.callout-warn p {
+  color: var(--ci-body) !important;
 }
 
 
