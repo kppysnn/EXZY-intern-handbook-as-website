@@ -36017,14 +36017,14 @@ html::-webkit-scrollbar { display: none !important; }
   margin: 0 0 24px;
   padding: 12px 20px 13px;
   border-radius: 16px;
-  background: #c2410c;
-  border: 1px solid rgba(154, 52, 18, 0.28);
+  background: #ea580c;
+  border: 1px solid rgba(194, 65, 12, 0.28);
   color: #ffffff;
   font-size: clamp(1.08rem, 1.75vw, 1.36rem);
   font-weight: 800;
   line-height: 1.32;
   letter-spacing: -0.005em;
-  box-shadow: 0 10px 20px rgba(194, 65, 12, 0.16);
+  box-shadow: 0 10px 20px rgba(234, 88, 12, 0.16);
   text-wrap: balance;
 }
 
