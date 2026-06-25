@@ -36010,6 +36010,8 @@ html::-webkit-scrollbar { display: none !important; }
 .ex-home-reminder-card--project .ex-home-reminder-label {
   background: transparent;
   color: var(--ci-navy);
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .ex-home-reminder-icon {
