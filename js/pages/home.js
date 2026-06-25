@@ -157,24 +157,18 @@ export var renderHome = () => `
     <div class="ex-home-reminders-grid">
       <article class="ex-home-reminder-card ex-home-reminder-card--project fdb-reveal">
         <div class="ex-home-reminder-top">
-          <span class="ex-home-reminder-label">HR Project</span>
-          <span class="ex-home-reminder-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
-          </span>
+          <span class="ex-home-reminder-label">✨ HR Project</span>
         </div>
-        <strong class="ex-home-reminder-deadline">ส่งล่วงหน้า 2 สัปดาห์</strong>
+        <strong class="ex-home-reminder-deadline">⚠️ ส่งล่วงหน้า 2 สัปดาห์</strong>
         <p>ส่ง draft ให้พี่เลี้ยงและ HR ตรวจล่วงหน้า เพื่อให้มีเวลาเช็กเนื้อหา แก้รายละเอียด และเผยแพร่บนช่องทาง public ได้ทัน</p>
         <a href="#/tasks/hr-bd-project" data-link>ดูรายละเอียด HR Project →</a>
       </article>
 
       <article class="ex-home-reminder-card ex-home-reminder-card--university fdb-reveal fdb-delay1">
         <div class="ex-home-reminder-top">
-          <span class="ex-home-reminder-label">เอกสารมหาวิทยาลัย</span>
-          <span class="ex-home-reminder-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
-          </span>
+          <span class="ex-home-reminder-label">📑 เอกสารมหาวิทยาลัย</span>
         </div>
-        <strong class="ex-home-reminder-deadline">ส่งล่วงหน้า 1 สัปดาห์</strong>
+        <strong class="ex-home-reminder-deadline">⚠️ ส่งล่วงหน้า 1 สัปดาห์</strong>
         <p>หากมีรายงาน แผนการฝึกงาน แบบประเมิน หรือเอกสารที่ต้องให้พี่เลี้ยงเซ็น ให้ส่งตรวจล่วงหน้า เพื่อเผื่อเวลาแก้ไขให้ทันกำหนดของมหาวิทยาลัย</p>
         <a href="#/policy/internship" data-link>ดู Internship Policy →</a>
       </article>
