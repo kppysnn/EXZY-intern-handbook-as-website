@@ -59,11 +59,11 @@ export var renderHome = () => `
         <div class="ex-must-content">
           <div class="ex-must-header">
             <span class="ex-must-label">02 · HR Project</span>
-            <span class="ex-must-pill ex-must-pill--amber">ส่งก่อน 2 อาทิตย์</span>
+            <span class="ex-must-pill ex-must-pill--amber">ส่งล่วงหน้า 2 สัปดาห์</span>
           </div>
           <h3 class="ex-must-title">HR Project</h3>
           <ul class="ex-must-list">
-            <li>ส่งให้พี่เลี้ยงและ HR ตรวจ <strong>ก่อนจบฝึกงานอย่างน้อย 2 อาทิตย์</strong></li>
+            <li>ส่งให้พี่เลี้ยงและ HR ตรวจ <strong>ก่อนจบฝึกงานอย่างน้อย 2 สัปดาห์</strong></li>
             <li>ชิ้นงานที่เล่าประสบการณ์การฝึกงาน</li>
             <li>เลือกรูปแบบได้ตามที่ถนัด ไม่ว่าจะเป็น <strong>คลิป บทความ โพสต์</strong></li>
             <li>ลงเผยแพร่บนช่องทาง <strong>public</strong></li>
@@ -150,7 +150,7 @@ export var renderHome = () => `
       <span class="ex-home-reminders-mark">‼️ ห้ามลืม ‼️</span>
       <div>
         <h2 id="ex-home-reminders-title">จัดการงานและเอกสารให้ทันเวลา</h2>
-        <p>อย่าลืม! HR Project ต้องส่งให้ทันเวลา และหากมีงานเอกสารจากมหาวิทยาลัยที่ต้องให้พี่เลี้ยงหรือ HR ช่วยดู ควรส่งล่วงหน้า เพื่อให้มีเวลาตรวจและแก้ไข</p>
+        <p>อย่าลืม! HR Project และเอกสารจากมหาวิทยาลัยควรส่งล่วงหน้า เพื่อให้พี่เลี้ยงหรือ HR มีเวลาเช็ก แก้ และส่งกลับให้ทันกำหนด</p>
       </div>
     </div>
 
@@ -162,7 +162,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
           </span>
         </div>
-        <strong class="ex-home-reminder-deadline">2 อาทิตย์<br><span>ก่อนจบฝึกงาน</span></strong>
+        <strong class="ex-home-reminder-deadline">ส่งล่วงหน้า 2 สัปดาห์</strong>
         <p>ส่ง draft ให้พี่เลี้ยงและ HR ตรวจล่วงหน้า เพื่อให้มีเวลาเช็กเนื้อหา แก้รายละเอียด และเผยแพร่บนช่องทาง public ได้ทัน</p>
         <a href="#/tasks/hr-bd-project" data-link>ดูรายละเอียด HR Project →</a>
       </article>
@@ -174,7 +174,7 @@ export var renderHome = () => `
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
           </span>
         </div>
-        <strong class="ex-home-reminder-deadline">1 อาทิตย์<br><span>หรือ 5 วันทำการ</span></strong>
+        <strong class="ex-home-reminder-deadline">ส่งล่วงหน้า 1 สัปดาห์</strong>
         <p>หากมีรายงาน แผนการฝึกงาน แบบประเมิน หรือเอกสารที่ต้องให้พี่เลี้ยงเซ็น ให้ส่งตรวจล่วงหน้า เพื่อเผื่อเวลาแก้ไขให้ทันกำหนดของมหาวิทยาลัย</p>
         <a href="#/policy/internship" data-link>ดู Internship Policy →</a>
       </article>
