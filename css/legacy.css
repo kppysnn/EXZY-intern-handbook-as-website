@@ -36930,3 +36930,93 @@ html:not(.js-ready) .fdb-reveal {
 ) {
   font-weight: 700 !important;
 }
+
+/* Layout balance: make icon/text cards size and align to their actual content. */
+.callout {
+  display: grid !important;
+  grid-template-columns: 34px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 14px !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  padding: clamp(14px, 1.4vw, 18px) clamp(16px, 1.8vw, 20px) !important;
+  border-radius: 14px !important;
+}
+
+.callout > div {
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 4px !important;
+}
+
+.callout .ic {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  align-self: start !important;
+  margin: 0 !important;
+}
+
+.callout .ic svg {
+  display: block !important;
+}
+
+.callout :where(h3, h4) {
+  margin: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.42 !important;
+}
+
+.callout p {
+  margin: 0 !important;
+  line-height: 1.62 !important;
+}
+
+.callout.callout-note:not(:has(h3, h4)) {
+  width: fit-content !important;
+  max-width: 100% !important;
+  align-items: center !important;
+  padding-block: 14px !important;
+}
+
+.callout.callout-note:not(:has(h3, h4)) .ic {
+  align-self: center !important;
+}
+
+.callout.callout-note:not(:has(h3, h4)) > div {
+  justify-content: center !important;
+}
+
+.ex-must-notice {
+  display: grid !important;
+  grid-template-columns: 34px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 14px !important;
+  padding: 14px 18px !important;
+  min-height: 0 !important;
+}
+
+.ex-must-notice-ico {
+  width: 34px !important;
+  height: 34px !important;
+  margin: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ob-doc-row {
+  align-items: flex-start !important;
+}
+
+.ob-doc-dot {
+  margin-top: 0.68em !important;
+}
+
+.ob-submit-info {
+  align-items: center !important;
+  padding: 9px 12px !important;
+  min-height: 0 !important;
+  line-height: 1.45 !important;
+}
