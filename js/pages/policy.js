@@ -37,9 +37,9 @@ export const renderCodeOfConduct = () => pageWrap({
           </div>
         </div>
         <div class="cv-card-body">
-          <div class="cv-point"><span class="cv-point-k">Value added</span><span class="cv-point-v">สร้างคุณค่าใหม่ด้วย technology</span></div>
+          <div class="cv-point"><span class="cv-point-k">Value Added</span><span class="cv-point-v">สร้างคุณค่าใหม่ด้วย technology</span></div>
           <div class="cv-point"><span class="cv-point-k">Learn &amp; Improve</span><span class="cv-point-v">อัปสกิลตัวเองอยู่เสมอ ไม่หยุดพัฒนา</span></div>
-          <div class="cv-point"><span class="cv-point-k">Take risk</span><span class="cv-point-v">ประเมินความเสี่ยง แล้วกล้าตัดสินใจ</span></div>
+          <div class="cv-point"><span class="cv-point-k">Take Risks</span><span class="cv-point-v">ประเมินความเสี่ยง แล้วกล้าตัดสินใจ</span></div>
         </div>
       </div>
 
@@ -173,8 +173,8 @@ export const renderInternshipPolicy = () => pageWrap({
       <div class="rule-card">
         <div class="rule-icon">${I.door}</div>
         <div class="rule-body">
-          <h3>มาออฟฟิศ หรือสถานที่ที่ Assign ไว้เท่านั้น</h3>
-          <p>ต้องเข้าฝึกงานที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม Assign ไว้เท่านั้น <br><strong>ไม่อนุญาต WFH</strong> สำหรับ Intern แต่หากมีความจำเป็น ต้องแจ้งพี่เลี้ยง<br>และติดต่อ HR ก่อนเสมอ</p>
+          <h3>มาออฟฟิศ หรือสถานที่ที่ assign ไว้เท่านั้น</h3>
+          <p>ต้องเข้าฝึกงานที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม assign ไว้เท่านั้น <br><strong>ไม่อนุญาต WFH</strong> สำหรับ Intern แต่หากมีความจำเป็น ต้องแจ้งพี่เลี้ยง<br>และติดต่อ HR ก่อนเสมอ</p>
         </div>
       </div>
       <div class="rule-card">
@@ -188,14 +188,14 @@ export const renderInternshipPolicy = () => pageWrap({
         <div class="rule-icon">${I.doc}</div>
         <div class="rule-body">
           <h3>ดูแลชั่วโมงและเอกสารของตัวเองด้วยนะ 🕐</h3>
-          <p>บริหารชั่วโมงฝึกงานและรับผิดชอบเอกสารจากมหาวิทยาลัยด้วยตัวเอง <br>หากมีรายงาน แผนการฝึกงาน แบบประเมิน หรือเอกสารที่ต้องให้พี่เลี้ยงเซ็น <br>ให้ส่งล่วงหน้าอย่างน้อย <strong>1 อาทิตย์ หรือ 5 วันทำการ</strong> เพื่อเผื่อเวลาตรวจและแก้ไข</p>
+          <p>บริหารชั่วโมงฝึกงานและรับผิดชอบเอกสารจากมหาวิทยาลัยด้วยตัวเอง <br>หากมีรายงาน แผนการฝึกงาน แบบประเมิน หรือเอกสารที่ต้องให้พี่เลี้ยงและ HR เซ็น <br>ให้ส่งให้พี่เลี้ยงและ HR ตรวจล่วงหน้าอย่างน้อย <strong>1 อาทิตย์ หรือ 5 วันทำการ</strong> เพื่อเผื่อเวลาตรวจและแก้ไข</p>
         </div>
       </div>
       <div class="rule-card">
         <div class="rule-icon">${I.calendar}</div>
         <div class="rule-body">
           <h3>วันหยุดบริษัท 15 วัน/ปี 🗓️</h3>
-          <p>Subscribe Staff holiday calendar ไว้ได้เลย จะได้ไม่พลาดวันหยุดของบริษัท</p>
+          <p>Subscribe Staff Holiday Calendar ไว้ได้เลย จะได้ไม่พลาดวันหยุดของบริษัท</p>
         </div>
       </div>
     </div>
@@ -284,7 +284,7 @@ export const renderLeave = () => {
       <div class="leave-step anim-left" data-delay="100">
         <div class="leave-step-node">2</div>
         <div class="leave-step-card">
-          <h4>ส่ง Email แจ้งการลาให้ HR ✉️</h4>
+          <h4>ส่งอีเมลแจ้งการลาให้ HR ✉️</h4>
           <p>ส่งอีเมลแจ้งลาไปที่ <a href="mailto:${hrEmail}" class="inline-link">${hrEmail}</a> ระบุเหตุผลและจำนวนวันที่จะลา</p>
         </div>
       </div>
@@ -322,7 +322,7 @@ export const renderLeave = () => {
     <div class="callout anim-up">
       <span class="ic">${I.shield}</span>
       <div>
-        <h4>หากลามากเกินไป จะเกิดอะไรขึ้น ?</h4>
+        <h4>หากลามากเกินไป จะเกิดอะไรขึ้น?</h4>
         <p>ถ้าลาบ่อยจนเกินไปและทีมเห็นว่าไม่เหมาะสม บริษัทอาจพิจารณายุติการฝึกงานและแจ้งมหาวิทยาลัย หากมีปัญหาอะไรลองปรึกษาพี่เลี้ยงก่อนดีที่สุด</p>
       </div>
     </div>

@@ -7,7 +7,7 @@ export const renderWifi = () => {
   return pageWrap({
   crumbs: [["Home", "#/home"], ["Company & Office", null], ["Office Wi-Fi", null]],
   title: "Office Wi-Fi",
-  lead: "เชื่อ Wi-Fi และรหัสผ่านสำหรับพนักงานและแขก พร้อมวิธีติดต่อ HR หากต้องการความช่วยเหลือในการเชื่อมต่อ",
+  lead: "เชื่อมต่อ Wi-Fi และรหัสผ่านสำหรับพนักงานและแขก พร้อมวิธีติดต่อ HR หากต้องการความช่วยเหลือในการเชื่อมต่อ",
   body: `
     <!-- Network cards -->
     <div class="wifi-net-cards">
@@ -48,7 +48,7 @@ export const renderWifi = () => {
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
       </div>
       <div class="wifi-hr-copy">
-        <div class="wifi-hr-title">ติดต่อ hr</div>
+        <div class="wifi-hr-title">ติดต่อ HR</div>
         <p class="wifi-hr-sub">หากไม่ทราบรหัสผ่าน ติดต่อ HR ทางอีเมล</p>
         <a href="mailto:${hrEmail}" class="btn btn-primary wifi-hr-btn">${I.mail} ส่งอีเมลหา HR</a>
       </div>

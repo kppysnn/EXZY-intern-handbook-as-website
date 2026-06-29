@@ -41,9 +41,8 @@ export const renderOrgChart = () => pageWrap({
       <div class="oc-hq-badge">Head Office · Bangkok</div>
 
       <div class="oc-hq-name">EXZY Co., Ltd.</div>
-      <div class="oc-hq-tagline">"Excellence by design, Advance by technology"</div>
+      <div class="oc-hq-tagline">"Excellence by design, Advanced by technology"</div>
       <div class="oc-hq-pills">
-       
       </div>
     </div>
 

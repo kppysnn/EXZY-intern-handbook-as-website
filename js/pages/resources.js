@@ -51,7 +51,7 @@ export const renderTimesheet = () => {
       <div class="ts-col-item anim-up"><div class="ts-col-n">4</div><div class="ts-col-info"><strong>Summary of Task</strong><span>สรุปงานที่ทำในแต่ละวัน</span></div></div>
       <div class="ts-col-item anim-up"><div class="ts-col-n">5</div><div class="ts-col-info"><strong>Location</strong><span>สถานที่ฝึกงาน (เช่น EXZY Office)</span></div></div>
       <div class="ts-col-item anim-up"><div class="ts-col-n">6</div><div class="ts-col-info"><strong>Total Hours</strong><span>ชั่วโมงรวมในวันนั้น (มาตรฐาน 8)</span></div></div>
-      <div class="ts-col-item anim-up"><div class="ts-col-n">7</div><div class="ts-col-info"><strong>Incharge Name</strong><span>ชื่อพี่เลี้ยง / Supervisor</span></div></div>
+      <div class="ts-col-item anim-up"><div class="ts-col-n">7</div><div class="ts-col-info"><strong>In-Charge Name</strong><span>ชื่อพี่เลี้ยง / Supervisor</span></div></div>
     </div>
 
     <h2 style="margin-top:48px;">เอกสารที่ต้องส่งให้ HR ทุกเดือน 📮</h2>
@@ -59,7 +59,7 @@ export const renderTimesheet = () => {
     <ul>
       <li><strong>สำเนาบัตรประชาชน</strong> พร้อมเซ็นสำเนาถูกต้อง — ส่งทุกเดือน</li>
       <li><strong>เอกสาร Intern Timesheet</strong> — ส่งทุกเดือน</li>
-      <li><strong>สำเนา Bookbank — KBank</strong> — ส่งแค่เดือนแรก</li>
+      <li><strong>สำเนา Book Bank — KBank</strong> — ส่งแค่เดือนแรก</li>
     </ul>
 
     <div class="callout anim-up">
@@ -105,12 +105,12 @@ export const renderFaqs = () => {
       </div>
       <div class="accordion">
         ${acc("1. วันแรกของการฝึกงาน ต้องเตรียมอะไรบ้าง?", "นำอุปกรณ์ทำงานส่วนตัวมาด้วย · ถึงออฟฟิศก่อนเวลาเล็กน้อย ติดต่อพี่เลี้ยงผ่านช่องทางที่ HR ให้ไว้")}
-        ${acc("2. Wi-Fi ใช้รหัสอะไร? เชื่อมต่อยังไง?", "ดูวิธีเชื่อมต่อ Wi-Fi ได้ที่หน้า <a href=\"#/getting-started/wifi\" data-link>Office Wi-Fi</a> ")}
+        ${acc("2. Wi-Fi ใช้รหัสอะไร? เชื่อมต่อยังไง?", "ดูวิธีเชื่อมต่อ Wi-Fi ได้ที่หน้า <a href=\"#/getting-started/wifi\" data-link>Office Wi-Fi</a>")}
         ${acc("3. เริ่มงานกี่โมง? พักกลางวันกี่โมง?", "เวลาฝึกงาน <strong>9:00 – 18:00 น.</strong> หรือ <strong>10:00 – 19:00 น.</strong> ขึ้นอยู่กับแผนกที่ตัวเองอยู่ · พักกลางวัน <strong>12:00 – 13:00 น.</strong> · ทำงานวันละ 8 ชั่วโมง (ไม่รวมพักเที่ยง) · ดูรายละเอียดที่ <a href=\"#/policy/internship\" data-link>Internship Policy</a>")}
         ${acc("4. Timesheet ส่งยังไง? ส่งเมื่อไหร่?", "HR จะแชร์ไฟล์ Timesheet ให้ทางอีเมลตั้งแต่วันแรก · กรอกเวลาเข้า-ออกและรายละเอียดงานที่ทำในแต่ละวัน · พิมพ์เอกสารและนำไปใส่กล่องหน้าห้อง HR ชั้น 4 <strong>ภายในวันที่ 30–31 ของทุกเดือน</strong> ดูวิธีกรอกที่หน้า <a href=\"#/tasks/timesheet\" data-link>Timesheet</a>")}
-        ${acc("5. เบี้ยเลี้ยงเท่าไหร่? ต้องส่งเอกสารอะไรบ้าง?", "<strong>วันละ 200 บาท</strong> เมื่อฝึกงานที่บริษัท · <strong>วันละ 300 บาท</strong> เมื่อฝึกงานนอกสถานที่<br/>เอกสารที่ต้องส่ง (กำหนดส่ง <strong>วันที่ 30–31 ของทุกเดือน</strong>) :<br/>· สำเนาบัตรประชาชน พร้อมเซ็นสำเนาถูกต้อง — ส่งทุกเดือน<br/>· เอกสาร Intern Timesheet — ส่งทุกเดือน<br/>· สำเนา Bookbank ของบัญชีที่รับเงิน พร้อมเซ็นสำเนาถูกต้อง — ส่งแค่เดือนแรก<br/><strong>วิธีส่ง:</strong> พิมพ์เป็นกระดาษ ใส่กล่องหน้าห้อง HR ชั้น 4 — ไม่รับทางอีเมล")}
-        ${acc("6. ฝึกงานที่บ้าน (WFH) ได้ไหม?", "<strong>ไม่ได้</strong>, Intern ต้องเข้าฝึกที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม Assign ไว้เท่านั้น · หากมีความจำเป็น ต้องแจ้งพี่เลี้ยงและติดต่อ HR ก่อนเสมอ")}
-        ${acc("7. ต้องทำโปรเจกต์อะไรบ้างระหว่างฝึกงาน?", "Intern รับผิดชอบโปรเจกต์ <strong>3 ประเภท</strong>:<br/><strong>1. Project / Report</strong> — โปรเจกต์หรือรายงานที่ส่งกับมหาวิทยาลัย<br/><strong>2. Team Project</strong> — โปรเจกต์ที่พี่เลี้ยง Assign ให้ตามสายงาน<br/><strong>3. HR Project</strong> — content เกี่ยวกับการฝึกงาน ต้องเผยแพร่บนช่องทาง public และส่งก่อนจบฝึกงาน 2 อาทิตย์<br/>ดูรายละเอียดที่หน้า <a href=\"#/tasks/hr-bd-project\" data-link>HR Project</a>")}
+        ${acc("5. เบี้ยเลี้ยงเท่าไหร่? ต้องส่งเอกสารอะไรบ้าง?", "<strong>วันละ 200 บาท</strong> เมื่อฝึกงานที่บริษัท · <strong>วันละ 300 บาท</strong> เมื่อฝึกงานนอกสถานที่<br/>เอกสารที่ต้องส่ง (กำหนดส่ง <strong>วันที่ 30–31 ของทุกเดือน</strong>):<br/>· สำเนาบัตรประชาชน พร้อมเซ็นสำเนาถูกต้อง — ส่งทุกเดือน<br/>· เอกสาร Intern Timesheet — ส่งทุกเดือน<br/>· สำเนา Book Bank ของบัญชีที่รับเงิน พร้อมเซ็นสำเนาถูกต้อง — ส่งแค่เดือนแรก<br/><strong>วิธีส่ง:</strong> พิมพ์เป็นกระดาษ ใส่กล่องหน้าห้อง HR ชั้น 4 — ไม่รับทางอีเมล")}
+        ${acc("6. ฝึกงานที่บ้าน (WFH) ได้ไหม?", "<strong>ไม่ได้</strong>, Intern ต้องเข้าฝึกที่ออฟฟิศ EXZY หรือสถานที่ที่ทีม assign ไว้เท่านั้น · หากมีความจำเป็น ต้องแจ้งพี่เลี้ยงและติดต่อ HR ก่อนเสมอ")}
+        ${acc("7. ต้องทำโปรเจกต์อะไรบ้างระหว่างฝึกงาน?", "Intern รับผิดชอบโปรเจกต์ <strong>3 ประเภท</strong>:<br/><strong>1. Project / Report</strong> — โปรเจกต์หรือรายงานที่ส่งกับมหาวิทยาลัย ต้องส่งให้พี่เลี้ยงและ HR ตรวจตามกำหนด<br/><strong>2. Team Project</strong> — โปรเจกต์ที่พี่เลี้ยง assign ให้ตามสายงาน<br/><strong>3. HR Project</strong> — content เกี่ยวกับการฝึกงาน ต้องส่งให้พี่เลี้ยงและ HR ตรวจ เผยแพร่บนช่องทาง public และส่งก่อนจบฝึกงาน 2 อาทิตย์<br/>ดูรายละเอียดที่หน้า <a href=\"#/tasks/hr-bd-project\" data-link>HR Project</a>")}
         ${acc("8. ไม่เข้าใจงานที่ได้รับมอบหมาย ทำยังไง?", "<strong>ถามพี่เลี้ยงทันที</strong> ไม่ต้องเก็บไว้คนเดียว พี่เลี้ยงที่มีหน้าที่ดูแลเราระหว่างการฝึกงาน จะช่วยเหลือและให้คำแนะนำได้เสมอ")}
       </div>
     </div>

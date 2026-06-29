@@ -32,7 +32,7 @@ export var renderHome = () => `
   <div class="ex-home-start-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <span class="ex-must-eyebrow">Timesheet · HR Project</span>
-      <h2 id="ex-home-start-title">Project สำหรับ intern มีอะไรบ้าง ?</h2>
+      <h2 id="ex-home-start-title">Project สำหรับ intern มีอะไรบ้าง?</h2>
       <p>intern ทุกคนจะต้องรับผิดชอบ 2 งานหลัก และต้องส่งให้กับ HR ตามที่กำหนด 📋</p>
     </div>
 
@@ -90,7 +90,7 @@ export var renderHome = () => `
   <div class="ex-home-voices-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <span class="ex-must-eyebrow">LIFE AT EXZY</span>
-      <h2 id="ex-home-voices-title">ฝึกงานที่ EXZY เป็นยังไงบ้าง ?</h2>
+      <h2 id="ex-home-voices-title">ฝึกงานที่ EXZY เป็นยังไงบ้าง?</h2>
       <p>ลองดูรีวิวจาก intern ที่เคยฝึกงานกับ EXZY เพื่อเห็นบรรยากาศ งานที่ได้ทำ และประสบการณ์ตลอดช่วงฝึกงาน 👩🏻‍💻</p>
     </div>
 
@@ -99,7 +99,7 @@ export var renderHome = () => `
         <iframe src="https://www.youtube-nocookie.com/embed/W53e2n_09bA" title="ฝึกงาน Business Development ที่ EXZY — Dada" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="ex-voice-featured-copy">
-        <span class="ex-voice-tag">Intern review · BD</span>
+        <span class="ex-voice-tag">Intern Review · BD</span>
         <h3>ฝึกงาน Business&nbsp;Development ที่ EXZY 🎯💬📝</h3>
         <p>น้องดาด้า นักศึกษา BAScii จุฬาลงกรณ์มหาวิทยาลัย <br>ในโครงการ Founder Apprentice <br>เล่าประสบการณ์ฝึกงานสาย BD กับ EXZY ตลอด 2 เดือน ✨</p>
       </div>
@@ -110,10 +110,10 @@ export var renderHome = () => `
     <div class="ex-voice-grid">
       <article class="ex-voice-card fdb-reveal">
         <div class="ex-voice-video">
-          <iframe src="https://www.youtube-nocookie.com/embed/T7hpAMXAo2I" title="Intern review — Grace" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/T7hpAMXAo2I" title="Intern Review — Grace" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
-          <span class="ex-voice-tag">Intern review</span>
+          <span class="ex-voice-tag">Intern Review</span>
           <h3>ฝึกงานสาย Digital Marketing กับ EXZY 💡</h3>
           <p>น้องเกรซ Digital Marketing Intern รีแคปงานที่ได้ทำและสิ่งที่ได้เรียนรู้ตลอดการฝึกงาน 📱📊</p>
         </div>
@@ -121,11 +121,11 @@ export var renderHome = () => `
 
       <article class="ex-voice-card fdb-reveal fdb-delay1">
         <div class="ex-voice-video">
-          <iframe src="https://www.youtube-nocookie.com/embed/EhOba4jWhmI" title="Intern review — Nikki" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/EhOba4jWhmI" title="Intern Review — Nikki" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ex-voice-copy">
-          <span class="ex-voice-tag">Intern review</span>
-          <h3>recap UX/UI Designer Internship ที่ EXZY 🎨🖌️</h3>
+          <span class="ex-voice-tag">Intern Review</span>
+          <h3>Recap UX/UI Designer Internship ที่ EXZY 🎨🖌️</h3>
           <p>น้องนิกกี้ นักศึกษาจากมหาวิทยาลัยเทคโนโลยีสุรนารี <br>รีแคปโปรเจกต์และงานที่ได้ทำตลอดการฝึกงาน 4 เดือน ✍️</p>
         </div>
       </article>
@@ -136,7 +136,7 @@ export var renderHome = () => `
         </div>
         <div class="ex-voice-copy">
           <span class="ex-voice-tag">Intern Life</span>
-          <h3>5 เดือนกับการฝึกงาน Developer ที่ EXZY  💻 🧑🏻‍💻</h3>
+          <h3>5 เดือนกับการฝึกงาน Developer ที่ EXZY 💻 🧑🏻‍💻</h3>
           <p>แชร์มุมมองการฝึกงานสาย Developer ทั้งงานที่ได้ทำ ทีมที่ได้ร่วมงาน และสิ่งที่ได้เรียนรู้ 🛠️</p>
         </div>
       </article>
@@ -150,7 +150,7 @@ export var renderHome = () => `
       <span class="ex-home-reminders-mark">‼️ ห้ามลืม ‼️</span>
       <div>
         <h2 id="ex-home-reminders-title">จัดการงานและเอกสารให้ทันเวลา</h2>
-        <p>อย่าลืม! HR Project และเอกสารจากมหาวิทยาลัยควรส่งล่วงหน้า<br>เพื่อให้พี่เลี้ยงหรือ HR มีเวลาเช็ก แก้ และส่งกลับให้ทันกำหนด</p>
+        <p>อย่าลืม! HR Project และเอกสารจากมหาวิทยาลัยควรส่งล่วงหน้า<br>เพื่อให้พี่เลี้ยงและ HR มีเวลาเช็ก แก้ และส่งกลับให้ทันกำหนด</p>
       </div>
     </div>
 
@@ -169,7 +169,7 @@ export var renderHome = () => `
           <span class="ex-home-reminder-label">📑 เอกสารมหาวิทยาลัย</span>
         </div>
         <strong class="ex-home-reminder-deadline">⚠️ ส่งล่วงหน้า 1 สัปดาห์</strong>
-        <p>หากมีรายงาน แผนการฝึกงาน แบบประเมิน หรือเอกสารที่ต้องให้พี่เลี้ยงเซ็น ให้ส่งตรวจล่วงหน้า เพื่อเผื่อเวลาแก้ไขให้ทันกำหนดของมหาวิทยาลัย</p>
+        <p>หากมีรายงาน แผนการฝึกงาน แบบประเมิน หรือเอกสารที่ต้องให้พี่เลี้ยงและ HR เซ็น ให้ส่งให้พี่เลี้ยงและ HR ตรวจล่วงหน้า เพื่อเผื่อเวลาแก้ไขให้ทันกำหนดของมหาวิทยาลัย</p>
         <a href="#/policy/internship" data-link>ดู Internship Policy →</a>
       </article>
     </div>
@@ -180,7 +180,7 @@ export var renderHome = () => `
   <div class="ex-folders-inner">
     <div class="ex-home-section-intro fdb-reveal">
       <h2 id="ex-folders-title">รวมข้อมูลทั้งหมด<br>ที่ intern ต้องรู้ไว้ที่นี่</h2>
-      <p>อยากรู้เรื่องไหน ? เลือกดูได้เลย 👇</p>
+      <p>อยากรู้เรื่องไหน? เลือกดูได้เลย 👇</p>
     </div>
 
     <div class="ex-folder-grid">

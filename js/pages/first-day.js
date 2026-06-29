@@ -38,13 +38,13 @@ export function renderFirstDay(data = {}) {
         <h3>Subscribe Google Calendar</h3>
         <p>HR จะส่งคำเชิญให้ทางอีเมล กดเปิด Calendar แล้ว subscribe ปฏิทินบริษัทเพื่อดูวันหยุดประจำปีของบริษัท</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
-          <div class="ex-flow-step"><span aria-hidden="true">📧</span><b>รับ Email คำเชิญจาก HR</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">📧</span><b>รับอีเมลคำเชิญจาก HR</b></div>
           <i></i>
           <div class="ex-flow-step"><span aria-hidden="true">📅</span><b>กด Open Calendar</b></div>
           <i></i>
           <div class="ex-flow-step"><span aria-hidden="true">✅</span><b>กด Subscribe ปฏิทิน</b></div>
         </div>
-        <p class="ex-task-note">ถ้าไม่ได้รับ Calendar invitation ติดต่อ HR ที่ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
+        <p class="ex-task-note">ถ้าไม่ได้รับ calendar invitation ติดต่อ HR ที่ <a href="mailto:${hrEmail}">${hrEmail}</a></p>
       </div>
     </article>
 
@@ -55,13 +55,13 @@ export function renderFirstDay(data = {}) {
       <div class="ex-task-content">
         <span class="ex-task-badge">Task 02</span>
         <h3>กรอก Timesheet</h3>
-        <p>กรอกเวลาเข้าออกงานตามที่ได้รับมอบหมายในไฟล์ที่ HR ส่งให้ แนะนำให้ทำทุกวันจะได้ไม่ลืมสิ่งที่ทำ <br>และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน (วันที่ 30-31)</p>
+        <p>กรอกเวลาเข้าออกงานตามที่ได้รับมอบหมายในไฟล์ที่ HR ส่งให้ แนะนำให้ทำทุกวันจะได้ไม่ลืมสิ่งที่ทำ <br>และพิมพ์ส่ง HR เป็นกระดาษตอนสิ้นเดือน (วันที่ 30–31)</p>
         <div class="ex-mini-flow ex-mini-flow-emoji">
           <div class="ex-flow-step"><span aria-hidden="true">📂</span><b>รับไฟล์ Timesheet จาก HR</b></div>
           <i></i>
           <div class="ex-flow-step"><span aria-hidden="true">✏️</span><b>เปิดไฟล์และเริ่มกรอกข้อมูล</b></div>
           <i></i>
-          <div class="ex-flow-step"><span aria-hidden="true">🖨️</span><b>พิมพ์ส่ง HR สิ้นเดือน <br>(วันที่ 30-31)</b></div>
+          <div class="ex-flow-step"><span aria-hidden="true">🖨️</span><b>พิมพ์ส่ง HR สิ้นเดือน <br>(วันที่ 30–31)</b></div>
         </div>
         <a href="#/tasks/timesheet" class="ex-task-btn" data-link>ดูคู่มือ Timesheet →</a>
       </div>
@@ -112,7 +112,7 @@ export function renderFirstDay(data = {}) {
     <article class="ex-day-item fdb-reveal fdb-delay2">
       <span class="ex-day-item-num">04</span>
       <h3>Timesheet</h3>
-      <p>เริ่มกรอกเวลาเข้าออกตามที่ได้รับมอบหมายในไฟล์ที่ HR ส่งให้ และส่งเอกสารทุกสิ้นเดือน (วันที่ 30-31)</p>
+      <p>เริ่มกรอกเวลาเข้าออกตามที่ได้รับมอบหมายในไฟล์ที่ HR ส่งให้ และส่งเอกสารทุกสิ้นเดือน (วันที่ 30–31)</p>
       <div class="ex-road-mini">
         <button type="button" class="ex-inline-link" data-link><span aria-hidden="true">📋</span><b>ดูคู่มือ →</b></button>
       </div>
@@ -122,7 +122,7 @@ export function renderFirstDay(data = {}) {
 
 <section class="ex-day-videos" aria-labelledby="ex-day-videos-title">
   <div class="ex-section-head ex-section-head-center fdb-reveal">
-    <h2 id="ex-day-videos-title" style="white-space:nowrap;">🍽️ พักเที่ยงแล้ว ทานข้าวที่ไหนดี ? 🥘</h2>
+    <h2 id="ex-day-videos-title" style="white-space:nowrap;">🍽️ พักเที่ยงแล้ว ทานข้าวที่ไหนดี? 🥘</h2>
     <p>รวมคลิปแนะนำร้านอาหารรอบออฟฟิศ ทั้งร้านเด็ดที่พี่ ๆ แนะนำ และร้านใกล้ที่เดินไปกินได้ง่าย ๆ ไม่ไกล 😋🥢</p>
   </div>
 
@@ -135,7 +135,7 @@ export function renderFirstDay(data = {}) {
         <span>แนะนำร้านเด็ด</span>
         <h3>📌 ปักหมุดร้านเด็ดชาว EXZY</h3>
         <p>อยากรู้ว่าร้านไหนเด็ด ลองถามพี่ ๆ ที่ EXZY กัน! 🤩🍗</p>
-      </div> 
+      </div>
     </article>
 
     <article class="ex-day-video-card fdb-reveal fdb-delay1">
@@ -144,8 +144,8 @@ export function renderFirstDay(data = {}) {
       </div>
       <div class="ex-day-video-copy">
         <span>พิกัดร้านอาหาร</span>
-        <h3>🍜 รอบบริษัทของเรา ร้านไหนน่ากินบ้าง ?</h3>
-        <p>พิกัดร้านอาหารใกล้บริษัท ที่สามารถเดินไปได้ <br>ไม่รู้จะไปกินที่ไหน ลองดูคลิปนี้เลย ! ✨🍽️😋</p>
+        <h3>🍜 รอบบริษัทของเรา ร้านไหนน่ากินบ้าง?</h3>
+        <p>พิกัดร้านอาหารใกล้บริษัท ที่สามารถเดินไปได้ <br>ไม่รู้จะไปกินที่ไหน ลองดูคลิปนี้เลย! ✨🍽️😋</p>
       </div>
     </article>
   </div>
@@ -169,7 +169,7 @@ export function renderFirstDay(data = {}) {
         <span class="ex-more-ch-num">01</span>
         <span class="ex-more-ch-ico" aria-hidden="true">🏢</span>
         <b>Orientation &amp; Office</b>
-        <small>Wi-Fi, Meeting rooms, Orientation slides</small>
+        <small>Wi-Fi, Meeting Rooms, Orientation slides</small>
       </a>
       <a href="#/employee/org-chart" data-link class="ex-more-ch">
         <span class="ex-more-ch-num">02</span>

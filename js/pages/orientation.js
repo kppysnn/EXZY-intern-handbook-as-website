@@ -33,8 +33,8 @@ export const renderOrientation = () => pageWrap({
 
     <h2 id="intro">เกี่ยวกับ EXZY</h2>
     <div class="exzy-intro-card anim-up">
-      <div class="exzy-intro-tagline">"Excellence by design, Advance by technology"</div>
-      <p style="margin:0 0 12px;">EXZY คือผู้เชี่ยวชาญด้าน <strong>Smart Office Solution</strong> แบบครบวงจร ให้บริการตั้งแต่การออกแบบ ติดตั้ง ไปจนถึงเชื่อมต่อระบบสำนักงานยุคใหม่ ทั้งระบบจองห้องประชุม ระบบเข้า-ออกอัจฉริยะ Video Conference และ Digital Signage <br><br>ในฐานะ Intern ของ EXZY คุณจะได้เป็นส่วนหนึ่งของทีม มีส่วนร่วมในการทำงาน และได้สร้างผลงานของตัวเองอย่างแน่นอน</p>
+      <div class="exzy-intro-tagline">"Excellence by design, Advanced by technology"</div>
+      <p style="margin:0 0 12px;">EXZY คือผู้เชี่ยวชาญด้าน <strong>Smart Office Solutions</strong> แบบครบวงจร ให้บริการตั้งแต่การออกแบบ ติดตั้ง ไปจนถึงเชื่อมต่อระบบสำนักงานยุคใหม่ ทั้งระบบจองห้องประชุม ระบบเข้า-ออกอัจฉริยะ Video Conferencing และ Digital Signage <br><br>ในฐานะ Intern ของ EXZY คุณจะได้เป็นส่วนหนึ่งของทีม มีส่วนร่วมในการทำงาน และได้สร้างผลงานของตัวเองอย่างแน่นอน</p>
       <p style="font-size:13px; color: var(--muted); margin:0;">อยากรู้จัก EXZY เพิ่มเติม? <a href="https://www.exzysmartoffice.com" target="_blank" rel="noopener" class="inline-link">เยี่ยมชมเว็บไซต์ ${I.external}</a></p>
     </div>
 
@@ -45,7 +45,7 @@ export const renderOrientation = () => pageWrap({
     <div class="cv-wrap cv-compact">
       ${[
         { c:'cv-c1', num:'01', name:'Win as a Team',           tag:'Goal · Work+ · Support' },
-        { c:'cv-c2', num:'02', name:'Innovative',              tag:'Value added · Learn · Take risk' },
+        { c:'cv-c2', num:'02', name:'Innovative',              tag:'Value Added · Learn · Take Risks' },
         { c:'cv-c3', num:'03', name:'Positive & Open',         tag:'Energy · Listening · Speaking' },
         { c:'cv-c4', num:'04', name:'Professional & Dynamic',  tag:'Adapt · Commit · Prepare' },
         { c:'cv-c5', num:'05', name:'Aesthetic Design',        tag:'Tidiness · Experience · WOW' },
@@ -71,12 +71,12 @@ export const renderOrientation = () => pageWrap({
       <div class="proj-card anim-up">
         <div class="proj-num">01</div>
         <h3>Project or Report</h3>
-        <p>โปรเจกต์หรือรายงานที่รับผิดชอบดูแลและส่งกับทางมหาวิทยาลัย ถ้ามีเอกสารที่ต้องให้พี่เลี้ยงเซ็น ให้ส่งตรวจล่วงหน้าอย่างน้อย 1 อาทิตย์ หรือ 5 วันทำการ</p>
+        <p>โปรเจกต์หรือรายงานที่รับผิดชอบดูแลและส่งกับทางมหาวิทยาลัย ถ้ามีเอกสารที่ต้องให้พี่เลี้ยงและ HR เซ็น ให้ส่งให้พี่เลี้ยงและ HR ตรวจล่วงหน้าอย่างน้อย 1 อาทิตย์ หรือ 5 วันทำการ</p>
       </div>
       <div class="proj-card anim-up" data-delay="80">
         <div class="proj-num">02</div>
         <h3>Team Project</h3>
-        <p>โปรเจกต์ที่พี่เลี้ยงของแต่ละ Team Assign ให้ตามทักษะและสายงาน</p>
+        <p>โปรเจกต์ที่พี่เลี้ยงของแต่ละ team assign ให้ตามทักษะและสายงาน</p>
       </div>
       <div class="proj-card anim-up" data-delay="160">
         <div class="proj-num">03</div>
@@ -89,7 +89,7 @@ export const renderOrientation = () => pageWrap({
       <span class="ic">${I.info}</span>
       <div>
         <h3>หมายเหตุ</h3>
-        <p>รูปแบบโปรเจกต์และเอกสารจากมหาวิทยาลัยอาจแตกต่างกันตามเงื่อนไขของ intern แต่ละคน โดยทุกคนต้องเช็กกำหนดส่งและติดตามเอกสารของตัวเองให้ครบ</p>
+        <p>รูปแบบโปรเจกต์และเอกสารจากมหาวิทยาลัยอาจแตกต่างกันตามเงื่อนไขของ intern แต่ละคน โดยทุกคนต้องเช็กกำหนดส่ง ติดตามเอกสารของตัวเองให้ครบ และส่งให้พี่เลี้ยงและ HR ตรวจตามกำหนด</p>
       </div>
     </div>
 
@@ -127,7 +127,7 @@ export const renderOrientation = () => pageWrap({
           </div>
           <div class="ob-doc-row">
             <span class="ob-doc-dot"></span>
-            <div class="ob-doc-text">สำเนา Bookbank ของบัญชีที่ต้องการใช้รับเงิน พร้อมเซ็นสำเนาถูกต้อง</div>
+            <div class="ob-doc-text">สำเนา Book Bank ของบัญชีที่ต้องการใช้รับเงิน พร้อมเซ็นสำเนาถูกต้อง</div>
             <span class="ob-doc-freq ob-freq-once">เดือนแรก</span>
           </div>
         </div>
