@@ -162,6 +162,9 @@ function platformIconBody(platform) {
   if (platform === "TikTok") {
     return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.19a8.24 8.24 0 0 0 4.82 1.54V7.27a4.85 4.85 0 0 1-1.05-.58z"/></svg>`;
   }
+  if (platform === "Lemon8") {
+    return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M18.1 3.5c-2-.8-5.1-.2-7.8 2.5L6 10.3c-2.7 2.7-3.3 5.8-2.5 7.8.7 1.8 2.4 2.8 4.7 2.6 2.3-.2 4.8-1.5 7-3.8l1.7-1.7c2.3-2.3 3.6-4.8 3.8-7 .2-2.3-.8-4-2.6-4.7ZM13 11.1c.7-.3 1-.7 1-1.1 0-.6-.5-.9-1.2-.9s-1.2.4-1.2.9c0 .5.4.8 1.4 1.1Zm-.2 6c-2.3 0-3.8-1.1-3.8-2.8 0-1 .6-1.7 1.7-2.3-.8-.5-1.2-1.2-1.2-2 0-1.6 1.3-2.7 3.3-2.7 1.9 0 3.3 1.1 3.3 2.7 0 .8-.4 1.4-1.2 2 1.1.6 1.7 1.3 1.7 2.3 0 1.7-1.5 2.8-3.8 2.8Zm0-1.7c1 0 1.6-.4 1.6-1.1 0-.6-.5-.9-1.6-1.2-1.1.3-1.6.6-1.6 1.2 0 .7.6 1.1 1.6 1.1Z"/><path d="M18.9 2.1c1.8.1 2.9 1.2 3 3-1.8-.1-2.9-1.2-3-3Z"/></svg>`;
+  }
   return `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`;
 }
 
@@ -291,7 +294,7 @@ function renderShowcaseCard(item) {
     ? "ดูคลิปเต็ม"
     : item.platform === "Medium"
       ? "อ่านบทความ"
-      : item.platform === "Facebook"
+      : item.platform === "Facebook" || item.platform === "Lemon8"
         ? "เปิดโพสต์"
         : "เปิดลิงก์ต้นฉบับ";
   const meta = item.track ? `<span class="show-real-track">${escapeHtml(item.track)}</span>` : "";

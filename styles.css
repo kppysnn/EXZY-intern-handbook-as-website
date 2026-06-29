@@ -10780,6 +10780,11 @@ html::-webkit-scrollbar { display: none !important; }
   overflow: hidden !important;
 }
 
+.showcase-mixed-grid .show-real-card.show-real-card-tiktok {
+  align-self: start !important;
+  height: auto !important;
+}
+
 .showcase-mixed-grid .show-real-media-link {
   width: 100% !important;
   padding: 0 !important;
