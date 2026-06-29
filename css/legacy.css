@@ -116,8 +116,8 @@
   --radius-sm: 8px;
   --radius: 14px;
   --radius-lg: 22px;
-  --thai: "Poppins", "Noto Sans Thai Local", "Noto Sans Thai", system-ui, sans-serif;
-  --display: "Poppins", "Noto Sans Thai Local", "Noto Sans Thai", system-ui, sans-serif;
+  --thai: "Noto Sans Thai Local", "Noto Sans Thai", "Poppins", system-ui, sans-serif;
+  --display: "Noto Sans Thai Local", "Noto Sans Thai", "Poppins", system-ui, sans-serif;
   --nav-h: 72px;
   --maxw: 1240px;
 }
@@ -36838,4 +36838,95 @@ html:not(.js-ready) .fdb-reveal {
   .wifi-net-cards { grid-template-columns: 1fr; }
   .wifi-hr-block { flex-direction: column; gap: 14px; padding: 22px 20px; }
   .wifi-hr-icon { width: 40px; height: 40px; }
+}
+
+/* Typography balance: keep English-heavy UI from feeling too dense beside Thai copy. */
+:where(
+  .nav-item,
+  .nav-toggle,
+  .nav-day1,
+  .nav-support,
+  .nav-menu a,
+  .btn-primary,
+  .btn-hero,
+  .btn-cta-hero,
+  .ex-home-primary,
+  .ex-home-secondary,
+  .ex-day-cta,
+  .ex-start-cta-primary,
+  .ex-start-link-primary,
+  .ex-task-btn,
+  .ex-road-btn,
+  .show-real-link,
+  .show-real-link-language,
+  .faq-filter-btn,
+  .wn-connect-btn,
+  .dir-pw-btn,
+  .wifi-hr-btn
+) {
+  font-weight: 600 !important;
+}
+
+:where(
+  .show-real-body h4,
+  .ex-folder-doc,
+  .ex-must-title,
+  .ex-day-item h3,
+  .ts-col-info strong,
+  .wifi-net-ssid,
+  .wifi-step-body strong,
+  .oc-card-v3-title,
+  .tsv2-title
+) {
+  font-weight: 650 !important;
+}
+
+:where(
+  .show-real-body h4 strong,
+  .show-real-summary strong,
+  .prose strong,
+  .ex-quick-list strong,
+  .ex-must-list strong,
+  .ex-must-notice p strong,
+  .rule-card strong,
+  .ts-col strong
+) {
+  font-weight: 600 !important;
+}
+
+:where(
+  .show-real-track,
+  .show-real-meta .show-real-track,
+  .slc-language-tab,
+  .ex-must-label,
+  .ex-must-pill,
+  .ob-rate-tag,
+  .ob-docs-due,
+  .ob-doc-freq,
+  .wifi-net-badge,
+  .day1-step-time,
+  .htc-badge,
+  .htc-status,
+  .nav-sub-label
+) {
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+}
+
+:where(
+  .page-hero-band h1,
+  .phb-title,
+  .prose h1,
+  .section-head h2,
+  .ex-home-copy h1,
+  .ex-day-hero-copy h1,
+  .welcome-copy h1,
+  .phv2-shift,
+  .phv2-num,
+  .oc-banner-name,
+  .oc-hq-name,
+  .ob-rate-num,
+  .ex-day-item-num
+) {
+  font-weight: 700 !important;
 }
