@@ -71,7 +71,7 @@ export const renderOrientation = () => pageWrap({
       <div class="proj-card anim-up">
         <div class="proj-num">01</div>
         <h3>Project or Report</h3>
-        <p>โปรเจกต์หรือรายงานที่รับผิดชอบและต้องส่งกับทางมหาวิทยาลัย<br>ถ้ามีเอกสารที่ต้องให้<br>พี่เลี้ยงและ HR เซ็น ให้ส่งล่วงหน้า<br>อย่างน้อย 1 อาทิตย์ หรือ 5 วันทำการ</p>
+        <p>โปรเจกต์หรือรายงานที่รับผิดชอบและต้องส่งกับทางมหาวิทยาลัย<br>ถ้ามีเอกสารที่ต้องให้<br>พี่เลี้ยงและ HR เซ็น ให้ส่งล่วงหน้า<br>อย่างน้อย 1 อาทิตย์ <br>หรือ 5 วันทำการ</p>
       </div>
       <div class="proj-card anim-up" data-delay="80">
         <div class="proj-num">02</div>
