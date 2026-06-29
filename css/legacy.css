@@ -116,8 +116,8 @@
   --radius-sm: 8px;
   --radius: 14px;
   --radius-lg: 22px;
-  --thai: "Noto Sans Thai Local", "Noto Sans Thai", "Poppins", system-ui, sans-serif;
-  --display: "Noto Sans Thai Local", "Noto Sans Thai", "Poppins", system-ui, sans-serif;
+  --thai: "Poppins", "Noto Sans Thai Local", "Noto Sans Thai", system-ui, sans-serif;
+  --display: "Poppins", "Noto Sans Thai Local", "Noto Sans Thai", system-ui, sans-serif;
   --nav-h: 72px;
   --maxw: 1240px;
 }
