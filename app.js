@@ -764,6 +764,8 @@ function setupCoreValuesDeck() {
   window.removeEventListener('resize', window.__cvResize || (() => {}));
   window.__cvScroll = null;
   window.__cvResize = null;
+  clearTimeout(window.__cvSnapTimer);
+  clearTimeout(window.__cvSnapEndTimer);
 
   const scrolly = document.getElementById('cvScrolly');
   if (!scrolly) return;
@@ -805,6 +807,7 @@ function setupCoreValuesDeck() {
 
   let active = -1;
   let top = 0, track = 0;
+  const HOLD = 0.3;
 
   function measure() {
     top = scrolly.offsetTop;
@@ -834,8 +837,7 @@ function setupCoreValuesDeck() {
     if (hint) hint.style.opacity = p < 0.04 ? '1' : '0';
     const raw = p * (N - 1);
     const base = Math.floor(Math.min(raw, N - 1 - 1e-6));
-    const hold = 0.08;
-    let t = (raw - base - hold) / (1 - 2 * hold);
+    let t = (raw - base - HOLD) / (1 - 2 * HOLD);
     t = Math.max(0, Math.min(1, t));
     t = t * t * t * (t * (t * 6 - 15) + 10);
     const pos = base + t;
@@ -851,11 +853,33 @@ function setupCoreValuesDeck() {
   }
 
   function goTo(i) {
+    isSnapping = true;
+    clearTimeout(window.__cvSnapEndTimer);
     window.scrollTo({ top: top + i / (N - 1) * track + 2, behavior: 'smooth' });
+    window.__cvSnapEndTimer = setTimeout(() => { isSnapping = false; }, 700);
+  }
+
+  let isSnapping = false;
+
+  function trySnap() {
+    if (isSnapping || !(track > 0)) return;
+    const p = Math.max(0, Math.min(1, (window.scrollY - top) / track));
+    if (p <= 0.005 || p >= 0.995) return;
+    const raw = p * (N - 1);
+    const nearest = Math.round(raw);
+    if (Math.abs(raw - nearest) <= HOLD * 0.85) return;
+    isSnapping = true;
+    window.scrollTo({ top: top + (nearest / (N - 1)) * track + 2, behavior: 'smooth' });
+    clearTimeout(window.__cvSnapEndTimer);
+    window.__cvSnapEndTimer = setTimeout(() => { isSnapping = false; }, 700);
   }
 
   let ticking = false;
   function onScroll() {
+    if (!isSnapping) {
+      clearTimeout(window.__cvSnapTimer);
+      window.__cvSnapTimer = setTimeout(trySnap, 220);
+    }
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => { update(); ticking = false; });
