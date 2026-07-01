@@ -1,5 +1,6 @@
 import { I } from '../icons.js';
 import { pageWrap } from '../helpers.js';
+import { coreValuePosters } from './policy.js';
 
 export const renderOrientation = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Getting Started", null], ["Orientation", null]],
@@ -39,27 +40,20 @@ export const renderOrientation = () => pageWrap({
     </div>
 
     <h2 id="values">EXZY Core Values</h2>
-    <p>แนวคิดที่อยู่เบื้องหลังการทำงานของ EXZY — ลองทำความเข้าใจแต่ละข้อและนำไปปรับใช้ในการทำงานได้เลย</p>
+    <p>ดูภาพรวมจากโปสเตอร์ก่อน ถ้าอยากอ่านทีละข้อให้เปิดหน้า Core Values ต่อได้เลย</p>
 
-    <!-- Compact CV Preview -->
-    <div class="cv-wrap cv-compact">
-      ${[
-        { c:'cv-c1', num:'01', name:'Win as a Team',           tag:'Goal · Work+ · Support' },
-        { c:'cv-c2', num:'02', name:'Innovative',              tag:'Value Added · Learn · Take Risks' },
-        { c:'cv-c3', num:'03', name:'Positive & Open',         tag:'Energy · Listening · Speaking' },
-        { c:'cv-c4', num:'04', name:'Professional & Dynamic',  tag:'Adapt · Commit · Prepare' },
-        { c:'cv-c5', num:'05', name:'Aesthetic Design',        tag:'Tidiness · Experience · WOW' },
-      ].map((v,i) => `
-        <div class="cv-card ${v.c} anim-up" data-delay="${i*50}">
-          <div class="cv-card-head">
-            <div class="cv-card-big-num">${v.num}</div>
-            <div class="cv-card-text-col">
-              <div class="cv-card-name">${v.name}</div>
-              <p class="cv-card-tagline">${v.tag}</p>
-            </div>
-          </div>
-        </div>
+    <div class="cv-preview-deck anim-up">
+      <figure class="cv-preview-cover">
+        <img src="./Exzy%20core%20value%20poster/poster.png" alt="โปสเตอร์ภาพรวม EXZY Core Values">
+      </figure>
+      <div class="cv-preview-strip" aria-label="Core Values preview">
+      ${coreValuePosters.map((v) => `
+        <a href="#/policy/code-of-conduct" class="cv-preview-thumb" style="--cvd-accent:${v.accent};" data-link>
+          <img src="${v.src}" alt="${v.alt}" loading="lazy">
+          <span>${v.num}</span>
+        </a>
       `).join('')}
+      </div>
     </div>
 
     <a href="#/policy/code-of-conduct" class="btn btn-ghost" data-link style="margin-top:4px;">ดู Core Values ทั้งหมด ${I.arrow}</a>

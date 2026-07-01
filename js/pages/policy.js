@@ -2,107 +2,111 @@ import { I } from '../icons.js';
 import { pageWrap } from '../helpers.js';
 import { loadAdminData } from '../auth.js';
 
+export const coreValuePosters = [
+  {
+    num: "01",
+    name: "Win as a Team",
+    label: "Goal · Work+ · Support",
+    src: "./Exzy%20core%20value%20poster/win_as_a_team_yellow.png",
+    accent: "#FFCC00",
+    alt: "โปสเตอร์ Core Value ข้อ Win as a Team",
+  },
+  {
+    num: "02",
+    name: "Innovative",
+    label: "Value Added · Learn · Take Risks",
+    src: "./Exzy%20core%20value%20poster/innovation.png",
+    accent: "#66C5C5",
+    alt: "โปสเตอร์ Core Value ข้อ Innovative",
+  },
+  {
+    num: "03",
+    name: "Positive & Open",
+    label: "Energy · Listening · Speaking",
+    src: "./Exzy%20core%20value%20poster/Positive%20and%20open.png",
+    accent: "#82C566",
+    alt: "โปสเตอร์ Core Value ข้อ Positive and Open",
+  },
+  {
+    num: "04",
+    name: "Professional & Dynamic",
+    label: "Adapt · Commit · Prepare",
+    src: "./Exzy%20core%20value%20poster/professional_dynamic.png",
+    accent: "#586782",
+    alt: "โปสเตอร์ Core Value ข้อ Professional and Dynamic",
+  },
+  {
+    num: "05",
+    name: "Aesthetic Design",
+    label: "Tidiness · Experience · WOW",
+    src: "./Exzy%20core%20value%20poster/Aesthetic_puple.png",
+    accent: "#6F4BB8",
+    alt: "โปสเตอร์ Core Value ข้อ Aesthetic Design",
+  },
+];
+
+const renderCoreValueRail = () => coreValuePosters.map((v) => `
+  <a href="#core-value-${v.num}" class="cvd-rail-link" style="--cvd-accent:${v.accent};" data-scroll-to="core-value-${v.num}">
+    <span>${v.num}</span>
+    <strong>${v.name}</strong>
+  </a>
+`).join("");
+
 export const renderCodeOfConduct = () => pageWrap({
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Core Values", null]],
   title: "EXZY Core Values",
-  lead: "ค่านิยมที่สะท้อนอยู่ในงาน ทีม และวิธีคิดของ EXZY",
+  lead: "ดูภาพรวมก่อน แล้วค่อยเลื่อนดู Core Values ทีละข้อจากโปสเตอร์",
   body: `
-    <div class="cv-wrap">
-
-      <div class="cv-card cv-c1 anim-up" data-delay="0">
-        <div class="cv-card-head">
-          <div class="cv-card-num-col">
-            <span class="cv-card-big-num">01</span>
-          </div>
-          <div class="cv-card-text-col">
-            <div class="cv-card-name">Win as a Team</div>
-            <p class="cv-card-tagline">รู้เป้าหมายร่วมกัน ทำงานหนักในส่วนของตน และช่วยเหลือทีมให้ไปถึงเป้าหมายด้วยกัน</p>
-          </div>
-        </div>
-        <div class="cv-card-body">
-          <div class="cv-point"><span class="cv-point-k">Goal</span><span class="cv-point-v">รู้เป้าหมายของทีม วางแผนเพื่อบรรลุเป้าหมายเดียวกัน</span></div>
-          <div class="cv-point"><span class="cv-point-k">Work+</span><span class="cv-point-v">รับผิดชอบงานในส่วนตัวเองอย่างดี เพื่อให้ทีมบรรลุเป้าหมายได้ทันเวลา</span></div>
-          <div class="cv-point"><span class="cv-point-k">Support</span><span class="cv-point-v">ปรับตัวและสนับสนุนทีม สื่อสารทุกครั้งที่พบอุปสรรค</span></div>
+    <section class="cvd-cover anim-up" aria-labelledby="core-values-cover-title">
+      <div class="cvd-cover-copy">
+        <span class="cvd-kicker">Core Values Deck</span>
+        <h2 id="core-values-cover-title">เริ่มจากภาพรวม แล้วเลื่อนดูทีละข้อ</h2>
+        <p>หน้านี้ใช้โปสเตอร์เป็นข้อมูลหลัก เลื่อนลงเพื่อดู Core Values ทั้ง 5 ข้อแบบ deck</p>
+        <div class="cvd-cover-actions">
+          <a href="#core-value-01" class="btn btn-primary" data-scroll-to="core-value-01">เริ่มดูโปสเตอร์ ${I.arrow}</a>
+          <a href="#core-values-recap" class="btn btn-ghost" data-scroll-to="core-values-recap">ดูภาพรวม 5 ข้อ</a>
         </div>
       </div>
+      <figure class="cvd-cover-poster">
+        <img src="./Exzy%20core%20value%20poster/poster.png" alt="โปสเตอร์ภาพรวม EXZY Core Values">
+      </figure>
+    </section>
 
-      <div class="cv-card cv-c2 anim-up" data-delay="80">
-        <div class="cv-card-head">
-          <div class="cv-card-num-col">
-            <span class="cv-card-big-num">02</span>
+    <nav class="cvd-rail" aria-label="Core Values">
+      ${renderCoreValueRail()}
+    </nav>
+
+    <section class="cvd-showcase" aria-label="โปสเตอร์ Core Values ทีละข้อ">
+      ${coreValuePosters.map((v) => `
+        <article class="cvd-slide" id="core-value-${v.num}" data-num="${v.num}" style="--cvd-accent:${v.accent};">
+          <div class="cvd-slide-inner" data-num="${v.num}">
+            <div class="cvd-copy">
+              <span class="cvd-num">${v.num}</span>
+              <h2>${v.name}</h2>
+              <p>${v.label}</p>
+            </div>
+            <figure class="cvd-poster">
+              <img src="${v.src}" alt="${v.alt}" loading="lazy">
+            </figure>
           </div>
-          <div class="cv-card-text-col">
-            <div class="cv-card-name">Innovative</div>
-            <p class="cv-card-tagline">กล้าคิดนอกกรอบ เรียนรู้สิ่งใหม่อยู่เสมอ และสร้างคุณค่าจากเทคโนโลยี</p>
-          </div>
-        </div>
-        <div class="cv-card-body">
-          <div class="cv-point"><span class="cv-point-k">Value Added</span><span class="cv-point-v">สร้างคุณค่าใหม่ด้วย technology</span></div>
-          <div class="cv-point"><span class="cv-point-k">Learn &amp; Improve</span><span class="cv-point-v">อัปสกิลตัวเองอยู่เสมอ ไม่หยุดพัฒนา</span></div>
-          <div class="cv-point"><span class="cv-point-k">Take Risks</span><span class="cv-point-v">ประเมินความเสี่ยง แล้วกล้าตัดสินใจ</span></div>
-        </div>
+        </article>
+      `).join("")}
+    </section>
+
+    <section class="cvd-recap" id="core-values-recap" aria-labelledby="core-values-recap-title">
+      <div class="cvd-recap-head">
+        <h2 id="core-values-recap-title">Core Values ทั้ง 5 ข้อ</h2>
+        <p>ถ้าจะกลับมาดูเร็ว ๆ ใช้ส่วนนี้เปิดโปสเตอร์แต่ละใบได้เลย</p>
       </div>
-
-      <div class="cv-card cv-c3 anim-up" data-delay="160">
-        <div class="cv-card-head">
-          <div class="cv-card-num-col">
-            <span class="cv-card-big-num">03</span>
-          </div>
-          <div class="cv-card-text-col">
-            <div class="cv-card-name">Positive &amp; Open</div>
-            <p class="cv-card-tagline">มีพลังงานที่ดี เปิดรับฟังทุกความคิดเห็น และพูดตรงไปตรงมาอย่างสร้างสรรค์</p>
-          </div>
-        </div>
-        <div class="cv-card-body">
-          <div class="cv-point"><span class="cv-point-k">Energy</span><span class="cv-point-v">กระตือรือร้น สร้างบรรยากาศการทำงานที่ดี</span></div>
-          <div class="cv-point"><span class="cv-point-k">Listening</span><span class="cv-point-v">เปิดใจรับฟังไอเดียและความคิดเห็นที่แตกต่าง</span></div>
-          <div class="cv-point"><span class="cv-point-k">Speaking</span><span class="cv-point-v">สื่อสารอย่างจริงใจ ให้ feedback เพื่อพัฒนากัน</span></div>
-        </div>
+      <div class="cvd-grid">
+        ${coreValuePosters.map((v) => `
+          <a href="#core-value-${v.num}" class="cvd-thumb" style="--cvd-accent:${v.accent};" data-scroll-to="core-value-${v.num}">
+            <img src="${v.src}" alt="${v.alt}" loading="lazy">
+            <span><strong>${v.num}</strong>${v.name}</span>
+          </a>
+        `).join("")}
       </div>
-
-      <div class="cv-card cv-c4 anim-up" data-delay="240">
-        <div class="cv-card-head">
-          <div class="cv-card-num-col">
-            <span class="cv-card-big-num">04</span>
-          </div>
-          <div class="cv-card-text-col">
-            <div class="cv-card-name">Professional &amp; Dynamic</div>
-            <p class="cv-card-tagline">ทำงานอย่างมืออาชีพ ยืดหยุ่นได้ และส่งมอบงานตามที่รับปากเสมอ</p>
-          </div>
-        </div>
-        <div class="cv-card-body">
-          <div class="cv-point"><span class="cv-point-k">Adapt</span><span class="cv-point-v">ปรับตัวได้เร็วในทุกสถานการณ์</span></div>
-          <div class="cv-point"><span class="cv-point-k">Commit</span><span class="cv-point-v">ทำตามสิ่งที่รับปาก ส่งงานได้ตามกำหนด</span></div>
-          <div class="cv-point"><span class="cv-point-k">Prepare &amp; Reliable</span><span class="cv-point-v">เตรียมตัวก่อนทุกครั้ง มีความน่าเชื่อถือในทุกงาน</span></div>
-        </div>
-      </div>
-
-      <div class="cv-card cv-c5 anim-up" data-delay="320">
-        <div class="cv-card-head">
-          <div class="cv-card-num-col">
-            <span class="cv-card-big-num">05</span>
-          </div>
-          <div class="cv-card-text-col">
-            <div class="cv-card-name">Aesthetic Design</div>
-            <p class="cv-card-tagline">ทุกงานต้องสะอาด เรียบร้อย สวยงาม และสร้างประสบการณ์ที่ดีในทุกจุดสัมผัส</p>
-          </div>
-        </div>
-        <div class="cv-card-body">
-          <div class="cv-point"><span class="cv-point-k">Tidiness</span><span class="cv-point-v">สะอาด เรียบร้อย ทั้งการแต่งกายและการจัดการงาน</span></div>
-          <div class="cv-point"><span class="cv-point-k">Good Experience</span><span class="cv-point-v">ส่งมอบสิ่งที่ผู้รับได้รับประสบการณ์ที่ดี</span></div>
-          <div class="cv-point"><span class="cv-point-k">WOW &amp; Cool</span><span class="cv-point-v">ทำงานให้น่าประทับใจ โดดเด่น และเกินความคาดหวัง</span></div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="callout" style="margin-top:36px;">
-      <span class="ic">${I.sparkle}</span>
-      <div>
-        <h4>นำ Core Values ไปปรับใช้ในการทำงาน</h4>
-        <p>ค่านิยมเหล่านี้เป็นแกนหลักของการทำงานของ EXZY — ลองนำไปปรับใช้กับงานของตัวเองและสังเกตว่าคนในทีมยึดถือสิ่งเหล่านี้ยังไงในทางปฏิบัติ</p>
-      </div>
-    </div>
+    </section>
   `,
 });
 
