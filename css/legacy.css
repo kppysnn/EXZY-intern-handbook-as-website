@@ -12505,83 +12505,7 @@ p.hero-word, div.hero-word { display: block; }
   font-weight: 900;
 }
 
-.cv-preview-deck {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
-  gap: 18px;
-  align-items: stretch;
-  margin: 20px 0 18px;
-  padding: 14px;
-  border: 1px solid rgba(208,214,223,0.86);
-  border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(102,197,197,0.08), rgba(248,249,250,0.9) 42%, rgba(0,64,129,0.06));
-}
-
-.cv-preview-cover {
-  margin: 0;
-}
-
-.cv-preview-cover img {
-  height: 100%;
-  min-height: 280px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 1px solid rgba(0,64,129,0.12);
-}
-
-.cv-preview-strip {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  overflow-x: auto;
-  padding-bottom: 2px;
-  -webkit-overflow-scrolling: touch;
-}
-
-.cv-preview-thumb {
-  position: relative;
-  display: block;
-  flex: 0 0 clamp(126px, 14vw, 168px);
-  min-width: 0;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--cvd-accent) 28%, var(--ci-line));
-  background: #ffffff;
-}
-
-.cv-preview-thumb img {
-  aspect-ratio: 1748 / 2480;
-  object-fit: contain;
-  background: #0A111B;
-  transition: transform .28s var(--ease-out-quart);
-}
-
-.cv-preview-thumb:hover img,
-.cv-preview-thumb:focus-visible img {
-  transform: scale(1.035);
-}
-
-.cv-preview-thumb span {
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 10px;
-  background: rgba(248,249,250,0.92);
-  color: color-mix(in srgb, var(--cvd-accent) 62%, var(--ci-navy));
-  font-size: 12px;
-  font-weight: 900;
-}
-
 @media (max-width: 960px) {
-  .cv-preview-deck {
-    grid-template-columns: 1fr;
-  }
-
   .cvd-row {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -12600,10 +12524,6 @@ p.hero-word, div.hero-word { display: block; }
 
   .cvd-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .cv-preview-cover img {
-    min-height: 220px;
   }
 }
 
@@ -12640,8 +12560,7 @@ p.hero-word, div.hero-word { display: block; }
     position: static;
   }
 
-  .cvd-thumb img,
-  .cv-preview-thumb img {
+  .cvd-thumb img {
     transition: none !important;
   }
 }

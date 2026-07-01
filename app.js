@@ -48,7 +48,10 @@ function resolve(hash) {
 
 function render() {
   const hash = location.hash || "#/home";
-  const route = resolve(hash);
+  const anchorIndex = hash.indexOf("#", 1);
+  const routeHash = anchorIndex === -1 ? hash : hash.slice(0, anchorIndex);
+  const anchorId = anchorIndex === -1 ? null : hash.slice(anchorIndex + 1);
+  const route = resolve(routeHash);
   const renderFn = Pages[route] || Pages.home;
 
   app.classList.add('page-exiting');
@@ -56,7 +59,16 @@ function render() {
     app.innerHTML = renderFn();
     app.classList.remove('page-exiting');
     app.classList.add('page-entering');
-    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+
+    const anchorTarget = anchorId && document.getElementById(anchorId);
+    if (anchorTarget) {
+      const scrollMarginTop = parseFloat(getComputedStyle(anchorTarget).scrollMarginTop) || 0;
+      const top = anchorTarget.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - scrollMarginTop;
+      window.scrollTo({ top, behavior: "instant" in window ? "instant" : "auto" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    }
+
     hydratePage();
     updateActiveNav(route);
     setTimeout(function() { app.classList.remove('page-entering'); }, 700);

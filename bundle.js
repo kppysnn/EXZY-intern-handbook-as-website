@@ -1333,18 +1333,13 @@
     <h2 id="values">EXZY Core Values</h2>
     <p>\u0E14\u0E39\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E08\u0E32\u0E01\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E01\u0E48\u0E2D\u0E19 \u0E16\u0E49\u0E32\u0E2D\u0E22\u0E32\u0E01\u0E2D\u0E48\u0E32\u0E19\u0E17\u0E35\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E43\u0E2B\u0E49\u0E40\u0E1B\u0E34\u0E14\u0E2B\u0E19\u0E49\u0E32 Core Values \u0E15\u0E48\u0E2D\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
 
-    <div class="cv-preview-deck anim-up">
-      <figure class="cv-preview-cover">
-        <img src="./Exzy%20core%20value%20poster/poster.png" alt="\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21 EXZY Core Values">
-      </figure>
-      <div class="cv-preview-strip" aria-label="Core Values preview">
+    <div class="cvd-grid anim-up">
       ${coreValuePosters.map((v) => `
-        <a href="#/policy/code-of-conduct" class="cv-preview-thumb" style="--cvd-accent:${v.accent};" data-link>
+        <a href="#/policy/code-of-conduct#core-value-${v.num}" class="cvd-thumb" style="--cvd-accent:${v.accent};" data-link>
           <img src="${v.src}" alt="${v.alt}" loading="lazy">
-          <span>${v.num}</span>
+          <span><strong>${v.num}</strong>${v.name}</span>
         </a>
       `).join("")}
-      </div>
     </div>
 
     <a href="#/policy/code-of-conduct" class="btn btn-ghost" data-link style="margin-top:4px;">\u0E14\u0E39 Core Values \u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14 ${I.arrow}</a>
@@ -2016,14 +2011,24 @@
   }
   function render() {
     const hash = location.hash || "#/home";
-    const route = resolve(hash);
+    const anchorIndex = hash.indexOf("#", 1);
+    const routeHash = anchorIndex === -1 ? hash : hash.slice(0, anchorIndex);
+    const anchorId = anchorIndex === -1 ? null : hash.slice(anchorIndex + 1);
+    const route = resolve(routeHash);
     const renderFn = Pages[route] || Pages.home;
     app.classList.add("page-exiting");
     setTimeout(function() {
       app.innerHTML = renderFn();
       app.classList.remove("page-exiting");
       app.classList.add("page-entering");
-      window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+      const anchorTarget = anchorId && document.getElementById(anchorId);
+      if (anchorTarget) {
+        const scrollMarginTop = parseFloat(getComputedStyle(anchorTarget).scrollMarginTop) || 0;
+        const top = anchorTarget.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - scrollMarginTop;
+        window.scrollTo({ top, behavior: "instant" in window ? "instant" : "auto" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+      }
       hydratePage();
       updateActiveNav(route);
       setTimeout(function() {

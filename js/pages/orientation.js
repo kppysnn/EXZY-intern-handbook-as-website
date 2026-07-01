@@ -42,18 +42,13 @@ export const renderOrientation = () => pageWrap({
     <h2 id="values">EXZY Core Values</h2>
     <p>ดูภาพรวมจากโปสเตอร์ก่อน ถ้าอยากอ่านทีละข้อให้เปิดหน้า Core Values ต่อได้เลย</p>
 
-    <div class="cv-preview-deck anim-up">
-      <figure class="cv-preview-cover">
-        <img src="./Exzy%20core%20value%20poster/poster.png" alt="โปสเตอร์ภาพรวม EXZY Core Values">
-      </figure>
-      <div class="cv-preview-strip" aria-label="Core Values preview">
+    <div class="cvd-grid anim-up">
       ${coreValuePosters.map((v) => `
-        <a href="#/policy/code-of-conduct" class="cv-preview-thumb" style="--cvd-accent:${v.accent};" data-link>
+        <a href="#/policy/code-of-conduct#core-value-${v.num}" class="cvd-thumb" style="--cvd-accent:${v.accent};" data-link>
           <img src="${v.src}" alt="${v.alt}" loading="lazy">
-          <span>${v.num}</span>
+          <span><strong>${v.num}</strong>${v.name}</span>
         </a>
       `).join('')}
-      </div>
     </div>
 
     <a href="#/policy/code-of-conduct" class="btn btn-ghost" data-link style="margin-top:4px;">ดู Core Values ทั้งหมด ${I.arrow}</a>
