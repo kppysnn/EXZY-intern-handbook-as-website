@@ -3886,6 +3886,11 @@ p.hero-word, div.hero-word { display: block; }
 }
 
 
+.cvd-row-rev {
+  grid-template-columns: minmax(320px, 1fr) minmax(220px, 340px);
+}
+
+
 .cvd-row-rev .cvd-row-media { order: 2; }
 
 .cvd-row-rev .cvd-row-copy { order: 1; }
