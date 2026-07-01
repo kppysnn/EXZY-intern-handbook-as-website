@@ -43,7 +43,7 @@ export const coreValuePosters = [
     cue: "พร้อมและปรับตัว",
     note: "เตรียมตัวก่อนเริ่มงาน ปรับตัวตามสถานการณ์ และส่งงานตามที่ตกลงไว้",
     src: "./Exzy%20core%20value%20poster/professional_dynamic.png",
-    accent: "#586782",
+    accent: "#F3554F",
     onAccent: "#F8F9FA",
     alt: "โปสเตอร์ Core Value ข้อ Professional and Dynamic",
   },
