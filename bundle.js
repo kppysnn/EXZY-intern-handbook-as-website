@@ -971,91 +971,90 @@
       num: "01",
       name: "Win as a Team",
       label: "Goal \xB7 Work+ \xB7 Support",
+      cue: "\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19",
       note: "\u0E23\u0E39\u0E49\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E02\u0E2D\u0E07\u0E17\u0E35\u0E21 \u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E07\u0E32\u0E19\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07 \u0E41\u0E25\u0E30\u0E1A\u0E2D\u0E01\u0E17\u0E35\u0E21\u0E40\u0E23\u0E47\u0E27\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E15\u0E34\u0E14\u0E02\u0E31\u0E14",
       src: "./Exzy%20core%20value%20poster/win_as_a_team_yellow.png",
       accent: "#FFCC00",
+      onAccent: "#001122",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Win as a Team"
     },
     {
       num: "02",
       name: "Innovative",
       label: "Value Added \xB7 Learn \xB7 Take Risks",
+      cue: "\u0E25\u0E2D\u0E07\u0E43\u0E2B\u0E49\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19",
       note: "\u0E25\u0E2D\u0E07\u0E04\u0E34\u0E14\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19 \u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E08\u0E32\u0E01 feedback \u0E41\u0E25\u0E30\u0E1B\u0E23\u0E30\u0E40\u0E21\u0E34\u0E19\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E21\u0E37\u0E2D",
       src: "./Exzy%20core%20value%20poster/innovation.png",
       accent: "#66C5C5",
+      onAccent: "#001122",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Innovative"
     },
     {
       num: "03",
       name: "Positive & Open",
       label: "Energy \xB7 Listening \xB7 Speaking",
+      cue: "\u0E1F\u0E31\u0E07\u0E41\u0E25\u0E49\u0E27\u0E04\u0E38\u0E22\u0E01\u0E31\u0E19",
       note: "\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E08\u0E1F\u0E31\u0E07\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E40\u0E2B\u0E47\u0E19 \u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E15\u0E23\u0E07\u0E44\u0E1B\u0E15\u0E23\u0E07\u0E21\u0E32 \u0E41\u0E25\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19",
       src: "./Exzy%20core%20value%20poster/Positive%20and%20open.png",
       accent: "#82C566",
+      onAccent: "#001122",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Positive and Open"
     },
     {
       num: "04",
       name: "Professional & Dynamic",
       label: "Adapt \xB7 Commit \xB7 Prepare",
+      cue: "\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E41\u0E25\u0E30\u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E31\u0E27",
       note: "\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E07\u0E32\u0E19 \u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E31\u0E27\u0E15\u0E32\u0E21\u0E2A\u0E16\u0E32\u0E19\u0E01\u0E32\u0E23\u0E13\u0E4C \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E07\u0E32\u0E19\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E15\u0E01\u0E25\u0E07\u0E44\u0E27\u0E49",
       src: "./Exzy%20core%20value%20poster/professional_dynamic.png",
       accent: "#586782",
+      onAccent: "#F8F9FA",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Professional and Dynamic"
     },
     {
       num: "05",
       name: "Aesthetic Design",
       label: "Tidiness \xB7 Experience \xB7 WOW",
+      cue: "\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E1E\u0E2D\u0E43\u0E2B\u0E49\u0E43\u0E0A\u0E49\u0E15\u0E48\u0E2D",
       note: "\u0E14\u0E39\u0E41\u0E25\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E2D\u0E48\u0E32\u0E19\u0E07\u0E48\u0E32\u0E22 \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E15\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49\u0E15\u0E48\u0E2D",
       src: "./Exzy%20core%20value%20poster/Aesthetic_puple.png",
       accent: "#6F4BB8",
+      onAccent: "#F8F9FA",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Aesthetic Design"
     }
   ];
   var renderCodeOfConduct = () => pageWrap({
     crumbs: [["Home", "#/home"], ["Work Policy", null], ["Core Values", null]],
     title: "EXZY Core Values",
-    lead: "\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39 Core Values \u0E17\u0E35\u0E25\u0E30\u0E02\u0E49\u0E2D \u0E2B\u0E19\u0E49\u0E32 overview \u0E08\u0E30\u0E04\u0E49\u0E32\u0E07\u0E44\u0E27\u0E49 \u0E41\u0E25\u0E49\u0E27 card \u0E08\u0E30\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E15\u0E32\u0E21\u0E08\u0E31\u0E07\u0E2B\u0E27\u0E30\u0E01\u0E32\u0E23\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19",
+    lead: "\u0E2B\u0E25\u0E31\u0E01\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E17\u0E35\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E32\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E31\u0E19 \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E34\u0E18\u0E35\u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E07\u0E32\u0E19 \u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E01\u0E31\u0E1A\u0E17\u0E35\u0E21 \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E14\u0E39\u0E41\u0E25\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E43\u0E2B\u0E49\u0E2A\u0E48\u0E07\u0E15\u0E48\u0E2D\u0E44\u0E14\u0E49\u0E07\u0E48\u0E32\u0E22",
     body: `
-    <section class="cvd-story" data-cvd-stage aria-labelledby="core-values-stage-title">
-      <div class="cvd-pin">
-        <div class="cvd-overview">
-          <span class="cvd-kicker">Core Values Deck</span>
-          <h2 id="core-values-stage-title">\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39\u0E17\u0E35\u0E25\u0E30 value</h2>
-          <p>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E01\u0E31\u0E1A\u0E17\u0E35\u0E48 \u0E2A\u0E48\u0E27\u0E19 card \u0E14\u0E49\u0E32\u0E19\u0E02\u0E27\u0E32\u0E08\u0E30\u0E2A\u0E25\u0E31\u0E1A\u0E15\u0E32\u0E21\u0E02\u0E49\u0E2D\u0E17\u0E35\u0E48\u0E01\u0E33\u0E25\u0E31\u0E07\u0E2D\u0E48\u0E32\u0E19 \u0E43\u0E0A\u0E49\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E31\u0E27\u0E0A\u0E48\u0E27\u0E22\u0E08\u0E33\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E01\u0E31\u0E1A\u0E17\u0E35\u0E21</p>
-          <figure class="cvd-overview-poster">
-            <img src="./Exzy%20core%20value%20poster/poster.png" alt="\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21 EXZY Core Values">
-          </figure>
-          <div class="cvd-progress" aria-label="Core Values progress">
-            ${coreValuePosters.map((v, i) => `
-              <a href="#core-value-${v.num}" class="cvd-progress-step${i === 0 ? " is-active" : ""}" style="--cvd-accent:${v.accent};" data-cvd-jump="${i}">
-                <span>${v.num}</span>
-                <strong>${v.name}</strong>
-              </a>
-            `).join("")}
-          </div>
-        </div>
+    <section class="cvd-story" aria-label="EXZY Core Values">
+      <nav class="cvd-nav fade-up" aria-label="\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Core Values">
+        ${coreValuePosters.map((v, i) => `
+          <a href="#core-value-${v.num}" class="cvd-nav-item${i === 0 ? " is-active" : ""}" data-cvd-nav="${v.num}" style="--cvd-accent:${v.accent}; --cvd-on-accent:${v.onAccent};">
+            <span class="cvd-nav-num">${v.num}</span>${v.name}
+          </a>
+        `).join("")}
+      </nav>
 
-        <div class="cvd-card-stack" aria-label="Core Values cards">
-          ${coreValuePosters.map((v, i) => `
-          <article class="cvd-card${i === 0 ? " is-active" : ""}" id="core-value-${v.num}" data-cvd-card="${i}" data-num="${v.num}" style="--cvd-accent:${v.accent};">
-            <div class="cvd-copy">
-              <span class="cvd-num">${v.num}</span>
-              <h2>${v.name}</h2>
-              <p>${v.label}</p>
-              <small>${v.note}</small>
-            </div>
-            <figure class="cvd-poster">
+      <div class="cvd-list">
+        ${coreValuePosters.map((v, i) => `
+          <article class="cvd-row anim-up${i % 2 === 1 ? " cvd-row-rev" : ""}" id="core-value-${v.num}" data-cvd-row style="--cvd-accent:${v.accent}; --cvd-on-accent:${v.onAccent};">
+            <figure class="cvd-row-media">
               <img src="${v.src}" alt="${v.alt}" loading="lazy">
             </figure>
+            <div class="cvd-row-copy">
+              <span class="cvd-row-num">${v.num}</span>
+              <h2>${v.cue}</h2>
+              <p class="cvd-row-name"><strong>${v.name}</strong><span>${v.label}</span></p>
+              <p class="cvd-row-note">${v.note}</p>
+            </div>
           </article>
-          `).join("")}
-        </div>
+        `).join("")}
       </div>
     </section>
 
-    <section class="cvd-recap" id="core-values-recap" aria-labelledby="core-values-recap-title">
+    <section class="cvd-recap anim-up" id="core-values-recap" aria-labelledby="core-values-recap-title">
       <div class="cvd-recap-head">
         <h2 id="core-values-recap-title">Core Values \u0E17\u0E31\u0E49\u0E07 5 \u0E02\u0E49\u0E2D</h2>
         <p>\u0E16\u0E49\u0E32\u0E08\u0E30\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E14\u0E39\u0E40\u0E23\u0E47\u0E27 \u0E46 \u0E43\u0E0A\u0E49\u0E2A\u0E48\u0E27\u0E19\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E34\u0E14\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E41\u0E15\u0E48\u0E25\u0E30\u0E43\u0E1A\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
@@ -2689,62 +2688,37 @@
     setupStoryMotion();
   }
   function setupCoreValuesDeck() {
+    if (window.__coreValuesDeckObserver) {
+      window.__coreValuesDeckObserver.disconnect();
+      window.__coreValuesDeckObserver = null;
+    }
     const appEl = document.getElementById("app");
-    const stage = appEl ? appEl.querySelector("[data-cvd-stage]") : null;
-    window.removeEventListener("scroll", window.__coreValuesDeckScroll || (() => {
-    }));
-    window.removeEventListener("resize", window.__coreValuesDeckResize || (() => {
-    }));
-    if (!stage) return;
-    const cards = Array.from(stage.querySelectorAll("[data-cvd-card]"));
-    const steps = Array.from(stage.querySelectorAll("[data-cvd-jump]"));
-    if (!cards.length) return;
+    const nav = appEl ? appEl.querySelector(".cvd-nav") : null;
+    const rows = appEl ? Array.from(appEl.querySelectorAll("[data-cvd-row]")) : [];
+    if (!nav || !rows.length) return;
+    const links = Array.from(nav.querySelectorAll(".cvd-nav-item"));
+    const setActive = (num) => {
+      links.forEach((link) => link.classList.toggle("is-active", link.getAttribute("data-cvd-nav") === num));
+    };
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let activeIndex = -1;
-    let metrics = { start: 0, range: 1 };
-    const measure = () => {
-      const rect = stage.getBoundingClientRect();
-      metrics.start = rect.top + (window.scrollY || window.pageYOffset);
-      metrics.range = Math.max(1, stage.offsetHeight - window.innerHeight);
-    };
-    const setActive = (index) => {
-      const next = Math.min(cards.length - 1, Math.max(0, index));
-      if (next === activeIndex) return;
-      activeIndex = next;
-      stage.style.setProperty("--cvd-active", String(next));
-      cards.forEach((card, i) => card.classList.toggle("is-active", i === next));
-      steps.forEach((step, i) => step.classList.toggle("is-active", i === next));
-    };
-    const update = () => {
-      measure();
-      const y = window.scrollY || window.pageYOffset;
-      const progress = Math.min(1, Math.max(0, (y - metrics.start) / metrics.range));
-      stage.style.setProperty("--cvd-progress", progress.toFixed(4));
-      setActive(Math.round(progress * (cards.length - 1)));
-    };
-    steps.forEach((step) => {
-      step.addEventListener("click", (event) => {
+    links.forEach((link) => {
+      link.addEventListener("click", (event) => {
         event.preventDefault();
-        measure();
-        const index = Number(step.getAttribute("data-cvd-jump") || 0);
-        const targetTop = metrics.start + metrics.range * (index / Math.max(1, cards.length - 1));
-        window.scrollTo({ top: targetTop, behavior: reduceMotion ? "auto" : "smooth" });
-        setActive(index);
+        const target = document.getElementById("core-value-" + link.getAttribute("data-cvd-nav"));
+        if (!target) return;
+        const scrollMarginTop = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+        const top = target.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - scrollMarginTop;
+        window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
       });
     });
-    window.__coreValuesDeckScroll = update;
-    window.__coreValuesDeckResize = () => {
-      measure();
-      update();
-    };
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", window.__coreValuesDeckResize, { passive: true });
-    measure();
-    update();
-    requestAnimationFrame(() => {
-      measure();
-      update();
-    });
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting);
+      if (!visible.length) return;
+      visible.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      setActive(visible[0].target.id.replace("core-value-", ""));
+    }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
+    rows.forEach((row) => observer.observe(row));
+    window.__coreValuesDeckObserver = observer;
   }
   function setupStoryMotion() {
     const appEl = document.getElementById("app");
