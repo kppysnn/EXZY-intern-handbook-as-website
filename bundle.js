@@ -973,7 +973,7 @@
       label: "Goal \xB7 Work+ \xB7 Support",
       cue: "\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19",
       note: "\u0E23\u0E39\u0E49\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E02\u0E2D\u0E07\u0E17\u0E35\u0E21 \u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E07\u0E32\u0E19\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07 \u0E41\u0E25\u0E30\u0E1A\u0E2D\u0E01\u0E17\u0E35\u0E21\u0E40\u0E23\u0E47\u0E27\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E15\u0E34\u0E14\u0E02\u0E31\u0E14",
-      src: "./Exzy%20core%20value%20poster/win_as_a_team_yellow.png",
+      src: "./cv/win.png",
       accent: "#FFCC00",
       onAccent: "#001122",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Win as a Team"
@@ -984,7 +984,7 @@
       label: "Value Added \xB7 Learn \xB7 Take Risks",
       cue: "\u0E25\u0E2D\u0E07\u0E43\u0E2B\u0E49\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19",
       note: "\u0E25\u0E2D\u0E07\u0E04\u0E34\u0E14\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19 \u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E08\u0E32\u0E01 feedback \u0E41\u0E25\u0E30\u0E1B\u0E23\u0E30\u0E40\u0E21\u0E34\u0E19\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E21\u0E37\u0E2D",
-      src: "./Exzy%20core%20value%20poster/innovation.png",
+      src: "./cv/innovation.png",
       accent: "#66C5C5",
       onAccent: "#001122",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Innovative"
@@ -995,7 +995,7 @@
       label: "Energy \xB7 Listening \xB7 Speaking",
       cue: "\u0E1F\u0E31\u0E07\u0E41\u0E25\u0E49\u0E27\u0E04\u0E38\u0E22\u0E01\u0E31\u0E19",
       note: "\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E08\u0E1F\u0E31\u0E07\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E40\u0E2B\u0E47\u0E19 \u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E15\u0E23\u0E07\u0E44\u0E1B\u0E15\u0E23\u0E07\u0E21\u0E32 \u0E41\u0E25\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19",
-      src: "./Exzy%20core%20value%20poster/Positive%20and%20open.png",
+      src: "./cv/positive.png",
       accent: "#82C566",
       onAccent: "#001122",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Positive and Open"
@@ -1006,7 +1006,7 @@
       label: "Adapt \xB7 Commit \xB7 Prepare",
       cue: "\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E41\u0E25\u0E30\u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E31\u0E27",
       note: "\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E07\u0E32\u0E19 \u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E31\u0E27\u0E15\u0E32\u0E21\u0E2A\u0E16\u0E32\u0E19\u0E01\u0E32\u0E23\u0E13\u0E4C \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E07\u0E32\u0E19\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E15\u0E01\u0E25\u0E07\u0E44\u0E27\u0E49",
-      src: "./Exzy%20core%20value%20poster/professional_dynamic.png",
+      src: "./cv/professional.png",
       accent: "#F3554F",
       onAccent: "#F8F9FA",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Professional and Dynamic"
@@ -1017,7 +1017,7 @@
       label: "Tidiness \xB7 Experience \xB7 WOW",
       cue: "\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E1E\u0E2D\u0E43\u0E2B\u0E49\u0E43\u0E0A\u0E49\u0E15\u0E48\u0E2D",
       note: "\u0E14\u0E39\u0E41\u0E25\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E2D\u0E48\u0E32\u0E19\u0E07\u0E48\u0E32\u0E22 \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E15\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49\u0E15\u0E48\u0E2D",
-      src: "./Exzy%20core%20value%20poster/Aesthetic_puple.png",
+      src: "./cv/aesthetic.png",
       accent: "#6F4BB8",
       onAccent: "#F8F9FA",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Aesthetic Design"
@@ -1028,46 +1028,23 @@
     title: "EXZY Core Values",
     lead: "\u0E2B\u0E25\u0E31\u0E01\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E17\u0E35\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E32\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E31\u0E19 \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E34\u0E18\u0E35\u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E07\u0E32\u0E19 \u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E01\u0E31\u0E1A\u0E17\u0E35\u0E21 \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E14\u0E39\u0E41\u0E25\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E43\u0E2B\u0E49\u0E2A\u0E48\u0E07\u0E15\u0E48\u0E2D\u0E44\u0E14\u0E49\u0E07\u0E48\u0E32\u0E22",
     body: `
-    <section class="cvd-story" aria-label="EXZY Core Values">
-      <nav class="cvd-nav fade-up" aria-label="\u0E2A\u0E32\u0E23\u0E1A\u0E31\u0E0D Core Values">
-        ${coreValuePosters.map((v, i) => `
-          <a href="#core-value-${v.num}" class="cvd-nav-item${i === 0 ? " is-active" : ""}" data-cvd-nav="${v.num}" style="--cvd-accent:${v.accent}; --cvd-on-accent:${v.onAccent};">
-            <span class="cvd-nav-num">${v.num}</span>${v.name}
-          </a>
-        `).join("")}
-      </nav>
+    <div class="cv-scrolly" id="cvScrolly">
+      <div class="cv-pin" id="cvPin">
+        <div class="cv-ghost"></div>
+        <nav class="cv-rail" id="cvRail" aria-label="Core values"></nav>
+        <div class="cv-copy in" id="cvCopy"></div>
+        <div class="cv-stage" id="cvStage"></div>
+      </div>
+    </div>
 
-      <div class="cvd-list">
-        ${coreValuePosters.map((v, i) => `
-          <article class="cvd-row anim-up${i % 2 === 1 ? " cvd-row-rev" : ""}" id="core-value-${v.num}" data-cvd-row style="--cvd-accent:${v.accent}; --cvd-on-accent:${v.onAccent};">
-            <figure class="cvd-row-media">
-              <img src="${v.src}" alt="${v.alt}" loading="lazy">
-            </figure>
-            <div class="cvd-row-copy">
-              <span class="cvd-row-num">${v.num}</span>
-              <h2>${v.cue}</h2>
-              <p class="cvd-row-name"><strong>${v.name}</strong><span>${v.label}</span></p>
-              <p class="cvd-row-note">${v.note}</p>
-            </div>
-          </article>
-        `).join("")}
+    <div class="cv-recap">
+      <div class="cv-rhead">
+        <div class="cv-eyebrow">Quick reference</div>
+        <h3>\u0E2A\u0E23\u0E38\u0E1B Core Values \u0E17\u0E31\u0E49\u0E07 5 \u0E02\u0E49\u0E2D</h3>
+        <p>\u0E17\u0E1A\u0E17\u0E27\u0E19\u0E44\u0E14\u0E49\u0E43\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E14\u0E35\u0E22\u0E27 \u2014 \u0E04\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E4C\u0E14\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E01\u0E23\u0E30\u0E42\u0E14\u0E14\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E14\u0E39\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E02\u0E2D\u0E07\u0E02\u0E49\u0E2D\u0E19\u0E31\u0E49\u0E19</p>
       </div>
-    </section>
-
-    <section class="cvd-recap anim-up" id="core-values-recap" aria-labelledby="core-values-recap-title">
-      <div class="cvd-recap-head">
-        <h2 id="core-values-recap-title">Core Values \u0E17\u0E31\u0E49\u0E07 5 \u0E02\u0E49\u0E2D</h2>
-        <p>\u0E16\u0E49\u0E32\u0E08\u0E30\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E14\u0E39\u0E40\u0E23\u0E47\u0E27 \u0E46 \u0E43\u0E0A\u0E49\u0E2A\u0E48\u0E27\u0E19\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E34\u0E14\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E41\u0E15\u0E48\u0E25\u0E30\u0E43\u0E1A\u0E44\u0E14\u0E49\u0E40\u0E25\u0E22</p>
-      </div>
-      <div class="cvd-grid">
-        ${coreValuePosters.map((v) => `
-          <a href="#core-value-${v.num}" class="cvd-thumb" style="--cvd-accent:${v.accent};" data-scroll-to="core-value-${v.num}">
-            <img src="${v.src}" alt="${v.alt}" loading="lazy">
-            <span><strong>${v.num}</strong>${v.name}</span>
-          </a>
-        `).join("")}
-      </div>
-    </section>
+      <div class="cv-rgrid" id="cvRgrid"></div>
+    </div>
   `
   });
   var renderInternshipPolicy = () => pageWrap({
@@ -2697,33 +2674,131 @@
       window.__coreValuesDeckObserver.disconnect();
       window.__coreValuesDeckObserver = null;
     }
-    const appEl = document.getElementById("app");
-    const nav = appEl ? appEl.querySelector(".cvd-nav") : null;
-    const rows = appEl ? Array.from(appEl.querySelectorAll("[data-cvd-row]")) : [];
-    if (!nav || !rows.length) return;
-    const links = Array.from(nav.querySelectorAll(".cvd-nav-item"));
-    const setActive = (num) => {
-      links.forEach((link) => link.classList.toggle("is-active", link.getAttribute("data-cvd-nav") === num));
-    };
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    links.forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const target = document.getElementById("core-value-" + link.getAttribute("data-cvd-nav"));
-        if (!target) return;
-        const scrollMarginTop = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
-        const top = target.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - scrollMarginTop;
-        window.scrollTo({ top, behavior: reduceMotion ? "auto" : "smooth" });
+    window.removeEventListener("scroll", window.__cvScroll || (() => {
+    }));
+    window.__cvScroll = null;
+    const scrolly = document.getElementById("cvScrolly");
+    if (!scrolly) return;
+    const CV = [
+      {
+        num: "01",
+        name: "Win as a Team",
+        th: "\u0E44\u0E1B\u0E14\u0E49\u0E27\u0E22\u0E01\u0E31\u0E19",
+        keys: ["Goal", "Work+", "Support"],
+        note: "\u0E23\u0E39\u0E49\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E02\u0E2D\u0E07\u0E17\u0E35\u0E21 \u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E07\u0E32\u0E19\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07 \u0E41\u0E25\u0E30\u0E1A\u0E2D\u0E01\u0E17\u0E35\u0E21\u0E40\u0E23\u0E47\u0E27\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E15\u0E34\u0E14\u0E02\u0E31\u0E14 \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E17\u0E31\u0E49\u0E07\u0E17\u0E35\u0E21\u0E44\u0E1B\u0E16\u0E36\u0E07\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E01\u0E31\u0E19",
+        accent: "#FFCC00",
+        accentT: "#8a6d00",
+        poster: "cv/win.png"
+      },
+      {
+        num: "02",
+        name: "Innovative",
+        th: "\u0E25\u0E2D\u0E07\u0E43\u0E2B\u0E49\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19",
+        keys: ["Value added", "Learn and improve", "Take risk"],
+        note: "\u0E25\u0E2D\u0E07\u0E04\u0E34\u0E14\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19 \u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E08\u0E32\u0E01 feedback \u0E41\u0E25\u0E30\u0E1B\u0E23\u0E30\u0E40\u0E21\u0E34\u0E19\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E21\u0E37\u0E2D\u0E17\u0E33\u0E08\u0E23\u0E34\u0E07",
+        accent: "#66C5C5",
+        accentT: "#1a7a7a",
+        poster: "cv/innovation.png"
+      },
+      {
+        num: "03",
+        name: "Positive & Open",
+        th: "\u0E1F\u0E31\u0E07\u0E41\u0E25\u0E49\u0E27\u0E04\u0E38\u0E22\u0E01\u0E31\u0E19",
+        keys: ["Energy", "Listening", "Speaking"],
+        note: "\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E08\u0E1F\u0E31\u0E07\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E40\u0E2B\u0E47\u0E19 \u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E15\u0E23\u0E07\u0E44\u0E1B\u0E15\u0E23\u0E07\u0E21\u0E32 \u0E41\u0E25\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E17\u0E38\u0E01\u0E04\u0E19",
+        accent: "#82C566",
+        accentT: "#3f7a24",
+        poster: "cv/positive.png"
+      },
+      {
+        num: "04",
+        name: "Professional & Dynamic",
+        th: "\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E41\u0E25\u0E30\u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E31\u0E27",
+        keys: ["Adapt", "Commit", "Prepare", "Reliable"],
+        note: "\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E07\u0E32\u0E19 \u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E31\u0E27\u0E15\u0E32\u0E21\u0E2A\u0E16\u0E32\u0E19\u0E01\u0E32\u0E23\u0E13\u0E4C \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E07\u0E32\u0E19\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E15\u0E01\u0E25\u0E07\u0E44\u0E27\u0E49\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E21\u0E37\u0E2D\u0E2D\u0E32\u0E0A\u0E35\u0E1E\u0E41\u0E25\u0E30\u0E19\u0E48\u0E32\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E16\u0E37\u0E2D",
+        accent: "#F3554F",
+        accentT: "#c9302b",
+        poster: "cv/professional.png"
+      },
+      {
+        num: "05",
+        name: "Aesthetic Design",
+        th: "\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E1E\u0E2D\u0E43\u0E2B\u0E49\u0E43\u0E0A\u0E49\u0E15\u0E48\u0E2D",
+        keys: ["Tidiness", "Good Experience", "WOW & Cool"],
+        note: "\u0E14\u0E39\u0E41\u0E25\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E2D\u0E48\u0E32\u0E19\u0E07\u0E48\u0E32\u0E22 \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E15\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49\u0E15\u0E48\u0E2D\u0E42\u0E14\u0E22\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E40\u0E14\u0E32",
+        accent: "#6F4BB8",
+        accentT: "#6F4BB8",
+        poster: "cv/aesthetic.png"
+      }
+    ];
+    const N = CV.length;
+    const pin = document.getElementById("cvPin");
+    const stage = document.getElementById("cvStage");
+    const copy = document.getElementById("cvCopy");
+    const rail = document.getElementById("cvRail");
+    const rgrid = document.getElementById("cvRgrid");
+    stage.innerHTML = CV.map((v, i) => `<div class="cv-poster" data-i="${i}"><img src="${v.poster}" alt="${v.name} poster"></div>`).join("");
+    const posters = Array.from(stage.querySelectorAll(".cv-poster"));
+    rail.innerHTML = CV.map((v, i) => `<button class="cv-rl" data-i="${i}"><span class="cv-dot"></span><span class="cv-nm">${v.num} \xB7 ${v.name}</span></button>`).join("");
+    const rls = Array.from(rail.querySelectorAll(".cv-rl"));
+    rgrid.innerHTML = CV.map((v, i) => `<div class="cv-rcard" data-i="${i}" style="--cv-acc:${v.accent};--cv-acc-t:${v.accentT}"><div class="cv-rn">CORE VALUE ${v.num}</div><div class="cv-rt">${v.name}</div><div class="cv-re">${v.th}</div><div class="cv-rk">${v.keys.map((k) => `<span>${k}</span>`).join("")}</div></div>`).join("");
+    let active = -1;
+    function renderCopy(i) {
+      const v = CV[i];
+      copy.classList.remove("in");
+      void copy.offsetWidth;
+      copy.innerHTML = `<div class="cv-num">CORE VALUE ${v.num}</div><h2>${v.name}</h2><div class="cv-th">${v.th}</div><div class="cv-chips">${v.keys.map((k) => `<span>${k}</span>`).join("")}</div><p class="cv-note">${v.note}</p>`;
+      copy.classList.add("in");
+    }
+    function setTheme(i) {
+      const v = CV[i];
+      pin.style.setProperty("--cv-acc", v.accent);
+      pin.style.setProperty("--cv-acc-t", v.accentT);
+      rls.forEach((r, k) => r.classList.toggle("on", k === i));
+    }
+    function update() {
+      const vh = window.innerHeight;
+      const top = scrolly.offsetTop, track = scrolly.offsetHeight - vh;
+      if (!(track > 0)) return;
+      let p = (window.scrollY - top) / track;
+      p = Math.max(0, Math.min(1, p));
+      const raw = p * (N - 1);
+      const base = Math.floor(Math.min(raw, N - 1 - 1e-6));
+      const hold = 0.34;
+      let t = (raw - base - hold) / (1 - 2 * hold);
+      t = Math.max(0, Math.min(1, t));
+      t = t * t * t * (t * (t * 6 - 15) + 10);
+      const pos = base + t;
+      posters.forEach((el, i) => {
+        const d = pos - i, ab = Math.abs(d);
+        el.style.opacity = Math.max(0, 1 - ab);
+        el.style.transform = `translateY(${d * 7}%) scale(${1 - 0.09 * Math.min(ab, 1)}) rotate(${d * 1.5}deg)`;
+        el.style.filter = `blur(${Math.min(ab, 1) * 3}px)`;
+        el.style.zIndex = String(100 - Math.round(ab * 10));
       });
+      const cur = Math.max(0, Math.min(N - 1, Math.round(pos)));
+      if (cur !== active) {
+        active = cur;
+        setTheme(cur);
+        renderCopy(cur);
+      }
+    }
+    function goTo(i) {
+      const vh = window.innerHeight, top = scrolly.offsetTop, track = scrolly.offsetHeight - vh;
+      window.scrollTo({ top: top + i / (N - 1) * track + 2, behavior: "smooth" });
+    }
+    rls.forEach((r) => r.addEventListener("click", () => goTo(+r.dataset.i)));
+    rgrid.addEventListener("click", (e) => {
+      const c = e.target.closest(".cv-rcard");
+      if (c) goTo(+c.dataset.i);
     });
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter((entry) => entry.isIntersecting);
-      if (!visible.length) return;
-      visible.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-      setActive(visible[0].target.id.replace("core-value-", ""));
-    }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
-    rows.forEach((row) => observer.observe(row));
-    window.__coreValuesDeckObserver = observer;
+    renderCopy(0);
+    setTheme(0);
+    active = 0;
+    window.__cvScroll = update;
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+    requestAnimationFrame(update);
   }
   function setupStoryMotion() {
     const appEl = document.getElementById("app");

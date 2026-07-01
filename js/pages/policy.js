@@ -9,7 +9,7 @@ export const coreValuePosters = [
     label: "Goal · Work+ · Support",
     cue: "ไปด้วยกัน",
     note: "รู้เป้าหมายของทีม รับผิดชอบงานของตัวเอง และบอกทีมเร็วเมื่อมีอะไรติดขัด",
-    src: "./Exzy%20core%20value%20poster/win_as_a_team_yellow.png",
+    src: "./cv/win.png",
     accent: "#FFCC00",
     onAccent: "#001122",
     alt: "โปสเตอร์ Core Value ข้อ Win as a Team",
@@ -20,7 +20,7 @@ export const coreValuePosters = [
     label: "Value Added · Learn · Take Risks",
     cue: "ลองให้ดีขึ้น",
     note: "ลองคิดวิธีที่ทำให้งานดีขึ้น เรียนรู้จาก feedback และประเมินความเสี่ยงก่อนลงมือ",
-    src: "./Exzy%20core%20value%20poster/innovation.png",
+    src: "./cv/innovation.png",
     accent: "#66C5C5",
     onAccent: "#001122",
     alt: "โปสเตอร์ Core Value ข้อ Innovative",
@@ -31,7 +31,7 @@ export const coreValuePosters = [
     label: "Energy · Listening · Speaking",
     cue: "ฟังแล้วคุยกัน",
     note: "เปิดใจฟังความคิดเห็น สื่อสารตรงไปตรงมา และช่วยทำให้บรรยากาศการทำงานดีขึ้น",
-    src: "./Exzy%20core%20value%20poster/Positive%20and%20open.png",
+    src: "./cv/positive.png",
     accent: "#82C566",
     onAccent: "#001122",
     alt: "โปสเตอร์ Core Value ข้อ Positive and Open",
@@ -42,7 +42,7 @@ export const coreValuePosters = [
     label: "Adapt · Commit · Prepare",
     cue: "พร้อมและปรับตัว",
     note: "เตรียมตัวก่อนเริ่มงาน ปรับตัวตามสถานการณ์ และส่งงานตามที่ตกลงไว้",
-    src: "./Exzy%20core%20value%20poster/professional_dynamic.png",
+    src: "./cv/professional.png",
     accent: "#F3554F",
     onAccent: "#F8F9FA",
     alt: "โปสเตอร์ Core Value ข้อ Professional and Dynamic",
@@ -53,7 +53,7 @@ export const coreValuePosters = [
     label: "Tidiness · Experience · WOW",
     cue: "ละเอียดพอให้ใช้ต่อ",
     note: "ดูแลรายละเอียดให้งานสะอาด อ่านง่าย และส่งต่อให้คนอื่นใช้งานได้ต่อ",
-    src: "./Exzy%20core%20value%20poster/Aesthetic_puple.png",
+    src: "./cv/aesthetic.png",
     accent: "#6F4BB8",
     onAccent: "#F8F9FA",
     alt: "โปสเตอร์ Core Value ข้อ Aesthetic Design",
@@ -65,46 +65,23 @@ export const renderCodeOfConduct = () => pageWrap({
   title: "EXZY Core Values",
   lead: "หลักที่ช่วยให้ทีมทำงานไปทางเดียวกัน ตั้งแต่วิธีรับผิดชอบงาน สื่อสารกับทีม ไปจนถึงดูแลรายละเอียดให้ส่งต่อได้ง่าย",
   body: `
-    <section class="cvd-story" aria-label="EXZY Core Values">
-      <nav class="cvd-nav fade-up" aria-label="สารบัญ Core Values">
-        ${coreValuePosters.map((v, i) => `
-          <a href="#core-value-${v.num}" class="cvd-nav-item${i === 0 ? " is-active" : ""}" data-cvd-nav="${v.num}" style="--cvd-accent:${v.accent}; --cvd-on-accent:${v.onAccent};">
-            <span class="cvd-nav-num">${v.num}</span>${v.name}
-          </a>
-        `).join("")}
-      </nav>
+    <div class="cv-scrolly" id="cvScrolly">
+      <div class="cv-pin" id="cvPin">
+        <div class="cv-ghost"></div>
+        <nav class="cv-rail" id="cvRail" aria-label="Core values"></nav>
+        <div class="cv-copy in" id="cvCopy"></div>
+        <div class="cv-stage" id="cvStage"></div>
+      </div>
+    </div>
 
-      <div class="cvd-list">
-        ${coreValuePosters.map((v, i) => `
-          <article class="cvd-row anim-up${i % 2 === 1 ? " cvd-row-rev" : ""}" id="core-value-${v.num}" data-cvd-row style="--cvd-accent:${v.accent}; --cvd-on-accent:${v.onAccent};">
-            <figure class="cvd-row-media">
-              <img src="${v.src}" alt="${v.alt}" loading="lazy">
-            </figure>
-            <div class="cvd-row-copy">
-              <span class="cvd-row-num">${v.num}</span>
-              <h2>${v.cue}</h2>
-              <p class="cvd-row-name"><strong>${v.name}</strong><span>${v.label}</span></p>
-              <p class="cvd-row-note">${v.note}</p>
-            </div>
-          </article>
-        `).join("")}
+    <div class="cv-recap">
+      <div class="cv-rhead">
+        <div class="cv-eyebrow">Quick reference</div>
+        <h3>สรุป Core Values ทั้ง 5 ข้อ</h3>
+        <p>ทบทวนได้ในหน้าเดียว — คลิกการ์ดเพื่อกระโดดกลับไปดูรายละเอียดของข้อนั้น</p>
       </div>
-    </section>
-
-    <section class="cvd-recap anim-up" id="core-values-recap" aria-labelledby="core-values-recap-title">
-      <div class="cvd-recap-head">
-        <h2 id="core-values-recap-title">Core Values ทั้ง 5 ข้อ</h2>
-        <p>ถ้าจะกลับมาดูเร็ว ๆ ใช้ส่วนนี้เปิดโปสเตอร์แต่ละใบได้เลย</p>
-      </div>
-      <div class="cvd-grid">
-        ${coreValuePosters.map((v) => `
-          <a href="#core-value-${v.num}" class="cvd-thumb" style="--cvd-accent:${v.accent};" data-scroll-to="core-value-${v.num}">
-            <img src="${v.src}" alt="${v.alt}" loading="lazy">
-            <span><strong>${v.num}</strong>${v.name}</span>
-          </a>
-        `).join("")}
-      </div>
-    </section>
+      <div class="cv-rgrid" id="cvRgrid"></div>
+    </div>
   `,
 });
 
