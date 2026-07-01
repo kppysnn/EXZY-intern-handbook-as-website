@@ -1030,10 +1030,14 @@
     body: `
     <div class="cv-scrolly" id="cvScrolly">
       <div class="cv-pin" id="cvPin">
+        <div class="cv-progress" id="cvProgress"></div>
         <div class="cv-ghost"></div>
         <nav class="cv-rail" id="cvRail" aria-label="Core values"></nav>
         <div class="cv-copy in" id="cvCopy"></div>
         <div class="cv-stage" id="cvStage"></div>
+        <div class="cv-hint" id="cvHint">\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39\u0E02\u0E49\u0E2D\u0E16\u0E31\u0E14\u0E44\u0E1B
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v9M4 8l4 4 4-4"/></svg>
+        </div>
       </div>
     </div>
 
@@ -2676,7 +2680,10 @@
     }
     window.removeEventListener("scroll", window.__cvScroll || (() => {
     }));
+    window.removeEventListener("resize", window.__cvResize || (() => {
+    }));
     window.__cvScroll = null;
+    window.__cvResize = null;
     const scrolly = document.getElementById("cvScrolly");
     if (!scrolly) return;
     const CV = [
@@ -2737,17 +2744,24 @@
     const copy = document.getElementById("cvCopy");
     const rail = document.getElementById("cvRail");
     const rgrid = document.getElementById("cvRgrid");
+    const progress = document.getElementById("cvProgress");
+    const hint = document.getElementById("cvHint");
     stage.innerHTML = CV.map((v, i) => `<div class="cv-poster" data-i="${i}"><img src="${v.poster}" alt="${v.name} poster"></div>`).join("");
     const posters = Array.from(stage.querySelectorAll(".cv-poster"));
     rail.innerHTML = CV.map((v, i) => `<button class="cv-rl" data-i="${i}"><span class="cv-dot"></span><span class="cv-nm">${v.num} \xB7 ${v.name}</span></button>`).join("");
     const rls = Array.from(rail.querySelectorAll(".cv-rl"));
     rgrid.innerHTML = CV.map((v, i) => `<div class="cv-rcard" data-i="${i}" style="--cv-acc:${v.accent};--cv-acc-t:${v.accentT}"><div class="cv-rn">CORE VALUE ${v.num}</div><div class="cv-rt">${v.name}</div><div class="cv-re">${v.th}</div><div class="cv-rk">${v.keys.map((k) => `<span>${k}</span>`).join("")}</div></div>`).join("");
     let active = -1;
+    let top = 0, track = 0;
+    function measure() {
+      top = scrolly.offsetTop;
+      track = scrolly.offsetHeight - window.innerHeight;
+    }
     function renderCopy(i) {
       const v = CV[i];
       copy.classList.remove("in");
       void copy.offsetWidth;
-      copy.innerHTML = `<div class="cv-num">CORE VALUE ${v.num}</div><h2>${v.name}</h2><div class="cv-th">${v.th}</div><div class="cv-chips">${v.keys.map((k) => `<span>${k}</span>`).join("")}</div><p class="cv-note">${v.note}</p>`;
+      copy.innerHTML = `<div class="cv-bignum" aria-hidden="true">${v.num}</div><div class="cv-copy-inner"><div class="cv-num">CORE VALUE ${v.num}</div><h2>${v.name}</h2><div class="cv-th">${v.th}</div><div class="cv-chips">${v.keys.map((k) => `<span>${k}</span>`).join("")}</div><p class="cv-note">${v.note}</p></div>`;
       copy.classList.add("in");
     }
     function setTheme(i) {
@@ -2757,14 +2771,14 @@
       rls.forEach((r, k) => r.classList.toggle("on", k === i));
     }
     function update() {
-      const vh = window.innerHeight;
-      const top = scrolly.offsetTop, track = scrolly.offsetHeight - vh;
       if (!(track > 0)) return;
       let p = (window.scrollY - top) / track;
       p = Math.max(0, Math.min(1, p));
+      if (progress) progress.style.width = p * 100 + "%";
+      if (hint) hint.style.opacity = p < 0.04 ? "1" : "0";
       const raw = p * (N - 1);
       const base = Math.floor(Math.min(raw, N - 1 - 1e-6));
-      const hold = 0.34;
+      const hold = 0.08;
       let t = (raw - base - hold) / (1 - 2 * hold);
       t = Math.max(0, Math.min(1, t));
       t = t * t * t * (t * (t * 6 - 15) + 10);
@@ -2784,8 +2798,20 @@
       }
     }
     function goTo(i) {
-      const vh = window.innerHeight, top = scrolly.offsetTop, track = scrolly.offsetHeight - vh;
       window.scrollTo({ top: top + i / (N - 1) * track + 2, behavior: "smooth" });
+    }
+    let ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        update();
+        ticking = false;
+      });
+    }
+    function onResize() {
+      measure();
+      update();
     }
     rls.forEach((r) => r.addEventListener("click", () => goTo(+r.dataset.i)));
     rgrid.addEventListener("click", (e) => {
@@ -2795,8 +2821,11 @@
     renderCopy(0);
     setTheme(0);
     active = 0;
-    window.__cvScroll = update;
-    window.addEventListener("scroll", update, { passive: true });
+    measure();
+    window.__cvScroll = onScroll;
+    window.__cvResize = onResize;
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
     update();
     requestAnimationFrame(update);
   }

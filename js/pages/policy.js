@@ -67,10 +67,14 @@ export const renderCodeOfConduct = () => pageWrap({
   body: `
     <div class="cv-scrolly" id="cvScrolly">
       <div class="cv-pin" id="cvPin">
+        <div class="cv-progress" id="cvProgress"></div>
         <div class="cv-ghost"></div>
         <nav class="cv-rail" id="cvRail" aria-label="Core values"></nav>
         <div class="cv-copy in" id="cvCopy"></div>
         <div class="cv-stage" id="cvStage"></div>
+        <div class="cv-hint" id="cvHint">เลื่อนลงเพื่อดูข้อถัดไป
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v9M4 8l4 4 4-4"/></svg>
+        </div>
       </div>
     </div>
 
