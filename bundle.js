@@ -971,6 +971,7 @@
       num: "01",
       name: "Win as a Team",
       label: "Goal \xB7 Work+ \xB7 Support",
+      note: "\u0E23\u0E39\u0E49\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E02\u0E2D\u0E07\u0E17\u0E35\u0E21 \u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E07\u0E32\u0E19\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07 \u0E41\u0E25\u0E30\u0E1A\u0E2D\u0E01\u0E17\u0E35\u0E21\u0E40\u0E23\u0E47\u0E27\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E15\u0E34\u0E14\u0E02\u0E31\u0E14",
       src: "./Exzy%20core%20value%20poster/win_as_a_team_yellow.png",
       accent: "#FFCC00",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Win as a Team"
@@ -979,6 +980,7 @@
       num: "02",
       name: "Innovative",
       label: "Value Added \xB7 Learn \xB7 Take Risks",
+      note: "\u0E25\u0E2D\u0E07\u0E04\u0E34\u0E14\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19 \u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E08\u0E32\u0E01 feedback \u0E41\u0E25\u0E30\u0E1B\u0E23\u0E30\u0E40\u0E21\u0E34\u0E19\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E48\u0E22\u0E07\u0E01\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E21\u0E37\u0E2D",
       src: "./Exzy%20core%20value%20poster/innovation.png",
       accent: "#66C5C5",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Innovative"
@@ -987,6 +989,7 @@
       num: "03",
       name: "Positive & Open",
       label: "Energy \xB7 Listening \xB7 Speaking",
+      note: "\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E08\u0E1F\u0E31\u0E07\u0E04\u0E27\u0E32\u0E21\u0E04\u0E34\u0E14\u0E40\u0E2B\u0E47\u0E19 \u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E15\u0E23\u0E07\u0E44\u0E1B\u0E15\u0E23\u0E07\u0E21\u0E32 \u0E41\u0E25\u0E30\u0E0A\u0E48\u0E27\u0E22\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E1A\u0E23\u0E23\u0E22\u0E32\u0E01\u0E32\u0E28\u0E01\u0E32\u0E23\u0E17\u0E33\u0E07\u0E32\u0E19\u0E14\u0E35\u0E02\u0E36\u0E49\u0E19",
       src: "./Exzy%20core%20value%20poster/Positive%20and%20open.png",
       accent: "#82C566",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Positive and Open"
@@ -995,6 +998,7 @@
       num: "04",
       name: "Professional & Dynamic",
       label: "Adapt \xB7 Commit \xB7 Prepare",
+      note: "\u0E40\u0E15\u0E23\u0E35\u0E22\u0E21\u0E15\u0E31\u0E27\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E07\u0E32\u0E19 \u0E1B\u0E23\u0E31\u0E1A\u0E15\u0E31\u0E27\u0E15\u0E32\u0E21\u0E2A\u0E16\u0E32\u0E19\u0E01\u0E32\u0E23\u0E13\u0E4C \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E07\u0E32\u0E19\u0E15\u0E32\u0E21\u0E17\u0E35\u0E48\u0E15\u0E01\u0E25\u0E07\u0E44\u0E27\u0E49",
       src: "./Exzy%20core%20value%20poster/professional_dynamic.png",
       accent: "#586782",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Professional and Dynamic"
@@ -1003,56 +1007,52 @@
       num: "05",
       name: "Aesthetic Design",
       label: "Tidiness \xB7 Experience \xB7 WOW",
+      note: "\u0E14\u0E39\u0E41\u0E25\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E43\u0E2B\u0E49\u0E07\u0E32\u0E19\u0E2A\u0E30\u0E2D\u0E32\u0E14 \u0E2D\u0E48\u0E32\u0E19\u0E07\u0E48\u0E32\u0E22 \u0E41\u0E25\u0E30\u0E2A\u0E48\u0E07\u0E15\u0E48\u0E2D\u0E43\u0E2B\u0E49\u0E04\u0E19\u0E2D\u0E37\u0E48\u0E19\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49\u0E15\u0E48\u0E2D",
       src: "./Exzy%20core%20value%20poster/Aesthetic_puple.png",
       accent: "#6F4BB8",
       alt: "\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Value \u0E02\u0E49\u0E2D Aesthetic Design"
     }
   ];
-  var renderCoreValueRail = () => coreValuePosters.map((v) => `
-  <a href="#core-value-${v.num}" class="cvd-rail-link" style="--cvd-accent:${v.accent};" data-scroll-to="core-value-${v.num}">
-    <span>${v.num}</span>
-    <strong>${v.name}</strong>
-  </a>
-`).join("");
   var renderCodeOfConduct = () => pageWrap({
     crumbs: [["Home", "#/home"], ["Work Policy", null], ["Core Values", null]],
     title: "EXZY Core Values",
-    lead: "\u0E14\u0E39\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E01\u0E48\u0E2D\u0E19 \u0E41\u0E25\u0E49\u0E27\u0E04\u0E48\u0E2D\u0E22\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E14\u0E39 Core Values \u0E17\u0E35\u0E25\u0E30\u0E02\u0E49\u0E2D\u0E08\u0E32\u0E01\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C",
+    lead: "\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39 Core Values \u0E17\u0E35\u0E25\u0E30\u0E02\u0E49\u0E2D \u0E2B\u0E19\u0E49\u0E32 overview \u0E08\u0E30\u0E04\u0E49\u0E32\u0E07\u0E44\u0E27\u0E49 \u0E41\u0E25\u0E49\u0E27 card \u0E08\u0E30\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E15\u0E32\u0E21\u0E08\u0E31\u0E07\u0E2B\u0E27\u0E30\u0E01\u0E32\u0E23\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19",
     body: `
-    <section class="cvd-cover anim-up" aria-labelledby="core-values-cover-title">
-      <div class="cvd-cover-copy">
-        <span class="cvd-kicker">Core Values Deck</span>
-        <h2 id="core-values-cover-title">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E08\u0E32\u0E01\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21 \u0E41\u0E25\u0E49\u0E27\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E14\u0E39\u0E17\u0E35\u0E25\u0E30\u0E02\u0E49\u0E2D</h2>
-        <p>\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E43\u0E0A\u0E49\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E40\u0E1B\u0E47\u0E19\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E2B\u0E25\u0E31\u0E01 \u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E25\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39 Core Values \u0E17\u0E31\u0E49\u0E07 5 \u0E02\u0E49\u0E2D\u0E41\u0E1A\u0E1A deck</p>
-        <div class="cvd-cover-actions">
-          <a href="#core-value-01" class="btn btn-primary" data-scroll-to="core-value-01">\u0E40\u0E23\u0E34\u0E48\u0E21\u0E14\u0E39\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C ${I.arrow}</a>
-          <a href="#core-values-recap" class="btn btn-ghost" data-scroll-to="core-values-recap">\u0E14\u0E39\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21 5 \u0E02\u0E49\u0E2D</a>
+    <section class="cvd-story" data-cvd-stage aria-labelledby="core-values-stage-title">
+      <div class="cvd-pin">
+        <div class="cvd-overview">
+          <span class="cvd-kicker">Core Values Deck</span>
+          <h2 id="core-values-stage-title">\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E39\u0E17\u0E35\u0E25\u0E30 value</h2>
+          <p>\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21\u0E08\u0E30\u0E2D\u0E22\u0E39\u0E48\u0E01\u0E31\u0E1A\u0E17\u0E35\u0E48 \u0E2A\u0E48\u0E27\u0E19 card \u0E14\u0E49\u0E32\u0E19\u0E02\u0E27\u0E32\u0E08\u0E30\u0E2A\u0E25\u0E31\u0E1A\u0E15\u0E32\u0E21\u0E02\u0E49\u0E2D\u0E17\u0E35\u0E48\u0E01\u0E33\u0E25\u0E31\u0E07\u0E2D\u0E48\u0E32\u0E19 \u0E43\u0E0A\u0E49\u0E2B\u0E19\u0E49\u0E32\u0E19\u0E35\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E31\u0E27\u0E0A\u0E48\u0E27\u0E22\u0E08\u0E33\u0E01\u0E48\u0E2D\u0E19\u0E40\u0E23\u0E34\u0E48\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E01\u0E31\u0E1A\u0E17\u0E35\u0E21</p>
+          <figure class="cvd-overview-poster">
+            <img src="./Exzy%20core%20value%20poster/poster.png" alt="\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21 EXZY Core Values">
+          </figure>
+          <div class="cvd-progress" aria-label="Core Values progress">
+            ${coreValuePosters.map((v, i) => `
+              <a href="#core-value-${v.num}" class="cvd-progress-step${i === 0 ? " is-active" : ""}" style="--cvd-accent:${v.accent};" data-cvd-jump="${i}">
+                <span>${v.num}</span>
+                <strong>${v.name}</strong>
+              </a>
+            `).join("")}
+          </div>
         </div>
-      </div>
-      <figure class="cvd-cover-poster">
-        <img src="./Exzy%20core%20value%20poster/poster.png" alt="\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E20\u0E32\u0E1E\u0E23\u0E27\u0E21 EXZY Core Values">
-      </figure>
-    </section>
 
-    <nav class="cvd-rail" aria-label="Core Values">
-      ${renderCoreValueRail()}
-    </nav>
-
-    <section class="cvd-showcase" aria-label="\u0E42\u0E1B\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C Core Values \u0E17\u0E35\u0E25\u0E30\u0E02\u0E49\u0E2D">
-      ${coreValuePosters.map((v) => `
-        <article class="cvd-slide" id="core-value-${v.num}" data-num="${v.num}" style="--cvd-accent:${v.accent};">
-          <div class="cvd-slide-inner" data-num="${v.num}">
+        <div class="cvd-card-stack" aria-label="Core Values cards">
+          ${coreValuePosters.map((v, i) => `
+          <article class="cvd-card${i === 0 ? " is-active" : ""}" id="core-value-${v.num}" data-cvd-card="${i}" data-num="${v.num}" style="--cvd-accent:${v.accent};">
             <div class="cvd-copy">
               <span class="cvd-num">${v.num}</span>
               <h2>${v.name}</h2>
               <p>${v.label}</p>
+              <small>${v.note}</small>
             </div>
             <figure class="cvd-poster">
               <img src="${v.src}" alt="${v.alt}" loading="lazy">
             </figure>
-          </div>
-        </article>
-      `).join("")}
+          </article>
+          `).join("")}
+        </div>
+      </div>
     </section>
 
     <section class="cvd-recap" id="core-values-recap" aria-labelledby="core-values-recap-title">
@@ -2247,6 +2247,7 @@
         }
       });
     });
+    setupCoreValuesDeck();
     app.querySelectorAll(".acc-item").forEach((item) => {
       const trigger = item.querySelector(".acc-trigger");
       trigger.addEventListener("click", () => {
@@ -2686,6 +2687,64 @@
     });
     setupScrollWaypoints();
     setupStoryMotion();
+  }
+  function setupCoreValuesDeck() {
+    const appEl = document.getElementById("app");
+    const stage = appEl ? appEl.querySelector("[data-cvd-stage]") : null;
+    window.removeEventListener("scroll", window.__coreValuesDeckScroll || (() => {
+    }));
+    window.removeEventListener("resize", window.__coreValuesDeckResize || (() => {
+    }));
+    if (!stage) return;
+    const cards = Array.from(stage.querySelectorAll("[data-cvd-card]"));
+    const steps = Array.from(stage.querySelectorAll("[data-cvd-jump]"));
+    if (!cards.length) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let activeIndex = -1;
+    let metrics = { start: 0, range: 1 };
+    const measure = () => {
+      const rect = stage.getBoundingClientRect();
+      metrics.start = rect.top + (window.scrollY || window.pageYOffset);
+      metrics.range = Math.max(1, stage.offsetHeight - window.innerHeight);
+    };
+    const setActive = (index) => {
+      const next = Math.min(cards.length - 1, Math.max(0, index));
+      if (next === activeIndex) return;
+      activeIndex = next;
+      stage.style.setProperty("--cvd-active", String(next));
+      cards.forEach((card, i) => card.classList.toggle("is-active", i === next));
+      steps.forEach((step, i) => step.classList.toggle("is-active", i === next));
+    };
+    const update = () => {
+      measure();
+      const y = window.scrollY || window.pageYOffset;
+      const progress = Math.min(1, Math.max(0, (y - metrics.start) / metrics.range));
+      stage.style.setProperty("--cvd-progress", progress.toFixed(4));
+      setActive(Math.round(progress * (cards.length - 1)));
+    };
+    steps.forEach((step) => {
+      step.addEventListener("click", (event) => {
+        event.preventDefault();
+        measure();
+        const index = Number(step.getAttribute("data-cvd-jump") || 0);
+        const targetTop = metrics.start + metrics.range * (index / Math.max(1, cards.length - 1));
+        window.scrollTo({ top: targetTop, behavior: reduceMotion ? "auto" : "smooth" });
+        setActive(index);
+      });
+    });
+    window.__coreValuesDeckScroll = update;
+    window.__coreValuesDeckResize = () => {
+      measure();
+      update();
+    };
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", window.__coreValuesDeckResize, { passive: true });
+    measure();
+    update();
+    requestAnimationFrame(() => {
+      measure();
+      update();
+    });
   }
   function setupStoryMotion() {
     const appEl = document.getElementById("app");

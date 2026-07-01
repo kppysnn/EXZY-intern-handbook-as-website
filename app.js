@@ -296,6 +296,8 @@ function hydratePage() {
     });
   });
 
+  setupCoreValuesDeck();
+
   // ----- Accordion handlers -----
   app.querySelectorAll(".acc-item").forEach(item => {
     const trigger = item.querySelector(".acc-trigger");
@@ -739,6 +741,72 @@ function initEnhancements() {
 
   setupScrollWaypoints();
   setupStoryMotion();
+}
+
+function setupCoreValuesDeck() {
+  const appEl = document.getElementById('app');
+  const stage = appEl ? appEl.querySelector('[data-cvd-stage]') : null;
+  window.removeEventListener('scroll', window.__coreValuesDeckScroll || (()=>{}));
+  window.removeEventListener('resize', window.__coreValuesDeckResize || (()=>{}));
+
+  if (!stage) return;
+
+  const cards = Array.from(stage.querySelectorAll('[data-cvd-card]'));
+  const steps = Array.from(stage.querySelectorAll('[data-cvd-jump]'));
+  if (!cards.length) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let activeIndex = -1;
+  let metrics = { start: 0, range: 1 };
+
+  const measure = () => {
+    const rect = stage.getBoundingClientRect();
+    metrics.start = rect.top + (window.scrollY || window.pageYOffset);
+    metrics.range = Math.max(1, stage.offsetHeight - window.innerHeight);
+  };
+
+  const setActive = (index) => {
+    const next = Math.min(cards.length - 1, Math.max(0, index));
+    if (next === activeIndex) return;
+    activeIndex = next;
+    stage.style.setProperty('--cvd-active', String(next));
+    cards.forEach((card, i) => card.classList.toggle('is-active', i === next));
+    steps.forEach((step, i) => step.classList.toggle('is-active', i === next));
+  };
+
+  const update = () => {
+    measure();
+    const y = window.scrollY || window.pageYOffset;
+    const progress = Math.min(1, Math.max(0, (y - metrics.start) / metrics.range));
+    stage.style.setProperty('--cvd-progress', progress.toFixed(4));
+    setActive(Math.round(progress * (cards.length - 1)));
+  };
+
+  steps.forEach((step) => {
+    step.addEventListener('click', (event) => {
+      event.preventDefault();
+      measure();
+      const index = Number(step.getAttribute('data-cvd-jump') || 0);
+      const targetTop = metrics.start + (metrics.range * (index / Math.max(1, cards.length - 1)));
+      window.scrollTo({ top: targetTop, behavior: reduceMotion ? 'auto' : 'smooth' });
+      setActive(index);
+    });
+  });
+
+  window.__coreValuesDeckScroll = update;
+  window.__coreValuesDeckResize = () => {
+    measure();
+    update();
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', window.__coreValuesDeckResize, { passive: true });
+
+  measure();
+  update();
+  requestAnimationFrame(() => {
+    measure();
+    update();
+  });
 }
 
 function setupStoryMotion() {
