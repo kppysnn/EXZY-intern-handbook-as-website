@@ -37507,79 +37507,51 @@ html:not(.js-ready) .fdb-reveal {
   max-width: 1216px !important;
 }
 
-.showcase-feature-section {
-  margin: 0 0 clamp(44px, 7vw, 76px) !important;
-}
-
-.showcase-feature-section--articles {
-  margin-bottom: 0 !important;
-}
-
-.showcase-section-head {
-  display: flex !important;
-  align-items: end !important;
-  justify-content: space-between !important;
-  gap: 18px !important;
-  margin: 0 0 clamp(18px, 2.4vw, 28px) !important;
-  padding-bottom: 14px !important;
-  border-bottom: 1px solid rgba(0,64,129,.12) !important;
-}
-
-.showcase-section-head span {
-  flex: none !important;
-  font-size: 12px !important;
-  font-weight: 800 !important;
-  letter-spacing: .08em !important;
-  color: var(--cyan-text, #1a7a7a) !important;
-}
-
-.showcase-section-head h2 {
-  margin: 0 !important;
-  max-width: 760px !important;
-  color: var(--ink, #001122) !important;
-  font-size: clamp(1.65rem, 3vw, 2.35rem) !important;
-  line-height: 1.35 !important;
-  text-align: right !important;
-  text-wrap: balance !important;
-}
-
-.showcase-video-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: clamp(16px, 2.5vw, 28px) !important;
-  align-items: stretch !important;
-  max-width: 860px !important;
-  margin-inline: auto !important;
-}
-
-.showcase-video-grid .show-real-card {
-  height: 100% !important;
-  min-height: 0 !important;
-}
-
-.showcase-video-grid .show-real-card-tiktok {
-  grid-row: auto !important;
-}
-
-.showcase-video-grid .show-real-media-video {
-  min-height: 0 !important;
-  aspect-ratio: 9 / 16 !important;
-  height: auto !important;
-  background: #001122 !important;
-}
-
-.showcase-video-grid .show-real-media-youtube {
-  aspect-ratio: 9 / 16 !important;
-}
-
-.showcase-link-subgrid {
+.showcase-unified-grid {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: clamp(16px, 2vw, 24px) !important;
   align-items: stretch !important;
 }
 
-.showcase-link-subgrid .show-real-card {
+.showcase-video-strip {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: clamp(280px, 28vw, 326px) !important;
+  grid-template-columns: none !important;
+  gap: clamp(16px, 2vw, 24px) !important;
+  align-items: stretch !important;
+  overflow-x: auto !important;
+  overscroll-behavior-inline: contain !important;
+  scroll-snap-type: x proximity !important;
+  padding: 2px 2px 16px !important;
+  margin: -2px -2px clamp(10px, 1.6vw, 18px) !important;
+  scrollbar-color: rgba(0,64,129,.28) transparent;
+}
+
+.showcase-video-strip .show-real-card {
+  height: 100% !important;
+  min-height: 0 !important;
+  scroll-snap-align: start !important;
+}
+
+.showcase-video-strip .show-real-card-tiktok {
+  grid-row: auto !important;
+}
+
+.showcase-video-strip .show-real-media-video {
+  min-height: 0 !important;
+  aspect-ratio: 9 / 16 !important;
+  height: auto !important;
+  background: #001122 !important;
+}
+
+.showcase-video-strip .show-real-media-youtube {
+  aspect-ratio: 9 / 16 !important;
+}
+
+.showcase-unified-grid > .show-real-card {
   height: 100% !important;
   min-height: 0 !important;
 }
@@ -37667,27 +37639,24 @@ html:not(.js-ready) .fdb-reveal {
 }
 
 @media (max-width: 1040px) {
-  .showcase-link-subgrid {
+  .showcase-unified-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 
 @media (max-width: 760px) {
-  .showcase-video-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    max-width: 640px !important;
-    margin-inline: auto !important;
-  }
-
-  .showcase-video-grid .show-real-card-tiktok {
-    grid-row: auto !important;
+  .showcase-video-strip {
+    grid-auto-columns: minmax(260px, 78vw) !important;
   }
 }
 
 @media (max-width: 520px) {
-  .showcase-video-grid {
+  .showcase-unified-grid {
     grid-template-columns: 1fr !important;
-    max-width: 360px !important;
+  }
+
+  .showcase-video-strip {
+    grid-auto-columns: minmax(260px, 86vw) !important;
   }
 
   .show-real-body {
@@ -37700,20 +37669,7 @@ html:not(.js-ready) .fdb-reveal {
     padding-inline: 18px !important;
   }
 
-  .showcase-section-head {
-    display: block !important;
-  }
-
-  .showcase-section-head h2 {
-    text-align: left !important;
-    margin-top: 8px !important;
-  }
-
-  .showcase-link-subgrid {
-    grid-template-columns: 1fr !important;
-  }
-
-  .showcase-video-grid .show-real-media-video {
+  .showcase-video-strip .show-real-media-video {
     max-height: 680px !important;
   }
 }

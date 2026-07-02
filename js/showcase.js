@@ -428,20 +428,9 @@ export function showcasePage(_active) {
     <section class="section">
       <div class="section-inner showcase-page-inner">
         ${emptyNote}
-        <div class="showcase-feature-section" aria-labelledby="showcase-video-title">
-          <div class="showcase-section-head">
-            <span>Intern Videos</span>
-            <h2 id="showcase-video-title">คลิปรีวิวจาก intern รุ่นก่อน</h2>
-          </div>
-          <div class="showcase-video-grid">${videoHtml}</div>
-        </div>
-
-        <div class="showcase-feature-section showcase-feature-section--articles" aria-labelledby="showcase-article-title">
-          <div class="showcase-section-head">
-            <span>Articles & Posts</span>
-            <h2 id="showcase-article-title">บทความและโพสต์ที่ใช้ดูเป็นตัวอย่างได้</h2>
-          </div>
-          <div class="showcase-link-subgrid">${linkHtml}</div>
+        <div class="showcase-unified-grid">
+          <div class="showcase-video-strip" aria-label="คลิปรีวิวจาก intern รุ่นก่อน">${videoHtml}</div>
+          ${linkHtml}
         </div>
       </div>
     </section>

@@ -508,20 +508,9 @@
     <section class="section">
       <div class="section-inner showcase-page-inner">
         ${emptyNote}
-        <div class="showcase-feature-section" aria-labelledby="showcase-video-title">
-          <div class="showcase-section-head">
-            <span>Intern Videos</span>
-            <h2 id="showcase-video-title">\u0E04\u0E25\u0E34\u0E1B\u0E23\u0E35\u0E27\u0E34\u0E27\u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19</h2>
-          </div>
-          <div class="showcase-video-grid">${videoHtml}</div>
-        </div>
-
-        <div class="showcase-feature-section showcase-feature-section--articles" aria-labelledby="showcase-article-title">
-          <div class="showcase-section-head">
-            <span>Articles & Posts</span>
-            <h2 id="showcase-article-title">\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E41\u0E25\u0E30\u0E42\u0E1E\u0E2A\u0E15\u0E4C\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E14\u0E39\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E14\u0E49</h2>
-          </div>
-          <div class="showcase-link-subgrid">${linkHtml}</div>
+        <div class="showcase-unified-grid">
+          <div class="showcase-video-strip" aria-label="\u0E04\u0E25\u0E34\u0E1B\u0E23\u0E35\u0E27\u0E34\u0E27\u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19">${videoHtml}</div>
+          ${linkHtml}
         </div>
       </div>
     </section>
