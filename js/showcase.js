@@ -93,6 +93,59 @@ export const REAL_SHOWCASE_ITEMS = Object.freeze([
     coverPosition: "left top",
   },
   {
+    category: "blog",
+    kind: "link",
+    platform: "Medium",
+    track: "Dev",
+    title: "รีวิวฝึกงาน Dev ตัวน้อยๆ กับ Exzy ที่ได้มากกว่าที่คุณคิด!",
+    titleHtml: "รีวิวฝึกงาน <strong>Dev ตัวน้อยๆ</strong> กับ Exzy",
+    summary: "@nantanatorns.4210 เล่างาน Full Stack Developer กับโปรเจกต์ AI Booth Assistant ตั้งแต่การลอง Unity, Gemini Live API, RAG ไปจนถึงการแก้ feedback หน้างานจริง",
+    summaryHtml: "@nantanatorns.4210 เล่างาน <strong>Full Stack Developer</strong><br>กับโปรเจกต์ AI Booth Assistant ตั้งแต่ Unity, Gemini Live API, RAG ไปจนถึง feedback หน้างานจริง",
+    preview: "รีวิวงาน Full Stack Developer ผ่านโปรเจกต์ AI Booth Assistant",
+    url: "https://medium.com/@nantanatorns.4210/รีวิวฝึกงาน-dev-ตัวน้อยๆ-กับ-exzy-ที่ได้มากกว่าที่คุณคิด-7051bc25ec5d",
+    cover: "sc-medium-dev-nantanatorns.png",
+    coverPosition: "center 12%",
+  },
+  {
+    category: "experiences",
+    kind: "youtube",
+    platform: "YouTube",
+    track: "MK",
+    title: "Intern Review - Grace",
+    titleHtml: "ฝึกงานสาย <strong>Digital Marketing</strong> กับ EXZY",
+    summary: "น้องเกรซ Digital Marketing Intern รีแคปงานที่ได้ทำและสิ่งที่ได้เรียนรู้ตลอดการฝึกงาน",
+    summaryHtml: "น้องเกรซ <strong>Digital Marketing Intern</strong><br>รีแคปงานที่ได้ทำและสิ่งที่ได้เรียนรู้ตลอดการฝึกงาน",
+    preview: "คลิปรีวิวสั้น ๆ จาก intern สาย Digital Marketing",
+    url: "https://youtu.be/T7hpAMXAo2I",
+    youtubeId: "T7hpAMXAo2I",
+  },
+  {
+    category: "experiences",
+    kind: "youtube",
+    platform: "YouTube",
+    track: "Design",
+    title: "Recap UX/UI Designer Internship ที่ EXZY",
+    titleHtml: "Recap <strong>UX/UI Designer Internship</strong> ที่ EXZY",
+    summary: "น้องนิกกี้รีแคปโปรเจกต์และงานที่ได้ทำตลอดการฝึกงาน 4 เดือน",
+    summaryHtml: "น้องนิกกี้รีแคป <strong>โปรเจกต์และงานที่ได้ทำ</strong><br>ตลอดการฝึกงาน 4 เดือน",
+    preview: "คลิปรีวิวงาน UX/UI Designer Internship",
+    url: "https://youtu.be/EhOba4jWhmI",
+    youtubeId: "EhOba4jWhmI",
+  },
+  {
+    category: "experiences",
+    kind: "youtube",
+    platform: "YouTube",
+    track: "Dev",
+    title: "5 เดือนกับการฝึกงาน Developer ที่ EXZY",
+    titleHtml: "<strong>5 เดือน</strong>กับการฝึกงาน Developer ที่ EXZY",
+    summary: "แชร์มุมมองการฝึกงานสาย Developer ทั้งงานที่ได้ทำ ทีมที่ได้ร่วมงาน และสิ่งที่ได้เรียนรู้",
+    summaryHtml: "แชร์มุมมองการฝึกงานสาย <strong>Developer</strong><br>ทั้งงานที่ได้ทำ ทีมที่ได้ร่วมงาน และสิ่งที่ได้เรียนรู้",
+    preview: "คลิปรีวิวชีวิต intern สาย Developer",
+    url: "https://youtu.be/ILybckeMZ7o",
+    youtubeId: "ILybckeMZ7o",
+  },
+  {
     category: "experiences",
     kind: "link",
     platform: "Lemon8",
@@ -137,7 +190,7 @@ function getAllShowcaseItems() {
 }
 
 function platformHeaderClass(platform) {
-  const map = { Facebook: "slc-header-facebook", Medium: "slc-header-medium", TikTok: "slc-header-tiktok" };
+  const map = { Facebook: "slc-header-facebook", Medium: "slc-header-medium", TikTok: "slc-header-tiktok", YouTube: "slc-header-youtube" };
   return map[platform] || "slc-header-default";
 }
 
@@ -147,6 +200,9 @@ function platformIcon(platform) {
   }
   if (platform === "Medium") {
     return `<svg viewBox="0 0 24 24" width="13" height="13" fill="white"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784L.353 3.49V3h6.92l5.33 11.707L17.05 3H23.7v.488l-1.865 1.786a.554.554 0 0 0-.21.528v13.24a.554.554 0 0 0 .21.528l1.827 1.786v.487h-9.19v-.487l1.893-1.838c.185-.185.185-.24.185-.528V7.377l-5.264 13.368h-.878L3.546 7.377v8.963a1.25 1.25 0 0 0 .343.976l2.464 2.988v.487H0v-.487l2.464-2.988a1.21 1.21 0 0 0 .382-.976V6.887z"/></svg>`;
+  }
+  if (platform === "YouTube") {
+    return `<svg viewBox="0 0 24 24" width="13" height="13" fill="white"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>`;
   }
   return `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`;
 }
@@ -161,6 +217,9 @@ function platformIconBody(platform) {
   }
   if (platform === "TikTok") {
     return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.19a8.24 8.24 0 0 0 4.82 1.54V7.27a4.85 4.85 0 0 1-1.05-.58z"/></svg>`;
+  }
+  if (platform === "YouTube") {
+    return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>`;
   }
   if (platform === "Lemon8") {
     return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M18.1 3.5c-2-.8-5.1-.2-7.8 2.5L6 10.3c-2.7 2.7-3.3 5.8-2.5 7.8.7 1.8 2.4 2.8 4.7 2.6 2.3-.2 4.8-1.5 7-3.8l1.7-1.7c2.3-2.3 3.6-4.8 3.8-7 .2-2.3-.8-4-2.6-4.7ZM13 11.1c.7-.3 1-.7 1-1.1 0-.6-.5-.9-1.2-.9s-1.2.4-1.2.9c0 .5.4.8 1.4 1.1Zm-.2 6c-2.3 0-3.8-1.1-3.8-2.8 0-1 .6-1.7 1.7-2.3-.8-.5-1.2-1.2-1.2-2 0-1.6 1.3-2.7 3.3-2.7 1.9 0 3.3 1.1 3.3 2.7 0 .8-.4 1.4-1.2 2 1.1.6 1.7 1.3 1.7 2.3 0 1.7-1.5 2.8-3.8 2.8Zm0-1.7c1 0 1.6-.4 1.6-1.1 0-.6-.5-.9-1.6-1.2-1.1.3-1.6.6-1.6 1.2 0 .7.6 1.1 1.6 1.1Z"/><path d="M18.9 2.1c1.8.1 2.9 1.2 3 3-1.8-.1-2.9-1.2-3-3Z"/></svg>`;
@@ -182,6 +241,7 @@ function platformMarkLabel(platform) {
   if (platform === "Facebook") return "FB";
   if (platform === "Medium") return "MEDIUM";
   if (platform === "TikTok") return "TIKTOK";
+  if (platform === "YouTube") return "YOUTUBE";
   return String(platform || "LINK").toUpperCase();
 }
 
@@ -195,6 +255,21 @@ function stableId(value) {
 }
 
 function renderShowcaseMedia(item) {
+  if (item.kind === "youtube" && item.youtubeId) {
+    const src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(item.youtubeId)}`;
+    return `
+      <div class="show-real-media show-real-media-video show-real-media-youtube">
+        <iframe
+          src="${escapeAttr(src)}"
+          title="${escapeAttr(item.title)}"
+          loading="lazy"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
+  }
+
   if (item.kind === "video" && item.platform === "TikTok" && item.tiktokVideoId) {
     const src = `https://www.tiktok.com/player/v1/${encodeURIComponent(item.tiktokVideoId)}?description=1&controls=1&rel=0`;
     return `
@@ -292,6 +367,8 @@ function renderShowcaseCard(item) {
   const safeUrl = escapeAttr(item.url || "#");
   const actionText = item.kind === "video"
     ? "ดูคลิปเต็ม"
+    : item.kind === "youtube"
+      ? "ดูบน YouTube"
     : item.platform === "Medium"
       ? "อ่านบทความ"
       : item.platform === "Facebook" || item.platform === "Lemon8"
@@ -331,8 +408,8 @@ function renderShowcaseCard(item) {
 
 export function showcasePage(_active) {
   const items = getAllShowcaseItems();
-  const videoItems = items.filter(i => i.kind === "video");
-  const linkItems  = items.filter(i => i.kind !== "video");
+  const videoItems = items.filter(i => i.kind === "video" || i.kind === "youtube");
+  const linkItems  = items.filter(i => i.kind !== "video" && i.kind !== "youtube");
   const emptyNote  = items.length === 0
     ? `<div class="show-real-empty">${I.info} ตอนนี้ยังไม่มีลิงก์ผลงานจริงในหมวดนี้</div>`
     : "";
@@ -349,10 +426,21 @@ export function showcasePage(_active) {
       </div>
     </section>
     <section class="section">
-      <div class="section-inner">
+      <div class="section-inner showcase-page-inner">
         ${emptyNote}
-        <div class="showcase-mixed-grid">
-          ${videoHtml}
+        <div class="showcase-feature-section" aria-labelledby="showcase-video-title">
+          <div class="showcase-section-head">
+            <span>Intern Videos</span>
+            <h2 id="showcase-video-title">คลิปรีวิวจาก intern รุ่นก่อน</h2>
+          </div>
+          <div class="showcase-video-grid">${videoHtml}</div>
+        </div>
+
+        <div class="showcase-feature-section showcase-feature-section--articles" aria-labelledby="showcase-article-title">
+          <div class="showcase-section-head">
+            <span>Articles & Posts</span>
+            <h2 id="showcase-article-title">บทความและโพสต์ที่ใช้ดูเป็นตัวอย่างได้</h2>
+          </div>
           <div class="showcase-link-subgrid">${linkHtml}</div>
         </div>
       </div>

@@ -234,6 +234,59 @@
       coverPosition: "left top"
     },
     {
+      category: "blog",
+      kind: "link",
+      platform: "Medium",
+      track: "Dev",
+      title: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 Dev \u0E15\u0E31\u0E27\u0E19\u0E49\u0E2D\u0E22\u0E46 \u0E01\u0E31\u0E1A Exzy \u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32\u0E17\u0E35\u0E48\u0E04\u0E38\u0E13\u0E04\u0E34\u0E14!",
+      titleHtml: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 <strong>Dev \u0E15\u0E31\u0E27\u0E19\u0E49\u0E2D\u0E22\u0E46</strong> \u0E01\u0E31\u0E1A Exzy",
+      summary: "@nantanatorns.4210 \u0E40\u0E25\u0E48\u0E32\u0E07\u0E32\u0E19 Full Stack Developer \u0E01\u0E31\u0E1A\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C AI Booth Assistant \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E01\u0E32\u0E23\u0E25\u0E2D\u0E07 Unity, Gemini Live API, RAG \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E01\u0E32\u0E23\u0E41\u0E01\u0E49 feedback \u0E2B\u0E19\u0E49\u0E32\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07",
+      summaryHtml: "@nantanatorns.4210 \u0E40\u0E25\u0E48\u0E32\u0E07\u0E32\u0E19 <strong>Full Stack Developer</strong><br>\u0E01\u0E31\u0E1A\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C AI Booth Assistant \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48 Unity, Gemini Live API, RAG \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07 feedback \u0E2B\u0E19\u0E49\u0E32\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07",
+      preview: "\u0E23\u0E35\u0E27\u0E34\u0E27\u0E07\u0E32\u0E19 Full Stack Developer \u0E1C\u0E48\u0E32\u0E19\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C AI Booth Assistant",
+      url: "https://medium.com/@nantanatorns.4210/\u0E23\u0E35\u0E27\u0E34\u0E27\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19-dev-\u0E15\u0E31\u0E27\u0E19\u0E49\u0E2D\u0E22\u0E46-\u0E01\u0E31\u0E1A-exzy-\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32\u0E17\u0E35\u0E48\u0E04\u0E38\u0E13\u0E04\u0E34\u0E14-7051bc25ec5d",
+      cover: "sc-medium-dev-nantanatorns.png",
+      coverPosition: "center 12%"
+    },
+    {
+      category: "experiences",
+      kind: "youtube",
+      platform: "YouTube",
+      track: "MK",
+      title: "Intern Review - Grace",
+      titleHtml: "\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 <strong>Digital Marketing</strong> \u0E01\u0E31\u0E1A EXZY",
+      summary: "\u0E19\u0E49\u0E2D\u0E07\u0E40\u0E01\u0E23\u0E0B Digital Marketing Intern \u0E23\u0E35\u0E41\u0E04\u0E1B\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33\u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19",
+      summaryHtml: "\u0E19\u0E49\u0E2D\u0E07\u0E40\u0E01\u0E23\u0E0B <strong>Digital Marketing Intern</strong><br>\u0E23\u0E35\u0E41\u0E04\u0E1B\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33\u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19",
+      preview: "\u0E04\u0E25\u0E34\u0E1B\u0E23\u0E35\u0E27\u0E34\u0E27\u0E2A\u0E31\u0E49\u0E19 \u0E46 \u0E08\u0E32\u0E01 intern \u0E2A\u0E32\u0E22 Digital Marketing",
+      url: "https://youtu.be/T7hpAMXAo2I",
+      youtubeId: "T7hpAMXAo2I"
+    },
+    {
+      category: "experiences",
+      kind: "youtube",
+      platform: "YouTube",
+      track: "Design",
+      title: "Recap UX/UI Designer Internship \u0E17\u0E35\u0E48 EXZY",
+      titleHtml: "Recap <strong>UX/UI Designer Internship</strong> \u0E17\u0E35\u0E48 EXZY",
+      summary: "\u0E19\u0E49\u0E2D\u0E07\u0E19\u0E34\u0E01\u0E01\u0E35\u0E49\u0E23\u0E35\u0E41\u0E04\u0E1B\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C\u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 4 \u0E40\u0E14\u0E37\u0E2D\u0E19",
+      summaryHtml: "\u0E19\u0E49\u0E2D\u0E07\u0E19\u0E34\u0E01\u0E01\u0E35\u0E49\u0E23\u0E35\u0E41\u0E04\u0E1B <strong>\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E01\u0E15\u0E4C\u0E41\u0E25\u0E30\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33</strong><br>\u0E15\u0E25\u0E2D\u0E14\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 4 \u0E40\u0E14\u0E37\u0E2D\u0E19",
+      preview: "\u0E04\u0E25\u0E34\u0E1B\u0E23\u0E35\u0E27\u0E34\u0E27\u0E07\u0E32\u0E19 UX/UI Designer Internship",
+      url: "https://youtu.be/EhOba4jWhmI",
+      youtubeId: "EhOba4jWhmI"
+    },
+    {
+      category: "experiences",
+      kind: "youtube",
+      platform: "YouTube",
+      track: "Dev",
+      title: "5 \u0E40\u0E14\u0E37\u0E2D\u0E19\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 Developer \u0E17\u0E35\u0E48 EXZY",
+      titleHtml: "<strong>5 \u0E40\u0E14\u0E37\u0E2D\u0E19</strong>\u0E01\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19 Developer \u0E17\u0E35\u0E48 EXZY",
+      summary: "\u0E41\u0E0A\u0E23\u0E4C\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 Developer \u0E17\u0E31\u0E49\u0E07\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33 \u0E17\u0E35\u0E21\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49",
+      summaryHtml: "\u0E41\u0E0A\u0E23\u0E4C\u0E21\u0E38\u0E21\u0E21\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E1D\u0E36\u0E01\u0E07\u0E32\u0E19\u0E2A\u0E32\u0E22 <strong>Developer</strong><br>\u0E17\u0E31\u0E49\u0E07\u0E07\u0E32\u0E19\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E17\u0E33 \u0E17\u0E35\u0E21\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E48\u0E27\u0E21\u0E07\u0E32\u0E19 \u0E41\u0E25\u0E30\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E40\u0E23\u0E35\u0E22\u0E19\u0E23\u0E39\u0E49",
+      preview: "\u0E04\u0E25\u0E34\u0E1B\u0E23\u0E35\u0E27\u0E34\u0E27\u0E0A\u0E35\u0E27\u0E34\u0E15 intern \u0E2A\u0E32\u0E22 Developer",
+      url: "https://youtu.be/ILybckeMZ7o",
+      youtubeId: "ILybckeMZ7o"
+    },
+    {
       category: "experiences",
       kind: "link",
       platform: "Lemon8",
@@ -275,7 +328,7 @@
     });
   }
   function platformHeaderClass(platform) {
-    const map = { Facebook: "slc-header-facebook", Medium: "slc-header-medium", TikTok: "slc-header-tiktok" };
+    const map = { Facebook: "slc-header-facebook", Medium: "slc-header-medium", TikTok: "slc-header-tiktok", YouTube: "slc-header-youtube" };
     return map[platform] || "slc-header-default";
   }
   function platformIconBody(platform) {
@@ -288,6 +341,9 @@
     if (platform === "TikTok") {
       return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.19a8.24 8.24 0 0 0 4.82 1.54V7.27a4.85 4.85 0 0 1-1.05-.58z"/></svg>`;
     }
+    if (platform === "YouTube") {
+      return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>`;
+    }
     if (platform === "Lemon8") {
       return `<svg viewBox="0 0 24 24" width="15" height="15" fill="white"><path d="M18.1 3.5c-2-.8-5.1-.2-7.8 2.5L6 10.3c-2.7 2.7-3.3 5.8-2.5 7.8.7 1.8 2.4 2.8 4.7 2.6 2.3-.2 4.8-1.5 7-3.8l1.7-1.7c2.3-2.3 3.6-4.8 3.8-7 .2-2.3-.8-4-2.6-4.7ZM13 11.1c.7-.3 1-.7 1-1.1 0-.6-.5-.9-1.2-.9s-1.2.4-1.2.9c0 .5.4.8 1.4 1.1Zm-.2 6c-2.3 0-3.8-1.1-3.8-2.8 0-1 .6-1.7 1.7-2.3-.8-.5-1.2-1.2-1.2-2 0-1.6 1.3-2.7 3.3-2.7 1.9 0 3.3 1.1 3.3 2.7 0 .8-.4 1.4-1.2 2 1.1.6 1.7 1.3 1.7 2.3 0 1.7-1.5 2.8-3.8 2.8Zm0-1.7c1 0 1.6-.4 1.6-1.1 0-.6-.5-.9-1.6-1.2-1.1.3-1.6.6-1.6 1.2 0 .7.6 1.1 1.6 1.1Z"/><path d="M18.9 2.1c1.8.1 2.9 1.2 3 3-1.8-.1-2.9-1.2-3-3Z"/></svg>`;
     }
@@ -297,6 +353,7 @@
     if (platform === "Facebook") return "FB";
     if (platform === "Medium") return "MEDIUM";
     if (platform === "TikTok") return "TIKTOK";
+    if (platform === "YouTube") return "YOUTUBE";
     return String(platform || "LINK").toUpperCase();
   }
   function stableId(value) {
@@ -308,6 +365,20 @@
     return Math.abs(hash).toString(36);
   }
   function renderShowcaseMedia(item) {
+    if (item.kind === "youtube" && item.youtubeId) {
+      const src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(item.youtubeId)}`;
+      return `
+      <div class="show-real-media show-real-media-video show-real-media-youtube">
+        <iframe
+          src="${escapeAttr(src)}"
+          title="${escapeAttr(item.title)}"
+          loading="lazy"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
+    }
     if (item.kind === "video" && item.platform === "TikTok" && item.tiktokVideoId) {
       const src = `https://www.tiktok.com/player/v1/${encodeURIComponent(item.tiktokVideoId)}?description=1&controls=1&rel=0`;
       return `
@@ -392,7 +463,7 @@
   }
   function renderShowcaseCard(item) {
     const safeUrl = escapeAttr(item.url || "#");
-    const actionText = item.kind === "video" ? "\u0E14\u0E39\u0E04\u0E25\u0E34\u0E1B\u0E40\u0E15\u0E47\u0E21" : item.platform === "Medium" ? "\u0E2D\u0E48\u0E32\u0E19\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21" : item.platform === "Facebook" || item.platform === "Lemon8" ? "\u0E40\u0E1B\u0E34\u0E14\u0E42\u0E1E\u0E2A\u0E15\u0E4C" : "\u0E40\u0E1B\u0E34\u0E14\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E15\u0E49\u0E19\u0E09\u0E1A\u0E31\u0E1A";
+    const actionText = item.kind === "video" ? "\u0E14\u0E39\u0E04\u0E25\u0E34\u0E1B\u0E40\u0E15\u0E47\u0E21" : item.kind === "youtube" ? "\u0E14\u0E39\u0E1A\u0E19 YouTube" : item.platform === "Medium" ? "\u0E2D\u0E48\u0E32\u0E19\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21" : item.platform === "Facebook" || item.platform === "Lemon8" ? "\u0E40\u0E1B\u0E34\u0E14\u0E42\u0E1E\u0E2A\u0E15\u0E4C" : "\u0E40\u0E1B\u0E34\u0E14\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E15\u0E49\u0E19\u0E09\u0E1A\u0E31\u0E1A";
     const meta = item.track ? `<span class="show-real-track">${escapeHtml(item.track)}</span>` : "";
     const platformClass = `show-real-card-${escapeAttr(String(item.platform || "external").toLowerCase())}`;
     const trackClass = item.track ? `show-real-card-track-${escapeAttr(item.track.toLowerCase())}` : "";
@@ -421,8 +492,8 @@
   }
   function showcasePage(_active) {
     const items = getAllShowcaseItems();
-    const videoItems = items.filter((i) => i.kind === "video");
-    const linkItems = items.filter((i) => i.kind !== "video");
+    const videoItems = items.filter((i) => i.kind === "video" || i.kind === "youtube");
+    const linkItems = items.filter((i) => i.kind !== "video" && i.kind !== "youtube");
     const emptyNote = items.length === 0 ? `<div class="show-real-empty">${I.info} \u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49\u0E22\u0E31\u0E07\u0E44\u0E21\u0E48\u0E21\u0E35\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E1C\u0E25\u0E07\u0E32\u0E19\u0E08\u0E23\u0E34\u0E07\u0E43\u0E19\u0E2B\u0E21\u0E27\u0E14\u0E19\u0E35\u0E49</div>` : "";
     const videoHtml = videoItems.map(renderShowcaseCard).join("");
     const linkHtml = linkItems.map(renderShowcaseCard).join("");
@@ -435,10 +506,21 @@
       </div>
     </section>
     <section class="section">
-      <div class="section-inner">
+      <div class="section-inner showcase-page-inner">
         ${emptyNote}
-        <div class="showcase-mixed-grid">
-          ${videoHtml}
+        <div class="showcase-feature-section" aria-labelledby="showcase-video-title">
+          <div class="showcase-section-head">
+            <span>Intern Videos</span>
+            <h2 id="showcase-video-title">\u0E04\u0E25\u0E34\u0E1B\u0E23\u0E35\u0E27\u0E34\u0E27\u0E08\u0E32\u0E01 intern \u0E23\u0E38\u0E48\u0E19\u0E01\u0E48\u0E2D\u0E19</h2>
+          </div>
+          <div class="showcase-video-grid">${videoHtml}</div>
+        </div>
+
+        <div class="showcase-feature-section showcase-feature-section--articles" aria-labelledby="showcase-article-title">
+          <div class="showcase-section-head">
+            <span>Articles & Posts</span>
+            <h2 id="showcase-article-title">\u0E1A\u0E17\u0E04\u0E27\u0E32\u0E21\u0E41\u0E25\u0E30\u0E42\u0E1E\u0E2A\u0E15\u0E4C\u0E17\u0E35\u0E48\u0E43\u0E0A\u0E49\u0E14\u0E39\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E31\u0E27\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E44\u0E14\u0E49</h2>
+          </div>
           <div class="showcase-link-subgrid">${linkHtml}</div>
         </div>
       </div>
