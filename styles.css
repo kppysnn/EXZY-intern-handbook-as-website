@@ -12502,23 +12502,24 @@ html:not(.js-ready) .fdb-reveal {
 
 /* ===== REQUESTED UPDATE - Core Values balance + Showcase expansion ===== */
 .cv-scrolly {
-  width: min(100% - 48px, 1280px) !important;
-  margin-inline: auto !important;
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: 0 !important;
 }
 
 
 .cv-pin {
-  border-radius: 22px !important;
-  border: 1px solid rgba(208,214,223,.72) !important;
-  height: min(760px, calc(100vh - var(--nav-h,72px) - 36px)) !important;
-  top: calc(var(--nav-h,72px) + 18px) !important;
-  box-shadow: 0 18px 54px rgba(0,64,129,.10) !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  height: calc(100vh - var(--nav-h,72px)) !important;
+  top: var(--nav-h,72px) !important;
+  box-shadow: none !important;
 }
 
 
 .cv-copy {
-  left: clamp(34px, 6vw, 82px) !important;
-  max-width: min(48%, 600px) !important;
+  left: max(7vw, calc((100vw - 1240px) / 2 + 54px)) !important;
+  max-width: min(46vw, 590px) !important;
 }
 
 
@@ -12533,14 +12534,14 @@ html:not(.js-ready) .fdb-reveal {
 
 
 .cv-copy h2 {
-  font-size: clamp(42px, 5.2vw, 70px) !important;
+  font-size: clamp(38px, 5vh, 64px) !important;
   line-height: 1.08 !important;
   text-wrap: balance !important;
 }
 
 
 .cv-copy .cv-th {
-  font-size: clamp(22px, 2.1vw, 28px) !important;
+  font-size: clamp(19px, 2.2vh, 25px) !important;
   line-height: 1.45 !important;
 }
 
@@ -12553,27 +12554,27 @@ html:not(.js-ready) .fdb-reveal {
 
 .cv-copy .cv-note {
   max-width: 46ch !important;
-  font-size: clamp(18px, 1.35vw, 21px) !important;
+  font-size: clamp(17px, 1.45vw, 20px) !important;
   line-height: 1.82 !important;
   text-wrap: pretty !important;
 }
 
 
 .cv-stage {
-  right: clamp(34px, 6vw, 82px) !important;
-  height: min(70vh, 580px) !important;
+  right: max(7vw, calc((100vw - 1240px) / 2 + 54px)) !important;
+  height: min(74vh, 620px) !important;
 }
 
 
 .cv-ghost {
-  right: clamp(28px, 5vw, 72px) !important;
-  width: min(48vh, 430px) !important;
-  height: min(48vh, 430px) !important;
+  right: max(5vw, calc((100vw - 1240px) / 2 + 28px)) !important;
+  width: min(54vh, 520px) !important;
+  height: min(54vh, 520px) !important;
 }
 
 
 .cv-hint {
-  left: clamp(34px, 6vw, 82px) !important;
+  left: max(7vw, calc((100vw - 1240px) / 2 + 54px)) !important;
   bottom: clamp(28px, 4vh, 42px) !important;
   font-size: 14.5px !important;
 }
@@ -12616,6 +12617,7 @@ html:not(.js-ready) .fdb-reveal {
 
   .cv-scrolly {
     width: 100% !important;
+    margin-left: 0 !important;
   }
 }
 
@@ -12668,14 +12670,16 @@ html:not(.js-ready) .fdb-reveal {
 
 .showcase-video-grid {
   display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: clamp(16px, 2.5vw, 28px) !important;
-  align-items: start !important;
+  align-items: stretch !important;
+  max-width: 860px !important;
+  margin-inline: auto !important;
 }
 
 
 .showcase-video-grid .show-real-card {
-  height: auto !important;
+  height: 100% !important;
   min-height: 0 !important;
 }
 
@@ -12688,6 +12692,7 @@ html:not(.js-ready) .fdb-reveal {
 .showcase-video-grid .show-real-media-video {
   min-height: 0 !important;
   aspect-ratio: 9 / 16 !important;
+  height: auto !important;
   background: #001122 !important;
 }
 
@@ -12721,6 +12726,7 @@ html:not(.js-ready) .fdb-reveal {
   display: flex !important;
   flex-direction: column !important;
   flex: 1 1 auto !important;
+  min-height: 270px !important;
   padding: clamp(18px, 2vw, 24px) !important;
 }
 
@@ -12823,6 +12829,11 @@ html:not(.js-ready) .fdb-reveal {
   .showcase-video-grid {
     grid-template-columns: 1fr !important;
     max-width: 360px !important;
+  }
+
+
+  .show-real-body {
+    min-height: 0 !important;
   }
 }
 @media (max-width: 680px){
