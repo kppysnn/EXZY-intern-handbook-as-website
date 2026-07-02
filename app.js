@@ -555,6 +555,24 @@ function initNav() {
 }
 
 // ===== Enhancements (animations & micro-interactions) =====
+function setScrollProgressTheme(theme) {
+  const progressBar = document.getElementById('scroll-progress');
+  if (!progressBar) return;
+
+  if (!theme) {
+    progressBar.classList.remove('scroll-progress-core-value');
+    progressBar.style.removeProperty('--scroll-progress-start');
+    progressBar.style.removeProperty('--scroll-progress-mid');
+    progressBar.style.removeProperty('--scroll-progress-end');
+    return;
+  }
+
+  progressBar.classList.add('scroll-progress-core-value');
+  progressBar.style.setProperty('--scroll-progress-start', theme.start);
+  progressBar.style.setProperty('--scroll-progress-mid', theme.mid || theme.start);
+  progressBar.style.setProperty('--scroll-progress-end', theme.end || theme.mid || theme.start);
+}
+
 function initEnhancements() {
   if (!document.getElementById('scroll-progress')) {
     const bar = document.createElement('div');
@@ -562,6 +580,14 @@ function initEnhancements() {
     document.body.insertBefore(bar, document.body.firstChild);
   }
   const progressBar = document.getElementById('scroll-progress');
+  const cvPin = document.getElementById('cvPin');
+  if (cvPin) {
+    const accent = cvPin.style.getPropertyValue('--cv-acc').trim();
+    const accentT = cvPin.style.getPropertyValue('--cv-acc-t').trim();
+    if (accent) setScrollProgressTheme({ start: accent, mid: accent, end: accentT || accent });
+  } else {
+    setScrollProgressTheme(null);
+  }
   const onScrollProgress = function() {
     const scroll = window.scrollY || window.pageYOffset;
     const docH = document.documentElement.scrollHeight - window.innerHeight;
@@ -768,23 +794,26 @@ function setupCoreValuesDeck() {
   clearTimeout(window.__cvSnapEndTimer);
 
   const scrolly = document.getElementById('cvScrolly');
-  if (!scrolly) return;
+  if (!scrolly) {
+    setScrollProgressTheme(null);
+    return;
+  }
 
   const CV = [
-    { num: "01", name: "Win as a Team", th: "ไปด้วยกัน", keys: ["Goal", "Work+", "Support"],
+    { num: "01", name: "Win as a Team", th: "ทำงานเป็นทีม มุ่งสู่เป้าหมายเดียวกัน", keys: ["Goal", "Work+", "Support"],
       note: "รู้เป้าหมายของทีม รับผิดชอบงานของตัวเอง และบอกทีมเร็วเมื่อมีอะไรติดขัด เพื่อให้ทั้งทีมไปถึงเป้าหมายพร้อมกัน",
       accent: "#FFCC00", accentT: "#8a6d00", poster: "cv/win.png" },
-    { num: "02", name: "Innovative", th: "ลองให้ดีขึ้น", keys: ["Value added", "Learn and improve", "Take risk"],
-      note: "ลองคิดวิธีที่ทำให้งานดีขึ้น เรียนรู้จาก feedback และประเมินความเสี่ยงก่อนลงมือทำจริง",
+    { num: "02", name: "Innovative", th: "กล้าคิด กล้าทดลอง เพื่อสิ่งที่ดีกว่า", keys: ["Value added", "Learn and improve", "Take risk"],
+      note: "พร้อมเปิดรับเทคโนโลยีและไอเดียใหม่ๆ เพื่อสร้างสรรค์ผลงานที่มีประสิทธิภาพ",
       accent: "#66C5C5", accentT: "#1a7a7a", poster: "cv/innovation.png" },
-    { num: "03", name: "Positive & Open", th: "ฟังแล้วคุยกัน", keys: ["Energy", "Listening", "Speaking"],
-      note: "เปิดใจฟังความคิดเห็น สื่อสารตรงไปตรงมา และช่วยทำให้บรรยากาศการทำงานดีขึ้นสำหรับทุกคน",
+    { num: "03", name: "Positive & Open", th: "คิดบวก เปิดรับ และเปิดใจ", keys: ["Energy", "Listening", "Speaking"],
+      note: "สื่อสารกันอย่างจริงใจและพร้อมรับฟังทุกความคิดเห็น เพื่อสร้างบรรยากาศการทำงานที่ดีขึ้นสำหรับทุกคน",
       accent: "#82C566", accentT: "#3f7a24", poster: "cv/positive.png" },
-    { num: "04", name: "Professional & Dynamic", th: "พร้อมและปรับตัว", keys: ["Adapt", "Commit", "Prepare", "Reliable"],
-      note: "เตรียมตัวก่อนเริ่มงาน ปรับตัวตามสถานการณ์ และส่งงานตามที่ตกลงไว้อย่างมืออาชีพและน่าเชื่อถือ",
+    { num: "04", name: "Professional & Dynamic", th: "ทำงานแบบมืออาชีพ ปรับตัวไวพร้อมลุย", keys: ["Adapt", "Commit", "Prepare", "Reliable"],
+      note: "มีความเชี่ยวชาญและรับผิดชอบในหน้าที่ พร้อมปรับตัวรับความท้าทายใหม่ๆ อยู่เสมอ ปรับตัวตามสถานการณ์ และส่งงานตามที่ตกลงไว้อย่างมืออาชีพและน่าเชื่อถือ",
       accent: "#F3554F", accentT: "#c9302b", poster: "cv/professional.png" },
-    { num: "05", name: "Aesthetic Design", th: "ละเอียดพอให้ใช้ต่อ", keys: ["Tidiness", "Good Experience", "WOW & Cool"],
-      note: "ดูแลรายละเอียดให้งานสะอาด อ่านง่าย และส่งต่อให้คนอื่นใช้งานได้ต่อโดยไม่ต้องเดา",
+    { num: "05", name: "Aesthetic Design", th: "ใส่ใจงานออกแบบ มอบประสบการณ์ที่ยอดเยี่ยม", keys: ["Tidiness", "Good Experience", "WOW & Cool"],
+      note: "สร้างสรรค์ผลงานให้เนี้ยบทุกรายละเอียด เพื่อมอบประสบการณ์ที่น่าประทับใจและเหนือระดับในทุกการสัมผัส",
       accent: "#6F4BB8", accentT: "#6F4BB8", poster: "cv/aesthetic.png" }
   ];
   const N = CV.length;
@@ -826,6 +855,7 @@ function setupCoreValuesDeck() {
     const v = CV[i];
     pin.style.setProperty('--cv-acc', v.accent);
     pin.style.setProperty('--cv-acc-t', v.accentT);
+    setScrollProgressTheme({ start: v.accent, mid: v.accent, end: v.accentT });
     rls.forEach((r, k) => r.classList.toggle('on', k === i));
   }
 

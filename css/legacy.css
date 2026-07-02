@@ -9240,10 +9240,12 @@ p.hero-word, div.hero-word { display: block; }
   left: 0;
   height: 3px;
   width: 100%;
-  background: linear-gradient(90deg, #66C5C5, #586782, #004081);
+  background: linear-gradient(90deg, var(--scroll-progress-start, #66C5C5), var(--scroll-progress-mid, #586782), var(--scroll-progress-end, #004081));
   z-index: var(--z-tooltip);
   border-radius: 0 2px 2px 0;
-  box-shadow: 0 0 12px rgba(102,197,197,0.55), 0 0 4px rgba(102,197,197,0.3);
+  box-shadow:
+    0 0 12px color-mix(in srgb, var(--scroll-progress-start, #66C5C5) 55%, transparent),
+    0 0 4px color-mix(in srgb, var(--scroll-progress-end, #66C5C5) 30%, transparent);
   pointer-events: none;
   transform: scaleX(0);
   transform-origin: left;
@@ -9257,8 +9259,8 @@ p.hero-word, div.hero-word { display: block; }
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #66C5C5;
-  box-shadow: 0 0 8px rgba(102,197,197,0.9);
+  background: var(--scroll-progress-end, #66C5C5);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--scroll-progress-end, #66C5C5) 90%, transparent);
 }
 
 /* ---- ENHANCED BASE ANIMATION STATES (override, last wins) ---- */
@@ -37411,6 +37413,10 @@ html:not(.js-ready) .fdb-reveal {
   height: calc(100vh - var(--nav-h,72px)) !important;
   top: var(--nav-h,72px) !important;
   box-shadow: none !important;
+}
+
+.cv-progress {
+  display: none !important;
 }
 
 .cv-copy {
