@@ -12620,8 +12620,8 @@ html:not(.js-ready) .fdb-reveal {
 }
 
 
-.showcase-page-inner {
-  max-width: 1180px !important;
+.section-inner.showcase-page-inner {
+  max-width: 1216px !important;
 }
 
 
@@ -12668,8 +12668,8 @@ html:not(.js-ready) .fdb-reveal {
 
 .showcase-video-grid {
   display: grid !important;
-  grid-template-columns: minmax(260px, .8fr) repeat(3, minmax(210px, 1fr)) !important;
-  gap: clamp(16px, 2vw, 24px) !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: clamp(16px, 2.5vw, 28px) !important;
   align-items: start !important;
 }
 
@@ -12681,7 +12681,7 @@ html:not(.js-ready) .fdb-reveal {
 
 
 .showcase-video-grid .show-real-card-tiktok {
-  grid-row: span 2 !important;
+  grid-row: auto !important;
 }
 
 
@@ -12801,18 +12801,28 @@ html:not(.js-ready) .fdb-reveal {
 }
 @media (max-width: 1040px){
 
+  .showcase-link-subgrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 760px){
+
   .showcase-video-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: 640px !important;
+    margin-inline: auto !important;
   }
 
 
   .showcase-video-grid .show-real-card-tiktok {
     grid-row: auto !important;
   }
+}
+@media (max-width: 520px){
 
-
-  .showcase-link-subgrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  .showcase-video-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 360px !important;
   }
 }
 @media (max-width: 680px){
@@ -12833,7 +12843,6 @@ html:not(.js-ready) .fdb-reveal {
   }
 
 
-  .showcase-video-grid,
   .showcase-link-subgrid {
     grid-template-columns: 1fr !important;
   }
