@@ -92,7 +92,7 @@
     "Showcase": { num: "06", label: "Showcase", section: "showcase" },
     "Admin": { num: "07", label: "Admin", section: "admin" }
   };
-  function pageWrap({ crumbs, title, lead, body, toc }) {
+  function pageWrap({ crumbs, title, lead, body, toc, pageClass = "" }) {
     const crumbHtml = crumbs.map(([t, href], i) => {
       const isLast = i === crumbs.length - 1;
       if (href) return `<a href="${href}" data-link>${t}</a><span class="breadcrumb-sep"> \u203A </span>`;
@@ -101,6 +101,8 @@
     }).join("");
     const sectionName = crumbs.length > 1 ? crumbs[1][0] : "";
     const meta = _sectionMeta[sectionName] || { num: "\u2014", label: sectionName };
+    const heroClassName = pageClass ? ` ${pageClass}-hero` : "";
+    const sectionClassName = pageClass ? ` ${pageClass}-section` : "";
     const tocHtml = toc ? `
     <aside class="content-sticky">
       <nav class="toc">
@@ -111,7 +113,7 @@
   ` : "";
     return `
     <!-- PAGE HERO BAND -->
-    <div class="page-hero-band" data-section="${meta.section || "getting-started"}">
+    <div class="page-hero-band${heroClassName}" data-section="${meta.section || "getting-started"}">
       <div class="phb-inner">
         <div class="phb-eyebrow anim-up">
           ${meta.label}
@@ -123,7 +125,7 @@
     </div>
 
     <!-- CONTENT -->
-    <section class="section">
+    <section class="section${sectionClassName}">
       <div class="section-inner">
         <div class="${toc ? "content-grid" : ""}">
           ${tocHtml}
@@ -1095,6 +1097,7 @@
     }
   ];
   var renderCodeOfConduct = () => pageWrap({
+    pageClass: "core-values-page",
     crumbs: [["Home", "#/home"], ["Work Policy", null], ["Core Values", null]],
     title: "EXZY Core Values",
     lead: "\u0E2B\u0E25\u0E31\u0E01\u0E17\u0E35\u0E48\u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E17\u0E35\u0E21\u0E17\u0E33\u0E07\u0E32\u0E19\u0E44\u0E1B\u0E17\u0E32\u0E07\u0E40\u0E14\u0E35\u0E22\u0E27\u0E01\u0E31\u0E19 \u0E15\u0E31\u0E49\u0E07\u0E41\u0E15\u0E48\u0E27\u0E34\u0E18\u0E35\u0E23\u0E31\u0E1A\u0E1C\u0E34\u0E14\u0E0A\u0E2D\u0E1A\u0E07\u0E32\u0E19 \u0E2A\u0E37\u0E48\u0E2D\u0E2A\u0E32\u0E23\u0E01\u0E31\u0E1A\u0E17\u0E35\u0E21 \u0E44\u0E1B\u0E08\u0E19\u0E16\u0E36\u0E07\u0E14\u0E39\u0E41\u0E25\u0E23\u0E32\u0E22\u0E25\u0E30\u0E40\u0E2D\u0E35\u0E22\u0E14\u0E43\u0E2B\u0E49\u0E2A\u0E48\u0E07\u0E15\u0E48\u0E2D\u0E44\u0E14\u0E49\u0E07\u0E48\u0E32\u0E22",

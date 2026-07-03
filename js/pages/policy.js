@@ -61,6 +61,7 @@ export const coreValuePosters = [
 ];
 
 export const renderCodeOfConduct = () => pageWrap({
+  pageClass: "core-values-page",
   crumbs: [["Home", "#/home"], ["Work Policy", null], ["Core Values", null]],
   title: "EXZY Core Values",
   lead: "หลักที่ช่วยให้ทีมทำงานไปทางเดียวกัน ตั้งแต่วิธีรับผิดชอบงาน สื่อสารกับทีม ไปจนถึงดูแลรายละเอียดให้ส่งต่อได้ง่าย",

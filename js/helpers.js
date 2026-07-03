@@ -47,7 +47,7 @@ const _sectionMeta = {
   "Admin":           { num: "07", label: "Admin",           section: "admin" },
 };
 
-export function pageWrap({ crumbs, title, lead, body, toc }) {
+export function pageWrap({ crumbs, title, lead, body, toc, pageClass = "" }) {
   const crumbHtml = crumbs.map(([t, href], i) => {
     const isLast = i === crumbs.length - 1;
     if (href) return `<a href="${href}" data-link>${t}</a><span class="breadcrumb-sep"> › </span>`;
@@ -57,6 +57,8 @@ export function pageWrap({ crumbs, title, lead, body, toc }) {
 
   const sectionName = crumbs.length > 1 ? crumbs[1][0] : "";
   const meta = _sectionMeta[sectionName] || { num: "—", label: sectionName };
+  const heroClassName = pageClass ? ` ${pageClass}-hero` : "";
+  const sectionClassName = pageClass ? ` ${pageClass}-section` : "";
 
   const tocHtml = toc ? `
     <aside class="content-sticky">
@@ -69,7 +71,7 @@ export function pageWrap({ crumbs, title, lead, body, toc }) {
 
   return `
     <!-- PAGE HERO BAND -->
-    <div class="page-hero-band" data-section="${meta.section || 'getting-started'}">
+    <div class="page-hero-band${heroClassName}" data-section="${meta.section || 'getting-started'}">
       <div class="phb-inner">
         <div class="phb-eyebrow anim-up">
           ${meta.label}
@@ -81,7 +83,7 @@ export function pageWrap({ crumbs, title, lead, body, toc }) {
     </div>
 
     <!-- CONTENT -->
-    <section class="section">
+    <section class="section${sectionClassName}">
       <div class="section-inner">
         <div class="${toc ? 'content-grid' : ''}">
           ${tocHtml}
