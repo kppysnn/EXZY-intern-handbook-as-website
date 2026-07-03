@@ -37517,11 +37517,18 @@ html:not(.js-ready) .fdb-reveal {
 
 .cv-recap {
   max-width: 1180px !important;
+  padding-inline: clamp(18px, 3vw, 28px) !important;
   margin-inline: auto !important;
+}
+
+.cv-rhead {
+  margin-bottom: clamp(20px, 2.4vw, 28px) !important;
 }
 
 .cv-rhead h3 {
   font-size: clamp(32px, 3vw, 42px) !important;
+  margin-top: 8px !important;
+  text-wrap: balance !important;
 }
 
 .cv-rhead p {

@@ -83,7 +83,6 @@ export const renderCodeOfConduct = () => pageWrap({
       <div class="cv-rhead">
         <div class="cv-eyebrow">Quick reference</div>
         <h3>สรุป Core Values ทั้ง 5 ข้อ</h3>
-        <p>ทบทวนได้ในหน้าเดียว — คลิกการ์ดเพื่อกระโดดกลับไปดูรายละเอียดของข้อนั้น</p>
       </div>
       <div class="cv-rgrid" id="cvRgrid"></div>
     </div>
