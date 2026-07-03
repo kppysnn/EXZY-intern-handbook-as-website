@@ -40,7 +40,7 @@ export const renderOrientation = () => pageWrap({
     </div>
 
     <h2 id="values">EXZY Core Values</h2>
-    <p>ดูภาพรวมจากโปสเตอร์ก่อน ถ้าอยากอ่านทีละข้อให้เปิดหน้า Core Values ต่อได้เลย</p>
+    <p>เรียนรู้เกี่ยวกับ EXZY Core Values หลักการและคุณค่าที่ทีมงานของเรายึดถือร่วมกัน หากต้องการศึกษาแต่ละหัวข้อมากขึ้น สามารถเลือกอ่านรายละเอียดเพิ่มเติมได้ที่หน้า Core Values</p>
 
     <div class="cvd-grid anim-up">
       ${coreValuePosters.map((v) => `
